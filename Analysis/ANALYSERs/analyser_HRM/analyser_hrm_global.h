@@ -1,0 +1,12 @@
+#ifndef ANALYSER_HRM_GLOBAL_H
+#define ANALYSER_HRM_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(ANALYSER_HRM_LIBRARY)
+#  define ANALYSER_HRMSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define ANALYSER_HRMSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // ANALYSER_HRM_GLOBAL_H

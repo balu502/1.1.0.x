@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/cy5.png</file>
+        <file>images/cy55.png</file>
+        <file>images/disable.png</file>
+        <file>images/fam.png</file>
+        <file>images/hex.png</file>
+        <file>images/rox.png</file>
+        <file>images/foto.png</file>
+        <file>translations/video_ru.qm</file>
+        <file>images/flat/cy55_flat.png</file>
+        <file>images/flat/cy5_flat.png</file>
+        <file>images/flat/disable_flat.png</file>
+        <file>images/flat/fam_flat.png</file>
+        <file>images/flat/hex_flat.png</file>
+        <file>images/flat/rox_flat.png</file>
+        <file>images/flat/video_flat.png</file>
+        <file>images/flat/back_flat.png</file>
+        <file>images/flat/digitize_flat.png</file>
+        <file>images/flat/scale_flat.png</file>
+        <file>images/flat/checkbox.png</file>
+        <file>images/flat/checkbox_null.ico</file>
+        <file>images/flat/median_0.png</file>
+        <file>images/flat/median_1.png</file>
+        <file>images/flat/median_2.png</file>
+        <file>images/flat/median_3.png</file>
+        <file>translations/video_en.qm</file>
+    </qresource>
+</RCC>

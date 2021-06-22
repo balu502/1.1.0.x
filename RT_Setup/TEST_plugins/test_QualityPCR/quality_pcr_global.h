@@ -1,0 +1,12 @@
+#ifndef QUALITY_PCR_GLOBAL_H
+#define QUALITY_PCR_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(QUALITY_PCR_LIBRARY)
+#  define QUALITY_PCRSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define QUALITY_PCRSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // QUALITY_PCR_GLOBAL_H

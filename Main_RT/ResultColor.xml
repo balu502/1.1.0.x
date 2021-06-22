@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-16'?>
+<root>
+ <Tube Position="A6">
+  <Group Name="1. BRCA1:3819">
+   <Channel ID="1" Color="$00EFCB9A"/>
+   <Channel ID="0" Color="$00EFCB9A"/>
+  </Group>
+  <Group Name="2. BRCA1:185">
+   <Channel ID="2" Color="$00EFCB9A"/>
+   <Channel ID="3" Color="$00EFCB9A"/>
+  </Group>
+ </Tube>
+ <Tube Position="B6">
+  <Group Name="3. BRCA2:6174">
+   <Channel ID="0" Color="$003DF9FE"/>
+   <Channel ID="1" Color="$003DF9FE"/>
+  </Group>
+  <Group Name="4. BRCA1:4153">
+   <Channel ID="2" Color="$00EFCB9A"/>
+   <Channel ID="3" Color="$00EFCB9A"/>
+  </Group>
+ </Tube>
+ <Tube Position="C6">
+  <Group Name="5. BRCA1:3875">
+   <Channel ID="0" Color="$003DF9FE"/>
+   <Channel ID="1" Color="$003DF9FE"/>
+  </Group>
+  <Group Name="6. BRCA1:5382">
+   <Channel ID="2" Color="$003DF9FE"/>
+   <Channel ID="3" Color="$003DF9FE"/>
+  </Group>
+ </Tube>
+ <Tube Position="D6">
+  <Group Name="7. BRCA1:2080">
+   <Channel ID="0" Color="$003DF9FE"/>
+   <Channel ID="1" Color="$003DF9FE"/>
+  </Group>
+  <Group Name="8. BRCA1:300">
+   <Channel ID="2" Color="$00EFCB9A"/>
+   <Channel ID="3" Color="$00EFCB9A"/>
+  </Group>
+ </Tube>
+ <Tube Position="E6">
+  <Group Name="1. BRCA1:3819">
+   <Channel ID="1" Color="$00A3F38B"/>
+   <Channel ID="0" Color="$00A3F38B"/>
+  </Group>
+  <Group Name="2. BRCA1:185">
+   <Channel ID="2" Color="$00A3F38B"/>
+   <Channel ID="3" Color="$00A3F38B"/>
+  </Group>
+ </Tube>
+ <Tube Position="F6">
+  <Group Name="3. BRCA2:6174">
+   <Channel ID="0" Color="$00A3F38B"/>
+   <Channel ID="1" Color="$00A3F38B"/>
+  </Group>
+  <Group Name="4. BRCA1:4153">
+   <Channel ID="2" Color="$00A3F38B"/>
+   <Channel ID="3" Color="$00A3F38B"/>
+  </Group>
+ </Tube>
+ <Tube Position="G6">
+  <Group Name="5. BRCA1:3875">
+   <Channel ID="0" Color="$00A3F38B"/>
+   <Channel ID="1" Color="$00A3F38B"/>
+  </Group>
+  <Group Name="6. BRCA1:5382">
+   <Channel ID="2" Color="$00A3F38B"/>
+   <Channel ID="3" Color="$00A3F38B"/>
+  </Group>
+ </Tube>
+ <Tube Position="H6">
+  <Group Name="7. BRCA1:2080">
+   <Channel ID="0" Color="$00A3F38B"/>
+   <Channel ID="1" Color="$00A3F38B"/>
+  </Group>
+  <Group Name="8. BRCA1:300">
+   <Channel ID="2" Color="$003DF9FE"/>
+   <Channel ID="3" Color="$003DF9FE"/>
+  </Group>
+ </Tube>
+ <Tube Position="A7">
+  <Group Name="1. BRCA1:3819">
+   <Channel ID="1" Color="$003DF9FE"/>
+   <Channel ID="0" Color="$003DF9FE"/>
+  </Group>
+  <Group Name="2. BRCA1:185">
+   <Channel ID="2" Color="$003DF9FE"/>
+   <Channel ID="3" Color="$003DF9FE"/>
+  </Group>
+ </Tube>
+ <Tube Position="B7">
+  <Group Name="3. BRCA2:6174">
+   <Channel ID="0" Color="$003DF9FE"/>
+   <Channel ID="1" Color="$003DF9FE"/>
+  </Group>
+  <Group Name="4. BRCA1:4153">
+   <Channel ID="2" Color="$003DF9FE"/>
+   <Channel ID="3" Color="$003DF9FE"/>
+  </Group>
+ </Tube>
+ <Tube Position="C7">
+  <Group Name="5. BRCA1:3875">
+   <Channel ID="0" Color="$003DF9FE"/>
+   <Channel ID="1" Color="$003DF9FE"/>
+  </Group>
+  <Group Name="6. BRCA1:5382">
+   <Channel ID="2" Color="$003DF9FE"/>
+   <Channel ID="3" Color="$003DF9FE"/>
+  </Group>
+ </Tube>
+ <Tube Position="D7">
+  <Group Name="7. BRCA1:2080">
+   <Channel ID="0" Color="$003DF9FE"/>
+   <Channel ID="1" Color="$003DF9FE"/>
+  </Group>
+  <Group Name="8. BRCA1:300">
+   <Channel ID="2" Color="$003DF9FE"/>
+   <Channel ID="3" Color="$003DF9FE"/>
+  </Group>
+ </Tube>
+ <Tube Position="E7">
+  <Group Name="1. BRCA1:3819">
+   <Channel ID="1" Color="$00EFCB9A"/>
+   <Channel ID="0" Color="$00EFCB9A"/>
+  </Group>
+  <Group Name="2. BRCA1:185">
+   <Channel ID="2" Color="$00EFCB9A"/>
+   <Channel ID="3" Color="$00EFCB9A"/>
+  </Group>
+ </Tube>
+ <Tube Position="F7">
+  <Group Name="3. BRCA2:6174">
+   <Channel ID="0" Color="$003DF9FE"/>
+   <Channel ID="1" Color="$003DF9FE"/>
+  </Group>
+  <Group Name="4. BRCA1:4153">
+   <Channel ID="2" Color="$00EFCB9A"/>
+   <Channel ID="3" Color="$00EFCB9A"/>
+  </Group>
+ </Tube>
+ <Tube Position="G7">
+  <Group Name="5. BRCA1:3875">
+   <Channel ID="0" Color="$003DF9FE"/>
+   <Channel ID="1" Color="$003DF9FE"/>
+  </Group>
+  <Group Name="6. BRCA1:5382">
+   <Channel ID="2" Color="$003DF9FE"/>
+   <Channel ID="3" Color="$003DF9FE"/>
+  </Group>
+ </Tube>
+ <Tube Position="H7">
+  <Group Name="7. BRCA1:2080">
+   <Channel ID="0" Color="$003DF9FE"/>
+   <Channel ID="1" Color="$003DF9FE"/>
+  </Group>
+  <Group Name="8. BRCA1:300">
+   <Channel ID="2" Color="$00EFCB9A"/>
+   <Channel ID="3" Color="$00EFCB9A"/>
+  </Group>
+ </Tube>
+</root>

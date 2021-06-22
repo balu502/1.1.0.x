@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<scenario>
+  <name>Web_RunProtocol</name>
+  <Points>
+    <item>
+      <name>OpenProtocolID</name>
+      <receiver>run</receiver>
+      <Parameters>
+        <item>
+          <name>ID_Protocol</name>
+          <value></value>
+        </item>
+      </Parameters>
+    </item>
+    <item>
+      <name>OpenDevice</name>
+      <receiver>run</receiver>
+      <Parameters>
+        <item>
+          <name>DeviceName</name>
+          <value></value>
+        </item>
+      </Parameters>
+    </item>
+    <item>
+      <name>RunProtocol</name>
+      <receiver>run</receiver>
+      <Parameters>
+        <item>
+          <name>Hold</name>
+          <value>stop_after_execution</value>
+        </item>
+      </Parameters>
+    </item>
+    <item>
+      <name>AnalysisProtocol</name>
+      <receiver>analysis</receiver>
+      <Parameters>
+        <item>
+          <name>FileName</name>
+          <value></value>
+        </item>
+      </Parameters>
+    </item>
+  </Points>
+</scenario>

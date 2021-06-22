@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/foto.png</file>
+        <file>images/d_tau.png</file>
+        <file>images/d_temp.png</file>
+        <file>images/tau.png</file>
+        <file>images/temp.png</file>
+        <file>images/grad.png</file>
+        <file>images/ok_green.png</file>
+        <file>images/ok_white.png</file>
+        <file>images/new.png</file>
+        <file>images/open.png</file>
+        <file>images/save.png</file>
+        <file>translations/editor_ru.qm</file>
+        <file>images/new_new.png</file>
+        <file>images/open_new.png</file>
+        <file>images/save_new.png</file>
+        <file>images/dna.ico</file>
+        <file>images/flat/new_flat.png</file>
+        <file>images/flat/open_flat.png</file>
+        <file>images/flat/save_flat.png</file>
+        <file>images/grad_step.png</file>
+        <file>translations/editor_en.qm</file>
+        <file>images/DTm.ico</file>
+        <file>images/RT.ico</file>
+    </qresource>
+</RCC>

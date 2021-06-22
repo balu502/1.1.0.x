@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NCReport version="2.20.1" name="Untitled" type="report">
+    <options>
+        <encoding>UTF-8</encoding>
+        <language>00</language>
+        <langrole>0</langrole>
+        <orientation>portrait</orientation>
+        <pagesize width="210.000" height="297.000">A4</pagesize>
+        <topmargin>10</topmargin>
+        <bottommargin>10</bottommargin>
+        <leftmargin>15</leftmargin>
+        <rightmargin>10</rightmargin>
+        <backcolor>#ffffff</backcolor>
+        <columns>0</columns>
+        <columnspace>0</columnspace>
+        <zoneSpacing>0</zoneSpacing>
+        <zoneBreak>false</zoneBreak>
+        <varErrorAlert>false</varErrorAlert>
+        <fontname>Arial</fontname>
+        <fontsize>10</fontsize>
+        <fontstyle></fontstyle>
+        <htmlBodyStyle>{DEFAULT}</htmlBodyStyle>
+        <labelColumnCount>0</labelColumnCount>
+        <labelRowCount>0</labelRowCount>
+        <labelHGap>0</labelHGap>
+        <labelVGap>0</labelVGap>
+        <labelWidth>0</labelWidth>
+        <labelHeight>0</labelHeight>
+        <labelDirection>horizontal</labelDirection>
+    </options>
+    <datasources>
+        <datasource id="Logotype" allowEmpty="true" enabled="true" type="txt" openRole="begin" source="parameter" columnDelimiter="tab" encoding="UTF-8">Logotype</datasource>
+        <datasource id="Header_Source" allowEmpty="true" enabled="true" type="list" openRole="begin" source="static" columnDelimiter="tab" listID="Header_Source"></datasource>
+        <datasource id="Quality_Result" allowEmpty="true" enabled="true" type="list" openRole="begin" source="static" columnDelimiter="tab" listID="Quality_Result"></datasource>
+    </datasources>
+    <variables/>
+    <scripts/>
+    <pageheader id="PH" height="0.000"/>
+    <pagefooter id="PF" height="7.830"/>
+    <details>
+        <detail id="Titul_Data" height="18.200" datasource="Logotype">
+            <items>
+                <field id="KJ87E" zValue="0" posX="30.480" posY="2.540" width="118.110" height="5.080" resource="param" fontName="Times New Roman" fontSize="14" fontWeight="bold" alignment="36" type="txt" ftype="par">Titul_Report</field>
+                <field id="5C1MA" zValue="1" posX="1.270" posY="11.430" width="38.100" height="3.810" resource="param" fontName="Times New Roman" fontSize="10" fontWeight="bold" alignment="1" type="txt" ftype="par">CurrentDate</field>
+                <image id="S5U6X" zValue="2" posX="151.130" posY="8.890" width="31.750" height="7.620" resource="filefromds" aspectRatio="keep" format="0" alignment="1">0</image>
+            </items>
+        </detail>
+        <detail id="Header_Data" height="4.022" hideIfBlank="true" datasource="Header_Source">
+            <items>
+                <field id="W78QM" zValue="0" posX="72.390" posY="0.000" width="109.220" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="8" alignment="1" type="txt" ftype="ds">1</field>
+                <field id="F8TD7" zValue="1" posX="25.400" posY="0.000" width="44.450" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="8" alignment="1" type="txt" ftype="ds">0</field>
+            </items>
+        </detail>
+        <detail id="Result_Data" height="5.080" autoHeight="true" datasource="Quality_Result">
+            <items>
+                <rectangle id="TUHHW" zValue="0" posX="5.080" posY="0.000" width="172.720" height="5.080" autoHeight="true" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fillStyle="no" fillColor="#000000" fitTo="section"/>
+                <field id="YX80B" zValue="1" posX="146.050" posY="0.000" width="31.750" height="5.080" resource="datasource" autoHeight="true" fontName="Times New Roman" fontSize="8" fontWeight="bold" alignment="132" type="txt" ftype="ds">5</field>
+                <field id="JTAQU" zValue="2" posX="5.080" posY="0.000" width="17.780" height="5.080" resource="datasource" autoHeight="true" fontName="Times New Roman" fontSize="8" alignment="132" type="txt" ftype="ds">0</field>
+                <field id="XH9BV" zValue="3" posX="22.860" posY="0.000" width="63.500" height="5.080" resource="datasource" autoHeight="true" fontName="Times New Roman" fontSize="8" alignment="132" type="txt" ftype="ds">1</field>
+                <field id="UOU92" zValue="4" posX="86.360" posY="0.000" width="16.510" height="5.080" resource="datasource" autoHeight="true" fontName="Times New Roman" fontSize="8" alignment="132" type="txt" ftype="ds">2</field>
+                <line id="S6XTL" zValue="5" autoHeight="true" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fitTo="section" fromX="22.860" fromY="0.000" toX="22.860" toY="5.080"/>
+                <field id="ZSQYL" zValue="6" posX="102.870" posY="0.000" width="19.050" height="5.080" resource="datasource" autoHeight="true" fontName="Times New Roman" fontSize="8" alignment="132" type="txt" ftype="ds">3</field>
+                <field id="GYA3N" zValue="7" posX="121.920" posY="0.000" width="24.130" height="5.080" resource="datasource" autoHeight="true" fontName="Times New Roman" fontSize="8" alignment="132" type="txt" ftype="ds">4</field>
+                <line id="6ZMNC" zValue="8" autoHeight="true" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fitTo="section" fromX="86.360" fromY="0.000" toX="86.360" toY="5.080"/>
+                <line id="HK3J9" zValue="9" autoHeight="true" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fitTo="section" fromX="102.870" fromY="0.000" toX="102.870" toY="5.080"/>
+                <line id="2EVKE" zValue="10" autoHeight="true" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fitTo="section" fromX="121.920" fromY="0.000" toX="121.920" toY="5.080"/>
+                <line id="4O9OF" zValue="11" autoHeight="true" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fitTo="section" fromX="146.050" fromY="0.000" toX="146.050" toY="5.080"/>
+            </items>
+            <groups>
+                <group id="Group_Data" groupExp="" resetVariables="" reprintHeader="false" startsOnNewPage="false">
+                    <groupheader id="GH_Group_Data" height="7.197"/>
+                    <groupfooter id="GF_Group_Data" height="4.000"/>
+                </group>
+            </groups>
+        </detail>
+    </details>
+</NCReport>

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Catalog>
+  <item>
+    <source>ДНК-Технология\Возбудители грибковых инфекций</source>
+    <target>Dna-Technology\Сausative agents of mycoses</target>
+  </item>
+  <item>
+    <source>ДНК-Технология\Выявление генов резистентности к антибиотикам</source>
+    <target>Dna-Technology\The detection of antibiotic resistance genes</target>
+  </item>
+  <item>
+    <source>ДНК-Технология\Гемотрансмиссивные инфекции (качественный анализ)</source>
+    <target>Dna-Technology\Hepatitis viruses and HIV (qualitative)</target>
+  </item>
+  <item>
+    <source>ДНК-Технология\Гемотрансмиссивные инфекции (количественный анализ)</source>
+    <target>Dna-Technology\Hepatitis viruses and HIV (quantitative)</target>
+  </item>
+  <item>
+    <source>ДНК-Технология\Герпесвирусные инфекции</source>
+    <target>Dna-Technology\Herpes virus infection</target>
+  </item>
+  <item>
+    <source>ДНК-Технология\Инфекции респираторного тракта</source>
+    <target>Dna-Technology\Respiratory infections</target>
+  </item>
+  <item>
+    <source>ДНК-Технология\Исследование биоценозов\Андрофлор</source>
+    <target>Dna-Technology\Microbiome composition screening\Androflor</target>
+  </item>
+  <item>
+    <source>ДНК-Технология\Исследование биоценозов\Фемофлор</source>
+    <target>Dna-Technology\Microbiome composition screening\Femoflor</target>
+  </item>
+  <item>
+    <source>ДНК-Технология\Контроль взятия материала</source>
+    <target>Dna-Technology\Sample intake control (SIC)</target>
+  </item>
+  <item>
+    <source>ДНК-Технология\Определение генных полиморфизмов и других мутаций\Генетика Метаболизма Кальция</source>
+    <target>Dna-Technology\Identification of genetic polymorphisms and other mutations\Calcium Metabolism</target>
+  </item>
+  <item>
+    <source>ДНК-Технология\Определение генных полиморфизмов и других мутаций\Генетика Метаболизма Лактозы</source>
+    <target>Dna-Technology\Identification of genetic polymorphisms and other mutations\Lactose Intolerance</target>
+  </item>
+  <item>
+    <source>ДНК-Технология\Определение генных полиморфизмов и других мутаций\Генетика Метаболизма Фолатов</source>
+    <target>Dna-Technology\Identification of genetic polymorphisms and other mutations\Folate Metabolism</target>
+  </item>
+  <item>
+    <source>ДНК-Технология\Определение генных полиморфизмов и других мутаций\Генетика наследственных заболеваний. Делеции локуса AZF</source>
+    <target>Dna-Technology\Identification of genetic polymorphisms and other mutations\AZF Microdeletions</target>
+  </item>
+  <item>
+    <source>ДНК-Технология\Определение генных полиморфизмов и других мутаций\ИммуноГенетика IL28B</source>
+    <target>Dna-Technology\Identification of genetic polymorphisms and other mutations\IL 28B</target>
+  </item>
+  <item>
+    <source>ДНК-Технология\Определение генных полиморфизмов и других мутаций\КардиоГенетика Гипертония</source>
+    <target>Dna-Technology\Identification of genetic polymorphisms and other mutations\Hypertension Susceptibility</target>
+  </item>
+  <item>
+    <source>ДНК-Технология\Определение генных полиморфизмов и других мутаций\КардиоГенетика Тромбофилия</source>
+    <target>Dna-Technology\Identification of genetic polymorphisms and other mutations\Thrombophilia Susceptibility</target>
+  </item>
+  <item>
+    <source>ДНК-Технология\Определение генных полиморфизмов и других мутаций\КардиоГенетика Тромбофилия (F2, F5)</source>
+    <target>Dna-Technology\Identification of genetic polymorphisms and other mutations\Thrombophilia Susceptibility (F2, F5 mutations)</target>
+  </item>
+  <item>
+    <source>ДНК-Технология\Определение генных полиморфизмов и других мутаций\ОнкоГенетика BRCA</source>
+    <target>Dna-Technology\Identification of genetic polymorphisms and other mutations\BRCA mutations</target>
+  </item>
+  <item>
+    <source>ДНК-Технология\Определение генных полиморфизмов и других мутаций\ФармакоГенетика Варфарин</source>
+    <target>Dna-Technology\Identification of genetic polymorphisms and other mutations\Warfarin Pharmacogenetics</target>
+  </item>
+  <item>
+    <source>ДНК-Технология\Определение генных полиморфизмов и других мутаций\ФармакоГенетика Клопидогрел</source>
+    <target>Dna-Technology\Identification of genetic polymorphisms and other mutations\Clopidogrel Pharmacogenetics</target>
+  </item>
+  <item>
+    <source>ДНК-Технология\Папилломавирусные инфекции</source>
+    <target>Dna-Technology\Human papilloma virus</target>
+  </item>
+  <item>
+    <source>ДНК-Технология\Пренатальная диагностика\Пол плода</source>
+    <target>Dna-Technology\Prenatal diagnosis\Gender</target>
+  </item>
+  <item>
+    <source>ДНК-Технология\Пренатальная диагностика\Резус-фактор плода</source>
+    <target>Dna-Technology\Prenatal diagnosis\RHD</target>
+  </item>
+  <item>
+    <source>ДНК-Технология\Прочие инфекции</source>
+    <target>Dna-Technology\Other infections</target>
+  </item>
+  <item>
+    <source>ДНК-Технология\Типирование генов гистосовместимости I класса</source>
+    <target>Dna-Technology\HLA I typing</target>
+  </item>
+  <item>
+    <source>ДНК-Технология\Типирование генов гистосовместимости II класса</source>
+    <target>Dna-Technology\HLA II typing</target>
+  </item>
+  <item>
+    <source>ДНК-Технология\Урогенитальные инфекции</source>
+    <target>Dna-Technology\Sexually transmited diseases</target>
+  </item>
+  <item>
+    <source>ДНК-Технология\Особо опасные и природно-очаговые инфекции</source>
+    <target>Dna-Technology\Eespecially dangerous and feral herd infections</target>
+  </item>
+</Catalog>

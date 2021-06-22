@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/Checked_ALL.png</file>
+        <file>images/Checked_NONE.png</file>
+        <file>translations/select_ru.qm</file>
+        <file>images/clear_16.png</file>
+        <file>translations/select_en.qm</file>
+        <file>images/cursor_free.png</file>
+        <file>images/cursor_null.png</file>
+        <file>images/cursor_ColorFill.png</file>
+        <file>images/back_16.png</file>
+    </qresource>
+</RCC>

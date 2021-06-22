@@ -1,0 +1,2551 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<protocol>
+  <name>Протокол_(48)</name>
+  <barcode />
+  <regNumber>UZGQ6_171220_164536</regNumber>
+  <nameOperator>admin1</nameOperator>
+  <created />
+  <status>wait</status>
+  <activeChannels>1111</activeChannels>
+  <xsize>8</xsize>
+  <ysize>6</ysize>
+  <volumeTube>35</volumeTube>
+  <amProgramm>XPRG 0 35 0
+XLEV 3000 15 0 0 0 0
+XCYC 1
+XLEV 3000 16 100 0 0 2
+XCYC 68
+XLEV 9000 16 0 0 0 0
+XCYC 1
+XLEV 2000 15 0 0 0 0
+XHLD
+XSAV Example</amProgramm>
+  <properties />
+  <dropping>
+    <specSet>
+      <xsize>12</xsize>
+      <ysize>4</ysize>
+      <tubes>
+        <item>
+          <IDTube>0</IDTube>
+          <IDSample>qaiqpxeGWe</IDSample>
+          <name>Образец_1</name>
+          <x>0</x>
+          <y>0</y>
+        </item>
+        <item>
+          <IDTube>1</IDTube>
+          <IDSample>MevPPm9d63</IDSample>
+          <name>Образец_2</name>
+          <x>1</x>
+          <y>0</y>
+        </item>
+        <item>
+          <IDTube>2</IDTube>
+          <IDSample>tjfzVbd0gT</IDSample>
+          <name>Образец_3</name>
+          <x>2</x>
+          <y>0</y>
+        </item>
+        <item>
+          <IDTube>3</IDTube>
+          <IDSample>Qnt2bveNjs</IDSample>
+          <name>Образец_4</name>
+          <x>3</x>
+          <y>0</y>
+        </item>
+        <item>
+          <IDTube>4</IDTube>
+          <IDSample>wLcbgk8lJH</IDSample>
+          <name>Образец_5</name>
+          <x>4</x>
+          <y>0</y>
+        </item>
+        <item>
+          <IDTube>5</IDTube>
+          <IDSample>TPqemZd8th</IDSample>
+          <name>Образец_6</name>
+          <x>5</x>
+          <y>0</y>
+        </item>
+        <item>
+          <IDTube>6</IDTube>
+          <IDSample>3JCoijKInw</IDSample>
+          <name>Образец_7</name>
+          <x>6</x>
+          <y>0</y>
+        </item>
+        <item>
+          <IDTube>7</IDTube>
+          <IDSample>nJQJkO6obh</IDSample>
+          <name>Образец_8</name>
+          <x>7</x>
+          <y>0</y>
+        </item>
+        <item>
+          <IDTube>8</IDTube>
+          <IDSample>JresqDbBB6</IDSample>
+          <name>Образец_9</name>
+          <x>8</x>
+          <y>0</y>
+        </item>
+        <item>
+          <IDTube>9</IDTube>
+          <IDSample>qvOvw25ZlW</IDSample>
+          <name>Образец_10</name>
+          <x>9</x>
+          <y>0</y>
+        </item>
+        <item>
+          <IDTube>10</IDTube>
+          <IDSample>NzcU2LawLv</IDSample>
+          <name>Образец_11</name>
+          <x>10</x>
+          <y>0</y>
+        </item>
+        <item>
+          <IDTube>11</IDTube>
+          <IDSample>t3L3bB4JvK</IDSample>
+          <name>Образец_12</name>
+          <x>11</x>
+          <y>0</y>
+        </item>
+        <item>
+          <IDTube>12</IDTube>
+          <IDSample>QbZ6h05gUk</IDSample>
+          <name>Образец_13</name>
+          <x>0</x>
+          <y>1</y>
+        </item>
+        <item>
+          <IDTube>13</IDTube>
+          <IDSample>02vH9AGqsz</IDSample>
+          <name>Образец_14</name>
+          <x>1</x>
+          <y>1</y>
+        </item>
+        <item>
+          <IDTube>14</IDTube>
+          <IDSample>WafqFzGESO</IDSample>
+          <name>Образец_15</name>
+          <x>2</x>
+          <y>1</y>
+        </item>
+        <item>
+          <IDTube>15</IDTube>
+          <IDSample>3esPpJl52n</IDSample>
+          <name>Образец_16</name>
+          <x>3</x>
+          <y>1</y>
+        </item>
+        <item>
+          <IDTube>16</IDTube>
+          <IDSample>aicSv8FSch</IDSample>
+          <name>Образец_17</name>
+          <x>4</x>
+          <y>1</y>
+        </item>
+        <item>
+          <IDTube>17</IDTube>
+          <IDSample>6mM10xkpC6</IDSample>
+          <name>Образец_18</name>
+          <x>5</x>
+          <y>1</y>
+        </item>
+        <item>
+          <IDTube>18</IDTube>
+          <IDSample>dKZb6nEDmV</IDSample>
+          <name>Образец_19</name>
+          <x>6</x>
+          <y>1</y>
+        </item>
+        <item>
+          <IDTube>19</IDTube>
+          <IDSample>AOJeCcjaLv</IDSample>
+          <name>Образец_20</name>
+          <x>7</x>
+          <y>1</y>
+        </item>
+        <item>
+          <IDTube>20</IDTube>
+          <IDSample>gSXDIvDxvK</IDSample>
+          <name>Образец_21</name>
+          <x>8</x>
+          <y>1</y>
+        </item>
+        <item>
+          <IDTube>21</IDTube>
+          <IDSample>GNtNE5u7JZ</IDSample>
+          <name>Образец_22</name>
+          <x>9</x>
+          <y>1</y>
+        </item>
+        <item>
+          <IDTube>22</IDTube>
+          <IDSample>nRdwKuPUtz</IDSample>
+          <name>Образец_23</name>
+          <x>10</x>
+          <y>1</y>
+        </item>
+        <item>
+          <IDTube>23</IDTube>
+          <IDSample>KVq0PktsTO</IDSample>
+          <name>Образец_24</name>
+          <x>11</x>
+          <y>1</y>
+        </item>
+        <item>
+          <IDTube>24</IDTube>
+          <IDSample>q3aZV3OF3n</IDSample>
+          <name>Образец_25</name>
+          <x>0</x>
+          <y>2</y>
+        </item>
+        <item>
+          <IDTube>25</IDTube>
+          <IDSample>N7ocbss6ch</IDSample>
+          <name>Образец_26</name>
+          <x>1</x>
+          <y>2</y>
+        </item>
+        <item>
+          <IDTube>26</IDTube>
+          <IDSample>7b2673B8Ry</IDSample>
+          <name>Образец_27</name>
+          <x>2</x>
+          <y>2</y>
+        </item>
+        <item>
+          <IDTube>27</IDTube>
+          <IDSample>dfGfDMfV1N</IDSample>
+          <name>Образец_28</name>
+          <x>3</x>
+          <y>2</y>
+        </item>
+        <item>
+          <IDTube>28</IDTube>
+          <IDSample>AjzFIBANam</IDSample>
+          <name>Образец_29</name>
+          <x>4</x>
+          <y>2</y>
+        </item>
+        <item>
+          <IDTube>29</IDTube>
+          <IDSample>hnDIO0ekAC</IDSample>
+          <name>Образец_30</name>
+          <x>5</x>
+          <y>2</y>
+        </item>
+        <item>
+          <IDTube>30</IDTube>
+          <IDSample>DLxrUq97kb</IDSample>
+          <name>Образец_31</name>
+          <x>6</x>
+          <y>2</y>
+        </item>
+        <item>
+          <IDTube>31</IDTube>
+          <IDSample>kPhuafdUK0</IDSample>
+          <name>Образец_32</name>
+          <x>7</x>
+          <y>2</y>
+        </item>
+        <item>
+          <IDTube>32</IDTube>
+          <IDSample>HTuT9y8suu</IDSample>
+          <name>Образец_33</name>
+          <x>8</x>
+          <y>2</y>
+        </item>
+        <item>
+          <IDTube>33</IDTube>
+          <IDSample>nXe2FocFUJ</IDSample>
+          <name>Образец_34</name>
+          <x>9</x>
+          <y>2</y>
+        </item>
+        <item>
+          <IDTube>34</IDTube>
+          <IDSample>NR0DiyJPrY</IDSample>
+          <name>Образец_35</name>
+          <x>10</x>
+          <y>2</y>
+        </item>
+        <item>
+          <IDTube>35</IDTube>
+          <IDSample>AILIaxoizf</IDSample>
+          <name>Образец_36</name>
+          <x>11</x>
+          <y>2</y>
+        </item>
+        <item>
+          <IDTube>36</IDTube>
+          <IDSample>hM4MgmI5Z4</IDSample>
+          <name>Образец_37</name>
+          <x>0</x>
+          <y>3</y>
+        </item>
+        <item>
+          <IDTube>37</IDTube>
+          <IDSample>DuovmbnS9U</IDSample>
+          <name>Образец_38</name>
+          <x>1</x>
+          <y>3</y>
+        </item>
+        <item>
+          <IDTube>38</IDTube>
+          <IDSample>ky2UrvHqjt</IDSample>
+          <name>Образец_39</name>
+          <x>2</x>
+          <y>3</y>
+        </item>
+        <item>
+          <IDTube>39</IDTube>
+          <IDSample>KOOeo5y078</IDSample>
+          <name>Образец_40</name>
+          <x>3</x>
+          <y>3</y>
+        </item>
+        <item>
+          <IDTube>40</IDTube>
+          <IDSample>rw7htuTNgY</IDSample>
+          <name>Образец_41</name>
+          <x>4</x>
+          <y>3</y>
+        </item>
+        <item>
+          <IDTube>41</IDTube>
+          <IDSample>N0LHzjxkGx</IDSample>
+          <name>Образец_42</name>
+          <x>5</x>
+          <y>3</y>
+        </item>
+        <item>
+          <IDTube>42</IDTube>
+          <IDSample>u45q5YS7qq</IDSample>
+          <name>Образец_43</name>
+          <x>6</x>
+          <y>3</y>
+        </item>
+        <item>
+          <IDTube>43</IDTube>
+          <IDSample>XL3bOXL4XS</IDSample>
+          <name>Образец_44</name>
+          <x>7</x>
+          <y>3</y>
+        </item>
+        <item>
+          <IDTube>44</IDTube>
+          <IDSample>4tmfUNqR7r</IDSample>
+          <name>Образец_45</name>
+          <x>8</x>
+          <y>3</y>
+        </item>
+        <item>
+          <IDTube>45</IDTube>
+          <IDSample>bx0EZCKIhk</IDSample>
+          <name>Образец_46</name>
+          <x>9</x>
+          <y>3</y>
+        </item>
+        <item>
+          <IDTube>46</IDTube>
+          <IDSample>71kn91pgH9</IDSample>
+          <name>Образец_47</name>
+          <x>10</x>
+          <y>3</y>
+        </item>
+        <item>
+          <IDTube>47</IDTube>
+          <IDSample>hw6xbfWqfP</IDSample>
+          <name>Образец_48</name>
+          <x>11</x>
+          <y>3</y>
+        </item>
+      </tubes>
+    </specSet>
+    <reagentSet>
+      <xsize>12</xsize>
+      <ysize>4</ysize>
+      <tubes>
+        <item>
+          <IDTube>0</IDTube>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <IDTemplate>0</IDTemplate>
+          <name>calibr</name>
+          <x>0</x>
+          <y>0</y>
+        </item>
+      </tubes>
+    </reagentSet>
+    <tableTESTs>
+      <item num="13">
+        <ID_Test>p9WafwQ5QSQm</ID_Test>
+        <Name_Test>HerpesComplex</Name_Test>
+      </item>
+    </tableTESTs>
+  </dropping>
+  <tests>
+    <item>
+      <IDTest>mzDknhJxJUqr</IDTest>
+      <nameTest>calibr</nameTest>
+      <method>32</method>
+      <volumeTube>35</volumeTube>
+      <activeChannels>1111</activeChannels>
+      <comment />
+      <Catalog>Калибровка</Catalog>
+      <amProgramm>XPRG 0 25 0
+XLEV 3000 15 0 0 0 0
+XCYC 1
+XLEV 3000 16 100 0 0 2
+XCYC 68
+XLEV 9000 16 0 0 0 0
+XCYC 1
+XLEV 2000 15 0 0 0 0
+XHLD
+XSAV Example</amProgramm>
+      <properties>
+        <item>
+          <name>criterion_PosResult</name>
+          <value>80</value>
+          <unit />
+        </item>
+        <item>
+          <name>criterion_Validity</name>
+          <value>5</value>
+          <unit />
+        </item>
+        <item>
+          <name>use_AFF</name>
+          <value>True</value>
+          <unit />
+        </item>
+        <item>
+          <name>criterion_AFF</name>
+          <value>1000</value>
+          <unit />
+        </item>
+        <item>
+          <name>criterion_AFF_MIN</name>
+          <value>10</value>
+          <unit />
+        </item>
+        <item>
+          <name>criterion_AFF_MAX</name>
+          <value>90</value>
+          <unit />
+        </item>
+        <item>
+          <name>sigmoid_ValidityMin</name>
+          <value>7</value>
+          <unit />
+        </item>
+        <item>
+          <name>sigmoid_ValidityMax</name>
+          <value>20</value>
+          <unit />
+        </item>
+        <item>
+          <name>use_Threshold</name>
+          <value>False</value>
+          <unit />
+        </item>
+        <item>
+          <name>value_Threshold</name>
+          <value>10</value>
+          <unit />
+        </item>
+        <item>
+          <name>exposure_Measurements</name>
+          <value>0.5 0.5 0.5 0.5 0.5</value>
+          <unit />
+        </item>
+        <item>
+          <name>fluorofors</name>
+          <value>Fam Hex Rox Cy5 Cy5.5</value>
+          <unit />
+        </item>
+        <item>
+          <name>FWHM_Border</name>
+          <value>30</value>
+          <unit />
+        </item>
+        <item>
+          <name>peaks_Border</name>
+          <value>20</value>
+          <unit />
+        </item>
+      </properties>
+      <channels>
+        <item>
+          <IDChannel>0</IDChannel>
+          <number>0</number>
+          <ffor>0</ffor>
+        </item>
+        <item>
+          <IDChannel>1</IDChannel>
+          <number>1</number>
+          <ffor>1</ffor>
+        </item>
+        <item>
+          <IDChannel>2</IDChannel>
+          <number>2</number>
+          <ffor>2</ffor>
+        </item>
+        <item>
+          <IDChannel>3</IDChannel>
+          <number>3</number>
+          <ffor>3</ffor>
+        </item>
+      </channels>
+      <templates>
+        <item>
+          <IDTube>0</IDTube>
+          <name />
+          <color>0</color>
+          <properties />
+          <channels>
+            <item>
+              <IDChannel>0</IDChannel>
+              <name>Fam</name>
+              <properties />
+            </item>
+            <item>
+              <IDChannel>1</IDChannel>
+              <name>Hex</name>
+              <properties />
+            </item>
+            <item>
+              <IDChannel>2</IDChannel>
+              <name>Rox</name>
+              <properties />
+            </item>
+            <item>
+              <IDChannel>3</IDChannel>
+              <name>Cy5</name>
+              <properties />
+            </item>
+          </channels>
+        </item>
+      </templates>
+    </item>
+  </tests>
+  <sourceSet>
+    <item>
+      <IDGroup>qaiqpxeGWe</IDGroup>
+      <name>Образец_1</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>6sotc6fhYM</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_1</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>0</pos>
+              <x>0</x>
+              <y>0</y>
+              <pos_protocol>1</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>MevPPm9d63</IDGroup>
+      <name>Образец_2</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>dQ2wiw958l</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_2</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>1</pos>
+              <x>1</x>
+              <y>0</y>
+              <pos_protocol>2</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>tjfzVbd0gT</IDGroup>
+      <name>Образец_3</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>9VmVoleShA</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_3</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>2</pos>
+              <x>2</x>
+              <y>0</y>
+              <pos_protocol>3</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>Qnt2bveNjs</IDGroup>
+      <name>Образец_4</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>gZ04ta8pHa</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_4</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>3</pos>
+              <x>3</x>
+              <y>0</y>
+              <pos_protocol>4</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>wLcbgk8lJH</IDGroup>
+      <name>Образец_5</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>Ddj7TQdgrz</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_5</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>4</pos>
+              <x>4</x>
+              <y>0</y>
+              <pos_protocol>5</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>TPqemZd8th</IDGroup>
+      <name>Образец_6</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>jBThZj74RO</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_6</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>5</pos>
+              <x>5</x>
+              <y>0</y>
+              <pos_protocol>6</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>3JCoijKInw</IDGroup>
+      <name>Образец_7</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>Jbpr1toEpe</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_7</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>6</pos>
+              <x>6</x>
+              <y>0</y>
+              <pos_protocol>7</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>nJQJkO6obh</IDGroup>
+      <name>Образец_8</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>35XpXX6GdP</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_8</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>7</pos>
+              <x>7</x>
+              <y>0</y>
+              <pos_protocol>8</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>JresqDbBB6</IDGroup>
+      <name>Образец_9</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>a9lPdMbdDo</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_9</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>8</pos>
+              <x>0</x>
+              <y>1</y>
+              <pos_protocol>9</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>qvOvw25ZlW</IDGroup>
+      <name>Образец_10</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>6DVyjC5UnD</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_10</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>9</pos>
+              <x>1</x>
+              <y>1</y>
+              <pos_protocol>10</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>NzcU2LawLv</IDGroup>
+      <name>Образец_11</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>dlE1p1arNd</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_11</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>10</pos>
+              <x>2</x>
+              <y>1</y>
+              <pos_protocol>11</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>t3L3bB4JvK</IDGroup>
+      <name>Образец_12</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>ApSauq5Fx2</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_12</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>11</pos>
+              <x>3</x>
+              <y>1</y>
+              <pos_protocol>12</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>QbZ6h05gUk</IDGroup>
+      <name>Образец_13</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>gtC90AZcWR</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_13</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>12</pos>
+              <x>4</x>
+              <y>1</y>
+              <pos_protocol>13</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>02vH9AGqsz</IDGroup>
+      <name>Образец_14</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>GoYKwKGmQg</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_14</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>13</pos>
+              <x>5</x>
+              <y>1</y>
+              <pos_protocol>14</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>WafqFzGESO</IDGroup>
+      <name>Образец_15</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>nslN29k9U6</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_15</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>14</pos>
+              <x>6</x>
+              <y>1</y>
+              <pos_protocol>15</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>3esPpJl52n</IDGroup>
+      <name>Образец_16</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>JwVw8yFW4z</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_16</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>15</pos>
+              <x>7</x>
+              <y>1</y>
+              <pos_protocol>16</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>aicSv8FSch</IDGroup>
+      <name>Образец_17</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>qUjVEokueO</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_17</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>16</pos>
+              <x>0</x>
+              <y>2</y>
+              <pos_protocol>17</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>6mM10xkpC6</IDGroup>
+      <name>Образец_18</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>NYTYJ7EHEo</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_18</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>17</pos>
+              <x>1</x>
+              <y>2</y>
+              <pos_protocol>18</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>dKZb6nEDmV</IDGroup>
+      <name>Образец_19</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>tcg7twjenD</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_19</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>18</pos>
+              <x>2</x>
+              <y>2</y>
+              <pos_protocol>19</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>AOJeCcjaLv</IDGroup>
+      <name>Образец_20</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>QAQgzmDVNc</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_20</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>19</pos>
+              <x>3</x>
+              <y>2</y>
+              <pos_protocol>20</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>gSXDIvDxvK</IDGroup>
+      <name>Образец_21</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>xEAj5bitx2</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_21</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>20</pos>
+              <x>4</x>
+              <y>2</y>
+              <pos_protocol>21</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>GNtNE5u7JZ</IDGroup>
+      <name>Образец_22</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>XfWuXFP3rH</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_22</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>21</pos>
+              <x>5</x>
+              <y>2</y>
+              <pos_protocol>22</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>nRdwKuPUtz</IDGroup>
+      <name>Образец_23</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>3DjTd4tQRg</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_23</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>22</pos>
+              <x>6</x>
+              <y>2</y>
+              <pos_protocol>23</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>KVq0PktsTO</IDGroup>
+      <name>Образец_24</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>aHTWCtOn16</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_24</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>23</pos>
+              <x>7</x>
+              <y>2</y>
+              <pos_protocol>24</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>q3aZV3OF3n</IDGroup>
+      <name>Образец_25</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>7Lh5IjsAaV</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_25</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>24</pos>
+              <x>0</x>
+              <y>3</y>
+              <pos_protocol>25</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>N7ocbss6ch</IDGroup>
+      <name>Образец_26</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>qovaKNAhPG</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_26</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>25</pos>
+              <x>1</x>
+              <y>3</y>
+              <pos_protocol>26</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>7b2673B8Ry</IDGroup>
+      <name>Образец_27</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>Nt99QCf4zf</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_27</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>26</pos>
+              <x>2</x>
+              <y>3</y>
+              <pos_protocol>27</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>dfGfDMfV1N</IDGroup>
+      <name>Образец_28</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>uxtCW29R35</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_28</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>27</pos>
+              <x>3</x>
+              <y>3</y>
+              <pos_protocol>28</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>AjzFIBANam</IDGroup>
+      <name>Образец_29</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>QV6l5reocU</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_29</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>28</pos>
+              <x>4</x>
+              <y>3</y>
+              <pos_protocol>29</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>hnDIO0ekAC</IDGroup>
+      <name>Образец_30</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>xZqoBA8CCt</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_30</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>29</pos>
+              <x>5</x>
+              <y>3</y>
+              <pos_protocol>30</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>DLxrUq97kb</IDGroup>
+      <name>Образец_31</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>Ud4NHzdZmJ</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_31</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>30</pos>
+              <x>6</x>
+              <y>3</y>
+              <pos_protocol>31</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>kPhuafdUK0</IDGroup>
+      <name>Образец_32</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>0BnxNp7wMC</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_32</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>31</pos>
+              <x>7</x>
+              <y>3</y>
+              <pos_protocol>32</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>HTuT9y8suu</IDGroup>
+      <name>Образец_33</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>XF10Secnwb</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_33</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>32</pos>
+              <x>0</x>
+              <y>4</y>
+              <pos_protocol>33</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>nXe2FocFUJ</IDGroup>
+      <name>Образец_34</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>4JlZYTcBW1</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_34</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>33</pos>
+              <x>1</x>
+              <y>4</y>
+              <pos_protocol>34</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>NR0DiyJPrY</IDGroup>
+      <name>Образец_35</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>r9bfRSbze8</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_35</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>34</pos>
+              <x>2</x>
+              <y>4</y>
+              <pos_protocol>35</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>AILIaxoizf</IDGroup>
+      <name>Образец_36</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>R4xpN6I91N</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_36</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>35</pos>
+              <x>3</x>
+              <y>4</y>
+              <pos_protocol>36</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>hM4MgmI5Z4</IDGroup>
+      <name>Образец_37</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>x8BOTwnXbm</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_37</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>36</pos>
+              <x>4</x>
+              <y>4</y>
+              <pos_protocol>37</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>DuovmbnS9U</IDGroup>
+      <name>Образец_38</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>UCvRZlHOBB</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_38</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>37</pos>
+              <x>5</x>
+              <y>4</y>
+              <pos_protocol>38</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>ky2UrvHqjt</IDGroup>
+      <name>Образец_39</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>0G90eamllb</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_39</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>38</pos>
+              <x>6</x>
+              <y>4</y>
+              <pos_protocol>39</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>KOOeo5y078</IDGroup>
+      <name>Образец_40</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>aAUB7kTv9q</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_40</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>39</pos>
+              <x>7</x>
+              <y>4</y>
+              <pos_protocol>40</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>rw7htuTNgY</IDGroup>
+      <name>Образец_41</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>7EEkg4xIiF</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_41</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>40</pos>
+              <x>0</x>
+              <y>5</y>
+              <pos_protocol>41</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>N0LHzjxkGx</IDGroup>
+      <name>Образец_42</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>emSnmtSgIf</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_42</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>41</pos>
+              <x>1</x>
+              <y>5</y>
+              <pos_protocol>42</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>u45q5YS7qq</IDGroup>
+      <name>Образец_43</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>H3wZbOLczk</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_43</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>42</pos>
+              <x>2</x>
+              <y>5</y>
+              <pos_protocol>43</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>XL3bOXL4XS</IDGroup>
+      <name>Образец_44</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>o7A8BDq0Z9</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_44</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>43</pos>
+              <x>3</x>
+              <y>5</y>
+              <pos_protocol>44</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>4tmfUNqR7r</IDGroup>
+      <name>Образец_45</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>KBthGWKN9Y</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_45</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>44</pos>
+              <x>4</x>
+              <y>5</y>
+              <pos_protocol>45</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>bx0EZCKIhk</IDGroup>
+      <name>Образец_46</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>rFdkMLpkjS</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_46</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>45</pos>
+              <x>5</x>
+              <y>5</y>
+              <pos_protocol>46</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>71kn91pgH9</IDGroup>
+      <name>Образец_47</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>OnrJSBJ7Jr</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_47</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>46</pos>
+              <x>6</x>
+              <y>5</y>
+              <pos_protocol>47</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+    <item>
+      <IDGroup>hw6xbfWqfP</IDGroup>
+      <name>Образец_48</name>
+      <properties />
+      <samples>
+        <item>
+          <IDSample>xEDUOL0HC6</IDSample>
+          <IDTest>mzDknhJxJUqr</IDTest>
+          <name>Образец_48</name>
+          <properties />
+          <tubes>
+            <item>
+              <IDTube>0</IDTube>
+              <name />
+              <pos>47</pos>
+              <x>7</x>
+              <y>5</y>
+              <pos_protocol>48</pos_protocol>
+              <color>0</color>
+              <channels>
+                <item>
+                  <IDChannel>0</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>1</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>2</IDChannel>
+                  <properties />
+                </item>
+                <item>
+                  <IDChannel>3</IDChannel>
+                  <properties />
+                </item>
+              </channels>
+            </item>
+          </tubes>
+        </item>
+      </samples>
+    </item>
+  </sourceSet>
+</protocol>

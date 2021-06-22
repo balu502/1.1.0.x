@@ -1,0 +1,664 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<protocol>
+ <name>Protocol_(96)</name>
+ <barcode/>
+ <regNumber>UqYRk_080621_173356</regNumber>
+ <nameOperator>admin1</nameOperator>
+ <created>8 Июнь 2021, 17:38:28</created>
+ <status>measurements</status>
+ <activeChannels>1111</activeChannels>
+ <xsize>12</xsize>
+ <ysize>8</ysize>
+ <volumeTube>35</volumeTube>
+ <amProgramm>XPRG 0 35 0&#xd;
+XLEV 2000 15 100 0 0 2&#xd;
+XCYC 10&#xd;
+XLEV 2000 15 0 0 0 0&#xd;
+XHLD&#xd;
+XSAV DNATech_67d62a</amProgramm>
+ <properties>
+  <item>
+   <name>Comments</name>
+   <value/>
+  </item>
+ </properties>
+ <dropping>
+  <specSet>
+   <xsize>12</xsize>
+   <ysize>4</ysize>
+   <tubes>
+    <item>
+     <IDTube>0</IDTube>
+     <IDSample>uXc8ErWf4I</IDSample>
+     <name>Sample_1</name>
+     <x>0</x>
+     <y>0</y>
+    </item>
+    <item>
+     <IDTube>1</IDTube>
+     <IDSample>ldcTrWmPez</IDSample>
+     <name>Sample_2</name>
+     <x>1</x>
+     <y>0</y>
+    </item>
+    <item>
+     <IDTube>2</IDTube>
+     <IDSample>f14PDNg0o5</IDSample>
+     <name>Sample_3</name>
+     <x>2</x>
+     <y>0</y>
+    </item>
+   </tubes>
+  </specSet>
+  <reagentSet>
+   <xsize>12</xsize>
+   <ysize>4</ysize>
+   <tubes>
+    <item>
+     <IDTube>0</IDTube>
+     <IDTest>-1</IDTest>
+     <IDTemplate>0</IDTemplate>
+     <name>simple</name>
+     <x>0</x>
+     <y>0</y>
+    </item>
+   </tubes>
+  </reagentSet>
+  <tableTESTs/>
+ </dropping>
+ <tests>
+  <item>
+   <IDTest>-1</IDTest>
+   <nameTest>simple</nameTest>
+   <method>0</method>
+   <volumeTube>35</volumeTube>
+   <activeChannels>1111</activeChannels>
+   <comment>ууууууууууу</comment>
+   <Catalog/>
+   <amProgramm>XPRG 0 35 0&#xd;
+XLEV 2000 15 100 0 0 2&#xd;
+XCYC 10&#xd;
+XLEV 2000 15 0 0 0 0&#xd;
+XHLD&#xd;
+XSAV DNATech_67d62a</amProgramm>
+   <properties>
+    <item>
+     <name>criterion_PosResult</name>
+     <value>80</value>
+     <unit/>
+    </item>
+    <item>
+     <name>criterion_Validity</name>
+     <value>5</value>
+     <unit/>
+    </item>
+    <item>
+     <name>use_AFF</name>
+     <value>True</value>
+     <unit/>
+    </item>
+    <item>
+     <name>criterion_AFF</name>
+     <value>1000</value>
+     <unit/>
+    </item>
+    <item>
+     <name>criterion_AFF_MIN</name>
+     <value>10</value>
+     <unit/>
+    </item>
+    <item>
+     <name>criterion_AFF_MAX</name>
+     <value>90</value>
+     <unit/>
+    </item>
+    <item>
+     <name>sigmoid_ValidityMin</name>
+     <value>7</value>
+     <unit/>
+    </item>
+    <item>
+     <name>sigmoid_ValidityMax</name>
+     <value>20</value>
+     <unit/>
+    </item>
+    <item>
+     <name>use_Threshold</name>
+     <value>False</value>
+     <unit/>
+    </item>
+    <item>
+     <name>value_Threshold</name>
+     <value>10</value>
+     <unit/>
+    </item>
+    <item>
+     <name>exposure_Measurements</name>
+     <value>0.90 1.00 1.00 1.00 1.00</value>
+     <unit/>
+    </item>
+    <item>
+     <name>fluorofors</name>
+     <value>Fam Hex Rox Cy5 Cy5.5</value>
+     <unit/>
+    </item>
+    <item>
+     <name>FWHM_Border</name>
+     <value>30</value>
+     <unit/>
+    </item>
+    <item>
+     <name>peaks_Border</name>
+     <value>20</value>
+     <unit/>
+    </item>
+   </properties>
+   <channels>
+    <item>
+     <IDChannel>0</IDChannel>
+     <number>0</number>
+     <ffor>0</ffor>
+    </item>
+    <item>
+     <IDChannel>1</IDChannel>
+     <number>1</number>
+     <ffor>1</ffor>
+    </item>
+    <item>
+     <IDChannel>2</IDChannel>
+     <number>2</number>
+     <ffor>2</ffor>
+    </item>
+    <item>
+     <IDChannel>3</IDChannel>
+     <number>3</number>
+     <ffor>3</ffor>
+    </item>
+   </channels>
+   <templates>
+    <item>
+     <IDTube>0</IDTube>
+     <name/>
+     <color>0</color>
+     <properties/>
+     <channels>
+      <item>
+       <IDChannel>0</IDChannel>
+       <name>Fam</name>
+       <properties/>
+      </item>
+      <item>
+       <IDChannel>1</IDChannel>
+       <name>Hex</name>
+       <properties/>
+      </item>
+      <item>
+       <IDChannel>2</IDChannel>
+       <name>Rox</name>
+       <properties/>
+      </item>
+      <item>
+       <IDChannel>3</IDChannel>
+       <name>Cy5</name>
+       <properties/>
+      </item>
+     </channels>
+    </item>
+   </templates>
+  </item>
+ </tests>
+ <sourceSet>
+  <item>
+   <IDGroup>uXc8ErWf4I</IDGroup>
+   <name>Sample_1</name>
+   <properties>
+    <item>
+     <name>patient</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>sex</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>age</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>organization</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>phisician</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>date</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>note</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>additional</name>
+     <value>...</value>
+     <unit/>
+    </item>
+   </properties>
+   <samples>
+    <item>
+     <IDSample>BJje01076z</IDSample>
+     <IDTest>-1</IDTest>
+     <name>Sample_1</name>
+     <properties/>
+     <tubes>
+      <item>
+       <IDTube>0</IDTube>
+       <name/>
+       <pos>0</pos>
+       <x>0</x>
+       <y>0</y>
+       <pos_protocol>1</pos_protocol>
+       <color>0</color>
+       <channels>
+        <item>
+         <IDChannel>0</IDChannel>
+         <properties/>
+        </item>
+        <item>
+         <IDChannel>1</IDChannel>
+         <properties/>
+        </item>
+        <item>
+         <IDChannel>2</IDChannel>
+         <properties/>
+        </item>
+        <item>
+         <IDChannel>3</IDChannel>
+         <properties/>
+        </item>
+       </channels>
+      </item>
+     </tubes>
+    </item>
+   </samples>
+  </item>
+  <item>
+   <IDGroup>ldcTrWmPez</IDGroup>
+   <name>Sample_2</name>
+   <properties>
+    <item>
+     <name>patient</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>sex</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>age</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>organization</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>phisician</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>date</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>note</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>additional</name>
+     <value>...</value>
+     <unit/>
+    </item>
+   </properties>
+   <samples>
+    <item>
+     <IDSample>1Pj0eCHLgh</IDSample>
+     <IDTest>-1</IDTest>
+     <name>Sample_2</name>
+     <properties/>
+     <tubes>
+      <item>
+       <IDTube>0</IDTube>
+       <name/>
+       <pos>1</pos>
+       <x>1</x>
+       <y>0</y>
+       <pos_protocol>2</pos_protocol>
+       <color>0</color>
+       <channels>
+        <item>
+         <IDChannel>0</IDChannel>
+         <properties/>
+        </item>
+        <item>
+         <IDChannel>1</IDChannel>
+         <properties/>
+        </item>
+        <item>
+         <IDChannel>2</IDChannel>
+         <properties/>
+        </item>
+        <item>
+         <IDChannel>3</IDChannel>
+         <properties/>
+        </item>
+       </channels>
+      </item>
+     </tubes>
+    </item>
+   </samples>
+  </item>
+  <item>
+   <IDGroup>f14PDNg0o5</IDGroup>
+   <name>Sample_3</name>
+   <properties>
+    <item>
+     <name>patient</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>sex</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>age</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>organization</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>phisician</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>date</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>note</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>additional</name>
+     <value>...</value>
+     <unit/>
+    </item>
+   </properties>
+   <samples>
+    <item>
+     <IDSample>yAJWNsNEAc</IDSample>
+     <IDTest>-1</IDTest>
+     <name>Sample_3</name>
+     <properties/>
+     <tubes>
+      <item>
+       <IDTube>0</IDTube>
+       <name/>
+       <pos>2</pos>
+       <x>2</x>
+       <y>0</y>
+       <pos_protocol>3</pos_protocol>
+       <color>0</color>
+       <channels>
+        <item>
+         <IDChannel>0</IDChannel>
+         <properties/>
+        </item>
+        <item>
+         <IDChannel>1</IDChannel>
+         <properties/>
+        </item>
+        <item>
+         <IDChannel>2</IDChannel>
+         <properties/>
+        </item>
+        <item>
+         <IDChannel>3</IDChannel>
+         <properties/>
+        </item>
+       </channels>
+      </item>
+     </tubes>
+    </item>
+   </samples>
+  </item>
+ </sourceSet>
+ <device>
+  <SerialName>A5H607</SerialName>
+  <uC_Versions>OPTICS 3.13.96 20/06/16&#xd;
+AMPX 6.13 31/08/2020&#xd;
+SMOT 6.11p 12/03/2013&#xd;
+TFT 1.01.09 Mar 12 2020</uC_Versions>
+  <Type_ThermoBlock>B96A</Type_ThermoBlock>
+  <FluorDevice_MASK>1f</FluorDevice_MASK>
+  <Optical_MASK>0 24 24 0 0 0 0 0 0 0 0 0 0 centers: 100 57 150 57 200 57 251 56 301 56 351 56 401 56 451 56 501 56 552 55 602 55 652 55 100 83 150 83 200 83 251 82 301 82 351 82 401 82 451 82 501 82 552 81 602 81 652 81 101 109 151 109 201 109 251 109 301 109 351 109 402 108 452 108 502 108 552 108 602 108 652 108 101 135 151 135 201 135 251 135 301 135 351 135 402 134 452 134 502 134 552 134 602 134 652 134 101 160 151 160 201 160 251 160 301 160 351 160 402 160 452 160 502 160 552 160 602 160 652 160 101 186 151 186 201 186 251 186 301 186 351 186 402 186 452 186 502 186 552 186 602 186 652 186 102 212 152 212 202 212 252 212 302 212 352 212 402 213 452 213 502 213 552 213 602 213 652 213 102 238 152 238 202 238 252 238 302 238 352 238 402 239 452 239 502 239 552 239 602 239 652 239 </Optical_MASK>
+  <Coeff_Spectral>
+   <item>Fam	0	 1.000 0.029 0.000 0.000 0.000</item>
+   <item>Hex	1	 0.008 1.000 0.004 0.000 0.000</item>
+   <item>Rox	2	 0.000 0.004 1.000 0.032 0.000</item>
+   <item>Cy5	3	 0.000 0.000 0.005 1.000 0.013</item>
+   <item>Cy5.5	4	 0.000 0.000 0.000 0.023 1.000</item>
+  </Coeff_Spectral>
+  <Coeff_UnequalCh>
+   <item>Fam	0	 1.000 2000</item>
+   <item>Hex	1	 1.000 2000</item>
+   <item>R6G	1	 1.000 2000</item>
+   <item>Rox	2	 1.000 2000</item>
+   <item>R610	2	 1.000 2000</item>
+   <item>Cy5	3	 1.000 2000</item>
+   <item>Cy5.5	4	 1.000 2000</item>
+  </Coeff_UnequalCh>
+  <Coeff_Optic>
+   <item>0.918 0.777 0.819 0.876 0.903 0.933 0.936 0.987 0.953 0.900 0.846 0.922 0.814 0.831 0.906 1.023 1.058 1.125 1.135 1.107 1.113 1.024 1.045 0.901 0.836 0.919 0.944 1.013 1.080 1.153 1.165 1.172 1.100 1.047 0.988 0.912 0.905 0.918 0.974 1.023 1.118 1.162 1.216 1.182 1.147 1.098 1.068 0.971 0.886 0.899 0.926 0.979 1.037 1.099 1.090 1.089 0.998 1.005 0.995 0.886 0.909 0.922 0.961 1.022 1.046 1.112 1.074 1.086 1.032 1.054 1.021 0.944 0.838 0.866 0.878 0.951 0.987 1.021 1.096 1.122 0.999 1.061 1.025 0.983 0.945 0.899 0.864 0.989 1.012 1.060 1.162 1.084 1.068 1.069 0.989 1.001 </item>
+   <item>0.896 0.820 0.856 0.903 0.921 0.947 0.956 1.013 0.987 0.938 0.885 0.917 0.856 0.868 0.936 1.048 1.080 1.129 1.147 1.132 1.152 1.071 1.101 0.938 0.868 0.933 0.943 1.007 1.069 1.122 1.142 1.156 1.097 1.060 1.017 0.947 0.924 0.926 0.967 1.006 1.090 1.123 1.183 1.159 1.136 1.097 1.086 1.007 0.903 0.893 0.905 0.947 0.998 1.053 1.061 1.069 0.989 1.006 1.011 0.920 0.918 0.916 0.935 0.985 1.004 1.068 1.042 1.062 1.023 1.059 1.044 0.974 0.847 0.868 0.868 0.926 0.956 0.985 1.061 1.090 0.985 1.061 1.040 1.012 0.923 0.890 0.852 0.962 0.978 1.023 1.124 1.057 1.055 1.068 1.003 1.018 </item>
+   <item>0.894 0.786 0.834 0.903 0.934 0.967 0.972 1.022 0.998 0.943 0.908 1.036 0.831 0.837 0.914 1.039 1.082 1.140 1.158 1.144 1.158 1.062 1.094 1.017 0.836 0.897 0.919 0.994 1.064 1.117 1.137 1.158 1.089 1.059 1.023 0.996 0.885 0.899 0.946 0.993 1.083 1.119 1.177 1.157 1.132 1.099 1.094 1.036 0.863 0.862 0.886 0.934 0.985 1.040 1.056 1.064 0.989 1.010 1.023 0.962 0.880 0.888 0.920 0.982 1.005 1.066 1.047 1.070 1.033 1.068 1.056 1.037 0.815 0.841 0.862 0.926 0.952 0.984 1.050 1.075 0.976 1.068 1.064 1.079 0.944 0.871 0.842 0.942 0.964 1.004 1.100 1.030 1.024 1.057 1.068 1.153 </item>
+   <item>0.930 0.844 0.891 0.956 0.972 0.995 0.995 1.037 1.007 0.946 0.901 0.995 0.892 0.911 0.985 1.103 1.134 1.181 1.190 1.165 1.173 1.075 1.091 0.991 0.888 0.951 0.965 1.032 1.095 1.140 1.153 1.161 1.094 1.032 1.005 0.962 0.930 0.943 0.982 1.024 1.106 1.139 1.190 1.159 1.126 1.080 1.058 0.988 0.907 0.904 0.921 0.965 1.010 1.060 1.074 1.075 0.990 0.991 0.988 0.914 0.902 0.911 0.938 0.991 1.013 1.067 1.049 1.056 1.004 1.019 0.998 0.950 0.838 0.871 0.873 0.925 0.953 0.982 1.037 1.046 0.937 1.005 0.997 0.976 0.900 0.858 0.832 0.917 0.936 0.970 1.053 0.986 0.968 0.974 0.946 0.961 </item>
+   <item>0.828 0.814 0.867 0.928 0.946 0.958 0.956 0.983 0.939 0.873 0.817 0.882 0.860 0.882 0.952 1.066 1.095 1.133 1.137 1.101 1.088 0.980 0.994 0.898 0.895 0.973 0.989 1.055 1.112 1.147 1.160 1.156 1.075 1.016 0.967 0.933 0.956 0.989 1.034 1.075 1.158 1.186 1.235 1.189 1.143 1.087 1.053 0.987 0.931 0.951 0.975 1.025 1.075 1.128 1.145 1.133 1.026 1.021 1.003 0.927 0.905 0.947 0.984 1.049 1.076 1.137 1.115 1.109 1.040 1.047 1.011 0.956 0.815 0.866 0.877 0.956 0.995 1.027 1.069 1.065 0.939 1.006 1.011 1.003 0.775 0.795 0.797 0.900 0.930 0.958 1.032 0.953 0.939 0.972 0.988 1.068 </item>
+  </Coeff_Optic>
+ </device>
+ <measurements>
+  <item>
+   <channel>Fam_0</channel>
+   <fn>0</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>0</cycle_rep>
+   <optical_channel>0</optical_channel>
+   <exp_number>0</exp_number>
+   <blk_exp>130</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>900</expVal>
+   <data>&#xd;
+1479 1199 1125 1546 1700 1410 1858 1455 1221 1507 1555 1491 &#xd;
+995 857 1066 1397 1316 1293 1387 1176 1272 1200 1239 1174 &#xd;
+1571 964 983 954 1050 1742 1148 1141 1224 1181 1227 1165 &#xd;
+1051 906 963 1004 1229 1251 1457 1330 1313 1270 1179 1340 &#xd;
+1121 996 1055 1268 1078 1261 1779 1210 1207 1413 1107 1296 &#xd;
+1211 1103 1243 1141 1034 1146 1259 1247 1181 1188 1157 1205 &#xd;
+1164 34939 1084 1149 1097 1194 1283 1463 1125 1167 1254 1330 &#xd;
+1519 1372 1074 1262 1288 1407 1588 1361 1391 35993 1235 1449 </data>
+  </item>
+  <item>
+   <channel>Fam_1</channel>
+   <fn>0</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>0</cycle_rep>
+   <optical_channel>0</optical_channel>
+   <exp_number>1</exp_number>
+   <blk_exp>129</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>180</expVal>
+   <data>&#xd;
+405 348 333 419 450 391 482 400 352 411 420 407 &#xd;
+306 278 321 388 372 367 386 343 362 348 356 342 &#xd;
+424 300 304 298 317 459 337 336 353 344 353 341 &#xd;
+317 288 299 308 354 358 401 374 371 362 343 376 &#xd;
+332 306 319 362 323 361 466 350 349 391 329 367 &#xd;
+350 328 357 336 314 337 360 358 344 346 339 349 &#xd;
+341 608 324 337 327 347 365 402 332 341 359 374 &#xd;
+413 383 323 361 366 390 427 381 388 1025 356 399 </data>
+  </item>
+  <item>
+   <channel>Hex_0</channel>
+   <fn>0</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>0</cycle_rep>
+   <optical_channel>1</optical_channel>
+   <exp_number>0</exp_number>
+   <blk_exp>129</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>1000</expVal>
+   <data>&#xd;
+323 273 266 364 412 310 312 301 264 319 323 296 &#xd;
+246 234 256 303 281 275 288 262 268 260 267 265 &#xd;
+404 238 235 228 240 358 255 255 258 259 268 271 &#xd;
+253 229 237 232 264 273 295 271 278 268 265 289 &#xd;
+258 240 242 276 241 264 326 259 260 291 252 281 &#xd;
+268 257 261 265 234 243 262 256 249 253 280 266 &#xd;
+259 462 241 246 236 313 255 295 248 253 268 274 &#xd;
+311 285 241 267 266 283 305 277 292 827 269 334 </data>
+  </item>
+  <item>
+   <channel>Hex_1</channel>
+   <fn>0</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>0</cycle_rep>
+   <optical_channel>1</optical_channel>
+   <exp_number>1</exp_number>
+   <blk_exp>129</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>200</expVal>
+   <data>&#xd;
+169 158 157 177 187 166 166 164 157 168 169 163 &#xd;
+153 150 155 164 160 159 161 156 157 156 157 157 &#xd;
+185 151 151 149 152 176 155 154 155 156 157 158 &#xd;
+154 149 151 150 156 158 163 158 159 157 156 161 &#xd;
+155 152 152 159 152 157 169 155 156 162 154 160 &#xd;
+157 155 156 157 150 152 156 155 153 154 160 157 &#xd;
+156 197 152 153 151 167 155 163 154 154 158 159 &#xd;
+166 161 152 157 157 160 165 159 162 272 158 171 </data>
+  </item>
+  <item>
+   <channel>Rox_0</channel>
+   <fn>0</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>0</cycle_rep>
+   <optical_channel>2</optical_channel>
+   <exp_number>0</exp_number>
+   <blk_exp>130</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>1000</expVal>
+   <data>&#xd;
+233 198 211 250 259 279 289 221 203 219 258 243 &#xd;
+190 190 193 205 197 203 209 199 204 198 207 207 &#xd;
+254 189 183 183 191 236 193 200 199 201 204 312 &#xd;
+190 234 186 181 203 233 223 209 213 246 210 208 &#xd;
+194 187 186 206 187 204 218 195 194 207 193 210 &#xd;
+196 192 192 279 186 197 195 196 187 188 193 209 &#xd;
+198 243 186 192 188 206 192 208 187 191 200 206 &#xd;
+215 201 184 193 196 203 221 205 204 405 208 231 </data>
+  </item>
+  <item>
+   <channel>Rox_1</channel>
+   <fn>0</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>0</cycle_rep>
+   <optical_channel>2</optical_channel>
+   <exp_number>1</exp_number>
+   <blk_exp>129</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>200</expVal>
+   <data>&#xd;
+150 143 145 153 155 159 161 148 144 147 155 152 &#xd;
+141 141 142 145 143 144 145 143 144 143 145 145 &#xd;
+154 141 140 140 141 151 142 143 143 144 144 166 &#xd;
+141 150 140 139 144 150 148 145 146 153 145 145 &#xd;
+142 140 140 144 140 144 147 142 142 145 142 145 &#xd;
+142 142 142 159 140 142 142 142 141 141 142 145 &#xd;
+143 152 141 142 141 144 142 145 141 141 143 144 &#xd;
+146 144 140 142 143 144 148 144 144 185 145 150 </data>
+  </item>
+  <item>
+   <channel>Cy5_0</channel>
+   <fn>0</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>0</cycle_rep>
+   <optical_channel>3</optical_channel>
+   <exp_number>0</exp_number>
+   <blk_exp>130</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>1000</expVal>
+   <data>&#xd;
+287 314 254 297 314 294 1465 252 257 280 533 435 &#xd;
+220 235 223 247 260 263 257 241 309 222 295 256 &#xd;
+314 265 232 252 222 356 238 221 244 245 249 244 &#xd;
+241 1043 236 232 256 370 300 241 239 596 250 232 &#xd;
+227 272 262 436 229 333 257 236 230 234 235 250 &#xd;
+224 279 243 1336 248 262 285 231 235 225 224 268 &#xd;
+236 318 285 242 212 343 247 325 237 238 234 260 &#xd;
+257 231 206 223 296 264 323 256 252 1490 238 295 </data>
+  </item>
+  <item>
+   <channel>Cy5_1</channel>
+   <fn>0</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>0</cycle_rep>
+   <optical_channel>3</optical_channel>
+   <exp_number>1</exp_number>
+   <blk_exp>129</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>200</expVal>
+   <data>&#xd;
+161 167 154 163 166 162 405 154 155 160 211 191 &#xd;
+147 150 148 153 155 156 155 151 165 148 162 155 &#xd;
+166 156 150 154 147 175 151 147 152 152 153 152 &#xd;
+151 317 150 149 155 178 163 151 151 224 153 149 &#xd;
+149 158 156 192 149 170 155 151 149 150 150 153 &#xd;
+148 159 152 378 153 156 160 150 150 148 148 157 &#xd;
+151 167 161 152 146 172 153 169 151 151 150 156 &#xd;
+155 149 144 148 163 156 168 155 154 410 151 162 </data>
+  </item>
+ </measurements>
+</protocol>

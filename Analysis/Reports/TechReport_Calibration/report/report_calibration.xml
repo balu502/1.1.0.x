@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NCReport version="2.20.1" name="Untitled" type="report">
+    <options>
+        <encoding>UTF-8</encoding>
+        <language>00</language>
+        <langrole>0</langrole>
+        <orientation>portrait</orientation>
+        <pagesize width="210.000" height="297.000">A4</pagesize>
+        <topmargin>10</topmargin>
+        <bottommargin>10</bottommargin>
+        <leftmargin>15</leftmargin>
+        <rightmargin>10</rightmargin>
+        <backcolor>#ffffff</backcolor>
+        <columns>0</columns>
+        <columnspace>0</columnspace>
+        <zoneSpacing>0</zoneSpacing>
+        <zoneBreak>false</zoneBreak>
+        <varErrorAlert>false</varErrorAlert>
+        <fontname>Arial</fontname>
+        <fontsize>10</fontsize>
+        <fontstyle></fontstyle>
+        <htmlBodyStyle>{DEFAULT}</htmlBodyStyle>
+        <labelColumnCount>0</labelColumnCount>
+        <labelRowCount>0</labelRowCount>
+        <labelHGap>0</labelHGap>
+        <labelVGap>0</labelVGap>
+        <labelWidth>0</labelWidth>
+        <labelHeight>0</labelHeight>
+        <labelDirection>horizontal</labelDirection>
+    </options>
+    <datasources>
+        <datasource id="Header_Source" allowEmpty="true" enabled="true" type="list" openRole="begin" source="static" columnDelimiter="tab" listID="Header_Source"></datasource>
+        <datasource id="Logotype" allowEmpty="true" enabled="true" type="txt" openRole="begin" source="parameter" columnDelimiter="tab" encoding="UTF-8">Logotype</datasource>
+        <datasource id="Total_Result" allowEmpty="true" enabled="true" type="list" openRole="begin" source="static" columnDelimiter="tab" listID="Total_Result"></datasource>
+    </datasources>
+    <variables/>
+    <scripts/>
+    <pageheader id="PH" height="0.000"/>
+    <pagefooter id="PF" height="3.387"/>
+    <details>
+        <detail id="Titul_Data" height="68.547" datasource="Logotype">
+            <items>
+                <field id="KJ87E" zValue="0" posX="10.160" posY="12.700" width="73.660" height="5.080" resource="param" fontName="Times New Roman" fontSize="10" fontWeight="bold" alignment="129" type="txt" ftype="par">Titul_Report</field>
+                <field id="HAVRH" zValue="0" posX="10.160" posY="62.230" width="105.410" height="3.810" resource="param" fontName="Times New Roman" fontSize="10" fontWeight="bold" type="txt" ftype="par">Caption_Header</field>
+                <field id="HCWBH" zValue="0" posX="83.820" posY="12.700" width="38.100" height="5.080" resource="param" fontName="Times New Roman" fontSize="8" alignment="132" type="txt" ftype="par">Titul_ID</field>
+                <field id="BP2KO" zValue="0" posX="121.920" posY="12.700" width="12.700" height="5.080" resource="param" fontName="Times New Roman" fontSize="10" fontWeight="bold" alignment="130" type="txt" ftype="par">Titul_date</field>
+                <field id="Q29VU" zValue="0" posX="134.620" posY="12.700" width="46.990" height="5.080" resource="param" fontName="Times New Roman" fontSize="8" alignment="132" type="txt" ftype="par">Titul_date_1</field>
+                <field id="CYL3Q" zValue="0" posX="10.160" posY="17.780" width="171.450" height="5.080" resource="param" fontName="Times New Roman" fontSize="10" alignment="129" type="txt" ftype="par">Titul_next</field>
+                <field id="MH0CC" zValue="0" posX="10.160" posY="25.400" width="105.410" height="5.080" resource="param" fontName="Times New Roman" fontSize="10" alignment="129" type="txt" ftype="par">Titul_next_1</field>
+                <field id="Y270L" zValue="0" posX="10.160" posY="30.480" width="12.700" height="5.080" resource="param" fontName="Times New Roman" fontSize="10" alignment="129" type="txt" ftype="par">Titul_next_2</field>
+                <field id="0G31N" zValue="0" posX="22.860" posY="30.480" width="36.830" height="5.080" resource="param" fontName="Times New Roman" fontSize="10" alignment="132" type="txt" ftype="par">Titul_next_3</field>
+                <field id="QSXSE" zValue="0" posX="10.160" posY="52.070" width="171.450" height="5.080" resource="param" fontName="Times New Roman" fontSize="10" alignment="129" type="txt" ftype="par">Titul_next_4</field>
+                <image id="S5U6X" zValue="2" posX="151.130" posY="1.270" width="31.750" height="7.620" resource="filefromds" aspectRatio="keep" format="0" alignment="1">0</image>
+                <line id="V9K8F" zValue="3" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fromX="83.820" fromY="17.780" toX="121.920" toY="17.780"/>
+                <line id="65SZ1" zValue="3" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fromX="134.620" fromY="17.780" toX="181.610" toY="17.780"/>
+                <line id="KQUL5" zValue="3" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fromX="22.860" fromY="35.560" toX="59.690" toY="35.560"/>
+            </items>
+        </detail>
+        <detail id="Header_Data" height="13.677" hideIfBlank="true" datasource="Header_Source">
+            <items>
+                <rectangle id="WCXYV" zValue="-3" posX="10.160" posY="0.000" width="172.720" height="13.970" autoHeight="true" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fillStyle="no" fillColor="#000000" fitTo="section"/>
+                <field id="W78QM" zValue="0" posX="58.420" posY="0.000" width="29.210" height="13.970" resource="datasource" fontName="Times New Roman" fontSize="10" alignment="132" wordbreak="true" type="txt" ftype="ds">1</field>
+                <field id="EBHRW" zValue="0" posX="87.630" posY="0.000" width="57.150" height="13.970" resource="datasource" fontName="Times New Roman" fontSize="10" alignment="132" wordbreak="true" type="txt" ftype="ds">2</field>
+                <field id="MFY73" zValue="0" posX="144.780" posY="0.000" width="38.100" height="13.970" resource="datasource" fontName="Times New Roman" fontSize="10" alignment="132" wordbreak="true" type="txt" ftype="ds">3</field>
+                <field id="F8TD7" zValue="1" posX="10.160" posY="0.000" width="48.260" height="13.970" resource="datasource" fontName="Times New Roman" fontSize="10" alignment="132" wordbreak="true" type="txt" ftype="ds">0</field>
+                <line id="6UAJG" zValue="4" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fromX="58.420" fromY="0.000" toX="58.420" toY="13.970"/>
+                <line id="U18DA" zValue="5" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fromX="87.630" fromY="0.000" toX="87.630" toY="13.970"/>
+                <line id="5IJGK" zValue="6" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fromX="144.780" fromY="0.000" toX="144.780" toY="13.970"/>
+            </items>
+        </detail>
+        <detail id="Result_Data" height="8.890" datasource="Total_Result">
+            <items>
+                <rectangle id="XV8UG" zValue="0" posX="10.160" posY="0.000" width="172.720" height="8.890" autoHeight="true" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fillStyle="no" fillColor="#000000" fitTo="section"/>
+                <field id="BEPHM" zValue="1" posX="10.160" posY="0.000" width="86.360" height="8.890" resource="datasource" fontName="Times New Roman" fontSize="9" alignment="132" type="txt" ftype="ds">0</field>
+                <field id="QCUQ0" zValue="2" posX="96.520" posY="0.000" width="26.670" height="8.890" resource="datasource" fontName="Times New Roman" fontSize="9" alignment="132" wordbreak="true" type="txt" ftype="ds">1</field>
+                <field id="ZPQZ1" zValue="3" posX="123.190" posY="0.000" width="24.130" height="8.890" resource="datasource" fontName="Times New Roman" fontSize="9" alignment="132" type="txt" ftype="ds">2</field>
+                <line id="U57RF" zValue="4" autoHeight="true" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fitTo="section" fromX="96.520" fromY="0.000" toX="96.520" toY="8.890"/>
+                <line id="KEU5Y" zValue="5" autoHeight="true" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fitTo="section" fromX="123.190" fromY="0.000" toX="123.190" toY="8.890"/>
+                <field id="NBJNQ" zValue="6" posX="147.320" posY="0.000" width="35.560" height="8.890" resource="datasource" fontName="Times New Roman" fontSize="9" alignment="132" type="txt" ftype="ds">3</field>
+                <line id="48HR9" zValue="7" autoHeight="true" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fitTo="section" fromX="147.320" fromY="0.000" toX="147.320" toY="8.890"/>
+            </items>
+            <groups>
+                <group id="Group_Data" groupExp="" resetVariables="" reprintHeader="false" startsOnNewPage="false">
+                    <groupheader id="GH_Group_Data" height="11.235">
+                        <field id="7O33W" zValue="0" posX="11.430" posY="5.080" width="105.410" height="3.810" resource="param" fontName="Times New Roman" fontSize="10" fontWeight="bold" type="txt" ftype="par">Caption_TechTable</field>
+                    </groupheader>
+                    <groupfooter id="GF_Group_Data" height="4.000"/>
+                </group>
+            </groups>
+        </detail>
+        <detail id="Conclusion" height="88.477" datasource="Logotype">
+            <items>
+                <field id="5ZY4H" zValue="0" posX="10.160" posY="8.890" width="171.450" height="3.810" resource="param" fontName="Times New Roman" fontSize="10" wordbreak="true" type="txt" ftype="par">Conclusion_data_0</field>
+                <line id="SUIYK" zValue="3" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fromX="41.910" fromY="39.370" toX="85.090" toY="39.370"/>
+                <field id="2P4GZ" zValue="4" posX="10.160" posY="2.540" width="41.910" height="3.810" resource="param" fontName="Times New Roman" fontSize="10" fontWeight="bold" type="txt" ftype="par">Caption_Conclusion</field>
+                <field id="KVQ41" zValue="5" posX="10.160" posY="13.970" width="29.210" height="3.810" resource="param" fontName="Times New Roman" fontSize="10" type="txt" ftype="par">Conclusion_data_1</field>
+                <field id="NSLMF" zValue="6" posX="39.370" posY="13.970" width="36.830" height="3.810" resource="param" fontName="Times New Roman" fontSize="10" alignment="36" type="txt" ftype="par">Conclusion_data_2</field>
+                <field id="2RW6O" zValue="7" posX="10.160" posY="21.590" width="171.450" height="3.810" resource="param" fontName="Times New Roman" fontSize="10" type="txt" ftype="par">Conclusion_data_3</field>
+                <field id="LF6ET" zValue="8" posX="10.160" posY="35.560" width="30.480" height="3.810" resource="param" fontName="Times New Roman" fontSize="10" type="txt" ftype="par">Conclusion_data_4</field>
+                <line id="LVGHW" zValue="10" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fromX="39.370" fromY="17.780" toX="76.200" toY="17.780"/>
+            </items>
+        </detail>
+    </details>
+</NCReport>

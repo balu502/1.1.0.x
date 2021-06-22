@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/Run96.ico</file>
+        <file>images/anchor.ico</file>
+        <file>translations/dock_ru.qm</file>
+        <file>images/flat/arrow_flat.png</file>
+        <file>images/flat/arrow_left_flat.png</file>
+        <file>images/flat/arrow_right_flat.png</file>
+        <file>images/flat/close_flat.png</file>
+        <file>images/flat/lock_flat.png</file>
+        <file>images/flat/unlock_flat.png</file>
+        <file>translations/dock_en.qm</file>
+        <file>images/flat/color_fill_24.png</file>
+        <file>images/flat/numerate.png</file>
+    </qresource>
+</RCC>

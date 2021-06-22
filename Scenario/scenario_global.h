@@ -1,0 +1,12 @@
+#ifndef SCENARIO_GLOBAL_H
+#define SCENARIO_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(SCENARIO_LIBRARY)
+#  define SCENARIOSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define SCENARIOSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // SCENARIO_GLOBAL_H

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<PLATEs Limit="10">
+  <item barcode="4800000004" created="21 Июнь 2021, 17:22:59">
+    <default_TPeaks>52.09 89.19 48.58 90.71 61.26</default_TPeaks>
+    <default_Amplitude>538 380 560 197 228</default_Amplitude>
+    <run>
+      <item start="21 Июнь 2021, 17:22:59" Device="A5H607">
+        <TPeaks>52.09 89.19 48.58 90.71 61.26</TPeaks>
+        <Amplitude>538 380 560 197 228</Amplitude>
+      </item>
+      <item start="21 Июнь 2021, 17:22:59" Device="A5H607">
+        <TPeaks>52.09 89.19 48.58 90.71 61.26</TPeaks>
+        <Amplitude>538 380 560 197 228</Amplitude>
+      </item>
+      <item start="21 Июнь 2021, 17:22:59" Device="A5H607">
+        <TPeaks>52.09 89.19 48.58 90.71 61.26</TPeaks>
+        <Amplitude>538 380 560 197 228</Amplitude>
+      </item>
+      <item start="21 Июнь 2021, 17:22:59" Device="A5H607">
+        <TPeaks>52.09 89.19 48.58 90.71 61.26</TPeaks>
+        <Amplitude>538 380 560 197 228</Amplitude>
+      </item>
+      <item start="21 Июнь 2021, 17:22:59" Device="A5H607">
+        <TPeaks>52.09 89.19 48.58 90.71 61.26</TPeaks>
+        <Amplitude>538 380 560 197 228</Amplitude>
+      </item>
+      <item start="21 Июнь 2021, 17:22:59" Device="A5H607">
+        <TPeaks>52.09 89.19 48.58 90.71 61.26</TPeaks>
+        <Amplitude>538 380 560 197 228</Amplitude>
+      </item>
+      <item start="21 Июнь 2021, 17:22:59" Device="A5H607">
+        <TPeaks>52.09 89.19 48.58 90.71 61.26</TPeaks>
+        <Amplitude>538 380 560 197 228</Amplitude>
+      </item>
+      <item start="21 Июнь 2021, 17:22:59" Device="A5H607">
+        <TPeaks>52.09 89.19 48.58 90.71 61.26</TPeaks>
+        <Amplitude>538 380 560 197 228</Amplitude>
+      </item>
+      <item start="21 Июнь 2021, 17:22:59" Device="A5H607">
+        <TPeaks>52.09 89.19 48.58 90.71 61.26</TPeaks>
+        <Amplitude>538 380 560 197 228</Amplitude>
+      </item>
+      <item start="21 Июнь 2021, 17:22:59" Device="A5H607">
+        <TPeaks>52.09 89.19 48.58 90.71 61.26</TPeaks>
+        <Amplitude>538 380 560 197 228</Amplitude>
+      </item>
+    </run>
+  </item>
+</PLATEs>

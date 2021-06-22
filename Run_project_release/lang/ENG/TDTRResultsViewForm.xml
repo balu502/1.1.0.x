@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+
+<TDTRResultsViewForm Name="DTRResultsViewForm">
+	<Caption>DTRResultsViewForm</Caption>
+	<Font>
+		<Name>Tahoma</Name>
+	</Font>
+<TYoComboBox Name="cbFormID">
+	<ItemKeyField>ID</ItemKeyField>
+	<ItemTextField>Name</ItemTextField></TYoComboBox>
+<TPageControl Name="Book">
+</TPageControl>
+<TYoDBTree Name="vtTree">
+	<Header>
+		<Font>
+			<Name>Tahoma</Name>
+		</Font>
+		<FixedAreaConstraints>
+		</FixedAreaConstraints>
+	</Header>
+	<PopupMenu>PopupMenu</PopupMenu>
+	<DBTreeOptions>
+		<KeyFieldName>ID</KeyFieldName>
+		<ParentFieldName>ParentID</ParentFieldName>
+	</DBTreeOptions>
+	<DBOptions>
+		<DataSource>DataSource</DataSource>
+	</DBOptions></TYoDBTree>
+<TDataSource Name="DataSource">
+	<DataSet>dsTree</DataSet></TDataSource>
+<TClientDataSet Name="dsTree">
+</TClientDataSet>
+<TPopupMenu Name="PopupMenu">
+	<Items>
+<TMenuItem Name="N5">
+	<Action>acShowSampleReport</Action>
+</TMenuItem>
+<TMenuItem Name="N3">
+	<Action>acSettings</Action>
+</TMenuItem>
+	</Items>
+<TMenuItem Name="N1">
+	<Action>acCopy</Action>
+</TMenuItem></TPopupMenu>
+<TActionList Name="ActionList">
+<TAction Name="acCopy">
+	<Caption>Copy</Caption>
+</TAction>
+<TAction Name="acShowSampleReport">
+	<Caption>Show sample report...</Caption>
+</TAction>
+<TAction Name="acSettings">
+	<Caption>Settings...</Caption>
+</TAction>
+<TAction Name="acExpand">
+	<Caption>Expand all</Caption>
+</TAction>
+<TAction Name="acCollapse">
+	<Caption>Collapse all</Caption>
+</TAction>
+<TAction Name="acDisable">
+	<Caption>Enable test</Caption>
+</TAction></TActionList>
+<TApplicationEvents Name="App"></TApplicationEvents>
+<TTimer Name="Timer"></TTimer></TDTRResultsViewForm>

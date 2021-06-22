@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/cy5.png</file>
+        <file>images/cy55.png</file>
+        <file>images/disable.png</file>
+        <file>images/fam.png</file>
+        <file>images/hex.png</file>
+        <file>images/rox.png</file>
+        <file>images/images.png</file>
+        <file>images/copy_clipboard.png</file>
+        <file>images/copy_excel.png</file>
+        <file>translations/analyser_quantity_ru.qm</file>
+        <file>images/open_new.png</file>
+        <file>images/null.png</file>
+        <file>translations/analyser_quantity_en.qm</file>
+        <file>images/open_flat.png</file>
+    </qresource>
+</RCC>

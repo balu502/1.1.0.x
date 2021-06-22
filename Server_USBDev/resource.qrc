@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/Run96.bmp</file>
+        <file>image/Analysis.png</file>
+        <file>image/usb_32.png</file>
+        <file>translations/serverUSBDev_en.qm</file>
+        <file>translations/serverUSBDev_ru.qm</file>
+    </qresource>
+</RCC>

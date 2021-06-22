@@ -1,0 +1,12 @@
+#ifndef COMMON_PRO_GLOBAL_H
+#define COMMON_PRO_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(COMMON_PRO_LIBRARY)
+#  define COMMON_PROSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define COMMON_PROSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // COMMON_PRO_GLOBAL_H

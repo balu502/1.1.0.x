@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NCReport version="2.20.1" name="Untitled" type="report">
+    <options>
+        <encoding>UTF-8</encoding>
+        <language>00</language>
+        <langrole>0</langrole>
+        <orientation>portrait</orientation>
+        <pagesize width="210.000" height="297.000">A4</pagesize>
+        <topmargin>10</topmargin>
+        <bottommargin>10</bottommargin>
+        <leftmargin>15</leftmargin>
+        <rightmargin>10</rightmargin>
+        <backcolor>#ffffff</backcolor>
+        <columns>0</columns>
+        <columnspace>0</columnspace>
+        <zoneSpacing>0</zoneSpacing>
+        <zoneBreak>false</zoneBreak>
+        <varErrorAlert>false</varErrorAlert>
+        <fontname>Arial</fontname>
+        <fontsize>10</fontsize>
+        <fontstyle></fontstyle>
+        <htmlBodyStyle>{DEFAULT}</htmlBodyStyle>
+        <labelColumnCount>0</labelColumnCount>
+        <labelRowCount>0</labelRowCount>
+        <labelHGap>0</labelHGap>
+        <labelVGap>0</labelVGap>
+        <labelWidth>0</labelWidth>
+        <labelHeight>0</labelHeight>
+        <labelDirection>horizontal</labelDirection>
+    </options>
+    <datasources>
+        <datasource id="Logotype" allowEmpty="true" enabled="true" type="txt" openRole="begin" source="parameter" columnDelimiter="tab" encoding="UTF-8">Logotype</datasource>
+        <datasource id="Header_Source" allowEmpty="true" enabled="true" type="list" openRole="begin" source="static" columnDelimiter="tab" listID="Header_Source"></datasource>
+        <datasource id="Titul_Source" allowEmpty="true" enabled="true" type="txt" openRole="begin" source="static" columnDelimiter="tab" encoding="UTF-8"></datasource>
+        <datasource id="Charts" allowEmpty="true" enabled="true" type="txt" openRole="begin" source="parameter" columnDelimiter="semicolon" hasColumnHeader="true" encoding="UTF-8">Charts</datasource>
+        <datasource id="Header_PCR" allowEmpty="true" enabled="true" type="txt" openRole="begin" source="parameter" columnDelimiter="tab" encoding="UTF-8">Header_PCR</datasource>
+        <datasource id="p1" allowEmpty="true" enabled="true" type="txt" openRole="begin" source="parameter" columnDelimiter="semicolon" hasColumnHeader="true" encoding="UTF-8">p1</datasource>
+    </datasources>
+    <variables/>
+    <scripts/>
+    <pageheader id="PH" height="0.000"/>
+    <pagefooter id="PF" height="4.022"/>
+    <details>
+        <detail id="Titul_Data" height="18.200" datasource="Logotype">
+            <items>
+                <field id="KJ87E" zValue="0" posX="40.640" posY="2.540" width="83.820" height="5.080" resource="param" fontName="Times New Roman" fontSize="14" fontWeight="bold" alignment="36" type="txt" ftype="par">Titul_Report</field>
+                <field id="5C1MA" zValue="1" posX="1.270" posY="11.430" width="38.100" height="3.810" resource="param" fontName="Times New Roman" fontSize="10" fontWeight="bold" alignment="1" type="txt" ftype="par">CurrentDate</field>
+                <image id="S5U6X" zValue="2" posX="151.130" posY="8.890" width="31.750" height="7.620" resource="filefromds" aspectRatio="keep" format="0" alignment="1">0</image>
+            </items>
+        </detail>
+        <detail id="Header_Data" height="3.600" hideIfBlank="true" datasource="Header_Source">
+            <items>
+                <field id="W78QM" zValue="0" posX="72.390" posY="0.000" width="109.220" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="8" alignment="1" type="txt" ftype="ds">1</field>
+                <field id="F8TD7" zValue="1" posX="25.400" posY="0.000" width="44.450" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="8" alignment="1" type="txt" ftype="ds">0</field>
+            </items>
+        </detail>
+        <detail id="Cp_Data" height="4.020" hideIfBlank="true" datasource="p1">
+            <items>
+                <rectangle id="8IQTL" zValue="0" posX="0.000" posY="0.000" width="185.420" height="3.810" autoHeight="true" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fillStyle="solid" fillColor="#ffffff" fitTo="section" dynFillColor="$D{color}" dynLineColor="$D{color}"/>
+                <field id="9SDRD" zValue="1" posX="17.780" posY="0.000" width="80.010" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="9" alignment="1" type="txt" ftype="ds">p1.name</field>
+                <field id="FGOLH" zValue="2" posX="100.330" posY="0.000" width="12.700" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="9" fontWeight="bold" alignment="132" type="txt" ftype="ds">p1.Cp</field>
+                <field id="HTPFP" zValue="3" posX="162.560" posY="0.000" width="21.590" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="9" fontWeight="bold" alignment="132" type="txt" ftype="ds">p1.MC</field>
+                <field id="01JNL" zValue="4" posX="114.300" posY="0.000" width="12.700" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="9" alignment="132" type="txt" ftype="ds">p1.Ct</field>
+                <field id="Z8LEE" zValue="5" posX="0.000" posY="0.000" width="7.620" height="3.810" resource="datasource" autoHeight="true" fontName="Times New Roman" fontSize="8" alignment="129" type="txt" ftype="ds">p1.pos</field>
+                <field id="WNDMW" zValue="6" posX="128.270" posY="0.000" width="15.240" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="9" alignment="132" type="txt" ftype="ds">p1.S</field>
+                <field id="EVOB1" zValue="7" posX="144.780" posY="0.000" width="7.620" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="9" alignment="132" type="txt" ftype="ds">p1.aFF</field>
+                <field id="8MEMJ" zValue="8" posX="153.670" posY="0.000" width="6.350" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="9" alignment="132" type="txt" ftype="ds">p1.K+</field>
+                <image id="EV5UB" zValue="9" posX="10.160" posY="0.000" width="3.810" height="3.810" resource="filefromds" aspectRatio="keep" format="0" alignment="1">channel</image>
+                <line id="SUIYK" zValue="10" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fromX="161.078" fromY="0.000" toX="161.290" toY="3.810"/>
+            </items>
+            <groups>
+                <group id="header" groupExp="" resetVariables="" reprintHeader="false" startsOnNewPage="false">
+                    <groupheader id="GH_header" height="18.200" hideIfBlank="true">
+                        <field id="N9ITP" zValue="0" posX="0.000" posY="3.810" width="54.610" height="5.080" resource="datasource" fontName="Times New Roman" fontSize="12" fontWeight="bold" alignment="1" type="txt" ftype="ds">Header_PCR.col0</field>
+                        <field id="5ZY4H" zValue="1" posX="0.000" posY="13.970" width="7.620" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="8" fontWeight="bold" alignment="1" type="txt" ftype="ds">Header_PCR.col1</field>
+                        <field id="SUIYK" zValue="2" posX="10.160" posY="13.970" width="5.080" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="8" fontWeight="bold" alignment="36" type="txt" ftype="ds">Header_PCR.col2</field>
+                        <field id="HTPFP" zValue="3" posX="17.780" posY="13.970" width="26.670" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="8" fontWeight="bold" alignment="1" type="txt" ftype="ds">Header_PCR.col3</field>
+                        <field id="N7Q30" zValue="4" posX="100.330" posY="13.970" width="12.700" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="8" fontWeight="bold" alignment="36" type="txt" ftype="ds">Header_PCR.col4</field>
+                        <field id="ROE94" zValue="5" posX="114.300" posY="13.970" width="12.700" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="8" fontWeight="bold" alignment="36" type="txt" ftype="ds">Header_PCR.col5</field>
+                        <field id="YXWQN" zValue="6" posX="128.270" posY="13.970" width="15.240" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="8" fontWeight="bold" alignment="36" type="txt" ftype="ds">Header_PCR.col6</field>
+                        <field id="BIBIX" zValue="7" posX="144.780" posY="13.970" width="7.620" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="8" fontWeight="bold" alignment="36" type="txt" ftype="ds">Header_PCR.col7</field>
+                        <field id="4ZJ7U" zValue="8" posX="153.670" posY="13.970" width="7.620" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="8" fontWeight="bold" alignment="36" type="txt" ftype="ds">Header_PCR.col8</field>
+                        <field id="5ZY4H" zValue="9" posX="162.560" posY="13.970" width="21.590" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="8" fontWeight="bold" alignment="36" type="txt" ftype="ds">Header_PCR.col9</field>
+                    </groupheader>
+                </group>
+                <group id="group" groupExp="p1.group" resetVariables="" reprintHeader="false" startsOnNewPage="false">
+                    <groupheader id="GH_group" height="4.000" hideIfBlank="true">
+                        <rectangle id="YE2WG" zValue="0" posX="0.000" posY="0.000" width="185.420" height="3.810" lineColor="#ffffe1" lineStyle="solid" lineWidth="0.100" fillStyle="solid" fillColor="#ffffe1"/>
+                        <field id="BLPM4" zValue="1" posX="36.830" posY="0.000" width="130.810" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="10" fontWeight="bold" alignment="1" type="txt" ftype="ds">p1.group</field>
+                    </groupheader>
+                    <groupfooter id="GF_group" height="3.387" hideIfBlank="true"/>
+                </group>
+            </groups>
+        </detail>
+        <detail id="Charts_Data" height="50.160" hideIfBlank="true" datasource="Charts">
+            <items>
+                <image id="5ZY4H" zValue="0" posX="2.540" posY="2.540" width="92.710" height="45.720" resource="datasource" autoHeight="true" aspectRatio="expand" format="1" alignment="1">chart</image>
+            </items>
+        </detail>
+    </details>
+</NCReport>

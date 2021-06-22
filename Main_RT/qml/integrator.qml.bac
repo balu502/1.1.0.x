@@ -1,0 +1,166 @@
+import QtQuick 2.0
+import QtQuick.Controls 1.0
+
+
+Rectangle
+{
+      id:   root
+   color:   "white"
+   width:   200
+   height:  200
+
+   property string addrList: "http://192.168.0.167:8080/kisprotocol.php"
+   property string addrProt: "http://10.1.1.48/GetProtocolXML?AccountGUID=7c890b798cd940999a4bbd529aa1e6e0"
+
+   /*Connections
+   {
+       target: Web
+       onGet_WebProtocol:  print("balu")
+   }*/
+
+
+   Rectangle
+   {
+        id: control_status
+        x:  5
+        y:  5
+        color:  "red"
+        width:   10
+        height:  10
+   }   
+
+   function subscribe()
+   {
+       var str = "subscribe:consumer data requested:consumer data available:consumer status requested:consumer cancel requested"
+       var encodedString = Qt.btoa(str);
+       var Str = "event:subscribe:client:rtapp:data:" + encodedString;
+
+       //console.log(str);
+       //console.log(encodedString);
+
+       return Str;
+   }
+
+
+   function getListProtocols(){
+
+       var doc = new XMLHttpRequest();
+
+       doc.onreadystatechange = function() {
+
+           if (doc.readyState === XMLHttpRequest.DONE) {
+
+               if (doc.responseXML === null){
+                   console.log("Unable to get responce");
+//                            lsTimer.running = false;
+                   return;
+               }
+
+               var a = doc.responseXML.documentElement;
+               var e = doc.getResponseHeader("Etag");
+
+               if( iClient.md5List !== e ){
+                   iClient.md5List = e;
+
+                   var sjoined = [];
+
+                   for (var ii = 0; ii < a.childNodes.length; ++ii) {
+
+                       if( a.childNodes[ii].nodeName === "li"
+                       &&  a.childNodes[ii].attributes !== null ){
+
+                           sjoined.push( [ a.childNodes[ii].attributes['idtask'].value
+                                          ,a.childNodes[ii].attributes['barcode'].value
+                                          ,a.childNodes[ii].attributes['name'].value
+                                          ].join(';')
+                                        );
+                       }
+                   }
+
+                   Web.get_ListProtocols( sjoined.join(':'), ':' );
+//                   console.log( "================"+e );
+               }
+           }
+       }
+
+      doc.open("GET", root.addrList);
+      doc.send();
+   }
+
+   function getWebProtocol(id_protocol)
+   {
+       var doc      = new XMLHttpRequest();
+       var addrScr  = root.addrProt + "&ProtocolID="+id_protocol
+
+       doc.onreadystatechange = function() {
+
+           if (doc.readyState === XMLHttpRequest.DONE) {
+
+               if (doc.responseXML === null){
+                   console.log("Unable to get responce");
+                   return;
+               }
+
+               var str = doc.responseText;
+               Web.get_Protocol( str );
+           }
+       }
+
+       doc.open("GET", addrScr);
+       doc.send()
+   }
+
+   function send_ProtocolToWeb(id_protocol, data_protocol)
+   {
+       print(id_protocol);
+
+       var str = ":data:" + Qt.btoa(data_protocol);
+       var Str = "event:amplif data available:subject:" + id_protocol + str;
+       //socket.sendTextMessage(Str);
+   }
+
+   function set_StateSocket(state)
+   {
+       //socket.active = state;
+       lsTimer.running = state;
+   }
+
+   /*Item{
+       id: web
+       property bool connection_Server: false
+       function get_ListProtocols(str,sep){ console.log("get_ListProtocols") }
+       function get_Protocol(str){ console.log("get_Protocol") }
+   }*/
+
+
+   Item{
+       id: iClient
+       property string  md5List: ""
+
+       Timer{
+           id:lsTimer
+           interval: 5000; running: false; repeat: true
+
+           onTriggered: { getListProtocols(); }
+       }
+   }
+
+   Button
+   {
+        id: button
+        anchors.centerIn: parent
+        text:   "Connect..."
+        width:  parent.width/2;
+        height: parent.height/2;
+
+        onClicked:
+        {
+//            socket.active = !socket.active;
+            lsTimer.running = !lsTimer.running;
+        }
+   }
+
+
+}
+
+

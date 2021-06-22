@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/general_idea.png</file>
+        <file>translations/saver_ru.qm</file>
+        <file>translations/saver_en.qm</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,2682 @@
+﻿<?xml version="1.0" encoding="windows-1251"?>
+
+<protocol>
+	<name>Protocol_(96)</name>
+	<barcode/>
+	<regNumber>Bz8pW_090621_182248</regNumber>
+	<nameOperator>admin1</nameOperator>
+	<created>15-4-21_17:30:13</created>
+	<status>reanalysis</status>
+	<activeChannels>1111</activeChannels>
+	<xsize>12</xsize>
+	<ysize>8</ysize>
+	<volumeTube>35</volumeTube>
+	<amProgramm>XPRG 0 35 0
+XLEV 8000 30 0 0 0 0
+XLEV 9400 300 0 0 0 0
+XCYC 1
+XLEV 9400 30 0 0 0 0
+XLEV 6400 15 0 0 0 1
+XCYC 5
+XLEV 9400 10 0 0 0 0
+XLEV 6400 15 0 0 0 1
+XCYC 45
+XLEV 9400 5 0 0 0 0
+XCYC 1
+XLEV 1000 10 0 0 0 0
+XHLD
+XSAV DnaTech-64</amProgramm>
+	<properties>
+		<item>
+			<name>Users_Catalog</name>
+			<value>P:/Обмен/Артемова/Протокол_4133.rt</value>
+		</item>
+		<item>
+			<name>Comments</name>
+			<value/>
+		</item>
+	</properties>
+	<tests>
+		<item xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+			<IDTest>nDMXdVsbwnIu</IDTest>
+			<nameTest>Фемофлор 16</nameTest>
+			<method>131072</method>
+			<volumeTube>35</volumeTube>
+			<ControlTubesCount>0</ControlTubesCount>
+			<PosControlCount>0</PosControlCount>
+			<NegControlCount>0</NegControlCount>
+			<Catalog>ДНК-Технология\Исследование биоценозов\Фемофлор</Catalog>
+			<activeChannels>111</activeChannels>
+			<amProgramm>
+XPRG 0 35 0
+XLEV 8000 30 0 0 0 0
+XLEV 9400 90 0 0 0 0
+XCYC 1
+XLEV 9400 30 0 0 0 0
+XLEV 6400 15 0 0 0 1
+XCYC 5
+XLEV 9400 10 0 0 0 0
+XLEV 6400 15 0 0 0 1
+XCYC 45
+XLEV 9400 5 0 0 0 0
+XCYC 1
+XLEV 1000 10 0 0 0 0
+XHLD
+XSAV DnaTech-64
+ </amProgramm>
+			<DTReport>
+				<FormID>Femoflor</FormID>
+				<ProgName/>
+				<ReportSettings>
+					<value>
+						<TAnalisys>
+							<DisplayName>Фемофлор 16</DisplayName>
+							<DeviceParams><![CDATA[
+XPRG 0 35 0
+XLEV 8000 30 0 0 0 0
+XLEV 9400 90 0 0 0 0
+XCYC 1
+XLEV 9400 30 0 0 0 0
+XLEV 6400 15 0 0 0 1
+XCYC 5
+XLEV 9400 10 0 0 0 0
+XLEV 6400 15 0 0 0 1
+XCYC 45
+XLEV 9400 5 0 0 0 0
+XCYC 1
+XLEV 1000 10 0 0 0 0
+XHLD
+XSAV DnaTech-64
+]]></DeviceParams>
+							<FormID>Femoflor</FormID>
+							<MinimalFormVersion>1.61</MinimalFormVersion>
+							<ServiceVersion>1.0</ServiceVersion>
+							<ControlTubesCount>0</ControlTubesCount>
+							<PosControlCount>0</PosControlCount>
+							<NegControlCount>0</NegControlCount>
+							<ID>nDMXdVsbwnIu</ID>
+							<VolumeTube>35</VolumeTube>
+							<NextID>0</NextID>
+							<Settings>
+								<TDTRParameter Name="NormingType">
+									<Name>NormingType</Name>
+									<Value>c_SVMO</Value>
+								</TDTRParameter>
+								<TDTRParameter Name="ValidatingFactor">
+									<Name>ValidatingFactor</Name>
+									<Value>2.4</Value>
+								</TDTRParameter>
+								<TDTRParameter Name="MaxLg">
+									<Name>MaxLg</Name>
+									<Value>9</Value>
+								</TDTRParameter>
+								<TDTRParameter Name="MinLg">
+									<Name>MinLg</Name>
+									<Value>3</Value>
+								</TDTRParameter>
+								<TDTRParameter Name="Delta">
+									<Name>Delta</Name>
+									<Value>15</Value>
+								</TDTRParameter>
+								<TDTRParameter Name="ShowLegend">
+									<Name>ShowLegend</Name>
+									<Value>0</Value>
+								</TDTRParameter>
+								<TDTRParameter Name="Conclusion">
+									<Name>Conclusion</Name>
+									<Value>ConcFemo</Value>
+								</TDTRParameter>
+							</Settings>
+							<Method>131072</Method>
+							<SystemParams>&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?&gt;
+&lt;properties&gt;
+ &lt;item&gt;
+  &lt;name&gt;criterion_PosResult&lt;/name&gt;
+  &lt;value&gt;80&lt;/value&gt;
+  &lt;unit/&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+  &lt;name&gt;criterion_Validity&lt;/name&gt;
+  &lt;value&gt;9&lt;/value&gt;
+  &lt;unit/&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+  &lt;name&gt;use_AFF&lt;/name&gt;
+  &lt;value&gt;True&lt;/value&gt;
+  &lt;unit/&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+  &lt;name&gt;criterion_AFF&lt;/name&gt;
+  &lt;value&gt;1000&lt;/value&gt;
+  &lt;unit/&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+  &lt;name&gt;criterion_AFF_MIN&lt;/name&gt;
+  &lt;value&gt;10&lt;/value&gt;
+  &lt;unit/&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+  &lt;name&gt;criterion_AFF_MAX&lt;/name&gt;
+  &lt;value&gt;90&lt;/value&gt;
+  &lt;unit/&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+  &lt;name&gt;sigmoid_ValidityMin&lt;/name&gt;
+  &lt;value&gt;7&lt;/value&gt;
+  &lt;unit/&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+  &lt;name&gt;sigmoid_ValidityMax&lt;/name&gt;
+  &lt;value&gt;20&lt;/value&gt;
+  &lt;unit/&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+  &lt;name&gt;use_Threshold&lt;/name&gt;
+  &lt;value&gt;False&lt;/value&gt;
+  &lt;unit/&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+  &lt;name&gt;value_Threshold&lt;/name&gt;
+  &lt;value&gt;10&lt;/value&gt;
+  &lt;unit/&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+  &lt;name&gt;exposure_Measurements&lt;/name&gt;
+  &lt;value&gt;1.00 1.00 1.00 1.00 1.00&lt;/value&gt;
+  &lt;unit/&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+  &lt;name&gt;fluorofors&lt;/name&gt;
+  &lt;value&gt;Fam Hex Rox Cy5 Cy5.5&lt;/value&gt;
+  &lt;unit/&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+  &lt;name&gt;FWHM_Border&lt;/name&gt;
+  &lt;value&gt;30&lt;/value&gt;
+  &lt;unit/&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+  &lt;name&gt;peaks_Border&lt;/name&gt;
+  &lt;value&gt;20&lt;/value&gt;
+  &lt;unit/&gt;
+ &lt;/item&gt;
+&lt;/properties&gt;
+</SystemParams>
+							<TTube>
+								<TubeName>Tube 1</TubeName>
+								<ID>0</ID>
+								<TubeIndex>1</TubeIndex>
+								<TPCRTest>
+									<DisplayName>ОБМ</DisplayName>
+									<ProgName>TBM</ProgName>
+									<ID>0</ID>
+									<Settings>
+										<TDTRParameter Name="Ni">
+											<Name>Ni</Name>
+											<Value>44.8</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Ei">
+											<Name>Ei</Name>
+											<Value>3.4</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="MinRes">
+											<Name>MinRes</Name>
+											<Value>3</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Rel">
+											<Name>Rel</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Abs">
+											<Name>Abs</Name>
+											<Value>True</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Qual">
+											<Name>Qual</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="OrgType">
+											<Name>OrgType</Name>
+											<Value>Default</Value>
+											<DictName>OrgTypes</DictName>
+										</TDTRParameter>
+									</Settings>
+									<ChannelID>0</ChannelID>
+								</TPCRTest>
+							</TTube>
+							<TTube>
+								<TubeName>Tube 2</TubeName>
+								<ID>1</ID>
+								<TubeIndex>2</TubeIndex>
+								<TubeColor>$0000FF80</TubeColor>
+								<TPCRTest>
+									<DisplayName>Lactobacillus_spp.</DisplayName>
+									<ProgName>Lact</ProgName>
+									<ID>0</ID>
+									<Settings>
+										<TDTRParameter Name="Ni">
+											<Name>Ni</Name>
+											<Value>45.3</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Ei">
+											<Name>Ei</Name>
+											<Value>3.4</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="MinRes">
+											<Name>MinRes</Name>
+											<Value>3</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Rel">
+											<Name>Rel</Name>
+											<Value>True</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Abs">
+											<Name>Abs</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Qual">
+											<Name>Qual</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="OrgType">
+											<Name>OrgType</Name>
+											<Value>Norm</Value>
+											<DictName>OrgTypes</DictName>
+										</TDTRParameter>
+									</Settings>
+									<ChannelID>0</ChannelID>
+								</TPCRTest>
+								<TPCRTest>
+									<DisplayName>ВК</DisplayName>
+									<ProgName>IC</ProgName>
+									<ID>1</ID>
+									<Settings>
+										<TDTRParameter Name="Ni">
+											<Name>Ni</Name>
+											<Value>45</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Ei">
+											<Name>Ei</Name>
+											<Value>3.4</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="MinRes">
+											<Name>MinRes</Name>
+											<Value>0</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Rel">
+											<Name>Rel</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Abs">
+											<Name>Abs</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Qual">
+											<Name>Qual</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="OrgType">
+											<Name>OrgType</Name>
+											<DictName>OrgTypes</DictName>
+										</TDTRParameter>
+									</Settings>
+									<ChannelID>1</ChannelID>
+								</TPCRTest>
+							</TTube>
+							<TTube>
+								<TubeName>Tube 3</TubeName>
+								<ID>2</ID>
+								<TubeIndex>3</TubeIndex>
+								<TubeColor>$000080FF</TubeColor>
+								<TPCRTest>
+									<DisplayName>сем.Enterobacteriaceae</DisplayName>
+									<ID>0</ID>
+									<Settings>
+										<TDTRParameter Name="Ni">
+											<Name>Ni</Name>
+											<Value>45</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Ei">
+											<Name>Ei</Name>
+											<Value>3.4</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="MinRes">
+											<Name>MinRes</Name>
+											<Value>3</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Rel">
+											<Name>Rel</Name>
+											<Value>True</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Abs">
+											<Name>Abs</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Qual">
+											<Name>Qual</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="OrgType">
+											<Name>OrgType</Name>
+											<Value>FUnaero</Value>
+											<DictName>OrgTypes</DictName>
+										</TDTRParameter>
+									</Settings>
+									<ChannelID>0</ChannelID>
+								</TPCRTest>
+							</TTube>
+							<TTube>
+								<TubeName>Tube 4</TubeName>
+								<ID>3</ID>
+								<TubeIndex>4</TubeIndex>
+								<TubeColor>$000080FF</TubeColor>
+								<TPCRTest>
+									<DisplayName>Streptococcus_spp.</DisplayName>
+									<ID>0</ID>
+									<Settings>
+										<TDTRParameter Name="Ni">
+											<Name>Ni</Name>
+											<Value>45</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Ei">
+											<Name>Ei</Name>
+											<Value>3.4</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="MinRes">
+											<Name>MinRes</Name>
+											<Value>3</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Rel">
+											<Name>Rel</Name>
+											<Value>True</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Abs">
+											<Name>Abs</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Qual">
+											<Name>Qual</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="OrgType">
+											<Name>OrgType</Name>
+											<Value>FUnaero</Value>
+											<DictName>OrgTypes</DictName>
+										</TDTRParameter>
+									</Settings>
+									<ChannelID>0</ChannelID>
+								</TPCRTest>
+							</TTube>
+							<TTube>
+								<TubeName>Tube 5</TubeName>
+								<ID>4</ID>
+								<TubeIndex>5</TubeIndex>
+								<TubeColor>$000080FF</TubeColor>
+								<TPCRTest>
+									<DisplayName>Staphylococcus_spp.</DisplayName>
+									<ID>0</ID>
+									<Settings>
+										<TDTRParameter Name="Ni">
+											<Name>Ni</Name>
+											<Value>45</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Ei">
+											<Name>Ei</Name>
+											<Value>3.4</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="MinRes">
+											<Name>MinRes</Name>
+											<Value>3</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Rel">
+											<Name>Rel</Name>
+											<Value>True</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Abs">
+											<Name>Abs</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Qual">
+											<Name>Qual</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="OrgType">
+											<Name>OrgType</Name>
+											<Value>FUnaero</Value>
+											<DictName>OrgTypes</DictName>
+										</TDTRParameter>
+									</Settings>
+									<ChannelID>0</ChannelID>
+								</TPCRTest>
+								<TPCRTest>
+									<DisplayName>Маркер</DisplayName>
+									<ProgName>Marker</ProgName>
+									<ID>1</ID>
+									<Settings>
+										<TDTRParameter Name="Ni">
+											<Name>Ni</Name>
+											<Value>45</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Ei">
+											<Name>Ei</Name>
+											<Value>3.4</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="MinRes">
+											<Name>MinRes</Name>
+											<Value>0</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Rel">
+											<Name>Rel</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Abs">
+											<Name>Abs</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Qual">
+											<Name>Qual</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="OrgType">
+											<Name>OrgType</Name>
+											<DictName>OrgTypes</DictName>
+										</TDTRParameter>
+									</Settings>
+									<ChannelID>2</ChannelID>
+								</TPCRTest>
+							</TTube>
+							<TTube>
+								<TubeName>Tube 6</TubeName>
+								<ID>5</ID>
+								<TubeIndex>6</TubeIndex>
+								<TubeColor>$000000FF</TubeColor>
+								<TPCRTest>
+									<DisplayName>Gardnerella_vaginalis+Prevotella_bivia+Porphyromonas_spp.</DisplayName>
+									<ID>0</ID>
+									<Settings>
+										<TDTRParameter Name="Ni">
+											<Name>Ni</Name>
+											<Value>45</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Ei">
+											<Name>Ei</Name>
+											<Value>3.4</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="MinRes">
+											<Name>MinRes</Name>
+											<Value>3</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Rel">
+											<Name>Rel</Name>
+											<Value>True</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Abs">
+											<Name>Abs</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Qual">
+											<Name>Qual</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="OrgType">
+											<Name>OrgType</Name>
+											<Value>OUnaero</Value>
+											<DictName>OrgTypes</DictName>
+										</TDTRParameter>
+									</Settings>
+									<ChannelID>0</ChannelID>
+								</TPCRTest>
+							</TTube>
+							<TTube>
+								<TubeName>Tube 7</TubeName>
+								<ID>6</ID>
+								<TubeIndex>7</TubeIndex>
+								<TubeColor>$000000FF</TubeColor>
+								<TPCRTest>
+									<DisplayName>Eubacterium_spp.</DisplayName>
+									<ID>0</ID>
+									<Settings>
+										<TDTRParameter Name="Ni">
+											<Name>Ni</Name>
+											<Value>45</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Ei">
+											<Name>Ei</Name>
+											<Value>3.4</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="MinRes">
+											<Name>MinRes</Name>
+											<Value>3</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Rel">
+											<Name>Rel</Name>
+											<Value>True</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Abs">
+											<Name>Abs</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Qual">
+											<Name>Qual</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="OrgType">
+											<Name>OrgType</Name>
+											<Value>OUnaero</Value>
+											<DictName>OrgTypes</DictName>
+										</TDTRParameter>
+									</Settings>
+									<ChannelID>0</ChannelID>
+								</TPCRTest>
+							</TTube>
+							<TTube>
+								<TubeName>Tube 8</TubeName>
+								<ID>7</ID>
+								<TubeIndex>8</TubeIndex>
+								<TubeColor>$000000FF</TubeColor>
+								<TPCRTest>
+									<DisplayName>Sneathia_spp.+Leptotrichia_spp.+Fusobacterium_spp.</DisplayName>
+									<ID>0</ID>
+									<Settings>
+										<TDTRParameter Name="Ni">
+											<Name>Ni</Name>
+											<Value>45</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Ei">
+											<Name>Ei</Name>
+											<Value>3.4</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="MinRes">
+											<Name>MinRes</Name>
+											<Value>3</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Rel">
+											<Name>Rel</Name>
+											<Value>True</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Abs">
+											<Name>Abs</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Qual">
+											<Name>Qual</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="OrgType">
+											<Name>OrgType</Name>
+											<Value>OUnaero</Value>
+											<DictName>OrgTypes</DictName>
+										</TDTRParameter>
+									</Settings>
+									<ChannelID>0</ChannelID>
+								</TPCRTest>
+							</TTube>
+							<TTube>
+								<TubeName>Tube 9</TubeName>
+								<ID>8</ID>
+								<TubeIndex>9</TubeIndex>
+								<TubeColor>$000000FF</TubeColor>
+								<TPCRTest>
+									<DisplayName>Megasphaera_spp.+Veillonella_spp.+Dialister_spp.</DisplayName>
+									<ID>0</ID>
+									<Settings>
+										<TDTRParameter Name="Ni">
+											<Name>Ni</Name>
+											<Value>45</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Ei">
+											<Name>Ei</Name>
+											<Value>3.4</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="MinRes">
+											<Name>MinRes</Name>
+											<Value>3</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Rel">
+											<Name>Rel</Name>
+											<Value>True</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Abs">
+											<Name>Abs</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Qual">
+											<Name>Qual</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="OrgType">
+											<Name>OrgType</Name>
+											<Value>OUnaero</Value>
+											<DictName>OrgTypes</DictName>
+										</TDTRParameter>
+									</Settings>
+									<ChannelID>0</ChannelID>
+								</TPCRTest>
+							</TTube>
+							<TTube>
+								<TubeName>Tube 10</TubeName>
+								<ID>9</ID>
+								<TubeIndex>10</TubeIndex>
+								<TubeColor>$000000FF</TubeColor>
+								<TPCRTest>
+									<DisplayName>Lachnobacterium_spp.+Clostridium_spp.</DisplayName>
+									<ID>0</ID>
+									<Settings>
+										<TDTRParameter Name="Ni">
+											<Name>Ni</Name>
+											<Value>45</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Ei">
+											<Name>Ei</Name>
+											<Value>3.4</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="MinRes">
+											<Name>MinRes</Name>
+											<Value>3</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Rel">
+											<Name>Rel</Name>
+											<Value>True</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Abs">
+											<Name>Abs</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Qual">
+											<Name>Qual</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="OrgType">
+											<Name>OrgType</Name>
+											<Value>OUnaero</Value>
+											<DictName>OrgTypes</DictName>
+										</TDTRParameter>
+									</Settings>
+									<ChannelID>0</ChannelID>
+								</TPCRTest>
+							</TTube>
+							<TTube>
+								<TubeName>Tube 11</TubeName>
+								<ID>10</ID>
+								<TubeIndex>11</TubeIndex>
+								<TubeColor>$000000FF</TubeColor>
+								<TPCRTest>
+									<DisplayName>Mobiluncus_spp.+Corynebacterium_spp.</DisplayName>
+									<ID>0</ID>
+									<Settings>
+										<TDTRParameter Name="Ni">
+											<Name>Ni</Name>
+											<Value>45</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Ei">
+											<Name>Ei</Name>
+											<Value>3.4</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="MinRes">
+											<Name>MinRes</Name>
+											<Value>3</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Rel">
+											<Name>Rel</Name>
+											<Value>True</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Abs">
+											<Name>Abs</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Qual">
+											<Name>Qual</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="OrgType">
+											<Name>OrgType</Name>
+											<Value>OUnaero</Value>
+											<DictName>OrgTypes</DictName>
+										</TDTRParameter>
+									</Settings>
+									<ChannelID>0</ChannelID>
+								</TPCRTest>
+							</TTube>
+							<TTube>
+								<TubeName>Tube 12</TubeName>
+								<ID>11</ID>
+								<TubeIndex>12</TubeIndex>
+								<TubeColor>$000000FF</TubeColor>
+								<TPCRTest>
+									<DisplayName>Peptostreptococcus_spp.</DisplayName>
+									<ID>0</ID>
+									<Settings>
+										<TDTRParameter Name="Ni">
+											<Name>Ni</Name>
+											<Value>45</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Ei">
+											<Name>Ei</Name>
+											<Value>3.4</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="MinRes">
+											<Name>MinRes</Name>
+											<Value>3</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Rel">
+											<Name>Rel</Name>
+											<Value>True</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Abs">
+											<Name>Abs</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Qual">
+											<Name>Qual</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="OrgType">
+											<Name>OrgType</Name>
+											<Value>OUnaero</Value>
+											<DictName>OrgTypes</DictName>
+										</TDTRParameter>
+									</Settings>
+									<ChannelID>0</ChannelID>
+								</TPCRTest>
+							</TTube>
+							<TTube>
+								<TubeName>Tube 13</TubeName>
+								<ID>12</ID>
+								<TubeIndex>13</TubeIndex>
+								<TubeColor>$000000FF</TubeColor>
+								<TPCRTest>
+									<DisplayName>Atopobium_vaginae</DisplayName>
+									<ID>0</ID>
+									<Settings>
+										<TDTRParameter Name="Ni">
+											<Name>Ni</Name>
+											<Value>45</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Ei">
+											<Name>Ei</Name>
+											<Value>3.4</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="MinRes">
+											<Name>MinRes</Name>
+											<Value>0</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Rel">
+											<Name>Rel</Name>
+											<Value>True</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Abs">
+											<Name>Abs</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Qual">
+											<Name>Qual</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="OrgType">
+											<Name>OrgType</Name>
+											<Value>OUnaero</Value>
+											<DictName>OrgTypes</DictName>
+										</TDTRParameter>
+									</Settings>
+									<ChannelID>0</ChannelID>
+								</TPCRTest>
+							</TTube>
+							<TTube>
+								<TubeName>Tube 14</TubeName>
+								<ID>13</ID>
+								<TubeIndex>14</TubeIndex>
+								<TubeColor>$00FF00FF</TubeColor>
+								<TPCRTest>
+									<DisplayName>Mycoplasma_hominis</DisplayName>
+									<ID>0</ID>
+									<Settings>
+										<TDTRParameter Name="Ni">
+											<Name>Ni</Name>
+											<Value>45</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Ei">
+											<Name>Ei</Name>
+											<Value>3.4</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="MinRes">
+											<Name>MinRes</Name>
+											<Value>0</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Rel">
+											<Name>Rel</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Abs">
+											<Name>Abs</Name>
+											<Value>True</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Qual">
+											<Name>Qual</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="OrgType">
+											<Name>OrgType</Name>
+											<Value>Mico</Value>
+											<DictName>OrgTypes</DictName>
+										</TDTRParameter>
+									</Settings>
+									<ChannelID>0</ChannelID>
+								</TPCRTest>
+								<TPCRTest>
+									<DisplayName>Mycoplasma_genitalium</DisplayName>
+									<ID>1</ID>
+									<Settings>
+										<TDTRParameter Name="Ni">
+											<Name>Ni</Name>
+											<Value>45</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Ei">
+											<Name>Ei</Name>
+											<Value>3.4</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="MinRes">
+											<Name>MinRes</Name>
+											<Value>0</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Rel">
+											<Name>Rel</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Abs">
+											<Name>Abs</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Qual">
+											<Name>Qual</Name>
+											<Value>True</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="OrgType">
+											<Name>OrgType</Name>
+											<Value>Pat</Value>
+											<DictName>OrgTypes</DictName>
+										</TDTRParameter>
+									</Settings>
+									<ChannelID>1</ChannelID>
+								</TPCRTest>
+							</TTube>
+							<TTube>
+								<TubeName>Tube 15</TubeName>
+								<ID>14</ID>
+								<TubeIndex>15</TubeIndex>
+								<TubeColor>$00FF00FF</TubeColor>
+								<TPCRTest>
+									<DisplayName>Ureaplasma_(urealyticum_+_parvum)</DisplayName>
+									<ID>0</ID>
+									<Settings>
+										<TDTRParameter Name="Ni">
+											<Name>Ni</Name>
+											<Value>45</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Ei">
+											<Name>Ei</Name>
+											<Value>3.4</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="MinRes">
+											<Name>MinRes</Name>
+											<Value>0</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Rel">
+											<Name>Rel</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Abs">
+											<Name>Abs</Name>
+											<Value>True</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Qual">
+											<Name>Qual</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="OrgType">
+											<Name>OrgType</Name>
+											<Value>Mico</Value>
+											<DictName>OrgTypes</DictName>
+										</TDTRParameter>
+									</Settings>
+									<ChannelID>0</ChannelID>
+								</TPCRTest>
+							</TTube>
+							<TTube>
+								<TubeName>Tube 16</TubeName>
+								<ID>15</ID>
+								<TubeIndex>16</TubeIndex>
+								<TubeColor>$00FF0000</TubeColor>
+								<TPCRTest>
+									<DisplayName>Candida_spp.</DisplayName>
+									<ID>0</ID>
+									<Settings>
+										<TDTRParameter Name="Ni">
+											<Name>Ni</Name>
+											<Value>45</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Ei">
+											<Name>Ei</Name>
+											<Value>3.4</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="MinRes">
+											<Name>MinRes</Name>
+											<Value>3</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Rel">
+											<Name>Rel</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Abs">
+											<Name>Abs</Name>
+											<Value>True</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Qual">
+											<Name>Qual</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="OrgType">
+											<Name>OrgType</Name>
+											<Value>Fung</Value>
+											<DictName>OrgTypes</DictName>
+										</TDTRParameter>
+									</Settings>
+									<ChannelID>0</ChannelID>
+								</TPCRTest>
+								<TPCRTest>
+									<DisplayName>КВМ</DisplayName>
+									<ProgName>MTC</ProgName>
+									<ID>1</ID>
+									<Settings>
+										<TDTRParameter Name="Ni">
+											<Name>Ni</Name>
+											<Value>45</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Ei">
+											<Name>Ei</Name>
+											<Value>3.4</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="MinRes">
+											<Name>MinRes</Name>
+											<Value>3</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Rel">
+											<Name>Rel</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Abs">
+											<Name>Abs</Name>
+											<Value>True</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Qual">
+											<Name>Qual</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="OrgType">
+											<Name>OrgType</Name>
+											<Value>Default</Value>
+											<DictName>OrgTypes</DictName>
+										</TDTRParameter>
+									</Settings>
+									<ChannelID>1</ChannelID>
+								</TPCRTest>
+								<TPCRTest>
+									<DisplayName>Маркер</DisplayName>
+									<ProgName>Marker</ProgName>
+									<ID>2</ID>
+									<Settings>
+										<TDTRParameter Name="Ni">
+											<Name>Ni</Name>
+											<Value>45</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Ei">
+											<Name>Ei</Name>
+											<Value>3.4</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="MinRes">
+											<Name>MinRes</Name>
+											<Value>0</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Rel">
+											<Name>Rel</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Abs">
+											<Name>Abs</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Qual">
+											<Name>Qual</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="OrgType">
+											<Name>OrgType</Name>
+											<DictName>OrgTypes</DictName>
+										</TDTRParameter>
+									</Settings>
+									<ChannelID>2</ChannelID>
+								</TPCRTest>
+							</TTube>
+							<TSettingDictionary Name="OrgTypes">
+								<Name>OrgTypes</Name>
+								<Source>OrgTypesDict</Source>
+								<TDictItem Name="C_TYPE_DEFAULT">
+									<Name>C_TYPE_DEFAULT</Name>
+									<ID>9C571597B65A409DBD966742DA1CDB25</ID>
+									<Position>0</Position>
+									<ProgName>Default</ProgName>
+									<Settings>
+										<TDTRParameter Name="rptPos">
+											<Name>rptPos</Name>
+											<Value>1</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="CalcSVMO">
+											<Name>CalcSVMO</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="QualColor">
+											<Name>QualColor</Name>
+											<TDTRParameter Name="Color1">
+												<Name>Color1</Name>
+												<Value>16777215</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color2">
+												<Name>Color2</Name>
+												<Value>255</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color3">
+												<Name>Color3</Name>
+												<Value>15790320</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color4">
+												<Name>Color4</Name>
+												<Value>15790320</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold1">
+												<Name>Treshold1</Name>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold2">
+												<Name>Treshold2</Name>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold3">
+												<Name>Treshold3</Name>
+											</TDTRParameter>
+										</TDTRParameter>
+										<TDTRParameter Name="RelColor">
+											<Name>RelColor</Name>
+											<TDTRParameter Name="Color1">
+												<Name>Color1</Name>
+												<Value>16777215</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color2">
+												<Name>Color2</Name>
+												<Value>8388608</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color3">
+												<Name>Color3</Name>
+												<Value>16711680</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color4">
+												<Name>Color4</Name>
+												<Value>16711680</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold1">
+												<Name>Treshold1</Name>
+												<Value>-2</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold2">
+												<Name>Treshold2</Name>
+												<Value>-1</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold3">
+												<Name>Treshold3</Name>
+												<Value>-0.22</Value>
+											</TDTRParameter>
+										</TDTRParameter>
+										<TDTRParameter Name="AbsColor">
+											<Name>AbsColor</Name>
+											<TDTRParameter Name="Color1">
+												<Name>Color1</Name>
+												<Value>16777215</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color2">
+												<Name>Color2</Name>
+												<Value>255</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color3">
+												<Name>Color3</Name>
+												<Value>255</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color4">
+												<Name>Color4</Name>
+												<Value>15790320</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold1">
+												<Name>Treshold1</Name>
+												<Value>5</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold2">
+												<Name>Treshold2</Name>
+												<Value>5</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold3">
+												<Name>Treshold3</Name>
+											</TDTRParameter>
+										</TDTRParameter>
+									</Settings>
+								</TDictItem>
+								<TDictItem Name="C_TYPE_NORM">
+									<Name>C_TYPE_NORM</Name>
+									<ID>84E70D6C5FB5431FABCEC3C466BE3002</ID>
+									<Position>0</Position>
+									<ProgName>Norm</ProgName>
+									<Settings>
+										<TDTRParameter Name="rptPos">
+											<Name>rptPos</Name>
+											<Value>2</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="CalcSVMO">
+											<Name>CalcSVMO</Name>
+											<Value>True</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="QualColor">
+											<Name>QualColor</Name>
+											<TDTRParameter Name="Color1">
+												<Name>Color1</Name>
+												<Value>16777215</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color2">
+												<Name>Color2</Name>
+												<Value>255</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color3">
+												<Name>Color3</Name>
+												<Value>15790320</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color4">
+												<Name>Color4</Name>
+												<Value>15790320</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold1">
+												<Name>Treshold1</Name>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold2">
+												<Name>Treshold2</Name>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold3">
+												<Name>Treshold3</Name>
+											</TDTRParameter>
+										</TDTRParameter>
+										<TDTRParameter Name="RelColor">
+											<Name>RelColor</Name>
+											<TDTRParameter Name="Color1">
+												<Name>Color1</Name>
+												<Value>255</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color2">
+												<Name>Color2</Name>
+												<Value>65535</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color3">
+												<Name>Color3</Name>
+												<Value>4259584</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color4">
+												<Name>Color4</Name>
+												<Value>4259584</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold1">
+												<Name>Treshold1</Name>
+												<Value>-0.7</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold2">
+												<Name>Treshold2</Name>
+												<Value>-0.1</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold3">
+												<Name>Treshold3</Name>
+												<Value>-0.1</Value>
+											</TDTRParameter>
+										</TDTRParameter>
+										<TDTRParameter Name="AbsColor">
+											<Name>AbsColor</Name>
+											<TDTRParameter Name="Color1">
+												<Name>Color1</Name>
+												<Value>16777215</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color2">
+												<Name>Color2</Name>
+												<Value>255</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color3">
+												<Name>Color3</Name>
+												<Value>255</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color4">
+												<Name>Color4</Name>
+												<Value>15790320</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold1">
+												<Name>Treshold1</Name>
+												<Value>5</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold2">
+												<Name>Treshold2</Name>
+												<Value>5</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold3">
+												<Name>Treshold3</Name>
+											</TDTRParameter>
+										</TDTRParameter>
+									</Settings>
+								</TDictItem>
+								<TDictItem Name="C_TYPE_F_UNAERO">
+									<Name>C_TYPE_F_UNAERO</Name>
+									<ID>CC5B3EE233564404A472B8154D2D57B6</ID>
+									<Position>0</Position>
+									<ProgName>FUnaero</ProgName>
+									<Settings>
+										<TDTRParameter Name="rptPos">
+											<Name>rptPos</Name>
+											<Value>3</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="CalcSVMO">
+											<Name>CalcSVMO</Name>
+											<Value>True</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="QualColor">
+											<Name>QualColor</Name>
+											<TDTRParameter Name="Color1">
+												<Name>Color1</Name>
+												<Value>16777215</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color2">
+												<Name>Color2</Name>
+												<Value>255</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color3">
+												<Name>Color3</Name>
+												<Value>15790320</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color4">
+												<Name>Color4</Name>
+												<Value>15790320</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold1">
+												<Name>Treshold1</Name>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold2">
+												<Name>Treshold2</Name>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold3">
+												<Name>Treshold3</Name>
+											</TDTRParameter>
+										</TDTRParameter>
+										<TDTRParameter Name="RelColor">
+											<Name>RelColor</Name>
+											<TDTRParameter Name="Color1">
+												<Name>Color1</Name>
+												<Value>16777215</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color2">
+												<Name>Color2</Name>
+												<Value>65535</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color3">
+												<Name>Color3</Name>
+												<Value>255</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color4">
+												<Name>Color4</Name>
+												<Value>255</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold1">
+												<Name>Treshold1</Name>
+												<Value>-2</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold2">
+												<Name>Treshold2</Name>
+												<Value>-1</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold3">
+												<Name>Treshold3</Name>
+												<Value>-1</Value>
+											</TDTRParameter>
+										</TDTRParameter>
+										<TDTRParameter Name="AbsColor">
+											<Name>AbsColor</Name>
+											<TDTRParameter Name="Color1">
+												<Name>Color1</Name>
+												<Value>16777215</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color2">
+												<Name>Color2</Name>
+												<Value>255</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color3">
+												<Name>Color3</Name>
+												<Value>255</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color4">
+												<Name>Color4</Name>
+												<Value>15790320</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold1">
+												<Name>Treshold1</Name>
+												<Value>5</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold2">
+												<Name>Treshold2</Name>
+												<Value>5</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold3">
+												<Name>Treshold3</Name>
+											</TDTRParameter>
+										</TDTRParameter>
+									</Settings>
+								</TDictItem>
+								<TDictItem Name="C_TYPE_O_UNAERO">
+									<Name>C_TYPE_O_UNAERO</Name>
+									<ID>1FA26DAA5BB34E3FADDAA91C2C89EFCC</ID>
+									<Position>0</Position>
+									<ProgName>OUnaero</ProgName>
+									<Settings>
+										<TDTRParameter Name="rptPos">
+											<Name>rptPos</Name>
+											<Value>4</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="CalcSVMO">
+											<Name>CalcSVMO</Name>
+											<Value>True</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="QualColor">
+											<Name>QualColor</Name>
+											<TDTRParameter Name="Color1">
+												<Name>Color1</Name>
+												<Value>16777215</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color2">
+												<Name>Color2</Name>
+												<Value>255</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color3">
+												<Name>Color3</Name>
+												<Value>15790320</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color4">
+												<Name>Color4</Name>
+												<Value>15790320</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold1">
+												<Name>Treshold1</Name>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold2">
+												<Name>Treshold2</Name>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold3">
+												<Name>Treshold3</Name>
+											</TDTRParameter>
+										</TDTRParameter>
+										<TDTRParameter Name="RelColor">
+											<Name>RelColor</Name>
+											<TDTRParameter Name="Color1">
+												<Name>Color1</Name>
+												<Value>16777215</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color2">
+												<Name>Color2</Name>
+												<Value>65535</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color3">
+												<Name>Color3</Name>
+												<Value>255</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color4">
+												<Name>Color4</Name>
+												<Value>255</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold1">
+												<Name>Treshold1</Name>
+												<Value>-2</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold2">
+												<Name>Treshold2</Name>
+												<Value>-1</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold3">
+												<Name>Treshold3</Name>
+												<Value>-1</Value>
+											</TDTRParameter>
+										</TDTRParameter>
+										<TDTRParameter Name="AbsColor">
+											<Name>AbsColor</Name>
+											<TDTRParameter Name="Color1">
+												<Name>Color1</Name>
+												<Value>16777215</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color2">
+												<Name>Color2</Name>
+												<Value>255</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color3">
+												<Name>Color3</Name>
+												<Value>255</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color4">
+												<Name>Color4</Name>
+												<Value>15790320</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold1">
+												<Name>Treshold1</Name>
+												<Value>5</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold2">
+												<Name>Treshold2</Name>
+												<Value>5</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold3">
+												<Name>Treshold3</Name>
+											</TDTRParameter>
+										</TDTRParameter>
+									</Settings>
+								</TDictItem>
+								<TDictItem Name="C_TYPE_FUNGUS">
+									<Name>C_TYPE_FUNGUS</Name>
+									<ID>972B0AC874144C288AD4C0D0C0071AED</ID>
+									<Position>0</Position>
+									<ProgName>Fung</ProgName>
+									<Settings>
+										<TDTRParameter Name="rptPos">
+											<Name>rptPos</Name>
+											<Value>5</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="CalcSVMO">
+											<Name>CalcSVMO</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="QualColor">
+											<Name>QualColor</Name>
+											<TDTRParameter Name="Color1">
+												<Name>Color1</Name>
+												<Value>16777215</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color2">
+												<Name>Color2</Name>
+												<Value>255</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color3">
+												<Name>Color3</Name>
+												<Value>15790320</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color4">
+												<Name>Color4</Name>
+												<Value>15790320</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold1">
+												<Name>Treshold1</Name>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold2">
+												<Name>Treshold2</Name>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold3">
+												<Name>Treshold3</Name>
+											</TDTRParameter>
+										</TDTRParameter>
+										<TDTRParameter Name="RelColor">
+											<Name>RelColor</Name>
+											<TDTRParameter Name="Color1">
+												<Name>Color1</Name>
+												<Value>16777215</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color2">
+												<Name>Color2</Name>
+												<Value>16711680</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color3">
+												<Name>Color3</Name>
+												<Value>16711680</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color4">
+												<Name>Color4</Name>
+												<Value>16711680</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold1">
+												<Name>Treshold1</Name>
+												<Value>-2</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold2">
+												<Name>Treshold2</Name>
+												<Value>-1</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold3">
+												<Name>Treshold3</Name>
+												<Value>-1</Value>
+											</TDTRParameter>
+										</TDTRParameter>
+										<TDTRParameter Name="AbsColor">
+											<Name>AbsColor</Name>
+											<TDTRParameter Name="Color1">
+												<Name>Color1</Name>
+												<Value>16777215</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color2">
+												<Name>Color2</Name>
+												<Value>65535</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color3">
+												<Name>Color3</Name>
+												<Value>255</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color4">
+												<Name>Color4</Name>
+												<Value>15790320</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold1">
+												<Name>Treshold1</Name>
+												<Value>3</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold2">
+												<Name>Treshold2</Name>
+												<Value>4</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold3">
+												<Name>Treshold3</Name>
+											</TDTRParameter>
+										</TDTRParameter>
+									</Settings>
+								</TDictItem>
+								<TDictItem Name="C_TYPE_MICOPLASMA">
+									<Name>C_TYPE_MICOPLASMA</Name>
+									<ID>4B6F9ECB2DA342A189080E3E3FDDECE3</ID>
+									<Position>0</Position>
+									<ProgName>Mico</ProgName>
+									<Settings>
+										<TDTRParameter Name="rptPos">
+											<Name>rptPos</Name>
+											<Value>6</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="CalcSVMO">
+											<Name>CalcSVMO</Name>
+											<Value>True</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="QualColor">
+											<Name>QualColor</Name>
+											<TDTRParameter Name="Color1">
+												<Name>Color1</Name>
+												<Value>16777215</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color2">
+												<Name>Color2</Name>
+												<Value>255</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color3">
+												<Name>Color3</Name>
+												<Value>15790320</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color4">
+												<Name>Color4</Name>
+												<Value>15790320</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold1">
+												<Name>Treshold1</Name>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold2">
+												<Name>Treshold2</Name>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold3">
+												<Name>Treshold3</Name>
+											</TDTRParameter>
+										</TDTRParameter>
+										<TDTRParameter Name="RelColor">
+											<Name>RelColor</Name>
+											<TDTRParameter Name="Color1">
+												<Name>Color1</Name>
+												<Value>16777215</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color2">
+												<Name>Color2</Name>
+												<Value>16711680</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color3">
+												<Name>Color3</Name>
+												<Value>16711680</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color4">
+												<Name>Color4</Name>
+												<Value>16711680</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold1">
+												<Name>Treshold1</Name>
+												<Value>-2</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold2">
+												<Name>Treshold2</Name>
+												<Value>-1</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold3">
+												<Name>Treshold3</Name>
+												<Value>-1</Value>
+											</TDTRParameter>
+										</TDTRParameter>
+										<TDTRParameter Name="AbsColor">
+											<Name>AbsColor</Name>
+											<TDTRParameter Name="Color1">
+												<Name>Color1</Name>
+												<Value>16777215</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color2">
+												<Name>Color2</Name>
+												<Value>65535</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color3">
+												<Name>Color3</Name>
+												<Value>255</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color4">
+												<Name>Color4</Name>
+												<Value>15790320</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold1">
+												<Name>Treshold1</Name>
+												<Value>0</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold2">
+												<Name>Treshold2</Name>
+												<Value>4</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold3">
+												<Name>Treshold3</Name>
+											</TDTRParameter>
+										</TDTRParameter>
+									</Settings>
+								</TDictItem>
+								<TDictItem Name="C_TYPE_PATHOGEN">
+									<Name>C_TYPE_PATHOGEN</Name>
+									<ID>E188E618438D42838633021B64E39BC0</ID>
+									<Position>0</Position>
+									<ProgName>Pat</ProgName>
+									<Settings>
+										<TDTRParameter Name="rptPos">
+											<Name>rptPos</Name>
+											<Value>7</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="CalcSVMO">
+											<Name>CalcSVMO</Name>
+											<Value>False</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="QualColor">
+											<Name>QualColor</Name>
+											<TDTRParameter Name="Color1">
+												<Name>Color1</Name>
+												<Value>16777215</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color2">
+												<Name>Color2</Name>
+												<Value>255</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color3">
+												<Name>Color3</Name>
+												<Value>15790320</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color4">
+												<Name>Color4</Name>
+												<Value>15790320</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold1">
+												<Name>Treshold1</Name>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold2">
+												<Name>Treshold2</Name>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold3">
+												<Name>Treshold3</Name>
+											</TDTRParameter>
+										</TDTRParameter>
+										<TDTRParameter Name="RelColor">
+											<Name>RelColor</Name>
+											<TDTRParameter Name="Color1">
+												<Name>Color1</Name>
+												<Value>16777215</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color2">
+												<Name>Color2</Name>
+												<Value>255</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color3">
+												<Name>Color3</Name>
+												<Value>255</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color4">
+												<Name>Color4</Name>
+												<Value>255</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold1">
+												<Name>Treshold1</Name>
+												<Value>-4</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold2">
+												<Name>Treshold2</Name>
+												<Value>-4</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold3">
+												<Name>Treshold3</Name>
+												<Value>-4</Value>
+											</TDTRParameter>
+										</TDTRParameter>
+										<TDTRParameter Name="AbsColor">
+											<Name>AbsColor</Name>
+											<TDTRParameter Name="Color1">
+												<Name>Color1</Name>
+												<Value>16777215</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color2">
+												<Name>Color2</Name>
+												<Value>255</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color3">
+												<Name>Color3</Name>
+												<Value>255</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Color4">
+												<Name>Color4</Name>
+												<Value>15790320</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold1">
+												<Name>Treshold1</Name>
+												<Value>0</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold2">
+												<Name>Treshold2</Name>
+												<Value>0</Value>
+											</TDTRParameter>
+											<TDTRParameter Name="Treshold3">
+												<Name>Treshold3</Name>
+											</TDTRParameter>
+										</TDTRParameter>
+									</Settings>
+								</TDictItem>
+							</TSettingDictionary>
+							<TChannel>
+								<ChannelID>0</ChannelID>
+								<Number>0</Number>
+								<Ffor>1</Ffor>
+								<ChannelName>Fam</ChannelName>
+								<Active>1</Active>
+								<Color>16711680</Color>
+							</TChannel>
+							<TChannel>
+								<ChannelID>1</ChannelID>
+								<Number>1</Number>
+								<Ffor>2</Ffor>
+								<ChannelName>Hex</ChannelName>
+								<Active>1</Active>
+								<Color>32768</Color>
+							</TChannel>
+							<TChannel>
+								<ChannelID>2</ChannelID>
+								<Number>2</Number>
+								<Ffor>3</Ffor>
+								<ChannelName>Rox</ChannelName>
+								<Active>1</Active>
+								<Color>65535</Color>
+							</TChannel>
+							<TChannel>
+								<ChannelID>3</ChannelID>
+								<Number>3</Number>
+								<Ffor>4</Ffor>
+								<ChannelName>Cy5</ChannelName>
+								<Active>0</Active>
+								<Color>16711935</Color>
+							</TChannel>
+							<TChannel>
+								<ChannelID>4</ChannelID>
+								<Number>4</Number>
+								<Ffor>5</Ffor>
+								<ChannelName>Cy5.5</ChannelName>
+								<Active>0</Active>
+								<Color>255</Color>
+							</TChannel>
+						</TAnalisys>
+					</value>
+				</ReportSettings>
+			</DTReport>
+			<channels>
+				<item>
+					<IDChannel>0</IDChannel>
+					<number>0</number>
+					<ffor>1</ffor>
+				</item>
+				<item>
+					<IDChannel>1</IDChannel>
+					<number>1</number>
+					<ffor>2</ffor>
+				</item>
+				<item>
+					<IDChannel>2</IDChannel>
+					<number>2</number>
+					<ffor>3</ffor>
+				</item>
+			</channels>
+			<templates>
+				<item>
+					<IDTube>0</IDTube>
+					<color/>
+					<channels>
+						<item>
+							<IDChannel>0</IDChannel>
+							<name>ОБМ</name>
+							<DTReport>
+								<ProgName>TBM</ProgName>
+							</DTReport>
+						</item>
+					</channels>
+				</item>
+				<item>
+					<IDTube>1</IDTube>
+					<color>$0000FF80</color>
+					<channels>
+						<item>
+							<IDChannel>0</IDChannel>
+							<name>Lactobacillus_spp.</name>
+							<DTReport>
+								<ProgName>Lact</ProgName>
+							</DTReport>
+						</item>
+						<item>
+							<IDChannel>1</IDChannel>
+							<name>ВК</name>
+							<DTReport>
+								<ProgName>IC</ProgName>
+							</DTReport>
+						</item>
+					</channels>
+				</item>
+				<item>
+					<IDTube>2</IDTube>
+					<color>$000080FF</color>
+					<channels>
+						<item>
+							<IDChannel>0</IDChannel>
+							<name>сем.Enterobacteriaceae</name>
+							<DTReport>
+								<ProgName/>
+							</DTReport>
+						</item>
+					</channels>
+				</item>
+				<item>
+					<IDTube>3</IDTube>
+					<color>$000080FF</color>
+					<channels>
+						<item>
+							<IDChannel>0</IDChannel>
+							<name>Streptococcus_spp.</name>
+							<DTReport>
+								<ProgName/>
+							</DTReport>
+						</item>
+					</channels>
+				</item>
+				<item>
+					<IDTube>4</IDTube>
+					<color>$000080FF</color>
+					<channels>
+						<item>
+							<IDChannel>0</IDChannel>
+							<name>Staphylococcus_spp.</name>
+							<DTReport>
+								<ProgName/>
+							</DTReport>
+						</item>
+						<item>
+							<IDChannel>2</IDChannel>
+							<name>Маркер</name>
+							<DTReport>
+								<ProgName>Marker</ProgName>
+							</DTReport>
+						</item>
+					</channels>
+				</item>
+				<item>
+					<IDTube>5</IDTube>
+					<color>$000000FF</color>
+					<channels>
+						<item>
+							<IDChannel>0</IDChannel>
+							<name>Gardnerella_vaginalis+Prevotella_bivia+Porphyromonas_spp.</name>
+							<DTReport>
+								<ProgName/>
+							</DTReport>
+						</item>
+					</channels>
+				</item>
+				<item>
+					<IDTube>6</IDTube>
+					<color>$000000FF</color>
+					<channels>
+						<item>
+							<IDChannel>0</IDChannel>
+							<name>Eubacterium_spp.</name>
+							<DTReport>
+								<ProgName/>
+							</DTReport>
+						</item>
+					</channels>
+				</item>
+				<item>
+					<IDTube>7</IDTube>
+					<color>$000000FF</color>
+					<channels>
+						<item>
+							<IDChannel>0</IDChannel>
+							<name>Sneathia_spp.+Leptotrichia_spp.+Fusobacterium_spp.</name>
+							<DTReport>
+								<ProgName/>
+							</DTReport>
+						</item>
+					</channels>
+				</item>
+				<item>
+					<IDTube>8</IDTube>
+					<color>$000000FF</color>
+					<channels>
+						<item>
+							<IDChannel>0</IDChannel>
+							<name>Megasphaera_spp.+Veillonella_spp.+Dialister_spp.</name>
+							<DTReport>
+								<ProgName/>
+							</DTReport>
+						</item>
+					</channels>
+				</item>
+				<item>
+					<IDTube>9</IDTube>
+					<color>$000000FF</color>
+					<channels>
+						<item>
+							<IDChannel>0</IDChannel>
+							<name>Lachnobacterium_spp.+Clostridium_spp.</name>
+							<DTReport>
+								<ProgName/>
+							</DTReport>
+						</item>
+					</channels>
+				</item>
+				<item>
+					<IDTube>10</IDTube>
+					<color>$000000FF</color>
+					<channels>
+						<item>
+							<IDChannel>0</IDChannel>
+							<name>Mobiluncus_spp.+Corynebacterium_spp.</name>
+							<DTReport>
+								<ProgName/>
+							</DTReport>
+						</item>
+					</channels>
+				</item>
+				<item>
+					<IDTube>11</IDTube>
+					<color>$000000FF</color>
+					<channels>
+						<item>
+							<IDChannel>0</IDChannel>
+							<name>Peptostreptococcus_spp.</name>
+							<DTReport>
+								<ProgName/>
+							</DTReport>
+						</item>
+					</channels>
+				</item>
+				<item>
+					<IDTube>12</IDTube>
+					<color>$000000FF</color>
+					<channels>
+						<item>
+							<IDChannel>0</IDChannel>
+							<name>Atopobium_vaginae</name>
+							<DTReport>
+								<ProgName/>
+							</DTReport>
+						</item>
+					</channels>
+				</item>
+				<item>
+					<IDTube>13</IDTube>
+					<color>$00FF00FF</color>
+					<channels>
+						<item>
+							<IDChannel>0</IDChannel>
+							<name>Mycoplasma_hominis</name>
+							<DTReport>
+								<ProgName/>
+							</DTReport>
+						</item>
+						<item>
+							<IDChannel>1</IDChannel>
+							<name>Mycoplasma_genitalium</name>
+							<DTReport>
+								<ProgName/>
+							</DTReport>
+						</item>
+					</channels>
+				</item>
+				<item>
+					<IDTube>14</IDTube>
+					<color>$00FF00FF</color>
+					<channels>
+						<item>
+							<IDChannel>0</IDChannel>
+							<name>Ureaplasma_(urealyticum_+_parvum)</name>
+							<DTReport>
+								<ProgName/>
+							</DTReport>
+						</item>
+					</channels>
+				</item>
+				<item>
+					<IDTube>15</IDTube>
+					<color>$00FF0000</color>
+					<channels>
+						<item>
+							<IDChannel>0</IDChannel>
+							<name>Candida_spp.</name>
+							<DTReport>
+								<ProgName/>
+							</DTReport>
+						</item>
+						<item>
+							<IDChannel>1</IDChannel>
+							<name>КВМ</name>
+							<DTReport>
+								<ProgName>MTC</ProgName>
+							</DTReport>
+						</item>
+						<item>
+							<IDChannel>2</IDChannel>
+							<name>Маркер</name>
+							<DTReport>
+								<ProgName>Marker</ProgName>
+							</DTReport>
+						</item>
+					</channels>
+				</item>
+			</templates>
+			<properties>
+				<item>
+					<name>criterion_PosResult</name>
+					<value>80</value>
+					<unit/>
+				</item>
+				<item>
+					<name>criterion_Validity</name>
+					<value>9</value>
+					<unit/>
+				</item>
+				<item>
+					<name>use_AFF</name>
+					<value>True</value>
+					<unit/>
+				</item>
+				<item>
+					<name>criterion_AFF</name>
+					<value>1000</value>
+					<unit/>
+				</item>
+				<item>
+					<name>criterion_AFF_MIN</name>
+					<value>10</value>
+					<unit/>
+				</item>
+				<item>
+					<name>criterion_AFF_MAX</name>
+					<value>90</value>
+					<unit/>
+				</item>
+				<item>
+					<name>sigmoid_ValidityMin</name>
+					<value>7</value>
+					<unit/>
+				</item>
+				<item>
+					<name>sigmoid_ValidityMax</name>
+					<value>20</value>
+					<unit/>
+				</item>
+				<item>
+					<name>use_Threshold</name>
+					<value>False</value>
+					<unit/>
+				</item>
+				<item>
+					<name>value_Threshold</name>
+					<value>10</value>
+					<unit/>
+				</item>
+				<item>
+					<name>exposure_Measurements</name>
+					<value>1.00 1.00 1.00 1.00 1.00</value>
+					<unit/>
+				</item>
+				<item>
+					<name>fluorofors</name>
+					<value>Fam Hex Rox Cy5 Cy5.5</value>
+					<unit/>
+				</item>
+				<item>
+					<name>FWHM_Border</name>
+					<value>30</value>
+					<unit/>
+				</item>
+				<item>
+					<name>peaks_Border</name>
+					<value>20</value>
+					<unit/>
+				</item>
+			</properties>
+			<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+				<SignedInfo>
+					<CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+					<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+					<Reference>
+						<Transforms>
+							<!--Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/-->
+							<Transform Algorithm="http://www.w3.org/TR/1999/REC-xpath-19991116">
+								<XPath>
+( ancestor-or-self::IDTest
+| ancestor-or-self::nameTest
+| ancestor-or-self::DTReport
+| ancestor-or-self::method
+| ancestor-or-self::volumeTube
+| ancestor-or-self::amProgramm
+| ancestor-or-self::properties
+| ancestor-or-self::channels
+| ancestor-or-self::templates
+)</XPath>
+							</Transform>
+						</Transforms>
+						<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+						<DigestValue>gN2uuPtX9nYIdjat8keFPodXTPY=</DigestValue>
+					</Reference>
+				</SignedInfo>
+				<SignatureValue>fhV4VTRPtZHFnKC7xsOy/eCb26UKx+eUTkHVO1dlZSN0dI0L0TQ3EcR0sO9NmHHp
+BZ8q13oLhjeVrCzSn/YiYBzas7gYpOtq9ZQpcxjOmgIMHoMPfbdzAq69R0qS6E8Y
+iMQkDc1VmWfSWWG3K+pCHxaCl/kzzri9gdGCTOcM2TNSSC6BCxjdYjWoqgptHmZC
+jcxfDhxZkWPfbXYBcHYWedzLbSw7HJAZPNFb+g4WB9XINhS3SUnaLowIUjxdqktL
+NMhf5sGi7UUebW413QHnII0OUQcYTM3MycTNIp7aFWjFeRlXpQUcin3dMKglJqva
+avx+zuQT1cISFGgT9mZsSQ==</SignatureValue>
+				<KeyInfo>
+					<KeyName>47722632_privkey.pem</KeyName>
+				</KeyInfo>
+			</Signature>
+		</item>
+	</tests>
+	<sourceSet>
+		<item>
+			<IDGroup>RLC5JgQZA3</IDGroup>
+			<name>Sample_1</name>
+			<properties>
+				<item>
+					<name>patient</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>sex</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>age</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>organization</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>phisician</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>date</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>note</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>additional</name>
+					<value>...</value>
+					<unit/>
+				</item>
+			</properties>
+			<samples>
+				<item>
+					<IDSample>h7Jc6qQVik</IDSample>
+					<IDTest>nDMXdVsbwnIu</IDTest>
+					<name>Sample_1</name>
+					<properties/>
+					<tubes>
+						<item>
+							<IDTube>0</IDTube>
+							<name/>
+							<pos>0</pos>
+							<x>0</x>
+							<y>0</y>
+							<pos_protocol>1</pos_protocol>
+							<color>0</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+						<item>
+							<IDTube>1</IDTube>
+							<name/>
+							<pos>1</pos>
+							<x>1</x>
+							<y>0</y>
+							<pos_protocol>2</pos_protocol>
+							<color>ff80</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>1</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+						<item>
+							<IDTube>2</IDTube>
+							<name/>
+							<pos>2</pos>
+							<x>2</x>
+							<y>0</y>
+							<pos_protocol>3</pos_protocol>
+							<color>80ff</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+						<item>
+							<IDTube>3</IDTube>
+							<name/>
+							<pos>3</pos>
+							<x>3</x>
+							<y>0</y>
+							<pos_protocol>4</pos_protocol>
+							<color>80ff</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+						<item>
+							<IDTube>4</IDTube>
+							<name/>
+							<pos>4</pos>
+							<x>4</x>
+							<y>0</y>
+							<pos_protocol>5</pos_protocol>
+							<color>80ff</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>2</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+						<item>
+							<IDTube>5</IDTube>
+							<name/>
+							<pos>5</pos>
+							<x>5</x>
+							<y>0</y>
+							<pos_protocol>6</pos_protocol>
+							<color>ff</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+						<item>
+							<IDTube>6</IDTube>
+							<name/>
+							<pos>6</pos>
+							<x>6</x>
+							<y>0</y>
+							<pos_protocol>7</pos_protocol>
+							<color>ff</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+						<item>
+							<IDTube>7</IDTube>
+							<name/>
+							<pos>7</pos>
+							<x>7</x>
+							<y>0</y>
+							<pos_protocol>8</pos_protocol>
+							<color>ff</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+						<item>
+							<IDTube>8</IDTube>
+							<name/>
+							<pos>8</pos>
+							<x>8</x>
+							<y>0</y>
+							<pos_protocol>9</pos_protocol>
+							<color>ff</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+						<item>
+							<IDTube>9</IDTube>
+							<name/>
+							<pos>9</pos>
+							<x>9</x>
+							<y>0</y>
+							<pos_protocol>10</pos_protocol>
+							<color>ff</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+						<item>
+							<IDTube>10</IDTube>
+							<name/>
+							<pos>10</pos>
+							<x>10</x>
+							<y>0</y>
+							<pos_protocol>11</pos_protocol>
+							<color>ff</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+						<item>
+							<IDTube>11</IDTube>
+							<name/>
+							<pos>11</pos>
+							<x>11</x>
+							<y>0</y>
+							<pos_protocol>12</pos_protocol>
+							<color>ff</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+						<item>
+							<IDTube>12</IDTube>
+							<name/>
+							<pos>12</pos>
+							<x>0</x>
+							<y>1</y>
+							<pos_protocol>13</pos_protocol>
+							<color>ff</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+						<item>
+							<IDTube>13</IDTube>
+							<name/>
+							<pos>13</pos>
+							<x>1</x>
+							<y>1</y>
+							<pos_protocol>14</pos_protocol>
+							<color>ff00ff</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>1</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+						<item>
+							<IDTube>14</IDTube>
+							<name/>
+							<pos>14</pos>
+							<x>2</x>
+							<y>1</y>
+							<pos_protocol>15</pos_protocol>
+							<color>ff00ff</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+						<item>
+							<IDTube>15</IDTube>
+							<name/>
+							<pos>15</pos>
+							<x>3</x>
+							<y>1</y>
+							<pos_protocol>16</pos_protocol>
+							<color>ff0000</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>1</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>2</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+					</tubes>
+					<sample_results/>
+				</item>
+			</samples>
+		</item>
+	</sourceSet>
+	<Analysis_Data/>
+	<Analysis_Version>
+		<version>1.1.0.12</version>
+		<dtr_version>Femoflor.dtr ver:700.351; DTReport.dll ver:2.4.2.573</dtr_version>
+	</Analysis_Version>
+	<Analysis_HASH>
+		<hash>00000020789cb31790987d72c34f85195a336649e65f8e2b14945fec399923c6729de3fef496f65400ddf90d84</hash>
+	</Analysis_HASH>
+</protocol>

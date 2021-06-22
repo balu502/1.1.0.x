@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/adjustment.ico</file>
+        <file>translations/listdev_ru.qm</file>
+        <file>translations/listdev_en.qm</file>
+    </qresource>
+</RCC>

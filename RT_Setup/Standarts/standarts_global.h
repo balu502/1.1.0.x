@@ -1,0 +1,12 @@
+#ifndef STANDARTS_GLOBAL_H
+#define STANDARTS_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(STANDARTS_LIBRARY)
+#  define STANDARTSSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define STANDARTSSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // STANDARTS_GLOBAL_H

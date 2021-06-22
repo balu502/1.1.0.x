@@ -1,0 +1,12 @@
+#ifndef TEST_SIMPLE_GLOBAL_H
+#define TEST_SIMPLE_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(TEST_SIMPLE_LIBRARY)
+#  define TEST_SIMPLESHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define TEST_SIMPLESHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // TEST_SIMPLE_GLOBAL_H

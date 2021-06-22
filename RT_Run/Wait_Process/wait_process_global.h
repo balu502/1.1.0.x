@@ -1,0 +1,12 @@
+#ifndef WAIT_PROCESS_GLOBAL_H
+#define WAIT_PROCESS_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(WAIT_PROCESS_LIBRARY)
+#  define WAIT_PROCESSSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define WAIT_PROCESSSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // WAIT_PROCESS_GLOBAL_H

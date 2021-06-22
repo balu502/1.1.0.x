@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/cy5.png</file>
+        <file>images/cy55.png</file>
+        <file>images/disable.png</file>
+        <file>images/fam.png</file>
+        <file>images/hex.png</file>
+        <file>images/rox.png</file>
+        <file>images/foto.png</file>
+        <file>translations/graph_temperature_ru.qm</file>
+        <file>images/save_flat.png</file>
+        <file>images/save_flat_16.png</file>
+        <file>translations/graph_temperature_en.qm</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<TRTProtocolImportDlg Name="RTProtocolImportDlg">
+	<Caption>Protocol import</Caption>
+	<Font>
+		<Name>Tahoma</Name>
+	</Font>
+<TLabel Name="Label1">
+	<Caption>The protocol is imported from the *. R96 format using the RealTime_PCR application ...</Caption>
+</TLabel>
+<TButton Name="btnCancel">
+	<Caption>Cancel</Caption>
+</TButton></TRTProtocolImportDlg>

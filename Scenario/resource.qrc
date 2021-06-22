@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/dna_2.ico</file>
+        <file>images/check.png</file>
+        <file>images/error.png</file>
+        <file>images/active.gif</file>
+        <file>translations/scenario_ru.qm</file>
+        <file>images/active_1.gif</file>
+        <file>translations/scenario_en.qm</file>
+        <file>images/DTm.ico</file>
+        <file>images/RT.ico</file>
+    </qresource>
+</RCC>

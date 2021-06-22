@@ -1,0 +1,43 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/cy5.png</file>
+        <file>images/cy55.png</file>
+        <file>images/cy55_flat.png</file>
+        <file>images/cy5_flat.png</file>
+        <file>images/decrease.png</file>
+        <file>images/disable_flat.png</file>
+        <file>images/dna_logo_eng_3.png</file>
+        <file>images/dna_logo_rus_3.png</file>
+        <file>images/fam.png</file>
+        <file>images/fam_flat.png</file>
+        <file>images/first_page.png</file>
+        <file>images/hex.png</file>
+        <file>images/hex_flat.png</file>
+        <file>images/increase.png</file>
+        <file>images/last_page.png</file>
+        <file>images/log_out.png</file>
+        <file>images/logo_Dna-Tech.bmp</file>
+        <file>images/logo_Dna-Tech.png</file>
+        <file>images/next_page.png</file>
+        <file>images/prev_page.png</file>
+        <file>images/print.png</file>
+        <file>images/rejime1pages.png</file>
+        <file>images/rejime2pages.png</file>
+        <file>images/rejime_without.png</file>
+        <file>images/report.png</file>
+        <file>images/report_1.png</file>
+        <file>images/report_old.png</file>
+        <file>images/rox.png</file>
+        <file>images/rox_flat.png</file>
+        <file>images/scale_off.png</file>
+        <file>images/toHTML.png</file>
+        <file>images/toPDF.png</file>
+        <file>images/toPNG.png</file>
+        <file>images/toSVG.png</file>
+        <file>images/toXLS.png</file>
+        <file>translations/ncreport_ru.qm</file>
+        <file>translations/report_ru.qm</file>
+        <file>report/report.xml</file>
+        <file>translations/report_en.qm</file>
+    </qresource>
+</RCC>

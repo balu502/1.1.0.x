@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/dna_2.ico</file>
+        <file>images/wait_1.gif</file>
+        <file>translations/Copy_BlockTests_ru.qm</file>
+        <file>translations/Copy_BlockTests_en.qm</file>
+        <file>images/DTm.ico</file>
+        <file>images/RT.ico</file>
+    </qresource>
+</RCC>

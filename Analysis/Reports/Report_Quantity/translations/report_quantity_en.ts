@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="ru_RU">
+<context>
+    <name>Report_Quantity</name>
+    <message>
+        <location filename="../report_quantity.cpp" line="16"/>
+        <source>Quantity</source>
+        <translation>Quantitative</translation>
+    </message>
+    <message>
+        <location filename="../report_quantity.cpp" line="43"/>
+        <source>Pos	Identificator	Channel	Cp(Ct)	Results	Concentration</source>
+        <translation>Pos.	ID	Channel	Cp(Ct)	Result	Concentration</translation>
+    </message>
+    <message>
+        <location filename="../report_quantity.cpp" line="58"/>
+        <source>Quantity PCR Analysis</source>
+        <translation>Quantitative analysis</translation>
+    </message>
+    <message>
+        <location filename="../report_quantity.cpp" line="62"/>
+        <source>Date:</source>
+        <translation>Date:</translation>
+    </message>
+    <message>
+        <location filename="../report_quantity.cpp" line="65"/>
+        <source>Operator:</source>
+        <translation>Operator:</translation>
+    </message>
+    <message>
+        <location filename="../report_quantity.cpp" line="66"/>
+        <source>File with results:</source>
+        <translation>Run file:</translation>
+    </message>
+    <message>
+        <location filename="../report_quantity.cpp" line="67"/>
+        <source>Device:</source>
+        <translation>Device:</translation>
+    </message>
+</context>
+</TS>

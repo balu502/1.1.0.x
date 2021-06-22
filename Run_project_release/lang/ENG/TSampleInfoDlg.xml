@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+
+<TSampleInfoDlg Name="SampleInfoDlg">
+	<Caption>Add sample</Caption>
+	<Font>
+		<Name>Tahoma</Name>
+	</Font>
+<TLabel Name="Label1">
+	<Caption>Surname:</Caption>
+</TLabel>
+<TLabel Name="Label2">
+	<Caption>Name:</Caption>
+</TLabel>
+<TLabel Name="Label3">
+	<Caption>Middle name:</Caption>
+</TLabel>
+<TLabel Name="Label4">
+	<Caption>Sex:</Caption>
+</TLabel>
+<TLabel Name="Label5">
+	<Caption>Age:</Caption>
+</TLabel>
+<TLabel Name="Label6">
+	<Caption>Age units:</Caption>
+</TLabel>
+<TLabel Name="Label7">
+	<Caption>Primary sample ID:</Caption>
+</TLabel>
+<TLabel Name="Label8">
+	<Caption>Physician:</Caption>
+</TLabel>
+<TLabel Name="Label9">
+	<Caption>Comment:</Caption>
+</TLabel>
+<TLabel Name="Label10">
+	<Caption>Tube label:</Caption>
+</TLabel>
+<TPanel Name="Panel1">
+<TButton Name="btnOk">
+	<Caption>OK</Caption>
+</TButton>
+<TButton Name="btnCancel">
+	<Caption>Cancel</Caption>
+</TButton></TPanel>
+<TEdit Name="edLastName">
+</TEdit>
+<TEdit Name="edFirstName">
+</TEdit>
+<TEdit Name="edMiddleName">
+</TEdit>
+<TEdit Name="edAge">
+</TEdit>
+<TComboBox Name="cbAgeUnit">
+	<Items><![CDATA[
+year
+month
+day
+]]>
+	</Items></TComboBox>
+<TComboBox Name="cbSex">
+	<Items><![CDATA[
+
+male
+female
+]]>
+	</Items></TComboBox>
+<TEdit Name="edDisplayCode">
+</TEdit>
+<TEdit Name="edDoctor">
+</TEdit>
+<TEdit Name="edComment">
+</TEdit>
+<TEdit Name="edCode">
+</TEdit>
+<TPanel Name="pnNavigation">
+<TToolBar Name="tbArrows">
+	<DisabledImages>DisabledImages</DisabledImages>
+	<Images>Images</Images>
+<TToolButton Name="btnUp">
+</TToolButton>
+<TToolButton Name="btnDown">
+	<Caption>btnDown</Caption></TToolButton></TToolBar></TPanel>
+<TImageList Name="Images"></TImageList>
+<TImageList Name="DisabledImages"></TImageList></TSampleInfoDlg>

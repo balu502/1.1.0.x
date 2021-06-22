@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/flat/cy55_flat.png</file>
+        <file>images/flat/cy5_flat.png</file>
+        <file>images/flat/disable_flat.png</file>
+        <file>images/flat/edit_Program_flat.png</file>
+        <file>images/flat/fam_flat.png</file>
+        <file>images/flat/hex_flat.png</file>
+        <file>images/flat/open_Program_flat.png</file>
+        <file>images/flat/rox_flat.png</file>
+        <file>translations/Standarts_ru.qm</file>
+        <file>translations/Standarts_en.qm</file>
+    </qresource>
+</RCC>

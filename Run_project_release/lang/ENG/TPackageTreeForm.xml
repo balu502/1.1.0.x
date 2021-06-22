@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+
+<TPackageTreeForm Name="PackageTreeForm">
+	<Caption>PackageTreeForm</Caption>
+	<Font>
+		<Name>Tahoma</Name>
+	</Font>
+<TPanel Name="Panel1">
+<TButton Name="btnOk">
+	<Caption>OK</Caption>
+</TButton>
+<TButton Name="btnCancel">
+	<Caption>Cancel</Caption>
+</TButton></TPanel>
+<TYoDBTree Name="vtTree">
+	<Font>
+		<Name>Tahoma</Name>
+	</Font>
+	<Header>
+		<Font>
+			<Name>MS Sans Serif</Name>
+		</Font>
+		<PopupMenu>PopupMenu</PopupMenu>
+	</Header>
+	<PopupMenu>PopupMenu</PopupMenu>
+	<DBTreeOptions>
+		<KeyFieldName>#XML_ID</KeyFieldName>
+		<ParentFieldName>#XML_ParentID</ParentFieldName>
+	</DBTreeOptions>
+	<DBOptions>
+		<DataSource>DataSource</DataSource>
+	</DBOptions></TYoDBTree>
+<TDataSource Name="DataSource">
+	<DataSet>Dataset</DataSet></TDataSource>
+<TClientDataSet Name="Dataset">
+<TStringField Name="DatasetInquiryID">
+	<FieldName>Inquiry/ID</FieldName>
+</TStringField>
+<TMemoField Name="DatasetInquiryLastName">
+	<FieldName>Inquiry/LastName</FieldName>
+</TMemoField>
+<TMemoField Name="DatasetInquiryFirstName">
+	<FieldName>Inquiry/FirstName</FieldName>
+</TMemoField>
+<TMemoField Name="DatasetInquiryMiddleName">
+	<FieldName>Inquiry/MiddleName</FieldName>
+</TMemoField>
+<TStringField Name="DatasetSampleID">
+	<FieldName>Sample/ID</FieldName>
+</TStringField>
+<TMemoField Name="DatasetSampleCode">
+	<FieldName>Sample/Code</FieldName>
+</TMemoField>
+<TMemoField Name="DatasetServiceID">
+	<FieldName>Service/ID</FieldName>
+</TMemoField>
+<TMemoField Name="DatasetServiceName">
+	<FieldName>Service/Name</FieldName>
+</TMemoField>
+<TMemoField Name="DatasetServiceServiceID">
+	<FieldName>Service/ServiceID</FieldName>
+</TMemoField>
+<TMemoField Name="DatasetResultID">
+	<FieldName>Result/ID</FieldName>
+</TMemoField>
+<TMemoField Name="DatasetResultTestID">
+	<FieldName>Result/TestID</FieldName>
+</TMemoField>
+<TMemoField Name="DatasetResultName">
+	<FieldName>Result/Name</FieldName>
+</TMemoField>
+<TMemoField Name="DatasetResultValue">
+	<FieldName>Result/Value</FieldName>
+</TMemoField>
+<TMemoField Name="DatasetResultOriginalValue">
+	<FieldName>Result/OriginalValue</FieldName>
+</TMemoField>
+<TMemoField Name="DatasetResultUnits">
+	<FieldName>Result/Units</FieldName>
+</TMemoField>
+<TStringField Name="DatasetDisplayName">
+	<FieldName>DisplayName</FieldName>
+</TStringField>
+<TMemoField Name="DatasetXML_NodeName">
+	<FieldName>#XML_NodeName</FieldName>
+</TMemoField>
+<TMemoField Name="DatasetXML_ParentName">
+	<FieldName>#XML_ParentName</FieldName>
+</TMemoField>
+<TMemoField Name="DatasetServiceProgName">
+	<FieldName>Service/ProgName</FieldName>
+</TMemoField></TClientDataSet>
+<TPopupMenu Name="PopupMenu">
+	<Items>
+<TMenuItem Name="pmCollapseAll">
+	<Caption>Collapse all</Caption>
+</TMenuItem>
+<TMenuItem Name="pmExpandAll">
+	<Caption>Expand all</Caption>
+</TMenuItem>
+<TMenuItem Name="pmCheckAll">
+	<Caption>Check all</Caption>
+</TMenuItem>
+<TMenuItem Name="pmUncheckAll">
+	<Caption>Uncheck all</Caption>
+</TMenuItem>
+	</Items>
+<TMenuItem Name="pmCollapseAll">
+	<Caption>Collapse all</Caption>
+</TMenuItem>
+<TMenuItem Name="pmExpandAll">
+	<Caption>Expand all</Caption>
+</TMenuItem>
+<TMenuItem Name="pmCheckAll">
+	<Caption>Check all</Caption>
+</TMenuItem>
+<TMenuItem Name="pmUncheckAll">
+	<Caption>Uncheck all</Caption>
+</TMenuItem></TPopupMenu></TPackageTreeForm>

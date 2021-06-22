@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/cy5.png</file>
+        <file>images/cy55.png</file>
+        <file>images/disable.png</file>
+        <file>images/fam.png</file>
+        <file>images/hex.png</file>
+        <file>images/rox.png</file>
+        <file>images/foto.png</file>
+        <file>images/foto_mc.png</file>
+        <file>images/grad.png</file>
+        <file>images/incr_temp.png</file>
+        <file>images/incr_time.png</file>
+        <file>translations/ProtInfo_ru.qm</file>
+        <file>images/cy5_pro.png</file>
+        <file>images/cy55_pro.png</file>
+        <file>images/disable_pro.png</file>
+        <file>images/fam_pro.png</file>
+        <file>images/hex_pro.png</file>
+        <file>images/rox_pro.png</file>
+        <file>images/grad_step.png</file>
+        <file>translations/ProtInfo_en.qm</file>
+    </qresource>
+</RCC>

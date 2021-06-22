@@ -1,0 +1,400 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<protocol>
+ <name>Protocol_(96)_04_18-21-18</name>
+ <barcode>555444332221</barcode>
+ <regNumber>ziLqT_041019_182118</regNumber>
+ <nameOperator>admin1</nameOperator>
+ <created>17 Wednesday 2020, 18:47:06</created>
+ <status>run</status>
+ <activeChannels>1111</activeChannels>
+ <xsize>12</xsize>
+ <ysize>8</ysize>
+ <volumeTube/>
+ <amProgramm>XPRG 0 25 0&#xd;
+XLEV 2000 15 0 0 0 0&#xd;
+XCYC 1&#xd;
+XLEV 2000 15 100 0 0 2&#xd;
+XCYC 10&#xd;
+XLEV 2000 15 0 0 0 0&#xd;
+XHLD&#xd;
+XSAV Example</amProgramm>
+ <properties/>
+ <tests>
+  <item>
+   <IDTest>-1</IDTest>
+   <nameTest>simple</nameTest>
+   <method>0</method>
+   <volumeTube>0</volumeTube>
+   <activeChannels>1111</activeChannels>
+   <comment>ууууууууууу</comment>
+   <amProgramm>XPRG 0 25 0&#xd;
+XLEV 2000 15 0 0 0 0&#xd;
+XCYC 1&#xd;
+XLEV 2000 15 100 0 0 2&#xd;
+XCYC 50&#xd;
+XLEV 2000 15 0 0 0 0&#xd;
+XHLD&#xd;
+XSAV Example&#xd;
+</amProgramm>
+   <properties>
+    <item>
+     <name>criterion_PosResult</name>
+     <value>80</value>
+     <unit/>
+    </item>
+    <item>
+     <name>criterion_Validity</name>
+     <value>5</value>
+     <unit/>
+    </item>
+    <item>
+     <name>use_AFF</name>
+     <value>True</value>
+     <unit/>
+    </item>
+    <item>
+     <name>criterion_AFF</name>
+     <value>1000</value>
+     <unit/>
+    </item>
+    <item>
+     <name>criterion_AFF_MIN</name>
+     <value>10</value>
+     <unit/>
+    </item>
+    <item>
+     <name>criterion_AFF_MAX</name>
+     <value>90</value>
+     <unit/>
+    </item>
+    <item>
+     <name>sigmoid_ValidityMin</name>
+     <value>7</value>
+     <unit/>
+    </item>
+    <item>
+     <name>sigmoid_ValidityMax</name>
+     <value>20</value>
+     <unit/>
+    </item>
+    <item>
+     <name>use_Threshold</name>
+     <value>False</value>
+     <unit/>
+    </item>
+    <item>
+     <name>value_Threshold</name>
+     <value>10</value>
+     <unit/>
+    </item>
+    <item>
+     <name>exposure_Measurements</name>
+     <value>0 0 0 0 0</value>
+     <unit/>
+    </item>
+    <item>
+     <name>fluorofors</name>
+     <value>Fam Hex Rox Cy5 Cy5.5</value>
+     <unit/>
+    </item>
+   </properties>
+   <channels>
+    <item>
+     <IDChannel>0</IDChannel>
+     <number>0</number>
+     <ffor>0</ffor>
+    </item>
+    <item>
+     <IDChannel>1</IDChannel>
+     <number>1</number>
+     <ffor>1</ffor>
+    </item>
+    <item>
+     <IDChannel>2</IDChannel>
+     <number>2</number>
+     <ffor>2</ffor>
+    </item>
+    <item>
+     <IDChannel>3</IDChannel>
+     <number>3</number>
+     <ffor>3</ffor>
+    </item>
+   </channels>
+   <templates>
+    <item>
+     <IDTube>0</IDTube>
+     <name/>
+     <color>0</color>
+     <properties/>
+     <channels>
+      <item>
+       <IDChannel>0</IDChannel>
+       <name>Fam</name>
+       <properties/>
+      </item>
+      <item>
+       <IDChannel>1</IDChannel>
+       <name>Hex</name>
+       <properties/>
+      </item>
+      <item>
+       <IDChannel>2</IDChannel>
+       <name>Rox</name>
+       <properties/>
+      </item>
+      <item>
+       <IDChannel>3</IDChannel>
+       <name>Cy5</name>
+       <properties/>
+      </item>
+     </channels>
+    </item>
+   </templates>
+  </item>
+ </tests>
+ <sourceSet>
+  <item>
+   <IDGroup>9TcSgX2noR</IDGroup>
+   <name>Образец_1</name>
+   <properties/>
+   <samples>
+    <item>
+     <IDSample>Tbr6pYF29z</IDSample>
+     <IDTest>-1</IDTest>
+     <name>Образец_1</name>
+     <properties/>
+     <tubes>
+      <item>
+       <IDTube>0</IDTube>
+       <name/>
+       <pos>0</pos>
+       <x>0</x>
+       <y>0</y>
+       <pos_protocol>1</pos_protocol>
+       <color>0</color>
+       <channels>
+        <item>
+         <IDChannel>0</IDChannel>
+         <properties/>
+        </item>
+        <item>
+         <IDChannel>1</IDChannel>
+         <properties/>
+        </item>
+        <item>
+         <IDChannel>2</IDChannel>
+         <properties/>
+        </item>
+        <item>
+         <IDChannel>3</IDChannel>
+         <properties/>
+        </item>
+       </channels>
+      </item>
+     </tubes>
+    </item>
+   </samples>
+  </item>
+  <item>
+   <IDGroup>0anqxpNxaa</IDGroup>
+   <name>Образец_2</name>
+   <properties/>
+   <samples>
+    <item>
+     <IDSample>Jj2U7q4Bv8</IDSample>
+     <IDTest>-1</IDTest>
+     <name>Образец_2</name>
+     <properties/>
+     <tubes>
+      <item>
+       <IDTube>0</IDTube>
+       <name/>
+       <pos>1</pos>
+       <x>1</x>
+       <y>0</y>
+       <pos_protocol>2</pos_protocol>
+       <color>0</color>
+       <channels>
+        <item>
+         <IDChannel>0</IDChannel>
+         <properties/>
+        </item>
+        <item>
+         <IDChannel>1</IDChannel>
+         <properties/>
+        </item>
+        <item>
+         <IDChannel>2</IDChannel>
+         <properties/>
+        </item>
+        <item>
+         <IDChannel>3</IDChannel>
+         <properties/>
+        </item>
+       </channels>
+      </item>
+     </tubes>
+    </item>
+   </samples>
+  </item>
+  <item>
+   <IDGroup>7SQiNAe8Bz</IDGroup>
+   <name>Образец_3</name>
+   <properties/>
+   <samples>
+    <item>
+     <IDSample>UxHxtzXdKN</IDSample>
+     <IDTest>-1</IDTest>
+     <name>Образец_3</name>
+     <properties/>
+     <tubes>
+      <item>
+       <IDTube>0</IDTube>
+       <name/>
+       <pos>2</pos>
+       <x>2</x>
+       <y>0</y>
+       <pos_protocol>3</pos_protocol>
+       <color>0</color>
+       <channels>
+        <item>
+         <IDChannel>0</IDChannel>
+         <properties/>
+        </item>
+        <item>
+         <IDChannel>1</IDChannel>
+         <properties/>
+        </item>
+        <item>
+         <IDChannel>2</IDChannel>
+         <properties/>
+        </item>
+        <item>
+         <IDChannel>3</IDChannel>
+         <properties/>
+        </item>
+       </channels>
+      </item>
+     </tubes>
+    </item>
+   </samples>
+  </item>
+  <item>
+   <IDGroup>4X0HZn6tiL</IDGroup>
+   <name>Образец_4</name>
+   <properties/>
+   <samples>
+    <item>
+     <IDSample>OfFviom73t</IDSample>
+     <IDTest>-1</IDTest>
+     <name>Образец_4</name>
+     <properties/>
+     <tubes>
+      <item>
+       <IDTube>0</IDTube>
+       <name/>
+       <pos>3</pos>
+       <x>3</x>
+       <y>0</y>
+       <pos_protocol>4</pos_protocol>
+       <color>0</color>
+       <channels>
+        <item>
+         <IDChannel>0</IDChannel>
+         <properties/>
+        </item>
+        <item>
+         <IDChannel>1</IDChannel>
+         <properties/>
+        </item>
+        <item>
+         <IDChannel>2</IDChannel>
+         <properties/>
+        </item>
+        <item>
+         <IDChannel>3</IDChannel>
+         <properties/>
+        </item>
+       </channels>
+      </item>
+     </tubes>
+    </item>
+   </samples>
+  </item>
+  <item>
+   <IDGroup>mJ15l2q7w4</IDGroup>
+   <name>Образец_5</name>
+   <properties/>
+   <samples>
+    <item>
+     <IDSample>5RGivW3pH8</IDSample>
+     <IDTest>-1</IDTest>
+     <name>Образец_5</name>
+     <properties/>
+     <tubes>
+      <item>
+       <IDTube>0</IDTube>
+       <name/>
+       <pos>4</pos>
+       <x>4</x>
+       <y>0</y>
+       <pos_protocol>5</pos_protocol>
+       <color>0</color>
+       <channels>
+        <item>
+         <IDChannel>0</IDChannel>
+         <properties/>
+        </item>
+        <item>
+         <IDChannel>1</IDChannel>
+         <properties/>
+        </item>
+        <item>
+         <IDChannel>2</IDChannel>
+         <properties/>
+        </item>
+        <item>
+         <IDChannel>3</IDChannel>
+         <properties/>
+        </item>
+       </channels>
+      </item>
+     </tubes>
+    </item>
+   </samples>
+  </item>
+ </sourceSet>
+ <device>
+  <SerialName>A5H607</SerialName>
+  <uC_Versions>OPTICS 3.07.96 06/09/12&#xd;
+AMPX 6.12 31/01/2013&#xd;
+SMOT 6.11p 12/03/2013&#xd;
+TFT 1.01.07 Sep 23 2019</uC_Versions>
+  <Type_ThermoBlock>B96A</Type_ThermoBlock>
+  <FluorDevice_MASK>1f</FluorDevice_MASK>
+  <Optical_MASK>0 20 20 0 0 0 0 0 0 0 0 0 0 centers: 97 55 148 55 198 55 249 55 299 55 350 55 400 55 451 55 501 55 552 55 602 55 653 55 97 81 148 81 198 81 249 81 299 81 350 81 400 81 451 81 501 81 552 81 602 81 653 81 97 107 148 107 198 107 249 107 299 107 350 107 400 107 451 107 501 107 552 107 602 107 653 107 97 133 148 133 198 133 249 133 299 133 350 133 400 133 451 133 501 133 552 133 602 133 653 133 97 159 148 159 198 159 249 159 299 159 350 159 400 159 451 159 501 159 552 159 602 159 653 159 97 185 148 185 198 185 249 185 299 185 350 185 400 185 451 185 501 185 552 185 602 185 653 185 97 211 148 211 198 211 249 211 299 211 350 211 400 211 451 211 501 211 552 211 602 211 653 211 97 237 148 237 198 237 249 237 299 237 350 237 400 237 451 237 501 237 552 237 602 237 653 237 </Optical_MASK>
+  <Coeff_Spectral>
+   <item>Fam	0	 1.000 0.029 0.000 0.000 0.000</item>
+   <item>Hex	1	 0.008 1.000 0.004 0.000 0.000</item>
+   <item>Rox	2	 0.000 0.004 1.000 0.032 0.000</item>
+   <item>Cy5	3	 0.000 0.000 0.005 1.000 0.013</item>
+   <item>Cy5.5	4	 0.000 0.000 0.000 0.023 1.000</item>
+  </Coeff_Spectral>
+  <Coeff_UnequalCh>
+   <item>Fam	0	 1.000 2000</item>
+   <item>Hex	1	 1.000 2000</item>
+   <item>R6G	1	 1.000 2000</item>
+   <item>Rox	2	 1.000 2000</item>
+   <item>R610	2	 1.000 2000</item>
+   <item>Cy5	3	 1.000 2000</item>
+   <item>Cy5.5	4	 1.000 2000</item>
+  </Coeff_UnequalCh>
+  <Coeff_Optic>
+   <item>0.918 0.777 0.819 0.876 0.903 0.933 0.936 0.987 0.953 0.900 0.846 0.922 0.814 0.831 0.906 1.023 1.058 1.125 1.135 1.107 1.113 1.024 1.045 0.901 0.836 0.919 0.944 1.013 1.080 1.153 1.165 1.172 1.100 1.047 0.988 0.912 0.905 0.918 0.974 1.023 1.118 1.162 1.216 1.182 1.147 1.098 1.068 0.971 0.886 0.899 0.926 0.979 1.037 1.099 1.090 1.089 0.998 1.005 0.995 0.886 0.909 0.922 0.961 1.022 1.046 1.112 1.074 1.086 1.032 1.054 1.021 0.944 0.838 0.866 0.878 0.951 0.987 1.021 1.096 1.122 0.999 1.061 1.025 0.983 0.945 0.899 0.864 0.989 1.012 1.060 1.162 1.084 1.068 1.069 0.989 1.001 </item>
+   <item>0.896 0.820 0.856 0.903 0.921 0.947 0.956 1.013 0.987 0.938 0.885 0.917 0.856 0.868 0.936 1.048 1.080 1.129 1.147 1.132 1.152 1.071 1.101 0.938 0.868 0.933 0.943 1.007 1.069 1.122 1.142 1.156 1.097 1.060 1.017 0.947 0.924 0.926 0.967 1.006 1.090 1.123 1.183 1.159 1.136 1.097 1.086 1.007 0.903 0.893 0.905 0.947 0.998 1.053 1.061 1.069 0.989 1.006 1.011 0.920 0.918 0.916 0.935 0.985 1.004 1.068 1.042 1.062 1.023 1.059 1.044 0.974 0.847 0.868 0.868 0.926 0.956 0.985 1.061 1.090 0.985 1.061 1.040 1.012 0.923 0.890 0.852 0.962 0.978 1.023 1.124 1.057 1.055 1.068 1.003 1.018 </item>
+   <item>0.894 0.786 0.834 0.903 0.934 0.967 0.972 1.022 0.998 0.943 0.908 1.036 0.831 0.837 0.914 1.039 1.082 1.140 1.158 1.144 1.158 1.062 1.094 1.017 0.836 0.897 0.919 0.994 1.064 1.117 1.137 1.158 1.089 1.059 1.023 0.996 0.885 0.899 0.946 0.993 1.083 1.119 1.177 1.157 1.132 1.099 1.094 1.036 0.863 0.862 0.886 0.934 0.985 1.040 1.056 1.064 0.989 1.010 1.023 0.962 0.880 0.888 0.920 0.982 1.005 1.066 1.047 1.070 1.033 1.068 1.056 1.037 0.815 0.841 0.862 0.926 0.952 0.984 1.050 1.075 0.976 1.068 1.064 1.079 0.944 0.871 0.842 0.942 0.964 1.004 1.100 1.030 1.024 1.057 1.068 1.153 </item>
+   <item>0.930 0.844 0.891 0.956 0.972 0.995 0.995 1.037 1.007 0.946 0.901 0.995 0.892 0.911 0.985 1.103 1.134 1.181 1.190 1.165 1.173 1.075 1.091 0.991 0.888 0.951 0.965 1.032 1.095 1.140 1.153 1.161 1.094 1.032 1.005 0.962 0.930 0.943 0.982 1.024 1.106 1.139 1.190 1.159 1.126 1.080 1.058 0.988 0.907 0.904 0.921 0.965 1.010 1.060 1.074 1.075 0.990 0.991 0.988 0.914 0.902 0.911 0.938 0.991 1.013 1.067 1.049 1.056 1.004 1.019 0.998 0.950 0.838 0.871 0.873 0.925 0.953 0.982 1.037 1.046 0.937 1.005 0.997 0.976 0.900 0.858 0.832 0.917 0.936 0.970 1.053 0.986 0.968 0.974 0.946 0.961 </item>
+   <item>0.828 0.814 0.867 0.928 0.946 0.958 0.956 0.983 0.939 0.873 0.817 0.882 0.860 0.882 0.952 1.066 1.095 1.133 1.137 1.101 1.088 0.980 0.994 0.898 0.895 0.973 0.989 1.055 1.112 1.147 1.160 1.156 1.075 1.016 0.967 0.933 0.956 0.989 1.034 1.075 1.158 1.186 1.235 1.189 1.143 1.087 1.053 0.987 0.931 0.951 0.975 1.025 1.075 1.128 1.145 1.133 1.026 1.021 1.003 0.927 0.905 0.947 0.984 1.049 1.076 1.137 1.115 1.109 1.040 1.047 1.011 0.956 0.815 0.866 0.877 0.956 0.995 1.027 1.069 1.065 0.939 1.006 1.011 1.003 0.775 0.795 0.797 0.900 0.930 0.958 1.032 0.953 0.939 0.972 0.988 1.068 </item>
+  </Coeff_Optic>
+ </device>
+</protocol>

@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/new.png</file>
+        <file>images/open.png</file>
+        <file>images/save.png</file>
+        <file>images/copy.png</file>
+        <file>images/clear.png</file>
+        <file>images/clear_16.png</file>
+        <file>images/clear_new.png</file>
+        <file>images/copy_new.png</file>
+        <file>images/new_new.png</file>
+        <file>images/open_new.png</file>
+        <file>images/save_new.png</file>
+        <file>images/edit_test.png</file>
+        <file>images/edit_TestNew.png</file>
+        <file>images/clear_editor.png</file>
+        <file>translations/test_editor_ru.qm</file>
+        <file>images/dna_2.ico</file>
+        <file>images/flat/clear_flat.png</file>
+        <file>images/flat/copy_flat.png</file>
+        <file>images/flat/new_flat.png</file>
+        <file>images/flat/save_flat.png</file>
+        <file>images/flat/edit_flat.png</file>
+        <file>images/flat/copy_new.png</file>
+        <file>translations/test_editor_en.qm</file>
+        <file>images/DTm.ico</file>
+        <file>images/flat/folder_16.png</file>
+        <file>images/flat/folder_new_16.png</file>
+        <file>images/flat/folder_new_fix.png</file>
+        <file>images/flat/container_24.png</file>
+        <file>images/flat/container.png</file>
+        <file>images/RT.ico</file>
+    </qresource>
+</RCC>

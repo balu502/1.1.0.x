@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/copy_clipboard.png</file>
+        <file>images/copy_excel.png</file>
+        <file>images/cy5_flat.png</file>
+        <file>images/cy55_flat.png</file>
+        <file>images/disable_flat.png</file>
+        <file>images/fam_flat.png</file>
+        <file>images/hex_flat.png</file>
+        <file>images/rox_flat.png</file>
+        <file>translations/analyser_peaksarea_en.qm</file>
+        <file>translations/analyser_peaksarea_ru.qm</file>
+        <file>images/Attention.png</file>
+        <file>images/open_32.png</file>
+        <file>images/chart_1.png</file>
+        <file>images/chart_2.png</file>
+        <file>images/chart_3.png</file>
+        <file>images/chart_4.png</file>
+        <file>images/chart_5.png</file>
+        <file>images/surface_3D.png</file>
+        <file>images/Numerate.png</file>
+        <file>images/Numerate_small.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<TLabInfoFm Name="LabInfoFm">
+	<Caption>Information about laboratory</Caption>
+	<Font>
+		<Name>Tahoma</Name>
+	</Font>
+<TLabel Name="Label1">
+	<Caption>Information about laboratory:</Caption>
+</TLabel>
+<TImage Name="imgLogo">
+</TImage>
+<TPanel Name="Panel1">
+<TButton Name="btnOk">
+	<Caption>OK</Caption>
+</TButton>
+<TButton Name="btnCancel">
+	<Caption>Cancel</Caption>
+</TButton></TPanel>
+<TMemo Name="mLabInfo">
+</TMemo>
+<TButtonedEdit Name="beLogo">
+	<Images>ImageList</Images>
+	<LeftButton>
+		<Hint></Hint>
+	</LeftButton>
+	<RightButton>
+		<Hint></Hint>
+	</RightButton>
+</TButtonedEdit>
+<TCheckBox Name="cbLogo">
+	<Caption>Logotype:</Caption>
+</TCheckBox>
+<TImageList Name="ImageList"></TImageList></TLabInfoFm>

@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>translations/Common_ru.qm</file>
+        <file>images/dna_2.ico</file>
+        <file>translations/Common_en.qm</file>
+        <file>images/DTm.ico</file>
+        <file>images/RT.ico</file>
+    </qresource>
+</RCC>

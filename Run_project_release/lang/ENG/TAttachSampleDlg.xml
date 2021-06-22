@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TAttachSampleDlg Name="AttachSampleDlg">
+	<Caption>Couple sample selection</Caption>
+	<Font>
+		<Name>Tahoma</Name>
+	</Font>
+<TPanel Name="Panel1">
+<TButton Name="btnOk">
+	<Caption>OK</Caption>
+</TButton>
+<TButton Name="btnCancel">
+	<Caption>Cancel</Caption>
+</TButton>
+</TPanel>
+<TPanel Name="pnSearch">
+<TLabel Name="Label2">
+	<Caption>Find couple sample by ID:</Caption>
+</TLabel>
+<TEdit Name="edSearch">
+</TEdit>
+<TPanel Name="Panel2">
+<TLabel Name="lblCurrentSample">
+	<Caption>CurrentSample</Caption>
+	<Font>
+		<Name>Tahoma</Name>
+	</Font>
+</TLabel>
+<TSpeedButton Name="btnMenu">
+</TSpeedButton></TPanel></TPanel>
+<TYoDBGrid Name="Grid">
+	<DataSource>DataSource</DataSource>
+	<FooterFont>
+		<Name>Tahoma</Name>
+	</FooterFont>
+	<PopupMenu>PopupMenu</PopupMenu>
+	<TitleFont>
+		<Name>Tahoma</Name>
+	</TitleFont>
+	<YoKeyName>ID</YoKeyName>
+<TRowDetailPanelControlEh Name="RowDetailData">
+</TRowDetailPanelControlEh></TYoDBGrid>
+<TPanel Name="pnTools">
+<TButton Name="btnAddSample">
+	<Action>acAddSample</Action>
+</TButton>
+<TButton Name="btnDetach">
+	<Action>acDetach</Action>
+	<CommandLinkHint></CommandLinkHint>
+</TButton>
+<TButton Name="btnImport">
+	<Action>acImport</Action>
+</TButton></TPanel>
+<TPanel Name="pnInfo">
+<TLabel Name="lblInfo">
+</TLabel></TPanel>
+<TClientDataSet Name="Dataset">
+<TStringField Name="DatasetCode">
+	<FieldName>Code</FieldName>
+</TStringField>
+<TStringField Name="DatasetName">
+	<FieldName>Name</FieldName>
+</TStringField>
+<TStringField Name="DatasetSex">
+	<FieldName>Sex</FieldName>
+</TStringField>
+<TStringField Name="Datasetid">
+	<FieldName>id</FieldName>
+</TStringField></TClientDataSet>
+<TDataSource Name="DataSource">
+	<DataSet>Dataset</DataSet></TDataSource>
+<TActionList Name="ActionList">
+<TAction Name="acAddSample">
+	<Caption>Add sample... </Caption>
+	<Hint>Add new sample</Hint>
+</TAction>
+<TAction Name="acDetach">
+	<Caption>Delete link</Caption>
+</TAction>
+<TAction Name="acEditSample">
+	<Caption>Info fields...</Caption>
+</TAction>
+<TAction Name="acImport">
+	<Caption>Import...</Caption>
+</TAction>
+<TAction Name="acEditResults">
+	<Caption>Edit results...</Caption>
+</TAction>
+<TAction Name="acEditCurrentSample">
+	<Caption>Info fields...</Caption>
+</TAction>
+<TAction Name="acEditCurrentSampleResults">
+	<Caption>Edit results...</Caption>
+</TAction></TActionList>
+<TPopupMenu Name="PopupMenu">
+	<Items>
+<TMenuItem Name="pmAddSample">
+	<Action>acAddSample</Action>
+</TMenuItem>
+<TMenuItem Name="N1">
+	<Caption>-</Caption>
+</TMenuItem>
+<TMenuItem Name="pmEditSample">
+	<Action>acEditSample</Action>
+</TMenuItem>
+<TMenuItem Name="pmEditResults">
+	<Action>acEditResults</Action>
+</TMenuItem>
+	</Items>
+<TMenuItem Name="pmAddSample">
+	<Action>acAddSample</Action>
+</TMenuItem>
+<TMenuItem Name="N1">
+	<Caption>-</Caption>
+	<Hint></Hint></TMenuItem>
+<TMenuItem Name="pmEditSample">
+	<Action>acEditSample</Action>
+</TMenuItem>
+<TMenuItem Name="pmEditResults">
+	<Action>acEditResults</Action>
+</TMenuItem></TPopupMenu>
+<TPopupMenu Name="pmCurrentSample">
+	<Items>
+<TMenuItem Name="miEditCurrentSample">
+	<Action>acEditCurrentSample</Action>
+</TMenuItem>
+<TMenuItem Name="miEditCurrentSampleResults">
+	<Action>acEditCurrentSampleResults</Action>
+</TMenuItem>
+	</Items>
+<TMenuItem Name="miEditCurrentSample">
+	<Action>acEditCurrentSample</Action>
+</TMenuItem>
+<TMenuItem Name="miEditCurrentSampleResults">
+	<Action>acEditCurrentSampleResults</Action>
+</TMenuItem></TPopupMenu></TAttachSampleDlg>

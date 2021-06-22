@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+
+<TDTRPreviewForm Name="DTRPreviewForm">
+	<Caption>Reports preview</Caption>
+	<Font>
+		<Name>Tahoma</Name>
+	</Font>
+<TSplitter Name="Splitter1">
+</TSplitter>
+<TPanel Name="pnTree">
+<TYoDBTree Name="vtTree">
+	<Header>
+		<Font>
+			<Name>Tahoma</Name>
+		</Font>
+	</Header>
+	<Images>Images16</Images>
+	<PopupMenu>PopupMenu1</PopupMenu>
+	<DBTreeOptions>
+		<KeyFieldName>#XML_ID</KeyFieldName>
+		<ParentFieldName>#XML_ParentID</ParentFieldName>
+	</DBTreeOptions>
+	<DBOptions>
+		<DataSource>srcTree</DataSource>
+	</DBOptions></TYoDBTree>
+<TPanel Name="Panel2">
+<TLabel Name="Label1">
+	<Caption>Reports tree</Caption>
+	<Font>
+		<Name>Tahoma</Name>
+	</Font>
+</TLabel>
+<TSplitter Name="Splitter2">
+</TSplitter></TPanel></TPanel>
+<TPanel Name="pnPreview">
+</TPanel>
+<TApplicationEvents Name="App"></TApplicationEvents>
+<TClientDataSet Name="dsTree">
+<TStringField Name="dsTreeDisplayName">
+	<FieldName>DisplayName</FieldName>
+</TStringField>
+<TMemoField Name="dsTreeSampleCode">
+	<FieldName>Sample/Code</FieldName>
+</TMemoField>
+<TMemoField Name="dsTreeReportServiceID">
+	<FieldName>Report/ServiceID</FieldName>
+</TMemoField>
+<TMemoField Name="dsTreeReportServiceName">
+	<FieldName>Report/ServiceName</FieldName>
+</TMemoField>
+<TIntegerField Name="dsTreeStartPage">
+	<FieldName>StartPage</FieldName>
+</TIntegerField>
+<TIntegerField Name="dsTreeEndPage">
+	<FieldName>EndPage</FieldName>
+</TIntegerField>
+<TMemoField Name="dsTreeInserted">
+	<FieldName>Inserted</FieldName>
+</TMemoField>
+<TStringField Name="dsTreeReportFormID">
+	<FieldName>Report/FormID</FieldName>
+</TStringField>
+<TStringField Name="dsTreeSampleID">
+	<FieldName>Sample/ID</FieldName>
+</TStringField>
+<TStringField Name="dsTreeImportID">
+	<FieldName>ImportID</FieldName>
+</TStringField>
+<TStringField Name="dsTreeReportID">
+	<FieldName>Report/ID</FieldName>
+</TStringField></TClientDataSet>
+<TDataSource Name="srcTree">
+	<DataSet>dsTree</DataSet></TDataSource>
+<TImageList Name="Images16"></TImageList>
+<TPopupMenu Name="PopupMenu1">
+	<Items>
+<TMenuItem Name="N1">
+	<Action>acEditFields</Action>
+</TMenuItem>
+<TMenuItem Name="miEditResults">
+	<Action>acEditResults</Action>
+</TMenuItem>
+<TMenuItem Name="N2">
+	<Action>acAttachSample</Action>
+</TMenuItem>
+<TMenuItem Name="miFindCouple">
+	<Action>acFindCouple</Action>
+</TMenuItem>
+<TMenuItem Name="N4">
+	<Caption>-</Caption>
+</TMenuItem>
+<TMenuItem Name="miImportSamples">
+	<Caption>Import samples...</Caption>
+</TMenuItem>
+<TMenuItem Name="N3">
+	<Caption>-</Caption>
+</TMenuItem>
+<TMenuItem Name="miDeleteSample">
+	<Action>acDeleteSample</Action>
+</TMenuItem>
+<TMenuItem Name="N5">
+	<Caption>-</Caption>
+</TMenuItem>
+<TMenuItem Name="N6">
+	<Action>acSettings</Action>
+</TMenuItem>
+<TMenuItem Name="N7">
+	<Caption>-</Caption>
+</TMenuItem>
+<TMenuItem Name="N8">
+	<Action>acCheckAll</Action>
+</TMenuItem>
+<TMenuItem Name="N9">
+	<Action>acUnCheckAll</Action>
+</TMenuItem>
+<TMenuItem Name="N10">
+	<Action>acCheckSelected</Action>
+</TMenuItem>
+	</Items>
+<TMenuItem Name="N1">
+	<Action>acEditFields</Action>
+</TMenuItem>
+<TMenuItem Name="miEditResults">
+	<Action>acEditResults</Action>
+</TMenuItem>
+<TMenuItem Name="N2">
+	<Action>acAttachSample</Action>
+</TMenuItem>
+<TMenuItem Name="miFindCouple">
+	<Action>acFindCouple</Action>
+</TMenuItem>
+<TMenuItem Name="N4">
+	<Caption>-</Caption>
+</TMenuItem>
+<TMenuItem Name="miImportSamples">
+	<Caption>Import samples...</Caption>
+</TMenuItem>
+<TMenuItem Name="N3">
+	<Caption>-</Caption>
+</TMenuItem>
+<TMenuItem Name="miDeleteSample">
+	<Action>acDeleteSample</Action>
+</TMenuItem>
+<TMenuItem Name="N5">
+	<Caption>-</Caption>
+</TMenuItem>
+<TMenuItem Name="N6">
+	<Action>acSettings</Action>
+</TMenuItem>
+<TMenuItem Name="N7">
+	<Caption>-</Caption>
+</TMenuItem>
+<TMenuItem Name="N8">
+	<Action>acCheckAll</Action>
+</TMenuItem>
+<TMenuItem Name="N9">
+	<Action>acUnCheckAll</Action>
+</TMenuItem>
+<TMenuItem Name="N10">
+	<Action>acCheckSelected</Action>
+</TMenuItem></TPopupMenu>
+<TActionList Name="ActionList">
+	<Images>Images16</Images>
+<TAction Name="acEditFields">
+	<Caption>Edit fields...</Caption>
+</TAction>
+<TAction Name="acEditConclusion">
+	<Caption>Edit conclusion...</Caption>
+</TAction>
+<TAction Name="acAttachSample">
+	<Caption>Couple sample...</Caption>
+</TAction>
+<TAction Name="acImportResults">
+	<Caption>Import results...</Caption>
+</TAction>
+<TAction Name="acEditResults">
+	<Caption>Edit results...</Caption>
+</TAction>
+<TAction Name="acDeleteSample">
+	<Caption>Delete sample</Caption>
+</TAction>
+<TAction Name="acFindCouple">
+	<Caption>Find couple sample</Caption>
+</TAction>
+<TAction Name="acSettings">
+	<Caption>Report settings...</Caption>
+</TAction>
+<TAction Name="acCheckAll">
+	<Caption>Check all</Caption>
+</TAction>
+<TAction Name="acUnCheckAll">
+	<Caption>Uncheck all</Caption>
+</TAction>
+<TAction Name="acCheckSelected">
+	<Caption>Check selected</Caption>
+</TAction>
+<TAction Name="acLabInfo">
+	<Hint>Info about laboratory...</Hint></TAction></TActionList>
+<TTimer Name="PreviewTimer"></TTimer></TDTRPreviewForm>

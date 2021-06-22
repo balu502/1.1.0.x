@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NCReport version="2.20.1" name="Untitled" type="report">
+    <options>
+        <encoding>UTF-8</encoding>
+        <language>00</language>
+        <langrole>0</langrole>
+        <orientation>portrait</orientation>
+        <pagesize width="210.000" height="297.000">A4</pagesize>
+        <topmargin>10</topmargin>
+        <bottommargin>10</bottommargin>
+        <leftmargin>15</leftmargin>
+        <rightmargin>10</rightmargin>
+        <backcolor>#ffffff</backcolor>
+        <columns>0</columns>
+        <columnspace>0</columnspace>
+        <zoneSpacing>0</zoneSpacing>
+        <zoneBreak>false</zoneBreak>
+        <varErrorAlert>false</varErrorAlert>
+        <fontname>Arial</fontname>
+        <fontsize>10</fontsize>
+        <fontstyle></fontstyle>
+        <htmlBodyStyle>{DEFAULT}</htmlBodyStyle>
+        <labelColumnCount>0</labelColumnCount>
+        <labelRowCount>0</labelRowCount>
+        <labelHGap>0</labelHGap>
+        <labelVGap>0</labelVGap>
+        <labelWidth>0</labelWidth>
+        <labelHeight>0</labelHeight>
+        <labelDirection>horizontal</labelDirection>
+    </options>
+    <datasources>
+        <datasource id="Titul_Source" allowEmpty="true" enabled="true" type="txt" openRole="begin" source="static" columnDelimiter="tab" encoding="UTF-8"></datasource>
+        <datasource id="p1" allowEmpty="true" enabled="true" type="txt" openRole="begin" source="parameter" columnDelimiter="semicolon" hasColumnHeader="true" encoding="UTF-8">p1</datasource>
+        <datasource id="Header_Source" allowEmpty="true" enabled="true" type="list" openRole="begin" source="static" columnDelimiter="tab" listID="Header_Source"></datasource>
+        <datasource id="Header_PCR" allowEmpty="true" enabled="true" type="txt" openRole="begin" source="parameter" columnDelimiter="tab" encoding="UTF-8">Header_PCR</datasource>
+    </datasources>
+    <variables/>
+    <scripts/>
+    <pageheader id="PH" height="0.000"/>
+    <pagefooter id="PF" height="4.022"/>
+    <details>
+        <detail id="Titul_Data" height="18.203" datasource="Titul_Source">
+            <items>
+                <field id="KJ87E" zValue="0" posX="40.640" posY="2.540" width="83.820" height="5.080" resource="param" fontName="Times New Roman" fontSize="14" fontWeight="bold" alignment="36" type="txt" ftype="par">Titul_Report</field>
+                <field id="5C1MA" zValue="1" posX="1.270" posY="11.430" width="38.100" height="3.810" resource="param" fontName="Times New Roman" fontSize="10" fontWeight="bold" alignment="1" type="txt" ftype="par">CurrentDate</field>
+                <image id="DBTCU" zValue="2" posX="147.320" posY="8.890" width="35.560" height="7.620" aspectRatio="keep" format="0" alignment="1">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</image>
+            </items>
+        </detail>
+        <detail id="Header_Data" height="3.598" datasource="Header_Source">
+            <items>
+                <field id="W78QM" zValue="0" posX="72.390" posY="0.000" width="109.220" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="8" alignment="1" type="txt" ftype="ds">1</field>
+                <field id="F8TD7" zValue="1" posX="25.400" posY="0.000" width="44.450" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="8" alignment="1" type="txt" ftype="ds">0</field>
+            </items>
+        </detail>
+        <detail id="Cp_Data" height="4.022" datasource="p1">
+            <items>
+                <rectangle id="8IQTL" zValue="0" posX="0.000" posY="0.000" width="185.420" height="3.810" autoHeight="true" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fillStyle="solid" fillColor="#ffffff" fitTo="section" dynFillColor="$D{color}" dynLineColor="$D{color}"/>
+                <field id="9SDRD" zValue="1" posX="17.780" posY="0.000" width="80.010" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="9" alignment="1" type="txt" ftype="ds">p1.name</field>
+                <field id="FGOLH" zValue="2" posX="100.330" posY="0.000" width="12.700" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="9" fontWeight="bold" alignment="132" type="txt" ftype="ds">p1.Cp</field>
+                <field id="HTPFP" zValue="3" posX="162.560" posY="0.000" width="21.590" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="9" fontWeight="bold" alignment="132" type="txt" ftype="ds">p1.MC</field>
+                <field id="01JNL" zValue="4" posX="114.300" posY="0.000" width="12.700" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="9" alignment="132" type="txt" ftype="ds">p1.Ct</field>
+                <field id="Z8LEE" zValue="5" posX="0.000" posY="0.000" width="7.620" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="8" alignment="129" type="txt" ftype="ds">p1.pos</field>
+                <field id="WNDMW" zValue="6" posX="128.270" posY="0.000" width="15.240" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="9" alignment="132" type="txt" ftype="ds">p1.S</field>
+                <field id="EVOB1" zValue="7" posX="144.780" posY="0.000" width="7.620" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="9" alignment="132" type="txt" ftype="ds">p1.aFF</field>
+                <field id="8MEMJ" zValue="8" posX="153.670" posY="0.000" width="6.350" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="9" alignment="132" type="txt" ftype="ds">p1.K+</field>
+                <image id="EV5UB" zValue="9" posX="10.160" posY="0.000" width="3.810" height="3.810" resource="filefromds" aspectRatio="keep" format="0" alignment="1">channel</image>
+                <line id="SUIYK" zValue="10" lineColor="#000000" lineStyle="solid" lineWidth="0.100" fromX="161.078" fromY="0.000" toX="161.290" toY="3.810"/>
+            </items>
+            <groups>
+                <group id="header" groupExp="" resetVariables="" reprintHeader="false" startsOnNewPage="false">
+                    <groupheader id="GH_header" height="18.203">
+                        <field id="N9ITP" zValue="0" posX="0.000" posY="3.810" width="54.610" height="5.080" resource="datasource" fontName="Times New Roman" fontSize="12" fontWeight="bold" alignment="1" type="txt" ftype="ds">Header_PCR.col0</field>
+                        <field id="5ZY4H" zValue="1" posX="0.000" posY="13.970" width="7.620" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="8" fontWeight="bold" alignment="1" type="txt" ftype="ds">Header_PCR.col1</field>
+                        <field id="SUIYK" zValue="2" posX="10.160" posY="13.970" width="5.080" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="8" fontWeight="bold" alignment="36" type="txt" ftype="ds">Header_PCR.col2</field>
+                        <field id="HTPFP" zValue="3" posX="17.780" posY="13.970" width="26.670" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="8" fontWeight="bold" alignment="1" type="txt" ftype="ds">Header_PCR.col3</field>
+                        <field id="N7Q30" zValue="4" posX="100.330" posY="13.970" width="12.700" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="8" fontWeight="bold" alignment="36" type="txt" ftype="ds">Header_PCR.col4</field>
+                        <field id="ROE94" zValue="5" posX="114.300" posY="13.970" width="12.700" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="8" fontWeight="bold" alignment="36" type="txt" ftype="ds">Header_PCR.col5</field>
+                        <field id="YXWQN" zValue="6" posX="128.270" posY="13.970" width="15.240" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="8" fontWeight="bold" alignment="36" type="txt" ftype="ds">Header_PCR.col6</field>
+                        <field id="BIBIX" zValue="7" posX="144.780" posY="13.970" width="7.620" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="8" fontWeight="bold" alignment="36" type="txt" ftype="ds">Header_PCR.col7</field>
+                        <field id="4ZJ7U" zValue="8" posX="153.670" posY="13.970" width="7.620" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="8" fontWeight="bold" alignment="36" type="txt" ftype="ds">Header_PCR.col8</field>
+                        <field id="5ZY4H" zValue="9" posX="162.560" posY="13.970" width="21.590" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="8" fontWeight="bold" alignment="36" type="txt" ftype="ds">Header_PCR.col9</field>
+                    </groupheader>
+                </group>
+                <group id="group" groupExp="p1.group" resetVariables="" reprintHeader="false" startsOnNewPage="false">
+                    <groupheader id="GH_group" height="4.000">
+                        <rectangle id="YE2WG" zValue="0" posX="0.000" posY="0.000" width="185.420" height="3.810" lineColor="#ffffe1" lineStyle="solid" lineWidth="0.100" fillStyle="solid" fillColor="#ffffe1"/>
+                        <field id="BLPM4" zValue="1" posX="36.830" posY="0.000" width="130.810" height="3.810" resource="datasource" fontName="Times New Roman" fontSize="10" fontWeight="bold" alignment="1" type="txt" ftype="ds">p1.group</field>
+                    </groupheader>
+                    <groupfooter id="GF_group" height="0.847"/>
+                </group>
+            </groups>
+        </detail>
+    </details>
+</NCReport>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NCReport version="2.22.1" name="Untitled" type="report">
+    <options>
+        <encoding>UTF-8</encoding>
+        <language>00</language>
+        <langrole>0</langrole>
+        <orientation>portrait</orientation>
+        <pagesize width="210.000" height="297.000">A4</pagesize>
+        <topmargin>15</topmargin>
+        <bottommargin>15</bottommargin>
+        <leftmargin>20</leftmargin>
+        <rightmargin>20</rightmargin>
+        <backcolor>#ffffff</backcolor>
+        <columns>0</columns>
+        <columnspace>0</columnspace>
+        <zoneSpacing>0</zoneSpacing>
+        <zoneBreak>false</zoneBreak>
+        <varErrorAlert>false</varErrorAlert>
+        <fontname>Arial</fontname>
+        <fontsize>10</fontsize>
+        <fontstyle></fontstyle>
+        <htmlBodyStyle>{DEFAULT}</htmlBodyStyle>
+        <labelColumnCount>0</labelColumnCount>
+        <labelRowCount>0</labelRowCount>
+        <labelHGap>0</labelHGap>
+        <labelVGap>0</labelVGap>
+        <labelWidth>-1</labelWidth>
+        <labelHeight>-1</labelHeight>
+        <labelDirection>horizontal</labelDirection>
+    </options>
+    <datasources>
+        <datasource id="Header_Source" allowEmpty="true" enabled="true" type="list" openRole="begin" source="static" columnDelimiter="tab" listID=""></datasource>
+    </datasources>
+    <variables/>
+    <scripts/>
+    <pageheader id="PH" height="10.000">
+        <label id="XR7Y1" zValue="0" posX="43.180" posY="3.810" width="74.930" height="3.810" fontName="Arial" fontSize="10" alignment="132">Report on PCR results</label>
+    </pageheader>
+    <pagefooter id="PF" height="10.000"/>
+    <details>
+        <detail id="Detail1" height="4.233" datasource="Header_Source">
+            <items>
+                <field id="V5UBE" zValue="2" posX="12.700" posY="0.000" width="25.400" height="3.810" resource="datasource" fontName="Arial" fontSize="10" forecolor="#000000" type="txt" ftype="ds">1</field>
+                <field id="PHMQC" zValue="3" posX="54.610" posY="0.000" width="25.400" height="3.810" resource="datasource" fontName="Arial" fontSize="10" forecolor="#000000" type="txt" ftype="ds">2</field>
+            </items>
+        </detail>
+    </details>
+</NCReport>

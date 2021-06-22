@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/open_flat.png</file>
+        <file>images/save_flat.png</file>
+        <file>images/ok.png</file>
+        <file>images/warning.png</file>
+        <file>translations/contract_en.qm</file>
+        <file>translations/contract_ru.qm</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/flat/edit_Program_flat.png</file>
+        <file>images/flat/open_Program_flat.png</file>
+        <file>images/clear.png</file>
+        <file>images/cy5.png</file>
+        <file>images/cy55.png</file>
+        <file>images/disable.png</file>
+        <file>images/edit_program.png</file>
+        <file>images/fam.png</file>
+        <file>images/hex.png</file>
+        <file>images/new.png</file>
+        <file>images/open.png</file>
+        <file>images/open_new.png</file>
+        <file>images/rox.png</file>
+        <file>translations/peaksarea_ru.qm</file>
+        <file>translations/peaksarea_en.qm</file>
+    </qresource>
+</RCC>

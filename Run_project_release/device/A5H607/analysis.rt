@@ -1,0 +1,3216 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<protocol>
+ <name>Protocol_(96)</name>
+ <barcode/>
+ <regNumber>4H3uF_310521_173717</regNumber>
+ <nameOperator>admin1</nameOperator>
+ <created>31 Май 2021, 17:38:04</created>
+ <status>analysis</status>
+ <activeChannels>11</activeChannels>
+ <xsize>12</xsize>
+ <ysize>8</ysize>
+ <volumeTube>35</volumeTube>
+ <amProgramm>XPRG 0 35 0&#xd;
+XLEV 2000 15 100 0 0 2&#xd;
+XCYC 10&#xd;
+XLEV 2000 15 0 0 0 0&#xd;
+XHLD&#xd;
+XSAV DNATech_67d62a</amProgramm>
+ <properties>
+  <item>
+   <name>Comments</name>
+   <value/>
+  </item>
+ </properties>
+ <dropping>
+  <specSet>
+   <xsize>12</xsize>
+   <ysize>4</ysize>
+   <tubes>
+    <item>
+     <IDTube>0</IDTube>
+     <IDSample>TBCbWdG0LX</IDSample>
+     <name>Sample_1</name>
+     <x>0</x>
+     <y>0</y>
+    </item>
+    <item>
+     <IDTube>1</IDTube>
+     <IDSample>JHCx9IXjuF</IDSample>
+     <name>Sample_2</name>
+     <x>1</x>
+     <y>0</y>
+    </item>
+   </tubes>
+  </specSet>
+  <reagentSet>
+   <xsize>12</xsize>
+   <ysize>4</ysize>
+   <tubes>
+    <item>
+     <IDTube>0</IDTube>
+     <IDTest>-1</IDTest>
+     <IDTemplate>0</IDTemplate>
+     <name>simple</name>
+     <x>0</x>
+     <y>0</y>
+    </item>
+   </tubes>
+  </reagentSet>
+  <tableTESTs/>
+ </dropping>
+ <tests>
+  <item>
+   <IDTest>-1</IDTest>
+   <nameTest>simple</nameTest>
+   <method>0</method>
+   <volumeTube>35</volumeTube>
+   <activeChannels>11</activeChannels>
+   <comment>ууууууууууу</comment>
+   <Catalog/>
+   <amProgramm>XPRG 0 35 0&#xd;
+XLEV 2000 15 100 0 0 2&#xd;
+XCYC 10&#xd;
+XLEV 2000 15 0 0 0 0&#xd;
+XHLD&#xd;
+XSAV DNATech_67d62a</amProgramm>
+   <properties>
+    <item>
+     <name>criterion_PosResult</name>
+     <value>88</value>
+     <unit/>
+    </item>
+    <item>
+     <name>criterion_Validity</name>
+     <value>5</value>
+     <unit/>
+    </item>
+    <item>
+     <name>use_AFF</name>
+     <value>True</value>
+     <unit/>
+    </item>
+    <item>
+     <name>criterion_AFF</name>
+     <value>100</value>
+     <unit/>
+    </item>
+    <item>
+     <name>criterion_AFF_MIN</name>
+     <value>10</value>
+     <unit/>
+    </item>
+    <item>
+     <name>criterion_AFF_MAX</name>
+     <value>90</value>
+     <unit/>
+    </item>
+    <item>
+     <name>sigmoid_ValidityMin</name>
+     <value>7</value>
+     <unit/>
+    </item>
+    <item>
+     <name>sigmoid_ValidityMax</name>
+     <value>20</value>
+     <unit/>
+    </item>
+    <item>
+     <name>use_Threshold</name>
+     <value>False</value>
+     <unit/>
+    </item>
+    <item>
+     <name>value_Threshold</name>
+     <value>10</value>
+     <unit/>
+    </item>
+    <item>
+     <name>exposure_Measurements</name>
+     <value>1.00 1.00 1.00 1.00 1.00</value>
+     <unit/>
+    </item>
+    <item>
+     <name>fluorofors</name>
+     <value>Fam Hex Rox Cy5 Cy5.5</value>
+     <unit/>
+    </item>
+    <item>
+     <name>FWHM_Border</name>
+     <value>3</value>
+     <unit/>
+    </item>
+    <item>
+     <name>peaks_Border</name>
+     <value>20</value>
+     <unit/>
+    </item>
+   </properties>
+   <channels>
+    <item>
+     <IDChannel>0</IDChannel>
+     <number>0</number>
+     <ffor>0</ffor>
+    </item>
+    <item>
+     <IDChannel>1</IDChannel>
+     <number>1</number>
+     <ffor>1</ffor>
+    </item>
+   </channels>
+   <templates>
+    <item>
+     <IDTube>0</IDTube>
+     <name/>
+     <color>0</color>
+     <properties/>
+     <channels>
+      <item>
+       <IDChannel>0</IDChannel>
+       <name>Fam</name>
+       <properties/>
+      </item>
+      <item>
+       <IDChannel>1</IDChannel>
+       <name>Hex</name>
+       <properties/>
+      </item>
+     </channels>
+    </item>
+   </templates>
+  </item>
+ </tests>
+ <sourceSet>
+  <item>
+   <IDGroup>TBCbWdG0LX</IDGroup>
+   <name>Sample_1</name>
+   <properties>
+    <item>
+     <name>patient</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>sex</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>age</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>organization</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>phisician</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>date</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>note</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>additional</name>
+     <value>...</value>
+     <unit/>
+    </item>
+   </properties>
+   <samples>
+    <item>
+     <IDSample>mJRjf8xEgb</IDSample>
+     <IDTest>-1</IDTest>
+     <name>Sample_1</name>
+     <properties/>
+     <tubes>
+      <item>
+       <IDTube>0</IDTube>
+       <name/>
+       <pos>0</pos>
+       <x>0</x>
+       <y>0</y>
+       <pos_protocol>1</pos_protocol>
+       <color>0</color>
+       <channels>
+        <item>
+         <IDChannel>0</IDChannel>
+         <properties/>
+         <channel_results>
+          <item>
+           <name>mc_peaks</name>
+           <value/>
+          </item>
+          <item>
+           <name>mc_amplitude</name>
+           <value/>
+          </item>
+         </channel_results>
+        </item>
+        <item>
+         <IDChannel>1</IDChannel>
+         <properties/>
+         <channel_results>
+          <item>
+           <name>mc_peaks</name>
+           <value/>
+          </item>
+          <item>
+           <name>mc_amplitude</name>
+           <value/>
+          </item>
+         </channel_results>
+        </item>
+       </channels>
+       <tube_results/>
+      </item>
+     </tubes>
+     <sample_results/>
+    </item>
+   </samples>
+  </item>
+  <item>
+   <IDGroup>JHCx9IXjuF</IDGroup>
+   <name>Sample_2</name>
+   <properties>
+    <item>
+     <name>patient</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>sex</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>age</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>organization</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>phisician</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>date</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>note</name>
+     <value>...</value>
+     <unit/>
+    </item>
+    <item>
+     <name>additional</name>
+     <value>...</value>
+     <unit/>
+    </item>
+   </properties>
+   <samples>
+    <item>
+     <IDSample>gl4gfdQk38</IDSample>
+     <IDTest>-1</IDTest>
+     <name>Sample_2</name>
+     <properties/>
+     <tubes>
+      <item>
+       <IDTube>0</IDTube>
+       <name/>
+       <pos>12</pos>
+       <x>0</x>
+       <y>1</y>
+       <pos_protocol>2</pos_protocol>
+       <color>0</color>
+       <channels>
+        <item>
+         <IDChannel>0</IDChannel>
+         <properties/>
+         <channel_results>
+          <item>
+           <name>mc_peaks</name>
+           <value/>
+          </item>
+          <item>
+           <name>mc_amplitude</name>
+           <value/>
+          </item>
+         </channel_results>
+        </item>
+        <item>
+         <IDChannel>1</IDChannel>
+         <properties/>
+         <channel_results>
+          <item>
+           <name>mc_peaks</name>
+           <value/>
+          </item>
+          <item>
+           <name>mc_amplitude</name>
+           <value/>
+          </item>
+         </channel_results>
+        </item>
+       </channels>
+       <tube_results/>
+      </item>
+     </tubes>
+     <sample_results/>
+    </item>
+   </samples>
+  </item>
+ </sourceSet>
+ <device>
+  <SerialName>A5H607</SerialName>
+  <uC_Versions>OPTICS 3.13.96 20/06/16&#xd;
+AMPX 6.13 31/08/2020&#xd;
+SMOT 6.11p 12/03/2013&#xd;
+TFT 1.01.09 Mar 12 2020</uC_Versions>
+  <Type_ThermoBlock>B96A</Type_ThermoBlock>
+  <FluorDevice_MASK>1f</FluorDevice_MASK>
+  <Optical_MASK>0 24 24 0 0 0 0 0 0 0 0 0 0 centers: 100 57 150 57 200 57 251 56 301 56 351 56 401 56 451 56 501 56 552 55 602 55 652 55 100 83 150 83 200 83 251 82 301 82 351 82 401 82 451 82 501 82 552 81 602 81 652 81 101 109 151 109 201 109 251 109 301 109 351 109 402 108 452 108 502 108 552 108 602 108 652 108 101 135 151 135 201 135 251 135 301 135 351 135 402 134 452 134 502 134 552 134 602 134 652 134 101 160 151 160 201 160 251 160 301 160 351 160 402 160 452 160 502 160 552 160 602 160 652 160 101 186 151 186 201 186 251 186 301 186 351 186 402 186 452 186 502 186 552 186 602 186 652 186 102 212 152 212 202 212 252 212 302 212 352 212 402 213 452 213 502 213 552 213 602 213 652 213 102 238 152 238 202 238 252 238 302 238 352 238 402 239 452 239 502 239 552 239 602 239 652 239 </Optical_MASK>
+  <Coeff_Spectral>
+   <item>Fam	0	 1.000 0.029 0.000 0.000 0.000</item>
+   <item>Hex	1	 0.008 1.000 0.004 0.000 0.000</item>
+   <item>Rox	2	 0.000 0.004 1.000 0.032 0.000</item>
+   <item>Cy5	3	 0.000 0.000 0.005 1.000 0.013</item>
+   <item>Cy5.5	4	 0.000 0.000 0.000 0.023 1.000</item>
+  </Coeff_Spectral>
+  <Coeff_UnequalCh>
+   <item>Fam	0	 1.000 2000</item>
+   <item>Hex	1	 1.000 2000</item>
+   <item>R6G	1	 1.000 2000</item>
+   <item>Rox	2	 1.000 2000</item>
+   <item>R610	2	 1.000 2000</item>
+   <item>Cy5	3	 1.000 2000</item>
+   <item>Cy5.5	4	 1.000 2000</item>
+  </Coeff_UnequalCh>
+  <Coeff_Optic>
+   <item>0.918 0.777 0.819 0.876 0.903 0.933 0.936 0.987 0.953 0.900 0.846 0.922 0.814 0.831 0.906 1.023 1.058 1.125 1.135 1.107 1.113 1.024 1.045 0.901 0.836 0.919 0.944 1.013 1.080 1.153 1.165 1.172 1.100 1.047 0.988 0.912 0.905 0.918 0.974 1.023 1.118 1.162 1.216 1.182 1.147 1.098 1.068 0.971 0.886 0.899 0.926 0.979 1.037 1.099 1.090 1.089 0.998 1.005 0.995 0.886 0.909 0.922 0.961 1.022 1.046 1.112 1.074 1.086 1.032 1.054 1.021 0.944 0.838 0.866 0.878 0.951 0.987 1.021 1.096 1.122 0.999 1.061 1.025 0.983 0.945 0.899 0.864 0.989 1.012 1.060 1.162 1.084 1.068 1.069 0.989 1.001 </item>
+   <item>0.896 0.820 0.856 0.903 0.921 0.947 0.956 1.013 0.987 0.938 0.885 0.917 0.856 0.868 0.936 1.048 1.080 1.129 1.147 1.132 1.152 1.071 1.101 0.938 0.868 0.933 0.943 1.007 1.069 1.122 1.142 1.156 1.097 1.060 1.017 0.947 0.924 0.926 0.967 1.006 1.090 1.123 1.183 1.159 1.136 1.097 1.086 1.007 0.903 0.893 0.905 0.947 0.998 1.053 1.061 1.069 0.989 1.006 1.011 0.920 0.918 0.916 0.935 0.985 1.004 1.068 1.042 1.062 1.023 1.059 1.044 0.974 0.847 0.868 0.868 0.926 0.956 0.985 1.061 1.090 0.985 1.061 1.040 1.012 0.923 0.890 0.852 0.962 0.978 1.023 1.124 1.057 1.055 1.068 1.003 1.018 </item>
+   <item>0.894 0.786 0.834 0.903 0.934 0.967 0.972 1.022 0.998 0.943 0.908 1.036 0.831 0.837 0.914 1.039 1.082 1.140 1.158 1.144 1.158 1.062 1.094 1.017 0.836 0.897 0.919 0.994 1.064 1.117 1.137 1.158 1.089 1.059 1.023 0.996 0.885 0.899 0.946 0.993 1.083 1.119 1.177 1.157 1.132 1.099 1.094 1.036 0.863 0.862 0.886 0.934 0.985 1.040 1.056 1.064 0.989 1.010 1.023 0.962 0.880 0.888 0.920 0.982 1.005 1.066 1.047 1.070 1.033 1.068 1.056 1.037 0.815 0.841 0.862 0.926 0.952 0.984 1.050 1.075 0.976 1.068 1.064 1.079 0.944 0.871 0.842 0.942 0.964 1.004 1.100 1.030 1.024 1.057 1.068 1.153 </item>
+   <item>0.930 0.844 0.891 0.956 0.972 0.995 0.995 1.037 1.007 0.946 0.901 0.995 0.892 0.911 0.985 1.103 1.134 1.181 1.190 1.165 1.173 1.075 1.091 0.991 0.888 0.951 0.965 1.032 1.095 1.140 1.153 1.161 1.094 1.032 1.005 0.962 0.930 0.943 0.982 1.024 1.106 1.139 1.190 1.159 1.126 1.080 1.058 0.988 0.907 0.904 0.921 0.965 1.010 1.060 1.074 1.075 0.990 0.991 0.988 0.914 0.902 0.911 0.938 0.991 1.013 1.067 1.049 1.056 1.004 1.019 0.998 0.950 0.838 0.871 0.873 0.925 0.953 0.982 1.037 1.046 0.937 1.005 0.997 0.976 0.900 0.858 0.832 0.917 0.936 0.970 1.053 0.986 0.968 0.974 0.946 0.961 </item>
+   <item>0.828 0.814 0.867 0.928 0.946 0.958 0.956 0.983 0.939 0.873 0.817 0.882 0.860 0.882 0.952 1.066 1.095 1.133 1.137 1.101 1.088 0.980 0.994 0.898 0.895 0.973 0.989 1.055 1.112 1.147 1.160 1.156 1.075 1.016 0.967 0.933 0.956 0.989 1.034 1.075 1.158 1.186 1.235 1.189 1.143 1.087 1.053 0.987 0.931 0.951 0.975 1.025 1.075 1.128 1.145 1.133 1.026 1.021 1.003 0.927 0.905 0.947 0.984 1.049 1.076 1.137 1.115 1.109 1.040 1.047 1.011 0.956 0.815 0.866 0.877 0.956 0.995 1.027 1.069 1.065 0.939 1.006 1.011 1.003 0.775 0.795 0.797 0.900 0.930 0.958 1.032 0.953 0.939 0.972 0.988 1.068 </item>
+  </Coeff_Optic>
+ </device>
+ <measurements>
+  <item>
+   <channel>Fam_0</channel>
+   <fn>0</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>0</cycle_rep>
+   <optical_channel>0</optical_channel>
+   <exp_number>0</exp_number>
+   <blk_exp>130</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>1000</expVal>
+   <data>&#xd;
+1686 1447 1301 1774 1907 1719 2086 1759 1399 1709 1858 1734 &#xd;
+1161 922 1305 1577 1606 1466 1705 1297 1409 1396 1417 1344 &#xd;
+1841 1124 1133 1097 1203 2000 1314 1284 1391 1379 1522 1370 &#xd;
+1212 1056 1148 1175 1417 1468 1794 1558 1539 1467 1375 1709 &#xd;
+1321 1179 1258 1653 1261 1479 35544 1348 1452 1763 1286 1619 &#xd;
+1464 1319 1662 1374 1196 1370 1466 1516 1393 1356 1387 1498 &#xd;
+1362 35258 1266 1375 1305 1401 1486 1899 1297 1351 1490 1687 &#xd;
+1763 1615 1254 1523 1528 1704 1917 1611 1638 36483 1419 1654 </data>
+  </item>
+  <item>
+   <channel>Fam_1</channel>
+   <fn>0</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>0</cycle_rep>
+   <optical_channel>0</optical_channel>
+   <exp_number>1</exp_number>
+   <blk_exp>129</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>200</expVal>
+   <data>&#xd;
+447 398 369 465 492 453 529 462 388 452 482 456 &#xd;
+339 291 369 424 430 402 450 367 390 387 391 377 &#xd;
+479 333 334 327 349 511 371 365 387 384 413 383 &#xd;
+350 318 337 343 392 403 469 421 417 402 384 452 &#xd;
+372 343 359 440 360 404 732 378 399 462 365 433 &#xd;
+401 372 442 384 347 382 402 412 387 379 386 408 &#xd;
+381 719 361 383 369 389 406 489 367 378 406 446 &#xd;
+462 432 359 413 414 451 493 431 437 1491 392 440 </data>
+  </item>
+  <item>
+   <channel>Hex_0</channel>
+   <fn>0</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>0</cycle_rep>
+   <optical_channel>1</optical_channel>
+   <exp_number>0</exp_number>
+   <blk_exp>130</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>1000</expVal>
+   <data>&#xd;
+329 291 275 375 417 325 316 321 271 327 347 308 &#xd;
+257 221 274 309 301 281 312 262 275 270 275 273 &#xd;
+427 248 243 237 247 372 262 261 266 272 292 286 &#xd;
+262 239 249 242 272 287 324 284 293 281 278 327 &#xd;
+270 253 254 311 251 277 443 263 278 320 263 309 &#xd;
+288 273 297 285 249 257 273 274 262 262 297 289 &#xd;
+271 512 251 261 248 316 266 336 258 263 283 303 &#xd;
+324 300 251 287 280 304 327 292 309 1122 280 340 </data>
+  </item>
+  <item>
+   <channel>Hex_1</channel>
+   <fn>0</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>0</cycle_rep>
+   <optical_channel>1</optical_channel>
+   <exp_number>1</exp_number>
+   <blk_exp>129</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>200</expVal>
+   <data>&#xd;
+169 162 159 179 187 168 167 168 157 169 173 165 &#xd;
+155 148 159 166 164 160 166 156 159 158 159 158 &#xd;
+189 153 152 151 153 178 156 156 157 158 162 161 &#xd;
+156 151 153 152 158 161 168 160 162 160 159 169 &#xd;
+158 154 154 166 154 159 193 156 159 168 156 166 &#xd;
+161 158 163 161 153 155 158 158 156 156 163 162 &#xd;
+158 207 154 156 153 167 157 171 155 156 161 165 &#xd;
+169 164 154 161 160 165 169 162 166 332 160 172 </data>
+  </item>
+  <item>
+   <channel>Fam_0</channel>
+   <fn>1</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>1</cycle_rep>
+   <optical_channel>0</optical_channel>
+   <exp_number>0</exp_number>
+   <blk_exp>130</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>1000</expVal>
+   <data>&#xd;
+1676 1430 1288 1757 1890 1693 2069 1727 1385 1695 1840 1717 &#xd;
+1150 910 1288 1562 1582 1451 1672 1282 1395 1379 1402 1332 &#xd;
+1825 1113 1122 1087 1192 1981 1301 1272 1378 1362 1501 1357 &#xd;
+1201 1046 1136 1163 1404 1455 1772 1543 1524 1454 1364 1689 &#xd;
+1307 1168 1244 1601 1249 1463 35482 1357 1435 1745 1274 1596 &#xd;
+1446 1305 1635 1362 1185 1355 1451 1502 1381 1344 1373 1481 &#xd;
+1350 35237 1253 1353 1291 1389 1473 1874 1286 1338 1477 1660 &#xd;
+1749 1601 1243 1505 1514 1685 1891 1598 1624 36472 1410 1639 </data>
+  </item>
+  <item>
+   <channel>Fam_1</channel>
+   <fn>1</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>1</cycle_rep>
+   <optical_channel>0</optical_channel>
+   <exp_number>1</exp_number>
+   <blk_exp>129</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>200</expVal>
+   <data>&#xd;
+445 394 365 461 488 448 525 455 385 448 480 453 &#xd;
+337 288 365 422 425 399 444 364 387 384 388 374 &#xd;
+475 330 332 324 346 507 368 362 384 380 409 379 &#xd;
+348 316 334 340 389 399 464 417 414 399 381 447 &#xd;
+369 341 356 428 358 401 711 379 395 459 362 428 &#xd;
+397 369 436 381 344 379 399 409 384 377 382 405 &#xd;
+378 712 359 379 366 386 403 485 365 376 403 441 &#xd;
+459 429 356 410 412 446 489 429 434 1466 391 437 </data>
+  </item>
+  <item>
+   <channel>Hex_0</channel>
+   <fn>1</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>1</cycle_rep>
+   <optical_channel>1</optical_channel>
+   <exp_number>0</exp_number>
+   <blk_exp>130</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>1000</expVal>
+   <data>&#xd;
+328 289 274 373 415 321 314 318 270 326 349 307 &#xd;
+255 220 271 307 298 279 308 260 273 268 273 271 &#xd;
+425 247 242 235 246 370 261 260 264 270 289 285 &#xd;
+260 237 248 240 271 286 321 282 290 279 276 324 &#xd;
+268 251 253 305 250 276 433 264 276 318 262 306 &#xd;
+286 271 294 284 248 255 272 273 261 261 296 288 &#xd;
+270 507 250 259 247 315 264 334 257 262 282 300 &#xd;
+322 299 250 286 279 303 326 291 308 1104 280 340 </data>
+  </item>
+  <item>
+   <channel>Hex_1</channel>
+   <fn>1</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>1</cycle_rep>
+   <optical_channel>1</optical_channel>
+   <exp_number>1</exp_number>
+   <blk_exp>129</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>200</expVal>
+   <data>&#xd;
+169 161 158 179 187 168 166 167 158 169 174 165 &#xd;
+155 147 158 165 163 160 165 155 158 157 158 158 &#xd;
+189 153 152 151 153 178 156 156 157 158 162 161 &#xd;
+156 151 153 152 158 161 168 160 162 160 159 169 &#xd;
+158 154 154 165 154 159 191 157 159 167 156 165 &#xd;
+161 158 162 161 153 155 158 158 156 156 163 161 &#xd;
+157 206 154 155 153 167 157 171 155 156 160 164 &#xd;
+169 164 154 161 160 164 169 162 166 328 160 172 </data>
+  </item>
+  <item>
+   <channel>Fam_0</channel>
+   <fn>2</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>2</cycle_rep>
+   <optical_channel>0</optical_channel>
+   <exp_number>0</exp_number>
+   <blk_exp>130</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>1000</expVal>
+   <data>&#xd;
+1663 1423 1282 1749 1880 1691 2065 1715 1379 1690 1828 1713 &#xd;
+1145 907 1282 1554 1569 1444 1666 1279 1388 1370 1397 1331 &#xd;
+1814 1107 1115 1081 1185 1970 1293 1265 1372 1356 1492 1355 &#xd;
+1191 1040 1129 1156 1395 1447 1760 1534 1519 1447 1359 1681 &#xd;
+1301 1161 1239 1568 1242 1455 35440 1356 1428 1738 1268 1580 &#xd;
+1446 1298 1617 1354 1175 1345 1443 1496 1374 1338 1370 1479 &#xd;
+1342 35219 1246 1343 1286 1383 1464 1866 1280 1333 1472 1653 &#xd;
+1737 1591 1236 1499 1507 1674 1876 1593 1617 36460 1406 1640 </data>
+  </item>
+  <item>
+   <channel>Fam_1</channel>
+   <fn>2</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>2</cycle_rep>
+   <optical_channel>0</optical_channel>
+   <exp_number>1</exp_number>
+   <blk_exp>129</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>200</expVal>
+   <data>&#xd;
+442 393 364 460 487 448 524 453 384 448 477 452 &#xd;
+336 288 364 420 423 397 443 363 386 382 388 374 &#xd;
+473 328 330 323 345 505 366 361 382 379 407 379 &#xd;
+346 315 333 339 387 398 462 416 413 398 380 446 &#xd;
+368 340 356 423 356 400 697 379 394 457 361 425 &#xd;
+397 368 433 379 342 377 397 408 383 375 382 404 &#xd;
+377 705 357 377 365 385 401 483 364 375 403 440 &#xd;
+457 428 355 408 410 444 485 427 433 1448 390 437 </data>
+  </item>
+  <item>
+   <channel>Hex_0</channel>
+   <fn>2</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>2</cycle_rep>
+   <optical_channel>1</optical_channel>
+   <exp_number>0</exp_number>
+   <blk_exp>130</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>1000</expVal>
+   <data>&#xd;
+327 289 273 373 414 321 314 317 269 326 344 307 &#xd;
+255 220 271 306 297 279 308 260 273 268 273 272 &#xd;
+422 246 240 235 245 368 260 259 263 269 288 284 &#xd;
+259 237 247 240 270 285 319 282 290 279 276 323 &#xd;
+268 250 252 301 249 274 426 264 275 316 261 304 &#xd;
+286 270 292 283 247 254 271 272 260 260 295 287 &#xd;
+268 503 249 258 247 314 263 332 256 261 281 299 &#xd;
+320 298 249 285 278 302 323 290 307 1090 279 338 </data>
+  </item>
+  <item>
+   <channel>Hex_1</channel>
+   <fn>2</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>2</cycle_rep>
+   <optical_channel>1</optical_channel>
+   <exp_number>1</exp_number>
+   <blk_exp>129</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>200</expVal>
+   <data>&#xd;
+169 161 158 178 187 168 166 167 157 169 173 165 &#xd;
+154 147 158 165 163 159 165 155 158 157 158 158 &#xd;
+189 153 152 150 152 177 155 155 156 157 161 160 &#xd;
+155 151 153 151 157 160 167 160 161 159 158 168 &#xd;
+157 153 153 164 153 158 189 156 158 166 156 164 &#xd;
+161 158 162 160 153 154 158 158 156 156 163 161 &#xd;
+157 205 153 155 153 166 156 170 155 156 160 164 &#xd;
+168 163 153 161 159 164 168 162 165 325 159 172 </data>
+  </item>
+  <item>
+   <channel>Fam_0</channel>
+   <fn>3</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>3</cycle_rep>
+   <optical_channel>0</optical_channel>
+   <exp_number>0</exp_number>
+   <blk_exp>130</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>1000</expVal>
+   <data>&#xd;
+1660 1421 1279 1743 1875 1691 2061 1713 1372 1682 1859 1709 &#xd;
+1142 907 1279 1547 1564 1436 1681 1274 1381 1367 1392 1329 &#xd;
+1802 1100 1108 1076 1179 1958 1284 1261 1367 1357 1491 1356 &#xd;
+1178 1037 1126 1147 1386 1437 1755 1526 1511 1440 1353 1675 &#xd;
+1294 1153 1237 1560 1235 1452 35432 1359 1428 1745 1261 1572 &#xd;
+1447 1289 1611 1350 1167 1337 1435 1488 1367 1331 1365 1474 &#xd;
+1334 35204 1238 1338 1286 1378 1455 1865 1272 1327 1467 1647 &#xd;
+1726 1581 1226 1493 1498 1666 1862 1586 1606 36450 1401 1630 </data>
+  </item>
+  <item>
+   <channel>Fam_1</channel>
+   <fn>3</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>3</cycle_rep>
+   <optical_channel>0</optical_channel>
+   <exp_number>1</exp_number>
+   <blk_exp>129</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>200</expVal>
+   <data>&#xd;
+441 393 364 458 486 448 523 452 383 446 482 451 &#xd;
+335 288 364 418 422 396 446 362 385 382 387 374 &#xd;
+470 327 329 322 343 502 365 360 381 379 407 379 &#xd;
+343 314 332 336 386 396 461 414 411 396 379 445 &#xd;
+367 338 355 421 355 399 695 380 394 459 360 423 &#xd;
+398 366 431 379 341 376 395 406 382 374 381 403 &#xd;
+375 700 355 376 365 384 400 483 363 373 402 438 &#xd;
+454 425 353 407 408 443 483 426 430 1432 389 435 </data>
+  </item>
+  <item>
+   <channel>Hex_0</channel>
+   <fn>3</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>3</cycle_rep>
+   <optical_channel>1</optical_channel>
+   <exp_number>0</exp_number>
+   <blk_exp>130</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>1000</expVal>
+   <data>&#xd;
+327 289 273 372 413 321 313 317 269 325 348 306 &#xd;
+255 220 272 306 297 279 311 260 273 267 273 271 &#xd;
+421 245 240 236 245 367 259 259 263 270 289 285 &#xd;
+258 237 247 239 269 284 320 281 290 277 275 323 &#xd;
+268 250 252 301 249 275 425 265 276 318 261 304 &#xd;
+286 269 291 282 247 254 270 272 260 259 295 287 &#xd;
+268 498 249 258 247 314 263 333 256 260 281 299 &#xd;
+320 297 249 285 277 301 323 290 306 1080 278 337 </data>
+  </item>
+  <item>
+   <channel>Hex_1</channel>
+   <fn>3</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>3</cycle_rep>
+   <optical_channel>1</optical_channel>
+   <exp_number>1</exp_number>
+   <blk_exp>129</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>200</expVal>
+   <data>&#xd;
+169 161 158 178 187 168 166 167 157 169 173 165 &#xd;
+155 148 158 165 163 160 166 156 158 157 158 158 &#xd;
+189 153 152 151 153 178 156 155 157 158 162 161 &#xd;
+155 151 153 151 158 161 168 160 162 159 159 169 &#xd;
+157 153 154 164 153 159 189 157 159 167 156 165 &#xd;
+161 158 162 160 153 154 158 158 156 155 163 161 &#xd;
+157 204 153 155 153 166 156 170 154 156 160 163 &#xd;
+168 163 153 161 159 164 168 162 165 323 160 171 </data>
+  </item>
+  <item>
+   <channel>Fam_0</channel>
+   <fn>4</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>4</cycle_rep>
+   <optical_channel>0</optical_channel>
+   <exp_number>0</exp_number>
+   <blk_exp>130</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>1000</expVal>
+   <data>&#xd;
+1655 1420 1274 1737 1873 1690 2058 1713 1367 1674 1855 1703 &#xd;
+1141 906 1275 1539 1562 1431 1693 1270 1376 1364 1387 1328 &#xd;
+1791 1094 1102 1073 1174 1946 1280 1256 1363 1354 1488 1357 &#xd;
+1169 1033 1121 1140 1379 1430 1749 1518 1501 1440 1348 1671 &#xd;
+1289 1147 1235 1564 1229 1443 35437 1340 1424 1745 1254 1566 &#xd;
+1446 1281 1603 1346 1161 1329 1427 1484 1360 1326 1360 1471 &#xd;
+1327 35189 1231 1335 1284 1372 1446 1862 1267 1319 1460 1642 &#xd;
+1715 1572 1218 1488 1489 1658 1852 1580 1597 36441 1397 1623 </data>
+  </item>
+  <item>
+   <channel>Fam_1</channel>
+   <fn>4</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>4</cycle_rep>
+   <optical_channel>0</optical_channel>
+   <exp_number>1</exp_number>
+   <blk_exp>129</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>200</expVal>
+   <data>&#xd;
+440 393 363 457 485 448 523 452 382 444 482 450 &#xd;
+335 288 363 417 422 394 448 362 384 381 386 374 &#xd;
+469 326 328 322 342 500 364 359 381 379 407 379 &#xd;
+342 314 331 336 384 395 460 413 409 397 378 444 &#xd;
+366 337 355 422 354 397 697 376 393 459 358 422 &#xd;
+398 364 430 377 339 374 394 405 380 373 380 403 &#xd;
+374 694 354 375 365 383 398 483 362 372 401 438 &#xd;
+452 424 351 406 406 441 481 425 428 1421 387 434 </data>
+  </item>
+  <item>
+   <channel>Hex_0</channel>
+   <fn>4</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>4</cycle_rep>
+   <optical_channel>1</optical_channel>
+   <exp_number>0</exp_number>
+   <blk_exp>130</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>1000</expVal>
+   <data>&#xd;
+326 289 273 371 412 322 314 318 269 324 348 307 &#xd;
+255 220 272 306 297 278 313 259 272 267 273 272 &#xd;
+419 244 240 235 244 365 259 258 263 270 288 285 &#xd;
+257 236 246 238 268 283 319 280 289 279 275 322 &#xd;
+267 249 252 301 248 274 426 262 275 318 260 303 &#xd;
+287 269 291 282 246 253 269 271 259 259 295 287 &#xd;
+267 494 248 257 247 313 262 333 255 260 280 298 &#xd;
+318 296 247 285 276 300 321 289 305 1072 278 337 </data>
+  </item>
+  <item>
+   <channel>Hex_1</channel>
+   <fn>4</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>4</cycle_rep>
+   <optical_channel>1</optical_channel>
+   <exp_number>1</exp_number>
+   <blk_exp>129</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>200</expVal>
+   <data>&#xd;
+169 162 158 178 187 168 166 167 157 168 174 165 &#xd;
+154 147 158 165 163 159 166 155 158 157 158 158 &#xd;
+188 152 152 151 152 177 155 155 156 158 161 161 &#xd;
+155 151 153 151 158 161 168 160 162 160 159 169 &#xd;
+157 153 154 164 153 158 189 156 159 167 156 164 &#xd;
+161 157 162 160 153 154 157 158 155 155 163 161 &#xd;
+157 204 154 155 153 166 156 171 155 156 160 164 &#xd;
+168 163 153 161 159 164 168 162 165 322 159 171 </data>
+  </item>
+  <item>
+   <channel>Fam_0</channel>
+   <fn>5</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>5</cycle_rep>
+   <optical_channel>0</optical_channel>
+   <exp_number>0</exp_number>
+   <blk_exp>130</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>1000</expVal>
+   <data>&#xd;
+1645 1416 1272 1731 1867 1699 2057 1713 1363 1670 1853 1696 &#xd;
+1138 906 1269 1533 1559 1427 1703 1267 1372 1360 1384 1326 &#xd;
+1783 1089 1098 1069 1169 1938 1275 1252 1359 1352 1487 1357 &#xd;
+1166 1028 1117 1134 1372 1423 1743 1512 1500 1435 1343 1667 &#xd;
+1283 1140 1232 1573 1224 1438 35443 1349 1420 1744 1249 1561 &#xd;
+1446 1274 1594 1343 1156 1322 1420 1483 1355 1321 1357 1467 &#xd;
+1318 35175 1224 1331 1281 1367 1439 1855 1263 1315 1451 1639 &#xd;
+1703 1566 1211 1483 1482 1651 1843 1575 1590 36435 1392 1620 </data>
+  </item>
+  <item>
+   <channel>Fam_1</channel>
+   <fn>5</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>5</cycle_rep>
+   <optical_channel>0</optical_channel>
+   <exp_number>1</exp_number>
+   <blk_exp>129</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>200</expVal>
+   <data>&#xd;
+439 392 362 456 484 449 522 452 381 444 481 449 &#xd;
+335 288 362 415 421 394 450 361 382 381 385 373 &#xd;
+466 325 326 321 341 498 363 358 380 379 406 380 &#xd;
+341 313 331 334 383 393 459 411 409 396 377 443 &#xd;
+365 336 355 424 353 396 699 378 393 459 358 421 &#xd;
+397 362 428 377 338 372 392 405 379 372 379 402 &#xd;
+372 688 352 374 364 382 397 481 360 371 399 437 &#xd;
+451 422 349 405 405 439 478 424 427 1415 387 433 </data>
+  </item>
+  <item>
+   <channel>Hex_0</channel>
+   <fn>5</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>5</cycle_rep>
+   <optical_channel>1</optical_channel>
+   <exp_number>0</exp_number>
+   <blk_exp>130</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>1000</expVal>
+   <data>&#xd;
+325 288 272 370 411 322 313 317 268 323 348 305 &#xd;
+254 220 271 305 297 278 314 259 272 267 272 271 &#xd;
+418 244 239 235 244 364 259 258 263 269 288 285 &#xd;
+257 236 246 237 268 282 318 280 290 278 274 322 &#xd;
+266 248 252 302 248 274 427 264 275 317 260 303 &#xd;
+287 268 290 282 245 252 268 271 258 258 294 286 &#xd;
+266 491 247 257 247 312 261 332 254 259 278 298 &#xd;
+318 295 247 284 275 299 320 289 304 1066 278 336 </data>
+  </item>
+  <item>
+   <channel>Hex_1</channel>
+   <fn>5</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>5</cycle_rep>
+   <optical_channel>1</optical_channel>
+   <exp_number>1</exp_number>
+   <blk_exp>129</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>200</expVal>
+   <data>&#xd;
+169 161 158 178 186 168 166 167 157 169 174 165 &#xd;
+155 148 158 165 163 159 167 156 158 157 158 158 &#xd;
+188 152 152 150 152 177 155 155 156 158 161 161 &#xd;
+155 151 153 151 157 160 168 160 162 159 159 168 &#xd;
+157 153 154 164 153 158 190 156 159 167 156 164 &#xd;
+161 157 162 160 153 154 157 158 155 155 163 161 &#xd;
+157 203 153 155 153 166 156 170 154 155 159 163 &#xd;
+167 163 153 160 159 164 168 161 165 320 159 171 </data>
+  </item>
+  <item>
+   <channel>Fam_0</channel>
+   <fn>6</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>6</cycle_rep>
+   <optical_channel>0</optical_channel>
+   <exp_number>0</exp_number>
+   <blk_exp>130</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>1000</expVal>
+   <data>&#xd;
+1644 1410 1264 1720 1851 1681 2046 1707 1354 1661 1837 1687 &#xd;
+1136 901 1261 1522 1550 1416 1703 1262 1362 1350 1376 1319 &#xd;
+1767 1080 1088 1060 1160 1922 1266 1242 1350 1342 1479 1354 &#xd;
+1158 1018 1108 1125 1361 1412 1728 1500 1492 1426 1334 1656 &#xd;
+1274 1131 1226 1580 1215 1425 35442 1353 1410 1735 1239 1551 &#xd;
+1441 1262 1582 1334 1147 1311 1408 1477 1347 1312 1349 1456 &#xd;
+1306 35157 1213 1323 1275 1358 1428 1844 1255 1306 1447 1629 &#xd;
+1691 1555 1203 1474 1471 1640 1828 1565 1578 36427 1383 1607 </data>
+  </item>
+  <item>
+   <channel>Fam_1</channel>
+   <fn>6</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>6</cycle_rep>
+   <optical_channel>0</optical_channel>
+   <exp_number>1</exp_number>
+   <blk_exp>129</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>200</expVal>
+   <data>&#xd;
+438 391 361 454 481 446 520 452 379 442 478 447 &#xd;
+335 287 361 413 420 392 450 360 381 379 383 372 &#xd;
+464 323 325 319 340 495 361 356 378 377 405 379 &#xd;
+339 311 329 332 381 391 455 409 407 394 375 442 &#xd;
+363 334 353 425 350 394 699 379 391 457 356 419 &#xd;
+397 360 425 375 337 370 390 404 377 371 378 400 &#xd;
+369 682 350 372 362 380 394 479 359 369 398 435 &#xd;
+448 421 348 404 403 438 476 422 425 1407 385 431 </data>
+  </item>
+  <item>
+   <channel>Hex_0</channel>
+   <fn>6</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>6</cycle_rep>
+   <optical_channel>1</optical_channel>
+   <exp_number>0</exp_number>
+   <blk_exp>130</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>1000</expVal>
+   <data>&#xd;
+324 288 272 369 410 321 313 317 267 323 346 304 &#xd;
+255 220 270 304 296 277 314 259 271 266 271 271 &#xd;
+416 243 238 234 243 363 258 258 262 269 288 285 &#xd;
+256 235 245 237 267 282 317 279 289 277 274 322 &#xd;
+265 247 251 304 247 272 427 265 274 316 259 302 &#xd;
+287 267 289 281 245 251 267 271 258 257 294 285 &#xd;
+265 487 246 257 247 312 260 331 254 258 279 297 &#xd;
+316 294 246 283 275 299 319 288 303 1062 277 336 </data>
+  </item>
+  <item>
+   <channel>Hex_1</channel>
+   <fn>6</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>6</cycle_rep>
+   <optical_channel>1</optical_channel>
+   <exp_number>1</exp_number>
+   <blk_exp>129</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>200</expVal>
+   <data>&#xd;
+169 161 158 178 186 168 166 167 157 168 173 165 &#xd;
+155 148 158 165 163 159 167 156 158 157 158 158 &#xd;
+188 152 151 151 152 177 155 155 156 158 161 161 &#xd;
+155 151 153 151 157 160 167 160 162 159 159 168 &#xd;
+157 153 154 165 153 159 190 157 159 167 156 164 &#xd;
+161 157 161 160 153 154 157 158 155 155 162 161 &#xd;
+157 202 153 155 153 166 156 170 155 155 160 163 &#xd;
+167 163 153 161 159 164 168 162 165 320 159 171 </data>
+  </item>
+  <item>
+   <channel>Fam_0</channel>
+   <fn>7</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>7</cycle_rep>
+   <optical_channel>0</optical_channel>
+   <exp_number>0</exp_number>
+   <blk_exp>130</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>1000</expVal>
+   <data>&#xd;
+1631 1407 1261 1714 1845 1692 2041 1704 1349 1656 1826 1684 &#xd;
+1137 901 1258 1515 1546 1412 1705 1259 1357 1346 1370 1318 &#xd;
+1758 1074 1083 1055 1155 1913 1259 1239 1345 1338 1476 1355 &#xd;
+1156 1012 1103 1120 1355 1406 1718 1493 1486 1422 1329 1651 &#xd;
+1269 1125 1222 1590 1210 1421 35444 1347 1404 1730 1235 1544 &#xd;
+1441 1255 1573 1329 1141 1305 1402 1475 1341 1306 1345 1453 &#xd;
+1300 35145 1208 1320 1272 1353 1421 1833 1250 1301 1444 1626 &#xd;
+1678 1549 1198 1468 1464 1632 1820 1559 1571 36423 1380 1604 </data>
+  </item>
+  <item>
+   <channel>Fam_1</channel>
+   <fn>7</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>7</cycle_rep>
+   <optical_channel>0</optical_channel>
+   <exp_number>1</exp_number>
+   <blk_exp>129</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>200</expVal>
+   <data>&#xd;
+436 390 360 453 479 448 520 451 378 441 476 446 &#xd;
+335 287 359 412 419 391 451 360 380 377 383 372 &#xd;
+462 322 324 319 339 493 360 356 377 376 404 380 &#xd;
+339 309 328 331 379 390 454 408 406 393 374 440 &#xd;
+362 333 352 428 350 393 701 378 390 456 355 418 &#xd;
+396 359 424 374 335 368 388 403 376 369 377 399 &#xd;
+368 678 349 372 363 379 393 477 358 368 397 435 &#xd;
+445 419 347 403 402 436 474 421 423 1404 385 430 </data>
+  </item>
+  <item>
+   <channel>Hex_0</channel>
+   <fn>7</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>7</cycle_rep>
+   <optical_channel>1</optical_channel>
+   <exp_number>0</exp_number>
+   <blk_exp>130</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>1000</expVal>
+   <data>&#xd;
+324 288 272 368 409 322 312 317 267 322 344 304 &#xd;
+255 219 269 302 295 276 314 258 270 265 271 270 &#xd;
+414 242 238 234 243 362 257 257 261 268 287 285 &#xd;
+256 234 244 236 266 280 316 277 289 277 273 320 &#xd;
+265 247 251 305 247 272 427 264 273 315 258 300 &#xd;
+287 265 288 281 244 251 266 271 257 257 294 285 &#xd;
+264 483 245 256 246 311 259 330 253 258 278 297 &#xd;
+315 293 246 282 274 298 318 287 302 1057 276 334 </data>
+  </item>
+  <item>
+   <channel>Hex_1</channel>
+   <fn>7</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>7</cycle_rep>
+   <optical_channel>1</optical_channel>
+   <exp_number>1</exp_number>
+   <blk_exp>129</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>200</expVal>
+   <data>&#xd;
+169 161 158 178 186 168 166 167 157 168 173 164 &#xd;
+155 147 157 164 163 159 167 155 158 157 158 158 &#xd;
+187 152 151 150 152 176 155 155 156 157 161 161 &#xd;
+155 150 152 151 157 160 167 159 161 159 158 168 &#xd;
+157 153 154 165 153 158 190 157 158 167 155 164 &#xd;
+161 157 161 160 152 154 157 158 155 155 162 161 &#xd;
+157 201 153 155 153 166 156 170 154 155 159 163 &#xd;
+167 162 152 160 158 163 167 161 164 318 159 171 </data>
+  </item>
+  <item>
+   <channel>Fam_0</channel>
+   <fn>8</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>8</cycle_rep>
+   <optical_channel>0</optical_channel>
+   <exp_number>0</exp_number>
+   <blk_exp>130</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>1000</expVal>
+   <data>&#xd;
+1624 1401 1255 1704 1833 1696 2033 1698 1341 1648 1806 1674 &#xd;
+1135 897 1252 1507 1539 1404 1705 1254 1350 1338 1365 1311 &#xd;
+1746 1067 1077 1049 1149 1901 1252 1232 1338 1332 1470 1351 &#xd;
+1153 1005 1095 1112 1346 1398 1706 1485 1479 1415 1322 1644 &#xd;
+1261 1118 1217 1598 1202 1413 35441 1339 1395 1723 1227 1535 &#xd;
+1436 1246 1561 1322 1133 1295 1392 1470 1332 1298 1338 1447 &#xd;
+1291 35130 1200 1314 1266 1345 1412 1833 1243 1294 1436 1618 &#xd;
+1668 1539 1189 1461 1455 1623 1809 1551 1562 36419 1371 1594 </data>
+  </item>
+  <item>
+   <channel>Fam_1</channel>
+   <fn>8</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>8</cycle_rep>
+   <optical_channel>0</optical_channel>
+   <exp_number>1</exp_number>
+   <blk_exp>129</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>200</expVal>
+   <data>&#xd;
+434 389 359 451 477 449 518 449 377 440 471 444 &#xd;
+335 286 358 410 417 389 451 359 378 376 381 370 &#xd;
+459 320 322 317 337 491 358 354 376 374 403 378 &#xd;
+338 308 326 330 378 388 451 406 405 391 373 438 &#xd;
+360 331 351 429 348 392 700 376 388 455 353 417 &#xd;
+396 357 421 373 334 367 387 403 374 367 376 398 &#xd;
+366 671 348 371 361 377 391 477 356 366 395 432 &#xd;
+443 417 345 401 399 434 471 419 421 1402 382 428 </data>
+  </item>
+  <item>
+   <channel>Hex_0</channel>
+   <fn>8</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>8</cycle_rep>
+   <optical_channel>1</optical_channel>
+   <exp_number>0</exp_number>
+   <blk_exp>130</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>1000</expVal>
+   <data>&#xd;
+323 288 271 367 407 323 312 317 266 322 342 303 &#xd;
+255 219 269 302 295 275 314 258 269 265 270 270 &#xd;
+412 242 237 233 242 360 256 256 260 267 287 284 &#xd;
+256 234 243 235 266 280 314 277 288 276 272 319 &#xd;
+264 246 251 306 246 271 427 263 272 315 258 300 &#xd;
+287 265 286 280 243 250 265 270 256 256 293 284 &#xd;
+263 480 245 256 246 310 259 330 253 257 278 296 &#xd;
+314 293 245 282 273 297 317 286 301 1057 276 334 </data>
+  </item>
+  <item>
+   <channel>Hex_1</channel>
+   <fn>8</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>8</cycle_rep>
+   <optical_channel>1</optical_channel>
+   <exp_number>1</exp_number>
+   <blk_exp>129</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>200</expVal>
+   <data>&#xd;
+168 161 158 177 185 168 166 167 157 168 172 164 &#xd;
+154 147 157 164 163 158 166 155 157 156 157 158 &#xd;
+187 152 151 150 152 176 155 155 155 157 161 161 &#xd;
+154 150 152 151 157 159 166 159 161 159 158 167 &#xd;
+156 152 153 164 152 158 189 156 158 166 155 163 &#xd;
+161 156 161 159 152 153 156 157 154 155 162 160 &#xd;
+156 200 152 155 153 166 155 170 154 155 159 163 &#xd;
+166 162 152 160 158 163 167 161 164 318 158 170 </data>
+  </item>
+  <item>
+   <channel>Fam_0</channel>
+   <fn>9</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>9</cycle_rep>
+   <optical_channel>0</optical_channel>
+   <exp_number>0</exp_number>
+   <blk_exp>129</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>1000</expVal>
+   <data>&#xd;
+1620 1397 1251 1697 1824 1685 2027 1693 1335 1643 1835 1667 &#xd;
+1133 894 1247 1498 1532 1396 1704 1249 1343 1329 1358 1307 &#xd;
+1736 1061 1070 1043 1142 1889 1245 1225 1330 1325 1464 1349 &#xd;
+1147 999 1092 1107 1338 1390 1695 1476 1473 1409 1315 1636 &#xd;
+1255 1110 1212 1603 1195 1404 35436 1328 1387 1716 1220 1528 &#xd;
+1433 1237 1551 1316 1126 1287 1385 1465 1323 1291 1333 1442 &#xd;
+1284 35116 1192 1308 1260 1338 1404 1828 1236 1288 1429 1611 &#xd;
+1657 1532 1182 1453 1446 1613 1797 1543 1552 36415 1364 1587 </data>
+  </item>
+  <item>
+   <channel>Fam_1</channel>
+   <fn>9</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>9</cycle_rep>
+   <optical_channel>0</optical_channel>
+   <exp_number>1</exp_number>
+   <blk_exp>129</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>200</expVal>
+   <data>&#xd;
+433 388 358 449 475 447 516 448 375 438 478 442 &#xd;
+334 285 357 408 415 387 450 358 377 374 380 369 &#xd;
+457 319 321 315 336 488 357 352 374 373 401 378 &#xd;
+337 307 325 328 376 386 449 404 403 390 371 437 &#xd;
+359 329 350 430 347 390 699 373 386 453 352 415 &#xd;
+396 355 419 372 333 365 385 401 373 366 374 397 &#xd;
+365 667 346 370 360 376 389 476 355 365 394 431 &#xd;
+441 415 344 399 397 432 469 417 419 1403 381 426 </data>
+  </item>
+  <item>
+   <channel>Hex_0</channel>
+   <fn>9</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>9</cycle_rep>
+   <optical_channel>1</optical_channel>
+   <exp_number>0</exp_number>
+   <blk_exp>130</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>1000</expVal>
+   <data>&#xd;
+322 286 270 366 406 321 311 316 266 321 346 302 &#xd;
+255 219 268 301 294 275 314 258 269 264 270 269 &#xd;
+410 241 237 232 241 358 255 256 260 267 286 284 &#xd;
+255 233 243 235 265 279 313 276 287 275 272 319 &#xd;
+263 245 250 306 245 270 426 262 271 314 257 299 &#xd;
+287 264 285 280 243 249 265 270 256 256 293 284 &#xd;
+262 476 244 255 246 309 258 330 252 257 277 295 &#xd;
+312 292 244 281 272 296 316 286 300 1056 275 333 </data>
+  </item>
+  <item>
+   <channel>Hex_1</channel>
+   <fn>9</fn>
+   <type_meas>2</type_meas>
+   <block_number>1</block_number>
+   <cycle_rep>9</cycle_rep>
+   <optical_channel>1</optical_channel>
+   <exp_number>1</exp_number>
+   <blk_exp>129</blk_exp>
+   <ovf_exp>0</ovf_exp>
+   <expVal>200</expVal>
+   <data>&#xd;
+168 161 158 177 185 168 166 167 157 168 173 164 &#xd;
+155 147 157 164 163 159 167 155 158 157 158 158 &#xd;
+186 152 151 150 152 176 155 155 156 157 161 161 &#xd;
+154 150 152 150 156 159 166 159 161 159 158 167 &#xd;
+156 153 154 165 153 158 190 156 158 167 155 164 &#xd;
+161 157 161 160 152 153 157 158 155 155 162 161 &#xd;
+156 200 152 154 152 165 155 170 154 155 159 163 &#xd;
+166 162 153 160 158 163 167 161 164 318 159 170 </data>
+  </item>
+ </measurements>
+ <Analysis_Curves>
+  <MC>
+   <count>10</count>
+   <colors>
+    <item>
+     <IDTube>0</IDTube>
+     <value>0</value>
+    </item>
+    <item>
+     <IDTube>1</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>2</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>3</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>4</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>5</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>6</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>7</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>8</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>9</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>10</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>11</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>12</IDTube>
+     <value>0</value>
+    </item>
+    <item>
+     <IDTube>13</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>14</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>15</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>16</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>17</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>18</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>19</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>20</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>21</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>22</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>23</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>24</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>25</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>26</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>27</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>28</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>29</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>30</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>31</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>32</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>33</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>34</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>35</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>36</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>37</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>38</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>39</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>40</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>41</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>42</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>43</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>44</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>45</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>46</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>47</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>48</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>49</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>50</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>51</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>52</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>53</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>54</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>55</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>56</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>57</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>58</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>59</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>60</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>61</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>62</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>63</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>64</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>65</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>66</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>67</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>68</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>69</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>70</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>71</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>72</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>73</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>74</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>75</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>76</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>77</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>78</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>79</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>80</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>81</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>82</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>83</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>84</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>85</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>86</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>87</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>88</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>89</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>90</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>91</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>92</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>93</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>94</IDTube>
+     <value>a4a0a0</value>
+    </item>
+    <item>
+     <IDTube>95</IDTube>
+     <value>a4a0a0</value>
+    </item>
+   </colors>
+   <RawData>
+    <channels>
+     <item>
+      <IDChannel>0</IDChannel>
+      <tubes>
+       <item>
+        <IDTube>0</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>1</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>2</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>3</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>4</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>5</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>6</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>7</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>8</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>9</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>10</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>11</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>12</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>13</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>14</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>15</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>16</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>17</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>18</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>19</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>20</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>21</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>22</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>23</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>24</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>25</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>26</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>27</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>28</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>29</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>30</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>31</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>32</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>33</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>34</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>35</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>36</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>37</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>38</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>39</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>40</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>41</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>42</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>43</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>44</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>45</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>46</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>47</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>48</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>49</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>50</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>51</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>52</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>53</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>54</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>55</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>56</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>57</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>58</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>59</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>60</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>61</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>62</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>63</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>64</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>65</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>66</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>67</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>68</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>69</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>70</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>71</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>72</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>73</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>74</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>75</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>76</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>77</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>78</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>79</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>80</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>81</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>82</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>83</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>84</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>85</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>86</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>87</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>88</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>89</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>90</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>91</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>92</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>93</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>94</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+       <item>
+        <IDTube>95</IDTube>
+        <data>1693 1682 1668 1665 1659 1649 1648 1633 1626 1622 </data>
+       </item>
+      </tubes>
+     </item>
+     <item>
+      <IDChannel>1</IDChannel>
+      <tubes>
+       <item>
+        <IDTube>0</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>1</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>2</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>3</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>4</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>5</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>6</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>7</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>8</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>9</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>10</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>11</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>12</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>13</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>14</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>15</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>16</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>17</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>18</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>19</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>20</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>21</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>22</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>23</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>24</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>25</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>26</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>27</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>28</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>29</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>30</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>31</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>32</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>33</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>34</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>35</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>36</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>37</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>38</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>39</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>40</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>41</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>42</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>43</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>44</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>45</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>46</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>47</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>48</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>49</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>50</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>51</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>52</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>53</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>54</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>55</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>56</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>57</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>58</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>59</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>60</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>61</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>62</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>63</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>64</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>65</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>66</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>67</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>68</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>69</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>70</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>71</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>72</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>73</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>74</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>75</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>76</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>77</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>78</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>79</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>80</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>81</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>82</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>83</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>84</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>85</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>86</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>87</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>88</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>89</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>90</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>91</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>92</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>93</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>94</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+       <item>
+        <IDTube>95</IDTube>
+        <data>173 172 171 172 171 170 169 169 168 167 </data>
+       </item>
+      </tubes>
+     </item>
+    </channels>
+   </RawData>
+   <AnalysisData>
+    <channels>
+     <item>
+      <IDChannel>0</IDChannel>
+      <tubes>
+       <item>
+        <IDTube>0</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>1</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>2</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>3</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>4</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>5</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>6</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>7</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>8</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>9</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>10</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>11</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>12</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>13</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>14</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>15</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>16</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>17</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>18</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>19</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>20</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>21</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>22</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>23</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>24</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>25</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>26</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>27</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>28</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>29</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>30</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>31</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>32</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>33</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>34</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>35</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>36</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>37</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>38</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>39</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>40</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>41</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>42</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>43</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>44</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>45</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>46</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>47</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>48</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>49</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>50</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>51</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>52</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>53</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>54</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>55</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>56</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>57</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>58</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>59</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>60</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>61</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>62</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>63</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>64</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>65</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>66</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>67</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>68</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>69</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>70</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>71</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>72</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>73</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>74</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>75</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>76</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>77</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>78</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>79</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>80</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>81</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>82</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>83</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>84</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>85</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>86</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>87</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>88</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>89</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>90</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>91</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>92</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>93</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>94</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+       <item>
+        <IDTube>95</IDTube>
+        <data>-4 -16 -9 -1 -11 -3 -9 -12 -5 -2 </data>
+       </item>
+      </tubes>
+     </item>
+     <item>
+      <IDChannel>1</IDChannel>
+      <tubes>
+       <item>
+        <IDTube>0</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>1</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>2</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>3</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>4</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>5</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>6</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>7</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>8</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>9</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>10</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>11</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>12</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>13</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>14</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>15</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>16</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>17</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>18</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>19</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>20</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>21</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>22</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>23</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>24</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>25</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>26</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>27</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>28</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>29</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>30</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>31</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>32</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>33</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>34</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>35</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>36</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>37</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>38</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>39</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>40</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>41</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>42</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>43</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>44</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>45</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>46</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>47</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>48</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>49</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>50</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>51</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>52</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>53</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>54</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>55</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>56</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>57</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>58</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>59</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>60</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>61</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>62</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>63</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>64</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>65</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>66</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>67</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>68</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>69</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>70</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>71</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>72</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>73</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>74</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>75</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>76</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>77</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>78</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>79</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>80</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>81</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>82</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>83</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>84</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>85</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>86</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>87</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>88</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>89</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>90</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>91</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>92</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>93</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>94</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+       <item>
+        <IDTube>95</IDTube>
+        <data>-0 -1 -0 -0 -1 -1 -1 -0 -1 -1 </data>
+       </item>
+      </tubes>
+     </item>
+    </channels>
+   </AnalysisData>
+  </MC>
+  <PCR>
+   <count>0</count>
+  </PCR>
+ </Analysis_Curves>
+ <Analysis_Data/>
+ <Analysis_Version>
+  <version>1.1.0.8</version>
+ </Analysis_Version>
+</protocol>
