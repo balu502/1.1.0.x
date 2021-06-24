@@ -4842,16 +4842,15 @@ bool Analysis::event(QEvent *e)
     {
         ReAnalysis *p_event = static_cast<ReAnalysis *>(e);
         if(p_event)
-        {
-
+        {            
             if(alg)
             {
                 alg->Analyser(prot, p_event->param);
-            }
+            }            
             foreach(analyser, Map_analyser.values())
             {
                 analyser->Analyser(prot);
-            }
+            }            
 
             return(true);
         }

@@ -156,7 +156,7 @@ void All_Cp::Analyser(rt_Protocol *p, int param)
     //... ... Validate PCR Research    
     Validate_PCR();
     Validity_MC();
-    //qDebug() << "Validate_PCR() - ok";
+    //qDebug() << "Validate_PCR() - ok";    
 
     //... Translate Tests and Research
     if(!ru_Lang)
@@ -171,10 +171,10 @@ void All_Cp::Analyser(rt_Protocol *p, int param)
         if(list_tr.size()) Translate_Tests(list_tr);
     }
 
-
     //... 1. Cp_Table    
     Fill_Cp_Table();
     //qDebug() << "Cp_Table - ok";
+
 
     //... 2. PCR_Analysis    
     if(p_prot->count_PCR) PCR_Analysis->Fill_PCRAnalysis(p);
@@ -186,8 +186,7 @@ void All_Cp::Analyser(rt_Protocol *p, int param)
 
     //... 4. Cross Tables    
     Cross_Box->Fill_CrossInfo(p);
-    //qDebug() << "Cross Tables  - ok";
-
+    //qDebug() << "Cross Tables  - ok";    
 }
 
 //-----------------------------------------------------------------------------
