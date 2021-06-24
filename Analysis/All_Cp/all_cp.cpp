@@ -171,8 +171,9 @@ void All_Cp::Analyser(rt_Protocol *p, int param)
         if(list_tr.size()) Translate_Tests(list_tr);
     }
 
-    //... 1. Cp_Table    
-    Fill_Cp_Table();
+    //... 1. Cp_Table
+    if(param == 0x0f) Fill_Cp_Table_Only_Ct();
+    else Fill_Cp_Table();
     //qDebug() << "Cp_Table - ok";
 
 
@@ -1546,7 +1547,100 @@ void All_Cp::Validate_PCR()
     }
     RelativeValidity.clear();
 }
+//-----------------------------------------------------------------------------
+//---
+//-----------------------------------------------------------------------------
+void All_Cp::Fill_Cp_Table_Only_Ct()
+{
+    int i,j,k,n,l;
+    QString text, str_result;
+    int num_row = 0;
+    int count_ch;
+    bool header_sample;
+    int id, id_channel;
+    int active_ch = p_prot->active_Channels;
+    double value;
+    QTableWidgetItem *item;
 
+    rt_GroupSamples *group;
+    rt_Sample       *sample;
+    rt_Test         *test;
+    rt_Tube         *tube;
+    rt_Channel      *channel;
+
+    POINT_TAKEOFF *sigmoid;
+
+    Cp_Table->blockSignals(true);
+
+    //... cycle of groups ...
+    for(i=0; i<p_prot->Plate.groups.size(); i++)
+    {
+        group = p_prot->Plate.groups.at(i);
+        for(j=0; j<group->samples.size(); j++)
+        {
+            sample = group->samples.at(j);
+            header_sample = false;
+            foreach(rt_Tube *t, sample->tubes)
+            {
+                if(p_prot->enable_tube.at(t->pos))
+                {
+                    num_row++;
+                    header_sample = true;
+                    break;
+                }
+            }
+            if(!header_sample) continue;
+
+
+            for(k=0; k<sample->tubes.size(); k++)
+            {
+                tube = sample->tubes.at(k);
+                if(!p_prot->enable_tube.at(tube->pos)) continue;
+
+                count_ch = tube->channels.size();
+
+                text = "";
+                for(n=0; n<count_ch; n++)
+                {
+                    if(n) text += "\r\n";
+
+                    channel = tube->channels.at(n);
+                    id_channel = channel->ID_Channel;
+
+                    id = 0;
+                    for(l=0; l<=id_channel; l++)
+                    {
+                       if(active_ch & (0x0f<<4*l)) id++;
+                    }
+
+                    id = (id-1)*p_prot->count_Tubes + tube->pos;
+
+                    //qDebug() << "channel: " << id << id_channel << channel->result_Channel.size();
+
+
+                    sigmoid = p_prot->list_PointsOff.at(id);
+
+                    value = sigmoid->real_ct;
+                    if(value > 0) str_result = QString::number(value,'f',1);
+                    else str_result = "-";
+                    if(value < -1) str_result = QString::number(value,'f',1);
+                    text += str_result;
+                    str_result = "Ct=" + QString::number(value,'f',3);
+                    AddResult(channel->result_Channel, str_result, "Ct=");
+
+                    item = Cp_Table->item(num_row,2);
+                    item->setText(text);
+
+                }
+                num_row++;
+            }
+        }
+    }
+
+
+
+    Cp_Table->blockSignals(false);
+}
 //-----------------------------------------------------------------------------
 //---
 //-----------------------------------------------------------------------------

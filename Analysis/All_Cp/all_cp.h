@@ -110,6 +110,7 @@ private:
 
     rt_Protocol *p_prot;
     void Fill_Cp_Table();
+    void Fill_Cp_Table_Only_Ct();
     void Fill_MC_Table();
 
 
