@@ -17,7 +17,6 @@
 #DEFINES += APP_NAME=\\\"$$Application_NAME\\\"
 
 
-
 CONFIG += release
 #CONFIG += debug
 
