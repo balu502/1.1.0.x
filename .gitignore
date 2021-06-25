@@ -48,3 +48,4 @@ CMakeLists.txt.user*
 *.ini
 *.ini
 *.xml
+Run_project_release/tools/ini/preference.ini
