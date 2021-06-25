@@ -46,6 +46,4 @@ CMakeLists.txt.user*
 *.rt
 *.xml
 *.ini
-*.ini
-*.xml
-Run_project_release/tools/ini/preference.ini
+Run_project_release/tools/ini/*.ini
