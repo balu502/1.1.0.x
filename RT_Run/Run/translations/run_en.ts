@@ -830,33 +830,33 @@
         <translation>Coefficient scanning</translation>
     </message>
     <message>
-        <location filename="../scandialog.cpp" line="425"/>
+        <location filename="../scandialog.cpp" line="420"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
-        <location filename="../scandialog.cpp" line="425"/>
+        <location filename="../scandialog.cpp" line="420"/>
         <source>Invalid format data!</source>
         <translation>Incorrect data format!</translation>
     </message>
     <message>
-        <location filename="../scandialog.cpp" line="464"/>
-        <location filename="../scandialog.cpp" line="498"/>
+        <location filename="../scandialog.cpp" line="459"/>
+        <location filename="../scandialog.cpp" line="494"/>
         <source>Attention!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../scandialog.cpp" line="464"/>
+        <location filename="../scandialog.cpp" line="459"/>
         <source>Invalid format file!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../scandialog.cpp" line="500"/>
+        <location filename="../scandialog.cpp" line="496"/>
         <source>You have exceeded the limit on the number of launches</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../scandialog.cpp" line="503"/>
+        <location filename="../scandialog.cpp" line="499"/>
         <source>for the plate</source>
         <translation type="unfinished"></translation>
     </message>

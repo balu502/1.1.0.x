@@ -376,7 +376,7 @@
     <message>
         <location filename="../run.cpp" line="3926"/>
         <source>Attention! You have changed the original protocol. Do You want to continue running the protocol without these changes?</source>
-        <translation>Внимание! Вы изменили исходный протоколю Вы хотите продолжить запуск протокола без изменений?</translation>
+        <translation>Внимание! Вы изменили исходный протокол. Вы хотите продолжить запуск протокола без изменений?</translation>
     </message>
     <message>
         <location filename="../run.cpp" line="4004"/>
@@ -834,33 +834,33 @@
         <translation>Сканирование коэффициентов</translation>
     </message>
     <message>
-        <location filename="../scandialog.cpp" line="425"/>
+        <location filename="../scandialog.cpp" line="420"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../scandialog.cpp" line="425"/>
+        <location filename="../scandialog.cpp" line="420"/>
         <source>Invalid format data!</source>
         <translation>Неверный формат данных!</translation>
     </message>
     <message>
-        <location filename="../scandialog.cpp" line="464"/>
-        <location filename="../scandialog.cpp" line="498"/>
+        <location filename="../scandialog.cpp" line="459"/>
+        <location filename="../scandialog.cpp" line="494"/>
         <source>Attention!</source>
         <translation>Внимание!</translation>
     </message>
     <message>
-        <location filename="../scandialog.cpp" line="464"/>
+        <location filename="../scandialog.cpp" line="459"/>
         <source>Invalid format file!</source>
         <translation>Неверный формат файла!</translation>
     </message>
     <message>
-        <location filename="../scandialog.cpp" line="500"/>
+        <location filename="../scandialog.cpp" line="496"/>
         <source>You have exceeded the limit on the number of launches</source>
         <translation>Вы превысили лимит запусков</translation>
     </message>
     <message>
-        <location filename="../scandialog.cpp" line="503"/>
+        <location filename="../scandialog.cpp" line="499"/>
         <source>for the plate</source>
         <translation>для планшеты</translation>
     </message>
