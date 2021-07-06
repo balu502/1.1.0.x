@@ -406,9 +406,13 @@ int Mask::Analyser(rt_Protocol *prot)
     QString str_0, str_1;
     QPoint p;
     QVector<double> temp_Value;
+    QVector<double> coeff_Optic;
     int id_attention = 0;
     int id = 0;
     int error_Mask = 0x00;
+    bool ok;
+    QStringList list_coeff;
+    double coeff;
 
     Prot = prot;
     type_dev = prot->count_Tubes;
@@ -610,7 +614,38 @@ int Mask::Analyser(rt_Protocol *prot)
         }
     }    
 
-    if(!Exist_Mask) SaveRawDataToProperty();    // copy map_VALUE (raw data) to property of protocol    
+    if(!Exist_Mask) SaveRawDataToProperty();    // copy map_VALUE (raw data) to property of protocol
+
+    //... use COEFF_Optic for Optical unevenness (plate) ...
+    coeff_Optic.reserve(prot->COEFF_Optic.size()*prot->count_Tubes);
+    for(i=0; i<prot->COEFF_Optic.size(); i++)
+    {
+        text = QString::fromStdString(prot->COEFF_Optic.at(i)).trimmed();
+        list_coeff = text.split(QRegExp("\\s+"));
+        foreach(text, list_coeff)
+        {
+            dvalue = text.toDouble(&ok);
+            if(!ok || dvalue == 0.) dvalue = 1.;
+            coeff_Optic.append(dvalue);
+        }
+    }
+    for(i=0; i<count_CH; i++)
+    {
+        if(!(prot->active_Channels & (0x0f<<4*i))) continue;
+        for(j=0; j<prot->count_Tubes; j++)
+        {
+            coeff = coeff_Optic.at(i*prot->count_Tubes + j);
+            for(k=0; k<count_mc; k++)
+            {
+                dvalue = map_VALUE.value(i)->at(j*count_mc+k);
+                map_VALUE.value(i)->replace(j*count_mc+k, dvalue/coeff);
+            }
+        }
+    }
+
+    coeff_Optic.clear();
+
+    //...
 
     Sleep(1000);
 
