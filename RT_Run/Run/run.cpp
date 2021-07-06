@@ -970,7 +970,17 @@ void Run::Open_Protocol(QString fileName)
         list_tr.clear();
     }
     //
-
+    //... Change ID-protocol for Calibration (Scorcina)
+    foreach(ptest, prot->tests)
+    {
+        if(ptest->header.Type_analysis == 0x0020)   // Calibration
+        {
+            prot->regNumber = QDateTime::currentDateTime().toString("hh-mm_dd-MM-yy").toStdString();
+            //qDebug() << "calibr: " << QString::fromStdString(prot->regNumber);
+            break;
+        }
+    }
+    //...
 
     if(QString::fromStdString(prot->name).isEmpty())
     {
