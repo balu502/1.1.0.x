@@ -19,17 +19,17 @@
         <translation>Диагностическая карта прибора(%1)</translation>
     </message>
     <message>
-        <location filename="../report_calibration.cpp" line="50"/>
+        <location filename="../report_calibration.cpp" line="57"/>
         <source>Date:</source>
         <translation>Дата:</translation>
     </message>
     <message>
-        <location filename="../report_calibration.cpp" line="57"/>
+        <location filename="../report_calibration.cpp" line="64"/>
         <source>File with results:</source>
         <translation>Файл протокола:</translation>
     </message>
     <message>
-        <location filename="../report_calibration.cpp" line="58"/>
+        <location filename="../report_calibration.cpp" line="65"/>
         <source>Device:</source>
         <translation>Прибор:</translation>
     </message>

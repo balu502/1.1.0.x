@@ -331,7 +331,7 @@ void Report::apply_change()
 //-----------------------------------------------------------------------------
 void Report::SaveTo_PDF()
 {
-    QString fileName = QFileDialog::getSaveFileName(this, tr("Save to PDF File(s)"), User_Folder, tr("PDF files (*.png)"));
+    QString fileName = QFileDialog::getSaveFileName(this, tr("Save to PDF File(s)"), User_Folder, tr("PDF files (*.pdf)"));
     if(fileName.isEmpty())  return;
 
     if(report) report->runReportToPDF(fileName);

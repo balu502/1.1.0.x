@@ -20,7 +20,7 @@ Report_Calibration::Report_Calibration()
 //-----------------------------------------------------------------------------
 void* Report_Calibration::Create_Report(rt_Protocol *P)
 {
-    QString logotype;
+    QString logotype, stamp, signature, certificate;
     QString text;
     QStringList list_header;
     QString date = QDate::currentDate().toString("dd.MM.yyyy");
@@ -116,6 +116,17 @@ void* Report_Calibration::Create_Report(rt_Protocol *P)
     //qDebug() << "text: " <<  text;
 
     report->addParameter("Conclusion_data", text);
+
+    // 5. Stamp
+    stamp = ":/images/stamp.png";
+    signature = "                                                                            / Комаров Д.И. /";
+    certificate = "This certificate is auto-generated and serves as an original. No signature is required.";
+    if(lang == "ru")
+    {
+        report->addParameter("Stamp", stamp);
+        report->addParameter("signature", signature);
+    }
+    else report->addParameter("certificate", certificate);
 
 
     report->setReportFile(":/report/report_calibration.xml");

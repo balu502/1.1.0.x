@@ -20,5 +20,6 @@
         <file>images/error_16.png</file>
         <file>translations/report_calibration_ru.qm</file>
         <file>translations/report_calibration_en.qm</file>
+        <file>images/stamp.png</file>
     </qresource>
 </RCC>

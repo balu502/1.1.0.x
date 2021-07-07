@@ -11,7 +11,7 @@
     <message>
         <location filename="../report_calibration.cpp" line="32"/>
         <source>Name research	Status	                                                 Notice</source>
-        <translation>Action status</translation>
+        <translation>Action	Status	                                                 Notice</translation>
     </message>
     <message>
         <location filename="../report_calibration.cpp" line="46"/>
@@ -19,17 +19,17 @@
         <translation>Device diagnostic card(%1)</translation>
     </message>
     <message>
-        <location filename="../report_calibration.cpp" line="50"/>
+        <location filename="../report_calibration.cpp" line="57"/>
         <source>Date:</source>
         <translation>Date:</translation>
     </message>
     <message>
-        <location filename="../report_calibration.cpp" line="57"/>
+        <location filename="../report_calibration.cpp" line="64"/>
         <source>File with results:</source>
         <translation>Run file:</translation>
     </message>
     <message>
-        <location filename="../report_calibration.cpp" line="58"/>
+        <location filename="../report_calibration.cpp" line="65"/>
         <source>Device:</source>
         <translation>Device:</translation>
     </message>
