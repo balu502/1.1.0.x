@@ -41,5 +41,6 @@
         <file>images/flat/unlock_16.png</file>
         <file>images/qr_code.png</file>
         <file>images/RT.ico</file>
+        <file>images/check.ico</file>
     </qresource>
 </RCC>

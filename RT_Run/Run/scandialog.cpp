@@ -167,6 +167,7 @@ ScanDialog::ScanDialog(QWidget *parent): QDialog(parent)
     message.setFont(qApp->font());
     message.setWindowIcon(QIcon(":/images/DTm.ico"));
     //message.setWindowIcon(QIcon(":/images/RT.ico"));
+    //if(CALIBRATION_status) message.setWindowIcon(QIcon(":/images/check.ico"));
 
 }
 //-----------------------------------------------------------------------------

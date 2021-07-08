@@ -101,6 +101,8 @@ Run::Run(QWidget *parent): QMainWindow(parent)
 
     message.setWindowIcon(QIcon(":/images/DTm.ico"));
     //message.setWindowIcon(QIcon(":/images/RT.ico"));
+    if(CALIBRATION_status) message.setWindowIcon(QIcon(":/images/check.ico"));
+
     message.setFont(qApp->font());
 
     //dll_Crypto = NULL;
@@ -540,6 +542,7 @@ void Run::check_Expo()
     Expo_check->flag_DeviceSettings = &flag_DeviceSettings;
     //Expo_check->setWindowIcon(QIcon(":/images/RT.ico"));
     Expo_check->setWindowIcon(QIcon(":/images/DTm.ico"));
+    if(CALIBRATION_status) Expo_check->setWindowIcon(QIcon(":/images/check.ico"));
 
     text = map_InfoDevice.value(INFODEV_serName,"000");
     int count_tubes = text.trimmed().mid(1,1).toInt();

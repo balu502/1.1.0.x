@@ -32,9 +32,11 @@ DEFINES += APP_NAME=\\\"$$Application_NAME\\\"
 contains(DEFINES, CALIBRATION){
     TARGET = $${Application_NAME}
     VERSION = 1.1.0.14
+    RC_ICONS = $$PWD/check.ico
 }else{
     TARGET = $${Application_NAME}
     VERSION = 1.1.0.14
+    RC_ICONS = $$PWD/DTm.ico
 }
 #----------------------------------------------------
 
@@ -122,7 +124,7 @@ DESTDIR = ../$${CURRENT_BUILD}
 TRANSLATIONS = translations/ru.ts \
                translations/en.ts \
                translations/ch.ts
-RC_ICONS = $$PWD/DTm.ico
+#RC_ICONS = $$PWD/DTm.ico
 #RC_ICONS = $$PWD/RT.ico
 
 DISTFILES += \

@@ -140,6 +140,9 @@ Main_RT::Main_RT(QWidget *parent)
 
     setWindowTitle(APP_NAME);
     setWindowIcon(QIcon(":/images/DTm.ico"));
+#ifdef CALIBRATION
+    setWindowIcon(QIcon(":/images/check.ico"));
+#endif
     //setWindowIcon(QIcon(":/images/RT.ico"));
 
     //setWindowFlags(windowFlags() | Qt::WindowStaysOnTopHint );
@@ -265,6 +268,9 @@ Main_RT::Main_RT(QWidget *parent)
     }*/
 
     msgBox.setWindowIcon(QIcon(":/images/DTm.ico"));
+#ifdef CALIBRATION
+    msgBox.setWindowIcon(QIcon(":/images/check.ico"));
+#endif
     //msgBox.setWindowIcon(QIcon(":/images/RT.ico"));
 }
 //-----------------------------------------------------------------------------
