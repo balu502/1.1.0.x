@@ -150,6 +150,14 @@ Analysis::Analysis(QWidget *parent): QMainWindow(parent)
     connect(this, SIGNAL(sActionPoint(Action_Event*)), this, SLOT(slot_ReceivedActionPoint(Action_Event*)));
 
     connect(plot->Fluor_Box, SIGNAL(currentIndexChanged(int)), this, SLOT(ColorMelting_Default()));
+
+    // RDML
+    dll_rdml = NULL;
+    dll_rdml = ::LoadLibraryW(L"rdml.dll");
+    if(!dll_rdml)
+    {
+        RDML_import->setVisible(false);
+    }
 }
 //-----------------------------------------------------------------------------
 //---
@@ -213,6 +221,8 @@ Analysis::~Analysis()
     }    
     Map_TabAnalyser.clear();
     Tab_AnalyserGlobe->clear();
+
+    if(dll_rdml) ::FreeLibrary(dll_rdml);
 
     //...
 
@@ -929,6 +939,9 @@ void Analysis::createActions()
     EMail_send = new QAction(QIcon(":/images/email_32_24.png"), tr("Send message via Email"), this);
     connect(EMail_send, SIGNAL(triggered()), this, SLOT(email_Send()));
     //EMail_send->setEnabled(false);
+
+    RDML_import = new QAction(QIcon(":/images/flat/rdml.png"), tr("rdml import"), this);
+    connect(RDML_import, &QAction::triggered, this, &Analysis::rdml_import);
 
     Validity_Hash = new QAction(QIcon(":/images/flat/star_null.png"), tr("data safety"), this);
 
@@ -2128,7 +2141,56 @@ void Analysis::email_Send()
 
     if(email->isHidden()) email->show();
 }
+//-----------------------------------------------------------------------------
+//--- Action rdml_export()
+//-----------------------------------------------------------------------------
+void Analysis::rdml_import()
+{
+    QString fileName;
+    QString selectedFilter;
+    QString dirName = user_Dir.absolutePath();
 
+    fileName = QFileDialog::getOpenFileName(this,
+                                            tr("Open RDML Protocol"),
+                                            dirName,
+                                            tr("RDML Protocols File (*.xml)"),
+                                            &selectedFilter);
+
+    std::string str = fileName.toStdString();
+
+
+    QFileInfo file_Info(fileName);    
+
+    if(file_Info.exists())
+    {
+        QApplication::setOverrideCursor(QCursor(Qt::WaitCursor));
+        label_gif->setVisible(true);
+        obj_gif->start();
+
+        Display_ProgressBar(10, tr("Converting RDML format..."));
+
+        qApp->processEvents();
+
+        if(dll_rdml)
+        {
+            RDML_IMPORT rdml_to_rt = reinterpret_cast<RDML_IMPORT>(
+                           ::GetProcAddress(dll_rdml,"RDML_2_RT@4"));
+
+            qDebug() << "rdml: " << rdml_to_rt;
+
+            if(rdml_to_rt)
+            {
+                rdml_to_rt((char*)(str.c_str()));
+            }
+
+        }
+
+        Display_ProgressBar(0, tr(""));
+        label_gif->setVisible(false);
+        obj_gif->stop();
+        QApplication::restoreOverrideCursor();
+    }
+}
 //-----------------------------------------------------------------------------
 //--- Action editPreferencePro()
 //-----------------------------------------------------------------------------
@@ -2396,6 +2458,7 @@ void Analysis::createToolBars()
     spacer_2->setFixedWidth(25);
     fileToolBar->addWidget(spacer_2);
     fileToolBar->addAction(EMail_send);
+    fileToolBar->addAction(RDML_import);
 
     QWidget *spacer_1 = new QWidget(this);
     spacer_1->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);

@@ -105,6 +105,9 @@ typedef void (__stdcall *ExportResultsEx)();
 typedef void (__stdcall *GetDTRDisplayInfo)(char* FormID, char** DisplayName, char** Path, int* Release, int* Build);
 typedef void (__stdcall *TranslateService) (int Lang, char *source, char **target);
 
+// RDML !!!
+typedef bool (__stdcall *RDML_IMPORT)(char*);
+
 
 //.............................................................................
 
@@ -185,6 +188,11 @@ public:
     void Translate_Catalog(QVector<rt_Test*>*); // translate catalog from russian
     //
 
+    // RDML
+    HINSTANCE dll_rdml;
+
+    //
+
 public slots:
 
     void save_XML();
@@ -211,6 +219,8 @@ public slots:
 
     void preview_archive();             // preview video archive
     void email_Send();                  // send protocol using email
+
+    void rdml_import();
 
     void resize_splitter(int,int);
     void resize_extResults();
@@ -321,6 +331,7 @@ private:
 
     QAction *preview_videoarchive;
     QAction *EMail_send;
+    QAction *RDML_import;
 
     QAction *infoAct;
     QAction *reportAct;
