@@ -4,6 +4,9 @@
 #include <QtWidgets>
 #include <QWidget>
 #include <QDomDocument>
+#include <QFile>
+#include <QFileInfo>
+
 
 #include <QDebug>
 
