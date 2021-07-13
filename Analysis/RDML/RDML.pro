@@ -27,6 +27,7 @@ HEADERS += \
     rdml.h
 
 #--- Protocol ---
+INCLUDEPATH += ../RT_Analysis
 INCLUDEPATH += ../Protocol
 INCLUDEPATH += ../Algorithm
 HEADERS  += protocol.h\

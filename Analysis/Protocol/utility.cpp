@@ -1622,6 +1622,7 @@ int Read_XML(void *pobj, callback_process *Callback, rt_Protocol *prot, QString 
             {
                 for(j=0; j<child.childNodes().size(); j++)
                 {
+                    //if(div(j,2).rem) continue;
                     node = child.childNodes().at(j);
                     measure = new rt_Measurement();
                     prot->meas.push_back(measure);
@@ -3481,7 +3482,7 @@ int Bace_Data(void *pobj, callback_process* Callback, rt_Protocol *prot, QString
         //--- analysis of finish flash ---        
         value_ff = Analysis_FinishFlash(y);
         prot->PCR_FinishFlash.push_back(value_ff);        
-        //qDebug() << "analysis of finish flash: " << i << value_ff;
+        //qDebug() << "analysis of finish flash: " << i << value_ff << y;
 
         //--- threshold ---        
         if(p_OFF.valid) threshold.push_back(p_OFF.sigma);

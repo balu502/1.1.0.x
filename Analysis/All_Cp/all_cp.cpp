@@ -1472,7 +1472,12 @@ void All_Cp::Validate_PCR()
                                 if(value < (val+val_delta) && value >= val) str_result = "warning";
                                 if(value < val) str_result = "false";
 
-                                //qDebug() << "result: " << val << val_delta << value << str_result;
+                                /*if(pos == 1 && !m)
+                                {
+                                    qDebug() << "aff: " << criterion->criterion_AFF << criterion->criterion_AFF_MIN << coef_exp << delta;
+                                    qDebug() << "result: " << val << val_delta << value << str_result;
+
+                                }*/
                             }
                         }
                         else

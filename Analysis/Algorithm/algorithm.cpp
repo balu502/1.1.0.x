@@ -149,11 +149,11 @@ short Analysis_FinishFlash(QVector<double> &In_buf)
     tmp = In_buf.mid(count - 3,3);
     finish_flash = Find_MeanValue(tmp);
 
-    if(start_flash > 0 && finish_flash > 0)
+    if(/*start_flash >= 0 && */finish_flash > 0)
     {
         //res = (short)(qAbs(finish_flash - start_flash));
         res = (short)(finish_flash - start_flash);
-    }
+    }    
 
     return(res);
 }
