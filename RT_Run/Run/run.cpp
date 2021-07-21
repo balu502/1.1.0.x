@@ -4986,6 +4986,7 @@ void Run::slot_ChangeStateDevice(int state)
 void Run::CreateMeasure_And_GoToAnalysis()
 {
     int res;
+    QString text;
 
     if(Create_MeasureProtocol())
     {
@@ -4994,18 +4995,38 @@ void Run::CreateMeasure_And_GoToAnalysis()
         if(flag_ActivePoint) PA_RunProtocol();
         else
         {
-            message.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
-            message.setDefaultButton(QMessageBox::Yes);
-            message.setIcon(QMessageBox::Information);
-            message.button(QMessageBox::Yes)->animateClick(10000);
-            message.setText(tr("Will You analyze the optical data?"));
+            if(Dev_State == sHold)
+            {
+                message.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
+                message.setDefaultButton(QMessageBox::No);
+                message.button(QMessageBox::No)->animateClick(10000);
+                message.setIcon(QMessageBox::Question);
+                text = tr("We are starting to analyze the optical data...") + "\r\n";
+                text += tr("Do you want to finish the standby mode?");
+            }
+            else
+            {
+                message.setStandardButtons(QMessageBox::Ok);
+                message.button(QMessageBox::Ok)->animateClick(10000);
+                message.setIcon(QMessageBox::Information);
+                text = tr("The program has finished, we are starting to analyze the optical data.");
+            }
+
+            message.setText(text);
+            //message.setText(tr("Will You analyze the optical data?"));
             res = message.exec();
 
-            if(res == QMessageBox::Yes)
+            if(Dev_State == sHold && res == QMessageBox::No)
             {
-                QEvent *e = new QEvent((QEvent::Type)3003);
-                QApplication::sendEvent(this->parentWidget(), e);
+                // request: Stop Run
+                slotSendToServer(STOP_REQUEST);
             }
+
+
+            // to Analysis
+            QEvent *e = new QEvent((QEvent::Type)3003);
+            QApplication::sendEvent(this->parentWidget(), e);
+
         }
     }
 }
