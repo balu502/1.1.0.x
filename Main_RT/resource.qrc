@@ -95,5 +95,6 @@
         <file>images/Splash_BG_RT.png</file>
         <file>images/rt710.gif</file>
         <file>images/RT.ico</file>
+        <file>images/flat/rdml.png</file>
     </qresource>
 </RCC>

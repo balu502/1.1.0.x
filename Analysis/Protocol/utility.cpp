@@ -3123,7 +3123,7 @@ int Transpose_RawData(void *pobj, callback_process* Callback, rt_Protocol *prot,
 
                     if(saturation && current_expo < count_simple-1) break;
 
-                    value &= 0xfff;
+                    value &= 0x7fff;
                     value -= p_meas->blk_exp;
                     dvalue = value * coef_expo;
 

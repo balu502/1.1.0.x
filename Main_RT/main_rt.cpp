@@ -757,6 +757,7 @@ void Main_RT::Load_MENU()
                     if(subMenu->whatsThis() == "reopen") subMenu->setIcon(QIcon(":/images/flat/reopen_flat.png"));
                     if(subMenu->whatsThis() == "edit_test") subMenu->setIcon(QIcon(":/images/flat/edit_Test_flat.png"));
                     if(subMenu->whatsThis() == "edit_protocol") subMenu->setIcon(QIcon(":/images/flat/edit_Protocol_flat.png"));
+                    if(subMenu->whatsThis() == "rdml_import") subMenu->setIcon(QIcon(":/images/flat/rdml.png"));
                     // ...
 
                     analysis_menu->addAction(subMenu);

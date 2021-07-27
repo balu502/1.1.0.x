@@ -3,6 +3,7 @@
 
 #include <QtWidgets>
 #include <QWidget>
+#include <QObject>
 #include <QDomDocument>
 #include <QFile>
 #include <QFileInfo>
@@ -23,6 +24,7 @@ public:
 };
 
 void RDML_LoadTest(QString, rt_Test*);
-void RDML_LoadSourceSet(QString, rt_Protocol*);
+void RDML_LoadSourceSet(rt_Protocol*);
+void RDML_LoadProgram(QDomNode*, QString&);
 
 #endif // RDML_H

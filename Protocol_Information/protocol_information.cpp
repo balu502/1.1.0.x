@@ -835,7 +835,7 @@ void Scheme_ProgramAmpl::draw_Program(QVector<string> *pr, int DRAW_Level)
             if(!j) y_0 = height_pm;
             height_pm += 16;
             if(!j) painter.drawText(5, height_pm, QString("%1.").arg(i+1));
-            painter.drawText(20, height_pm, block->Level.at(j));
+            painter.drawText(25, height_pm, block->Level.at(j));
 
 
             //offset = 125;

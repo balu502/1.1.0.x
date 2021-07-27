@@ -156,7 +156,7 @@ Analysis::Analysis(QWidget *parent): QMainWindow(parent)
     dll_rdml = ::LoadLibraryW(L"rdml.dll");
     if(!dll_rdml)
     {
-        RDML_import->setVisible(false);
+        RDML_import->setDisabled(true); // setVisible(false);
     }
 }
 //-----------------------------------------------------------------------------
@@ -940,7 +940,7 @@ void Analysis::createActions()
     connect(EMail_send, SIGNAL(triggered()), this, SLOT(email_Send()));
     //EMail_send->setEnabled(false);
 
-    RDML_import = new QAction(QIcon(":/images/flat/rdml.png"), tr("rdml import"), this);
+    RDML_import = new QAction(QIcon(":/images/flat/rdml.png"), tr("RDML import"), this);
     connect(RDML_import, &QAction::triggered, this, &Analysis::rdml_import);
 
     Validity_Hash = new QAction(QIcon(":/images/flat/star_null.png"), tr("data safety"), this);
@@ -2149,6 +2149,7 @@ void Analysis::rdml_import()
     QString fileName;
     QString selectedFilter;
     QString dirName = user_Dir.absolutePath();
+    bool start_rdml = false;
 
     fileName = QFileDialog::getOpenFileName(this,
                                             tr("Open RDML Protocol"),
@@ -2167,7 +2168,7 @@ void Analysis::rdml_import()
         label_gif->setVisible(true);
         obj_gif->start();
 
-        Display_ProgressBar(10, tr("Converting RDML format..."));
+        Display_ProgressBar(50, tr("Converting RDML format..."));
 
         qApp->processEvents();
 
@@ -2176,11 +2177,14 @@ void Analysis::rdml_import()
             RDML_IMPORT rdml_to_rt = reinterpret_cast<RDML_IMPORT>(
                            ::GetProcAddress(dll_rdml,"RDML_2_RT@4"));
 
-            qDebug() << "rdml: " << rdml_to_rt;
-
             if(rdml_to_rt)
             {
-                rdml_to_rt((char*)(str.c_str()));
+                start_rdml = rdml_to_rt((char*)(str.c_str()));
+
+                if(!start_rdml)
+                {
+                    QMessageBox::warning(this, tr("RDML import"), tr("Attention! Invalid RDML file format..."));
+                }
             }
 
         }
@@ -2189,6 +2193,8 @@ void Analysis::rdml_import()
         label_gif->setVisible(false);
         obj_gif->stop();
         QApplication::restoreOverrideCursor();
+
+        if(start_rdml) open_Protocol("rdml/rdml.rt");
     }
 }
 //-----------------------------------------------------------------------------
@@ -2458,7 +2464,7 @@ void Analysis::createToolBars()
     spacer_2->setFixedWidth(25);
     fileToolBar->addWidget(spacer_2);
     fileToolBar->addAction(EMail_send);
-    fileToolBar->addAction(RDML_import);
+    //fileToolBar->addAction(RDML_import);
 
     QWidget *spacer_1 = new QWidget(this);
     spacer_1->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
@@ -4712,6 +4718,8 @@ void Analysis::execution_MenuAction(QString type)
     if(type == "edit_test") {editTest(); return;}
     if(type == "edit_protocol") {editPreferencePro(); return;}
     if(type == "preview_archive") {preview_archive(); return;}
+    if(type == "rdml_import") {rdml_import(); return;}
+
 }
 
 //-----------------------------------------------------------------------------
@@ -4733,8 +4741,9 @@ void Analysis::Create_MenuActions(void *list_pinfo)
     list->append(reopenXmlAct->toolTip() + "\t" + "reopen" + "\t" + QString::number((int)flag_ReOpenProtocol));
     list->append(editTestAct->toolTip() + "\t" + "edit_test" + "\t" + QString::number((int)flag_EditTest));
     list->append(edit_PreferenceProtocol->toolTip() + "\t" + "edit_protocol" + "\t" + QString::number((int)flag_CommonSettings));
-    //list->append("...");
-    //list->append(preview_videoarchive->toolTip() + "\t" + "preview_archive" + "\t" + "1");
+    list->append("...");
+    list->append(RDML_import->toolTip() + "\t" + "rdml_import" + "\t" + "1");
+
 }
 //-----------------------------------------------------------------------------
 //--- Enable_MenuAction(void *)
@@ -4755,6 +4764,7 @@ void Analysis::Enable_MenuAction(void *map_enable)
     map->insert("edit_test", editTestAct->isEnabled());
     map->insert("edit_protocol", edit_PreferenceProtocol->isEnabled());
     map->insert("preview_archive", preview_videoarchive->isEnabled());
+    map->insert("rdml_import", RDML_import->isEnabled());
 }
 
 //-------------------------------------------------------------------------------
