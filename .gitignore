@@ -48,3 +48,8 @@ CMakeLists.txt.user*
 *.ini
 Run_project_release/tools/ini/*.ini
 
+Run_project_release/data/reopen.rt
+Run_project_release/DTR_merge.xml
+Run_project_release/DTR_rtpcr8.xml
+Run_project_release/DTR_Scope.xml
+Run_project_release/input.xml
