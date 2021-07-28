@@ -15,7 +15,7 @@ extern "C" RDML_EXPORT bool __stdcall RDML_2_RT(char* p_str)
     rt_Test *ptest;
 
     QStringList list;
-    list << "dye" << "thermalCyclingConditions" << "experiment";
+    list << "dye" << "thermalCyclingConditions" << "experiment" << "experimenter" << "id" << "dateUpdated";
 
     QStringList list_Program;
     //list_Program << "XPRG 0 35 0" << "XLEV 9400 30 0 0 0 0" << "XLEV 6400 15 0 0 0 40" << "XSAV bio_rad";
@@ -74,6 +74,12 @@ extern "C" RDML_EXPORT bool __stdcall RDML_2_RT(char* p_str)
 
         prot = new rt_Protocol();
 
+        // Comments...
+        rt_Preference   *pro_Comments = new rt_Preference();
+        pro_Comments->name = "Comments";
+        prot->preference_Pro.push_back(pro_Comments);
+        //...
+
         for(i=0; i<root.childNodes().size(); i++)
         {
             child = root.childNodes().at(i);
@@ -81,6 +87,22 @@ extern "C" RDML_EXPORT bool __stdcall RDML_2_RT(char* p_str)
 
             switch(list.indexOf(text))
             {
+            case 5:                     // dateUpdated
+                    pro_Comments->value += "\r\n" + child.toElement().text().toStdString();
+                    break;
+
+            case 4:                     // id
+                    prot->name = child.firstChildElement("publisher").text().toStdString();
+                    break;
+
+            case 3:                     // experimenter
+
+                    text = child.attributes().namedItem("id").nodeValue();
+                    str = child.firstChildElement("lastName").text();
+                    prot->owned_by = QString("%1_%2").arg(text).arg(str).toStdString();
+
+                    break;
+
             case 0:                     // dye
                     text = child.attributes().namedItem("id").nodeValue();
                     //qDebug() << "dye: " << text;
@@ -148,6 +170,8 @@ extern "C" RDML_EXPORT bool __stdcall RDML_2_RT(char* p_str)
                         if(ch.nodeName() == "mdp") prot->count_MC++;
                     }
                     count_meas = prot->count_PCR + prot->count_MC;
+
+                    pro_Comments->value += "\r\n" + run_item.firstChildElement("instrument").text().toStdString();
 
                     // 2.
                     for(j=0; j<child.childNodes().size(); j++)
