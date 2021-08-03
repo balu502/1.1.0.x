@@ -145,6 +145,7 @@ Analysis::Analysis(QWidget *parent): QMainWindow(parent)
     fn_OUTTMP = dir_temp.path() + "/out_tmp.rt";
 
     message.setWindowIcon(QIcon(":/images/DTm.ico"));
+    if(qApp->applicationDisplayName().contains("DTcheck")) message.setWindowIcon(QIcon(":/images/check.ico"));
     message.setFont(qApp->font());
 
     connect(this, SIGNAL(sActionPoint(Action_Event*)), this, SLOT(slot_ReceivedActionPoint(Action_Event*)));
@@ -4742,7 +4743,7 @@ void Analysis::Create_MenuActions(void *list_pinfo)
     list->append(editTestAct->toolTip() + "\t" + "edit_test" + "\t" + QString::number((int)flag_EditTest));
     list->append(edit_PreferenceProtocol->toolTip() + "\t" + "edit_protocol" + "\t" + QString::number((int)flag_CommonSettings));
     list->append("...");
-    list->append(RDML_import->toolTip() + "\t" + "rdml_import" + "\t" + "1");
+    if(dll_rdml) list->append(RDML_import->toolTip() + "\t" + "rdml_import" + "\t" + "1");
 
 }
 //-----------------------------------------------------------------------------

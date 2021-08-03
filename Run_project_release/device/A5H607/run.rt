@@ -4,7 +4,7 @@
  <barcode/>
  <regNumber>T7aEn_031220_160658</regNumber>
  <nameOperator>admin1</nameOperator>
- <created>21 Июнь 2021, 17:24:28</created>
+ <created>2 Август 2021, 11:48:28</created>
  <status>run</status>
  <activeChannels>11111</activeChannels>
  <xsize>12</xsize>
@@ -23,7 +23,7 @@ XSAV Example</amProgramm>
  <properties>
   <item>
    <name>Amplitude</name>
-   <value>538 380 560 197 228</value>
+   <value>2500 800 800 400 400</value>
   </item>
   <item>
    <name>Borders_Optic</name>
@@ -39,11 +39,11 @@ XSAV Example</amProgramm>
   </item>
   <item>
    <name>DTcheck_LOT</name>
-   <value>1234567-89</value>
+   <value/>
   </item>
   <item>
    <name>ID_plate</name>
-   <value>4800000004</value>
+   <value>1111</value>
   </item>
   <item>
    <name>TCorrection</name>
@@ -51,11 +51,15 @@ XSAV Example</amProgramm>
   </item>
   <item>
    <name>TPeaks</name>
-   <value>52.09 89.19 48.58 90.71 61.26</value>
+   <value>51 90 55 91 60</value>
   </item>
   <item>
    <name>VideoData_Catalogue</name>
    <value>D:/DTmaster/1.1.0.x/Run_project_release/VIDEO/A5H607</value>
+  </item>
+  <item>
+   <name>Users_Catalog</name>
+   <value>C:/ProgramData/DTcheck/Verification/A5H607_1111.rt</value>
   </item>
  </properties>
  <dropping>
@@ -4601,7 +4605,7 @@ XSAV Example</amProgramm>
   <uC_Versions>OPTICS 3.13.96 20/06/16&#xd;
 AMPX 6.13 31/08/2020&#xd;
 SMOT 6.11p 12/03/2013&#xd;
-TFT 1.01.09 Mar 12 2020</uC_Versions>
+TFT 1.01.10 Jun 11 2021</uC_Versions>
   <Type_ThermoBlock>B96A</Type_ThermoBlock>
   <FluorDevice_MASK>1f</FluorDevice_MASK>
   <Optical_MASK>0 24 24 0 0 0 0 0 0 0 0 0 0 centers: 100 57 150 57 200 57 251 56 301 56 351 56 401 56 451 56 501 56 552 55 602 55 652 55 100 83 150 83 200 83 251 82 301 82 351 82 401 82 451 82 501 82 552 81 602 81 652 81 101 109 151 109 201 109 251 109 301 109 351 109 402 108 452 108 502 108 552 108 602 108 652 108 101 135 151 135 201 135 251 135 301 135 351 135 402 134 452 134 502 134 552 134 602 134 652 134 101 160 151 160 201 160 251 160 301 160 351 160 402 160 452 160 502 160 552 160 602 160 652 160 101 186 151 186 201 186 251 186 301 186 351 186 402 186 452 186 502 186 552 186 602 186 652 186 102 212 152 212 202 212 252 212 302 212 352 212 402 213 452 213 502 213 552 213 602 213 652 213 102 238 152 238 202 238 252 238 302 238 352 238 402 239 452 239 502 239 552 239 602 239 652 239 </Optical_MASK>

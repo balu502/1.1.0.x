@@ -99,9 +99,12 @@ Run::Run(QWidget *parent): QMainWindow(parent)
     flag_WebProtocol = false;
     flag_LimitedDev = false;
 
-    message.setWindowIcon(QIcon(":/images/DTm.ico"));
-    //message.setWindowIcon(QIcon(":/images/RT.ico"));
-    if(CALIBRATION_status) message.setWindowIcon(QIcon(":/images/check.ico"));
+    if(qApp->applicationName().contains("DTcheck")) message.setWindowIcon(QIcon(":/images/check.ico"));
+    else
+    {
+        message.setWindowIcon(QIcon(":/images/DTm.ico"));
+        //message.setWindowIcon(QIcon(":/images/RT.ico"));
+    }
 
     message.setFont(qApp->font());
 
@@ -5016,7 +5019,7 @@ void Run::CreateMeasure_And_GoToAnalysis()
             //message.setText(tr("Will You analyze the optical data?"));
             res = message.exec();
 
-            if(Dev_State == sHold && res == QMessageBox::No)
+            if(Dev_State == sHold && res == QMessageBox::Yes)
             {
                 // request: Stop Run
                 slotSendToServer(STOP_REQUEST);

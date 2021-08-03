@@ -105,5 +105,6 @@
         <file>images/flat/brightness_up_new.png</file>
         <file>images/RT.ico</file>
         <file>images/flat/rdml.png</file>
+        <file>images/check.ico</file>
     </qresource>
 </RCC>

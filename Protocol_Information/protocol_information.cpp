@@ -839,7 +839,7 @@ void Scheme_ProgramAmpl::draw_Program(QVector<string> *pr, int DRAW_Level)
 
 
             //offset = 125;
-            offset = fm.width("1. 80.0 C - 0:00:00 ");
+            offset = fm.width("1.  80.0 C - 0:00:00 ") + 5;
             offset += 20;
 
 
