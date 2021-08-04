@@ -55,7 +55,7 @@
 #include "../../Analysis/RT_Analysis/define_PCR.h"
 
 
-#define LEFT_OFFSET 66          // offset for 96,384
+/*#define LEFT_OFFSET 66          // offset for 96,384
 #define LEFT_OFFSET_DT48 7      // offset for 48,192
 #define W_IMAGE 752             // width image
 #define H_IMAGE 292             // heigth image
@@ -63,7 +63,17 @@
 #define W_IMAGE_COEF 390        // width image (width/coef: 752/1.93)
 #define W_REALIMAGE 825         //
 #define H_REALIMAGE 312         //
-#define TOP_OFFSET 5
+#define TOP_OFFSET 5*/
+
+/*#define LEFT_OFFSET 0          // offset for 96,384
+#define LEFT_OFFSET_DT48 0      // offset for 48,192
+#define W_IMAGE 640             // width image
+#define H_IMAGE 480             // heigth image
+#define COEF_IMAGE 1.00         //
+#define W_IMAGE_COEF 640        // width image (width/coef: 752/1.93)
+#define W_REALIMAGE 640         //
+#define H_REALIMAGE 480         //
+#define TOP_OFFSET 0*/
 
 #define LABEL_96    "A1,A12,H1,H12"
 #define LABEL_384   "A1,A24,P1,P24"
@@ -107,6 +117,9 @@ public:
     QSpinBox    *y_corner;
     int         Index;      // 0-3 corner
     QWidget     *Parent;
+
+    int         W_IMAGE;
+    int         H_IMAGE;
 
 signals:
     void sChange_XY(int);
@@ -157,6 +170,20 @@ public:
     bool *flag_DeviceSettings;
 
                 // int ctrl(0-mask,1-exp,...), QString data
+
+    // Video items...
+    int LEFT_OFFSET;
+    int LEFT_OFFSET_DT48;
+    int W_IMAGE;
+    int H_IMAGE;
+    double COEF_IMAGE;
+    int W_IMAGE_COEF;
+    int W_REALIMAGE;
+    int H_REALIMAGE;
+    int TOP_OFFSET;
+
+    double FHW;
+
 
 protected:
     void closeEvent(QCloseEvent *event) Q_DECL_OVERRIDE;
@@ -337,6 +364,8 @@ class Image_Widget: public QWidget
 
 public:
     Image_Widget(QImage *i, QWidget *parent = 0);
+
+    double COEF_IMAGE;
 
 protected:
         void paintEvent(QPaintEvent*) Q_DECL_OVERRIDE;

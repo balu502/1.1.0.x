@@ -284,7 +284,7 @@ void Expo::Get_InfoDevice(QMap<QString, QString> *map)
     {
         Device_Par Device_Param;
         unsigned char byte_buf[512];
-    }DEVICE_PAR;
+    }DEVICE_PAR;    
 
     text = map->value(INFODEV_parameters,"");
     if(text.isEmpty())
@@ -296,7 +296,7 @@ void Expo::Get_InfoDevice(QMap<QString, QString> *map)
         return;
     }
 
-    buf = QByteArray::fromBase64(text.toStdString().c_str());
+    buf = QByteArray::fromBase64(text.toStdString().c_str());    
 
     if(buf.size() < 512)
     {
@@ -319,6 +319,7 @@ void Expo::Get_InfoDevice(QMap<QString, QString> *map)
         Expozition.append(qRound((double)(std_vec.at(i*6+4))*COEF_EXPO));   // first expo for i-channel
         Expozition.append(qRound((double)(std_vec.at(i*6+5))*COEF_EXPO));   // seecond expo for i-channel
     }
+
     Set_Expo->setValue(Expozition.at(Set_Fluor->currentIndex()*2));
     Set_ExpoTestCoeff();
 

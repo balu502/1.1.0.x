@@ -497,6 +497,17 @@ public:
     Expo                    *Expo_check;
     Contract                *Contract_Dev;
 
+    // Video items...
+    int LEFT_OFFSET;
+    int LEFT_OFFSET_DT48;
+    int W_IMAGE;
+    int H_IMAGE;
+    double COEF_IMAGE;
+    int W_IMAGE_COEF;
+    int W_REALIMAGE;
+    int H_REALIMAGE;
+    int TOP_OFFSET;
+
 
 private:    
 

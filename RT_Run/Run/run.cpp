@@ -557,12 +557,13 @@ void Run::check_Expo()
     case 7:     count_tubes = 48;  break;
     case 8:     count_tubes = 192; break;
     }
+
     Expo_check->type_dev = count_tubes;
     Expo_check->expozition_Def = &Expozition_Def;
 
-    Expo_check->active_channels = map_InfoDevice.value(INFODEV_devMask,"0").toInt(&ok,16);
-    Expo_check->Load_Fluor();
-    Expo_check->Get_InfoDevice(&map_InfoDevice);    
+    Expo_check->active_channels = map_InfoDevice.value(INFODEV_devMask,"0").toInt(&ok,16);    
+    Expo_check->Load_Fluor();    
+    Expo_check->Get_InfoDevice(&map_InfoDevice);
 
     QSize size = qApp->screens().at(0)->size();
     int x,y;
@@ -605,6 +606,17 @@ void Run::create_VideoImage()
     case 8:     count_tubes = 192; break;
     }
     Video_Image->type_dev = count_tubes;
+
+    Video_Image->LEFT_OFFSET = LEFT_OFFSET;
+    Video_Image->LEFT_OFFSET_DT48 = LEFT_OFFSET_DT48;
+    Video_Image->W_IMAGE = W_IMAGE;
+    Video_Image->H_IMAGE = H_IMAGE;
+    Video_Image->COEF_IMAGE = COEF_IMAGE;
+    Video_Image->W_IMAGE_COEF = W_IMAGE_COEF;
+    Video_Image->W_REALIMAGE = W_REALIMAGE;
+    Video_Image->H_REALIMAGE = H_REALIMAGE;
+    Video_Image->TOP_OFFSET = TOP_OFFSET;
+
 
     Video_Image->active_channels = map_InfoDevice.value(INFODEV_devMask,"0").toInt(&ok,16);
     Video_Image->Load_Fluor();
@@ -3420,6 +3432,31 @@ void Run::slotRefreshInfoDevice()
     info_device->setHeaderLabels(header);
     info_device->header()->setSectionResizeMode(0,QHeaderView::ResizeToContents);
     info_device->header()->setSectionResizeMode(1,QHeaderView::ResizeToContents);
+
+    // FHW
+    LEFT_OFFSET = 66;
+    LEFT_OFFSET_DT48 = 7;
+    W_IMAGE = 752;
+    H_IMAGE = 292;
+    COEF_IMAGE = 1.93;
+    W_IMAGE_COEF = 390;
+    W_REALIMAGE = 825;
+    H_REALIMAGE = 312;
+    TOP_OFFSET = 5;
+
+    if(map_InfoDevice.value(INFODEV_devHW,"").contains("v4.0"))
+    {
+        LEFT_OFFSET = 0;
+        LEFT_OFFSET_DT48 = 0;
+        W_IMAGE = 640;
+        H_IMAGE = 480;
+        COEF_IMAGE = 1.00;
+        W_IMAGE_COEF = 640;
+        W_REALIMAGE = 640;
+        H_REALIMAGE = 480;
+        TOP_OFFSET = 0;
+    }
+
 
     // Name
     item = new QTreeWidgetItem(info_device);

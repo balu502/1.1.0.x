@@ -27,6 +27,8 @@
 #define INFODEV_UnequalCoeff    "unequal_coeff"
 
 #define INFODEV_TempProgram "temperature_program"
+#define INFODEV_devHW       "device_hw"
+
 //.............................................................................
 #define INFO_PROTOCOL       "InfoProtocol"
 #define RUN_REQUEST         "RUN"

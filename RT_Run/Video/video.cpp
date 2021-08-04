@@ -87,7 +87,7 @@ Video::Video(QWidget *parent): QMainWindow(parent)
     //Label_Image = new QLabel(this);
     //Label_Image->setPixmap(QPixmap::fromImage(*Image));
     image_Widget = new Image_Widget(Image, this);
-    image_Widget->setFixedSize(W_IMAGE_COEF, H_IMAGE);
+    image_Widget->setFixedSize(W_IMAGE_COEF, H_IMAGE);    
 
     QHBoxLayout *layout_video = new QHBoxLayout;
     Video_Box->setLayout(layout_video);
@@ -410,7 +410,7 @@ void Video::closeEvent(QCloseEvent *event)
         }
     }
 
-    event->accept();
+    event->accept();     
 
 }
 //-----------------------------------------------------------------------------
@@ -460,12 +460,16 @@ void Video::Get_Picture(QMap<QString,QByteArray> *map)
     QByteArray buf = map->value(GETPIC_VIDEO, NULL);
     int count = buf.size();
 
+    //qDebug() << "Buf_size: " << count;
 
-    if(count != 256*1023*2)
+    int COUNT = 256*1023*2;
+    if(FHW == 4.0) COUNT = 640*480*2;
+
+    if(count != COUNT)
     {
         message.setStandardButtons(QMessageBox::Ok);
         message.setIcon(QMessageBox::Warning);
-        message.setText(QString("Attention! Invalid Buf_Video size: %1 (523776)").arg(count));
+        message.setText(QString("Attention! Invalid Buf_Video size: %1 (%2)").arg(count).arg(COUNT));
         message.exec();
 
         buf.clear();
@@ -564,7 +568,7 @@ void Video::Treat_VideoImage(QVector<ushort> &a, QVector<int> &b)
     k=0;
     for(i=0; i<H_REALIMAGE; i++)
     {
-        if(i<5 || i>296) continue;
+        if(FHW == 3.0 && (i<5 || i>296)) continue;
         m=0;
         for(j=0; j<W_REALIMAGE; j++)
         {
@@ -1026,6 +1030,37 @@ void Video::Get_InfoDevice(QMap<QString, QString> *map, bool save_map)
     Plate.PlateSize(type_dev, row, col);
     QVector<short> XY_temp;
     XY_temp.fill(0,row*col*2);
+
+
+    //... FHW ...
+    qDebug() << "map_DeviceInfo: " << map->value(INFODEV_devHW, "...");
+    FHW = 3.0;
+    if(map->value(INFODEV_devHW, "...").contains("v4.0")) FHW = 4.0;
+
+    BUF_Video.resize(H_IMAGE*W_IMAGE);
+    BUF_Video.fill(0);
+    image_Widget->setFixedSize(W_IMAGE_COEF, H_IMAGE);
+    *Image = Image->scaled(W_IMAGE_COEF, H_IMAGE, Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
+    Image->fill(Qt::white);
+
+    zoom_h = 27;
+    if(FHW == 4.0) zoom_h = 52;
+
+
+    image_Widget->COEF_IMAGE = COEF_IMAGE;
+    foreach(Corner *corner, corners_Mask)
+    {
+        corner->W_IMAGE = W_IMAGE;
+        corner->H_IMAGE = H_IMAGE;
+    }
+
+    Video_Box->setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);
+    setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);
+
+
+    //qDebug() << "Video:" << LEFT_OFFSET << W_IMAGE << H_IMAGE << COEF_IMAGE << W_IMAGE_COEF << W_REALIMAGE << H_REALIMAGE << TOP_OFFSET;
+    //...
+
 
     union
     {
