@@ -2974,7 +2974,7 @@ void Analysis::open_Protocol(QString fileName, bool send, bool create_Hash)
 
         //--- 2. Transpose RawData ---
         sts = Transpose_RawData(this, Analysis::Wrapper_To_Display_ProgressBar, prot, tr("Transpose_RawData"));
-        //qDebug() << "Transpose RawData: " << sts;
+        qDebug() << "Transpose RawData: " << sts;
         //qDebug() << "Raw: " << QVector<double>::fromStdVector(prot->PCR_RawData).mid(0, prot->count_PCR);
         if(sts < 0)
         {
@@ -2986,21 +2986,22 @@ void Analysis::open_Protocol(QString fileName, bool send, bool create_Hash)
         }
 
         sts = CrossTalk_Correction(prot);        
-        //qDebug() << "Raw:(crosstalk) " << sts;//<< QVector<double>::fromStdVector(prot->PCR_RawData).mid(0, prot->count_PCR);
+        qDebug() << "Raw:(crosstalk) " << sts;//<< QVector<double>::fromStdVector(prot->PCR_RawData).mid(0, prot->count_PCR);
 
         //--- 3. Transpose Filtered RawDate ---
         sts = Filtered_RawData(this, Analysis::Wrapper_To_Display_ProgressBar, prot, tr("Filtered PCR_RawData"));
         //qDebug() << "Filtered: " << QVector<double>::fromStdVector(prot->PCR_Filtered).mid(0, prot->count_PCR);
-        //qDebug() << "Transpose Filtered RawDate: " << sts;
+        qDebug() << "Transpose Filtered RawDate: " << sts;
 
         //--- 4. Bace&Fitting Data ---
         sts = Bace_Data(this, Analysis::Wrapper_To_Display_ProgressBar, prot, tr("Bace&Fitting Data"));
-        //qDebug() << "Bace&Fitting Data: " << sts;
+        qDebug() << "Bace&Fitting Data: " << sts;
 
         //--- 5. dF/dT MC Data ---
         sts = dFdT_MCData(this, Analysis::Wrapper_To_Display_ProgressBar, prot, tr("Filtered & dF/Dt Melting Curve Data"), negative);
         if(prot->count_MC && prot->X_MC.size()) plot->value_MeltingMarker = (prot->X_MC.front() + prot->X_MC.back())/2.;
         else plot->value_MeltingMarker = 0.;
+        qDebug() << "dF/dT MC Data: " << sts;
         //qDebug() << "dF/dT MC Data: " << QVector<double>::fromStdVector(prot->MC_TPeaks);
 
 
@@ -3129,7 +3130,7 @@ void Analysis::open_Protocol(QString fileName, bool send, bool create_Hash)
         // 1.1 Check for validity markers:
 
         //qDebug() << "3. Check_Marker ";
-        Check_Marker();        
+        Check_Marker();
 
         //qDebug() << "4. Attention_Analysis ";
         Attention_Analysis();               // Attention !!!

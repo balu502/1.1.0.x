@@ -17,6 +17,10 @@ Video::Video(QWidget *parent): QMainWindow(parent)
     dll_handle = NULL;
     handle_3D = NULL;
 
+    W_IMAGE_COEF = 390;
+    H_IMAGE = 292;
+    W_IMAGE = 752;
+
     BUF_Video.resize(H_IMAGE*W_IMAGE);
     BUF_Video.fill(0);
 
@@ -82,6 +86,7 @@ Video::Video(QWidget *parent): QMainWindow(parent)
     Set_Expo->setSingleStep(50);
     Set_Expo->setValue(1000);    
     Set_Expo->setFont(QFont("Times New Roman", 14, QFont::Bold));
+
     Image = new QImage(W_IMAGE_COEF, H_IMAGE, QImage::Format_RGB32);
     Image->fill(Qt::white);
     //Label_Image = new QLabel(this);
@@ -1054,9 +1059,12 @@ void Video::Get_InfoDevice(QMap<QString, QString> *map, bool save_map)
         corner->H_IMAGE = H_IMAGE;
     }
 
-    Video_Box->setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);
-    setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);
-
+    Video_Box->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
+    Video_Box->update();
+    setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
+    update();
+    repaint();
+    qApp->processEvents();
 
     //qDebug() << "Video:" << LEFT_OFFSET << W_IMAGE << H_IMAGE << COEF_IMAGE << W_IMAGE_COEF << W_REALIMAGE << H_REALIMAGE << TOP_OFFSET;
     //...

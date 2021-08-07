@@ -629,9 +629,8 @@ void Run::create_VideoImage()
     int x,y;
     x = (desktop->width() - Video_Image->width())/2;
     y = (desktop->height() - Video_Image->height())/2;
-    Video_Image->move(x,y);
-    //Video_Image->setFixedWidth(Video_Image->width()*1.1);
-    Video_Image->setFixedSize(Video_Image->size());
+    Video_Image->move(x,y);    
+    //Video_Image->setFixedSize(Video_Image->size());
 
 }
 //-----------------------------------------------------------------------------
