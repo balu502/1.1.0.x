@@ -336,7 +336,6 @@ int Melt_Curve::Analyser(rt_Protocol *prot)
     //qDebug() << "coeff_optics: " << coeff_optics.size() << coeff_optics;
 
     //...
-
     //qDebug() << "mc_Info: " << count << T0 << dT;
     Prot = prot;
     LoadFluor(prot);
@@ -362,9 +361,10 @@ int Melt_Curve::Analyser(rt_Protocol *prot)
     for(i=0; i<prot->count_MC; i++) X_MeltCurve.append(prot->X_MC.at(i));
 
     main_progress->setRange(0, count_ActiveCh*count_tube);
+
     for(i=0; i<count_CH; i++)
     {
-        if(!(prot->active_Channels & (0x0f<<4*i))) continue;
+        if(!(prot->active_Channels & (0x0f<<4*i))) continue;        
 
         QVector<double> *Vec_RawMC = new QVector<double>;
         Vec_RawMC->reserve(count*count_tube);
@@ -419,9 +419,9 @@ int Melt_Curve::Analyser(rt_Protocol *prot)
             Par[2] = TPeaks.at(i);      // temp peak
             Par[3] = 12.;               // form coeff
 
-            Meas = ValDerivate;
-            calcFitting(Par, Der, Vec_Param);       // Fitting Weibull function
-            Fit = Calculate_Weibull(Par, &Der);     // Calculate Weibull fitting
+            Meas = ValDerivate;            
+            calcFitting(Par, Der, Vec_Param);       // Fitting Weibull function            
+            Fit = Calculate_Weibull(Par, &Der);     // Calculate Weibull fitting            
             //Draw_Curves();
 
             QVector<QVector2D> *FitdFdT = new QVector<QVector2D>;
@@ -441,8 +441,7 @@ int Melt_Curve::Analyser(rt_Protocol *prot)
             text = QString("%1%").arg((int)(num*100./(count_ActiveCh*count_tube)));
             Display_ProgressBar(num, text);            
         }
-    }
-    //qDebug() << "melt: all channels";
+    }    
 
     Val.clear();    
     ValDerivate.clear();
@@ -1421,7 +1420,7 @@ int Melt_Curve::calcFitting(double *par, QVector<QVector2D> d, QVector<double> *
 {
 
     int i;
-    int nd = d.size();      // count of fitting points
+    size_t nd = d.size();      // count of fitting points
     double A,L,S;
     QVector2D P;
     QVector<double> X,Y;

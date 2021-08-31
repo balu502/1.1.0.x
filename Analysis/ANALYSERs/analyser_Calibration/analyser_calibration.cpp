@@ -453,10 +453,11 @@ void Analyser_Calibration::Analyser(rt_Protocol *prot)
     {
         MainTab->setCurrentWidget(melt_curve);
         melt_curve->map_RawData = &mask_Optical->map_VALUE;
+
         res = melt_curve->Analyser(prot);                                   // res = -4  or -3 (AFF)
     }
 
-    qDebug() << "Results: " << res;
+    //qDebug() << "Results: " << res;
 
 
     // 5. fill Total Results

@@ -1384,6 +1384,12 @@ void Analysis::save()
     //QString FileName = QString("Protocol(%1)_%2.rt").arg(prot->count_Tubes).arg(QDateTime::currentDateTime().toString("d-M-yy_H-m-s"));
     QString FileName = Check_ValidNameFile(QString::fromStdString(prot->name));
     QString FileName_Unique = Unique_FileName(FileName);
+
+    QFileInfo fi(FileName_Unique);
+    QString suffix = fi.suffix().trimmed();
+    qDebug() << "suffix: " << suffix;
+    if(suffix != "rt") FileName_Unique += ".rt";
+
     QString dirName = user_Dir.absolutePath() + "/" + FileName_Unique;
     dirName = Original_FileName(dirName);
 
@@ -3728,6 +3734,11 @@ bool Analysis::Validate_Calibration()
     QFileInfo fi;
     rt_Preference   *property;
 
+    int count_mc = 0;
+    bool state_melting = false;
+    int a, b, c, d, e, f;
+
+
     VideoData.setPath("");
     for(i=0; i<prot->preference_Pro.size(); i++)
     {
@@ -3784,10 +3795,48 @@ bool Analysis::Validate_Calibration()
             prot->preference_Pro.push_back(property);
         }
         property->name = QString("VideoData_Catalogue").toStdString();
-        property->value = VideoData.absolutePath().toStdString();
+        property->value = VideoData.absolutePath().toStdString();        
+
+        // check on validate: count_MC == count_meas in program
+        //qDebug() << "check on validate: count_MC == count_meas in program";
+
+        for(i=0; i<prot->program.size(); i++)
+        {
+            text = QString::fromStdString(prot->program.at(i));
+            //qDebug() << text;
+            if(text.startsWith("XLEV "))
+            {
+                text.remove("XLEV ");
+                QTextStream(&text) >> a >> b >> c >> d >> e >> f;
+                //qDebug() << "f: " << f;
+                if(f == 2) state_melting = true;
+            }
+            if(text.startsWith("XCYC ") && state_melting)
+            {
+                text.remove("XCYC ");
+                QTextStream(&text) >> a;
+                count_mc += a;
+                state_melting = false;
+            }
+        }
+        //qDebug() << "count_mc" << prot->count_MC << count_mc;
+
+        if(count_mc != prot->count_MC)
+        {
+            text = tr("It is not possible to continue the analysis of the device verification!");
+            text += "\r\n";
+            text += QString("%1 - %2(%3)").arg(tr("Incorrect number of measurements:")).arg(prot->count_MC).arg(count_mc);
+            message.setIcon(QMessageBox::Critical);
+            message.setStandardButtons(QMessageBox::Ok);
+            message.setText(text);
+            message.exec();
+
+            return(false);
+        }
+        //...
 
         QApplication::setOverrideCursor(QCursor(Qt::WaitCursor));
-
+        qApp->processEvents();
     }
 
     return(true);

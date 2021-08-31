@@ -1434,6 +1434,14 @@ void Main_RT::readSettings()
     QPoint pos_default = qApp->desktop()->availableGeometry(this).center()-rect_default.center();
     QPoint pos = ApplSettings->value("pos", pos_default).toPoint();
 
+
+    // validate pos/size
+    if(pos.x() < 0 || pos.y() < 0 || size.width() <= 0 || size.height() <= 0)
+    {
+        size = size_default;
+        pos = pos_default;
+    }
+
 #ifdef CALIBRATION
     size = size_default;
     pos = pos_default;
