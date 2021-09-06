@@ -508,6 +508,8 @@ public:
     int H_REALIMAGE;
     int TOP_OFFSET;
 
+    double Coef_Expo;
+
 
 private:    
 

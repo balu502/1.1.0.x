@@ -316,8 +316,8 @@ void Expo::Get_InfoDevice(QMap<QString, QString> *map)
     Expozition.clear();
     for(i=0; i<COUNT_CH; i++)
     {
-        Expozition.append(qRound((double)(std_vec.at(i*6+4))*COEF_EXPO));   // first expo for i-channel
-        Expozition.append(qRound((double)(std_vec.at(i*6+5))*COEF_EXPO));   // seecond expo for i-channel
+        Expozition.append(qRound((double)(std_vec.at(i*6+4))*Coef_Expo));   // first expo for i-channel
+        Expozition.append(qRound((double)(std_vec.at(i*6+5))*Coef_Expo));   // seecond expo for i-channel
     }
 
     Set_Expo->setValue(Expozition.at(Set_Fluor->currentIndex()*2));
@@ -387,7 +387,7 @@ void Expo::Save_Parameters()
 
     for(i=0; i<Expozition.size(); i++)
     {
-        value = qRound((double)(Expozition.at(i))/(double)(COEF_EXPO));
+        value = qRound((double)(Expozition.at(i))/Coef_Expo);
         j = div(i,2).quot;
         if(!(active_channels & (1<<j))) value = 0;
 

@@ -559,6 +559,7 @@ void Run::check_Expo()
     }
 
     Expo_check->type_dev = count_tubes;
+    Expo_check->Coef_Expo = Coef_Expo;
     Expo_check->expozition_Def = &Expozition_Def;
 
     Expo_check->active_channels = map_InfoDevice.value(INFODEV_devMask,"0").toInt(&ok,16);    
@@ -3442,6 +3443,7 @@ void Run::slotRefreshInfoDevice()
     W_REALIMAGE = 825;
     H_REALIMAGE = 312;
     TOP_OFFSET = 5;
+    Coef_Expo = COEF_EXPO;
 
     if(map_InfoDevice.value(INFODEV_devHW,"").contains("v4.0"))
     {
@@ -3454,6 +3456,7 @@ void Run::slotRefreshInfoDevice()
         W_REALIMAGE = 640;
         H_REALIMAGE = 480;
         TOP_OFFSET = 0;
+        Coef_Expo = 0.154;  // new coef_expo
     }
 
 
@@ -4249,7 +4252,7 @@ bool Run::WriteNewExpositionToDevice()
         }
         for(j=0; j<COUNT_EXP; j++)
         {
-            val = qRound((double)(NewExposition.at(2*i+j)/COEF_EXPO));
+            val = qRound((double)(NewExposition.at(2*i+j)/Coef_Expo));  // COEF_EXPO
             text = QString(" %1").arg(val);
             data += text;
         }
@@ -5291,7 +5294,7 @@ bool Run::slot_GetMeasure(int fn_meas)
             ovf_exp = *(short*)(single_block.mid(22+j*4,2).data());             // 24
             //...                                                               // 26-28
             value_exp = *(unsigned short*)(single_block.mid(offset_expo+j*2,2).data());           // 30-32
-            value_exp = qRound((double)value_exp * COEF_EXPO);            
+            value_exp = qRound((double)value_exp * Coef_Expo);      // COEF_EXPO
             if(value_exp <= 0.)
             {
                 value_exp = Expozition.at(i*COUNT_EXP+j);
@@ -5747,7 +5750,7 @@ bool Run::backup_Exposure()
         value = text.toInt(&ok);
         if(!ok) return(true);
 
-        value = qRound((double)(value)/(double)(COEF_EXPO));
+        value = qRound((double)(value)/Coef_Expo);    // COEF_EXPO
         data += QString(" %1").arg(value);
     }
     data = data.trimmed();    
@@ -7298,8 +7301,8 @@ bool Run::Load_Expozition()
 
     for(i=0; i<COUNT_CH; i++)
     {
-        Expozition.append(qRound((double)(std_vec.at(i*6+4))*COEF_EXPO));   // first expo for i-channel
-        Expozition.append(qRound((double)(std_vec.at(i*6+5))*COEF_EXPO));   // seecond expo for i-channel
+        Expozition.append(qRound((double)(std_vec.at(i*6+4))*Coef_Expo));   // first expo for i-channel
+        Expozition.append(qRound((double)(std_vec.at(i*6+5))*Coef_Expo));   // seecond expo for i-channel
     }
 
     //qDebug() << "Expozition: " << Expozition;

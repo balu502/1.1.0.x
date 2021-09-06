@@ -83,6 +83,7 @@ public:
     QVector<quint16> *expozition_Def;
 
     bool close_Cancel;
+    double Coef_Expo;
 
 signals:
     void SavePar(int, QString);

@@ -1142,9 +1142,13 @@ void All_Cp::Load_RelativeValidityStructure(QMap<QString, double> &RV, rt_Protoc
 
                     if(!sigmoid->valid) continue;
 
-                    name = name_test + ":" + FindNameByTest(test, id_tube, id_channel);
-
+                    //name = name_test + ":" + FindNameByTest(test, id_tube, id_channel);
+                    name = QString("%1:%2:%3:%4").arg(name_test).
+                                                  arg(FindNameByTest(test, id_tube, id_channel)).
+                                                  arg(id_tube).
+                                                  arg(id_channel);
                     value = sigmoid->Fluor_Cp;
+
                     if(RV.contains(name))
                     {
                         if(value > RV.value(name)) RV.insert(name,value);
@@ -1506,7 +1510,11 @@ void All_Cp::Validate_PCR()
                     if(sigmoid->valid && criterion->criterion_Validity > 0)
                     {
                         str_result = "true";
-                        str_temp = QString::fromStdString(test->header.Name_Test) + ":" + FindNameByTest(test, id_tube, id_channel);
+                        //str_temp = QString::fromStdString(test->header.Name_Test) + ":" + FindNameByTest(test, id_tube, id_channel);
+                        str_temp = QString("%1:%2:%3:%4").arg(QString::fromStdString(test->header.Name_Test)).
+                                                          arg(FindNameByTest(test, id_tube, id_channel)).
+                                                          arg(id_tube).
+                                                          arg(id_channel);
                         if(RelativeValidity.contains(str_temp))
                         {
                             value = RelativeValidity.value(str_temp);

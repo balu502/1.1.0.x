@@ -1,88 +1,102 @@
 ﻿<?xml version="1.0" encoding="windows-1251"?>
 
 <protocol>
-	<name>Протокол_(48)</name>
+	<name>Protocol_(96)_31-2021_19-03-12</name>
 	<barcode/>
-	<regNumber>pCTXA_060821_142539</regNumber>
+	<regNumber>PqhQM_310821_190312</regNumber>
 	<nameOperator>admin1</nameOperator>
-	<created>5 agosto 2021, 10:26:34</created>
+	<created>13 aprile 2021, 11.06.26</created>
 	<status>reanalysis</status>
-	<activeChannels>1111</activeChannels>
-	<xsize>8</xsize>
-	<ysize>6</ysize>
-	<volumeTube>20</volumeTube>
-	<amProgramm>XPRG 0 20 0
-XLEV 9500 60 0 0 0 0
+	<activeChannels>11111</activeChannels>
+	<xsize>12</xsize>
+	<ysize>8</ysize>
+	<volumeTube>0</volumeTube>
+	<amProgramm>XPRG 0 35 0
+XLEV 3500 1200 0 0 0 0
 XCYC 1
-XLEV 9500 5 0 0 0 0
-XLEV 6000 10 0 0 0 1
-XCYC 8
-XSAV Example</amProgramm>
-	<properties>
-		<item>
-			<name>Save_OnLine</name>
-			<value>C:/ProgramData/DTmaster/Users/admin1/OnLine/A7F005_admin1_050821_102634.rt</value>
-		</item>
-		<item>
-			<name>Comments</name>
-			<value/>
-		</item>
-	</properties>
+XLEV 9400 300 0 0 0 0
+XCYC 1
+XLEV 9400 10 0 0 0 0
+XLEV 6200 25 0 0 0 0
+XCYC 5
+XLEV 9400 10 0 0 0 0
+XLEV 6200 25 0 0 0 1
+XCYC 45
+XSAV VARIANTS</amProgramm>
+	<properties/>
 	<tests>
 		<item xmlns:msxsl="urn:schemas-microsoft-com:xslt">
-			<IDTest>SXfh7jQcyuFc</IDTest>
-			<nameTest>mas rp</nameTest>
-			<method>169977</method>
-			<volumeTube>20</volumeTube>
+			<IDTest>vzpZWdeFN4Dj</IDTest>
+			<nameTest>SARS2_Variants</nameTest>
+			<method>171163</method>
+			<volumeTube>40</volumeTube>
 			<ControlTubesCount>1</ControlTubesCount>
 			<PosControlCount>0</PosControlCount>
 			<NegControlCount>0</NegControlCount>
-			<Catalog>Quality 2.0</Catalog>
-			<activeChannels>1111</activeChannels>
+			<Catalog/>
+			<activeChannels>11111</activeChannels>
 			<amProgramm>
 XPRG 0 35 0
-XLEV 9500 60 0 0 0 0
+XLEV 3500 1200 0 0 0 0
 XCYC 1
-XLEV 9500 5 0 0 0 0
-XLEV 6000 10 0 0 0 1
-XCYC 8
-XSAV Example
+XLEV 9500 300 0 0 0 0
+XCYC 1
+XLEV 9400 10 0 0 0 0
+XLEV 6200 10 0 0 0 1
+XCYC 5
+XLEV 9400 5 0 0 0 0
+XLEV 6200 10 0 0 0 1
+XCYC 45
+XLEV 8000 1 0 0 0 0
+XCYC 1
+XLEV 1000 15 0 0 0 0
+XHLD
+XSAV DT-OS-35-62k
  </amProgramm>
 			<DTReport>
-				<FormID>quality</FormID>
+				<FormID>multiplex</FormID>
 				<ProgName/>
 				<ReportSettings>
 					<value>
 						<TAnalisys>
-							<DisplayName>mas rp</DisplayName>
+							<DisplayName>SARS2_Variants</DisplayName>
 							<DeviceParams><![CDATA[
 XPRG 0 35 0
-XLEV 9500 60 0 0 0 0
+XLEV 3500 1200 0 0 0 0
 XCYC 1
-XLEV 9500 5 0 0 0 0
-XLEV 6000 10 0 0 0 1
-XCYC 8
-XSAV Example
+XLEV 9500 300 0 0 0 0
+XCYC 1
+XLEV 9400 10 0 0 0 0
+XLEV 6200 10 0 0 0 1
+XCYC 5
+XLEV 9400 5 0 0 0 0
+XLEV 6200 10 0 0 0 1
+XCYC 45
+XLEV 8000 1 0 0 0 0
+XCYC 1
+XLEV 1000 15 0 0 0 0
+XHLD
+XSAV DT-OS-35-62k
 ]]></DeviceParams>
-							<FormID>quality</FormID>
-							<MinimalFormVersion>1.84</MinimalFormVersion>
+							<FormID>multiplex</FormID>
+							<MinimalFormVersion>1.55</MinimalFormVersion>
 							<ControlTubesCount>1</ControlTubesCount>
 							<PosControlCount>0</PosControlCount>
 							<NegControlCount>0</NegControlCount>
-							<ID>SXfh7jQcyuFc</ID>
-							<VolumeTube>20</VolumeTube>
+							<ID>vzpZWdeFN4Dj</ID>
+							<VolumeTube>40</VolumeTube>
 							<NextID>0</NextID>
 							<Settings>
-								<TDTRParameter Name="CommonIC">
-									<Name>CommonIC</Name>
+								<TDTRParameter Name="TBMInReport">
+									<Name>TBMInReport</Name>
 									<Value>0</Value>
 								</TDTRParameter>
-								<TDTRParameter Name="Treshold">
-									<Name>Treshold</Name>
-									<Value>0</Value>
+								<TDTRParameter Name="CalcLg">
+									<Name>CalcLg</Name>
+									<Value>-1</Value>
 								</TDTRParameter>
 							</Settings>
-							<Method>169977</Method>
+							<Method>171163</Method>
 							<SystemParams>&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?&gt;
 &lt;properties&gt;
  &lt;item&gt;
@@ -137,7 +151,7 @@ XSAV Example
  &lt;/item&gt;
  &lt;item&gt;
   &lt;name&gt;exposure_Measurements&lt;/name&gt;
-  &lt;value&gt;0.50 0.50 0.50 0.50 0.50&lt;/value&gt;
+  &lt;value&gt;1.00 1.00 1.00 1.00 1.00&lt;/value&gt;
   &lt;unit/&gt;
  &lt;/item&gt;
  &lt;item&gt;
@@ -162,27 +176,109 @@ XSAV Example
 								<ID>0</ID>
 								<TubeIndex>1</TubeIndex>
 								<TPCRTest>
-									<DisplayName>Target_1</DisplayName>
+									<DisplayName>SIC</DisplayName>
+									<ProgName>MTC</ProgName>
 									<ID>0</ID>
+									<Settings>
+										<TDTRParameter Name="Ni">
+											<Name>Ni</Name>
+											<Value>0</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Ei">
+											<Name>Ei</Name>
+											<Value>0</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="MinRes">
+											<Name>MinRes</Name>
+											<Value>0</Value>
+										</TDTRParameter>
+									</Settings>
 									<ChannelID>0</ChannelID>
 								</TPCRTest>
 								<TPCRTest>
-									<DisplayName>ВК</DisplayName>
-									<ProgName>ic</ProgName>
+									<DisplayName>SIC</DisplayName>
+									<ProgName>MTC</ProgName>
 									<ID>1</ID>
+									<Settings>
+										<TDTRParameter Name="Ni">
+											<Name>Ni</Name>
+											<Value>0</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Ei">
+											<Name>Ei</Name>
+											<Value>0</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="MinRes">
+											<Name>MinRes</Name>
+											<Value>0</Value>
+										</TDTRParameter>
+									</Settings>
 									<ChannelID>1</ChannelID>
 								</TPCRTest>
 								<TPCRTest>
-									<DisplayName>Target_2</DisplayName>
+									<DisplayName>SIC</DisplayName>
+									<ProgName>MTC</ProgName>
 									<ID>2</ID>
+									<Settings>
+										<TDTRParameter Name="Ni">
+											<Name>Ni</Name>
+											<Value>0</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Ei">
+											<Name>Ei</Name>
+											<Value>0</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="MinRes">
+											<Name>MinRes</Name>
+											<Value>0</Value>
+										</TDTRParameter>
+									</Settings>
 									<ChannelID>2</ChannelID>
 								</TPCRTest>
 								<TPCRTest>
-									<DisplayName>Target_3</DisplayName>
+									<DisplayName>SIC</DisplayName>
+									<ProgName>MTC</ProgName>
 									<ID>3</ID>
+									<Settings>
+										<TDTRParameter Name="Ni">
+											<Name>Ni</Name>
+											<Value>0</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Ei">
+											<Name>Ei</Name>
+											<Value>0</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="MinRes">
+											<Name>MinRes</Name>
+											<Value>0</Value>
+										</TDTRParameter>
+									</Settings>
 									<ChannelID>3</ChannelID>
 								</TPCRTest>
+								<TPCRTest>
+									<DisplayName>SIC</DisplayName>
+									<ProgName>MTC</ProgName>
+									<ID>4</ID>
+									<Settings>
+										<TDTRParameter Name="Ni">
+											<Name>Ni</Name>
+											<Value>0</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="Ei">
+											<Name>Ei</Name>
+											<Value>0</Value>
+										</TDTRParameter>
+										<TDTRParameter Name="MinRes">
+											<Name>MinRes</Name>
+											<Value>0</Value>
+										</TDTRParameter>
+									</Settings>
+									<ChannelID>4</ChannelID>
+								</TPCRTest>
 							</TTube>
+							<TGroup Name="Tube_1">
+								<Name>Tube_1</Name>
+							</TGroup>
 							<TChannel>
 								<ChannelID>0</ChannelID>
 								<Number>0</Number>
@@ -220,7 +316,7 @@ XSAV Example
 								<Number>4</Number>
 								<Ffor>5</Ffor>
 								<ChannelName>Cy5.5</ChannelName>
-								<Active>0</Active>
+								<Active>1</Active>
 								<Color>255</Color>
 							</TChannel>
 						</TAnalisys>
@@ -248,6 +344,11 @@ XSAV Example
 					<number>3</number>
 					<ffor>4</ffor>
 				</item>
+				<item>
+					<IDChannel>4</IDChannel>
+					<number>4</number>
+					<ffor>5</ffor>
+				</item>
 			</channels>
 			<templates>
 				<item>
@@ -256,30 +357,37 @@ XSAV Example
 					<channels>
 						<item>
 							<IDChannel>0</IDChannel>
-							<name>Target_1</name>
+							<name>SIC</name>
 							<DTReport>
-								<ProgName/>
+								<ProgName>MTC</ProgName>
 							</DTReport>
 						</item>
 						<item>
 							<IDChannel>1</IDChannel>
-							<name>ВК</name>
+							<name>SIC</name>
 							<DTReport>
-								<ProgName>ic</ProgName>
+								<ProgName>MTC</ProgName>
 							</DTReport>
 						</item>
 						<item>
 							<IDChannel>2</IDChannel>
-							<name>Target_2</name>
+							<name>SIC</name>
 							<DTReport>
-								<ProgName/>
+								<ProgName>MTC</ProgName>
 							</DTReport>
 						</item>
 						<item>
 							<IDChannel>3</IDChannel>
-							<name>Target_3</name>
+							<name>SIC</name>
 							<DTReport>
-								<ProgName/>
+								<ProgName>MTC</ProgName>
+							</DTReport>
+						</item>
+						<item>
+							<IDChannel>4</IDChannel>
+							<name>SIC</name>
+							<DTReport>
+								<ProgName>MTC</ProgName>
 							</DTReport>
 						</item>
 					</channels>
@@ -338,7 +446,7 @@ XSAV Example
 				</item>
 				<item>
 					<name>exposure_Measurements</name>
-					<value>0.50 0.50 0.50 0.50 0.50</value>
+					<value>1.00 1.00 1.00 1.00 1.00</value>
 					<unit/>
 				</item>
 				<item>
@@ -361,8 +469,8 @@ XSAV Example
 	</tests>
 	<sourceSet>
 		<item>
-			<IDGroup>HkbyGQNsw0</IDGroup>
-			<name>Образец_1</name>
+			<IDGroup>C6SuCcZkOc</IDGroup>
+			<name>Sample_1</name>
 			<properties>
 				<item>
 					<name>patient</name>
@@ -407,9 +515,9 @@ XSAV Example
 			</properties>
 			<samples>
 				<item>
-					<IDSample>X2i136sKUi</IDSample>
-					<IDTest>SXfh7jQcyuFc</IDTest>
-					<name>Образец_1</name>
+					<IDSample>TO5RVH3CQK</IDSample>
+					<IDTest>vzpZWdeFN4Dj</IDTest>
+					<name>Sample_1</name>
 					<properties/>
 					<tubes>
 						<item>
@@ -427,7 +535,7 @@ XSAV Example
 									<channel_results>
 										<item>
 											<name>Sigmoid_validity</name>
-											<value>-</value>
+											<value>+ (97%)</value>
 										</item>
 										<item>
 											<name>aFF</name>
@@ -435,15 +543,15 @@ XSAV Example
 										</item>
 										<item>
 											<name>Relative_validity</name>
-											<value>none</value>
+											<value>true</value>
 										</item>
 										<item>
 											<name>Cp</name>
-											<value>0.000</value>
+											<value>19.903</value>
 										</item>
 										<item>
 											<name>Ct</name>
-											<value>0.000</value>
+											<value>18.100</value>
 										</item>
 									</channel_results>
 								</item>
@@ -453,7 +561,7 @@ XSAV Example
 									<channel_results>
 										<item>
 											<name>Sigmoid_validity</name>
-											<value>-</value>
+											<value>+ (95%)</value>
 										</item>
 										<item>
 											<name>aFF</name>
@@ -461,20 +569,46 @@ XSAV Example
 										</item>
 										<item>
 											<name>Relative_validity</name>
-											<value>none</value>
+											<value>true</value>
 										</item>
 										<item>
 											<name>Cp</name>
-											<value>0.000</value>
+											<value>22.313</value>
 										</item>
 										<item>
 											<name>Ct</name>
-											<value>0.000</value>
+											<value>20.800</value>
 										</item>
 									</channel_results>
 								</item>
 								<item>
 									<IDChannel>2</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (95%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>22.356</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>19.400</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>3</IDChannel>
 									<properties/>
 									<channel_results>
 										<item>
@@ -500,7 +634,7 @@ XSAV Example
 									</channel_results>
 								</item>
 								<item>
-									<IDChannel>3</IDChannel>
+									<IDChannel>4</IDChannel>
 									<properties/>
 									<channel_results>
 										<item>
@@ -534,8 +668,8 @@ XSAV Example
 			</samples>
 		</item>
 		<item>
-			<IDGroup>oopXqGsFWQ</IDGroup>
-			<name>Образец_2</name>
+			<IDGroup>jABTIR48y1</IDGroup>
+			<name>Sample_2</name>
 			<properties>
 				<item>
 					<name>patient</name>
@@ -580,17 +714,17 @@ XSAV Example
 			</properties>
 			<samples>
 				<item>
-					<IDSample>4aw49PMh47</IDSample>
-					<IDTest>SXfh7jQcyuFc</IDTest>
-					<name>Образец_2</name>
+					<IDSample>3IQbRvkMJZ</IDSample>
+					<IDTest>vzpZWdeFN4Dj</IDTest>
+					<name>Sample_2</name>
 					<properties/>
 					<tubes>
 						<item>
 							<IDTube>0</IDTube>
 							<name/>
-							<pos>1</pos>
-							<x>1</x>
-							<y>0</y>
+							<pos>12</pos>
+							<x>0</x>
+							<y>1</y>
 							<pos_protocol>2</pos_protocol>
 							<color>0</color>
 							<channels>
@@ -600,7 +734,7 @@ XSAV Example
 									<channel_results>
 										<item>
 											<name>Sigmoid_validity</name>
-											<value>-</value>
+											<value>+ (89%)</value>
 										</item>
 										<item>
 											<name>aFF</name>
@@ -608,15 +742,15 @@ XSAV Example
 										</item>
 										<item>
 											<name>Relative_validity</name>
-											<value>none</value>
+											<value>true</value>
 										</item>
 										<item>
 											<name>Cp</name>
-											<value>0.000</value>
+											<value>13.040</value>
 										</item>
 										<item>
 											<name>Ct</name>
-											<value>0.000</value>
+											<value>11.000</value>
 										</item>
 									</channel_results>
 								</item>
@@ -626,7 +760,7 @@ XSAV Example
 									<channel_results>
 										<item>
 											<name>Sigmoid_validity</name>
-											<value>-</value>
+											<value>+ (85%)</value>
 										</item>
 										<item>
 											<name>aFF</name>
@@ -634,20 +768,46 @@ XSAV Example
 										</item>
 										<item>
 											<name>Relative_validity</name>
-											<value>none</value>
+											<value>true</value>
 										</item>
 										<item>
 											<name>Cp</name>
-											<value>0.000</value>
+											<value>14.970</value>
 										</item>
 										<item>
 											<name>Ct</name>
-											<value>0.000</value>
+											<value>12.900</value>
 										</item>
 									</channel_results>
 								</item>
 								<item>
 									<IDChannel>2</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (93%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>16.773</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>14.100</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>3</IDChannel>
 									<properties/>
 									<channel_results>
 										<item>
@@ -673,7 +833,7 @@ XSAV Example
 									</channel_results>
 								</item>
 								<item>
-									<IDChannel>3</IDChannel>
+									<IDChannel>4</IDChannel>
 									<properties/>
 									<channel_results>
 										<item>
@@ -707,8 +867,8 @@ XSAV Example
 			</samples>
 		</item>
 		<item>
-			<IDGroup>KsZbw5Mc6p</IDGroup>
-			<name>Образец_3</name>
+			<IDGroup>MR9FawR4f7</IDGroup>
+			<name>Sample_3</name>
 			<properties>
 				<item>
 					<name>patient</name>
@@ -753,17 +913,17 @@ XSAV Example
 			</properties>
 			<samples>
 				<item>
-					<IDSample>e1IE5Z3rSN</IDSample>
-					<IDTest>SXfh7jQcyuFc</IDTest>
-					<name>Образец_3</name>
+					<IDSample>dDmmt5RWho</IDSample>
+					<IDTest>vzpZWdeFN4Dj</IDTest>
+					<name>Sample_3</name>
 					<properties/>
 					<tubes>
 						<item>
 							<IDTube>0</IDTube>
 							<name/>
-							<pos>2</pos>
-							<x>2</x>
-							<y>0</y>
+							<pos>24</pos>
+							<x>0</x>
+							<y>2</y>
 							<pos_protocol>3</pos_protocol>
 							<color>0</color>
 							<channels>
@@ -773,7 +933,7 @@ XSAV Example
 									<channel_results>
 										<item>
 											<name>Sigmoid_validity</name>
-											<value>-</value>
+											<value>+ (96%)</value>
 										</item>
 										<item>
 											<name>aFF</name>
@@ -781,15 +941,15 @@ XSAV Example
 										</item>
 										<item>
 											<name>Relative_validity</name>
-											<value>none</value>
+											<value>true</value>
 										</item>
 										<item>
 											<name>Cp</name>
-											<value>0.000</value>
+											<value>15.449</value>
 										</item>
 										<item>
 											<name>Ct</name>
-											<value>0.000</value>
+											<value>13.600</value>
 										</item>
 									</channel_results>
 								</item>
@@ -799,7 +959,7 @@ XSAV Example
 									<channel_results>
 										<item>
 											<name>Sigmoid_validity</name>
-											<value>-</value>
+											<value>+ (91%)</value>
 										</item>
 										<item>
 											<name>aFF</name>
@@ -807,20 +967,46 @@ XSAV Example
 										</item>
 										<item>
 											<name>Relative_validity</name>
-											<value>none</value>
+											<value>true</value>
 										</item>
 										<item>
 											<name>Cp</name>
-											<value>0.000</value>
+											<value>18.097</value>
 										</item>
 										<item>
 											<name>Ct</name>
-											<value>0.000</value>
+											<value>16.900</value>
 										</item>
 									</channel_results>
 								</item>
 								<item>
 									<IDChannel>2</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (94%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>17.552</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>14.700</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>3</IDChannel>
 									<properties/>
 									<channel_results>
 										<item>
@@ -846,7 +1032,7 @@ XSAV Example
 									</channel_results>
 								</item>
 								<item>
-									<IDChannel>3</IDChannel>
+									<IDChannel>4</IDChannel>
 									<properties/>
 									<channel_results>
 										<item>
@@ -880,8 +1066,8 @@ XSAV Example
 			</samples>
 		</item>
 		<item>
-			<IDGroup>unvlOj3m04</IDGroup>
-			<name>Образец_4</name>
+			<IDGroup>wLVP3a8E2M</IDGroup>
+			<name>Sample_4</name>
 			<properties>
 				<item>
 					<name>patient</name>
@@ -926,17 +1112,17 @@ XSAV Example
 			</properties>
 			<samples>
 				<item>
-					<IDSample>A52oBP4i2m</IDSample>
-					<IDTest>SXfh7jQcyuFc</IDTest>
-					<name>Образец_4</name>
+					<IDSample>Dd8wqF8ga4</IDSample>
+					<IDTest>vzpZWdeFN4Dj</IDTest>
+					<name>Sample_4</name>
 					<properties/>
 					<tubes>
 						<item>
 							<IDTube>0</IDTube>
 							<name/>
-							<pos>3</pos>
-							<x>3</x>
-							<y>0</y>
+							<pos>36</pos>
+							<x>0</x>
+							<y>3</y>
 							<pos_protocol>4</pos_protocol>
 							<color>0</color>
 							<channels>
@@ -946,7 +1132,7 @@ XSAV Example
 									<channel_results>
 										<item>
 											<name>Sigmoid_validity</name>
-											<value>-</value>
+											<value>+ (97%)</value>
 										</item>
 										<item>
 											<name>aFF</name>
@@ -954,15 +1140,15 @@ XSAV Example
 										</item>
 										<item>
 											<name>Relative_validity</name>
-											<value>none</value>
+											<value>true</value>
 										</item>
 										<item>
 											<name>Cp</name>
-											<value>0.000</value>
+											<value>29.734</value>
 										</item>
 										<item>
 											<name>Ct</name>
-											<value>0.000</value>
+											<value>28.200</value>
 										</item>
 									</channel_results>
 								</item>
@@ -972,7 +1158,7 @@ XSAV Example
 									<channel_results>
 										<item>
 											<name>Sigmoid_validity</name>
-											<value>-</value>
+											<value>+ (91%)</value>
 										</item>
 										<item>
 											<name>aFF</name>
@@ -980,20 +1166,46 @@ XSAV Example
 										</item>
 										<item>
 											<name>Relative_validity</name>
-											<value>none</value>
+											<value>true</value>
 										</item>
 										<item>
 											<name>Cp</name>
-											<value>0.000</value>
+											<value>31.416</value>
 										</item>
 										<item>
 											<name>Ct</name>
-											<value>0.000</value>
+											<value>30.600</value>
 										</item>
 									</channel_results>
 								</item>
 								<item>
 									<IDChannel>2</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (95%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>32.161</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>30.500</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>3</IDChannel>
 									<properties/>
 									<channel_results>
 										<item>
@@ -1019,7 +1231,7 @@ XSAV Example
 									</channel_results>
 								</item>
 								<item>
-									<IDChannel>3</IDChannel>
+									<IDChannel>4</IDChannel>
 									<properties/>
 									<channel_results>
 										<item>
@@ -1053,8 +1265,8 @@ XSAV Example
 			</samples>
 		</item>
 		<item>
-			<IDGroup>UDHvLtkwNK</IDGroup>
-			<name>Образец_5</name>
+			<IDGroup>WmrazkpOwb</IDGroup>
+			<name>Sample_5</name>
 			<properties>
 				<item>
 					<name>patient</name>
@@ -1099,17 +1311,17 @@ XSAV Example
 			</properties>
 			<samples>
 				<item>
-					<IDSample>kzOydZEsv1</IDSample>
-					<IDTest>SXfh7jQcyuFc</IDTest>
-					<name>Образец_5</name>
+					<IDSample>qu6i9E2dH9</IDSample>
+					<IDTest>vzpZWdeFN4Dj</IDTest>
+					<name>Sample_5</name>
 					<properties/>
 					<tubes>
 						<item>
 							<IDTube>0</IDTube>
 							<name/>
-							<pos>4</pos>
-							<x>4</x>
-							<y>0</y>
+							<pos>48</pos>
+							<x>0</x>
+							<y>4</y>
 							<pos_protocol>5</pos_protocol>
 							<color>0</color>
 							<channels>
@@ -1119,7 +1331,7 @@ XSAV Example
 									<channel_results>
 										<item>
 											<name>Sigmoid_validity</name>
-											<value>-</value>
+											<value>+ (95%)</value>
 										</item>
 										<item>
 											<name>aFF</name>
@@ -1127,15 +1339,15 @@ XSAV Example
 										</item>
 										<item>
 											<name>Relative_validity</name>
-											<value>none</value>
+											<value>true</value>
 										</item>
 										<item>
 											<name>Cp</name>
-											<value>0.000</value>
+											<value>21.660</value>
 										</item>
 										<item>
 											<name>Ct</name>
-											<value>0.000</value>
+											<value>19.700</value>
 										</item>
 									</channel_results>
 								</item>
@@ -1145,7 +1357,7 @@ XSAV Example
 									<channel_results>
 										<item>
 											<name>Sigmoid_validity</name>
-											<value>-</value>
+											<value>+ (86%)</value>
 										</item>
 										<item>
 											<name>aFF</name>
@@ -1153,20 +1365,46 @@ XSAV Example
 										</item>
 										<item>
 											<name>Relative_validity</name>
-											<value>none</value>
+											<value>true</value>
 										</item>
 										<item>
 											<name>Cp</name>
-											<value>0.000</value>
+											<value>24.518</value>
 										</item>
 										<item>
 											<name>Ct</name>
-											<value>0.000</value>
+											<value>23.500</value>
 										</item>
 									</channel_results>
 								</item>
 								<item>
 									<IDChannel>2</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (94%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>24.571</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>21.700</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>3</IDChannel>
 									<properties/>
 									<channel_results>
 										<item>
@@ -1192,7 +1430,7 @@ XSAV Example
 									</channel_results>
 								</item>
 								<item>
-									<IDChannel>3</IDChannel>
+									<IDChannel>4</IDChannel>
 									<properties/>
 									<channel_results>
 										<item>
@@ -1226,8 +1464,8 @@ XSAV Example
 			</samples>
 		</item>
 		<item>
-			<IDGroup>48d6n3R6HZ</IDGroup>
-			<name>Образец_6</name>
+			<IDGroup>6gDkRuWYJq</IDGroup>
+			<name>Sample_6</name>
 			<properties>
 				<item>
 					<name>patient</name>
@@ -1272,17 +1510,17 @@ XSAV Example
 			</properties>
 			<samples>
 				<item>
-					<IDSample>OGMkwX8Lc6</IDSample>
-					<IDTest>SXfh7jQcyuFc</IDTest>
-					<name>Образец_6</name>
+					<IDSample>QpSsbOjnfO</IDSample>
+					<IDTest>vzpZWdeFN4Dj</IDTest>
+					<name>Sample_6</name>
 					<properties/>
 					<tubes>
 						<item>
 							<IDTube>0</IDTube>
 							<name/>
-							<pos>5</pos>
-							<x>5</x>
-							<y>0</y>
+							<pos>60</pos>
+							<x>0</x>
+							<y>5</y>
 							<pos_protocol>6</pos_protocol>
 							<color>0</color>
 							<channels>
@@ -1292,7 +1530,7 @@ XSAV Example
 									<channel_results>
 										<item>
 											<name>Sigmoid_validity</name>
-											<value>-</value>
+											<value>+ (96%)</value>
 										</item>
 										<item>
 											<name>aFF</name>
@@ -1300,15 +1538,15 @@ XSAV Example
 										</item>
 										<item>
 											<name>Relative_validity</name>
-											<value>none</value>
+											<value>true</value>
 										</item>
 										<item>
 											<name>Cp</name>
-											<value>0.000</value>
+											<value>31.580</value>
 										</item>
 										<item>
 											<name>Ct</name>
-											<value>0.000</value>
+											<value>30.400</value>
 										</item>
 									</channel_results>
 								</item>
@@ -1318,7 +1556,7 @@ XSAV Example
 									<channel_results>
 										<item>
 											<name>Sigmoid_validity</name>
-											<value>-</value>
+											<value>+ (91%)</value>
 										</item>
 										<item>
 											<name>aFF</name>
@@ -1326,15 +1564,15 @@ XSAV Example
 										</item>
 										<item>
 											<name>Relative_validity</name>
-											<value>none</value>
+											<value>true</value>
 										</item>
 										<item>
 											<name>Cp</name>
-											<value>0.000</value>
+											<value>32.582</value>
 										</item>
 										<item>
 											<name>Ct</name>
-											<value>0.000</value>
+											<value>31.700</value>
 										</item>
 									</channel_results>
 								</item>
@@ -1344,7 +1582,7 @@ XSAV Example
 									<channel_results>
 										<item>
 											<name>Sigmoid_validity</name>
-											<value>-</value>
+											<value>+ (92%)</value>
 										</item>
 										<item>
 											<name>aFF</name>
@@ -1352,15 +1590,15 @@ XSAV Example
 										</item>
 										<item>
 											<name>Relative_validity</name>
-											<value>none</value>
+											<value>true</value>
 										</item>
 										<item>
 											<name>Cp</name>
-											<value>0.000</value>
+											<value>33.160</value>
 										</item>
 										<item>
 											<name>Ct</name>
-											<value>0.000</value>
+											<value>31.600</value>
 										</item>
 									</channel_results>
 								</item>
@@ -1390,6 +1628,32 @@ XSAV Example
 										</item>
 									</channel_results>
 								</item>
+								<item>
+									<IDChannel>4</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (69%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>false</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>warning</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
 							</channels>
 							<tube_results/>
 						</item>
@@ -1399,8 +1663,8 @@ XSAV Example
 			</samples>
 		</item>
 		<item>
-			<IDGroup>e2yGjh8Geo</IDGroup>
-			<name>Образец_7</name>
+			<IDGroup>g7ZvOYDiD6</IDGroup>
+			<name>Sample_7</name>
 			<properties>
 				<item>
 					<name>patient</name>
@@ -1445,17 +1709,17 @@ XSAV Example
 			</properties>
 			<samples>
 				<item>
-					<IDSample>uK5J2NcCCW</IDSample>
-					<IDTest>SXfh7jQcyuFc</IDTest>
-					<name>Образец_7</name>
+					<IDSample>wtCRhDDAFn</IDSample>
+					<IDTest>vzpZWdeFN4Dj</IDTest>
+					<name>Sample_7</name>
 					<properties/>
 					<tubes>
 						<item>
 							<IDTube>0</IDTube>
 							<name/>
-							<pos>6</pos>
-							<x>6</x>
-							<y>0</y>
+							<pos>72</pos>
+							<x>0</x>
+							<y>6</y>
 							<pos_protocol>7</pos_protocol>
 							<color>0</color>
 							<channels>
@@ -1465,7 +1729,7 @@ XSAV Example
 									<channel_results>
 										<item>
 											<name>Sigmoid_validity</name>
-											<value>-</value>
+											<value>+ (98%)</value>
 										</item>
 										<item>
 											<name>aFF</name>
@@ -1473,15 +1737,15 @@ XSAV Example
 										</item>
 										<item>
 											<name>Relative_validity</name>
-											<value>none</value>
+											<value>true</value>
 										</item>
 										<item>
 											<name>Cp</name>
-											<value>0.000</value>
+											<value>28.066</value>
 										</item>
 										<item>
 											<name>Ct</name>
-											<value>0.000</value>
+											<value>26.200</value>
 										</item>
 									</channel_results>
 								</item>
@@ -1491,7 +1755,7 @@ XSAV Example
 									<channel_results>
 										<item>
 											<name>Sigmoid_validity</name>
-											<value>-</value>
+											<value>+ (93%)</value>
 										</item>
 										<item>
 											<name>aFF</name>
@@ -1499,20 +1763,46 @@ XSAV Example
 										</item>
 										<item>
 											<name>Relative_validity</name>
-											<value>none</value>
+											<value>true</value>
 										</item>
 										<item>
 											<name>Cp</name>
-											<value>0.000</value>
+											<value>29.846</value>
 										</item>
 										<item>
 											<name>Ct</name>
-											<value>0.000</value>
+											<value>28.700</value>
 										</item>
 									</channel_results>
 								</item>
 								<item>
 									<IDChannel>2</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (96%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>30.749</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>28.500</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>3</IDChannel>
 									<properties/>
 									<channel_results>
 										<item>
@@ -1538,7 +1828,7 @@ XSAV Example
 									</channel_results>
 								</item>
 								<item>
-									<IDChannel>3</IDChannel>
+									<IDChannel>4</IDChannel>
 									<properties/>
 									<channel_results>
 										<item>
@@ -1572,8 +1862,8 @@ XSAV Example
 			</samples>
 		</item>
 		<item>
-			<IDGroup>HJw2YC2DLt</IDGroup>
-			<name>Образец_8</name>
+			<IDGroup>TxQ0m3iXpD</IDGroup>
+			<name>Sample_8</name>
 			<properties>
 				<item>
 					<name>patient</name>
@@ -1618,17 +1908,17 @@ XSAV Example
 			</properties>
 			<samples>
 				<item>
-					<IDSample>Xb35LMWftb</IDSample>
-					<IDTest>SXfh7jQcyuFc</IDTest>
-					<name>Образец_8</name>
+					<IDSample>n5f8wXOFAk</IDSample>
+					<IDTest>vzpZWdeFN4Dj</IDTest>
+					<name>Sample_8</name>
 					<properties/>
 					<tubes>
 						<item>
 							<IDTube>0</IDTube>
 							<name/>
-							<pos>7</pos>
-							<x>7</x>
-							<y>0</y>
+							<pos>84</pos>
+							<x>0</x>
+							<y>7</y>
 							<pos_protocol>8</pos_protocol>
 							<color>0</color>
 							<channels>
@@ -1638,6 +1928,2195 @@ XSAV Example
 									<channel_results>
 										<item>
 											<name>Sigmoid_validity</name>
+											<value>+ (96%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>20.409</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>18.300</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>1</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (96%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>22.512</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>20.500</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>2</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (93%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>24.783</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>22.100</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>3</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>-</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>none</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>4</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (70%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>false</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+					</tubes>
+					<sample_results/>
+				</item>
+			</samples>
+		</item>
+		<item>
+			<IDGroup>6Eum52bUWI</IDGroup>
+			<name>Sample_9</name>
+			<properties>
+				<item>
+					<name>patient</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>sex</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>age</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>organization</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>phisician</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>date</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>note</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>additional</name>
+					<value>...</value>
+					<unit/>
+				</item>
+			</properties>
+			<samples>
+				<item>
+					<IDSample>QMduFWICrp</IDSample>
+					<IDTest>vzpZWdeFN4Dj</IDTest>
+					<name>Sample_9</name>
+					<properties/>
+					<tubes>
+						<item>
+							<IDTube>0</IDTube>
+							<name/>
+							<pos>1</pos>
+							<x>1</x>
+							<y>0</y>
+							<pos_protocol>9</pos_protocol>
+							<color>0</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (97%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>26.151</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>24.200</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>1</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (93%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>28.883</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>27.400</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>2</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (93%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>30.225</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>27.300</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>3</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>-</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>none</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>4</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>-</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>none</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+					</tubes>
+					<sample_results/>
+				</item>
+			</samples>
+		</item>
+		<item>
+			<IDGroup>jVsYOWURDN</IDGroup>
+			<name>Sample_10</name>
+			<properties>
+				<item>
+					<name>patient</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>sex</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>age</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>organization</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>phisician</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>date</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>note</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>additional</name>
+					<value>...</value>
+					<unit/>
+				</item>
+			</properties>
+			<samples>
+				<item>
+					<IDSample>0Hz5BgzMF5</IDSample>
+					<IDTest>vzpZWdeFN4Dj</IDTest>
+					<name>Sample_10</name>
+					<properties/>
+					<tubes>
+						<item>
+							<IDTube>0</IDTube>
+							<name/>
+							<pos>13</pos>
+							<x>1</x>
+							<y>1</y>
+							<pos_protocol>10</pos_protocol>
+							<color>0</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (97%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>17.202</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>15.400</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>1</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (94%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>20.181</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>19.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>2</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (93%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>20.652</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>18.200</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>3</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>-</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>none</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>4</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>-</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>none</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+					</tubes>
+					<sample_results/>
+				</item>
+			</samples>
+		</item>
+		<item>
+			<IDGroup>JPEiqAfbac</IDGroup>
+			<name>Sample_11</name>
+			<properties>
+				<item>
+					<name>patient</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>sex</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>age</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>organization</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>phisician</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>date</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>note</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>additional</name>
+					<value>...</value>
+					<unit/>
+				</item>
+			</properties>
+			<samples>
+				<item>
+					<IDSample>dXTM0BsJwg</IDSample>
+					<IDTest>vzpZWdeFN4Dj</IDTest>
+					<name>Sample_11</name>
+					<properties/>
+					<tubes>
+						<item>
+							<IDTube>0</IDTube>
+							<name/>
+							<pos>25</pos>
+							<x>1</x>
+							<y>2</y>
+							<pos_protocol>11</pos_protocol>
+							<color>0</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (96%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>17.687</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>15.800</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>1</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (88%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>20.433</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>18.700</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>2</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (89%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>22.061</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>19.300</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>3</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>-</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>none</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>4</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>-</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>none</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+					</tubes>
+					<sample_results/>
+				</item>
+			</samples>
+		</item>
+		<item>
+			<IDGroup>tqZtnKMkUs</IDGroup>
+			<name>Sample_12</name>
+			<properties>
+				<item>
+					<name>patient</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>sex</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>age</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>organization</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>phisician</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>date</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>note</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>additional</name>
+					<value>...</value>
+					<unit/>
+				</item>
+			</properties>
+			<samples>
+				<item>
+					<IDSample>Dyo1wpZTpv</IDSample>
+					<IDTest>vzpZWdeFN4Dj</IDTest>
+					<name>Sample_12</name>
+					<properties/>
+					<tubes>
+						<item>
+							<IDTube>0</IDTube>
+							<name/>
+							<pos>37</pos>
+							<x>1</x>
+							<y>3</y>
+							<pos_protocol>12</pos_protocol>
+							<color>0</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (97%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>27.047</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>25.300</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>1</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (92%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>29.915</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>29.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>2</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (94%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>30.716</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>28.800</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>3</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>-</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>none</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>4</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>-</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>none</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+					</tubes>
+					<sample_results/>
+				</item>
+			</samples>
+		</item>
+		<item>
+			<IDGroup>W6Xf6pGhBT</IDGroup>
+			<name>Sample_13</name>
+			<properties>
+				<item>
+					<name>patient</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>sex</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>age</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>organization</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>phisician</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>date</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>note</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>additional</name>
+					<value>...</value>
+					<unit/>
+				</item>
+			</properties>
+			<samples>
+				<item>
+					<IDSample>nsABPzGdDA</IDSample>
+					<IDTest>vzpZWdeFN4Dj</IDTest>
+					<name>Sample_13</name>
+					<properties/>
+					<tubes>
+						<item>
+							<IDTube>0</IDTube>
+							<name/>
+							<pos>49</pos>
+							<x>1</x>
+							<y>4</y>
+							<pos_protocol>13</pos_protocol>
+							<color>0</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (97%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>21.047</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>19.200</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>1</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (91%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>23.927</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>22.600</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>2</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (93%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>24.382</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>21.700</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>3</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>-</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>none</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>4</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>-</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>none</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+					</tubes>
+					<sample_results/>
+				</item>
+			</samples>
+		</item>
+		<item>
+			<IDGroup>61tpYTxrYi</IDGroup>
+			<name>Sample_14</name>
+			<properties>
+				<item>
+					<name>patient</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>sex</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>age</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>organization</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>phisician</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>date</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>note</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>additional</name>
+					<value>...</value>
+					<unit/>
+				</item>
+			</properties>
+			<samples>
+				<item>
+					<IDSample>NnWML9xn6Q</IDSample>
+					<IDTest>vzpZWdeFN4Dj</IDTest>
+					<name>Sample_14</name>
+					<properties/>
+					<tubes>
+						<item>
+							<IDTube>0</IDTube>
+							<name/>
+							<pos>61</pos>
+							<x>1</x>
+							<y>5</y>
+							<pos_protocol>14</pos_protocol>
+							<color>0</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (97%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>22.043</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>20.200</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>1</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (89%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>25.217</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>24.200</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>2</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (96%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>25.666</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>23.100</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>3</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>-</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>none</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>4</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>-</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>none</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+					</tubes>
+					<sample_results/>
+				</item>
+			</samples>
+		</item>
+		<item>
+			<IDGroup>gRF0Ude1Sx</IDGroup>
+			<name>Sample_15</name>
+			<properties>
+				<item>
+					<name>patient</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>sex</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>age</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>organization</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>phisician</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>date</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>note</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>additional</name>
+					<value>...</value>
+					<unit/>
+				</item>
+			</properties>
+			<samples>
+				<item>
+					<IDSample>A9NRj8wciX</IDSample>
+					<IDTest>vzpZWdeFN4Dj</IDTest>
+					<name>Sample_15</name>
+					<properties/>
+					<tubes>
+						<item>
+							<IDTube>0</IDTube>
+							<name/>
+							<pos>73</pos>
+							<x>1</x>
+							<y>6</y>
+							<pos_protocol>15</pos_protocol>
+							<color>0</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (98%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>13.432</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>11.300</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>1</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (93%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>16.734</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>15.200</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>2</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (92%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>18.386</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>15.600</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>3</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>-</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>none</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>4</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>-</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>none</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+					</tubes>
+					<sample_results/>
+				</item>
+			</samples>
+		</item>
+		<item>
+			<IDGroup>TH65tc8K44</IDGroup>
+			<name>Sample_16</name>
+			<properties>
+				<item>
+					<name>patient</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>sex</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>age</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>organization</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>phisician</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>date</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>note</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>additional</name>
+					<value>...</value>
+					<unit/>
+				</item>
+			</properties>
+			<samples>
+				<item>
+					<IDSample>nQLD26pYPc</IDSample>
+					<IDTest>vzpZWdeFN4Dj</IDTest>
+					<name>Sample_16</name>
+					<properties/>
+					<tubes>
+						<item>
+							<IDTube>0</IDTube>
+							<name/>
+							<pos>85</pos>
+							<x>1</x>
+							<y>7</y>
+							<pos_protocol>16</pos_protocol>
+							<color>0</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (97%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>23.163</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>21.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>1</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (96%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>26.247</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>24.500</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>2</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (94%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>27.235</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>24.200</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>3</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>-</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>none</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>4</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>-</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>none</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+					</tubes>
+					<sample_results/>
+				</item>
+			</samples>
+		</item>
+		<item>
+			<IDGroup>3CSGpmpUxJ</IDGroup>
+			<name>Sample_17</name>
+			<properties>
+				<item>
+					<name>patient</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>sex</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>age</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>organization</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>phisician</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>date</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>note</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>additional</name>
+					<value>...</value>
+					<unit/>
+				</item>
+			</properties>
+			<samples>
+				<item>
+					<IDSample>Jy5m8wKwz1</IDSample>
+					<IDTest>vzpZWdeFN4Dj</IDTest>
+					<name>Sample_17</name>
+					<properties/>
+					<tubes>
+						<item>
+							<IDTube>0</IDTube>
+							<name/>
+							<pos>2</pos>
+							<x>2</x>
+							<y>0</y>
+							<pos_protocol>17</pos_protocol>
+							<color>0</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>-</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>none</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>1</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (96%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>21.713</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>19.400</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>2</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (95%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>23.297</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>20.500</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>3</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (72%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>false</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>false</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>4</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>-</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>none</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+					</tubes>
+					<sample_results/>
+				</item>
+			</samples>
+		</item>
+		<item>
+			<IDGroup>d6oQIwWeLZ</IDGroup>
+			<name>Sample_18</name>
+			<properties>
+				<item>
+					<name>patient</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>sex</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>age</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>organization</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>phisician</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>date</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>note</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>additional</name>
+					<value>...</value>
+					<unit/>
+				</item>
+			</properties>
+			<samples>
+				<item>
+					<IDSample>tOQx4616tG</IDSample>
+					<IDTest>vzpZWdeFN4Dj</IDTest>
+					<name>Sample_18</name>
+					<properties/>
+					<tubes>
+						<item>
+							<IDTube>0</IDTube>
+							<name/>
+							<pos>14</pos>
+							<x>2</x>
+							<y>1</y>
+							<pos_protocol>18</pos_protocol>
+							<color>0</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>-</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>none</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>1</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (96%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>21.789</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>19.400</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>2</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (94%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>23.325</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>20.500</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>3</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (74%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>false</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>false</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>4</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>-</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>none</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+					</tubes>
+					<sample_results/>
+				</item>
+			</samples>
+		</item>
+		<item>
+			<IDGroup>DXAbEaDoEo</IDGroup>
+			<name>Sample_19</name>
+			<properties>
+				<item>
+					<name>patient</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>sex</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>age</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>organization</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>phisician</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>date</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>note</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>additional</name>
+					<value>...</value>
+					<unit/>
+				</item>
+			</properties>
+			<samples>
+				<item>
+					<IDSample>TJm7XGiGGW</IDSample>
+					<IDTest>vzpZWdeFN4Dj</IDTest>
+					<name>Sample_19</name>
+					<properties/>
+					<tubes>
+						<item>
+							<IDTube>0</IDTube>
+							<name/>
+							<pos>26</pos>
+							<x>2</x>
+							<y>2</y>
+							<pos_protocol>19</pos_protocol>
+							<color>0</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
 											<value>-</value>
 										</item>
 										<item>
@@ -1690,7 +4169,7 @@ XSAV Example
 									<channel_results>
 										<item>
 											<name>Sigmoid_validity</name>
-											<value>-</value>
+											<value>+ (93%)</value>
 										</item>
 										<item>
 											<name>aFF</name>
@@ -1698,15 +4177,15 @@ XSAV Example
 										</item>
 										<item>
 											<name>Relative_validity</name>
-											<value>none</value>
+											<value>true</value>
 										</item>
 										<item>
 											<name>Cp</name>
-											<value>0.000</value>
+											<value>21.250</value>
 										</item>
 										<item>
 											<name>Ct</name>
-											<value>0.000</value>
+											<value>18.900</value>
 										</item>
 									</channel_results>
 								</item>
@@ -1716,7 +4195,7 @@ XSAV Example
 									<channel_results>
 										<item>
 											<name>Sigmoid_validity</name>
-											<value>-</value>
+											<value>+ (78%)</value>
 										</item>
 										<item>
 											<name>aFF</name>
@@ -1724,15 +4203,41 @@ XSAV Example
 										</item>
 										<item>
 											<name>Relative_validity</name>
-											<value>none</value>
+											<value>true</value>
 										</item>
 										<item>
 											<name>Cp</name>
-											<value>0.000</value>
+											<value>22.431</value>
 										</item>
 										<item>
 											<name>Ct</name>
-											<value>0.000</value>
+											<value>24.100</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>4</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (82%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>21.471</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>18.600</value>
 										</item>
 									</channel_results>
 								</item>
@@ -1745,8 +4250,8 @@ XSAV Example
 			</samples>
 		</item>
 		<item>
-			<IDGroup>rkIDUMjNF8</IDGroup>
-			<name>Образец_9</name>
+			<IDGroup>k5teKPiBID</IDGroup>
+			<name>Sample_20</name>
 			<properties>
 				<item>
 					<name>patient</name>
@@ -1791,18 +4296,621 @@ XSAV Example
 			</properties>
 			<samples>
 				<item>
-					<IDSample>7WvFnWDJHq</IDSample>
-					<IDTest>SXfh7jQcyuFc</IDTest>
-					<name>Образец_9</name>
+					<IDSample>3j8ITuOQel</IDSample>
+					<IDTest>vzpZWdeFN4Dj</IDTest>
+					<name>Sample_20</name>
 					<properties/>
 					<tubes>
 						<item>
 							<IDTube>0</IDTube>
 							<name/>
-							<pos>8</pos>
-							<x>0</x>
-							<y>1</y>
-							<pos_protocol>9</pos_protocol>
+							<pos>38</pos>
+							<x>2</x>
+							<y>3</y>
+							<pos_protocol>20</pos_protocol>
+							<color>0</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>-</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>none</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>1</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>-</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>none</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>2</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (94%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>21.213</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>18.800</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>3</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (73%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>24.732</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>24.600</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>4</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (93%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>21.179</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>18.500</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+					</tubes>
+					<sample_results/>
+				</item>
+			</samples>
+		</item>
+		<item>
+			<IDGroup>NsrQdub8zJ</IDGroup>
+			<name>Sample_21</name>
+			<properties>
+				<item>
+					<name>patient</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>sex</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>age</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>organization</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>phisician</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>date</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>note</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>additional</name>
+					<value>...</value>
+					<unit/>
+				</item>
+			</properties>
+			<samples>
+				<item>
+					<IDSample>g063IPIMLq</IDSample>
+					<IDTest>vzpZWdeFN4Dj</IDTest>
+					<name>Sample_21</name>
+					<properties/>
+					<tubes>
+						<item>
+							<IDTube>0</IDTube>
+							<name/>
+							<pos>50</pos>
+							<x>2</x>
+							<y>4</y>
+							<pos_protocol>21</pos_protocol>
+							<color>0</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>-</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>none</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>1</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>-</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>none</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>2</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (95%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>22.420</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>20.100</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>3</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (76%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>25.818</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>25.600</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>4</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (71%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>false</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+					</tubes>
+					<sample_results/>
+				</item>
+			</samples>
+		</item>
+		<item>
+			<IDGroup>xmDa5YIItY</IDGroup>
+			<name>Sample_22</name>
+			<properties>
+				<item>
+					<name>patient</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>sex</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>age</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>organization</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>phisician</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>date</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>note</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>additional</name>
+					<value>...</value>
+					<unit/>
+				</item>
+			</properties>
+			<samples>
+				<item>
+					<IDSample>DYqdsEmEvF</IDSample>
+					<IDTest>vzpZWdeFN4Dj</IDTest>
+					<name>Sample_22</name>
+					<properties/>
+					<tubes>
+						<item>
+							<IDTube>0</IDTube>
+							<name/>
+							<pos>62</pos>
+							<x>2</x>
+							<y>5</y>
+							<pos_protocol>22</pos_protocol>
+							<color>0</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>-</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>none</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>1</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>-</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>none</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>2</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (95%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>22.227</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>20.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>3</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (81%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>23.255</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>25.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>4</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (72%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>false</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+					</tubes>
+					<sample_results/>
+				</item>
+			</samples>
+		</item>
+		<item>
+			<IDGroup>XhZk1iTSGn</IDGroup>
+			<name>C-_SARS2_Variants</name>
+			<properties>
+				<item>
+					<name>patient</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>sex</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>age</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>organization</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>phisician</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>date</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>note</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>additional</name>
+					<value>...</value>
+					<unit/>
+				</item>
+			</properties>
+			<samples>
+				<item>
+					<IDSample>nzCnKsTNoV</IDSample>
+					<IDTest>vzpZWdeFN4Dj</IDTest>
+					<name>C-_SARS2_Variants</name>
+					<properties>
+						<item>
+							<name>kind</name>
+							<value>ControlNegative</value>
+							<unit/>
+						</item>
+					</properties>
+					<tubes>
+						<item>
+							<IDTube>0</IDTube>
+							<name/>
+							<pos>74</pos>
+							<x>2</x>
+							<y>6</y>
+							<pos_protocol>23</pos_protocol>
 							<color>0</color>
 							<channels>
 								<item>
@@ -1906,6 +5014,237 @@ XSAV Example
 										<item>
 											<name>Ct</name>
 											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>4</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>-</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>none</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>0.000</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>0.000</value>
+										</item>
+									</channel_results>
+								</item>
+							</channels>
+							<tube_results/>
+						</item>
+					</tubes>
+					<sample_results/>
+				</item>
+			</samples>
+		</item>
+		<item>
+			<IDGroup>KXQqQhylOu</IDGroup>
+			<name>C+_SARS2_Variants</name>
+			<properties>
+				<item>
+					<name>patient</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>sex</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>age</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>organization</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>phisician</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>date</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>note</name>
+					<value>...</value>
+					<unit/>
+				</item>
+				<item>
+					<name>additional</name>
+					<value>...</value>
+					<unit/>
+				</item>
+			</properties>
+			<samples>
+				<item>
+					<IDSample>dffUZCfzkS</IDSample>
+					<IDTest>vzpZWdeFN4Dj</IDTest>
+					<name>C+_SARS2_Variants</name>
+					<properties>
+						<item>
+							<name>kind</name>
+							<value>ControlPositive</value>
+							<unit/>
+						</item>
+					</properties>
+					<tubes>
+						<item>
+							<IDTube>0</IDTube>
+							<name/>
+							<pos>86</pos>
+							<x>2</x>
+							<y>7</y>
+							<pos_protocol>24</pos_protocol>
+							<color>0</color>
+							<channels>
+								<item>
+									<IDChannel>0</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (94%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>22.681</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>21.400</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>1</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (96%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>21.462</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>19.200</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>2</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (91%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>23.151</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>20.500</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>3</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (79%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>23.968</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>26.000</value>
+										</item>
+									</channel_results>
+								</item>
+								<item>
+									<IDChannel>4</IDChannel>
+									<properties/>
+									<channel_results>
+										<item>
+											<name>Sigmoid_validity</name>
+											<value>+ (79%)</value>
+										</item>
+										<item>
+											<name>aFF</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Relative_validity</name>
+											<value>true</value>
+										</item>
+										<item>
+											<name>Cp</name>
+											<value>22.658</value>
+										</item>
+										<item>
+											<name>Ct</name>
+											<value>21.000</value>
 										</item>
 									</channel_results>
 								</item>
@@ -1921,6 +5260,6 @@ XSAV Example
 	<Analysis_Data/>
 	<Analysis_Version>
 		<version>1.1.0.18</version>
-		<dtr_version>quality.dtr ver:1.84; DTReport.dll ver:2.4.2.650</dtr_version>
+		<dtr_version>multiplex.dtr ver:1.55; DTReport.dll ver:2.4.2.650</dtr_version>
 	</Analysis_Version>
 </protocol>
