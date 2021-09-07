@@ -3885,19 +3885,31 @@ void Analysis::Check_Marker()
             ID_NULL.clear();
             sample = group->samples.at(j);
             test = sample->p_Test;
+
+            if(test->tubes.size() <= 1) continue;
+
             foreach(tube_test, test->tubes)
             {
                 foreach(channel_test, tube_test->channels)
                 {
                     text = QString::fromStdString(channel_test->name);
+                    text = Map_TestTranslate.value(text,text);
                     if(text.trimmed() == tr("Marker"))
                     {
-                        id_channel = channel_test->ID_Channel;
+                        if(id_channel < 0) id_channel = channel_test->ID_Channel;
+                        else
+                        {
+                            if(id_channel != channel_test->ID_Channel) continue;
+                        }
                         ID_Tubes.append(tube_test->ID_Tube);
+                        break;
                     }
                 }
             }
-            // ID_NULL ...
+
+            //qDebug() << "ID_Tubes: " << ID_Tubes << id_channel;
+
+            // ID_NULL ... -  массив пробирок (в образце) где нет канала Маркера
             if(id_channel >= 0)
             {
                 foreach(tube_test, test->tubes)
@@ -3914,9 +3926,11 @@ void Analysis::Check_Marker()
                     if(!exist) ID_NULL.append(tube_test->ID_Tube);
                 }
             }
+            else continue;
 
+            //qDebug() << "ID_NULL: " << ID_NULL;
 
-            // ...
+            // ... кол-во каналов до id_channel - num_channel
             num_channel = -1;
             for(k=0; k<COUNT_CH; k++)
             {
@@ -3932,6 +3946,7 @@ void Analysis::Check_Marker()
 
                 for(k=0; k<sample->tubes.size(); k++)
                 {
+
                     tube = sample->tubes.at(k);
                     id = tube->ID_Tube;
                     pos = tube->pos;
@@ -3955,6 +3970,12 @@ void Analysis::Check_Marker()
                         ID_NULL.remove(num_id);
                     }
                 }
+
+                if(ALL_tubes.size() == 0)
+                {
+                    continue;
+                }
+
                 if(NULL_tubes.size())
                 {
                     value_Mean = std::accumulate(NULL_tubes.begin(),NULL_tubes.end(),0)/NULL_tubes.size();
@@ -3962,7 +3983,7 @@ void Analysis::Check_Marker()
                 else
                 {
                     value_Mean = std::accumulate(ALL_tubes.begin(),ALL_tubes.end(),0)/ALL_tubes.size();
-                }
+                }                
 
                 for(k=0; k<Marker_values.keys().size(); k++)
                 {
