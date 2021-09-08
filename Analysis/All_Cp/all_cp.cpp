@@ -382,7 +382,8 @@ void Cp_ItemDelegate::paint(QPainter *painter,
             //K = 0.9;
             //dy = 0;
             //if(list_ch.size() > 1) {K = 0.7; dy = 2*(list_ch.size()-1);}
-            dy = (option.rect.height() - 16*list_ch.size())/(list_ch.size() - 1 + 4);
+            //dy = (option.rect.height() - 16*list_ch.size())/(list_ch.size() - 1 + 4);
+            dy = option.rect.height()/list_ch.size();
             for(i=0; i<list_ch.size(); i++)
             {
                id = list_ch.at(i).toInt();
@@ -416,7 +417,8 @@ void Cp_ItemDelegate::paint(QPainter *painter,
                font.setItalic(false);
                painter->setFont(font);
                //painter->drawPixmap(0, option.rect.y() + 22*K*i + 2 + dy,pixmap);
-               painter->drawPixmap(0, option.rect.y() + (16 + dy)*i + 2*dy,pixmap);
+               //painter->drawPixmap(0, option.rect.y() + (16 + dy)*i + 2*dy,pixmap);
+               painter->drawPixmap(0, option.rect.y() + dy*i + (dy-16)/2., pixmap);
             }            
             break;    
     case 1:             
@@ -599,7 +601,8 @@ void MC_ItemDelegate::paint(QPainter *painter,
             //K = 0.9;
             //dy = 0;
             //if(list_ch.size() > 1) {K = 0.7; dy = 2*(list_ch.size()-1);}
-            dy = (option.rect.height() - 16*list_ch.size())/(list_ch.size() - 1 + 4);
+            //dy = (option.rect.height() - 16*list_ch.size())/(list_ch.size() - 1 + 4);
+            dy = option.rect.height()/list_ch.size();
             for(i=0; i<list_ch.size(); i++)
             {
                id = list_ch.at(i).toInt();
@@ -632,7 +635,8 @@ void MC_ItemDelegate::paint(QPainter *painter,
                font.setItalic(false);
                painter->setFont(font);
                //painter->drawPixmap(0, option.rect.y() + 22*K*i + 2 + dy,pixmap);
-               painter->drawPixmap(0, option.rect.y() + (16 + dy)*i + 2*dy,pixmap);
+               //painter->drawPixmap(0, option.rect.y() + (16 + dy)*i + 2*dy,pixmap);
+               painter->drawPixmap(0, option.rect.y() + dy*i + (dy-16)/2., pixmap);
             }
             break;
     case 1:
