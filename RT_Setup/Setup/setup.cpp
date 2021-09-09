@@ -7685,7 +7685,8 @@ void SamplesItemDelegate::paint(QPainter *painter,
             //K = 0.9;
             //dy = 0;
             //if(list_ch.size() > 1) {K = 0.7; dy = 1*(list_ch.size()-1);}
-            dy = (option.rect.height() - 16*list_ch.size())/(list_ch.size() - 1 + 4);
+            //dy = (option.rect.height() - 16*list_ch.size())/(list_ch.size() - 1 + 4);
+            dy = option.rect.height()/list_ch.size();
             for(i=0; i<list_ch.size(); i++)
             {
                id = list_ch.at(i).toInt();
@@ -7719,7 +7720,8 @@ void SamplesItemDelegate::paint(QPainter *painter,
                font.setItalic(false);
                painter->setFont(font);
                //painter->drawPixmap(option.rect.x()+10, option.rect.y() + 21*K*i + 0 + dy,pixmap);
-               painter->drawPixmap(option.rect.x()+10, option.rect.y() + (16 + dy)*i + 2*dy,pixmap);
+               //painter->drawPixmap(option.rect.x()+10, option.rect.y() + (16 + dy)*i + 2*dy,pixmap);
+               painter->drawPixmap(option.rect.x()+10, option.rect.y() + dy*i + (dy-16)/2., pixmap);
             }
             break;
     case 0:                                 // Position
