@@ -4,12 +4,12 @@
 <context>
     <name>MyTreeWidget</name>
     <message>
-        <location filename="../test_editor.cpp" line="2675"/>
+        <location filename="../test_editor.cpp" line="2810"/>
         <source>You must clear the editor field!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="2684"/>
+        <location filename="../test_editor.cpp" line="2819"/>
         <source>Do You want to move selected test to the catalog: </source>
         <translation type="unfinished"></translation>
     </message>
@@ -72,38 +72,38 @@
         <translation>Edit test</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="105"/>
+        <location filename="../test_editor.cpp" line="108"/>
         <source>add item</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="107"/>
+        <location filename="../test_editor.cpp" line="110"/>
         <source>delete item</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="110"/>
+        <location filename="../test_editor.cpp" line="113"/>
         <source>edit catalog test</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="522"/>
+        <location filename="../test_editor.cpp" line="534"/>
         <source>Simple method</source>
         <translation>Preliminary analysis</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1699"/>
+        <location filename="../test_editor.cpp" line="1724"/>
         <source>Yes</source>
         <translation>Yes</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1700"/>
+        <location filename="../test_editor.cpp" line="1725"/>
         <source>No</source>
         <translation>No</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="353"/>
-        <location filename="../test_editor.cpp" line="1701"/>
+        <location filename="../test_editor.cpp" line="356"/>
+        <location filename="../test_editor.cpp" line="1726"/>
         <source>Cancel</source>
         <translation>Cancel</translation>
     </message>
@@ -113,166 +113,171 @@
         <translation>New container</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="477"/>
+        <location filename="../test_editor.cpp" line="105"/>
+        <source>Report settings</source>
+        <translation>Export settings</translation>
+    </message>
+    <message>
+        <location filename="../test_editor.cpp" line="481"/>
         <source>List of Tests</source>
         <translation>Tests list</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="477"/>
+        <location filename="../test_editor.cpp" line="481"/>
         <source>ID</source>
         <translation>ID</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="494"/>
+        <location filename="../test_editor.cpp" line="498"/>
         <source>Tests from </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="515"/>
-        <location filename="../test_editor.cpp" line="573"/>
+        <location filename="../test_editor.cpp" line="519"/>
+        <location filename="../test_editor.cpp" line="585"/>
         <source>Unknown</source>
         <translation>Unidentified</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="644"/>
-        <location filename="../test_editor.cpp" line="1295"/>
+        <location filename="../test_editor.cpp" line="656"/>
+        <location filename="../test_editor.cpp" line="1320"/>
         <source>Container</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="981"/>
-        <location filename="../test_editor.cpp" line="1012"/>
+        <location filename="../test_editor.cpp" line="995"/>
+        <location filename="../test_editor.cpp" line="1034"/>
         <source>Save test</source>
         <translation>Save test</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1012"/>
+        <location filename="../test_editor.cpp" line="1034"/>
         <source>No changes to file!</source>
         <translation>No changes to the file!</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1030"/>
+        <location filename="../test_editor.cpp" line="1052"/>
         <source>Attention! Unable to save the container!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1031"/>
+        <location filename="../test_editor.cpp" line="1053"/>
         <source>Different amplification programs were found for tests...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1058"/>
+        <location filename="../test_editor.cpp" line="1080"/>
         <source>Do You want to save the new test: </source>
         <translation>Do you want to save the new test/container: </translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1059"/>
+        <location filename="../test_editor.cpp" line="1081"/>
         <source>Do You want to save changes in the test: </source>
         <translation>Do you want to save the changes in the test: </translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1215"/>
-        <location filename="../test_editor.cpp" line="1405"/>
+        <location filename="../test_editor.cpp" line="1240"/>
+        <location filename="../test_editor.cpp" line="1430"/>
         <source>Choose name of the Test...</source>
         <translation>Select a name for the test</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1216"/>
-        <location filename="../test_editor.cpp" line="1406"/>
+        <location filename="../test_editor.cpp" line="1241"/>
+        <location filename="../test_editor.cpp" line="1431"/>
         <source>Name of the Test:</source>
         <translation>Test name:</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1226"/>
+        <location filename="../test_editor.cpp" line="1251"/>
         <source>New Test</source>
         <translation>New test</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1226"/>
-        <location filename="../test_editor.cpp" line="1315"/>
-        <location filename="../test_editor.cpp" line="1427"/>
+        <location filename="../test_editor.cpp" line="1251"/>
+        <location filename="../test_editor.cpp" line="1340"/>
+        <location filename="../test_editor.cpp" line="1452"/>
         <source>The test with this name already exists! Select other name...</source>
         <translation>The test with that name already exists! Select another name</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1305"/>
+        <location filename="../test_editor.cpp" line="1330"/>
         <source>Choose name of the Container...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1306"/>
+        <location filename="../test_editor.cpp" line="1331"/>
         <source>Name of the Container:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1384"/>
+        <location filename="../test_editor.cpp" line="1409"/>
         <source>Choose type of the Test...</source>
         <translation>Select test type</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1385"/>
+        <location filename="../test_editor.cpp" line="1410"/>
         <source>List of type Tests:</source>
         <translation>Test type list:</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1391"/>
+        <location filename="../test_editor.cpp" line="1416"/>
         <source>Attention! Select the correct test type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1412"/>
+        <location filename="../test_editor.cpp" line="1437"/>
         <source>Attention! Enter a name for the test</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1694"/>
+        <location filename="../test_editor.cpp" line="1719"/>
         <source>Attention</source>
         <translation>Attention</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1696"/>
+        <location filename="../test_editor.cpp" line="1721"/>
         <source>You don&apos;t save change of test! Will you want to save this change?</source>
         <translation>You haven&apos;t saved any changes to the test. Want to save them?</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1972"/>
+        <location filename="../test_editor.cpp" line="1939"/>
         <source>Preliminary_analysis</source>
         <translation>Preliminary analysis</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="2009"/>
+        <location filename="../test_editor.cpp" line="2034"/>
         <source>new item</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="2037"/>
+        <location filename="../test_editor.cpp" line="2062"/>
         <source>Do You want to DELETE all tests </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="2211"/>
-        <location filename="../test_editor.cpp" line="2432"/>
+        <location filename="../test_editor.cpp" line="2241"/>
+        <location filename="../test_editor.cpp" line="2473"/>
         <source>test move</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="2239"/>
+        <location filename="../test_editor.cpp" line="2280"/>
         <source>You must clear the editor field!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="2246"/>
+        <location filename="../test_editor.cpp" line="2287"/>
         <source>Do You want to move selected test to the catalog: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="2036"/>
-        <location filename="../test_editor.cpp" line="2488"/>
+        <location filename="../test_editor.cpp" line="2061"/>
+        <location filename="../test_editor.cpp" line="2617"/>
         <source>Delete test</source>
         <translation>Delete test</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="2489"/>
+        <location filename="../test_editor.cpp" line="2618"/>
         <source>Do You want to DELETE the test: </source>
         <translation>You want to DELETE the test?:</translation>
     </message>

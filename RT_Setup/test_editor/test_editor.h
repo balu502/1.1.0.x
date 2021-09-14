@@ -55,6 +55,7 @@ typedef void (__stdcall *ResizeEditor)(HWND handle);
 typedef void (__stdcall *SaveEditor)(char** xml, bool *modified);
 typedef void (__stdcall *GetDTRDisplayName)(char* FormID, char** DisplayName);
 typedef void (__stdcall *GetDTRDisplayInfo)(char* FormID, char** DisplayName, char** Path, int* Release, int* Build);
+typedef void (__stdcall *Report_Settings)(char* in_xml, char** out_xml, bool *modified);
 
 class Test_editor;
 //-----------------------------------------------------------------------------
@@ -172,6 +173,8 @@ public:
     QAction     *menu_copyTest;
     QAction     *menu_editTest;
 
+    QAction     *menu_ReportSettings;
+
     QAction     *menu_AddItem;
     QAction     *menu_DeleteItem;
 
@@ -203,6 +206,7 @@ public:
     ResizeEditor resize_Editor;
     SaveEditor save_Editor;    
     GetDTRDisplayInfo get_Info;
+    Report_Settings report_settings;
 
     // methods    
     void Load_editor(QString xml, QString name = "");
@@ -242,6 +246,8 @@ private slots:
     void Click_edit_test();
     void Item_changed(QTreeWidgetItem*, int);
     void Item_Move();
+
+    void ReportSettings();
 
     void InputDialog_Select(QString);
 

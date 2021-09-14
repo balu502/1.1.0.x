@@ -102,6 +102,9 @@ Test_editor::Test_editor(QWidget *parent, bool disable): QDialog(parent)
     connect(menu_editTest, SIGNAL(triggered(bool)), this, SLOT(EditTest_menu()));
     editor_Name = new QLineEdit(this);
 
+    menu_ReportSettings = new QAction(tr("Report settings"), this);
+    connect(menu_ReportSettings, SIGNAL(triggered(bool)), this, SLOT(ReportSettings()));
+
     menu_AddItem = new QAction(tr("add item"), this);
     connect(menu_AddItem, SIGNAL(triggered(bool)), this, SLOT(AddItem_menu()));
     menu_DeleteItem = new QAction(tr("delete item"), this);
@@ -756,6 +759,7 @@ bool Test_editor::LoadTest_ExtPlugins()
     resize_Editor = NULL;
     save_Editor = NULL;
     get_Info = NULL;
+    report_settings = NULL;
 
     if(!ext_dll_handle) {Map_editorEXT.clear(); return(false);}
 
@@ -766,8 +770,9 @@ bool Test_editor::LoadTest_ExtPlugins()
         resize_Editor = (ResizeEditor)(::GetProcAddress(ext_dll_handle,"ResizeServiceEditorForm"));
         save_Editor = (SaveEditor)(::GetProcAddress(ext_dll_handle,"SaveService"));
         get_Info = (GetDTRDisplayInfo)(::GetProcAddress(ext_dll_handle,"GetDTRDisplayInfo"));
+        report_settings = (Report_Settings)(::GetProcAddress(ext_dll_handle,"ShowExportSettingsEditor"));
 
-        if(!show_Editor || !close_Editor || !resize_Editor || !save_Editor || !get_Info) {Map_editorEXT.clear();  return(false);}
+        if(!show_Editor || !close_Editor || !resize_Editor || !save_Editor || !get_Info || !report_settings) {Map_editorEXT.clear();  return(false);}
     }
 
 
@@ -2231,8 +2236,20 @@ void Test_editor::contextMenu_ListTests(QPoint pos)
         menu.addAction(menu_copyTest);
     }
     menu.addAction(menu_deleteTest);
+
     menu.addSeparator();
     menu_Move = menu.addMenu(tr("test move"));
+
+    if(ptest_action->header.Type_analysis >= 0x1000 || item_action->isDisabled())
+    {
+        menu.addSeparator();
+        menu.addAction(menu_ReportSettings);
+
+        bool state_rs = false;
+        if(Ext_Editor || alg_editor || !editor_Name->text().isEmpty()) state_rs = true;
+        menu_ReportSettings->setDisabled(state_rs);
+    }
+
     Create_MenuMove(menu_Move);
 
     if(ptest_action->header.Type_analysis < 0x1000 ||
@@ -2488,7 +2505,95 @@ void Test_editor::Delete_MenuMove()
     qDeleteAll(List_ActionsMove);
     List_ActionsMove.clear();
 }
+//-----------------------------------------------------------------------------
+//--- ReportSettings()
+//-----------------------------------------------------------------------------
+void Test_editor::ReportSettings()
+{
 
+    QDomDocument doc;
+    QDomElement  xml_item;
+    QDomElement  xml_signature;
+    QDomElement  xml_settings;
+    bool modified = false;
+    QString text;
+    QByteArray ba;
+    char *ch;
+    char *pchar;
+
+
+    if(!ptest_action || !item_action) return;
+
+    int index = TESTs->indexOf(ptest_action);
+    if(index == -1) return;
+
+    QString name_test = QString::fromStdString(ptest_action->header.Name_Test);
+    if(map_TestTranslate->size())  name_test = map_TestTranslate->value(name_test,name_test);
+
+    if(item_action->text(0) != name_test) return;
+
+    // REPORT_SETTINGS...
+    //qDebug() << "ReportSettings(): start..." << name_test;
+
+    xml_item = SaveXML_Test(doc, ptest_action);   // create xml text
+    xml_signature = xml_item.firstChildElement("Signature");    // Remove Signature item
+    if(!xml_signature.isNull())
+    {        
+        xml_item.removeChild(xml_signature);
+    }
+    doc.appendChild(xml_item);
+    doc.createProcessingInstruction("xml", "version=\"1.0\" encoding=\"utf-8\"");
+    text = doc.toString();
+    //qDebug() << "XML: " << text;
+
+    ba = text.toUtf8();
+    ch = ba.data();
+
+    report_settings(ch, &pchar, &modified);
+
+    if(modified)
+    {
+        text = QString::fromUtf8(pchar);
+        //qDebug() << "ReportSettings(): XML " << text;
+        if(!text.isEmpty())
+        {
+            // 1. delete old report_settings
+            xml_settings = xml_item.firstChildElement("DTExportSettings");
+            if(!xml_settings.isNull())
+            {
+                xml_item.removeChild(xml_settings);
+            }
+
+            // 2. insert new report_settings
+            doc.clear();
+            if(doc.setContent(text))
+            {
+                xml_settings = doc.documentElement();
+                if(!xml_settings.isNull())
+                {
+                    xml_item.appendChild(xml_settings);
+                }
+            }
+
+            // 3. insert xml_signature
+            if(!xml_signature.isNull())
+            {
+                xml_item.appendChild(xml_signature);
+            }
+
+            // 4. load XML to test
+            LoadXML_Test(xml_item, ptest_action);
+
+            // 5. save in DBase
+            Save_DBaseTests(ptest_action, false);
+        }
+    }
+
+    //qDebug() << "ReportSettings(): stop..." << modified;
+
+    doc.clear();
+
+}
 //-----------------------------------------------------------------------------
 //--- DeleteTest_menu()
 //-----------------------------------------------------------------------------
