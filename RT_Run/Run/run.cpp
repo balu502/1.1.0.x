@@ -5630,21 +5630,21 @@ void Run::slot_ReceivedActionPoint(Action_Event *p_event)
 
     case 13:                        // OpenBlock
                 text = p_event->point_action->Param.value("DeviceName","");
-                if(text.trimmed().isEmpty() || text.trimmed() != map_InfoDevice.value(INFODEV_serName,""))
+                /*if(text.trimmed().isEmpty() || text.trimmed() != map_InfoDevice.value(INFODEV_serName,""))
                 {
                     PA_Error("Device is not connected");
                     break;
-                }
+                }*/
                 slot_OpenBlock();
                 break;
 
     case 14:                        // CloseBlock
                 text = p_event->point_action->Param.value("DeviceName","");
-                if(text.trimmed().isEmpty() || text.trimmed() != map_InfoDevice.value(INFODEV_serName,""))
+                /*if(text.trimmed().isEmpty() || text.trimmed() != map_InfoDevice.value(INFODEV_serName,""))
                 {
                     PA_Error("Device is not connected");
                     break;
-                }
+                }*/
                 slot_CloseBlock();
                 break;
     }
