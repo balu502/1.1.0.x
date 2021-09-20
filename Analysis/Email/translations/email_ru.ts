@@ -19,77 +19,82 @@
         <translation>Сообщение:</translation>
     </message>
     <message>
-        <location filename="../email.cpp" line="54"/>
+        <location filename="../email.cpp" line="56"/>
         <source>4. Attachment: </source>
         <translation>Вложение:</translation>
     </message>
     <message>
-        <location filename="../email.cpp" line="60"/>
+        <location filename="../email.cpp" line="62"/>
         <source>protocol</source>
         <translation>протокол</translation>
     </message>
     <message>
-        <location filename="../email.cpp" line="61"/>
+        <location filename="../email.cpp" line="63"/>
         <source>screenshot</source>
         <translation>скриншот</translation>
     </message>
     <message>
-        <location filename="../email.cpp" line="78"/>
+        <location filename="../email.cpp" line="80"/>
         <source>open as PNG_Image</source>
         <translation>открыть как PNG</translation>
     </message>
     <message>
-        <location filename="../email.cpp" line="93"/>
+        <location filename="../email.cpp" line="95"/>
         <source>Send</source>
         <translation>Отправить</translation>
     </message>
     <message>
-        <location filename="../email.cpp" line="94"/>
+        <location filename="../email.cpp" line="96"/>
         <source>Cancel</source>
         <translation>Отмена</translation>
     </message>
     <message>
-        <location filename="../email.cpp" line="104"/>
+        <location filename="../email.cpp" line="106"/>
         <source>Send message via Email</source>
         <translation>Отправка сообщений в службу поддержки </translation>
     </message>
     <message>
-        <location filename="../email.cpp" line="148"/>
+        <location filename="../email.cpp" line="150"/>
         <source>here you must place your email address for answering...</source>
         <translation>здесь вы должны указать свой адрес электронной почты для получения ответа...</translation>
     </message>
     <message>
-        <location filename="../email.cpp" line="195"/>
+        <location filename="../email.cpp" line="197"/>
         <source>You must create the sender&apos;s email address</source>
         <translation>Для отправки сообщения необходим Email-адрес отправителя!</translation>
     </message>
     <message>
-        <location filename="../email.cpp" line="236"/>
+        <location filename="../email.cpp" line="226"/>
+        <source>You can send your response to: </source>
+        <translation>Вы можете отправить свой ответ на адрес: </translation>
+    </message>
+    <message>
+        <location filename="../email.cpp" line="249"/>
         <source>Connection Failed</source>
         <translation>Ошибка подключения</translation>
     </message>
     <message>
-        <location filename="../email.cpp" line="245"/>
+        <location filename="../email.cpp" line="258"/>
         <source>Authentification Failed</source>
         <translation>Ошибка Аутентификации</translation>
     </message>
     <message>
-        <location filename="../email.cpp" line="254"/>
+        <location filename="../email.cpp" line="267"/>
         <source>Mail sending failed</source>
         <translation>Ошибка отправки почты</translation>
     </message>
     <message>
-        <location filename="../email.cpp" line="263"/>
+        <location filename="../email.cpp" line="281"/>
         <source>The email was succesfully sent!</source>
         <translation>Сообщение успешно отправлено!</translation>
     </message>
     <message>
-        <location filename="../email.cpp" line="280"/>
+        <location filename="../email.cpp" line="302"/>
         <source>Select file</source>
         <translation>Выбрать файл</translation>
     </message>
     <message>
-        <location filename="../email.cpp" line="426"/>
+        <location filename="../email.cpp" line="448"/>
         <source>Screenshot</source>
         <translation>Скриншот</translation>
     </message>

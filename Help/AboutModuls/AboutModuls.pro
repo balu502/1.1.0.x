@@ -13,7 +13,7 @@ CONFIG += dll
 CONFIG += skip_target_version_ext
 include (../../config.pro)
 
-VERSION = 1.1.0.18
+VERSION = 1.1.0.19
 QMAKE_TARGET_COPYRIGHT = dna-technology
 
 

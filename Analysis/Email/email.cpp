@@ -41,6 +41,8 @@ Email::Email(QWidget *parent): QDialog(parent)
     label_message = new QLabel(tr("3. Message: "), this);
     label_message->setFixedWidth(120);
     tedit_message = new QTextEdit(this);
+    //tedit_message->setHtml("<a href='mailto:baluev@mail.ru'>baluev@mail.ru</a>");
+    //tedit_message->setHtml("<a href='http://www.w3schools.com/'>Link!</a>");
     layout_message->addWidget(label_message, 0, Qt::AlignTop);
     layout_message->addWidget(tedit_message, 1);
 
@@ -147,7 +149,8 @@ void Email::showEvent(QShowEvent *e)
 
     QString from = tr("here you must place your email address for answering...");
     from_Init = from;
-    ledit_from->setText(from);
+    QString current_addres = ledit_from->text();
+    if(current_addres.isEmpty() || !current_addres.contains("@")) ledit_from->setText(from);
     ledit_from->setFont(f);
     ledit_from->setPalette(palette);
     ledit_from->selectAll();
@@ -180,16 +183,15 @@ void Email::send_message()
     QString password = "4G2iG742Wmm";
 
     QString recipient_address = "hotline@dna-technology.ru";
-    //QString recipient_address = "a.baluev@dna-technology.ru";
     if(!Email_recipient.isEmpty()) recipient_address = Email_recipient;
+
+    //QString recipient_address = "a.baluev@dna-technology.ru";
+
 
     EmailAddress *sender = stringToEmail(user);
     EmailAddress *recipient = stringToEmail(recipient_address);
 
-
     QString subject = ledit_subject->text();
-    QString html = tedit_message->toHtml();
-
     if(!ledit_from->text().contains("@"))
     {
         message.setText(tr("You must create the sender's email address"));
@@ -216,6 +218,17 @@ void Email::send_message()
     E_message.setSender(sender);
     E_message.setSubject(subject);
     E_message.addRecipient(recipient);
+
+    QTextCursor cursor = tedit_message->textCursor();
+    cursor.movePosition(QTextCursor::End);
+    tedit_message->setTextCursor(cursor);
+    tedit_message->insertPlainText("\r\n\r\n");
+    tedit_message->insertPlainText(tr("You can send your response to: "));
+    QString html_addres = QString("<a href='mailto:%1'>%1</a>").arg(ledit_from->text());
+    //qDebug() << "html_addres: " << html_addres;
+    //tedit_message->insertHtml("<a href='mailto:baluev@mail.ru'>baluev@mail.ru</a>");
+    tedit_message->insertHtml(html_addres);
+    QString html = tedit_message->toHtml();
 
     MimeHtml content;
     content.setHtml(html);
@@ -254,6 +267,11 @@ void Email::send_message()
         message.setText(tr("Mail sending failed"));
         message.exec();
         hide();
+
+        tedit_message->clear();
+        list_attachment->clear();
+        ledit_subject->clear();
+
         return;
     }
     else
@@ -262,6 +280,10 @@ void Email::send_message()
         message.button(QMessageBox::Ok)->animateClick(5000);
         message.setText(tr("The email was succesfully sent!"));
         message.exec();
+
+        tedit_message->clear();
+        list_attachment->clear();
+        ledit_subject->clear();
     }
 
     smtp.quit();
