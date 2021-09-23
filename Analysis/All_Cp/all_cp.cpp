@@ -241,6 +241,7 @@ void All_Cp::Enable_Tube(QVector<short> *buf)
 {
     Fill_Cp_Table();
     Fill_MC_Table();
+    Cross_Box->Fill_CrossInfo(p_prot);
 }
 
 //-----------------------------------------------------------------------------

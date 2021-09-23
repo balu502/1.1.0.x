@@ -219,12 +219,17 @@ void Email::send_message()
     E_message.setSubject(subject);
     E_message.addRecipient(recipient);
 
+    QString body = tedit_message->toPlainText();
     QTextCursor cursor = tedit_message->textCursor();
     cursor.movePosition(QTextCursor::End);
     tedit_message->setTextCursor(cursor);
     tedit_message->insertPlainText("\r\n\r\n");
     tedit_message->insertPlainText(tr("You can send your response to: "));
-    QString html_addres = QString("<a href='mailto:%1'>%1</a>").arg(ledit_from->text());
+    QString html_addres = QString("<a href='mailto:%1?subject=%2&body=%3'>%1</a>")
+                            .arg(ledit_from->text())
+                            .arg(subject)
+                            .arg(body);
+
     //qDebug() << "html_addres: " << html_addres;
     //tedit_message->insertHtml("<a href='mailto:baluev@mail.ru'>baluev@mail.ru</a>");
     tedit_message->insertHtml(html_addres);

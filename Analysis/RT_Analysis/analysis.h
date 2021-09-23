@@ -171,6 +171,7 @@ public:
     QStringList FirstPCR_TESTs;
 
     QString ArchiveFile_path;
+    QString Last_Dir;
     QDir user_Dir;
     QTemporaryDir dir_temp;
     Action_Event *action_event;

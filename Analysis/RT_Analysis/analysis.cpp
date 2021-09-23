@@ -59,6 +59,7 @@ Analysis::Analysis(QWidget *parent): QMainWindow(parent)
     prot = Create_Protocol();
     action_event = NULL;
     flag_ActivePoint = false;
+    Last_Dir = "";
 
     MainGroupBox = new QGroupBox();
     MainGroupBox->setObjectName("Transparent");
@@ -2710,8 +2711,9 @@ void Analysis::open_Protocol(QString fileName, bool send, bool create_Hash)
     QString fn = fn_OUT;    //qApp->applicationDirPath() + "/data/out.rt";
     QFile file(fn);    
 
-    QString dirName = user_Dir.absolutePath();
-
+    QString dirName;
+    if(Last_Dir.isEmpty()) dirName = user_Dir.absolutePath();
+    else dirName = Last_Dir;
 
     if(fileName.isEmpty())
     {
@@ -2721,8 +2723,17 @@ void Analysis::open_Protocol(QString fileName, bool send, bool create_Hash)
                                                 tr("Protocols File (*.r96 *.r48 *.384 *.rt)"),
                                                 &selectedFilter);//,
                                                 //options);
-        if(!fileName.isEmpty()) original_FileName = true;
-    }
+        if(!fileName.isEmpty())
+        {
+            original_FileName = true;
+
+            QFileInfo fi_temp(fileName);
+            if(fi_temp.exists())
+            {
+                Last_Dir = fi_temp.absolutePath();
+            }
+        }
+    }    
 
     QFileInfo file_Info(fileName);
 
@@ -2731,6 +2742,7 @@ void Analysis::open_Protocol(QString fileName, bool send, bool create_Hash)
 
     if(file_Info.exists())
     {
+
         QApplication::setOverrideCursor(QCursor(Qt::WaitCursor));
         label_gif->setVisible(true);
         obj_gif->start();

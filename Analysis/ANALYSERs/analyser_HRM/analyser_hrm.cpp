@@ -2028,6 +2028,7 @@ void Analyser_HRM::Fill_SampleResults()
         }
         hrm_Results = QString("HRM_Results=%1").arg(hrm_Results);
         AddResult(curve_results->sample->result_Sample, hrm_Results, "HRM_Results=");
+        qDebug() << "HRM_Results: " << hrm_Results;
     }    
     Sample_Results->setVerticalHeaderLabels(header);
     Sample_Results->verticalHeader()->setSectionResizeMode(QHeaderView::Fixed);

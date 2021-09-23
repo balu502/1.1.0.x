@@ -336,6 +336,7 @@ int Melt_Curve::Analyser(rt_Protocol *prot)
     //qDebug() << "coeff_optics: " << coeff_optics.size() << coeff_optics;
 
     //...
+
     //qDebug() << "mc_Info: " << count << T0 << dT;
     Prot = prot;
     LoadFluor(prot);
@@ -361,10 +362,9 @@ int Melt_Curve::Analyser(rt_Protocol *prot)
     for(i=0; i<prot->count_MC; i++) X_MeltCurve.append(prot->X_MC.at(i));
 
     main_progress->setRange(0, count_ActiveCh*count_tube);
-
     for(i=0; i<count_CH; i++)
     {
-        if(!(prot->active_Channels & (0x0f<<4*i))) continue;        
+        if(!(prot->active_Channels & (0x0f<<4*i))) continue;
 
         QVector<double> *Vec_RawMC = new QVector<double>;
         Vec_RawMC->reserve(count*count_tube);
@@ -419,9 +419,9 @@ int Melt_Curve::Analyser(rt_Protocol *prot)
             Par[2] = TPeaks.at(i);      // temp peak
             Par[3] = 12.;               // form coeff
 
-            Meas = ValDerivate;            
-            calcFitting(Par, Der, Vec_Param);       // Fitting Weibull function            
-            Fit = Calculate_Weibull(Par, &Der);     // Calculate Weibull fitting            
+            Meas = ValDerivate;
+            calcFitting(Par, Der, Vec_Param);       // Fitting Weibull function
+            Fit = Calculate_Weibull(Par, &Der);     // Calculate Weibull fitting
             //Draw_Curves();
 
             QVector<QVector2D> *FitdFdT = new QVector<QVector2D>;
@@ -441,7 +441,8 @@ int Melt_Curve::Analyser(rt_Protocol *prot)
             text = QString("%1%").arg((int)(num*100./(count_ActiveCh*count_tube)));
             Display_ProgressBar(num, text);            
         }
-    }    
+    }
+    //qDebug() << "melt: all channels";
 
     Val.clear();    
     ValDerivate.clear();
@@ -914,6 +915,7 @@ void Melt_Curve::Calculate_Results(rt_Protocol *prot)
         Std_amplitude.append(delta);
 
         // 6. Maximum deviation between channels
+        //qDebug() << "i, mean, FluorCorrection" << i << mean << FluorCorrection.at(i);
         Ampl.append(mean*FluorCorrection.at(i));
 
     }
@@ -924,6 +926,7 @@ void Melt_Curve::Calculate_Results(rt_Protocol *prot)
     Sleep(1000);
 
     // 2. Spectrum (amplitude) validity
+    /*                                                              // временно не выводим последнюю строку
     Result_Tab->setCurrentIndex(1);
     max_val = gsl_stats_max(&Ampl.at(0), 1, Ampl.size());
     min_val = gsl_stats_min(&Ampl.at(0), 1, Ampl.size());
@@ -934,6 +937,7 @@ void Melt_Curve::Calculate_Results(rt_Protocol *prot)
     if(OpticValid_status) OpticValid_status = sts;
     str_0 = QString("%1%").arg(delta,0,'f',0);
     str_1 = QString("%1").arg(sts);
+
     Table_ResultSpectrum->item(count_ch*2+2,1)->setText(str_0);
     Table_ResultSpectrum->item(count_ch*2+2,2)->setText(str_1);
     if(!sts)
@@ -943,7 +947,9 @@ void Melt_Curve::Calculate_Results(rt_Protocol *prot)
         map_ATTENTION_Optic.insert(key, text);
         id_attention_optic++;
     }
+    */
 
+    //qDebug() << "Ampl: " << Ampl.size() << Ampl;
     Ampl.clear();
     //Sleep(1000);
     //Result_Tab->setCurrentIndex(0);
@@ -1152,6 +1158,8 @@ void Melt_Curve::Fill_ResultsTableSpectrum()
     }
     Table_ResultSpectrum->setSpan(count_ch+1,0,count_ch,1);
 
+
+
     // 4. separator
     for(j=0; j<Table_ResultSpectrum->columnCount(); j++)
     {
@@ -1159,7 +1167,8 @@ void Melt_Curve::Fill_ResultsTableSpectrum()
         item->setText("");
         Table_ResultSpectrum->setItem(row_current, j, item);
     }
-    Table_ResultSpectrum->setRowHeight(row_current, 2);
+    //Table_ResultSpectrum->setRowHeight(row_current, 2);
+    Table_ResultSpectrum->setRowHeight(row_current, 0);
     row_current++;
 
     // 4.
@@ -1175,8 +1184,10 @@ void Melt_Curve::Fill_ResultsTableSpectrum()
         }
         Table_ResultSpectrum->setItem(row_current, j, item);
     }
-    Table_ResultSpectrum->setRowHeight(row_current, 50);
+    //Table_ResultSpectrum->setRowHeight(row_current, 50);
+    Table_ResultSpectrum->setRowHeight(row_current, 0);
     row_current++;
+
 }
 
 //-----------------------------------------------------------------------------

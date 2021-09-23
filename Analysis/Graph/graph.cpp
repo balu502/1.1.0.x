@@ -445,7 +445,8 @@ void GraphPlot::to_ImageClipBoard()
     plot_image->setAxisFont(QwtPlot::yLeft, font_plot);
 
 
-    box_image->setGeometry(this->rect());
+    //box_image->setGeometry(this->rect());
+    box_image->setGeometry(QRect(0,0,400,300));
     box_image->setVisible(true);
     plot_image->replot();
     replot();

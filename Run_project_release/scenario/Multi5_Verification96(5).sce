@@ -8,7 +8,7 @@
       <Parameters>
         <item>
           <name>FileName</name>
-          <value>../scenario/Template_96(5)_Multi.trt</value>
+          <value>../scenario/Template_96(5)_Verification.trt</value>
         </item>
       </Parameters>
     </item>
