@@ -476,6 +476,7 @@ void* Analyser_HRM::Create_Win(void *pobj, void *main)
     connect(Sample_Results, SIGNAL(cellClicked(int,int)), this, SLOT(slot_SampleResults_clicked(int,int)));
     connect(Sample_Results, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(contextMenu_SampleResults()));
     connect(Groups_Results, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(contextMenu_GroupsResults()));
+    connect(Groups_Results, &QTableWidget::cellChanged, this, &Analyser_HRM::Gtype);
     connect(Group_Temperature, SIGNAL(buttonClicked(int)), this, SLOT(slot_ChangeTemperatureBorders(int)));
     connect(Left_Border, SIGNAL(valueChanged(double)), this, SLOT(slot_reAnalysis()));
     connect(Right_Border, SIGNAL(valueChanged(double)), this, SLOT(slot_reAnalysis()));
@@ -490,6 +491,8 @@ void* Analyser_HRM::Create_Win(void *pobj, void *main)
     connect(Surface_3D, SIGNAL(clicked(bool)), this, SLOT(View_3D()));
     connect(Numerate_tool, SIGNAL(toggled(bool)), this, SLOT(Numerate_Plate()));
     connect(Use_TemperatureNorm, SIGNAL(clicked(bool)), this, SLOT(Use_TempNormalization(bool)));
+
+
 
     Control_Box->setLayout(control_layout);
     QVBoxLayout *control_1_layout = new QVBoxLayout();
@@ -1850,7 +1853,77 @@ void Analyser_HRM::Clear_ClusterMass()
     Shape_Cluster.clear();
     //Cluster_Plot->replot();
 }
+//-----------------------------------------------------------------------------
+//---
+//-----------------------------------------------------------------------------
+void Analyser_HRM::Gtype(int row, int col)
+{
+    int i;
+    QTableWidgetItem *item = Groups_Results->item(row,col);
+    QString text = item->text();
+    QString str, str_temp;
+    QStringList list, list_temp;
+    int id;
+    int count_row, count_col;
+    CURVE_RESULTS *curve_results;
+    rt_Sample *sample;
 
+    if(col == 1 && !text.isEmpty() && !text.contains("..."))
+    {
+        item = Groups_Results->item(row,3);
+        list = item->text().split(",");
+        //qDebug() << "G_type: " << row << col << text <<  list << Curve_Results;
+
+        Prot->Plate.PlateSize(Prot->count_Tubes, count_row, count_col);
+        foreach(QString pos, list)
+        {
+            id = Convert_NameToIndex(pos.trimmed(), count_col);
+            curve_results = Curve_Results.value(id, NULL);
+            if(!curve_results) continue;
+
+            // Table of Sample: changing...
+            for(i=0; i<Sample_Results->rowCount(); i++)
+            {
+                item = Sample_Results->verticalHeaderItem(i);
+                //qDebug() << "pos: " << item->text();
+
+                if(pos.trimmed() == item->text())
+                {
+                    item = Sample_Results->item(i,2);
+                    str = item->text().trimmed();
+                    //qDebug() << "old item: " << str;
+                    list_temp = str.split(QRegExp("\\s+"));
+                    str = text;
+                    str.replace(" ","_");
+                    list_temp.replace(0,str);
+                    str = list_temp.join(" ");
+                    item->setText(str);
+                    //qDebug() << "new item: " << str;
+                    break;
+                }
+            }
+
+            // Changing in sample_results ...
+            sample = curve_results->sample;
+
+            //qDebug() << "id: " << id << curve_results << QString::fromStdString(sample->Unique_NameSample);
+
+            for(i=0; i<sample->result_Sample.size(); i++)
+            {
+                str_temp = QString::fromStdString(sample->result_Sample.at(i));
+                //qDebug() << "sample_Results: " << str_temp;
+                if(str_temp.startsWith("HRM_Results="))
+                {
+                    list_temp = str_temp.split("\t");
+                    list_temp.replace(3,str);
+                    str_temp = list_temp.join("\t");
+                    sample->result_Sample.at(i) = str_temp.toStdString();
+                    break;
+                }
+            }
+        }
+    }
+}
 //-----------------------------------------------------------------------------
 //---
 //-----------------------------------------------------------------------------
@@ -2028,7 +2101,7 @@ void Analyser_HRM::Fill_SampleResults()
         }
         hrm_Results = QString("HRM_Results=%1").arg(hrm_Results);
         AddResult(curve_results->sample->result_Sample, hrm_Results, "HRM_Results=");
-        qDebug() << "HRM_Results: " << hrm_Results;
+        //qDebug() << "HRM_Results: " << hrm_Results;
     }    
     Sample_Results->setVerticalHeaderLabels(header);
     Sample_Results->verticalHeader()->setSectionResizeMode(QHeaderView::Fixed);
@@ -3662,10 +3735,15 @@ void Samples_ItemDelegate::paint(QPainter *painter,
             text = list.at(0);
             str = list.at(1);
             val = str.toInt();
-            num_group = text.toInt(&ok);
+
+            /*num_group = text.toInt(&ok);
             if(!ok) num_group = -1;
             if(num_group < 0) text = "-";
+            */
+            num_group = 0;
+
              //qDebug() << "color_paint: " << val;
+
             color = val;
             if(num_group >= 0)painter->fillRect(option.rect, color);
             painter->setPen(QPen(Qt::white,1,Qt::SolidLine));
@@ -3798,6 +3876,31 @@ QWidget* Groups_ItemDelegate::createEditor(QWidget *parent,
 
     }
     return(obj);
+
+}
+//-----------------------------------------------------------------------------
+//--- setModelData
+//-----------------------------------------------------------------------------
+void Groups_ItemDelegate::setModelData(QWidget *editor,
+                                       QAbstractItemModel *model,
+                                       const QModelIndex &index) const
+{
+    QLineEdit *lineEditor;
+    int col = index.column();
+    QString text;
+
+    switch(col)
+    {
+    case 1:
+                lineEditor = static_cast<QLineEdit*>(editor);
+                text = lineEditor->text();
+                model->setData(index, text, Qt::EditRole);
+                break;
+
+    default:
+                QStyledItemDelegate::setModelData(editor,model,index);
+                break;
+    }
 
 }
 //-----------------------------------------------------------------------------

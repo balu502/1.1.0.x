@@ -209,6 +209,7 @@ public:
     QColor  color;
     bool    enable;
     double  Percent_Clustering;
+    //QString G_type;
 
     rt_Sample *sample;
 };
@@ -242,6 +243,10 @@ public:
     QWidget* createEditor(QWidget *parent,
                           const QStyleOptionViewItem &option,
                           const QModelIndex &index) const Q_DECL_OVERRIDE;
+    void setModelData(QWidget *editor,
+                      QAbstractItemModel *model,
+                      const QModelIndex &index) const Q_DECL_OVERRIDE;
+
 public slots:
     void Close_LineEditor();
 
@@ -486,6 +491,9 @@ private:
     void Interpolation_steffen(QVector<double>*, QVector<double>*, double);
 
     void AddResult(vector<string>&, QString, QString);
+
+public slots:
+    void Gtype(int, int);
 
 private slots:
     void slot_ChangeParamCluster();

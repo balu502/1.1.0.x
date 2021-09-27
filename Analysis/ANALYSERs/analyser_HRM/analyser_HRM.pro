@@ -14,7 +14,7 @@ CONFIG += dll
 DEFINES += ANALYSER_HRM_LIBRARY
 include (../../../config.pro)
 
-VERSION = 9.1.0.17
+VERSION = 9.1.0.18
 QMAKE_TARGET_COPYRIGHT = dna-technology
 CONFIG += skip_target_version_ext
 
