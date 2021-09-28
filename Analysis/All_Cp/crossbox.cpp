@@ -143,6 +143,8 @@ void CrossBox::Fill_CrossInfo(rt_Protocol *P)
     QTableWidgetItem *item;
     int active_ch;
     QString fluor_name[COUNT_CH] = FLUOR_NAME;
+    bool enable_sample;
+    bool enable_pos;
 
     rt_Test         *test;
     rt_TubeTest     *tube;
@@ -237,9 +239,14 @@ void CrossBox::Fill_CrossInfo(rt_Protocol *P)
             list_Cp = new QStringList();
             Sample_Cp.insert(QString::fromStdString(sample->ID_Sample), list_Cp);
 
+            enable_sample = false;
+
             for(k=0; k<sample->tubes.size(); k++)
             {
                 Tube = sample->tubes.at(k);
+                enable_pos = prot->enable_tube.at(Tube->pos);
+                if(enable_pos) enable_sample = true;
+
                 for(m=0; m<Tube->channels.size(); m++)
                 {
                     Channel = Tube->channels.at(m);
@@ -254,13 +261,26 @@ void CrossBox::Fill_CrossInfo(rt_Protocol *P)
                             break;
                         }
                     }
+                    if(!enable_pos) str = "";
                     list_Cp->append(str);
                 }
             }
-            //qDebug() << "Sample: " << QString::fromStdString(sample->Unique_NameSample) << *list_Cp;
+
+            //qDebug() << "Sample: " << QString::fromStdString(sample->Unique_NameSample) << enable_sample << *list_Cp;
+
+            if(!enable_sample)  // remove last element
+            {
+                header_Sample.removeLast();
+                num--;
+                Sample_Num.remove(num);
+                Sample_Cp.remove(QString::fromStdString(sample->ID_Sample));
+                list_Cp->clear();
+                delete list_Cp;
+            }
+
         }
     }
-   //qDebug() << "Samples: " << Sample_Num << Sample_Test << Sample_Names << Sample_Cp;
+   //qDebug() << "Samples: " << Sample_Num << Sample_Test << Sample_Names << Sample_Cp << header_Sample;
 
 
     //... CrossTest ...
@@ -300,6 +320,7 @@ void CrossBox::Fill_CrossInfo(rt_Protocol *P)
     CrossTable->verticalHeader()->setSectionResizeMode(QHeaderView::Fixed);
 
     //... Load Result ...
+    //qDebug() << "Load_Result:" << Sample_Num.values().size() << Sample_Num << header_Sample.size();
     for(i=0; i<Sample_Num.values().size(); i++)
     {
         id_sample = Sample_Num.values().at(i);
@@ -318,6 +339,8 @@ void CrossBox::Fill_CrossInfo(rt_Protocol *P)
             item->setText(list_Cp->at(j));
         }
     }
+
+    //qDebug() << "the end";
 
     //CrossTable->resizeRowsToContents();
     //CrossTests->resizeRowsToContents();

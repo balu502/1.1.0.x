@@ -384,6 +384,7 @@ void Cp_ItemDelegate::paint(QPainter *painter,
             //dy = 0;
             //if(list_ch.size() > 1) {K = 0.7; dy = 2*(list_ch.size()-1);}
             //dy = (option.rect.height() - 16*list_ch.size())/(list_ch.size() - 1 + 4);
+            //dy = option.rect.height() - 16*list_ch.size();
             dy = option.rect.height()/list_ch.size();
             for(i=0; i<list_ch.size(); i++)
             {
@@ -419,6 +420,7 @@ void Cp_ItemDelegate::paint(QPainter *painter,
                painter->setFont(font);
                //painter->drawPixmap(0, option.rect.y() + 22*K*i + 2 + dy,pixmap);
                //painter->drawPixmap(0, option.rect.y() + (16 + dy)*i + 2*dy,pixmap);
+               //painter->drawPixmap(0, option.rect.y() + 0.5*dy + (dy+16)*i, pixmap);
                painter->drawPixmap(0, option.rect.y() + dy*i + (dy-16)/2., pixmap);
             }            
             break;    
@@ -604,6 +606,7 @@ void MC_ItemDelegate::paint(QPainter *painter,
             //if(list_ch.size() > 1) {K = 0.7; dy = 2*(list_ch.size()-1);}
             //dy = (option.rect.height() - 16*list_ch.size())/(list_ch.size() - 1 + 4);
             dy = option.rect.height()/list_ch.size();
+
             for(i=0; i<list_ch.size(); i++)
             {
                id = list_ch.at(i).toInt();
@@ -701,7 +704,8 @@ QString All_Cp::CpTable_Cp()
     QTableWidgetItem *item;
     QStringList list;    
     QVector<int> ID_vec;
-    QVector<QString> Cp_vec;
+    //QVector<QString> Cp_vec;
+    QMap<int, QString> Cp_vec;
     QStringList Vec;
     QMap<int,QString> map_Results;
 
@@ -747,9 +751,17 @@ QString All_Cp::CpTable_Cp()
                             break;
 
                 case 1:
+                            k = 0;
                             foreach(str, list)
                             {
-                                Cp_vec.append(str);
+                                //Cp_vec.append(str);
+                                if(ID_vec.size() > k)
+                                {
+                                    num = ID_vec.at(k);
+                                }
+                                else num = 0;
+                                Cp_vec.insert(num, str);
+                                k++;
                             }
                             break;
 
@@ -767,13 +779,13 @@ QString All_Cp::CpTable_Cp()
 
             foreach(num, ID_vec)
             {
-                map_Results.insert(num, Cp_vec.at(num));
-            }
+                map_Results.insert(num, Cp_vec.value(num,""));
+            }            
 
             foreach(str, map_Results.values())
             {
                 text += QString("\t%1").arg(str);
-            }
+            }            
 
             Vec.append(text);
         }        
@@ -1149,11 +1161,11 @@ void All_Cp::Load_RelativeValidityStructure(QMap<QString, double> &RV, rt_Protoc
 
                     //name = name_test + ":" + FindNameByTest(test, id_tube, id_channel);
                     name = QString("%1:%2:%3:%4").arg(name_test).
-                                                  arg(FindNameByTest(test, id_tube, id_channel)).
-                                                  arg(id_tube).
-                                                  arg(id_channel);
-                    value = sigmoid->Fluor_Cp;
+                                                                      arg(FindNameByTest(test, id_tube, id_channel)).
+                                                                      arg(id_tube).
+                                                                      arg(id_channel);
 
+                    value = sigmoid->Fluor_Cp;
                     if(RV.contains(name))
                     {
                         if(value > RV.value(name)) RV.insert(name,value);
@@ -1481,12 +1493,7 @@ void All_Cp::Validate_PCR()
                                 if(value < (val+val_delta) && value >= val) str_result = "warning";
                                 if(value < val) str_result = "false";
 
-                                /*if(pos == 1 && !m)
-                                {
-                                    qDebug() << "aff: " << criterion->criterion_AFF << criterion->criterion_AFF_MIN << coef_exp << delta;
-                                    qDebug() << "result: " << val << val_delta << value << str_result;
-
-                                }*/
+                                //qDebug() << "result: " << val << val_delta << value << str_result;
                             }
                         }
                         else
@@ -1517,9 +1524,9 @@ void All_Cp::Validate_PCR()
                         str_result = "true";
                         //str_temp = QString::fromStdString(test->header.Name_Test) + ":" + FindNameByTest(test, id_tube, id_channel);
                         str_temp = QString("%1:%2:%3:%4").arg(QString::fromStdString(test->header.Name_Test)).
-                                                          arg(FindNameByTest(test, id_tube, id_channel)).
-                                                          arg(id_tube).
-                                                          arg(id_channel);
+                                                                                  arg(FindNameByTest(test, id_tube, id_channel)).
+                                                                                  arg(id_tube).
+                                                                                  arg(id_channel);
                         if(RelativeValidity.contains(str_temp))
                         {
                             value = RelativeValidity.value(str_temp);
