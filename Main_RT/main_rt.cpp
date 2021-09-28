@@ -637,6 +637,9 @@ void Main_RT::Load_MENU()
             setup_menu->clear();
             test_menu->clear();
 
+            setup_menu->disconnect();
+            test_menu->disconnect();
+
             foreach(text, list_pActions)
             {
                 //qDebug() << "menu: " << text;
@@ -689,6 +692,7 @@ void Main_RT::Load_MENU()
             load_menu(p_run, &list_pActions);
 
             run_menu->clear();
+            run_menu->disconnect();
 
             foreach(text, list_pActions)
             {
@@ -728,6 +732,7 @@ void Main_RT::Load_MENU()
             load_menu(p_analysis, &list_pActions);
 
             analysis_menu->clear();
+            analysis_menu->disconnect();
 
             foreach(text, list_pActions)
             {

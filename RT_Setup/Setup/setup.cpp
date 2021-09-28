@@ -576,6 +576,8 @@ void Setup::Create_MenuActions(void *list_pinfo)
 {
     QStringList *list = (QStringList*)list_pinfo;
 
+    //qDebug() << "Create_MenuActions: " << *list;
+
     list->append(open_Protocol->toolTip() + "\t" + "open" + "\t" + "1");
     list->append(open_XML->toolTip() + "\t" + "open_xml_7ver" + "\t" + "1" );
     list->append(save_Protocol->toolTip() + "\t" + "save" + "\t" + "1");
