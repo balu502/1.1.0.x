@@ -1,64 +1,68 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <PLATEs Limit="10">
- <item created="21 Июнь 2021, 17:22:59" barcode="4800000004">
+ <item barcode="4800000004" created="21 Июнь 2021, 17:22:59">
   <default_TPeaks>52.09 89.19 48.58 90.71 61.26</default_TPeaks>
   <default_Amplitude>538 380 560 197 228</default_Amplitude>
   <run>
-   <item Device="A5H607" start="21 Июнь 2021, 17:22:59">
+   <item start="21 Июнь 2021, 17:22:59" Device="A5H607">
     <TPeaks>52.09 89.19 48.58 90.71 61.26</TPeaks>
     <Amplitude>538 380 560 197 228</Amplitude>
    </item>
-   <item Device="A5H607" start="21 Июнь 2021, 17:22:59">
+   <item start="21 Июнь 2021, 17:22:59" Device="A5H607">
     <TPeaks>52.09 89.19 48.58 90.71 61.26</TPeaks>
     <Amplitude>538 380 560 197 228</Amplitude>
    </item>
-   <item Device="A5H607" start="21 Июнь 2021, 17:22:59">
+   <item start="21 Июнь 2021, 17:22:59" Device="A5H607">
     <TPeaks>52.09 89.19 48.58 90.71 61.26</TPeaks>
     <Amplitude>538 380 560 197 228</Amplitude>
    </item>
-   <item Device="A5H607" start="21 Июнь 2021, 17:22:59">
+   <item start="21 Июнь 2021, 17:22:59" Device="A5H607">
     <TPeaks>52.09 89.19 48.58 90.71 61.26</TPeaks>
     <Amplitude>538 380 560 197 228</Amplitude>
    </item>
-   <item Device="A5H607" start="21 Июнь 2021, 17:22:59">
+   <item start="21 Июнь 2021, 17:22:59" Device="A5H607">
     <TPeaks>52.09 89.19 48.58 90.71 61.26</TPeaks>
     <Amplitude>538 380 560 197 228</Amplitude>
    </item>
-   <item Device="A5H607" start="21 Июнь 2021, 17:22:59">
+   <item start="21 Июнь 2021, 17:22:59" Device="A5H607">
     <TPeaks>52.09 89.19 48.58 90.71 61.26</TPeaks>
     <Amplitude>538 380 560 197 228</Amplitude>
    </item>
-   <item Device="A5H607" start="21 Июнь 2021, 17:22:59">
+   <item start="21 Июнь 2021, 17:22:59" Device="A5H607">
     <TPeaks>52.09 89.19 48.58 90.71 61.26</TPeaks>
     <Amplitude>538 380 560 197 228</Amplitude>
    </item>
-   <item Device="A5H607" start="21 Июнь 2021, 17:22:59">
+   <item start="21 Июнь 2021, 17:22:59" Device="A5H607">
     <TPeaks>52.09 89.19 48.58 90.71 61.26</TPeaks>
     <Amplitude>538 380 560 197 228</Amplitude>
    </item>
-   <item Device="A5H607" start="21 Июнь 2021, 17:22:59">
+   <item start="21 Июнь 2021, 17:22:59" Device="A5H607">
     <TPeaks>52.09 89.19 48.58 90.71 61.26</TPeaks>
     <Amplitude>538 380 560 197 228</Amplitude>
    </item>
-   <item Device="A5H607" start="21 Июнь 2021, 17:22:59">
+   <item start="21 Июнь 2021, 17:22:59" Device="A5H607">
     <TPeaks>52.09 89.19 48.58 90.71 61.26</TPeaks>
     <Amplitude>538 380 560 197 228</Amplitude>
    </item>
   </run>
  </item>
- <item created="8 Июль 2021, 11:35:46" barcode="1111">
+ <item barcode="1111" created="8 Июль 2021, 11:35:46">
   <default_TPeaks>51 90 55 91 60</default_TPeaks>
   <default_Amplitude>2500 800 800 400 400</default_Amplitude>
   <run>
-   <item Device="" start="8 Июль 2021, 11:35:46">
+   <item start="8 Июль 2021, 11:35:46" Device="">
     <TPeaks>51 90 55 91 60</TPeaks>
     <Amplitude>2500 800 800 400 400</Amplitude>
    </item>
-   <item Device="A5H607" start="2 Август 2021, 11:35:24">
+   <item start="2 Август 2021, 11:35:24" Device="A5H607">
     <TPeaks>51 90 55 91 60</TPeaks>
     <Amplitude>2500 800 800 400 400</Amplitude>
    </item>
-   <item Device="A5H607" start="2 Август 2021, 11:46:52">
+   <item start="2 Август 2021, 11:46:52" Device="A5H607">
+    <TPeaks>51 90 55 91 60</TPeaks>
+    <Amplitude>2500 800 800 400 400</Amplitude>
+   </item>
+   <item start="29 Сентябрь 2021, 11:29:18" Device="A6N007">
     <TPeaks>51 90 55 91 60</TPeaks>
     <Amplitude>2500 800 800 400 400</Amplitude>
    </item>

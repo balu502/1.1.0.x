@@ -5418,6 +5418,7 @@ void Run::slot_ReceivedActionPoint(Action_Event *p_event)
     QStringList list_points;
     short value;
     int count_ActiveCh;
+    bool def_param = false;
 
     list_points << LIST_ACTIONPOINTS_RUN;
 
@@ -5549,8 +5550,12 @@ void Run::slot_ReceivedActionPoint(Action_Event *p_event)
                 {
                     if(prot->active_Channels & (0x0f<<4*i)) count_ActiveCh++;
                 }
+                text = action_event->point_action->Param.value("Default_Param", "");
+                if(text.startsWith("yes")) def_param = true;
 
-                scan_dialog = new ScanDialog(this);
+                //qDebug() << "def_Param: " << def_param;
+
+                scan_dialog = new ScanDialog(this, def_param);
                 scan_dialog->count_ActiveCh = count_ActiveCh;
                 connect(scan_dialog, SIGNAL(sReadSettings(QMap<QString,QString>*)),
                                             this, SLOT(Read_CalibrationSettings(QMap<QString,QString>*)));

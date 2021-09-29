@@ -4,7 +4,7 @@
 //-----------------------------------------------------------------------------
 //---
 //-----------------------------------------------------------------------------
-ScanDialog::ScanDialog(QWidget *parent): QDialog(parent)
+ScanDialog::ScanDialog(QWidget *parent, bool def_Param): QDialog(parent)
 {
     int i;
     QString text;
@@ -168,6 +168,9 @@ ScanDialog::ScanDialog(QWidget *parent): QDialog(parent)
     message.setWindowIcon(QIcon(":/images/DTm.ico"));
     //message.setWindowIcon(QIcon(":/images/RT.ico"));
     //if(CALIBRATION_status) message.setWindowIcon(QIcon(":/images/check.ico"));
+
+    // Default value
+    if(def_Param) QTimer::singleShot(3000, this, &ScanDialog::Set_DefaultValue_Exit);
 
 }
 //-----------------------------------------------------------------------------
@@ -605,4 +608,19 @@ void ScanDialog::Check_ApplyChanges()
        TPeaks_values->text().trimmed().isEmpty()) state = true;
 
     Apply_Button->setDisabled(state);
+}
+
+//-----------------------------------------------------------------------------
+//---
+//-----------------------------------------------------------------------------
+void ScanDialog::Set_DefaultValue_Exit()
+{
+    // 1.
+    Default_Values();
+
+    // 2.
+    Sleep(3000);
+
+    // 3.
+    Apply_Button->click();
 }

@@ -35,7 +35,7 @@ class ScanDialog: public QDialog
     Q_OBJECT
 
 public:
-    ScanDialog(QWidget *parent = 0);
+    ScanDialog(QWidget *parent = 0, bool def_Param = false);
     virtual ~ScanDialog();
 
     QTabWidget  *Tab;
@@ -76,6 +76,7 @@ private slots:
     bool Check_ValidCoefficients();
     void Check_ApplyChanges();
     void clear_TextEdit();
+    void Set_DefaultValue_Exit();
 
 signals:
     void sReadSettings(QMap<QString,QString>*);

@@ -24,6 +24,10 @@
           <name>TPeaks,Amplitude</name>
           <value></value>
         </item>
+        <item>
+          <name>Default_Param</name>
+          <value>no</value>
+        </item>
       </Parameters>
     </item>
     <item>
