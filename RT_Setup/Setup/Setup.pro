@@ -30,6 +30,9 @@ HEADERS += setup.h\
         setup_global.h \
         zoomplate.h
 
+#--- sp.h ---
+INCLUDEPATH += ../../Main_RT
+
 #--- QWT ---
 QWT_LOCATION = ../../../QWT
 INCLUDEPATH += $${QWT_LOCATION}/src

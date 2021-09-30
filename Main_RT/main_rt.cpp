@@ -3359,3 +3359,19 @@ void Main_RT::Check_Compatibility_WIN7()
 
     return;
 }
+//-----------------------------------------------------------------------------
+//---
+//-----------------------------------------------------------------------------
+void Main_RT::Send_p_SplashScreenObject(SplashScreen *sp)
+{
+    // ... Setup ...
+    if(p_setup && dll_setup)
+    {
+        Send_PointerSplash send_splash = reinterpret_cast<Send_PointerSplash>(
+                                        ::GetProcAddress(dll_setup,"Splash_Object@8"));
+        if(send_splash)
+        {
+            send_splash(p_setup, sp);
+        }
+    }
+}

@@ -57,6 +57,8 @@ public:
     QLabel    *web_info;
     QLabel    *factory;
 
+    QLabel    *load_Tests;
+
     void readCommonSettings();
     QString lang;
     int type_reagent;
@@ -81,6 +83,12 @@ public slots:
       app->processEvents();
       //qDebug() << "m_progress: " << m_progress;
     }
+
+    void Get_SplashPercent(QString str);
+    /*{
+        //qDebug() << "get percent: " << str;
+        load_Tests->setText(QString("%1: %2").arg(tr("load tests")).arg(str));
+    }*/
 
 
 protected:

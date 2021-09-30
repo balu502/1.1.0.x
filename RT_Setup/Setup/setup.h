@@ -89,6 +89,8 @@
 #include <define_PCR.h>
 #include <algorithm>
 
+#include <sp.h>
+
 #define LIST_DEVICE "96,384,48,192"
 #define List_DEVICENAME "Prime_96,Prime_384,Lite_48,Lite_192"
 #define UNDO 5
@@ -515,6 +517,8 @@ public:
     QMovie  *obj_gif;
     QLabel  *label_gif;
 
+    SplashScreen    *splash;            // main SplashScreen
+
     rt_Protocol *prot;                  // Protocol
     //QVector<rt_Tube*> Tubes;          // Tubes in Protocol
     QMap<int,int> Tubes_kind;           // Tubes kind: sample(0),K+(1),K-(2),St(3)
@@ -834,6 +838,7 @@ protected:
 
 signals:
     void Operation_Complited();
+    void Send_SplashPercent(QString);
 };
 
 #endif // SETUP_H

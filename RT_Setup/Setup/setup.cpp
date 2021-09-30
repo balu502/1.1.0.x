@@ -41,6 +41,10 @@ extern "C" SETUPSHARED_EXPORT void* __stdcall Get_pPro(void *p_setup)
 {
     return(((Setup*)p_setup)->Get_pProtocol());
 }
+extern "C" SETUPSHARED_EXPORT void __stdcall Splash_Object(void *p_setup, SplashScreen* s_object)
+{
+    ((Setup*)p_setup)->splash = s_object;
+}
 //-----------------------------------------------------------------------------
 //---
 //-----------------------------------------------------------------------------
@@ -155,7 +159,7 @@ Setup::Setup(QWidget *parent): QMainWindow(parent)
     label_gif->setMovie(obj_gif);
     label_gif->setVisible(false);
 
-
+    splash = NULL;
 
 
 
@@ -796,7 +800,10 @@ bool Setup::create_ListTESTs(QString fn)
     QString xml_str;
     bool verification;
 
-    rt_Preference   *preference_test;    
+    rt_Preference   *preference_test;
+
+    if(splash) connect(this, &Setup::Send_SplashPercent, splash, &SplashScreen::Get_SplashPercent);
+    qDebug() << "create_ListTESTs:  Start " << QTime::currentTime();
 
     qDeleteAll(TESTs.begin(),TESTs.end());
     TESTs.clear();
@@ -830,6 +837,9 @@ bool Setup::create_ListTESTs(QString fn)
                 p_test = new rt_Test();
                 LoadXML_Test(child, p_test);
                 TESTs.push_back(p_test);
+
+                //qDebug() << "tests: " << i;
+                emit Send_SplashPercent(QString("%1").arg(i));
 
                 //... Check&Load Catalog Property ...
                 Load_CatalogProperties(p_test);
@@ -886,6 +896,9 @@ bool Setup::create_ListTESTs(QString fn)
     Translate_Catalog(&TESTs);
     //...
 
+    qDebug() << "create_ListTESTs: Finish " << QTime::currentTime();
+    if(splash) disconnect(this, &Setup::Send_SplashPercent, splash, &SplashScreen::Get_SplashPercent);
+    splash = NULL;
 
     if(TESTs.size()) res = true;
     return(res);

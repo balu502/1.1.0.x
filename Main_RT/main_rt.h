@@ -127,6 +127,8 @@ typedef void  (__stdcall *App_Status)(void*, QString, bool);
 typedef void  (__stdcall *Send_PointerProtocol)(void*, void*);
 typedef void* (__stdcall *Get_PointerProtocol)(void*);
 
+typedef void  (__stdcall *Send_PointerSplash)(void*, SplashScreen*);
+
 //------------------------------------------------------
 class Main_RT;
 //------------------------------------------------------
@@ -454,6 +456,8 @@ public:
 
     void As_DisabledUser();
     void SetConnectToServer();
+
+    void Send_p_SplashScreenObject(SplashScreen*);
 
 
     HINSTANCE dll_analysis;

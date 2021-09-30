@@ -156,6 +156,8 @@ SplashScreen::SplashScreen(QApplication *aApp, QWidget *parent, int param) :
     else logo->setPixmap(pix_logo);
     h_layout->addWidget(logo,0, Qt::AlignCenter);
 
+    load_Tests = new QLabel("", this);
+    load_Tests->setObjectName("Gray");
 
     //box_web->move(this->width()-box_web->width()-dx, dx);
     web_info = new QLabel("www.dna-technology.ru", this);
@@ -167,7 +169,9 @@ SplashScreen::SplashScreen(QApplication *aApp, QWidget *parent, int param) :
     web_layout->addWidget(web_info, 1, Qt::AlignRight);
 
     layout->addWidget(box_web, 0, Qt::AlignLeft);
+    //layout->addSpacing(220);
     layout->addStretch(1);
+    layout->addWidget(load_Tests, 0, Qt::AlignLeft);
     layout->addLayout(web_layout);
 
     restart = false;
@@ -260,4 +264,14 @@ QString SplashScreen::GetVersion()
     delete buf;
 
     return(res);
+}
+//-----------------------------------------------------------------------------
+//---
+//-----------------------------------------------------------------------------
+void SplashScreen::Get_SplashPercent(QString str)
+{
+    qDebug() << "i:" << str;
+    load_Tests->setText(QString("load tests: %1").arg(str));
+    load_Tests->update();
+    load_Tests->repaint();
 }

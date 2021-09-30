@@ -124,6 +124,7 @@ int main(int argc, char *argv[])
 
     SplashScreen *splash = new SplashScreen(&a);      // RT
     //SplashScreen_RT *splash = new SplashScreen_RT(&a);
+    w.Send_p_SplashScreenObject(splash);
     if(!cmd_str) splash->show();
 
 
@@ -328,16 +329,20 @@ int main(int argc, char *argv[])
         a.processEvents();                
     }    
 
+    qDebug() << "splash_Show: " << QTime::currentTime();
     // Tests Verification Resource
     if(!axgp.control().isNull())
     {        
         w.Load_TESTVERIFICATION(&axgp);        
     }
+    qDebug() << "Load_TESTVERIFICATION: " << QTime::currentTime();
 
     // Load Tests:    
     if(file_TESTs.exists()) text = file_TESTs.fileName();
     else text = "";
     w.Load_TESTs(text);
+
+    qDebug() << "Load Tests: " << QTime::currentTime();
 
 
     // Load User    
@@ -347,16 +352,22 @@ int main(int argc, char *argv[])
     w.Load_POINTERDBASE(&axRita);
     //w.http->ax_user = axUser;
 
+    qDebug() << "Load_POINTERDBASE: " << QTime::currentTime();
+
     axRita.dynamicCall("startHeartBeat(qlonglong,int)", qApp->applicationPid(), 10000); // Проверка отклика с периодичностью 10сек
 
     // Load Menu    
     w.Load_MENU();
 
+    qDebug() << "Load_MENU: " << QTime::currentTime();
+
     // APP_NAME
     a.processEvents();
-    w.APP_STATUS();    
+    w.APP_STATUS();
+    qDebug() << "APP_STATUS: " << QTime::currentTime();
 
     w.SetConnectToServer();
+    qDebug() << "SetConnectToServer: " << QTime::currentTime();
 
     //splash->timer->stop();    // RT
     splash->close();
