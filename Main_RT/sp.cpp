@@ -158,6 +158,20 @@ SplashScreen::SplashScreen(QApplication *aApp, QWidget *parent, int param) :
 
     load_Tests = new QLabel("", this);
     load_Tests->setObjectName("Gray");
+    tests_progress = new QProgressBar(this);
+    tests_progress->setMinimum(0);
+    tests_progress->setMaximum(100);
+    //tests_progress->setFixedWidth(this->width() * 0.70);
+    tests_progress->setFixedHeight(12);
+    tests_progress->setTextVisible(false);
+    tests_progress->setVisible(false);
+    tests_progress->setStyleSheet(
+        "QProgressBar:horizontal {border: 1px solid transparent; background: #DD3A3A61; padding: 1px;}"
+        "QProgressBar::chunk:horizontal {background: qlineargradient(x1: 0, y1: 0.1, x2: 1, y2: 0.1, stop: 0 #3A3A61, stop: 1 #A4A4C8);}");
+    QHBoxLayout *tests_layout = new QHBoxLayout;
+    tests_layout->addWidget(load_Tests, 0, Qt::AlignLeft);
+    tests_layout->addWidget(tests_progress, 1);
+
 
     //box_web->move(this->width()-box_web->width()-dx, dx);
     web_info = new QLabel("www.dna-technology.ru", this);
@@ -171,7 +185,8 @@ SplashScreen::SplashScreen(QApplication *aApp, QWidget *parent, int param) :
     layout->addWidget(box_web, 0, Qt::AlignLeft);
     //layout->addSpacing(220);
     layout->addStretch(1);
-    layout->addWidget(load_Tests, 0, Qt::AlignLeft);
+    //layout->addWidget(load_Tests, 0, Qt::AlignLeft);
+    layout->addLayout(tests_layout);
     layout->addLayout(web_layout);
 
     restart = false;
@@ -270,8 +285,26 @@ QString SplashScreen::GetVersion()
 //-----------------------------------------------------------------------------
 void SplashScreen::Get_SplashPercent(QString str)
 {
-    qDebug() << "i:" << str;
-    load_Tests->setText(QString("load tests: %1").arg(str));
-    load_Tests->update();
-    load_Tests->repaint();
+    QStringList list = str.split(",");
+    int count = list.at(1).toInt();
+    int current = list.at(0).toInt();
+
+    //qDebug() << "i:" << str << current << count;
+    load_Tests->setText(QString("%1: %2(%3)   ").arg(tr("load tests")).arg(current).arg(count));
+
+    if(!tests_progress->isVisible())
+    {
+        tests_progress->setVisible(true);
+        if(progress && progress->isVisible()) progress->setVisible(false);
+    }
+
+    if(count)
+    {
+        tests_progress->setValue((current*100)/count);
+        tests_progress->update();
+        tests_progress->repaint();
+    }
+
+    //load_Tests->update();
+    //load_Tests->repaint();
 }

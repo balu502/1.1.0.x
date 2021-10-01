@@ -125,230 +125,230 @@
 <context>
     <name>Main_RT</name>
     <message>
-        <location filename="../main_rt.cpp" line="1338"/>
+        <location filename="../main_rt.cpp" line="1374"/>
         <source>Setup</source>
         <translation>Протокол</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1347"/>
+        <location filename="../main_rt.cpp" line="1383"/>
         <source>Run</source>
         <translation>Запуск</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1356"/>
+        <location filename="../main_rt.cpp" line="1392"/>
         <source>Analysis</source>
         <translation>Анализ</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1660"/>
+        <location filename="../main_rt.cpp" line="1704"/>
         <source>&amp;File</source>
         <translation>&amp;Режим</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1661"/>
+        <location filename="../main_rt.cpp" line="1705"/>
         <source>setup_Page</source>
         <translation>Протокол</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1662"/>
+        <location filename="../main_rt.cpp" line="1706"/>
         <source>run_Page</source>
         <translation>Запуск</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1663"/>
+        <location filename="../main_rt.cpp" line="1707"/>
         <source>analysis_Page</source>
         <translation>Анализ</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1664"/>
+        <location filename="../main_rt.cpp" line="1708"/>
         <source>edit Programm</source>
         <translation>Редактор программы амплификации</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1665"/>
+        <location filename="../main_rt.cpp" line="1709"/>
         <source>view VideoArchive</source>
         <translation>Просмотр видеоархива</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1666"/>
+        <location filename="../main_rt.cpp" line="1710"/>
         <source>Exit</source>
         <translation>Выход</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1685"/>
+        <location filename="../main_rt.cpp" line="1729"/>
         <source>&amp;Test</source>
         <translation>&amp;Тест</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1690"/>
+        <location filename="../main_rt.cpp" line="1734"/>
         <source>&amp;Setup</source>
         <translation>&amp;Протокол</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1692"/>
+        <location filename="../main_rt.cpp" line="1736"/>
         <source>&amp;Run</source>
         <translation>&amp;Запуск</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1694"/>
+        <location filename="../main_rt.cpp" line="1738"/>
         <source>&amp;Analysis</source>
         <translation>&amp;Анализ</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1697"/>
+        <location filename="../main_rt.cpp" line="1741"/>
         <source>&amp;Tools</source>
         <translation>&amp;Инструменты</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1700"/>
+        <location filename="../main_rt.cpp" line="1744"/>
         <source>&amp;Network</source>
         <translation>&amp;ЛИС</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1702"/>
+        <location filename="../main_rt.cpp" line="1746"/>
         <source>&amp;Preference</source>
         <translation>&amp;Настройки</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1707"/>
+        <location filename="../main_rt.cpp" line="1751"/>
         <source>General</source>
         <translation>Общие</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1710"/>
+        <location filename="../main_rt.cpp" line="1754"/>
         <source>User authorization</source>
         <translation>Редактировать свойства пользователя</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1713"/>
+        <location filename="../main_rt.cpp" line="1757"/>
         <source>Replace users authorization</source>
         <translation>Сменить пользователя</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1715"/>
+        <location filename="../main_rt.cpp" line="1759"/>
         <source>Preference Export</source>
         <translation>Настройки экспорта в ЛИС</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1730"/>
+        <location filename="../main_rt.cpp" line="1774"/>
         <source>authorization</source>
         <translation>Авторизация</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1746"/>
+        <location filename="../main_rt.cpp" line="1790"/>
         <source>List of orders Web_Protocols</source>
         <translation>Получить протокол на исполнение амплификации</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1749"/>
+        <location filename="../main_rt.cpp" line="1793"/>
         <source>Protocol to Web Server</source>
         <translation>Отправить протокол с результатами анализа</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1752"/>
+        <location filename="../main_rt.cpp" line="1796"/>
         <source>List of Web_Protocols</source>
         <translation>Получить протокол с результатами анализа</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1755"/>
+        <location filename="../main_rt.cpp" line="1799"/>
         <source>Protocol_Order to Web Server</source>
         <translation>Отправить протокол (заявку) на исполнение</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1758"/>
+        <location filename="../main_rt.cpp" line="1802"/>
         <source>Http Process</source>
         <translation>ДТ_Pro: HTTP-соединение</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="2066"/>
-        <location filename="../main_rt.cpp" line="2146"/>
+        <location filename="../main_rt.cpp" line="2110"/>
+        <location filename="../main_rt.cpp" line="2190"/>
         <source>Protocols File (*.rt *.xml)</source>
         <translation>Файл протокола (*.rt *.xml)</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="2950"/>
+        <location filename="../main_rt.cpp" line="2994"/>
         <source>Protocol was successfully saved!</source>
         <translation>Протокол успешно сохранён!</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="2955"/>
+        <location filename="../main_rt.cpp" line="2999"/>
         <source>Attention! Problems detected...</source>
         <translation>Внимание! Обнаружены проблемы...</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="3220"/>
+        <location filename="../main_rt.cpp" line="3264"/>
         <source>Attention! You cannot continue working as an unregistered user!</source>
         <translation>Внимание! Вы не можете продолжить работу как незарегистрированный пользователь!</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="3221"/>
+        <location filename="../main_rt.cpp" line="3265"/>
         <source>But You can continue to work as a Guest when You log in again...</source>
         <translation>Но Вы можете продолжить работу как Гость при повторном входе в программу...</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="3307"/>
+        <location filename="../main_rt.cpp" line="3351"/>
         <source>Attention! For more stable operation of the application, You need to set the compatibility mode with Windows 7</source>
         <translation>Внимание! Для более устойчивой работы приложения, Вы должны выставить режим совместимости с Windows 7...</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1723"/>
+        <location filename="../main_rt.cpp" line="1767"/>
         <source>About</source>
         <translation>О программе</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="516"/>
+        <location filename="../main_rt.cpp" line="523"/>
         <source>The DTmaster is minimized to the tray</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1567"/>
+        <location filename="../main_rt.cpp" line="1611"/>
         <source>DTmaster</source>
         <translation>DTmaster</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1725"/>
+        <location filename="../main_rt.cpp" line="1769"/>
         <source>About moduls</source>
         <translation>О модулях</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1741"/>
-        <location filename="../main_rt.cpp" line="1803"/>
+        <location filename="../main_rt.cpp" line="1785"/>
+        <location filename="../main_rt.cpp" line="1847"/>
         <source>Connect to server...</source>
         <translation>Подключение к серверу...</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1743"/>
+        <location filename="../main_rt.cpp" line="1787"/>
         <source>QTScript...</source>
         <translation>Web Клиент...</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1770"/>
+        <location filename="../main_rt.cpp" line="1814"/>
         <source>Scenario...</source>
         <translation>Сценарий...</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1796"/>
+        <location filename="../main_rt.cpp" line="1840"/>
         <source>Disconnect from server...</source>
         <translation>Отключение от сервера...</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="2064"/>
-        <location filename="../main_rt.cpp" line="2144"/>
+        <location filename="../main_rt.cpp" line="2108"/>
+        <location filename="../main_rt.cpp" line="2188"/>
         <source>Open Protocol</source>
         <translation>Открыть протокол</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="3106"/>
+        <location filename="../main_rt.cpp" line="3150"/>
         <source>Disconnect...</source>
         <translation>Разъединить...</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="3117"/>
+        <location filename="../main_rt.cpp" line="3161"/>
         <source>Connect...</source>
         <translation>Соединить...</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1704"/>
+        <location filename="../main_rt.cpp" line="1748"/>
         <source>&amp;Help</source>
         <translation>&amp;Помощь</translation>
     </message>
@@ -371,9 +371,14 @@
         <translation>обновление:</translation>
     </message>
     <message>
-        <location filename="../sp.cpp" line="163"/>
+        <location filename="../sp.cpp" line="179"/>
         <source>ООО &quot;НПО ДНК-Технология&quot; 2019</source>
         <translation>ООО &quot;НПО ДНК-Технология&quot; 2021</translation>
+    </message>
+    <message>
+        <location filename="../sp.cpp" line="293"/>
+        <source>load tests</source>
+        <translation>Загрузка тестов</translation>
     </message>
 </context>
 <context>

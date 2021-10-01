@@ -144,8 +144,8 @@ int main(int argc, char *argv[])
     if(!cmd_str && !calibration)
   {
     i=0;
-    while(splash->m_progress < 100)   // RT
-    while(i<50)
+    //while(splash->m_progress < 100)   // RT
+    while(i<30)
     {
         w.Sleep(100);
         splash->progress->setValue(splash->m_progress);   // RT
@@ -239,6 +239,7 @@ int main(int argc, char *argv[])
             //qDebug() << "add new properties:" ;
 
             if(splash->isVisible()) splash->hide();//splash->close();
+            splash->progress->setVisible(false);
 
             if(/*!cmd_str &&*/ !calibration)
             {
@@ -329,20 +330,20 @@ int main(int argc, char *argv[])
         a.processEvents();                
     }    
 
-    qDebug() << "splash_Show: " << QTime::currentTime();
+    //qDebug() << "splash_Show: " << QTime::currentTime();
     // Tests Verification Resource
     if(!axgp.control().isNull())
     {        
         w.Load_TESTVERIFICATION(&axgp);        
     }
-    qDebug() << "Load_TESTVERIFICATION: " << QTime::currentTime();
+    //qDebug() << "Load_TESTVERIFICATION: " << QTime::currentTime();
 
     // Load Tests:    
     if(file_TESTs.exists()) text = file_TESTs.fileName();
     else text = "";
     w.Load_TESTs(text);
 
-    qDebug() << "Load Tests: " << QTime::currentTime();
+    //qDebug() << "Load Tests: " << QTime::currentTime();
 
 
     // Load User    
@@ -352,22 +353,22 @@ int main(int argc, char *argv[])
     w.Load_POINTERDBASE(&axRita);
     //w.http->ax_user = axUser;
 
-    qDebug() << "Load_POINTERDBASE: " << QTime::currentTime();
+    //qDebug() << "Load_POINTERDBASE: " << QTime::currentTime();
 
     axRita.dynamicCall("startHeartBeat(qlonglong,int)", qApp->applicationPid(), 10000); // Проверка отклика с периодичностью 10сек
 
     // Load Menu    
     w.Load_MENU();
 
-    qDebug() << "Load_MENU: " << QTime::currentTime();
+    //qDebug() << "Load_MENU: " << QTime::currentTime();
 
     // APP_NAME
     a.processEvents();
     w.APP_STATUS();
-    qDebug() << "APP_STATUS: " << QTime::currentTime();
+    //qDebug() << "APP_STATUS: " << QTime::currentTime();
 
     w.SetConnectToServer();
-    qDebug() << "SetConnectToServer: " << QTime::currentTime();
+    //qDebug() << "SetConnectToServer: " << QTime::currentTime();
 
     //splash->timer->stop();    // RT
     splash->close();

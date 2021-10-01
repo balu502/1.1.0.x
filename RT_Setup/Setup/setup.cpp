@@ -785,6 +785,7 @@ bool Setup::create_ListTESTs(QString fn)
 {
     int i,j;
     bool res = false;
+    int count_tests;
 
     QDomDocument    doc;
     QDomElement     root;
@@ -802,8 +803,8 @@ bool Setup::create_ListTESTs(QString fn)
 
     rt_Preference   *preference_test;
 
-    if(splash) connect(this, &Setup::Send_SplashPercent, splash, &SplashScreen::Get_SplashPercent);
-    qDebug() << "create_ListTESTs:  Start " << QTime::currentTime();
+    if(splash) connect(this, SIGNAL(Send_SplashPercent(QString)), splash, SLOT(Get_SplashPercent(QString)));
+    //qDebug() << "create_ListTESTs:  Start " << QTime::currentTime();
 
     qDeleteAll(TESTs.begin(),TESTs.end());
     TESTs.clear();
@@ -829,6 +830,7 @@ bool Setup::create_ListTESTs(QString fn)
                 Operator = root.attribute("operator","guest");
             }            
 
+            count_tests = root.childNodes().size();
             for(i=0; i<root.childNodes().size(); i++)
             {
                 qApp->processEvents();
@@ -839,7 +841,7 @@ bool Setup::create_ListTESTs(QString fn)
                 TESTs.push_back(p_test);
 
                 //qDebug() << "tests: " << i;
-                emit Send_SplashPercent(QString("%1").arg(i));
+                emit Send_SplashPercent(QString("%1,%2").arg(i+1).arg(count_tests));
 
                 //... Check&Load Catalog Property ...
                 Load_CatalogProperties(p_test);
@@ -896,8 +898,8 @@ bool Setup::create_ListTESTs(QString fn)
     Translate_Catalog(&TESTs);
     //...
 
-    qDebug() << "create_ListTESTs: Finish " << QTime::currentTime();
-    if(splash) disconnect(this, &Setup::Send_SplashPercent, splash, &SplashScreen::Get_SplashPercent);
+    //qDebug() << "create_ListTESTs: Finish " << QTime::currentTime();
+    if(splash) disconnect(this, SIGNAL(Send_SplashPercent(QString)), splash, SLOT(Get_SplashPercent(QString)));
     splash = NULL;
 
     if(TESTs.size()) res = true;

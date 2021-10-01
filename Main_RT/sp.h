@@ -58,6 +58,7 @@ public:
     QLabel    *factory;
 
     QLabel    *load_Tests;
+    QProgressBar *tests_progress;
 
     void readCommonSettings();
     QString lang;
@@ -84,9 +85,10 @@ public slots:
       //qDebug() << "m_progress: " << m_progress;
     }
 
-    void Get_SplashPercent(QString str);
+    public slots:
+    void Get_SplashPercent(QString);
     /*{
-        //qDebug() << "get percent: " << str;
+        qDebug() << "percent: " << str;
         load_Tests->setText(QString("%1: %2").arg(tr("load tests")).arg(str));
     }*/
 
