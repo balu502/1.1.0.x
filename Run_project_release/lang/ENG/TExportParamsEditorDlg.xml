@@ -10,7 +10,7 @@
 	</HorzScrollBar>
 	<VertScrollBar>
 	</VertScrollBar>
-	<Caption>Export settings</Caption>
+	<Caption>Export and report settings</Caption>
 	<Constraints>
 	</Constraints>
 	<Font>
@@ -62,19 +62,171 @@
 	<HelpKeyword></HelpKeyword>
 	<Margins>
 	</Margins>
-	<ActivePage>TabSheet1</ActivePage>
+	<ActivePage>tsReports</ActivePage>
 	<Constraints>
 	</Constraints>
 	<Touch>
 	</Touch>
-<TTabSheet Name="TabSheet1">
+<TTabSheet Name="tsReports">
 	<Hint></Hint>
 	<HelpKeyword></HelpKeyword>
 	<Margins>
 	</Margins>
-	<Caption>Common settings</Caption>
+	<Caption>Report</Caption>
 	<Constraints>
 	</Constraints>
+	<Touch>
+	</Touch>
+<TPanel Name="pnCustomTitle">
+	<Hint></Hint>
+	<HelpKeyword></HelpKeyword>
+	<Margins>
+	</Margins>
+	<Caption></Caption>
+	<Constraints>
+	</Constraints>
+	<Padding>
+	</Padding>
+	<Touch>
+	</Touch>
+<TCheckBox Name="cbCustomReportTitle">
+	<Hint></Hint>
+	<HelpKeyword></HelpKeyword>
+	<Margins>
+	</Margins>
+	<Caption>Custom report title</Caption>
+	<Constraints>
+	</Constraints></TCheckBox>
+<TButton Name="btnEditCustomTitle">
+	<Hint></Hint>
+	<HelpKeyword></HelpKeyword>
+	<Margins>
+	</Margins>
+	<Caption>Edit...</Caption>
+	<CommandLinkHint></CommandLinkHint>
+	<Constraints>
+	</Constraints>
+	<ImageMargins>
+	</ImageMargins></TButton></TPanel>
+<TPanel Name="pnDefault">
+	<Hint></Hint>
+	<HelpKeyword></HelpKeyword>
+	<Margins>
+	</Margins>
+	<Caption></Caption>
+	<Constraints>
+	</Constraints>
+	<Padding>
+	</Padding>
+	<Touch>
+	</Touch>
+<TLabel Name="Label3">
+	<Hint></Hint>
+	<HelpKeyword></HelpKeyword>
+	<Margins>
+	</Margins>
+	<Caption>Laboratory information:</Caption>
+	<Constraints>
+	</Constraints>
+	<Touch>
+	</Touch></TLabel>
+<TMemo Name="mLabInfo">
+	<Hint></Hint>
+	<HelpKeyword></HelpKeyword>
+	<Margins>
+	</Margins>
+	<Constraints>
+	</Constraints>
+	<ImeName></ImeName>
+	<Lines>
+	</Lines>
+	<Touch>
+	</Touch></TMemo>
+<TCheckBox Name="cbLogo">
+	<Hint></Hint>
+	<HelpKeyword></HelpKeyword>
+	<Margins>
+	</Margins>
+	<Caption>Logotype</Caption>
+	<Constraints>
+	</Constraints></TCheckBox>
+<TPanel Name="pnLogo">
+	<Hint></Hint>
+	<HelpKeyword></HelpKeyword>
+	<Margins>
+	</Margins>
+	<Caption></Caption>
+	<Constraints>
+	</Constraints>
+	<Padding>
+	</Padding>
+	<Touch>
+	</Touch>
+<TButton Name="btnLoadLogo">
+	<Hint></Hint>
+	<HelpKeyword></HelpKeyword>
+	<Margins>
+	</Margins>
+	<Caption>Open...</Caption>
+	<CommandLinkHint></CommandLinkHint>
+	<Constraints>
+	</Constraints>
+	<ImageMargins>
+	</ImageMargins></TButton>
+<TPanel Name="pnLogoImg">
+	<Hint></Hint>
+	<HelpKeyword></HelpKeyword>
+	<Margins>
+	</Margins>
+	<Caption></Caption>
+	<Constraints>
+	</Constraints>
+	<Padding>
+	</Padding>
+	<Touch>
+	</Touch>
+<TImage Name="imgLogo">
+	<Hint></Hint>
+	<HelpKeyword></HelpKeyword>
+	<Margins>
+	</Margins>
+	<Constraints>
+	</Constraints>
+	<Picture>
+	</Picture>
+	<Touch>
+	</Touch></TImage></TPanel>
+<TButton Name="btnSaveAs">
+	<Hint></Hint>
+	<HelpKeyword></HelpKeyword>
+	<Margins>
+	</Margins>
+	<Caption>Save as...</Caption>
+	<CommandLinkHint></CommandLinkHint>
+	<Constraints>
+	</Constraints>
+	<ImageMargins>
+	</ImageMargins></TButton></TPanel></TPanel></TTabSheet>
+<TTabSheet Name="tsExportParams">
+	<Hint></Hint>
+	<HelpKeyword></HelpKeyword>
+	<Margins>
+	</Margins>
+	<Caption>Export</Caption>
+	<Constraints>
+	</Constraints>
+	<Touch>
+	</Touch>
+<TPanel Name="pnCommon">
+	<Hint></Hint>
+	<HelpKeyword></HelpKeyword>
+	<Margins>
+	</Margins>
+	<Caption></Caption>
+	<Constraints>
+	</Constraints>
+	<Padding>
+	</Padding>
 	<Touch>
 	</Touch>
 <TLabel Name="Label1">
@@ -82,7 +234,7 @@
 	<HelpKeyword></HelpKeyword>
 	<Margins>
 	</Margins>
-	<Caption>Export folder</Caption>
+	<Caption>Results export directory</Caption>
 	<Constraints>
 	</Constraints>
 	<Touch>
@@ -99,23 +251,30 @@
 	<LeftButton>
 		<Hint></Hint>
 	</LeftButton>
+	<PasswordChar>0</PasswordChar>
 	<RightButton>
 		<Hint></Hint>
 	</RightButton>
 	<Text></Text>
 	<TextHint></TextHint>
 	<Touch>
-	</Touch></TButtonedEdit></TTabSheet>
-<TTabSheet Name="tsReports">
+	</Touch></TButtonedEdit>
+<TCheckBox Name="cbChannelsInfo">
 	<Hint></Hint>
 	<HelpKeyword></HelpKeyword>
 	<Margins>
 	</Margins>
-	<Caption>Reports</Caption>
+	<Caption>Channels information</Caption>
 	<Constraints>
-	</Constraints>
-	<Touch>
-	</Touch>
+	</Constraints></TCheckBox>
+<TCheckBox Name="cbExportReports">
+	<Hint></Hint>
+	<HelpKeyword></HelpKeyword>
+	<Margins>
+	</Margins>
+	<Caption>Export reports</Caption>
+	<Constraints>
+	</Constraints></TCheckBox></TPanel>
 <TPanel Name="pnOptions">
 	<Hint></Hint>
 	<HelpKeyword></HelpKeyword>
@@ -128,47 +287,26 @@
 	</Padding>
 	<Touch>
 	</Touch>
-<TComboBox Name="cbFormat">
+<TPageControl Name="ImageParams">
 	<Hint></Hint>
 	<HelpKeyword></HelpKeyword>
 	<Margins>
 	</Margins>
+	<ActivePage>tsPNG</ActivePage>
 	<Constraints>
 	</Constraints>
-	<ImeName></ImeName>
-	<Text>PDF</Text>
-	<TextHint></TextHint>
 	<Touch>
 	</Touch>
-	<Items><![CDATA[
-PDF
-JPEG
-]]>
-	</Items></TComboBox>
-<TCheckBox Name="cbLegend">
+<TTabSheet Name="tsPDF">
 	<Hint></Hint>
 	<HelpKeyword></HelpKeyword>
 	<Margins>
 	</Margins>
-	<Caption>Legend</Caption>
+	<Caption>tsPDF</Caption>
 	<Constraints>
-	</Constraints></TCheckBox>
-<TCheckBox Name="cbSummary">
-	<Hint></Hint>
-	<HelpKeyword></HelpKeyword>
-	<Margins>
-	</Margins>
-	<Caption>Date, signature</Caption>
-	<Constraints>
-	</Constraints></TCheckBox>
-<TCheckBox Name="cbTitle">
-	<Hint></Hint>
-	<HelpKeyword></HelpKeyword>
-	<Margins>
-	</Margins>
-	<Caption>Title</Caption>
-	<Constraints>
-	</Constraints></TCheckBox>
+	</Constraints>
+	<Touch>
+	</Touch>
 <TPanel Name="pnPDF">
 	<Hint></Hint>
 	<HelpKeyword></HelpKeyword>
@@ -186,7 +324,7 @@ JPEG
 	<HelpKeyword></HelpKeyword>
 	<Margins>
 	</Margins>
-	<Caption>Compression</Caption>
+	<Caption>Compressed</Caption>
 	<Constraints>
 	</Constraints></TCheckBox>
 <TCheckBox Name="cbHightResolution">
@@ -202,9 +340,19 @@ JPEG
 	<HelpKeyword></HelpKeyword>
 	<Margins>
 	</Margins>
-	<Caption>Embed fonts</Caption>
+	<Caption>Embedded fonts</Caption>
 	<Constraints>
-	</Constraints></TCheckBox></TPanel>
+	</Constraints></TCheckBox></TPanel></TTabSheet>
+<TTabSheet Name="tsJPEG">
+	<Hint></Hint>
+	<HelpKeyword></HelpKeyword>
+	<Margins>
+	</Margins>
+	<Caption>tsJPEG</Caption>
+	<Constraints>
+	</Constraints>
+	<Touch>
+	</Touch>
 <TPanel Name="pnJPEG">
 	<Hint></Hint>
 	<HelpKeyword></HelpKeyword>
@@ -222,7 +370,7 @@ JPEG
 	<HelpKeyword></HelpKeyword>
 	<Margins>
 	</Margins>
-	<Caption>JPEG quality</Caption>
+	<Caption>Quality</Caption>
 	<Constraints>
 	</Constraints>
 	<Touch>
@@ -242,7 +390,7 @@ JPEG
 	<HelpKeyword></HelpKeyword>
 	<Margins>
 	</Margins>
-	<Caption>Crop page</Caption>
+	<Caption>Crop images</Caption>
 	<Constraints>
 	</Constraints></TCheckBox>
 <TSpinEdit Name="seResolution">
@@ -258,14 +406,112 @@ JPEG
 	<Margins>
 	</Margins>
 	<Constraints>
-	</Constraints></TSpinEdit></TPanel></TPanel>
-<TCheckBox Name="cbExportReports">
+	</Constraints></TSpinEdit></TPanel></TTabSheet>
+<TTabSheet Name="tsPNG">
 	<Hint></Hint>
 	<HelpKeyword></HelpKeyword>
 	<Margins>
 	</Margins>
-	<Caption>Include sample reports</Caption>
+	<Caption>tsPNG</Caption>
 	<Constraints>
-	</Constraints></TCheckBox></TTabSheet></TPageControl>
+	</Constraints>
+	<Touch>
+	</Touch>
+<TPanel Name="Panel2">
+	<Hint></Hint>
+	<HelpKeyword></HelpKeyword>
+	<Margins>
+	</Margins>
+	<Caption></Caption>
+	<Constraints>
+	</Constraints>
+	<Padding>
+	</Padding>
+	<Touch>
+	</Touch>
+<TLabel Name="Label4">
+	<Hint></Hint>
+	<HelpKeyword></HelpKeyword>
+	<Margins>
+	</Margins>
+	<Caption>Quality</Caption>
+	<Constraints>
+	</Constraints>
+	<Touch>
+	</Touch></TLabel>
+<TLabel Name="Label5">
+	<Hint></Hint>
+	<HelpKeyword></HelpKeyword>
+	<Margins>
+	</Margins>
+	<Caption>Resolution, dpi</Caption>
+	<Constraints>
+	</Constraints>
+	<Touch>
+	</Touch></TLabel>
+<TCheckBox Name="cbPNGCrop">
+	<Hint></Hint>
+	<HelpKeyword></HelpKeyword>
+	<Margins>
+	</Margins>
+	<Caption>Crop images</Caption>
+	<Constraints>
+	</Constraints></TCheckBox>
+<TSpinEdit Name="seQualityPNG">
+	<Hint></Hint>
+	<HelpKeyword></HelpKeyword>
+	<Margins>
+	</Margins>
+	<Constraints>
+	</Constraints></TSpinEdit>
+<TSpinEdit Name="seResolutionPNG">
+	<Hint></Hint>
+	<HelpKeyword></HelpKeyword>
+	<Margins>
+	</Margins>
+	<Constraints>
+	</Constraints></TSpinEdit></TPanel></TTabSheet></TPageControl>
+<TComboBox Name="cbFormat">
+	<Hint></Hint>
+	<HelpKeyword></HelpKeyword>
+	<Margins>
+	</Margins>
+	<Constraints>
+	</Constraints>
+	<ImeName></ImeName>
+	<Text></Text>
+	<TextHint></TextHint>
+	<Touch>
+	</Touch>
+	<Items><![CDATA[
+PDF
+JPEG
+PNG
+]]>
+	</Items></TComboBox>
+<TCheckBox Name="cbLegend">
+	<Hint></Hint>
+	<HelpKeyword></HelpKeyword>
+	<Margins>
+	</Margins>
+	<Caption>Legend</Caption>
+	<Constraints>
+	</Constraints></TCheckBox>
+<TCheckBox Name="cbSummary">
+	<Hint></Hint>
+	<HelpKeyword></HelpKeyword>
+	<Margins>
+	</Margins>
+	<Caption>Summary</Caption>
+	<Constraints>
+	</Constraints></TCheckBox>
+<TCheckBox Name="cbTitle">
+	<Hint></Hint>
+	<HelpKeyword></HelpKeyword>
+	<Margins>
+	</Margins>
+	<Caption>Title</Caption>
+	<Constraints>
+	</Constraints></TCheckBox></TPanel></TTabSheet></TPageControl>
 <TImageList Name="ImageList1"></TImageList>
-</TExportParamsEditorDlg>
+]</TExportParamsEditorDlg>

@@ -179,17 +179,18 @@
 	<sCalculatingStage RU='Вычисление: этап ' Translated='Calculating stage: '/>
 	<sCreatingViews RU='Создание таблиц...' Translated='Creating views...'/>
 	<sFrom RU=' из ' Translated=' from '/> 
-	<sAndroflor RU='Андрофлор®' Translated='Androflor'/> 
-	<sAndroflor1 RU='Андрофлор' Translated='Androflor'/>
-	<sBacScrPlus RU='БакСкрин ПЛЮС' Translated='BacScreen plus'/> 
-	<sMultplex RU='Мультиплекс Q+' Translated='Multiplex Q+'/> 		
+	<sAndroflor RU='Андрофлор' Translated='Androflor'/> 
+	<sAndroflorR RU='Андрофлор®' Translated='Androflor'/>
 	<sAndroflorScr RU='Андрофлор® Скрин' Translated='Androflor Screen'/>
 	<sAndroflorScrA RU='Андрофлор® Скрин_А' Translated='Androflor Screen_A'/>
 	<sAndroflorA RU='Андрофлор®+А' Translated='Androflor+A'/>
 	<sAndroflor_A RU='Андрофлор®_А' Translated='Androflor_A'/>
+	<sAndroflorTitle RU='Исследование микрофлоры урогенитального тракта мужчин методом ПЦР в режиме реального времени Андрофлор®' Translated='Urogenital microbiome composition test. Androflor®'/>
 	<sFemoflor RU='Фемофлор' Translated='Femoflor'/> 
 	<sFemoflor16 RU='Фемофлор 16' Translated='Femoflor 16'/> 
 	<sFemoflorScr RU='ФЕМОФЛОР СКРИН' Translated='Femoflor Screen'/> 
+
+	
 	<sFemoflorScr_384 RU='ФЕМОФЛОР СКРИН_384' Translated='Femoflor Screen_384'/> 
 	<sFemoflor16_384 RU='Фемофлор 16_384' Translated='Femoflor 16_384'/> 
 	<sHPV4 RU='HPV_квант-4' Translated='HPV_quant-4'/> 
@@ -342,7 +343,6 @@
 	<sNormingBy RU='Нормировка результатов по' Translated='Normalization of results'/>
 	<sAddChannel RU='Добавить канал' Translated='Add channel'/>
 	<sImmunoQuan RU='ИммуноКвантэкс' Translated='Immunity'/>
-	<sImmunoQuanС RU='ИммуноКвантэкс C' Translated='Immunity C'/>
 	<sConcByMl RU='Концентрация копий/мл' Translated='Concentration copies/ml'/>
 	<sConcByME RU='Концентрация копий/МЕ' Translated='Concentration copies/IU'/>
 	<sConcByPg RU='Концентрация копий/PG' Translated='Concentration copies/PG'/>
@@ -352,7 +352,8 @@
 	<sDefaultValue RU='Значение по умолчанию' Translated='Set default value'/> 
 	<sCopyFromFeld RU='Копировать данные из поля ' Translated='Copy data from '/> 
 	<sAutocorrection RU='Автокоррекция' Translated='Auto correction'/> 
-	<sExportPath RU='Не указана папка экспорта результатов' Translated='Results export folder not specified'/> 
+	<sExportPath RU='Не указана папка экспорта результатов' Translated='Results export folder not specified'/>
+	<sMultiplex RU='Мультиплекс Q+' Translated='Multiplex Q+'/>	
 	<sExportSucces RU='Результаты успешно экспортированы в файл:' Translated='The results have been successfully exported to a file:'/> 
 	<sExportFailed RU='Экспорт результатов не выполнен' Translated='Export failed'/> 
 	<sBacResistaGLA RU='БакРезиста GLA Van/Mec' Translated='BacResista GLA Van/Mec'/>
@@ -362,4 +363,26 @@ HPV квант-4' Translated='HPV quant-4'/>
 HPV квант-15' Translated='HPV quant-15'/>
 	<sHPVTitle21 RU='Выявление, типирование и количественное определение вируса папилломы человека методом ПЦР.
 HPV квант-21' Translated='HPV quant-21'/>	
+	<sExportConflict RU= 'Обнаружен конфликт настроек формата выгрузки. Экспорт не выполнен.' Translated='A conflict has been detected in the export settings. Export failed.'/>
+	<sPCRResearch RU= 'Результат исследования методом ПЦР' Translated='PCR results'/>
+	<sExportSettingsTitle RU= 'Настройки экспорта результатов' Translated='Export settings'/>
+	<sDefaultSettngs RU= 'Настройки по умолчанию' Translated='Default'/>
+	<sEmbeddedFonts RU= 'Встроенные шрифты' Translated='Embedded fonts'/>
+	<sCompressed RU= 'Сжатие' Translated='Compressed'/>
+	<sQuality RU= 'Качество' Translated='Quality'/>
+	<sPrintOptimized RU= 'Оптимизация' Translated='Print optimized'/>
+	<sResolution RU= 'Разрешение (dpi)' Translated='Resolution (dpi)'/>
+	<sJPEGQuality RU= 'Качество JPEG' Translated='JPEG quality'/>
+	<sCropImages RU= 'Обрезать страницу' Translated='Crop images'/>
+	<sExportFormat RU= 'Формат экспорта' Translated='Export format'/>
+	<sPrintTitle RU= 'Шапка отчета' Translated='Report title'/>
+	<sPrintSummary RU= 'Подвал отчета' Translated='Report footer'/>
+	<sExportLegend RU= 'Описание бланка результатов' Translated='Report description'/>
+	<sPDFParams RU= 'Параметры PDF' Translated='PDF parameters'/>
+	<sJPEGParams RU= 'Параметры JPEG' Translated='JPEG parameters'/>
+	<BacScreenPlus RU= 'БакСкрин ПЛЮС' Translated='BacScreen PLUS'/>
+	<sHPV_quant-21_A RU='HPV_квант-21_А' Translated='HPV_quant-21_A' />
+	<sTNC_Complex RU='TNC_Комплекс' Translated='TNC_Complex' />
+	<sSARS-CoV-2_Influenza RU='SARS-CoV-2/Грипп Комплекс' Translated='SARS-CoV-2/Influenza' />	
+	
 	</RSStrings>

@@ -4,12 +4,12 @@
 <context>
     <name>MyTreeWidget</name>
     <message>
-        <location filename="../test_editor.cpp" line="2810"/>
+        <location filename="../test_editor.cpp" line="2811"/>
         <source>You must clear the editor field!</source>
         <translation>Необходимо очистить поле редактора!</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="2819"/>
+        <location filename="../test_editor.cpp" line="2820"/>
         <source>Do You want to move selected test to the catalog: </source>
         <translation>Вы хотите переместить тест в каталог: </translation>
     </message>
@@ -92,18 +92,18 @@
         <translation>Предварительный анализ</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1724"/>
+        <location filename="../test_editor.cpp" line="1725"/>
         <source>Yes</source>
         <translation>Да</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1725"/>
+        <location filename="../test_editor.cpp" line="1726"/>
         <source>No</source>
         <translation>Нет</translation>
     </message>
     <message>
         <location filename="../test_editor.cpp" line="356"/>
-        <location filename="../test_editor.cpp" line="1726"/>
+        <location filename="../test_editor.cpp" line="1727"/>
         <source>Cancel</source>
         <translation>Отмена</translation>
     </message>
@@ -140,144 +140,144 @@
     </message>
     <message>
         <location filename="../test_editor.cpp" line="656"/>
-        <location filename="../test_editor.cpp" line="1320"/>
+        <location filename="../test_editor.cpp" line="1321"/>
         <source>Container</source>
         <translation>Контейнер</translation>
     </message>
     <message>
         <location filename="../test_editor.cpp" line="995"/>
-        <location filename="../test_editor.cpp" line="1034"/>
+        <location filename="../test_editor.cpp" line="1032"/>
         <source>Save test</source>
         <translation>Сохранить тест/контейнер</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1034"/>
+        <location filename="../test_editor.cpp" line="1032"/>
         <source>No changes to file!</source>
         <translation>Нет изменений в файле!</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1052"/>
+        <location filename="../test_editor.cpp" line="1050"/>
         <source>Attention! Unable to save the container!</source>
         <translation>Внимание! Невозможно сохранить контейнер!</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1053"/>
+        <location filename="../test_editor.cpp" line="1051"/>
         <source>Different amplification programs were found for tests...</source>
         <translation>Обнаружены разные программы амплификации для тестов...</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1080"/>
+        <location filename="../test_editor.cpp" line="1082"/>
         <source>Do You want to save the new test: </source>
         <translation>Вы хотите сохранить новый тест/контейнер: </translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1081"/>
+        <location filename="../test_editor.cpp" line="1083"/>
         <source>Do You want to save changes in the test: </source>
         <translation>Вы хотите сохранить изменения в тесте: </translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1240"/>
-        <location filename="../test_editor.cpp" line="1430"/>
+        <location filename="../test_editor.cpp" line="1241"/>
+        <location filename="../test_editor.cpp" line="1431"/>
         <source>Choose name of the Test...</source>
         <translation>Выберите имя для теста</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1241"/>
-        <location filename="../test_editor.cpp" line="1431"/>
+        <location filename="../test_editor.cpp" line="1242"/>
+        <location filename="../test_editor.cpp" line="1432"/>
         <source>Name of the Test:</source>
         <translation>Имя теста:</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1251"/>
+        <location filename="../test_editor.cpp" line="1252"/>
         <source>New Test</source>
         <translation>Новый тест</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1251"/>
-        <location filename="../test_editor.cpp" line="1340"/>
-        <location filename="../test_editor.cpp" line="1452"/>
+        <location filename="../test_editor.cpp" line="1252"/>
+        <location filename="../test_editor.cpp" line="1341"/>
+        <location filename="../test_editor.cpp" line="1453"/>
         <source>The test with this name already exists! Select other name...</source>
         <translation>Тест с таким именем уже существует! Выберите другое имя...</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1330"/>
+        <location filename="../test_editor.cpp" line="1331"/>
         <source>Choose name of the Container...</source>
         <translation>Выберите имя контейнера</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1331"/>
+        <location filename="../test_editor.cpp" line="1332"/>
         <source>Name of the Container:</source>
         <translation>Имя контейнера:</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1409"/>
+        <location filename="../test_editor.cpp" line="1410"/>
         <source>Choose type of the Test...</source>
         <translation>Выберите тип теста</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1410"/>
+        <location filename="../test_editor.cpp" line="1411"/>
         <source>List of type Tests:</source>
         <translation>Список типов тестов:</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1416"/>
+        <location filename="../test_editor.cpp" line="1417"/>
         <source>Attention! Select the correct test type</source>
         <translation>Внимание! Выберите корректный тип теста</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1437"/>
+        <location filename="../test_editor.cpp" line="1438"/>
         <source>Attention! Enter a name for the test</source>
         <translation>Внимание! Введите имя теста</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1719"/>
+        <location filename="../test_editor.cpp" line="1720"/>
         <source>Attention</source>
         <translation>Внимание</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1721"/>
+        <location filename="../test_editor.cpp" line="1722"/>
         <source>You don&apos;t save change of test! Will you want to save this change?</source>
         <translation>Вы не сохранили внесённые изменения в тесте! Вы хотите сохранить эти изменения?</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="1939"/>
+        <location filename="../test_editor.cpp" line="1940"/>
         <source>Preliminary_analysis</source>
         <translation>Предварительный анализ</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="2034"/>
+        <location filename="../test_editor.cpp" line="2035"/>
         <source>new item</source>
         <translation>Новая папка</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="2062"/>
+        <location filename="../test_editor.cpp" line="2063"/>
         <source>Do You want to DELETE all tests </source>
         <translation>Вы хотите удалить все тесты в кталоге </translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="2241"/>
-        <location filename="../test_editor.cpp" line="2473"/>
+        <location filename="../test_editor.cpp" line="2242"/>
+        <location filename="../test_editor.cpp" line="2474"/>
         <source>test move</source>
         <translation>Переместить тест в ...</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="2280"/>
+        <location filename="../test_editor.cpp" line="2281"/>
         <source>You must clear the editor field!</source>
         <translation>Необходимо очистить поле редактора!</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="2287"/>
+        <location filename="../test_editor.cpp" line="2288"/>
         <source>Do You want to move selected test to the catalog: </source>
         <translation>Вы хотите переместить тест в каталог: </translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="2061"/>
-        <location filename="../test_editor.cpp" line="2617"/>
+        <location filename="../test_editor.cpp" line="2062"/>
+        <location filename="../test_editor.cpp" line="2618"/>
         <source>Delete test</source>
         <translation>Удалить тест</translation>
     </message>
     <message>
-        <location filename="../test_editor.cpp" line="2618"/>
+        <location filename="../test_editor.cpp" line="2619"/>
         <source>Do You want to DELETE the test: </source>
         <translation>Вы хотите удалить тест: </translation>
     </message>

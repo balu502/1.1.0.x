@@ -988,7 +988,7 @@ void Test_editor::Save_Test(bool confirm)
     QString text_xml;
     int res;
     char *pchar;
-    QString name_test;
+    QString name_test, name_str;
     int method;
     bool modified;
     bool NotEqual = false;
@@ -1012,15 +1012,13 @@ void Test_editor::Save_Test(bool confirm)
     if(Ext_Editor)
     {        
         save_Editor(&pchar, &modified);
-        if(!confirm) modified = true;
-        //qDebug() << "modified: (save) " << modified;
+        //qDebug() << "modified: (save) " << modified << confirm << From_Protocol;
+        if(!confirm) modified = true;        
         text_xml = QString::fromUtf8(pchar);
         name_test = QString(list.at(1)).trimmed();
         method = Map_editorEXT.key(list.at(0), 0);
 
-        name = name_test.toStdString();
-
-        //qDebug() << "method: " << method << name_test;
+        name = name_test.toStdString();        
     }
 
     Add_CatalogXML(text_xml);
@@ -1061,14 +1059,18 @@ void Test_editor::Save_Test(bool confirm)
 
         //
 
+
         foreach(ptest, *TESTs)
         {
-            if(ptest->header.Name_Test == name_test.toStdString())
+            //qDebug() << "name_test: " << name_test << QString::fromStdString(ptest->header.Name_Test);
+            name_str = QString::fromStdString(ptest->header.Name_Test);
+            if(map_TestTranslate->size()) name_str = map_TestTranslate->value(name_str, name_str);
+            if(name_str == name_test)
             {
                 new_test = false;
                 if(ptest->header.Name_Test == "simple" &&
                    ptest->header.ID_Test == "-1" &&
-                   ptest->header.Type_analysis == 0x0000) simple_test = true;
+                   ptest->header.Type_analysis == 0x0000) simple_test = true;                
 
                 break;
             }
@@ -1085,8 +1087,7 @@ void Test_editor::Save_Test(bool confirm)
             if(res == QMessageBox::No) return;
         }
 
-        if(new_test) ptest = new rt_Test();                
-
+        if(new_test) ptest = new rt_Test();
         LoadXML_Test(root, ptest);
 
         if(axgp)

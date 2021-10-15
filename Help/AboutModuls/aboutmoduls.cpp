@@ -86,12 +86,12 @@ void AboutModuls::Fill_Info()
     Files_DTR("forms");
 
     //... DTReportTools.dll
-    char path[MAX_PATH] = "";
+    /*char path[MAX_PATH] = "";
     SHGetSpecialFolderPathA(NULL, path, CSIDL_SYSTEMX86, false); //CSIDL_SYSTEMX86 == 0x0029
     QString Path = QString::fromUtf8(path);
     Path += "\\DTReportTools.dll";
     fi.setFile(Path);
-    //qDebug() << "DTReportTools.dll: " << fi.exists();
+    qDebug() << "DTReportTools.dll: " << fi.exists() << Path;
 
     if(fi.isFile())
     {
@@ -127,7 +127,7 @@ void AboutModuls::Fill_Info()
         item->setText(2, text);
         text = fi.lastModified().toString("dd.MM.yyyy");
         item->setText(3, text);
-    }
+    }*/
     //...
 
     info->resizeColumnToContents(0);
@@ -264,7 +264,7 @@ void AboutModuls::Files_Version(QString dir_name)
                         if(VerQueryValueA(buf, cmd.toStdString().c_str(), (LPVOID*)&ValueBuf, &Len) != 0)
                         {
                             cmd = QString::fromStdString(ValueBuf);
-                            if(cmd != "dna-technology" && fn != "DTReport2.dll") continue;
+                            if(cmd != "dna-technology" && fn != "DTReport2.dll" && fn != "DTReportTools.dll") continue;
 
                             if(dir_name.isEmpty())
                             {

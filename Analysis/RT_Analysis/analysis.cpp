@@ -1380,7 +1380,7 @@ void Analysis::save()
     bool save_Comments = false;
 
 
-    //qDebug() << "save: " << prot->preference_Pro.size() << prot;
+    qDebug() << "save: " << QString::fromStdString(prot->xml_filename);
 
     //QString FileName = QString("Protocol(%1)_%2.rt").arg(prot->count_Tubes).arg(QDateTime::currentDateTime().toString("d-M-yy_H-m-s"));
     QString FileName = Check_ValidNameFile(QString::fromStdString(prot->name));
