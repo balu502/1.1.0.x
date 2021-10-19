@@ -371,12 +371,15 @@ void Container::Load_listTests()
     List_Tests->blockSignals(false);
 
     //... Check on valid ptest ...
+    qDebug() << "CHECKED: before " << checked_Tests;
     for(i=checked_Tests.size()-1; i>=0; i--)
     {
         text = checked_Tests.at(i);
+        qDebug() << "checked_Tests: " << i << text;
         p_test = map_TESTs.value(text,NULL);
         if(p_test == NULL) checked_Tests.remove(i);
     }
+    qDebug() << "CHECKED: after " << checked_Tests;
 
     //... Load List_Container ...
     foreach(text, checked_Tests)
@@ -513,18 +516,25 @@ void Container::Set_Test(std::string xml, std::string name)
                     child_element = child_node.firstChildElement("name");
                     if(!child_element.isNull() && child_element.text() == "Checked_Tests")
                     {
-                        text = child_node.firstChildElement("value").text();
-                        list = text.split("\r\n");
+                        text = child_node.firstChildElement("value").text();                        
+                        //list = text.split("\r\n");
+                        list = text.split("\t");
+
+                        qDebug() << "checked: " << text << list;
 
                         foreach(text, list)
                         {
                             //qDebug() << "checked test: " << text;
+                            //text.remove("\r");
+                            //text.remove("\n");
+                            if(text.trimmed().isEmpty()) continue;
                             checked_Tests.append(text);
                             //ptest = (rt_Test*)(text.toInt(&ok));
                             //if(ok) checked_Tests.append(QString::fromStdString(ptest->header.ID_Test));
 
                             //List_Container->addItem(text);
                         }
+                        qDebug() << "checked_Tests: " << checked_Tests;
 
                     }
                     continue;
@@ -613,11 +623,12 @@ void Container::fill_Test(rt_Test *ptest)
     //}
     for(i=0; i<List_Container->count(); i++)
     {
-        list.append(List_Container->item(i)->text());
+        text = List_Container->item(i)->text();
+        list.append(text);
     }
 
 
-    if(list.size()) text = list.join("\r\n");
+    if(list.size()) text = list.join("\t"); //list.join("\r\n");
     else text = "";
     property->value = text.toStdString();
     ptest->preference_Test.push_back(property);

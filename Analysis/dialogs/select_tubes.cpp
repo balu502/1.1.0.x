@@ -691,6 +691,8 @@ void Select_tubes::cellSelected(int row, int col)
             Select_Grid->map_ColorHistory.insert(pos, p_prot->color_tube.at(pos));
             p_prot->color_tube.at(pos) = color.rgb();
             ColorTube_Current.replace(pos, color.rgb());
+
+            //qDebug() << "color: " << pos << p_prot->color_tube.at(pos);
         }
     }
     else

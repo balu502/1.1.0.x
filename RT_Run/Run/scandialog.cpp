@@ -113,6 +113,7 @@ ScanDialog::ScanDialog(QWidget *parent, bool def_Param): QDialog(parent)
     bool ok;
     int limit = 10;  // define Limit_startup
     Limit_startup = limit;
+    QString limit_str;
 
     QFile file(qApp->applicationDirPath() + "/calibration/registrated.xml");
     if(!file.exists())
@@ -137,7 +138,13 @@ ScanDialog::ScanDialog(QWidget *parent, bool def_Param): QDialog(parent)
         {
             if(doc.setContent(&file))
             {
-                root = doc.documentElement();                
+                root = doc.documentElement();
+                if(root.hasAttribute("Limit"))
+                {
+                    limit_str = root.attribute("Limit","10");
+                    Limit_startup = limit_str.toInt(&ok);
+                    if(!ok) Limit_startup = 10;
+                }
 
                 for(i=0; i<root.childNodes().size(); i++)
                 {

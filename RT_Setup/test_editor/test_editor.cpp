@@ -2161,6 +2161,8 @@ void Test_editor::contextMenu_Catalog(QPoint pos)
     QTreeWidgetItem *item = tests_list->itemAt(pos);
     bool has_child = false;
 
+    qDebug() << "contextMenu_Ctalog: " << Whats_Type(item) << item->parent();
+
     if(From_Protocol) return;
 
     has_child = (bool)item->childCount();
@@ -2452,7 +2454,8 @@ bool Test_editor::Whats_Type(QTreeWidgetItem *item)
             if(id > 0)
             {
                 ptest = (rt_Test*)id;
-                if(ptest->header.Type_analysis < 0x1000) res = false;
+                if(ptest->header.Type_analysis < 0x1000 &&
+                   ptest->header.Type_analysis != 0x0033) res = false;
             }
             break;
         }

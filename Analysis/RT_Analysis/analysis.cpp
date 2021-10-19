@@ -1381,8 +1381,7 @@ void Analysis::save()
 
 
     qDebug() << "save: " << QString::fromStdString(prot->xml_filename);
-
-    //QString FileName = QString("Protocol(%1)_%2.rt").arg(prot->count_Tubes).arg(QDateTime::currentDateTime().toString("d-M-yy_H-m-s"));
+    /*
     QString FileName = Check_ValidNameFile(QString::fromStdString(prot->name));
     QString FileName_Unique = Unique_FileName(FileName);
 
@@ -1393,6 +1392,15 @@ void Analysis::save()
 
     QString dirName = user_Dir.absolutePath() + "/" + FileName_Unique;
     dirName = Original_FileName(dirName);
+    */
+    // Goncharova ...
+    QString FileName = FileName_Protocol->text().trimmed();
+    QFileInfo fi(FileName);
+    QString suffix = fi.suffix().trimmed();
+    qDebug() << "suffix: " << suffix;
+    if(suffix != "rt") FileName += ".rt";
+    QString dirName = Original_FileName(FileName);
+    // ...
 
     bool sts = true;
     QString text = tr(" didn't save!");
@@ -4318,14 +4326,27 @@ QString Analysis::Original_FileName(QString fn)
     QFileInfo fi(fn);
     int id = 0;
     QString file_name;
-    QString name, str_add;
+    QString name, str_add, str;
     QString suffix = fi.suffix();
 
     if(!fi.exists()) return(fn);
 
-    QString dir = fi.absolutePath();
-    name = dir + "/" + fi.completeBaseName();
+    QString BaseName = fi.completeBaseName();
+    while(id < 100)
+    {
+        id++;
+        str = QString("_(%1)").arg(id);
+        if(BaseName.endsWith(str))
+        {
+            BaseName.remove(str);
+            break;
+        }
+    }
 
+    QString dir = fi.absolutePath();
+    name = dir + "/" + BaseName;
+
+    id = 0;
     while(id < 100)
     {
         id++;
@@ -4452,18 +4473,19 @@ bool Analysis::Color_IsChanged()
             foreach(ptube, psample->tubes)
             {
                 pos = ptube->pos;
+                //qDebug() << "color,pos: " << pos << ptube->color << prot->color_tube.at(pos);
                 if(ptube->color != prot->color_tube.at(pos))
                 {
                     ptube->color = prot->color_tube.at(pos);
                     change_color = true;
-                }
-                break;
+                    break;
+                }                
             }
             if(change_color) break;
         }
         if(change_color) break;
     }
-
+    //qDebug() << "change_color:" << change_color;
     return(change_color);
 }
 //-----------------------------------------------------------------------------

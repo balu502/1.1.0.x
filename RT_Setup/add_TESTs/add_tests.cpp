@@ -645,7 +645,8 @@ void Add_TESTs::Load_Containers()
             if(property->name == "Checked_Tests")
             {
                 text = QString::fromStdString(property->value);
-                list = text.split("\r\n");
+                //list = text.split("\r\n");
+                list = text.split("\t");
 
                 foreach(text, list)
                 {
