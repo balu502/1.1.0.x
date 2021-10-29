@@ -25,6 +25,8 @@ int main(int argc, char *argv[])
     QStringList args = a.arguments();
     int port = 9011;
     bool ok;
+
+    //qDebug() << "args.size(): "  << args.size();
     if(args.size() > 1)
     {
         port = args.at(1).toInt(&ok);
@@ -39,8 +41,7 @@ int main(int argc, char *argv[])
         RunSettings->endGroup();
 
         delete RunSettings;
-    }
-
+    }    
 
     Server_USB w(port);
     w.show();

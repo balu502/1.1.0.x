@@ -22,7 +22,9 @@ Analyser_Quantity::Analyser_Quantity()
 {
     MainBox = NULL;
     ru_Lang = false;
-    readCommonSettings();    
+    readCommonSettings();
+
+    Calc_StValue = false;
 }
 //-----------------------------------------------------------------------------
 //---
@@ -99,10 +101,18 @@ void* Analyser_Quantity::Create_Win(void *pobj, void *main)
     f.setBold(true);
     Tests_Box->setFont(f);
     Tests_Label = new QLabel(tr("Test: "), MainBox);
+    calc_St = new QPushButton(QIcon(":/images/St.png"),"", MainBox);
+    calc_St->setToolTip(tr("Calculated value for standards"));
+    calc_St->setObjectName("Transparent");
+    calc_St->setIconSize(QSize(24,24));
+    calc_St->setFlat(true);
+    calc_St->setCheckable(true);
+    calc_St->setChecked(false);
     QHBoxLayout *horiz_layout = new QHBoxLayout;
     horiz_layout->addWidget(Tests_Label, 1, Qt::AlignRight);
     horiz_layout->addWidget(Tests_Box, 0, Qt::AlignRight);
-    horiz_layout->addWidget(Fluor, 0, Qt::AlignRight);    
+    horiz_layout->addWidget(Fluor, 0, Qt::AlignRight);
+    horiz_layout->addWidget(calc_St, 0, Qt::AlignRight);
 
     Tab_Control = new QTabWidget(MainBox);
     Standart_Table = new QTableWidget(MainBox);
@@ -153,6 +163,7 @@ void* Analyser_Quantity::Create_Win(void *pobj, void *main)
     main_spl->addWidget(control_spl);
     main_spl->addWidget(Tab_Result);
 
+
     connect(Tests_Box, SIGNAL(currentIndexChanged(int)), this, SLOT(Fill_StdCurveForTest(int)));
     connect(Fluor, SIGNAL(currentIndexChanged(int)), this, SLOT(Fill_StdCurveForFluor(int)));
     connect(Standart_Table, SIGNAL(cellChanged(int,int)), this, SLOT(Changed_StandartsParameters(int,int)));
@@ -165,6 +176,7 @@ void* Analyser_Quantity::Create_Win(void *pobj, void *main)
     connect(Open_addProtocol, SIGNAL(clicked(bool)), this, SLOT(Open_AdditionalProtocol()));
     connect(FilePath_Label, SIGNAL(Resize()), this, SLOT(Resize_FilePath()));
     connect(copy_to_clipboard_on_column, SIGNAL(triggered(bool)), this, SLOT(to_ClipBoard_ByColumn()));
+    connect(calc_St, SIGNAL(clicked(bool)), this, SLOT(Calculate_StandartValue()));
 
     return(MainBox);
 }
@@ -228,6 +240,7 @@ void Analyser_Quantity::Destroy_Win()
 
         delete fluor_delegate;
         delete Fluor;
+        delete calc_St;
 
         delete standarts_Delegate;
         Standart_Table->clear();
@@ -262,6 +275,7 @@ void Analyser_Quantity::GetInformation(QVector<QString> *info)
     info->append("0x0001");
     info->append(tr("Quantity_PCR"));
 }
+
 //-----------------------------------------------------------------------------
 //--- readCommonSettings()
 //-----------------------------------------------------------------------------
@@ -897,7 +911,7 @@ void Analyser_Quantity::Fill_ResultsTable()
                                 item->setText(text);
                                 break;
                     case 3:         // Conc_calc
-                                if(sample->type == mStandart) text = QString::number(sample->conc.at(i),'f',0);
+                                if(sample->type == mStandart && !Calc_StValue) text = QString::number(sample->conc.at(i),'f',0);
                                 else text = QString::number(sample->conc_calc.at(i),'f',0);
                                 text += QString("~%1").arg(i);
                                 item->setText(text);
@@ -1859,7 +1873,7 @@ void Analyser_Quantity::StdCurve_Calculate(QString id_test, int id_ch, void *p)
         X.append(sample->conc_calc.at(id_ch));
         dvalue = sample->conc_calc.at(id_ch);
 
-        if(sample->type == mStandart) dvalue = sample->conc.at(id_ch);
+        if(sample->type == mStandart && !Calc_StValue) dvalue = sample->conc.at(id_ch);
 
         // Fill result properties of samples in Protocol
         sample_Plate = sample->sample_Plate;
@@ -2151,6 +2165,23 @@ void Analyser_Quantity::Changed_StandartsParameters(int row, int col)
 //-----------------------------------------------------------------------------
 void Analyser_Quantity::SaveResults_Quantity()
 {
+
+}
+//-----------------------------------------------------------------------------
+//--- SaveResults_Quantity()
+//-----------------------------------------------------------------------------
+void Analyser_Quantity::Calculate_StandartValue()
+{
+    //qDebug() << "calculate St: " << calc_St->isChecked();
+
+    bool state = calc_St->isChecked();
+
+    if(state) calc_St->setIcon(QIcon(":/images/St_calc.png"));
+    else calc_St->setIcon(QIcon(":/images/St.png"));
+
+    Calc_StValue = state;
+
+    if(Standart_Table->rowCount()) Changed_StandartsParameters(0,0);
 
 }
 

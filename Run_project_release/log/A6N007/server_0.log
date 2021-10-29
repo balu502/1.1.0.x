@@ -1,0 +1,34 @@
+28-10-21 18:04:32 Start Dt-server. Version 3.00.00 Sep  3 2021 17:27:25
+28-10-21 18:04:34 Initialisation of device is begin.
+28-10-21 18:04:34 Assign serial number from parameters string A6N007
+28-10-21 18:04:34 Found devices with serial number A6N007
+28-10-21 18:04:34 Connect to devices A6N007
+28-10-21 18:04:34 Device observe as DT384
+28-10-21 18:04:34 Initialisation of device was finished successfully.
+28-10-21 18:04:34 Collection of information about the device is begin.
+28-10-21 18:04:35 Information collection about the device is complete.
+28-10-21 18:04:35 Begin work with device.
+28-10-21 18:05:19 Start Dt-server. Version 3.00.00 Sep  3 2021 17:27:25
+28-10-21 18:05:21 Initialisation of device is begin.
+28-10-21 18:05:21 Assign serial number from parameters string A6N007
+28-10-21 18:05:21 Found devices with serial number A6N007
+28-10-21 18:05:21 Connect to devices A6N007
+28-10-21 18:05:21 Device observe as DT384
+28-10-21 18:05:21 Initialisation of device was finished successfully.
+28-10-21 18:05:21 Collection of information about the device is begin.
+28-10-21 18:05:23 Information collection about the device is complete.
+28-10-21 18:05:23 Begin work with device.
+28-10-21 18:06:02 Read sector request.
+28-10-21 18:06:02 Read sector completed.
+28-10-21 18:06:02 Setup reagent contract.
+28-10-21 18:06:02 Reagent contract setup with parameter CRYC
+28-10-21 18:30:24 Start Dt-server. Version 3.00.00 Sep  3 2021 17:27:25
+28-10-21 18:30:26 Initialisation of device is begin.
+28-10-21 18:30:26 Assign serial number from parameters string A6N007
+28-10-21 18:30:26 Found devices with serial number A6N007
+28-10-21 18:30:26 Connect to devices A6N007
+28-10-21 18:30:26 Device observe as DT384
+28-10-21 18:30:26 Initialisation of device was finished successfully.
+28-10-21 18:30:26 Collection of information about the device is begin.
+28-10-21 18:30:28 Information collection about the device is complete.
+28-10-21 18:30:28 Begin work with device.

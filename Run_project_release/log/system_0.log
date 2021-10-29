@@ -1,0 +1,18 @@
+28-10-21 18:05:04  WinID=6704f8 Get event on finish program from server of USB.
+28-10-21 18:05:04  WinID=6704f8 Stop Dt-server.
+28-10-21 18:05:19  WinID=2308d4 Start Dt-server. Ver. 3.00.00 Sep  3 2021 17:27:25
+28-10-21 18:05:19  WinID=2308d4 Device name A6N007 Port=9012
+28-10-21 18:27:57  WinID=2308d4 Get event on finish program from server of USB.
+28-10-21 18:27:58  WinID=2308d4 Stop Dt-server.
+28-10-21 18:28:54  WinID=180718 Start Dt-server. Ver. 3.00.00 Sep  3 2021 17:27:25
+28-10-21 18:28:54  WinID=180718 Device name A6N007 Port=9112
+28-10-21 18:28:54  WinID=180718 Unable to start the server. Network error. Incorrect port number.
+28-10-21 18:28:54  WinID=180718 Stop Dt-server.
+28-10-21 18:29:39  WinID=5d08e6 Start Dt-server. Ver. 3.00.00 Sep  3 2021 17:27:25
+28-10-21 18:29:39  WinID=5d08e6 Device name A6N007 Port=9112
+28-10-21 18:29:39  WinID=5d08e6 Unable to start the server. Network error. Incorrect port number.
+28-10-21 18:29:39  WinID=5d08e6 Stop Dt-server.
+28-10-21 18:30:24  WinID=130438 Start Dt-server. Ver. 3.00.00 Sep  3 2021 17:27:25
+28-10-21 18:30:24  WinID=130438 Device name A6N007 Port=9012
+28-10-21 18:30:33  WinID=130438 Get event on finish program from server of USB.
+28-10-21 18:30:33  WinID=130438 Stop Dt-server.

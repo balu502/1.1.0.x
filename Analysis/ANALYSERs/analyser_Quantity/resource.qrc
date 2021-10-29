@@ -14,5 +14,7 @@
         <file>images/null.png</file>
         <file>translations/analyser_quantity_en.qm</file>
         <file>images/open_flat.png</file>
+        <file>images/St_calc.png</file>
+        <file>images/St.png</file>
     </qresource>
 </RCC>

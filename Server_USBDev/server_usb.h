@@ -164,7 +164,7 @@ private:
     QString ip_addres;
 
     //... NetWork ...
-    QTcpServer* m_ptcpServer;
+    QTcpServer* m_ptcpServer;    
     //ushort      m_nNextBlockSize;
     quint32      m_nNextBlockSize;
     QLabel      *net_message;

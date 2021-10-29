@@ -189,6 +189,23 @@ Main_RT::Main_RT(QWidget *parent)
     connect(Web, SIGNAL(message_FromServer(QString)), Web_Dialog, SLOT(get_MessageFromServer(QString)));
     connect(Web, SIGNAL(message_ToServer(QString)), Web_Dialog, SLOT(send_MessageToServer(QString)));
 
+
+    connect(&pweb,      SIGNAL(objectCreated(QObject*,QUrl)),
+             this,      SLOT(onRtappQmlCreated(QObject*,QUrl)));
+
+    connect(&pweb_add,  SIGNAL(objectCreated(QObject*,QUrl)),
+             this,      SLOT(onConsumerQmlCreated(QObject*,QUrl)));
+
+    web_Protocols = NULL;
+
+
+#ifndef CALIBRATION
+    pweb.load(    QUrl::fromLocalFile( dir_path + "/qml/main-rtapp.qml") );
+    pweb_add.load(QUrl::fromLocalFile( dir_path + "/qml/main-consumer.qml") );
+
+#endif
+
+/*
     pweb = new QQuickWidget(Web_Dialog);
     pweb->rootContext()->setContextProperty("Web", Web);
 
@@ -204,6 +221,8 @@ Main_RT::Main_RT(QWidget *parent)
     pweb->setSource(QUrl::fromLocalFile(dir_path + "/qml/main-rtapp.qml"));
     pweb_add->setSource(QUrl::fromLocalFile(dir_path + "/qml/main-consumer.qml"));
 #endif
+*/
+
 
 
     connect(Web, SIGNAL(connection_Changed(bool)), this, SLOT(WebConnection_Changed(bool)));
@@ -273,6 +292,26 @@ Main_RT::Main_RT(QWidget *parent)
 #endif
     //msgBox.setWindowIcon(QIcon(":/images/RT.ico"));
 }
+
+
+void Main_RT::onRtappQmlCreated(QObject *object, const QUrl &url){
+
+    if ( object )
+        pweb.rootContext()->setContextProperty("Web", Web);
+    else
+        qDebug()<< "Loading with error.. " << url.toString() ;
+}
+
+
+void Main_RT::onConsumerQmlCreated(QObject *object, const QUrl &url){
+
+    if ( object )
+        pweb_add.rootContext()->setContextProperty("Web", Web_additional);
+    else
+        qDebug()<< "Loading with error.. " << url.toString() ;
+}
+
+
 //-----------------------------------------------------------------------------
 //--- setTrayIconActions()
 //-----------------------------------------------------------------------------
@@ -352,7 +391,8 @@ void Main_RT::set_ConnectionWeb()
     bool state_connection = true;
     QVariant returned_Value = NULL;
     QVariant state = state_connection;
-    QObject *obj = (QObject*)(pweb->rootObject());
+    QObject *obj = //(QObject*)(pweb->rootObject());
+                    (QObject*)(pweb.rootObjects().first());
 
     QMetaObject::invokeMethod(obj, "set_SocketUrl",
                               Q_RETURN_ARG(QVariant, returned_Value),
@@ -369,7 +409,8 @@ void Main_RT::set_ConnectionWeb_add()
     bool state_connection = true;
     QVariant returned_Value = NULL;
     QVariant state = state_connection;
-    QObject *obj = (QObject*)(pweb_add->rootObject());
+    QObject *obj = (QObject*)(pweb_add.rootObjects().first());
+//    QObject *obj = (QObject*)(pweb_add->rootObject());
 
     QMetaObject::invokeMethod(obj, "set_SocketUrl",
                               Q_RETURN_ARG(QVariant, returned_Value),
@@ -396,13 +437,14 @@ Main_RT::~Main_RT()
     writeSettings();    
 
     delete Web;
-    delete pweb;
+//    delete pweb;
     delete Web_Dialog;
     delete scenario;
     //delete http;
 
     delete Web_additional;
-    delete pweb_add;
+//    delete pweb_add;
+
     //delete email;
 
     //delete pagesWidget;
@@ -2155,7 +2197,9 @@ void Main_RT::slot_ProtocolOrderToServer(QString message)
         qDebug() << "send ProtocolOrder_To_Web: " << id << name << text.size();
 
 
-        QObject *obj = (QObject*)(pweb_add->rootObject());
+        QObject *obj = //(QObject*)(pweb_add->rootObject());
+                        (QObject*)(pweb_add.rootObjects().first());
+
         QMetaObject::invokeMethod(obj, "send_ProtocolToWeb",
                                   Q_RETURN_ARG(QVariant, returned_Value),
                                   Q_ARG(QVariant, id),
@@ -2235,7 +2279,8 @@ void Main_RT::slot_ProtocolToServer(QString message)
         //qDebug() << "send_ProtocolToWeb: " << id << name;
 
 
-        QObject *obj = (QObject*)(pweb->rootObject());
+        QObject *obj = //(QObject*)(pweb->rootObject());
+                (QObject*)(pweb.rootObjects().first());
         QMetaObject::invokeMethod(obj, "send_ProtocolToWeb",
                                   Q_RETURN_ARG(QVariant, returned_Value),
                                   Q_ARG(QVariant, id),                                  
@@ -2257,7 +2302,9 @@ void Main_RT::slot_ListWebProtocols()
     if(web_Protocols->exec())
     {
         id_prot = web_Protocols->Key_result;        
-        QObject *obj = (QObject*)(pweb_add->rootObject());
+        QObject *obj = // (QObject*)(pweb_add->rootObject());
+                        (QObject*)(pweb_add.rootObjects().first());
+
         QMetaObject::invokeMethod(obj, "getWebProtocol",
                                   Q_RETURN_ARG(QVariant, returned_Value),
                                   Q_ARG(QVariant, id_prot));
@@ -2278,7 +2325,8 @@ void Main_RT::slot_ReloadListWebProtocols()
     QVariant id_prot;
 
     id_prot = "";
-    QObject *obj = (QObject*)(pweb_add->rootObject());
+    QObject *obj = //(QObject*)(pweb_add->rootObject());
+                    (QObject*)(pweb_add.rootObjects().first());
     QMetaObject::invokeMethod(obj, "getWebProtocol",
                               Q_RETURN_ARG(QVariant, returned_Value),
                               Q_ARG(QVariant, id_prot));
@@ -2292,7 +2340,8 @@ void Main_RT::slot_ReloadListWebProtocolsOrder()
     QVariant id_prot;
 
     id_prot = "";
-    QObject *obj = (QObject*)(pweb->rootObject());
+    QObject *obj = //(QObject*)(pweb->rootObject());
+                    (QObject*)(pweb.rootObjects().first());
     QMetaObject::invokeMethod(obj, "getWebProtocol",
                               Q_RETURN_ARG(QVariant, returned_Value),
                               Q_ARG(QVariant, id_prot));
@@ -2313,7 +2362,8 @@ void Main_RT::slot_ListWebProtocolsOrder()
         id_prot = web_Protocols->Key_result;
         qDebug() << "Key: " << web_Protocols->Key_result << id_prot;
         //emit Web->get_WebProtocol();
-        QObject *obj = (QObject*)(pweb->rootObject());
+        QObject *obj = //(QObject*)(pweb->rootObject());
+                        (QObject*)(pweb.rootObjects().first());
         QMetaObject::invokeMethod(obj, "getWebProtocol",
                                   Q_RETURN_ARG(QVariant, returned_Value),
                                   Q_ARG(QVariant, id_prot));
@@ -2333,7 +2383,8 @@ void Main_RT::slot_ProtocolFromWeb(QString name, QString barcode)
     QVariant id_prot = barcode;
     QVariant returned_Value;
 
-    QObject *obj = (QObject*)(pweb->rootObject());
+    QObject *obj = //(QObject*)(pweb->rootObject());
+                    (QObject*)(pweb.rootObjects().first());
     QMetaObject::invokeMethod(obj, "getWebProtocol",
                               Q_RETURN_ARG(QVariant, returned_Value),
                               Q_ARG(QVariant, id_prot));
@@ -2732,7 +2783,7 @@ void Web_Interface::exec_Command(QString message)
     mb.setText(text);
     mb.exec();*/
 
-    qDebug() << "Exec_Command: message " << message;
+    //qDebug() << "Exec_Command: message " << message;
     //message = ";answer from DTmaster:  " + message;
     //emit sAnswerToServer(message);
 
@@ -3213,7 +3264,8 @@ void Main_RT::WebConnect()
     //qDebug() << "want state_connection: " << state_connection;
     QVariant returned_Value = NULL;
     QVariant state = state_connection;
-    QObject *obj = (QObject*)(pweb->rootObject());
+    QObject *obj = //(QObject*)(pweb->rootObject());
+                    (QObject*)(pweb.rootObjects().first());
 
     //if(state_connection)
     //{
@@ -3246,7 +3298,8 @@ void Main_RT::ChangeStateProtocol_ToWeb(QString message)
 
     //qDebug() << "To server --> " <<  state.toString();
 
-    QObject *obj = (QObject*)(pweb->rootObject());
+    QObject *obj = //(QObject*)(pweb->rootObject());
+                    (QObject*)(pweb.rootObjects().first());
     QMetaObject::invokeMethod(obj, "send_StateProtocolToWeb",
                               Q_RETURN_ARG(QVariant, returned_Value),
                               Q_ARG(QVariant, id),

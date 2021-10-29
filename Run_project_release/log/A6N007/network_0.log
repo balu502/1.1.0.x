@@ -1,0 +1,46 @@
+28-10-21 18:05:59 Get request on connection from remote host wit IP: ::ffff:127.0.0.1
+28-10-21 18:05:59 <-- ISCONNECTED
+28-10-21 18:05:59 The remote host is closed.
+28-10-21 18:06:01 Get request on connection from remote host wit IP: ::ffff:127.0.0.1
+28-10-21 18:06:01 <-- ISCONNECTED
+28-10-21 18:06:02 --> InfoDevice
+28-10-21 18:06:02 <-- InfoDevice
+28-10-21 18:06:02 --> sector_read
+28-10-21 18:06:02 --> CRYPTO_REQUEST
+28-10-21 18:06:02 <-- sector_read
+28-10-21 18:06:02 <-- CRYPTO_REQUEST
+28-10-21 18:06:03 --> InfoData
+28-10-21 18:06:03 <-- InfoData
+28-10-21 18:06:04 --> InfoData
+28-10-21 18:06:04 <-- InfoData
+28-10-21 18:06:05 --> InfoData
+28-10-21 18:06:05 <-- InfoData
+28-10-21 18:06:06 --> InfoData
+28-10-21 18:06:06 <-- InfoData
+28-10-21 18:06:07 --> InfoData
+28-10-21 18:06:07 <-- InfoData
+28-10-21 18:06:08 --> InfoData
+28-10-21 18:06:08 <-- InfoData
+28-10-21 18:06:09 --> InfoData
+28-10-21 18:06:09 <-- InfoData
+28-10-21 18:06:10 --> InfoData
+28-10-21 18:06:10 <-- InfoData
+28-10-21 18:06:11 --> InfoData
+28-10-21 18:06:11 <-- InfoData
+28-10-21 18:06:12 --> InfoData
+28-10-21 18:06:12 <-- InfoData
+28-10-21 18:06:13 --> InfoData
+28-10-21 18:06:13 <-- InfoData
+28-10-21 18:06:14 --> InfoData
+28-10-21 18:06:14 <-- InfoData
+28-10-21 18:06:15 --> InfoData
+28-10-21 18:06:15 <-- InfoData
+28-10-21 18:06:16 --> InfoData
+28-10-21 18:06:16 <-- InfoData
+28-10-21 18:06:17 --> InfoData
+28-10-21 18:06:17 <-- InfoData
+28-10-21 18:06:18 --> InfoData
+28-10-21 18:06:18 <-- InfoData
+28-10-21 18:06:19 --> InfoData
+28-10-21 18:06:19 <-- InfoData
+28-10-21 18:06:20 The remote host is closed.

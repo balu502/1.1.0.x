@@ -31,11 +31,11 @@ DEFINES += APP_NAME=\\\"$$Application_NAME\\\"
 
 contains(DEFINES, CALIBRATION){
     TARGET = $${Application_NAME}
-    VERSION = 1.1.0.14
+    VERSION = 1.1.0.22
     RC_ICONS = $$PWD/check.ico
 }else{
     TARGET = $${Application_NAME}
-    VERSION = 1.1.0.14
+    VERSION = 1.1.0.22
     RC_ICONS = $$PWD/DTm.ico
 }
 #----------------------------------------------------

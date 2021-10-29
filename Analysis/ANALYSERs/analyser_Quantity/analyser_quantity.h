@@ -301,6 +301,9 @@ public:
     QString StyleApp;
     bool ru_Lang;
 
+    bool Calc_StValue;
+    QPushButton *calc_St;
+
 private:
     rt_Protocol     *Prot;
 
@@ -380,6 +383,7 @@ private slots:
     void Open_AdditionalProtocol();    
     void Resize_FilePath();
     void ResultsTable_ChangedCurrentCell(int,int,int,int);
+    void Calculate_StandartValue();
 };
 
 #endif // ANALYSER_QUANTITY_H

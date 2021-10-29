@@ -588,6 +588,8 @@ QString Analyser_Quality::ResultsTable_ToDigits()
             case 3:     //list = text.split("~");
                         //text = list.at(0);
                         //text.replace(".",",");
+                        num = text.indexOf("(");
+                        if(num >= 0) text = text.mid(0,num);
                         Vec.append(text);
                         break;
             }
