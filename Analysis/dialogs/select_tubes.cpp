@@ -43,6 +43,7 @@ Select_tubes::Select_tubes(const QString& title, QWidget* parent, Qt::WindowFlag
     //connect(Select_Grid, SIGNAL(color_Rejime(bool)), mTitleBar, SLOT(change_ColorRejime(bool)));
     connect(Select_Grid, SIGNAL(color_Rejime(bool)), this, SLOT(restore_Cursor()));
     connect(Select_Grid, SIGNAL(color_Rejime(bool)), this, SLOT(slot_ColorRejime(bool)));
+    connect(Select_Grid->copy_as_image, SIGNAL(triggered(bool)), this, SLOT(Copy_AsImage_ToClipboard()));
 
     connect(this,SIGNAL(dockLocationChanged(Qt::DockWidgetArea)), this,SLOT(change_dock(Qt::DockWidgetArea)));
 
@@ -402,6 +403,8 @@ void Select_tubes::contextMenu_SelectGrid()
     menu.addAction(Select_Grid->color_select);
     menu.addSeparator();
     menu.addAction(Select_Grid->numeration_rejime);
+    menu.addSeparator();
+    menu.addAction(Select_Grid->copy_as_image);
 
     menu.exec(QCursor::pos());
     Delegate->numeration = Select_Grid->numeration_rejime->isChecked();
@@ -1092,6 +1095,17 @@ void Select_tubes::ClearPlate()
 //-----------------------------------------------------------------------------
 //---
 //-----------------------------------------------------------------------------
+void Select_tubes::Copy_AsImage_ToClipboard()
+{
+    qDebug() << "Copy_AsImage_ToClipboard(): ";
+
+    Select_Grid->update();
+    QClipboard *clipboard = QApplication::clipboard();
+    clipboard->setPixmap(Select_Grid->grab());
+}
+//-----------------------------------------------------------------------------
+//---
+//-----------------------------------------------------------------------------
 void Select_tubes::InitialState()
 {
     int i,j;
@@ -1243,6 +1257,7 @@ TableWidget::TableWidget(int rows, int cols, QWidget *parent)
     position_select->setChecked(true);
     numeration_rejime = new QAction(tr("numeration"), this);
     numeration_rejime->setCheckable(true);
+    copy_as_image = new QAction(QIcon(),tr("copy to ClipBoard as Image"), this);
 
     cursor_ColorFill = QCursor(QPixmap(":/images/cursor_ColorFill.png"));
 
@@ -1272,6 +1287,7 @@ TableWidget::~TableWidget()
     delete select_rejime;
     delete clear_plate;
     delete numeration_rejime;
+    delete copy_as_image;
 }
 
 //-----------------------------------------------------------------------------

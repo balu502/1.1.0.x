@@ -276,18 +276,37 @@ Rectangle
 
        doc.onreadystatechange = function() {
 
+           var ret = {
+                    request: "-1",  protocol: id_protocol,
+                    status: "1",    message: "",
+                    build: function(){
+                        var r = String(
+                            '<?xml version="1.0" encoding="utf-8" standalone="yes"?>'
+                           +'<request id="%%R%%">'
+                           +  '<name>SaveResultsCallback</name>'
+                           +  '<id_protocol>%%P%%</id_protocol>'
+                           +  '<status>%%S%%</status>'
+                           +  '<msg>%%M%%</msg>'
+                           +'</request>');
+
+                        return r.replace( "%%R%%", this.request )
+                                .replace( "%%P%%", this.protocol )
+                                .replace( "%%S%%", this.status )
+                                .replace( "%%M%%", Qt.btoa(this.message) );
+                    }
+           };
+
            if (doc.readyState === XMLHttpRequest.DONE) {
 
                if (doc.responseXML === null){
-                   var mmm = "Unable to get POST responce wile sending "+name_protocol;
-
-                   console.log( mmm );
-                   //web.send_Message( mmm );
-                   Web.exec_Command( mmm );
-                   return;
+                   ret.message= String('<package><Error Message="POST-ing %%P%% is unavailable"</Error></package>')
+                                .replace("%%P%%", name_protocol);
+               }else{
+                   ret.status = "0";
+                   ret.message= doc.responseText;
                }
 
-               Web.exec_Command( doc.responseText );
+               Web.exec_Command( ret.build() );
                //console.log(doc.responseText);
            }
        }
@@ -334,6 +353,7 @@ Rectangle
        }
    }
 
+
 /*
    Button
    {
@@ -355,6 +375,7 @@ Rectangle
         }
    }
 */
+
 
 }
 

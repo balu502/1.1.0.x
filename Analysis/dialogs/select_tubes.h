@@ -46,6 +46,7 @@
 #include <QResizeEvent>
 #include <QMouseEvent>
 #include <QLine>
+#include <QClipboard>
 
 #include "dialogs_global.h"
 #include "protocol.h"
@@ -154,6 +155,7 @@ public:
         QAction         *clear_plate;
         QAction         *back_InitialState;
         QAction         *numeration_rejime;
+        QAction         *copy_as_image;
 
         DockWidgetTitleBar* mTitleBar;
         QButtonGroup* color_buttons;
@@ -290,6 +292,7 @@ private slots:
     void contextMenu_SelectGrid();
     void ClearPlate();
     void InitialState();
+    void Copy_AsImage_ToClipboard();
 
     void tree_apply_change(QTreeWidgetItem* item, int col);
 

@@ -9,5 +9,6 @@
         <file>images/cursor_null.png</file>
         <file>images/cursor_ColorFill.png</file>
         <file>images/back_16.png</file>
+        <file>images/image_to_clipboard.png</file>
     </qresource>
 </RCC>

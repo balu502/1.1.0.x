@@ -4,8 +4,8 @@
 <context>
     <name>Color_ToolButton</name>
     <message>
-        <location filename="../select_tubes.cpp" line="2137"/>
-        <location filename="../select_tubes.cpp" line="2163"/>
+        <location filename="../select_tubes.cpp" line="2161"/>
+        <location filename="../select_tubes.cpp" line="2187"/>
         <source>Select Color</source>
         <translation>Select Color</translation>
     </message>
@@ -13,37 +13,39 @@
 <context>
     <name>Select_tubes</name>
     <message>
-        <location filename="../select_tubes.cpp" line="255"/>
+        <location filename="../select_tubes.cpp" line="258"/>
         <source>Test&amp;&amp;Sample</source>
         <translation>Test/Sample</translation>
     </message>
     <message>
-        <location filename="../select_tubes.cpp" line="256"/>
+        <location filename="../select_tubes.cpp" line="259"/>
         <source>Select tubes</source>
         <translation>Tube selection</translation>
     </message>
     <message>
-        <location filename="../select_tubes.cpp" line="398"/>
+        <location filename="../select_tubes.cpp" line="401"/>
         <source>Selection rejime</source>
         <translation>Selection mode</translation>
     </message>
     <message>
-        <location filename="../select_tubes.cpp" line="545"/>
+        <location filename="../select_tubes.cpp" line="222"/>
+        <location filename="../select_tubes.cpp" line="550"/>
         <source>Samples</source>
         <translation>Samples</translation>
     </message>
     <message>
-        <location filename="../select_tubes.cpp" line="551"/>
+        <location filename="../select_tubes.cpp" line="556"/>
         <source>All samples:</source>
         <translation>All samples:</translation>
     </message>
     <message>
-        <location filename="../select_tubes.cpp" line="603"/>
+        <location filename="../select_tubes.cpp" line="225"/>
+        <location filename="../select_tubes.cpp" line="608"/>
         <source>Tests</source>
         <translation>Tests</translation>
     </message>
     <message>
-        <location filename="../select_tubes.cpp" line="619"/>
+        <location filename="../select_tubes.cpp" line="624"/>
         <source>All tests:</source>
         <translation>All tests:</translation>
     </message>
@@ -51,29 +53,34 @@
 <context>
     <name>TableWidget</name>
     <message>
-        <location filename="../select_tubes.cpp" line="1231"/>
+        <location filename="../select_tubes.cpp" line="1249"/>
         <source>position rejime</source>
         <translation>Position</translation>
     </message>
     <message>
-        <location filename="../select_tubes.cpp" line="1233"/>
+        <location filename="../select_tubes.cpp" line="1251"/>
         <source>color rejime</source>
         <translation>Color</translation>
     </message>
     <message>
-        <location filename="../select_tubes.cpp" line="1235"/>
+        <location filename="../select_tubes.cpp" line="1253"/>
         <source>clear Plate</source>
         <translation>Clear plate</translation>
     </message>
     <message>
-        <location filename="../select_tubes.cpp" line="1236"/>
+        <location filename="../select_tubes.cpp" line="1254"/>
         <source>back to initial state</source>
         <translation>Reset to original state</translation>
     </message>
     <message>
-        <location filename="../select_tubes.cpp" line="1240"/>
+        <location filename="../select_tubes.cpp" line="1258"/>
         <source>numeration</source>
         <translation>numeration</translation>
+    </message>
+    <message>
+        <location filename="../select_tubes.cpp" line="1260"/>
+        <source>copy to ClipBoard as Image</source>
+        <translation>Copy as image</translation>
     </message>
 </context>
 </TS>

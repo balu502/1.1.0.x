@@ -32,3 +32,57 @@
 28-10-21 18:30:26 Collection of information about the device is begin.
 28-10-21 18:30:28 Information collection about the device is complete.
 28-10-21 18:30:28 Begin work with device.
+01-11-21 11:06:14 Start Dt-server. Version 3.00.00 Sep  3 2021 17:27:25
+01-11-21 11:06:16 Initialisation of device is begin.
+01-11-21 11:06:16 Assign serial number from parameters string A6N007
+01-11-21 11:06:16 Found devices with serial number A6N007
+01-11-21 11:06:16 Connect to devices A6N007
+01-11-21 11:06:16 Device observe as DT384
+01-11-21 11:06:16 Initialisation of device was finished successfully.
+01-11-21 11:06:16 Collection of information about the device is begin.
+01-11-21 11:06:18 Information collection about the device is complete.
+01-11-21 11:06:18 Begin work with device.
+01-11-21 11:06:22 Read sector request.
+01-11-21 11:06:22 Read sector completed.
+01-11-21 11:06:22 Setup reagent contract.
+01-11-21 11:06:23 Reagent contract setup with parameter CRYC
+01-11-21 11:25:13 Read sector request.
+01-11-21 11:25:13 Read sector completed.
+01-11-21 11:25:13 Setup reagent contract.
+01-11-21 11:25:13 Reagent contract setup with parameter CRYC
+01-11-21 11:33:20 Read sector request.
+01-11-21 11:33:20 Read sector completed.
+01-11-21 11:33:20 Setup reagent contract.
+01-11-21 11:33:20 Reagent contract setup with parameter CRYC
+01-11-21 11:33:24 Close cover request.
+01-11-21 11:33:55 Cover is close.
+01-11-21 11:33:55 Check before RUN request.
+01-11-21 11:33:55 Preparation run operation compleate.
+01-11-21 11:33:55 Start RUN request.
+01-11-21 11:33:57 Run is begin.
+01-11-21 11:34:03 Stop RUN request.
+01-11-21 11:34:03 RUN was stopped.
+01-11-21 11:37:12 Read sector request.
+01-11-21 11:37:12 Read sector completed.
+01-11-21 11:37:12 Setup reagent contract.
+01-11-21 11:37:13 Reagent contract setup with parameter CRYC
+01-11-21 11:46:27 Read sector request.
+01-11-21 11:46:27 Read sector completed.
+01-11-21 11:46:27 Setup reagent contract.
+01-11-21 11:46:27 Reagent contract setup with parameter CRYC
+01-11-21 11:46:32 Close cover request.
+01-11-21 11:46:32 Cover is close.
+01-11-21 11:46:32 Check before RUN request.
+01-11-21 11:46:32 Preparation run operation compleate.
+01-11-21 11:46:32 Start RUN request.
+01-11-21 11:46:34 Run is begin.
+01-11-21 11:46:41 Stop RUN request.
+01-11-21 11:46:41 RUN was stopped.
+01-11-21 11:46:52 Close cover request.
+01-11-21 11:46:52 Cover is close.
+01-11-21 11:46:52 Check before RUN request.
+01-11-21 11:46:53 Preparation run operation compleate.
+01-11-21 11:46:53 Start RUN request.
+01-11-21 11:46:54 Run is begin.
+01-11-21 11:47:03 Stop RUN request.
+01-11-21 11:47:03 RUN was stopped.

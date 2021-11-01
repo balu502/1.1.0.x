@@ -4,8 +4,8 @@
 <context>
     <name>Color_ToolButton</name>
     <message>
-        <location filename="../select_tubes.cpp" line="2137"/>
-        <location filename="../select_tubes.cpp" line="2163"/>
+        <location filename="../select_tubes.cpp" line="2161"/>
+        <location filename="../select_tubes.cpp" line="2187"/>
         <source>Select Color</source>
         <translation>Выбрать цвет</translation>
     </message>
@@ -13,37 +13,39 @@
 <context>
     <name>Select_tubes</name>
     <message>
-        <location filename="../select_tubes.cpp" line="255"/>
+        <location filename="../select_tubes.cpp" line="258"/>
         <source>Test&amp;&amp;Sample</source>
         <translation>Тест/Образец</translation>
     </message>
     <message>
-        <location filename="../select_tubes.cpp" line="256"/>
+        <location filename="../select_tubes.cpp" line="259"/>
         <source>Select tubes</source>
         <translation>Менеджер пробирок</translation>
     </message>
     <message>
-        <location filename="../select_tubes.cpp" line="398"/>
+        <location filename="../select_tubes.cpp" line="401"/>
         <source>Selection rejime</source>
         <translation>Режимы выборки</translation>
     </message>
     <message>
-        <location filename="../select_tubes.cpp" line="545"/>
+        <location filename="../select_tubes.cpp" line="222"/>
+        <location filename="../select_tubes.cpp" line="550"/>
         <source>Samples</source>
         <translation>Образцы</translation>
     </message>
     <message>
-        <location filename="../select_tubes.cpp" line="551"/>
+        <location filename="../select_tubes.cpp" line="556"/>
         <source>All samples:</source>
         <translation>Все образцы:</translation>
     </message>
     <message>
-        <location filename="../select_tubes.cpp" line="603"/>
+        <location filename="../select_tubes.cpp" line="225"/>
+        <location filename="../select_tubes.cpp" line="608"/>
         <source>Tests</source>
         <translation>Тесты</translation>
     </message>
     <message>
-        <location filename="../select_tubes.cpp" line="619"/>
+        <location filename="../select_tubes.cpp" line="624"/>
         <source>All tests:</source>
         <translation>Все тесты:</translation>
     </message>
@@ -51,29 +53,34 @@
 <context>
     <name>TableWidget</name>
     <message>
-        <location filename="../select_tubes.cpp" line="1231"/>
+        <location filename="../select_tubes.cpp" line="1249"/>
         <source>position rejime</source>
         <translation>Позиция</translation>
     </message>
     <message>
-        <location filename="../select_tubes.cpp" line="1233"/>
+        <location filename="../select_tubes.cpp" line="1251"/>
         <source>color rejime</source>
         <translation>Цвет</translation>
     </message>
     <message>
-        <location filename="../select_tubes.cpp" line="1235"/>
+        <location filename="../select_tubes.cpp" line="1253"/>
         <source>clear Plate</source>
         <translation>Очистить плашку</translation>
     </message>
     <message>
-        <location filename="../select_tubes.cpp" line="1236"/>
+        <location filename="../select_tubes.cpp" line="1254"/>
         <source>back to initial state</source>
         <translation>Вернуться к начальному состоянию</translation>
     </message>
     <message>
-        <location filename="../select_tubes.cpp" line="1240"/>
+        <location filename="../select_tubes.cpp" line="1258"/>
         <source>numeration</source>
         <translation>Нумерация</translation>
+    </message>
+    <message>
+        <location filename="../select_tubes.cpp" line="1260"/>
+        <source>copy to ClipBoard as Image</source>
+        <translation>Копировать как изображение</translation>
     </message>
 </context>
 </TS>

@@ -425,6 +425,8 @@ QString CrossBox::CrossTable_ToDigits()
     QString sample_name;
     QTableWidgetItem *item;
     QStringList list;
+    double dvalue;
+    bool ok;
 
     str = "Tests:";
     for(i=0; i<CrossTests->rowCount(); i++)
@@ -442,6 +444,13 @@ QString CrossBox::CrossTable_ToDigits()
         {
             item = CrossTable->item(i,j);
             text = item->text();
+
+            if(!Delegate->mc_rejime) // only for
+            {
+                dvalue = text.toDouble(&ok);
+                if(!ok) dvalue = 0.0;
+                text = QString::number(dvalue, 'f', 1);
+            }
 
             text.replace(".",",");            
             list.append(text);

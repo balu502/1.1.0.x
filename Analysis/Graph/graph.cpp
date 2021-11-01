@@ -414,6 +414,7 @@ void GraphPlot::to_ImageClipBoard()
     QVector<QPointF> vec;
     QFont font_plot = qApp->font();
     font_plot.setBold(false);
+    font_plot.setPointSize(font_plot.pointSize() - 2);
 
     QClipboard *clipboard = QApplication::clipboard();
 
@@ -437,10 +438,14 @@ void GraphPlot::to_ImageClipBoard()
         curve_image->setSamples(vec);
     }
 
-    plot_image->setTitle(this->title());
+    //plot_image->setTitle(this->title());
+    QwtText Title_X = axisTitle(QwtPlot::xBottom);
+    Title_X.setFont(font_plot);
+    QwtText Title_Y = axisTitle(QwtPlot::yLeft);
+    Title_Y.setFont(font_plot);
     plot_image->setFont(font_plot);
-    plot_image->setAxisTitle(QwtPlot::xBottom, this->axisTitle(QwtPlot::xBottom));
-    plot_image->setAxisTitle(QwtPlot::yLeft, this->axisTitle(QwtPlot::yLeft));
+    plot_image->setAxisTitle(QwtPlot::xBottom, Title_X);
+    plot_image->setAxisTitle(QwtPlot::yLeft, Title_Y);
     plot_image->setAxisFont(QwtPlot::xBottom, font_plot);
     plot_image->setAxisFont(QwtPlot::yLeft, font_plot);
 

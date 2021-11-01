@@ -3955,7 +3955,7 @@ void Run::slot_CloseBlock()
     wait_process(wClose, 100, tr("Close block..."));
 }
 //-----------------------------------------------------------------------------
-//--- slot_CloseBlock
+//--- slot_ProtocolIsEqual()
 //-----------------------------------------------------------------------------
 void Run::slot_ProtocolIsEqual()
 {
@@ -3963,6 +3963,11 @@ void Run::slot_ProtocolIsEqual()
     QString text;
     int res;
     QVector<QString> source_pro, target_pro;
+
+    string s;
+    QString str;
+    QVector<QString> s_pro, t_pro;
+    bool s1,s2,s3;
 
     //qDebug() << "slot_ProtocolIsEqual: " << CALIBRATION_status << flag_ActivePoint << prot << prot_FromSetup;
 
@@ -3974,9 +3979,34 @@ void Run::slot_ProtocolIsEqual()
             Create_SignatureForProtocol(prot, &target_pro);
             Create_SignatureForProtocol(prot_FromSetup, &source_pro);
 
-            if(prot->program != prot_FromSetup->program ||
+            foreach(s, prot->program)
+            {
+                str = QString::fromStdString(s);
+                if(str.startsWith("XPRG")) continue;
+                s_pro.append(str);
+            }
+            foreach(s, prot_FromSetup->program)
+            {
+                str = QString::fromStdString(s);
+                if(str.startsWith("XPRG")) continue;
+                t_pro.append(str);
+            }
+            //qDebug() << "program: " << s_pro << t_pro;
+            //qDebug() << "name: " << QString::fromStdString(prot->name) << QString::fromStdString(prot_FromSetup->name);
+            //qDebug() << "source: " << target_pro << source_pro;
+
+
+            s1 = s2 = s3 = true;
+            if(s_pro != t_pro) s1 = false;
+            if(prot->name != prot_FromSetup->name) s2 = false;
+            if(target_pro != source_pro) s3 = false;
+
+            //qDebug() << "bool: " << s1 << s2 << s3;
+
+            /*if(prot->program != prot_FromSetup->program ||
                prot->name != prot_FromSetup->name       ||
-               target_pro != source_pro)
+               target_pro != source_pro)*/
+            if(!s1 || !s2 || !s3)
             {
                 text = tr("Attention! You have changed the original protocol. Do You want to continue running the protocol without these changes?");
                 message.setStandardButtons(QMessageBox::Yes | QMessageBox::No);

@@ -2746,7 +2746,7 @@ void Web_Interface::exec_Command(QString message)
         answer = element.text();
         map.insert("Name_Request", answer);
 
-        //qDebug() << "Exec_Command: " << doc.toString();
+        qDebug() << "Exec_Command: " << doc.toString();
 
         // RunProtocol
         if(!element.isNull() && element.text() == "RunProtocol")
@@ -2818,6 +2818,18 @@ void Web_Interface::exec_Command(QString message)
                 param = QString("DeviceName=%1;").arg(item.text());
                 map.insert("CloseBlock", param);
             }
+        }
+
+        // SaveResultsCallback
+        if(!element.isNull() && element.text() == "SaveResultsCallback")
+        {
+            mb.setStandardButtons(QMessageBox::Ok);
+            mb.setIcon(QMessageBox::Information);
+            mb.setText(answer);
+            mb.exec();
+
+            doc.clear();
+            return;
         }
 
         // Another request...
