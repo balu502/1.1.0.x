@@ -784,6 +784,7 @@ bool Test_editor::LoadTest_ExtPlugins()
         fn.setFile(pluginsDir, fileName);
         if(fn.exists() && fn.suffix() == "dtr")
         {
+            QApplication::processEvents();
             text = fn.baseName();
             if(text == "Default" || text == "ReportSummary" || text == "ReportTitle" || text == "DTReport Studio project") continue;
 

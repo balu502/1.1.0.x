@@ -126,6 +126,17 @@ void Select_tubes::create_TabBox()
     Select_Grid->setVerticalHeader(header_ver);
     Select_Grid->ColorTube_Current = &ColorTube_Current;
 
+    Select_Grid_Copy = new TableWidget(0,0,main_widget);
+    Select_Grid_Copy->lower();
+    Select_Grid_Copy->setVisible(false);
+    Select_Grid_Copy->setItemDelegate(Delegate);
+    Select_Grid_Copy->setFont(f);
+    Select_Grid_Copy->horizontalHeader()->setMinimumSectionSize(10);
+    Select_Grid_Copy->verticalHeader()->setMinimumSectionSize(10);
+    Select_Grid_Copy->setFixedSize(600,350);
+    Select_Grid_Copy->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    Select_Grid_Copy->verticalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+
     //Horizontal_Header = new MyHorizontalHeaderView(Qt::Horizontal, Select_Grid);
     //Select_Grid->setHorizontalHeader(Horizontal_Header);
 
@@ -1099,9 +1110,40 @@ void Select_tubes::Copy_AsImage_ToClipboard()
 {
     qDebug() << "Copy_AsImage_ToClipboard(): ";
 
-    Select_Grid->update();
+    int i,j,pos;
+    int row,col;
+    QString text;
+    QStringList header;
+    QTableWidgetItem* item;
+
+    row = Select_Grid->rowCount();
+    col = Select_Grid->columnCount();
+
+    Select_Grid_Copy->clear();
+    Select_Grid_Copy->setRowCount(row);
+    Select_Grid_Copy->setColumnCount(col);
+
+    for(i=0; i<row; i++)
+    {
+        text = Select_Grid->verticalHeaderItem(i)->text();
+        header.append(text);
+        for(j=0; j<col; j++)
+        {
+            pos = i*col + j;
+            item = new QTableWidgetItem();
+            Select_Grid_Copy->setItem(i,j,item);
+            text = Select_Grid->item(i,j)->text();
+            item->setText(text);
+        }
+    }
+    Select_Grid_Copy->setVerticalHeaderLabels(header);
+
+    Select_Grid_Copy->update();
     QClipboard *clipboard = QApplication::clipboard();
-    clipboard->setPixmap(Select_Grid->grab());
+    Select_Grid_Copy->setVisible(true);
+    clipboard->setPixmap(Select_Grid_Copy->grab());
+    Select_Grid_Copy->setVisible(false);
+    Select_Grid_Copy->clear();
 }
 //-----------------------------------------------------------------------------
 //---

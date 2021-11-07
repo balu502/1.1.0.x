@@ -414,7 +414,7 @@ void GraphPlot::to_ImageClipBoard()
     QVector<QPointF> vec;
     QFont font_plot = qApp->font();
     font_plot.setBold(false);
-    font_plot.setPointSize(font_plot.pointSize() - 2);
+    font_plot.setPointSize(font_plot.pointSize() - 3);
 
     QClipboard *clipboard = QApplication::clipboard();
 

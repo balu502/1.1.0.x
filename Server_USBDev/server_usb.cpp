@@ -63,7 +63,20 @@ Server_USB::Server_USB(int nPort, QWidget *parent)
 
     //... NetWork ...
     m_ptcpServer = new QTcpServer(this);
-    if(!m_ptcpServer->listen(QHostAddress::Any, nPort))
+
+
+    bool state = false;
+    while(!state)
+    {
+        state = m_ptcpServer->listen(QHostAddress::Any, nPort);
+        if(state) PORT = nPort;
+        else nPort++;
+
+        qDebug() << "m_ptcpServer->listen: " << state << nPort << PORT;
+    }
+
+    //if(!m_ptcpServer->listen(QHostAddress::Any, nPort))
+    if(!state)
     {
         text = tr("Unable to start the server: ") + m_ptcpServer->errorString();
         if(text.contains("The bound address is already in use"))
@@ -530,6 +543,7 @@ void Server_USB::Run_externalSingleServer(QString ser_name, int id)
 
     QString file = "Server_Dev.exe";
     QStringList arguments;
+    bool state;
 
 
     //qDebug() << list_fx2 << list_server;
@@ -548,6 +562,20 @@ void Server_USB::Run_externalSingleServer(QString ser_name, int id)
 
             //server_SYT->setReadChannel();
             //server_SYT->setReadChannelMode();
+
+            state = false;
+            QTcpServer *temp_ptcpServer = new QTcpServer(this);
+            while(!state)
+            {
+                state = temp_ptcpServer->listen(QHostAddress::Any, port);
+                if(!state) port++;
+                else
+                {
+                    temp_ptcpServer->close();
+                    delete temp_ptcpServer;
+                }
+            }
+
             server_SYT->SerName = ser_name;
             server_SYT->port = port;
             server_SYT->IP_port = ip_addres + ":" + QString::number(port);
@@ -577,6 +605,7 @@ void Server_USB::Run_externalServer()
 
     QString file = "Server_Dev.exe";
     QStringList arguments;
+    bool state;
 
 
     qDebug() << "Run_externalServer: " << list_fx2 << list_server;
@@ -612,6 +641,21 @@ void Server_USB::Run_externalServer()
 
             //server_SYT->setReadChannel();
             //server_SYT->setReadChannelMode();
+
+            state = false;
+            QTcpServer *temp_ptcpServer = new QTcpServer(this);
+            while(!state)
+            {
+                state = temp_ptcpServer->listen(QHostAddress::Any, port);
+                if(!state) port++;
+                else
+                {
+                    temp_ptcpServer->close();
+                    delete temp_ptcpServer;
+                }
+            }
+
+
             server_SYT->SerName = list_fx2.at(i)->SerNum;
             server_SYT->port = port;
             server_SYT->IP_port = ip_addres + ":" + QString::number(port);

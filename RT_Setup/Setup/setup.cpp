@@ -3467,6 +3467,11 @@ void Setup::edit_tests()
         return;
     }
 
+    QApplication::setOverrideCursor(QCursor(Qt::WaitCursor));
+    label_gif->setVisible(true);
+    obj_gif->start();
+    QApplication::processEvents();
+
     test_editor = new Test_editor(this);    
     test_editor->From_Protocol = false;
     test_editor->TESTs = &TESTs;
@@ -3475,6 +3480,7 @@ void Setup::edit_tests()
     test_editor->User_Folder = user_Dir.absolutePath();
     //test_editor->Translate_Catalog();
     ext_dll_handle = ::LoadLibraryW(L"DTReport2.dll");
+
 
     initialize = (Init)(::GetProcAddress(ext_dll_handle,"Initialize"));
     set_font = (SetFont)(::GetProcAddress(ext_dll_handle,"SetFont"));
@@ -3486,6 +3492,7 @@ void Setup::edit_tests()
     }
     if(set_font) set_font(f.family().toLatin1().data(), "", f.pointSize());
     if(set_folder) set_folder(user_Dir.absolutePath().toUtf8().data());
+    QApplication::processEvents();
 
     if(ext_dll_handle)
     {
@@ -3495,6 +3502,10 @@ void Setup::edit_tests()
 
     //setWindowOpacity(0.5);
     test_editor->map_TestTranslate = &Map_TestTranslate;
+
+    label_gif->setVisible(false);
+    obj_gif->stop();
+    QApplication::restoreOverrideCursor();
 
     test_editor->exec();
     delete test_editor;

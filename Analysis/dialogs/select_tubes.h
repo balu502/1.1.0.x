@@ -379,6 +379,7 @@ public:
     QGroupBox *sample_Box;
     QGroupBox *test_Box;
     TableWidget *Select_Grid;
+    TableWidget *Select_Grid_Copy;
     QGroupBox *Color_Box;
     QGroupBox *Select_Box;
     //MyHorizontalHeaderView *Horizontal_Header;
