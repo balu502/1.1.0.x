@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="windows-1251"?><Package xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 <Source ID="krOim_300321_150520" Path="" Created="30-3-21_15:10:02" Format="RT" />
-<Results Calculated="2021-03-30 17:04:30" DTRHash="451359e95c3b13cc9b9424cbe47cb085">
+<Results Calculated="" DTRHash="">
 <Inquiry ID="RDUabgHnme" Date="30-3-21_15:10:02">
-<Sample ID="hzb6uMlEKM" Code="Образец_1" SampleKind="Patient">
+<Sample ID="RDUabgHnme" Code="Образец_1" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#RDUabgHnme.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -12,7 +12,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="17qk3qyxft" Date="30-3-21_15:10:02">
-<Sample ID="LG5sCKeB1x" Code="Образец_2" SampleKind="Patient">
+<Sample ID="17qk3qyxft" Code="Образец_2" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#17qk3qyxft.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -22,7 +22,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="eOKWMprtMU" Date="30-3-21_15:10:02">
-<Sample ID="yX3eVpY8i2" Code="Образец_3" SampleKind="Patient">
+<Sample ID="eOKWMprtMU" Code="Образец_3" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#eOKWMprtMU.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -32,7 +32,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="HfIIfKFq3a" Date="30-3-21_15:10:02">
-<Sample ID="boXwooR4P7" Code="Образец_4" SampleKind="Patient">
+<Sample ID="HfIIfKFq3a" Code="Образец_4" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#HfIIfKFq3a.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -42,7 +42,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="vwG3Uo8Jkf" Date="30-3-21_15:10:02">
-<Sample ID="E4VhdJL16C" Code="Образец_5" SampleKind="Patient">
+<Sample ID="vwG3Uo8Jkf" Code="Образец_5" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#vwG3Uo8Jkf.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -52,7 +52,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="YDkpnn1GSk" Date="30-3-21_15:10:02">
-<Sample ID="rLzTwHEyno" Code="Образец_6" SampleKind="Patient">
+<Sample ID="YDkpnn1GSk" Code="Образец_6" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#YDkpnn1GSk.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -62,7 +62,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="BUi76IvC9L" Date="30-3-21_15:10:02">
-<Sample ID="RmLdsRv8B3" Code="Образец_7" SampleKind="Patient">
+<Sample ID="BUi76IvC9L" Code="Образец_7" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#BUi76IvC9L.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -72,7 +72,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="oHDtOHo9qQ" Date="30-3-21_15:10:02">
-<Sample ID="8PS1YHVrBy" Code="Образец_8" SampleKind="Patient">
+<Sample ID="oHDtOHo9qQ" Code="Образец_8" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#oHDtOHo9qQ.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -82,7 +82,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="RXBehli6XW" Date="30-3-21_15:10:02">
-<Sample ID="lgQINGOos3" Code="Образец_9" SampleKind="Patient">
+<Sample ID="RXBehli6XW" Code="Образец_9" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#RXBehli6XW.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -92,7 +92,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="4ofQWkb2ib" Date="30-3-21_15:10:02">
-<Sample ID="Oxu4gkIl3e" Code="Образец_10" SampleKind="Patient">
+<Sample ID="4ofQWkb2ib" Code="Образец_10" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#4ofQWkb2ib.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -102,7 +102,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="i5dCpFyzPC" Date="30-3-21_15:10:02">
-<Sample ID="1EsqzjBhlk" Code="Образец_11" SampleKind="Patient">
+<Sample ID="i5dCpFyzPC" Code="Образец_11" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#i5dCpFyzPC.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -112,7 +112,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="I0zMlPf9IR" Date="30-3-21_15:10:02">
-<Sample ID="b8E0Rtsrez" Code="Образец_12" SampleKind="Patient">
+<Sample ID="I0zMlPf9IR" Code="Образец_12" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#I0zMlPf9IR.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -122,7 +122,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="sQKXE3MJgg" Date="30-3-21_15:10:02">
-<Sample ID="BZZBN3Z12E" Code="Образец_13" SampleKind="Patient">
+<Sample ID="sQKXE3MJgg" Code="Образец_13" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#sQKXE3MJgg.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -132,7 +132,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="VhpJXYGGNm" Date="30-3-21_15:10:02">
-<Sample ID="opYxg2SUjJ" Code="Образец_14" SampleKind="Patient">
+<Sample ID="VhpJXYGGNm" Code="Образец_14" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#VhpJXYGGNm.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -142,7 +142,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="8ynaqW9C4r" Date="30-3-21_15:10:02">
-<Sample ID="R62iVXMRQO" Code="Образец_15" SampleKind="Patient">
+<Sample ID="8ynaqW9C4r" Code="Образец_15" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#8ynaqW9C4r.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -152,7 +152,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="lFHMe139lS" Date="30-3-21_15:10:02">
-<Sample ID="11NtRB3bJA" Code="Образец_16" SampleKind="Patient">
+<Sample ID="lFHMe139lS" Code="Образец_16" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#lFHMe139lS.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -162,7 +162,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="L9dXbBkJfh" Date="30-3-21_15:10:02">
-<Sample ID="fIMfkgQX0F" Code="Образец_17" SampleKind="Patient">
+<Sample ID="L9dXbBkJfh" Code="Образец_17" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#L9dXbBkJfh.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -172,7 +172,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="v4yh3pRT2x" Date="30-3-21_15:10:02">
-<Sample ID="FihpCq7hOU" Code="Образец_18" SampleKind="Patient">
+<Sample ID="v4yh3pRT2x" Code="Образец_18" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#v4yh3pRT2x.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -182,7 +182,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="VUKszz7dwC" Date="30-3-21_15:10:02">
-<Sample ID="od3z9UorHj" Code="Образец_19" SampleKind="Patient">
+<Sample ID="VUKszz7dwC" Code="Образец_19" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#VUKszz7dwC.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -192,7 +192,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="8lIdoU1adH" Date="30-3-21_15:10:02">
-<Sample ID="SuXlyyioyp" Code="Образец_20" SampleKind="Patient">
+<Sample ID="8lIdoU1adH" Code="Образец_20" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#8lIdoU1adH.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -202,7 +202,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="l2mP7TuWoM" Date="30-3-21_15:10:02">
-<Sample ID="5AV3Hxbl9u" Code="Образец_21" SampleKind="Patient">
+<Sample ID="l2mP7TuWoM" Code="Образец_21" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#l2mP7TuWoM.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -212,7 +212,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="OJkBQyITVx" Date="30-3-21_15:10:02">
-<Sample ID="iRzpZSUhrV" Code="Образец_22" SampleKind="Patient">
+<Sample ID="OJkBQyITVx" Code="Образец_22" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#OJkBQyITVx.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -222,7 +222,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="yD6LsczdOD" Date="30-3-21_15:10:02">
-<Sample ID="IMLz2cBrkk" Code="Образец_23" SampleKind="Patient">
+<Sample ID="yD6LsczdOD" Code="Образец_23" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#yD6LsczdOD.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -232,7 +232,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="YeSWpmgnmS" Date="30-3-21_15:10:02">
-<Sample ID="smhAyGs17z" Code="Образец_24" SampleKind="Patient">
+<Sample ID="YeSWpmgnmS" Code="Образец_24" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#YeSWpmgnmS.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -242,7 +242,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="8YogHwNxfh" Date="30-3-21_15:10:02">
-<Sample ID="Sh3oQQZB1F" Code="Образец_25" SampleKind="Patient">
+<Sample ID="8YogHwNxfh" Code="Образец_25" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#8YogHwNxfh.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -252,7 +252,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="lpmSauGuNm" Date="30-3-21_15:10:02">
-<Sample ID="5y16jvT8iK" Code="Образец_26" SampleKind="Patient">
+<Sample ID="lpmSauGuNm" Code="Образец_26" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#lpmSauGuNm.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -262,7 +262,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="P6GEtP9q4r" Date="30-3-21_15:10:02">
-<Sample ID="iEVs2uq5PP" Code="Образец_27" SampleKind="Patient">
+<Sample ID="P6GEtP9q4r" Code="Образец_27" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#P6GEtP9q4r.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -272,7 +272,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="2NEzCO3nlx" Date="30-3-21_15:10:02">
-<Sample ID="LVTdLOk260" Code="Образец_28" SampleKind="Patient">
+<Sample ID="2NEzCO3nlx" Code="Образец_28" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#2NEzCO3nlx.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -282,7 +282,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="feiHVtwGSY" Date="30-3-21_15:10:02">
-<Sample ID="zIxPANdyn5" Code="Образец_29" SampleKind="Patient">
+<Sample ID="feiHVtwGSY" Code="Образец_29" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#feiHVtwGSY.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -292,7 +292,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="IRg3JNqD9d" Date="30-3-21_15:10:02">
-<Sample ID="cZvBTsWvUB" Code="Образец_30" SampleKind="Patient">
+<Sample ID="IRg3JNqD9d" Code="Образец_30" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#IRg3JNqD9d.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -302,7 +302,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="viApcMD9qi" Date="30-3-21_15:10:02">
-<Sample ID="CUHLP2D5sQ" Code="Образец_31" SampleKind="Patient">
+<Sample ID="viApcMD9qi" Code="Образец_31" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#viApcMD9qi.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -312,7 +312,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="VcWzZWuJDx" Date="30-3-21_15:10:02">
-<Sample ID="s7OE5LJoNr" Code="Образец_32" SampleKind="Patient">
+<Sample ID="VcWzZWuJDx" Code="Образец_32" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#VcWzZWuJDx.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -322,7 +322,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="CFdMEq03iP" Date="30-3-21_15:10:02">
-<Sample ID="VOM0OqDl4w" Code="Образец_33" SampleKind="Patient">
+<Sample ID="CFdMEq03iP" Code="Образец_33" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#CFdMEq03iP.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -332,7 +332,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="pWbe3KtzPU" Date="30-3-21_15:10:02">
-<Sample ID="5IiBqUuvxB" Code="Образец_34" SampleKind="Patient">
+<Sample ID="pWbe3KtzPU" Code="Образец_34" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#pWbe3KtzPU.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -342,7 +342,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="PRxJzya9Jj" Date="30-3-21_15:10:02">
-<Sample ID="iZCw9zHseH" Code="Образец_35" SampleKind="Patient">
+<Sample ID="PRxJzya9Jj" Code="Образец_35" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#PRxJzya9Jj.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -352,7 +352,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="2hRaITU60o" Date="30-3-21_15:10:02">
-<Sample ID="MqAiSyAoLM" Code="Образец_36" SampleKind="Patient">
+<Sample ID="2hRaITU60o" Code="Образец_36" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#2hRaITU60o.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -362,7 +362,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="fyPM7yN3hP" Date="30-3-21_15:10:02">
-<Sample ID="z7eUHS4H2x" Code="Образец_37" SampleKind="Patient">
+<Sample ID="fyPM7yN3hP" Code="Образец_37" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#fyPM7yN3hP.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -372,7 +372,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="IFt8QxHzOV" Date="30-3-21_15:10:02">
-<Sample ID="cOcmZRxEj2" Code="Образец_38" SampleKind="">
+<Sample ID="IFt8QxHzOV" Code="Образец_38" SampleKind="">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#IFt8QxHzOV.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -382,7 +382,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="sgFIM7x9lk" Date="30-3-21_15:10:02">
-<Sample ID="Ff6XswrBR7" Code="Образец_39" SampleKind="Patient">
+<Sample ID="sgFIM7x9lk" Code="Образец_39" SampleKind="Patient">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#sgFIM7x9lk.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -392,7 +392,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="VxD4B6L6Tp" Date="30-3-21_15:10:02">
-<Sample ID="P0osHkFUic" Code="Стандарт_1" SampleKind="Standard">
+<Sample ID="VxD4B6L6Tp" Code="Стандарт_1" SampleKind="Standard">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
@@ -422,7 +422,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="j8X0QkvD39" Date="30-3-21_15:10:02">
-<Sample ID="fXGQPjVOaI" Code="Стандарт_2" SampleKind="Standard">
+<Sample ID="j8X0QkvD39" Code="Стандарт_2" SampleKind="Standard">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
@@ -452,7 +452,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="wpNwCtWJ80" Date="30-3-21_15:10:02">
-<Sample ID="FycaLNCYTY" Code="K+_HCV-100-1000" SampleKind="ControlPositive">
+<Sample ID="wpNwCtWJ80" Code="K+_HCV-100-1000" SampleKind="ControlPositive">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#wpNwCtWJ80.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -462,7 +462,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="Z6LEVsPGp5" Date="30-3-21_15:10:02">
-<Sample ID="sFaMes6VAd" Code="K-_HCV-100-1000(1)" SampleKind="ControlNegative">
+<Sample ID="Z6LEVsPGp5" Code="K-_HCV-100-1000(1)" SampleKind="ControlNegative">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#Z6LEVsPGp5.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -472,7 +472,7 @@
 </Sample>
 </Inquiry>
 <Inquiry ID="CNp0JNIDWA" Date="30-3-21_15:10:02">
-<Sample ID="WV48TrzRri" Code="K-_HCV-100-1000(2)" SampleKind="ControlNegative">
+<Sample ID="CNp0JNIDWA" Code="K-_HCV-100-1000(2)" SampleKind="ControlNegative">
 <SampleSettings xmlns:dt="urn:DTReportTools"><Coeff>1000</Coeff></SampleSettings>
 <Service ID="#CNp0JNIDWA.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1">
 <DTReport FormID="HCV" />
@@ -500,9 +500,21 @@ XSAV HBV_HCV
 <FormID>HCV</FormID>
 <MinimalFormVersion>0.786</MinimalFormVersion>
 <ControlTubesCount>1</ControlTubesCount>
+<PosControlCount>0</PosControlCount>
+<NegControlCount>0</NegControlCount>
 <ID>3wBfnEMDH6Fa</ID>
 <VolumeTube>0</VolumeTube>
 <NextID>0</NextID>
+<Settings>
+<TDTRParameter Name="Units">
+<Name>Units</Name>
+<Value>Cop</Value>
+</TDTRParameter>
+<TDTRParameter Name="FormatType">
+<Name>FormatType</Name>
+<Value>Science</Value>
+</TDTRParameter>
+</Settings>
 <Method>155077</Method>
 <SystemParams>&lt;?xml version="1.0" standalone="yes"?&gt;
 &lt;properties&gt;
@@ -587,7 +599,6 @@ XSAV HBV_HCV
 <TubeName>Tube 1</TubeName>
 <ID>0</ID>
 <TubeIndex>1</TubeIndex>
-<GUID>IDRK3IDKAPQGEQFUPJQL2KBLZH4CRWWOUIAKYK1IF5013J4USTW4DE</GUID>
 <TPCRTest>
 <DisplayName>HCV</DisplayName>
 <ID>0</ID>

@@ -36,7 +36,7 @@
     <message>
         <location filename="../httpprocess.cpp" line="103"/>
         <source>HttpProcess</source>
-        <translation>ДТ_Pro: HTTP-соединение</translation>
+        <translation>ДТпрайм2: HTTP-соединение</translation>
     </message>
     <message>
         <location filename="../httpprocess.cpp" line="247"/>

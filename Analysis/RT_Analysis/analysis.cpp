@@ -2082,6 +2082,12 @@ void Analysis::editTest()
 
     if(!prot || !editTestAct->isEnabled()) return;
 
+    GridTab->setCurrentIndex(0);
+    QApplication::setOverrideCursor(QCursor(Qt::WaitCursor));
+    label_gif->setVisible(true);
+    obj_gif->start();
+    QApplication::processEvents();
+
     //...
     EnableTubes_Prev = QVector<short>::fromStdVector(prot->enable_tube);
     //qDebug() << "enable_Tubes: " << EnableTubes_Prev;
@@ -2104,7 +2110,12 @@ void Analysis::editTest()
     {
         test_editor->ext_dll_handle = ext_dll_handle;
         test_editor->LoadTest_ExtPlugins();
-    }    
+    }
+
+    label_gif->setVisible(false);
+    obj_gif->stop();
+    QApplication::restoreOverrideCursor();
+
     int res = test_editor->exec();
     delete test_editor;    
 

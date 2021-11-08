@@ -257,7 +257,7 @@
     <message>
         <location filename="../main_rt.cpp" line="1802"/>
         <source>Http Process</source>
-        <translation>ДТ_Pro: HTTP-соединение</translation>
+        <translation>ДТпрайм2: HTTP-соединение</translation>
     </message>
     <message>
         <location filename="../main_rt.cpp" line="2110"/>
@@ -266,27 +266,27 @@
         <translation>Файл протокола (*.rt *.xml)</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="2994"/>
+        <location filename="../main_rt.cpp" line="3045"/>
         <source>Protocol was successfully saved!</source>
         <translation>Протокол успешно сохранён!</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="2999"/>
+        <location filename="../main_rt.cpp" line="3050"/>
         <source>Attention! Problems detected...</source>
         <translation>Внимание! Обнаружены проблемы...</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="3264"/>
+        <location filename="../main_rt.cpp" line="3315"/>
         <source>Attention! You cannot continue working as an unregistered user!</source>
         <translation>Внимание! Вы не можете продолжить работу как незарегистрированный пользователь!</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="3265"/>
+        <location filename="../main_rt.cpp" line="3316"/>
         <source>But You can continue to work as a Guest when You log in again...</source>
         <translation>Но Вы можете продолжить работу как Гость при повторном входе в программу...</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="3351"/>
+        <location filename="../main_rt.cpp" line="3402"/>
         <source>Attention! For more stable operation of the application, You need to set the compatibility mode with Windows 7</source>
         <translation>Внимание! Для более устойчивой работы приложения, Вы должны выставить режим совместимости с Windows 7...</translation>
     </message>
@@ -338,12 +338,12 @@
         <translation>Открыть протокол</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="3150"/>
+        <location filename="../main_rt.cpp" line="3201"/>
         <source>Disconnect...</source>
         <translation>Разъединить...</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="3161"/>
+        <location filename="../main_rt.cpp" line="3212"/>
         <source>Connect...</source>
         <translation>Соединить...</translation>
     </message>
@@ -420,6 +420,19 @@
         <location filename="../webdialog.cpp" line="41"/>
         <source>Web Client</source>
         <translation>Web Клиент</translation>
+    </message>
+</context>
+<context>
+    <name>Web_Interface</name>
+    <message>
+        <location filename="../main_rt.cpp" line="2831"/>
+        <source>Everything went wrong!</source>
+        <translation>Всё пошло не так!</translation>
+    </message>
+    <message>
+        <location filename="../main_rt.cpp" line="2845"/>
+        <source>Operation completed successfully!</source>
+        <translation>Операция успешно завершена!</translation>
     </message>
 </context>
 </TS>

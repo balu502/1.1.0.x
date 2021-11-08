@@ -190,15 +190,15 @@ Rectangle
 
    function getListProtocols(){
 
-       print( "GET--> "+ addrList );
+       //print( "GET--> "+ addrList );
 
        var doc = new XMLHttpRequest();
 
-       print( "XMLHttpRequest init");
+       //print( "XMLHttpRequest init");
 
        doc.onreadystatechange = function() {
 
-            print( doc.readyState + " state of socket" );
+            //print( doc.readyState + " state of socket" );
 
             if (doc.readyState === XMLHttpRequest.DONE) {
 
@@ -223,7 +223,7 @@ Rectangle
                    }
                }
 
-               print( sjoined.length + " elements in list" );
+               //print( sjoined.length + " elements in list" );
 
                Web.get_ListProtocols( sjoined.join(':'), ':' );
             }
@@ -269,8 +269,6 @@ Rectangle
 
    function send_ProtocolToWeb(id_protocol, data_protocol, name_protocol)
    {
-       //return; // TODO: !!!!!!!!
-
        var doc      = new XMLHttpRequest();
        var addrPost = addrSave;
 
@@ -296,10 +294,26 @@ Rectangle
                     }
            };
 
+			//  1.	If Ok, <msg> tag contains Base64 encoded
+			//
+			//	<?xml version="1.0" encoding="UTF-8"?>
+			//	<OK/>
+			//
+			//  2.	If Network or Server error, then <msg> tag Base64 encoded
+			//
+			//  <?xml version="1.0" encoding="UTF-8"?>
+			//	<package><Error Message="Broken service, fault to sent %%P%%"</Error></package>
+			//
+			//  3.	If Bad Xml or invalid Protocol or other responce, then <msg> tag Base64 encoded
+			//
+			//	<?xml version="1.0" encoding="UTF-8"?>
+			//	<package><Error Message="Ошибка при получении результатов по протоколу. Element &lt;plate&gt; not found"/></package>
+			//
+
            if (doc.readyState === XMLHttpRequest.DONE) {
 
                if (doc.responseXML === null){
-                   ret.message= String('<package><Error Message="POST-ing %%P%% is unavailable"</Error></package>')
+                   ret.message= String('<?xml version="1.0" encoding="UTF-8"?><package><Error Message="Broken service, fault to sent %%P%%"</Error></package>')
                                 .replace("%%P%%", name_protocol);
                }else{
                    ret.status = "0";
@@ -307,7 +321,6 @@ Rectangle
                }
 
                Web.exec_Command( ret.build() );
-               //console.log(doc.responseText);
            }
        }
 

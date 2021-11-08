@@ -257,7 +257,7 @@
     <message>
         <location filename="../main_rt.cpp" line="1802"/>
         <source>Http Process</source>
-        <translation>DT_Pro: HTTP connection</translation>
+        <translation>DTprime2: HTTP connection</translation>
     </message>
     <message>
         <location filename="../main_rt.cpp" line="2110"/>
@@ -266,27 +266,27 @@
         <translation>Run file (*.rt, *.xml)</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="2994"/>
+        <location filename="../main_rt.cpp" line="3045"/>
         <source>Protocol was successfully saved!</source>
         <translation>Protocol was successfully saved!</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="2999"/>
+        <location filename="../main_rt.cpp" line="3050"/>
         <source>Attention! Problems detected...</source>
         <translation>Attention! Problems detected</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="3264"/>
+        <location filename="../main_rt.cpp" line="3315"/>
         <source>Attention! You cannot continue working as an unregistered user!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="3265"/>
+        <location filename="../main_rt.cpp" line="3316"/>
         <source>But You can continue to work as a Guest when You log in again...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="3351"/>
+        <location filename="../main_rt.cpp" line="3402"/>
         <source>Attention! For more stable operation of the application, You need to set the compatibility mode with Windows 7</source>
         <translation type="unfinished"></translation>
     </message>
@@ -338,12 +338,12 @@
         <translation>Open run file</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="3150"/>
+        <location filename="../main_rt.cpp" line="3201"/>
         <source>Disconnect...</source>
         <translation>Disconnect</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="3161"/>
+        <location filename="../main_rt.cpp" line="3212"/>
         <source>Connect...</source>
         <translation>Connect</translation>
     </message>
@@ -420,6 +420,19 @@
         <location filename="../webdialog.cpp" line="41"/>
         <source>Web Client</source>
         <translation>Web Client</translation>
+    </message>
+</context>
+<context>
+    <name>Web_Interface</name>
+    <message>
+        <location filename="../main_rt.cpp" line="2831"/>
+        <source>Everything went wrong!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main_rt.cpp" line="2845"/>
+        <source>Operation completed successfully!</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

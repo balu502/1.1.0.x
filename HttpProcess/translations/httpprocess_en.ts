@@ -36,7 +36,7 @@
     <message>
         <location filename="../httpprocess.cpp" line="103"/>
         <source>HttpProcess</source>
-        <translation>DT_Pro: HTTP connection</translation>
+        <translation>DTprime2: HTTP connection</translation>
     </message>
     <message>
         <location filename="../httpprocess.cpp" line="247"/>

@@ -70,8 +70,8 @@ HEADERS  += main_rt.h \
 RESOURCES += resource.qrc
 
 #DISTFILES += qml/web.qml
-OTHER_FILES += qml/web.qml
-OTHER_FILES += qml/integrator.qml
+OTHER_FILES +=
+OTHER_FILES +=
 
 #LIBS += -lShell32
 LIBS +=libversion
@@ -127,11 +127,7 @@ TRANSLATIONS = translations/ru.ts \
 #RC_ICONS = $$PWD/DTm.ico
 #RC_ICONS = $$PWD/RT.ico
 
-DISTFILES += \
-    qml/integrator.qml \
-    qml/balu_dir.qml \
-    qml/main-rtapp.qml \
-    qml/main-consumer.qml
+DISTFILES +=
 
 
 

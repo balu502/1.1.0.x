@@ -2715,6 +2715,8 @@ void Web_Interface::get_Message(QString message)
 void Web_Interface::exec_Command(QString message)
 {
     QDomDocument doc;
+    QDomDocument doc_temp;
+    QDomElement  root;
     QDomElement  request;
     QDomElement  element;
     QDomElement  item;
@@ -2722,6 +2724,8 @@ void Web_Interface::exec_Command(QString message)
     bool busy = false;
     bool stop_request = false;
     QMap<QString,QString> map;
+    QByteArray buf_msg;
+    bool state = false;
 
     QString fn, param;
     QString answer = "";
@@ -2732,7 +2736,7 @@ void Web_Interface::exec_Command(QString message)
     mb.setText(text);
     mb.exec();*/
 
-    qDebug() << "Exec_Command: message " << message;
+    //qDebug() << "Exec_Command: message " << message;
     //message = ";answer from DTmaster:  " + message;
     //emit sAnswerToServer(message);
 
@@ -2746,7 +2750,7 @@ void Web_Interface::exec_Command(QString message)
         answer = element.text();
         map.insert("Name_Request", answer);
 
-        qDebug() << "Exec_Command: " << doc.toString();
+        //qDebug() << "Exec_Command: " << doc.toString();
 
         // RunProtocol
         if(!element.isNull() && element.text() == "RunProtocol")
@@ -2823,12 +2827,47 @@ void Web_Interface::exec_Command(QString message)
         // SaveResultsCallback
         if(!element.isNull() && element.text() == "SaveResultsCallback")
         {
+            item = request.firstChildElement("msg");
+            param = tr("Everything went wrong!");
+            if(!item.isNull())
+            {
+                param = item.text();
+                buf_msg = QByteArray::fromBase64(param.toStdString().c_str());
+                param = QString(buf_msg);
+                //qDebug() << "buf_msg: " << param;
+                if(doc_temp.setContent(param))
+                {
+                    root = doc_temp.documentElement();
+                    //qDebug() << "root name: " << root.nodeName();
+                    if(root.nodeName() == "OK")
+                    {
+                        state = true;
+                        param = tr("Operation completed successfully!");
+                    }
+                    else
+                    {
+                        if(root.nodeName() == "package")
+                        {
+                            child = root.firstChildElement("Error");
+                            //qDebug() << "Error: " << child.isNull();
+                            if(!child.isNull() && child.hasAttribute("Message"))
+                            {
+                                //qDebug() << "has attribute: " << child.hasAttribute("Message");
+                                param = child.attribute("Message","");
+                            }
+                        }
+                    }
+                }
+            }
+
             mb.setStandardButtons(QMessageBox::Ok);
-            mb.setIcon(QMessageBox::Information);
-            mb.setText(answer);
+            if(state) mb.setIcon(QMessageBox::Information);
+            else mb.setIcon(QMessageBox::Warning);
+            mb.setText(param);
             mb.exec();
 
             doc.clear();
+            doc_temp.clear();
             return;
         }
 
