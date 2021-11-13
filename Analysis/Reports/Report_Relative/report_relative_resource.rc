@@ -1,8 +1,8 @@
 #include <windows.h>
 
 VS_VERSION_INFO VERSIONINFO
-	FILEVERSION 1,1,0,23
-	PRODUCTVERSION 1,1,0,23
+	FILEVERSION 9,1,0,7
+	PRODUCTVERSION 9,1,0,7
 	FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
 	FILEFLAGS VS_FF_DEBUG
@@ -19,11 +19,11 @@ VS_VERSION_INFO VERSIONINFO
 			BEGIN
 				VALUE "CompanyName", "\0"
 				VALUE "FileDescription", "\0"
-				VALUE "FileVersion", "1.1.0.23\0"
+				VALUE "FileVersion", "9.1.0.7\0"
 				VALUE "LegalCopyright", "dna-technology\0"
-				VALUE "OriginalFilename", "about_moduls.dll\0"
-				VALUE "ProductName", "about_moduls\0"
-				VALUE "ProductVersion", "1.1.0.23\0"
+				VALUE "OriginalFilename", "report_relative.dll\0"
+				VALUE "ProductName", "report_relative\0"
+				VALUE "ProductVersion", "9.1.0.7\0"
 			END
 		END
 		BLOCK "VarFileInfo"

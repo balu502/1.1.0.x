@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/cy5.png</file>
+        <file>images/cy55.png</file>
+        <file>images/cy55_flat.png</file>
+        <file>images/cy5_flat.png</file>
+        <file>images/disable_flat.png</file>
+        <file>images/dna_logo_eng_3.png</file>
+        <file>images/dna_logo_rus_3.png</file>
+        <file>images/fam.png</file>
+        <file>images/fam_flat.png</file>
+        <file>images/hex.png</file>
+        <file>images/hex_flat.png</file>
+        <file>images/logo_Dna-Tech.bmp</file>
+        <file>images/logo_Dna-Tech.png</file>
+        <file>images/rox.png</file>
+        <file>images/rox_flat.png</file>
+        <file>report/report_relative.xml</file>
+        <file>translations/report_relative_en.qm</file>
+        <file>translations/report_relative_ru.qm</file>
+    </qresource>
+</RCC>

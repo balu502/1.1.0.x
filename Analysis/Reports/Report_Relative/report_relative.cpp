@@ -1,24 +1,24 @@
-#include "report_quality.h"
+#include "report_relative.h"
 
-extern "C" REPORT_QUALITYSHARED_EXPORT Report_Interface* __stdcall createReport_plugin()
+extern "C" REPORT_RELATIVESHARED_EXPORT Report_Interface* __stdcall createReport_plugin()
 {
-    return(new Report_Quality());
+    return(new Report_Relative());
 }
 //-----------------------------------------------------------------------------
 //---
 //-----------------------------------------------------------------------------
-Report_Quality::Report_Quality()
+Report_Relative::Report_Relative()
 {
     readCommonSettings();
 
     report = NULL;
-    type_test = 0x02;                   // Quality type
-    test_description = tr("Quality");   // description
+    type_test = 0x03;                       // Relative type
+    test_description = tr("Relative");      // description
 }
 //-----------------------------------------------------------------------------
 //---
 //-----------------------------------------------------------------------------
-void* Report_Quality::Create_Report(rt_Protocol *P)
+void* Report_Relative::Create_Report(rt_Protocol *P)
 {
     int i,j,k,m,n;
     rt_GroupSamples *group;
@@ -58,7 +58,7 @@ void* Report_Quality::Create_Report(rt_Protocol *P)
     report->addParameter("Logotype", logotype);
 
     // 1. Titul
-    report->addParameter("Titul_Report",tr("Quality PCR Analysis"));
+    report->addParameter("Titul_Report",tr("Relative PCR Analysis"));
     report->addParameter("CurrentDate", date);
 
     // 2. Header
@@ -86,7 +86,7 @@ void* Report_Quality::Create_Report(rt_Protocol *P)
         {            
             sample = group->samples.at(j);            
             test = sample->p_Test;
-            if(test->header.Type_analysis != 0x02) continue;
+            if(test->header.Type_analysis != 0x03) continue;
 
             //...
             num_sample++;
@@ -139,20 +139,27 @@ void* Report_Quality::Create_Report(rt_Protocol *P)
                     else str_result = QString("%1").arg(dvalue,0,'f',1);
                     if(!Cp.isEmpty()) Cp += "\r\n";
                     Cp += str_result;
-                    if(!Result_Ch.isEmpty()) Result_Ch += "\r\n";
+                    /*if(!Result_Ch.isEmpty()) Result_Ch += "\r\n";
                     if(dvalue <= 0.) Result_Ch += "-";
-                    else Result_Ch += "+";
+                    else Result_Ch += "+";*/
                 }
 
                 for(m=0; m<tube->result_Tube.size(); m++)
                 {
                     str_result = QString::fromStdString(tube->result_Tube.at(m));
-                    if(str_result.contains("Quality_Result"))
+                    if(str_result.contains("Relative_Result"))
                     {
+                        //qDebug() << "str_result: " << str_result;
                         pos = str_result.indexOf("=");
                         if(pos > 0)
                         {
                             Result = str_result.mid(pos+1).trimmed();
+                            list = Result.split("\t");
+                            foreach(Result, list)
+                            {
+                                if(!Result_Ch.isEmpty()) Result_Ch += "\r\n";
+                                Result_Ch += Result;
+                            }
                         }
                         break;
                     }
@@ -170,11 +177,10 @@ void* Report_Quality::Create_Report(rt_Protocol *P)
             }
 
             if(Pos.isEmpty()) continue;
-
             Ch = QString(" \r\n%1\r\n ").arg(Ch);
             Cp = QString(" \r\n%1\r\n ").arg(Cp);
             Result_Ch = QString(" \r\n%1\r\n ").arg(Result_Ch);
-            str = QString("%1\t%2\t%3\t%4\t%5\t%6").arg(Pos).arg(Name).arg(Ch).arg(Cp).arg(Result_Ch).arg(Result);
+            str = QString("%1\t%2\t%3\t%4\t%5").arg(Pos).arg(Name).arg(Ch).arg(Cp).arg(Result_Ch);
             list_result.append(str);
         }        
     }
@@ -184,7 +190,7 @@ void* Report_Quality::Create_Report(rt_Protocol *P)
 
 
     // 4.
-    report->setReportFile(":/report/report_quality_new.xml");
+    report->setReportFile(":/report/report_relative.xml");
     report->runReportToPreview();
 
     bool error = report->hasError();
@@ -196,7 +202,7 @@ void* Report_Quality::Create_Report(rt_Protocol *P)
 //-----------------------------------------------------------------------------
 //---
 //-----------------------------------------------------------------------------
-void Report_Quality::Destroy_Report()
+void Report_Relative::Destroy_Report()
 {
     if(report)
     {
@@ -208,7 +214,7 @@ void Report_Quality::Destroy_Report()
 //-----------------------------------------------------------------------------
 //---
 //-----------------------------------------------------------------------------
-void Report_Quality::Type_Report(int *type, QString *description)
+void Report_Relative::Type_Report(int *type, QString *description)
 {
     *type = type_test;
     *description = test_description;
@@ -218,7 +224,7 @@ void Report_Quality::Type_Report(int *type, QString *description)
 //-----------------------------------------------------------------------------
 //---
 //-----------------------------------------------------------------------------
-void Report_Quality::Set_SamplesEnable(QVector<short> *vec)
+void Report_Relative::Set_SamplesEnable(QVector<short> *vec)
 {
     sample_enable.clear();
     sample_enable = *vec;
@@ -226,7 +232,7 @@ void Report_Quality::Set_SamplesEnable(QVector<short> *vec)
 //-----------------------------------------------------------------------------
 //--- readCommonSettings()
 //-----------------------------------------------------------------------------
-void Report_Quality::readCommonSettings()
+void Report_Relative::readCommonSettings()
 {
     QString text;
     QString dir_path = qApp->applicationDirPath();
@@ -240,7 +246,7 @@ void Report_Quality::readCommonSettings()
         //{
         //    qApp->installTranslator(&translator);
         //}
-        if(translator_report.load(":/translations/report_quality_" + text + ".qm"))
+        if(translator_report.load(":/translations/report_relative_" + text + ".qm"))
         {
             qApp->installTranslator(&translator_report);
         }

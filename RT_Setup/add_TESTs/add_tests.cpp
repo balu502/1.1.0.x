@@ -1226,7 +1226,7 @@ void Add_TESTs::change_test(int id)
         for(i=0; i<p_test->preference_Test.size(); i++)
         {
             property = p_test->preference_Test.at(i);
-            if(property->name == "Standarts Information")
+            if(property->name == "Standarts Information" && p_test->header.Type_analysis == 0x0001) // for Quantity tests
             {
                 text = QString::fromStdString(property->value);
                 list = text.split("\t");
@@ -1246,6 +1246,16 @@ void Add_TESTs::change_test(int id)
                     }
                 }
                 break;
+            }
+            if(property->name == "Controls Information" && p_test->header.Type_analysis == 0x0003)  // for Relative tests
+            {
+                text = QString::fromStdString(property->value);
+                count_st = text.toInt(&ok);
+                if(!ok) count_st = 1;
+                Count_St->setValue(count_st);
+                Label_St->setEnabled(true);
+                Count_St->setEnabled(true);
+                Label_countSt->setEnabled(true);
             }
         }
     }

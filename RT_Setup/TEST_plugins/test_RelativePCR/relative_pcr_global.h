@@ -1,0 +1,12 @@
+#ifndef RELATIVE_PCR_GLOBAL_H
+#define RELATIVE_PCR_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(RELATIVE_PCR_LIBRARY)
+#  define RELATIVE_PCRSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define RELATIVE_PCRSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // RELATIVE_PCR_GLOBAL_H

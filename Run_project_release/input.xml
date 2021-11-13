@@ -39,8 +39,6 @@ XSAV HBV_HCV</amProgramm>
 			<method>155077</method>
 			<volumeTube>0</volumeTube>
 			<ControlTubesCount>1</ControlTubesCount>
-			<PosControlCount>0</PosControlCount>
-			<NegControlCount>0</NegControlCount>
 			<Catalog>HCV</Catalog>
 			<activeChannels>11</activeChannels>
 			<amProgramm>
@@ -79,21 +77,9 @@ XSAV HBV_HCV
 							<FormID>HCV</FormID>
 							<MinimalFormVersion>0.786</MinimalFormVersion>
 							<ControlTubesCount>1</ControlTubesCount>
-							<PosControlCount>0</PosControlCount>
-							<NegControlCount>0</NegControlCount>
 							<ID>3wBfnEMDH6Fa</ID>
 							<VolumeTube>0</VolumeTube>
 							<NextID>0</NextID>
-							<Settings>
-								<TDTRParameter Name="Units">
-									<Name>Units</Name>
-									<Value>Cop</Value>
-								</TDTRParameter>
-								<TDTRParameter Name="FormatType">
-									<Name>FormatType</Name>
-									<Value>Science</Value>
-								</TDTRParameter>
-							</Settings>
 							<Method>155077</Method>
 							<SystemParams>&lt;?xml version="1.0" standalone="yes"?&gt;
 &lt;properties&gt;
@@ -4849,7 +4835,7 @@ XSAV HBV_HCV
 	</sourceSet>
 	<Analysis_Data/>
 	<Analysis_Version>
-		<version>1.1.0.22</version>
+		<version>1.1.0.23</version>
 		<dtr_version>HCV.dtr ver:0.861; DTReport.dll ver:2.4.2.728</dtr_version>
 	</Analysis_Version>
 	<Analysis_HASH>
