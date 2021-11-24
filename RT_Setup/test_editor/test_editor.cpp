@@ -1411,6 +1411,7 @@ void Test_editor::create_newTest()
     QString item = inputDialog.getItem(this, tr("Choose type of the Test..."),
                                         tr("List of type Tests:"), items, 0, false, &ok, inputDialog.windowFlags());    
 
+    if(!ok) return;
     if(item.startsWith("-----"))
     {
         ok = false;
@@ -1433,6 +1434,7 @@ void Test_editor::create_newTest()
                                              tr("Name of the Test:"), QLineEdit::Normal,
                                              "", &ok, inputDialog.windowFlags());
 
+        if(!ok) return;
         if(name.trimmed().isEmpty())
         {
             message.setStandardButtons(QMessageBox::Ok);

@@ -3097,9 +3097,9 @@ void Analysis::open_Protocol(QString fileName, bool send, bool create_Hash)
                         layout_Grid->addWidget(w_obj);
                     }
 
-                    //qDebug() << "Analyser: ";
+                    qDebug() << "Analyser: ";
                     alg->Analyser(prot,0x00);
-                    //qDebug() << "Show: ";
+                    qDebug() << "Show: ";
                     alg->Show();
 
                     void *map = alg->ReferenceForMap();

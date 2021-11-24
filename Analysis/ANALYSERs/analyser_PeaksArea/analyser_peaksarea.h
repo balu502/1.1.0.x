@@ -102,6 +102,10 @@ public:
 
     QVector<double> s;
     QVector<QPoint> p;
+
+    QVector<double> s_manual;
+    QVector<QPointF> p_manual;
+    QVector<QVector<QPointF>*> Points;
 };
 
 //-----------------------------------------------------------------------------
@@ -156,15 +160,33 @@ public:
 
 
     QwtPlotCurve *curve;
+    QwtPlotCurve *curve_zero;
+    QwtPlotCurve *curve_1_1;
+    QwtPlotCurve *curve_1_2;
+    QwtPlotCurve *curve_2_1;
+    QwtPlotCurve *curve_2_2;
+    QList<QwtPlotCurve*> list_curve;
+
     QwtPlotGrid *grid;
     QwtPlotShapeItem *item_first;
     QwtPlotShapeItem *item_second;
+
+    QComboBox *Mode_Box;
 
     // methods:
 
     void Create_Curves();
     void Delete_Curves();
     void Fill_TableResults();
+    void RepaintCurve_And_RecalculateArea(double);
+    void RepaintArea(QVector<double>*, QVector<double>*, Area *);
+
+    QPointF BorderPoint_ZeroCurve(QVector<double>*, QVector<double>*, int, int);
+    QPointF BorderPoint_ManualMode(QVector<double>*, QVector<double>*, int, double, int);
+    double CalculateArea_ManualMode(Area*, int);
+
+protected:
+    virtual bool eventFilter(QObject *, QEvent *);
 
     
 private:
@@ -186,8 +208,13 @@ private:
 
     QMap<QString, Area*> map_Area;
 
+    int     index_Curve;
+    Area    *current_area;
+    int     current_row;
+
 private slots:
     void Change_Select(int,int,int,int);
+    void Mode_Changed();
     
 };
 

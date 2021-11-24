@@ -34,90 +34,90 @@
         <translation>переместить в локальную папку</translation>
     </message>
     <message>
-        <location filename="../copy_blocktests.cpp" line="189"/>
+        <location filename="../copy_blocktests.cpp" line="191"/>
         <source>from xml_file:</source>
         <translation>из xml файла:</translation>
     </message>
     <message>
-        <location filename="../copy_blocktests.cpp" line="850"/>
+        <location filename="../copy_blocktests.cpp" line="957"/>
         <source>Protocol File (*.rt *.trt)</source>
         <translation>Файл протокола (*.rt *.trt)</translation>
     </message>
     <message>
-        <location filename="../copy_blocktests.cpp" line="196"/>
+        <location filename="../copy_blocktests.cpp" line="198"/>
         <source>to xml_file:</source>
         <translation>в xml файл:</translation>
     </message>
     <message>
-        <location filename="../copy_blocktests.cpp" line="199"/>
+        <location filename="../copy_blocktests.cpp" line="201"/>
         <source>--- Other users ---</source>
         <translation>--- Другие пользователи ---</translation>
     </message>
     <message>
-        <location filename="../copy_blocktests.cpp" line="386"/>
+        <location filename="../copy_blocktests.cpp" line="394"/>
         <source>Source tests:</source>
         <translation>Источник тестов:</translation>
     </message>
     <message>
-        <location filename="../copy_blocktests.cpp" line="430"/>
+        <location filename="../copy_blocktests.cpp" line="438"/>
         <source>All tests:</source>
         <translation>Все тесты:</translation>
     </message>
     <message>
-        <location filename="../copy_blocktests.cpp" line="398"/>
-        <location filename="../copy_blocktests.cpp" line="565"/>
+        <location filename="../copy_blocktests.cpp" line="406"/>
+        <location filename="../copy_blocktests.cpp" line="578"/>
         <source>Target tests:</source>
         <translation>Директория копирования:</translation>
     </message>
     <message>
-        <location filename="../copy_blocktests.cpp" line="189"/>
+        <location filename="../copy_blocktests.cpp" line="191"/>
         <source>from (*.rt,*.trt) protocol:</source>
         <translation>из (*.rt,*.trt) протокола</translation>
     </message>
     <message>
-        <location filename="../copy_blocktests.cpp" line="769"/>
+        <location filename="../copy_blocktests.cpp" line="876"/>
         <source>Get File with tests...</source>
         <translation>Выбрать файл тестов...</translation>
     </message>
     <message>
-        <location filename="../copy_blocktests.cpp" line="771"/>
-        <location filename="../copy_blocktests.cpp" line="917"/>
+        <location filename="../copy_blocktests.cpp" line="878"/>
+        <location filename="../copy_blocktests.cpp" line="1024"/>
         <source>Tests File (*.xml)</source>
         <translation>Файл тестов (*.xml)</translation>
     </message>
     <message>
-        <location filename="../copy_blocktests.cpp" line="792"/>
-        <location filename="../copy_blocktests.cpp" line="818"/>
-        <location filename="../copy_blocktests.cpp" line="932"/>
-        <location filename="../copy_blocktests.cpp" line="958"/>
+        <location filename="../copy_blocktests.cpp" line="899"/>
+        <location filename="../copy_blocktests.cpp" line="925"/>
+        <location filename="../copy_blocktests.cpp" line="1039"/>
+        <location filename="../copy_blocktests.cpp" line="1065"/>
         <source>Attention!</source>
         <translation>Внимание!</translation>
     </message>
     <message>
-        <location filename="../copy_blocktests.cpp" line="792"/>
-        <location filename="../copy_blocktests.cpp" line="818"/>
-        <location filename="../copy_blocktests.cpp" line="932"/>
-        <location filename="../copy_blocktests.cpp" line="958"/>
+        <location filename="../copy_blocktests.cpp" line="899"/>
+        <location filename="../copy_blocktests.cpp" line="925"/>
+        <location filename="../copy_blocktests.cpp" line="1039"/>
+        <location filename="../copy_blocktests.cpp" line="1065"/>
         <source>Invalid format file!</source>
         <translation>Неверный формат файла!</translation>
     </message>
     <message>
-        <location filename="../copy_blocktests.cpp" line="848"/>
+        <location filename="../copy_blocktests.cpp" line="955"/>
         <source>Open Protocol...</source>
         <translation>Открыть протокол...</translation>
     </message>
     <message>
-        <location filename="../copy_blocktests.cpp" line="915"/>
+        <location filename="../copy_blocktests.cpp" line="1022"/>
         <source>Open File with tests...</source>
         <translation>Открыть файл тестов...</translation>
     </message>
     <message>
-        <location filename="../copy_blocktests.cpp" line="1094"/>
+        <location filename="../copy_blocktests.cpp" line="1208"/>
         <source>Do You want to replace the test: </source>
         <translation>Вы хотите заменить тест:  </translation>
     </message>
     <message>
-        <location filename="../copy_blocktests.cpp" line="1236"/>
+        <location filename="../copy_blocktests.cpp" line="1350"/>
         <source>file(s) successfully copied!</source>
         <translation>файл(а,ов) успешно скопирован(ы)!</translation>
     </message>

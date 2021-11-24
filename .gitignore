@@ -62,3 +62,6 @@ Run_project_release/DTmaster.exe
 Run_project_release/DTR_Scope.xml
 Run_project_release/DTR_Scope.xml
 Run_project_release/DTmaster.exe
+Run_project_release/DTmaster.exe
+Run_project_release/DTcheck.exe
+*.qm

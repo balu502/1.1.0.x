@@ -201,8 +201,8 @@ Main_RT::Main_RT(QWidget *parent)
     //pweb->setSource(QUrl::fromLocalFile("qml/balu_dir.qml"));
     //pweb->setSource(QUrl::fromLocalFile("qml/integrator.qml"));
 
-    pweb->setSource(QUrl::fromLocalFile(dir_path + "/qml/main-rtapp.qml"));
-    pweb_add->setSource(QUrl::fromLocalFile(dir_path + "/qml/main-consumer.qml"));
+    pweb->setSource(QUrl::fromLocalFile(dir_path + "/qml/rtapp.qml"));
+    pweb_add->setSource(QUrl::fromLocalFile(dir_path + "/qml/consumer.qml"));
 #endif
 
 

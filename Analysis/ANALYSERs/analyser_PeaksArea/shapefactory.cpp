@@ -114,12 +114,12 @@ QPainterPath ShapeFactory::path( Shape shape,
 
             if(vec.size())
             {
-                poly += QPointF(vec.at(0).x(), 0.);
+                //poly += QPointF(vec.at(0).x(), 0.);
                 foreach(P, vec)
                 {
                     poly += P;
                 }
-                poly += QPointF(vec.at(vec.size()-1).x(), 0.);
+                //poly += QPointF(vec.at(vec.size()-1).x(), 0.);
             }
 
             path.addPolygon(poly);

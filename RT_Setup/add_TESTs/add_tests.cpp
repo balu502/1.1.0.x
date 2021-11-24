@@ -1226,7 +1226,7 @@ void Add_TESTs::change_test(int id)
         for(i=0; i<p_test->preference_Test.size(); i++)
         {
             property = p_test->preference_Test.at(i);
-            if(property->name == "Standarts Information" && p_test->header.Type_analysis == 0x0001) // for Quantity tests
+            if(property->name == "Standarts Information") // && p_test->header.Type_analysis == 0x0001) // for Quantity tests
             {
                 text = QString::fromStdString(property->value);
                 list = text.split("\t");

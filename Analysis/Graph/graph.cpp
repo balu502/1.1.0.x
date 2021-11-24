@@ -1632,8 +1632,8 @@ bool GraphPlot::eventFilter(QObject *object, QEvent *e)
             //........................
 
 
-            if(canvas()->cursor().shape() == Qt::SplitVCursor && rejime_Ct ||
-               canvas()->cursor().shape() == Qt::SplitHCursor && rejime_Melting)
+            if((canvas()->cursor().shape() == Qt::SplitVCursor && rejime_Ct) ||
+               (canvas()->cursor().shape() == Qt::SplitHCursor && rejime_Melting))
             {
                 if(rejime_Ct)
                 {

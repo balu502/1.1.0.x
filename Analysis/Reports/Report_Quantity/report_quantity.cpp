@@ -198,6 +198,12 @@ void* Report_Quantity::Create_Report(rt_Protocol *P)
             }
 
             if(Pos.isEmpty()) continue;
+
+            Ch = QString(" \r\n%1\r\n ").arg(Ch);
+            Cp = QString(" \r\n%1\r\n ").arg(Cp);
+            Result_Ch = QString(" \r\n%1\r\n ").arg(Result_Ch);
+            Result = QString(" \r\n%1\r\n ").arg(Result);
+
             str = QString("%1\t%2\t%3\t%4\t%5\t%6").arg(Pos).arg(Name).arg(Ch).arg(Cp).arg(Result_Ch).arg(Result);
             list_result.append(str);
         }        

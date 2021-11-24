@@ -1,388 +1,379 @@
-﻿<?xml version='1.0' encoding='UTF-8'?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <RSStrings>
-	<errSampleNotFound RU='Образец "%s" не найден в протоколе.' Translated='Sample "%s" not found'/>
-	<errFuncValueDisabled RU='Функции Value и ValueDef доступны только в процессе генерации отчета. Чтобы использовать их значения после генерации, сохраняйте эти значения в отчет - в свойства Tag и TagStr, а также в скрытые элементы.' Translated=' '/>
-	<errSetupDisabled RU='Параметры отчета доступны только в процессе генерации отчетов, либо во время редактирования этих параметров.' Translated='Report settings available only in generation or editing mode'/>
-	<errGenerationError RU='Ошибка при генерации отчета. %s' Translated='Report generation error. %s'/>
-	<errBadVer RU='Для импорта протоколов *.r96 требуется программа RealTime_PCR версии 7.7 или выше.' Translated='To import protocols *.r96 required the RealTime_PCR ver. 7.7 or highter'/>
-	<errSampleCodeExists RU='Образец с маркировкой "%s" уже существует.' Translated='Sample labeled "%s" already exists.'/>
-	<errNoDoc RU='XML-документ не задан.' Translated='XML document not specified'/>
-	<errSex RU='У образца "%s" не указан пол.' Translated='For sample "%s" gender not specified'/>
-	<errDLL RU='Ошибка при загрузке %s. %s' Translated='Loading error %s. %s'/>
-	<errProjectExists RU='Проект с таким именем уже существует.' Translated='A project with this name already exists.'/>
-	<errEditorNotCreate RU='Редактор не создан.' Translated='Editor not created.'/>
-	<errFunctionNotDefined RU='Функция не поддерживается.' Translated='Function not supported.'/>
-	<errEmptyName RU='Имя не должно быть пустым.' Translated='The name field can not be empty.'/>
-	<errSampleNotDefined RU='Не задан образец.' Translated='Couple sample not specified.'/>
-	<errFieldsCount RU='Количество полей не совпадает.' Translated='The number of fields does not match.'/>
-	<errFieldAlreadyExists RU='Поле с таким именем уже существует!' Translated='The field with this name already exists!'/>
-	<errRenameFieldNotSelected RU='Не выбрано поле для переименования' Translated='No field selected for renaming'/>
-	<errDelFieldNotSelected RU='Не выбрано поле для удаления' Translated='No field selected for deleting'/>
-	<errInvalidName RU='Недопустимое имя!' Translated='Invalid name!'/>
-	<errDictNotFound RU='Справочник не найден: %s.' Translated='Dictionary not found: %s'/>
-	<errRequiredParam RU='Функция %s - параметр №%d обязателен.' Translated='Function %s: parameter %d required.'/>
-	<errValueNotFound RU='Значение "%s" не найдено.' Translated='Value "%s" not found.'/>
-	<errTooMuchStrings RU='Эксперт %s выдал больше 1 строки, при выбранном типе заключения "%s".' Translated='The expert %s return more than 1 string with "%s" conclusion kind.'/>
-	<errDublicateSampleCode RU='В протоколе присутствуют образцы с одинаковой маркировкой: "%s".' Translated='There are samples with same label in report: "%s"'/>
-	<errTooMuchService RU='Найдено больше одного исследования %s.' Translated='More than one service found %s'/>
-	<errSampleIDNotFound RU='Образец не найден (ID="%s").' Translated='Sample not found (ID="%s").'/>
-	<errInvalidProtocol RU='Некорректный протокол. В протоколе присутствуют образцы с одинаковыми ID: "%s".' Translated='Incorrect protocol. There are samples with same ID:  "%s".'/>
-	<errSameSex RU='Образцы в паре не cмогут быть одного пола.' Translated='Couple samples cannot be same gender.'/>
-	<errSampleGroupNotFound RU='Группа образцов не найдена (%d).' Translated='Sample group not found (%d).'/>
-	<errSampleInGroup RU='Образец "%s" входит в %d группы.' Translated='Sample "%s" included in %d groups.'/>
-	<errCouple RU='Недопустимое количество образцов в группе типа "Пара".' Translated='Invalid number of samples in a group type "couple".'/>
-	<errInvalidImportProtocol RU='Импортируемый протокол содержит ошибки. %s' Translated='Imported protocol has errors. %s'/>
-	<errSetupDialogDoesntExists RU='Не задан диалог настроек' Translated='Settings dialog not specified'/>
-	<errSetupsNotAggregative RU='Отчет не поддерживает общие настройки' Translated='The report does not support aggregative settings'/>
-	<errCoupleWithoutSample RU='Найдена пара с отсутствующим образцом' Translated='A couple without linked sample found'/>
-	<errDuplicateService RU='Дублирующееся исследование' Translated='Duplicate service'/>
-	<errProtocolContainsErrors RU='Протокол содержит ошибки. Некорректные образцы исключены из обработки:' Translated='The protocol contains errors. Incorrect samples are excluded from processing:'/>  
-	<errSampleListNotSpecified RU='Не задан список образцов' Translated='No list of samples specified'/>
-	<errProtocolContainsErrorsSimple RU='Протокол содержит ошибки.' Translated='The protocol contains errors.'/>
-	<errDTRForSampleNotFound RU='Не найден вычисляющий модуль %s для образца %s' Translated=' The DTR module %s was not found for sample %s'/>
-	<msgMissing RU='Результат отсутствует' Translated='Result is absent'/>
-	<msgOriginal RU='Результат был получен с прибора' Translated='Result was obtained from device'/>
-	<msgImported RU='Результат был импортирован из: ' Translated='Result was imported from: '/>
-	<msgAdded RU='Результат был добавлен' Translated='Result was added'/>
-	<msgModified RU='Результат был изменен. Исходное значение: ' Translated='Result value was changed. Original value: '/>
-	<msgDelLink RU='Удалить текущую привязку?' Translated='Drop current link?'/>
-	<msgDropCoupleConfirm RU='Смена пола данного образца приведет к расформированию пары. Продолжить?' Translated='Gender changing for this sample will lead disbanding couple. Continue?'/>
-	<msgDeleteCol RU='Удалить столбец' Translated='Delete column'/>
-	<msgDropTable RU='удалить таблицу' Translated='Delete table'/>
-	<msgConfirmDropLink RU='Выбранный образец уже привязан к другому образцу. Изменить привязку?' Translated='Selected sample already linked to another sample. Change link?'/>
-	<msgDatasetsFill RU='Заполнение системных датасетов' Translated='Filling system datasets'/>
-	<msgHandleInput RU='По образцу "%s" следующие результаты введены вручную: %s.' Translated='Following results in sample "%s" are entered manually: %s.'/>
-	<msgCalculationLevel RU='Вычисление на уровне ' Translated='Calculating level '/>
-	<msgDelSample RU='удалить образец "%s"' Translated='delete sample "%s"'/>
-	<msgCoupleSampleNotFound RU='Парный образец не найден.' Translated='Couple sample not found.'/>
-	<msgConfirmProtocol RU='Протокол был изменен. Сохранить изменения?' Translated='The protocol was changed. Save changes?'/>
-
-	<sNewProject RU='Новый проект' Translated='New project'/>
-	<sInputProjectName RU='Введите имя проекта' Translated='Enter project name'/>
-	<sOptionsWizard RU='Запуск диалога настройки' Translated='Launching settings dialog'/>
-	<sInputProgName RU='Введите progName' Translated='Enter progName'/>
-	<sOpenProject RU='Открытие проекта' Translated='Open project'/>
-	<sResultsFilter RU='Фильтр результатов' Translated='Results filter'/>
-	<sSaveProject RU='Сохранение проекта' Translated='Save project'/>
-	<sGenerationTime RU='Время вычислений и генерации отчета: ' Translated='Calculation and generation time: '/>
-	<sTable RU='Таблица' Translated='Table'/>
-	<sRTPCRExport RU='Экспорт в RealTime_PCR' Translated='Export to RealTime_PCR'/>
-	<sDropCouple RU='Расформирование пары' Translated='Drop couple'/>
-	<sEditSample RU='Редактирование образца' Translated='Edit sample'/>
-	<sAddSample RU='Добавление образца' Translated='Add sample'/>
-	<sEdit RU='Редактирование' Translated='Editing'/>
-	<sResult RU='Результат' Translated='Result'/>
-	<sInputObjName RU='Введите название, используя латиницу и цифры' Translated='Enter name using the Latin alphabet and numbers'/>
-	<sInputColName RU='Введите название столбцов через запятую' Translated=' Enter column names separated by commas'/>
-	<sNewDict RU='Новый справочник' Translated='New dictionary'/>
-	<sColCreate RU='Создание столбцов' Translated='Create columns'/>
-	<sDeleteCol RU='Удаление столбцa' Translated='Delete column'/>
-	<sEditCol RU='Изменить столбец' Translated='Edit column'/>
-	<sDropTable RU='Удаление таблицы' Translated='Delete table'/>
-	<sRenameTable RU='Переименовать таблицу' Translated='Rename table'/>
-	<sAddCol RU='Добавить столбец' Translated='Add column'/>
-	<sCalcCondition RU='Условие вычисления' Translated='Calculation condition'/>
-	<sCondition RU='Условие' Translated='Condition'/>
-	<sName RU='Имя' Translated='Name'/>
-	<sFormula RU='Формула' Translated='Formula'/>
-	<sInReport RU='В отчете' Translated='In report'/>
-	<sFullName RU='Полное наименование' Translated='Full name'/>
-	<sNumberFormat RU='Формат числа' Translated='Number format'/>
-	<sAggregation RU='Агрегирование' Translated='Aggregation'/>
-	<sNewFormulaList RU='Новый список формул' Translated='New formulas'/>
-	<sNewExpert RU='Новый эксперт' Translated='New expert'/>
-	<sDelLink RU='Удаление привязки' Translated='Drop link'/>
-	<eEditLink RU='Изменение привязки' Translated='Chacnge link'/>
-	<sSelectedSampleLinkedToCurrent RU='Выбранный образец привязан к текущему' Translated='Selected sample already linked to current sample'/>
-	<sSample RU='Образец' Translated='Sample'/>
-	<sLinkedTo RU='привязан к' Translated='linked to'/>
-	<sComplex RU='сложное' Translated='complex'/>
-	<sSimpleStrict RU='простое строгое' Translated='simple strict'/>
-	<sSimpleLax RU='простое нестрогое' Translated='simple lax'/>
-	<sDirectory RU='справочник' Translated='dictionary'/>
-	<sFormulaList RU='Список формул' Translated='Formulas'/>
-	<sExpert RU='Эксперт' Translated='Expert'/>
-	<sFirstValue RU='первое значение' Translated='first value'/>
-	<sQuantity RU='количество' Translated='count'/>
-	<sSum RU='сумма' Translated='summ'/>
-	<sMinValue RU='минимальное значение' Translated='min value'/>
-	<sMaxValue RU='максимальное значение' Translated='max value'/>
-	<sAverageValue RU='среднее значение' Translated='average value'/>
-	<sNotCompute RU='[не вычислять]' Translated='[not compute]'/>
-	<sEventResult RU='результат' Translated='result'/>
-	<sEventResearch RU='исследование' Translated='service'/>
-	<sEventSample RU='образец' Translated='sample'/>
-	<sDescription RU='Описание' Translated='description'/>
-	<sTableKind RU='Тип таблицы' Translated='Table kind'/>
-	<sResultInReport RU='Добавлять к результатам' Translated='Add to results'/>
-	<sResultName RU='Наименование результата' Translated='Result name'/>
-	<sConclusionKind RU='Тип заключения' Translated='Conclusion kind'/>
-	<sUseAsDataset RU='Использовать как набор данных' Translated='Use as dataset'/>
-	<sCalculationEvent RU='Вычислять при выводе' Translated='Calculation event'/>
-	<sReportContainer RU='Контейнер отчетов' Translated='Report container'/>
-	<sMergeReports RU='Объединение отчетов' Translated='Merge reports'/>
-	<sForceReloadFR RU='Перезагружать макет перед каждым отчетом' Translated='Force reload'/>
-	<sHasSetupDialog RU='Включает диалог настройки' Translated='Include settings dialog'/>
-    <sAggregativeOptions RU='Общие настройки' Translated='Aggregative settings'/>
-	<sProgNames RU='Программные идентификаторы исследований' Translated='Service ProgNames'/>
-	<sTestProgNames RU='Программные идентификаторы тестов' Translated='Test ProgNames'/>
-	<sReportTitle RU='Заголовок отчета' Translated='Report title'/>
-	<sDTMathFunc RU='DT: математические' Translated='DT: math'/>
-	<sSexMale RU='мужской' Translated='male'/>
-	<sSexFemale RU='женский' Translated='female'/>
-	<sAbbSexMale RU='Муж.' Translated='male'/>
-	<sAbbSexFemale RU='Жен.' Translated='female'/>
-	<sYear RU='год' Translated='year'/>
-	<sMonth RU='месяц' Translated='month'/>
-	<sDay RU='день' Translated='day'/>
-	<sNotDefined RU='Не задан ' Translated='Not defined '/>
-	<sDelSample RU='Удаление образца' Translated='Delete sample'/>
-	<sSampleImport RU='Импорт образцов' Translated='Import samples'/>
-	<sDelRow RU='Удаление строки' Translated='Delete row'/>
-    <sResultView RU='Таблица результатов' Translated='Results table'/>
-    <sNewResultView RU='Новая таблица результатов' Translated='New results table'/>
-    <sDisplayName RU='Название отчета' Translated='Display name'/>
-	<sInfoFields RU='Информационные поля...' Translated='Information fields...'/>
-	<sEditRepConclusion RU='Редактировать заключение...' Translated='Edit conclusion...'/>
-	<sLabInfo RU='Информация о лаборатории...' Translated='Information about laboratory...'/>	
-	<sCapYes RU='Да' Translated='Yes'/>
-	<sCapNo RU='Нет' Translated='No'/>
-	<sCapService RU='Исследование' Translated='Service'/>
-	<sMicroType RU='Тип микроорганизма' Translated='Type of microorganism'/>
-	<sAnalyseParams RU='Параметры анализа' Translated='Analysis parameters'/>
-	<sOthers RU='Разное' Translated='Others'/>
-	<sValidatingFactor RU='Фактор валидации' Translated='Validating factor'/>
-	<sIDorName RU='Идентификатор/наименование' Translated='ID/Name'/>
-	<sFullName RU='ФИО' Translated='Full name'/>
-	<sLabel RU='Маркировка' Translated='Label'/>
-	<sSex RU='Пол' Translated='Sex'/>
-	<sHLAB27 RU='Аллель HLA-B27' Translated='Allele HLA-B27'/> 
-	<sCommentDRB RU='Комментарий с оценкой риска аутоиммунных заболеваний по гену DRB1' Translated='Comment for autoimmune risk assessment associated to DRB1'/>
-	<sCommentCouple RU='Комментарий о совместимости в паре' Translated='Comment on couple compatibility (matching)'/>
-	<sGaploControl RU='Контроль гаплотипов ' Translated='Haplotype control'/>
-	<sSettings RU='Настройки' Translated='Settings'/>
-	<sAdditionalSettings RU='Дополнительные настройки' Translated='Additional settings'/>	
-	<sOk RU='ОК' Translated='OK'/>
-	<sCancel RU='Отмена' Translated='Cancel'/>	
-	<sEditResultsNotAllowed RU='Редактирование результатов запрещено' Translated='Editing results not allowed'/>
-	<sError RU='Ошибка' Translated='Error'/>
-	<sImportSuccess RU='Импорт успешно завершен' Translated='Import completed successfully'/>
-	<sAsk RU='Вы уверены, что хотите %s?' Translated='Are you sure that you want %s'/>
-	<sIdentifier RU='Идентификатор' Translated='Identifier'/>
-	<sQuality2 RU='Качественный 2.0' Translated='Quality 2.0'/>
-	<sQualityTitle RU='Результат исследования методом полимеразной цепной реакции' Translated='PCR results'/>
-	<sPositiveBoundary RU='Граница положительного результата' Translated='The boundary of the positive result'/>
-	<sIC RU='ВК' Translated='IC'/>
-	<sRecalcProt RU='Результаты были обсчитаны в другой конфигурации ПО, пересчитать результаты?' Translated='Results were calculated in another configuration of DTmaster. Recalculate it?'/>
-	<sPreparingData RU='Подготовка данных...' Translated='Preparing data...'/>
-	<sLoadingData RU='Загрузка данных...' Translated='Loading data...'/>
-	<sCalculatingStage RU='Вычисление: этап ' Translated='Calculating stage: '/>
-	<sCreatingViews RU='Создание таблиц...' Translated='Creating views...'/>
-	<sFrom RU=' из ' Translated=' from '/> 
-	<sAndroflor RU='Андрофлор' Translated='Androflor'/> 
-	<sAndroflorR RU='Андрофлор®' Translated='Androflor'/>
-	<sAndroflorScr RU='Андрофлор® Скрин' Translated='Androflor Screen'/>
-	<sAndroflorScrA RU='Андрофлор® Скрин_А' Translated='Androflor Screen_A'/>
-	<sAndroflorA RU='Андрофлор®+А' Translated='Androflor+A'/>
-	<sAndroflor_A RU='Андрофлор®_А' Translated='Androflor_A'/>
-	<sAndroflorTitle RU='Исследование микрофлоры урогенитального тракта мужчин методом ПЦР в режиме реального времени Андрофлор®' Translated='Urogenital microbiome composition test. Androflor®'/>
-	<sFemoflor RU='Фемофлор' Translated='Femoflor'/> 
-	<sFemoflor16 RU='Фемофлор 16' Translated='Femoflor 16'/> 
-	<sFemoflorScr RU='ФЕМОФЛОР СКРИН' Translated='Femoflor Screen'/> 
-
-	
-	<sFemoflorScr_384 RU='ФЕМОФЛОР СКРИН_384' Translated='Femoflor Screen_384'/> 
-	<sFemoflor16_384 RU='Фемофлор 16_384' Translated='Femoflor 16_384'/> 
-	<sHPV4 RU='HPV_квант-4' Translated='HPV_quant-4'/> 
-	<sHPV15 RU='HPV_квант-15' Translated='HPV_quant-15'/> 
-	<sHPV21 RU='HPV_квант-21' Translated='HPV_quant-21'/> 	
-	<sFemoflor4 RU='Фемофлор 4' Translated='Femoflor 4'/>
-	<sFemoflor8 RU='Фемофлор 8' Translated='Femoflor 8'/>
-	<sARI RU='ОРЗ_ВирусКомплекс ' Translated='AVRI'/>	
-	<sEditConclusion RU='Редактирование заключения' Translated='Edit conclusion'/> 
-	<sBakScreen RU='БакСкрин' Translated='BacScreen'/>
-	<sBakScreenTitle RU='БакСкрин УПМ' Translated='BacScreen ОM'/>	
-	<sTestName RU='Имя теста' Translated='Test name'/>
-	<sEffCoef RU='КЭ' Translated='CE'/>
-	<sIC RU='ВК' Translated='IC'/>
-	<sICDRB1 RU='ВК DRB1' Translated='IC DRB1'/>
-	<sICB27 RU='ВК B27' Translated='IC B27'/>
-	<sMTC RU='КВМ' Translated='SIC'/>
-	<sMarker RU='Маркер' Translated='Marker'/>
-	<sTBM RU='ОБМ' Translated='TBM'/>
-	<sDQB0302 RU='0302 или 0303' Translated='0302 or 0303'/>
-	<sDQB0301 RU='0301 или 0304' Translated='0301 or 0304'/>
-	<sDQB0305 RU='0305 или 0401/0402' Translated='0305 or 0401/0402'/>
-	<sEditDataInField RU='Редактировать данные в поле "' Translated='Edit data in "'/>
-	<sSampleReport RU='Отчет по образцу...' Translated='Show sample report...'/>
-	<sSettings RU='Параметры вычисления...' Translated='Settings...'/>
-	<sConclusion RU='Заключение' Translated='Conclusion'/>
-	<sBacResista RU='Выявление генов резистентности к гликопептидным и бета-лактамным антибиотикам у бактерий методом ПЦР в режиме реального времени (БакРезиста GLA)' Translated='BacResista'/>	
-	<sBacResistaModule RU='БакРезиста' Translated='BacResista'/>	
-	<sCoV_like RU='Коронавирусы подобные SARS-CoV' Translated='SARS-CoV-like Coronaviruses'/>	
-	<sCoVE RU='Коронавирус SARS-CoV-2 ген E' Translated='SARS-CoV-2 coronavirus E-gene'/>	
-	<sCoVN RU='Коронавирус SARS-CoV-2 ген N' Translated='SARS-CoV-2 coronavirus  N-gene'/>	
-	<sQual2Res RU='Результаты' Translated='Results'/>	
-    <sQual2Attention RU='Предупреждение' Translated='Attention'/>		
-	<sMycosisTitle RU='Выявление и типирование возбудителей грибковых инфекций 
- рода Candida, Malassezia, Saccharomyces и Debaryomyces 
- методом ПЦР в режиме реального времени (МикозоСкрин)' Translated='MycosoScreen'/>
-    <sMycosis RU='МикозоСкрин' Translated='MycosoScreen'/>		
-	<sAddTube RU='Добавить пробирку' Translated='Add tube'/>
-	<sDeleteTube RU='Удалить пробирку' Translated='Delete tube'/>
-	<sAddTest RU='Добавить тест' Translated='Add test'/>
-	<sDeleteTest RU='Удалить тест' Translated='Delete test'/>
-	<sTube RU='Пробирка' Translated='Tube'/>
-	<sEditorProgName RU='Имя для вычислений' Translated='ProgName'/>
-	<sDesignation RU='Название' Translated='Name'/>
-	<sExecutionParams RU='Параметры выполнения' Translated='Execution params'/>
-	<sDTRModule RU='Вычисляющий модуль' Translated='DTR module'/>
-	<sTubeVolume RU='Объем реакционной смеси' Translated='Tube volume'/>
-	<sMinVer RU='Минимальная версия модуля' Translated='Minimal module version'/>	
-	<sUserVer RU='Пользовательская версия' Translated='User version'/>	
-	<sChannel RU='Канал' Translated='Channel'/>	
-	<sGroup RU='Группа' Translated='Group'/>
-	<sColor RU='Цвет' Translated='Color'/>
-	<sAnalyseType RU='Тип анализа' Translated='Analysis type'/>
-	<sClassification RU='Классификация' Translated='Classification'/>
-	<sMark RU='Показатель' Translated='Name'/>
-	<sRelAnalyse RU='Отн. анализ' Translated='Rel. analysis'/>
-	<sAbsAnalyse RU='Абс. анализ' Translated='Abs. analysis'/>
-	<sQualAnalyse RU='Кач. анализ' Translated='Qual. analysis'/>
-	<sRepPos RU='Позиция в отчете' Translated='Report position'/>	
-	<sRepPos RU='Считать в СВМО' Translated='Add to SDM'/>	
-	<sNormingType RU='Нормировка результатов' Translated='Normalization by'/>
-	<sNaming RU='Наименование' Translated='Name'/>	
-	<sHomo1 RU='Гомозигота 1' Translated='Homozygote 1'/>	
-	<sHomo2 RU='Гомозигота 2' Translated='Homozygote 2'/>	
-	<sHetero RU='Гетерозигота' Translated='Heterozygote 1'/>	
-	<sGroupName RU='Название группы' Translated='Group name'/>
-	<sPeaksAnalys RU='Анализ по температурным пикам' Translated='Temperature Peak Analysis'/>	
-	<sDiffAnalys RU='"Разностный анализ"' Translated='"Difference analysis"'/>
-	<sPolymorph RU='Полиморфизм' Translated='Polymorphism'/>	
-	<sCommon RU='Общие' Translated='Common'/>	
-	<sReportSettings RU='Свойства отчета' Translated='Report settings'/>
-	<sRearrangeType RU='Тип перестройки' Translated='Type of rearrangement'/>
-	<sServiceType RU='Тип исследования' Translated='Service type'/>
-	<sShowConclusion RU='Показывать заключение' Translated='Show conclusion'/>	
-	<sCommonIC RU='Общий ВК' Translated='Common IC'/>	
-	<sControlTubes RU='Количество пробирок в контроле' Translated='Number of tubes in control'/>
-	<sMicroTypes RU='Типы микроорганизмов' Translated='Types of microorganisms'/>
-	<sCpValidatingCriterion RU='Порог достоверности (Cp)' Translated='Validity criterion (Cp)'/>
-	<sAbsColorBorder RU='Цветовые границы: абс.' Translated='Color borders: abs.'/>
-	<sRelColorBorder RU='Цветовые границы: отн.' Translated='Color borders: rel.'/>
-	<sQualColorBorder RU='Цветовые границы: кач.' Translated='Color borders: qual.'/>
-	<sUseIC RU='Учитывать ВК' Translated='Use IC'/>
-	<sAmpifyEff RU='Эффективность амплификации' Translated='Amplification efficiency'/>
-	<sConclusionDict RU='Словарь заключения' Translated='Conclusion dictionary'/>
-	<sTresholdsFam RU='Пороги (Fam - Cy5)' Translated='Thresholds (Fam - Cy5)'/>
-	<sTresholdsHex RU='Пороги (Hex - Cy5)' Translated='Thresholds (Hex - Cy5)'/>
-	<sRange1min RU='Диапазон 1 (min)' Translated='Range 1 (min)'/>
-	<sRange2min RU='Диапазон 2 (min)' Translated='Range 2 (min)'/>
-	<sRange3min RU='Диапазон 3 (min)' Translated='Range 3 (min)'/>
-	<sRange1max RU='Диапазон 1 (max)' Translated='Range 1 (max)'/>
-	<sRange2max RU='Диапазон 2 (max)' Translated='Range 2 (max)'/>
-	<sRange3max RU='Диапазон 3 (max)' Translated='Range 3 (max)'/>
-	<sLowMTCTreshold RU='Нижняя граница КВМ (Lg)' Translated='Low threshold of SIC (Lg)'/>
-	<sMedMTCTreshold RU='Средняя граница КВМ (Lg)' Translated='Medium threshold of SIC (Lg)'/>
-	<sHigthMTCTreshold RU='Верхняя граница КВМ (Lg)' Translated='Higth threshold of SIC (Lg)'/>
-	<sExtendedRep RU='Расширенный отчет' Translated='Extended report'/>
-	<sCpMinThreshold RU='Нижняя граница валидности (Cp)' Translated='Minimal valid threshold (Cp)'/>
-	<sCpMaxThreshold RU='Верхняя граница валидности (Cp)' Translated='Maximal valid threshold (Cp)'/>	
-	<sCpMinThreshold1 RU='Нижняя граница валидности Cp' Translated='Minimal valid threshold Cp'/>
-	<sCpMaxThreshold1 RU='Верхняя граница валидности Cp' Translated='Maximal valid threshold Cp'/>		
-	<sCpValidityThreshold RU='Границы валидности значения Cp' Translated='Cp validity thresholds'/>	
-	<sdCpValidityThreshold RU='Границы валидности значения dCp' Translated='dCp validity thresholds'/>	
-	<sHigther RU='Верхняя' Translated='Higher'/>	
-	<sLower RU='Нижняя' Translated='Lower'/>	
-	<sBorder RU='Граница' Translated='Border'/>	
-	<sMarkBorder RU='Границы показателей' Translated='Borders'/>	
-	<sMarkBorder RU='Параметры расчета результата' Translated='Analysis parameters'/>	
-	<sCalcLog RU='Рассчитать значение Log' Translated='Calculate Log'/>	
-	<sAdditional RU='Дополнительно' Translated='Additional'/>
-	<sLocusDct RU='Справочник локусов' Translated='Loci Directory'/>
-	<sLocus RU='Локус' Translated='Locus'/>	
-	<sMutationDict RU='Типы мутаций' Translated='Types of mutations'/>
-	<sMutation RU='Мутация' Translated='Mutation'/>
-	<sMutationDict RU='Типы мутаций' Translated='Types of mutations'/>
-	<sNameInView RU='Название в таблице результатов' Translated='Name in the results table'/>
-	<sHistogramm RU='Гистограмма' Translated='Histogramm'/>	
-	<sTBMInReport RU='Выводить ОБМ в отчет' Translated='Show TBM in report'/>
-	<sCalcLg RU='Вычислять Lg' Translated='Calculate Lg'/>
-	<sPosControlCount RU='Количество K+' Translated='C+ count'/>
-	<sNegControlCount RU='Количество K-' Translated='C- count'/>
-	<sStandards RU='Стандарты' Translated='Standards'/>
-	<sUnits RU='Единица измерений' Translated='Units'/>
-	<sRHDTitle RU='Пренатальная диагностика. Резус-фактор' Translated='Prenatal diagnostics. Fetal RHD Genotyping.'/> 
-	<sYChromosome RU='фрагмент Y хромосомы' Translated='Y chromosome fragment'/> 
-	<sYChromosome1 RU='Фрагмент Y хромосомы' Translated='Y chromosome fragment'/> 
-	<sGenderTitle RU='Пренатальная диагностика. Пол плода' Translated='Prenatal diagnostics. Fetal gender.'/> 
-	<sPolyAnalyse RU='Анализ полиморфизмов' Translated='Analysis of polymorphisms'/>
-	<sDeletion RU='делеция' Translated='deletion'/>
-	<sInsertion RU='инсерция' Translated='insertion'/>
-	<sSubstitution RU='замена' Translated='substitution'/>
-	<sPolymorphism RU='Полиморфизм' Translated='Polymorphism'/>
-	<sByDef RU='По умолчанию' Translated='Default'/>
-	<sCpPosBorder RU='Граница положительного результата (Cp)' Translated='Cp positive border'/>
-	<sUseAllCp RU='Учет всех ВК' Translated='Checking every IC'/>
-	<sShortAbs RU='Абс.' Translated='Abs.'/>
-	<sShortRel RU='Отн.' Translated='Rel.'/>
-	<sShortQual RU='Кач.' Translated='Qual.'/>
-	<sDNACopies RU='Копий ДНК ВПЧ на клетку' Translated='Copies of HPV DNA on cell'/>
-	<sFormatType RU='Формат результатов' Translated='Type of results'/>
-	<sClinicalValue RU='Вычислять уровень клинической значимости' Translated='Take into account level to clinical value'/>
-	<sEstmationClinicalValue RU='Оценка уровня клинической значимости по результатам анализа' Translated='Estmation of the level to clinical value on result of the analysis'/>
-	<sClinicalValueBorder RU='Уровень клинической значимости (Lg)' Translated='Level of clinical significance (Lg)'/>
-	<sTotalHPV RU='Вычислять суммарную нагрузку HPV' Translated='Calculate total HPV load'/>
-	<sReportPos RU='Порядок в отчете' Translated='Report position'/>
-	<sMutation RU='Тип мутации' Translated='Mutation type'/>
-	<sBorderVal RU='Порог значимости' Translated='Significance threshold'/>
-	<sAbsBorder RU='Цветовые границы (абсолютные)' Translated='Color borders (absolute)'/>
-	<sRelBorder RU='Цветовые границы (относительные)' Translated='Color borders (relative)'/>
-	<sQualBorder RU='Цветовые границы (качественные)' Translated='Color borders (qualitative)'/>	
-	<sNormingBy RU='Нормировка результатов по' Translated='Normalization of results'/>
-	<sAddChannel RU='Добавить канал' Translated='Add channel'/>
-	<sImmunoQuan RU='ИммуноКвантэкс' Translated='Immunity'/>
-	<sConcByMl RU='Концентрация копий/мл' Translated='Concentration copies/ml'/>
-	<sConcByME RU='Концентрация копий/МЕ' Translated='Concentration copies/IU'/>
-	<sConcByPg RU='Концентрация копий/PG' Translated='Concentration copies/PG'/>
-	<sQuant RU='Количественный' Translated='Quantitative'/>
-	<sQuantCurve RU='Стандартная кривая' Translated='Standard curve'/> 
-	<sApply RU='Применить' Translated='OK'/> 
-	<sDefaultValue RU='Значение по умолчанию' Translated='Set default value'/> 
-	<sCopyFromFeld RU='Копировать данные из поля ' Translated='Copy data from '/> 
-	<sAutocorrection RU='Автокоррекция' Translated='Auto correction'/> 
-	<sExportPath RU='Не указана папка экспорта результатов' Translated='Results export folder not specified'/>
-	<sMultiplex RU='Мультиплекс Q+' Translated='Multiplex Q+'/>	
-	<sExportSucces RU='Результаты успешно экспортированы в файл:' Translated='The results have been successfully exported to a file:'/> 
-	<sExportFailed RU='Экспорт результатов не выполнен' Translated='Export failed'/> 
-	<sBacResistaGLA RU='БакРезиста GLA Van/Mec' Translated='BacResista GLA Van/Mec'/>
-	<sHPVTitle4 RU='Выявление, типирование и количественное определение вируса папилломы человека методом ПЦР.
-HPV квант-4' Translated='HPV quant-4'/>
-	<sHPVTitle15 RU='Выявление, типирование и количественное определение вируса папилломы человека методом ПЦР.
-HPV квант-15' Translated='HPV quant-15'/>
-	<sHPVTitle21 RU='Выявление, типирование и количественное определение вируса папилломы человека методом ПЦР.
-HPV квант-21' Translated='HPV quant-21'/>	
-	<sExportConflict RU= 'Обнаружен конфликт настроек формата выгрузки. Экспорт не выполнен.' Translated='A conflict has been detected in the export settings. Export failed.'/>
-	<sPCRResearch RU= 'Результат исследования методом ПЦР' Translated='PCR results'/>
-	<sExportSettingsTitle RU= 'Настройки экспорта результатов' Translated='Export settings'/>
-	<sDefaultSettngs RU= 'Настройки по умолчанию' Translated='Default'/>
-	<sEmbeddedFonts RU= 'Встроенные шрифты' Translated='Embedded fonts'/>
-	<sCompressed RU= 'Сжатие' Translated='Compressed'/>
-	<sQuality RU= 'Качество' Translated='Quality'/>
-	<sPrintOptimized RU= 'Оптимизация' Translated='Print optimized'/>
-	<sResolution RU= 'Разрешение (dpi)' Translated='Resolution (dpi)'/>
-	<sJPEGQuality RU= 'Качество JPEG' Translated='JPEG quality'/>
-	<sCropImages RU= 'Обрезать страницу' Translated='Crop images'/>
-	<sExportFormat RU= 'Формат экспорта' Translated='Export format'/>
-	<sPrintTitle RU= 'Шапка отчета' Translated='Report title'/>
-	<sPrintSummary RU= 'Подвал отчета' Translated='Report footer'/>
-	<sExportLegend RU= 'Описание бланка результатов' Translated='Report description'/>
-	<sPDFParams RU= 'Параметры PDF' Translated='PDF parameters'/>
-	<sJPEGParams RU= 'Параметры JPEG' Translated='JPEG parameters'/>
-	<BacScreenPlus RU= 'БакСкрин ПЛЮС' Translated='BacScreen PLUS'/>
-	<sHPV_quant-21_A RU='HPV_квант-21_А' Translated='HPV_quant-21_A' />
-	<sTNC_Complex RU='TNC_Комплекс' Translated='TNC_Complex' />
-	<sSARS-CoV-2_Influenza RU='SARS-CoV-2/Грипп Комплекс' Translated='SARS-CoV-2/Influenza' />	
-	
-	</RSStrings>
+  <errSampleNotFound RU="Образец &quot;%s&quot; не найден в протоколе." Translated="Sample &quot;%s&quot; not found" />
+  <errFuncValueDisabled RU="Функции Value и ValueDef доступны только в процессе генерации отчета. Чтобы использовать их значения после генерации, сохраняйте эти значения в отчет - в свойства Tag и TagStr, а также в скрытые элементы." Translated=" " />
+  <errSetupDisabled RU="Параметры отчета доступны только в процессе генерации отчетов, либо во время редактирования этих параметров." Translated="Report settings available only in generation or editing mode" />
+  <errGenerationError RU="Ошибка при генерации отчета. %s" Translated="Report generation error. %s" />
+  <errBadVer RU="Для импорта протоколов *.r96 требуется программа RealTime_PCR версии 7.7 или выше." Translated="To import protocols *.r96 required the RealTime_PCR ver. 7.7 or highter" />
+  <errSampleCodeExists RU="Образец с маркировкой &quot;%s&quot; уже существует." Translated="Sample labeled &quot;%s&quot; already exists." />
+  <errNoDoc RU="XML-документ не задан." Translated="XML document not specified" />
+  <errSex RU="У образца &quot;%s&quot; не указан пол." Translated="For sample &quot;%s&quot; gender not specified" />
+  <errDLL RU="Ошибка при загрузке %s. %s" Translated="Loading error %s. %s" />
+  <errProjectExists RU="Проект с таким именем уже существует." Translated="A project with this name already exists." />
+  <errEditorNotCreate RU="Редактор не создан." Translated="Editor not created." />
+  <errFunctionNotDefined RU="Функция не поддерживается." Translated="Function not supported." />
+  <errEmptyName RU="Имя не должно быть пустым." Translated="The name field can not be empty." />
+  <errSampleNotDefined RU="Не задан образец." Translated="Couple sample not specified." />
+  <errFieldsCount RU="Количество полей не совпадает." Translated="The number of fields does not match." />
+  <errFieldAlreadyExists RU="Поле с таким именем уже существует!" Translated="The field with this name already exists!" />
+  <errRenameFieldNotSelected RU="Не выбрано поле для переименования" Translated="No field selected for renaming" />
+  <errDelFieldNotSelected RU="Не выбрано поле для удаления" Translated="No field selected for deleting" />
+  <errInvalidName RU="Недопустимое имя!" Translated="Invalid name!" />
+  <errDictNotFound RU="Справочник не найден: %s." Translated="Dictionary not found: %s" />
+  <errRequiredParam RU="Функция %s - параметр №%d обязателен." Translated="Function %s: parameter %d required." />
+  <errValueNotFound RU="Значение &quot;%s&quot; не найдено." Translated="Value &quot;%s&quot; not found." />
+  <errTooMuchStrings RU="Эксперт %s выдал больше 1 строки, при выбранном типе заключения &quot;%s&quot;." Translated="The expert %s return more than 1 string with &quot;%s&quot; conclusion kind." />
+  <errDublicateSampleCode RU="В протоколе присутствуют образцы с одинаковой маркировкой: &quot;%s&quot;." Translated="There are samples with same label in report: &quot;%s&quot;" />
+  <errTooMuchService RU="Найдено больше одного исследования %s." Translated="More than one service found %s" />
+  <errSampleIDNotFound RU="Образец не найден (ID=&quot;%s&quot;)." Translated="Sample not found (ID=&quot;%s&quot;)." />
+  <errInvalidProtocol RU="Некорректный протокол. В протоколе присутствуют образцы с одинаковыми ID: &quot;%s&quot;." Translated="Incorrect protocol. There are samples with same ID:  &quot;%s&quot;." />
+  <errSameSex RU="Образцы в паре не cмогут быть одного пола." Translated="Couple samples cannot be same gender." />
+  <errSampleGroupNotFound RU="Группа образцов не найдена (%d)." Translated="Sample group not found (%d)." />
+  <errSampleInGroup RU="Образец &quot;%s&quot; входит в %d группы." Translated="Sample &quot;%s&quot; included in %d groups." />
+  <errCouple RU="Недопустимое количество образцов в группе типа &quot;Пара&quot;." Translated="Invalid number of samples in a group type &quot;couple&quot;." />
+  <errInvalidImportProtocol RU="Импортируемый протокол содержит ошибки. %s" Translated="Imported protocol has errors. %s" />
+  <errSetupDialogDoesntExists RU="Не задан диалог настроек" Translated="Settings dialog not specified" />
+  <errSetupsNotAggregative RU="Отчет не поддерживает общие настройки" Translated="The report does not support aggregative settings" />
+  <errCoupleWithoutSample RU="Найдена пара с отсутствующим образцом" Translated="A couple without linked sample found" />
+  <errDuplicateService RU="Дублирующееся исследование" Translated="Duplicate service" />
+  <errProtocolContainsErrors RU="Протокол содержит ошибки. Некорректные образцы исключены из обработки:" Translated="The protocol contains errors. Incorrect samples are excluded from processing:" />
+  <errSampleListNotSpecified RU="Не задан список образцов" Translated="No list of samples specified" />
+  <errProtocolContainsErrorsSimple RU="Протокол содержит ошибки." Translated="The protocol contains errors." />
+  <errDTRForSampleNotFound RU="Не найден вычисляющий модуль %s для образца %s" Translated=" The DTR module %s was not found for sample %s" />
+  <msgMissing RU="Результат отсутствует" Translated="Result is absent" />
+  <msgOriginal RU="Результат был получен с прибора" Translated="Result was obtained from device" />
+  <msgImported RU="Результат был импортирован из: " Translated="Result was imported from: " />
+  <msgAdded RU="Результат был добавлен" Translated="Result was added" />
+  <msgModified RU="Результат был изменен. Исходное значение: " Translated="Result value was changed. Original value: " />
+  <msgDelLink RU="Удалить текущую привязку?" Translated="Drop current link?" />
+  <msgDropCoupleConfirm RU="Смена пола данного образца приведет к расформированию пары. Продолжить?" Translated="Gender changing for this sample will lead disbanding couple. Continue?" />
+  <msgDeleteCol RU="Удалить столбец" Translated="Delete column" />
+  <msgDropTable RU="удалить таблицу" Translated="Delete table" />
+  <msgConfirmDropLink RU="Выбранный образец уже привязан к другому образцу. Изменить привязку?" Translated="Selected sample already linked to another sample. Change link?" />
+  <msgDatasetsFill RU="Заполнение системных датасетов" Translated="Filling system datasets" />
+  <msgHandleInput RU="По образцу &quot;%s&quot; следующие результаты введены вручную: %s." Translated="Following results in sample &quot;%s&quot; are entered manually: %s." />
+  <msgCalculationLevel RU="Вычисление на уровне " Translated="Calculating level " />
+  <msgDelSample RU="удалить образец &quot;%s&quot;" Translated="delete sample &quot;%s&quot;" />
+  <msgCoupleSampleNotFound RU="Парный образец не найден." Translated="Couple sample not found." />
+  <msgConfirmProtocol RU="Протокол был изменен. Сохранить изменения?" Translated="The protocol was changed. Save changes?" />
+  <sNewProject RU="Новый проект" Translated="New project" />
+  <sInputProjectName RU="Введите имя проекта" Translated="Enter project name" />
+  <sOptionsWizard RU="Запуск диалога настройки" Translated="Launching settings dialog" />
+  <sInputProgName RU="Введите progName" Translated="Enter progName" />
+  <sOpenProject RU="Открытие проекта" Translated="Open project" />
+  <sResultsFilter RU="Фильтр результатов" Translated="Results filter" />
+  <sSaveProject RU="Сохранение проекта" Translated="Save project" />
+  <sGenerationTime RU="Время вычислений и генерации отчета: " Translated="Calculation and generation time: " />
+  <sTable RU="Таблица" Translated="Table" />
+  <sRTPCRExport RU="Экспорт в RealTime_PCR" Translated="Export to RealTime_PCR" />
+  <sDropCouple RU="Расформирование пары" Translated="Drop couple" />
+  <sEditSample RU="Редактирование образца" Translated="Edit sample" />
+  <sAddSample RU="Добавление образца" Translated="Add sample" />
+  <sEdit RU="Редактирование" Translated="Editing" />
+  <sResult RU="Результат" Translated="Result" />
+  <sInputObjName RU="Введите название, используя латиницу и цифры" Translated="Enter name using the Latin alphabet and numbers" />
+  <sInputColName RU="Введите название столбцов через запятую" Translated=" Enter column names separated by commas" />
+  <sNewDict RU="Новый справочник" Translated="New dictionary" />
+  <sColCreate RU="Создание столбцов" Translated="Create columns" />
+  <sDeleteCol RU="Удаление столбцa" Translated="Delete column" />
+  <sEditCol RU="Изменить столбец" Translated="Edit column" />
+  <sDropTable RU="Удаление таблицы" Translated="Delete table" />
+  <sRenameTable RU="Переименовать таблицу" Translated="Rename table" />
+  <sAddCol RU="Добавить столбец" Translated="Add column" />
+  <sCalcCondition RU="Условие вычисления" Translated="Calculation condition" />
+  <sCondition RU="Условие" Translated="Condition" />
+  <sName RU="Имя" Translated="Name" />
+  <sFormula RU="Формула" Translated="Formula" />
+  <sInReport RU="В отчете" Translated="In report" />
+  <sFullName RU="Полное наименование" Translated="Full name" />
+  <sNumberFormat RU="Формат числа" Translated="Number format" />
+  <sAggregation RU="Агрегирование" Translated="Aggregation" />
+  <sNewFormulaList RU="Новый список формул" Translated="New formulas" />
+  <sNewExpert RU="Новый эксперт" Translated="New expert" />
+  <sDelLink RU="Удаление привязки" Translated="Drop link" />
+  <eEditLink RU="Изменение привязки" Translated="Chacnge link" />
+  <sSelectedSampleLinkedToCurrent RU="Выбранный образец привязан к текущему" Translated="Selected sample already linked to current sample" />
+  <sSample RU="Образец" Translated="Sample" />
+  <sLinkedTo RU="привязан к" Translated="linked to" />
+  <sComplex RU="сложное" Translated="complex" />
+  <sSimpleStrict RU="простое строгое" Translated="simple strict" />
+  <sSimpleLax RU="простое нестрогое" Translated="simple lax" />
+  <sDirectory RU="справочник" Translated="dictionary" />
+  <sFormulaList RU="Список формул" Translated="Formulas" />
+  <sExpert RU="Эксперт" Translated="Expert" />
+  <sFirstValue RU="первое значение" Translated="first value" />
+  <sQuantity RU="количество" Translated="count" />
+  <sSum RU="сумма" Translated="summ" />
+  <sMinValue RU="минимальное значение" Translated="min value" />
+  <sMaxValue RU="максимальное значение" Translated="max value" />
+  <sAverageValue RU="среднее значение" Translated="average value" />
+  <sNotCompute RU="[не вычислять]" Translated="[not compute]" />
+  <sEventResult RU="результат" Translated="result" />
+  <sEventResearch RU="исследование" Translated="service" />
+  <sEventSample RU="образец" Translated="sample" />
+  <sDescription RU="Описание" Translated="description" />
+  <sTableKind RU="Тип таблицы" Translated="Table kind" />
+  <sResultInReport RU="Добавлять к результатам" Translated="Add to results" />
+  <sResultName RU="Наименование результата" Translated="Result name" />
+  <sConclusionKind RU="Тип заключения" Translated="Conclusion kind" />
+  <sUseAsDataset RU="Использовать как набор данных" Translated="Use as dataset" />
+  <sCalculationEvent RU="Вычислять при выводе" Translated="Calculation event" />
+  <sReportContainer RU="Контейнер отчетов" Translated="Report container" />
+  <sMergeReports RU="Объединение отчетов" Translated="Merge reports" />
+  <sForceReloadFR RU="Перезагружать макет перед каждым отчетом" Translated="Force reload" />
+  <sHasSetupDialog RU="Включает диалог настройки" Translated="Include settings dialog" />
+  <sAggregativeOptions RU="Общие настройки" Translated="Aggregative settings" />
+  <sProgNames RU="Программные идентификаторы исследований" Translated="Service ProgNames" />
+  <sTestProgNames RU="Программные идентификаторы тестов" Translated="Test ProgNames" />
+  <sReportTitle RU="Заголовок отчета" Translated="Report title" />
+  <sDTMathFunc RU="DT: математические" Translated="DT: math" />
+  <sSexMale RU="мужской" Translated="male" />
+  <sSexFemale RU="женский" Translated="female" />
+  <sAbbSexMale RU="Муж." Translated="male" />
+  <sAbbSexFemale RU="Жен." Translated="female" />
+  <sYear RU="год" Translated="year" />
+  <sMonth RU="месяц" Translated="month" />
+  <sDay RU="день" Translated="day" />
+  <sNotDefined RU="Не задан " Translated="Not defined " />
+  <sDelSample RU="Удаление образца" Translated="Delete sample" />
+  <sSampleImport RU="Импорт образцов" Translated="Import samples" />
+  <sDelRow RU="Удаление строки" Translated="Delete row" />
+  <sResultView RU="Таблица результатов" Translated="Results table" />
+  <sNewResultView RU="Новая таблица результатов" Translated="New results table" />
+  <sDisplayName RU="Название отчета" Translated="Display name" />
+  <sInfoFields RU="Информационные поля..." Translated="Information fields..." />
+  <sEditRepConclusion RU="Редактировать заключение..." Translated="Edit conclusion..." />
+  <sLabInfo RU="Информация о лаборатории..." Translated="Information about laboratory..." />
+  <sCapYes RU="Да" Translated="Yes" />
+  <sCapNo RU="Нет" Translated="No" />
+  <sCapService RU="Исследование" Translated="Service" />
+  <sMicroType RU="Тип микроорганизма" Translated="Type of microorganism" />
+  <sAnalyseParams RU="Параметры анализа" Translated="Analysis parameters" />
+  <sOthers RU="Разное" Translated="Others" />
+  <sValidatingFactor RU="Фактор валидации" Translated="Validating factor" />
+  <sIDorName RU="Идентификатор/наименование" Translated="ID/Name" />
+  <sFullName RU="ФИО" Translated="Full name" />
+  <sLabel RU="Маркировка" Translated="Label" />
+  <sSex RU="Пол" Translated="Sex" />
+  <sHLAB27 RU="Аллель HLA-B27" Translated="Allele HLA-B27" />
+  <sCommentDRB RU="Комментарий с оценкой риска аутоиммунных заболеваний по гену DRB1" Translated="Comment for autoimmune risk assessment associated to DRB1" />
+  <sCommentCouple RU="Комментарий о совместимости в паре" Translated="Comment on couple compatibility (matching)" />
+  <sGaploControl RU="Контроль гаплотипов " Translated="Haplotype control" />
+  <sSettings RU="Настройки" Translated="Settings" />
+  <sAdditionalSettings RU="Дополнительные настройки" Translated="Additional settings" />
+  <sOk RU="ОК" Translated="OK" />
+  <sCancel RU="Отмена" Translated="Cancel" />
+  <sEditResultsNotAllowed RU="Редактирование результатов запрещено" Translated="Editing results not allowed" />
+  <sError RU="Ошибка" Translated="Error" />
+  <sImportSuccess RU="Импорт успешно завершен" Translated="Import completed successfully" />
+  <sAsk RU="Вы уверены, что хотите %s?" Translated="Are you sure that you want %s" />
+  <sIdentifier RU="Идентификатор" Translated="Identifier" />
+  <sQuality2 RU="Качественный 2.0" Translated="Quality 2.0" />
+  <sQualityTitle RU="Результат исследования методом полимеразной цепной реакции" Translated="PCR results" />
+  <sPositiveBoundary RU="Граница положительного результата" Translated="The boundary of the positive result" />
+  <sIC RU="ВК" Translated="IC" />
+  <sRecalcProt RU="Результаты были обсчитаны в другой конфигурации ПО, пересчитать результаты?" Translated="Results were calculated in another configuration of DTmaster. Recalculate it?" />
+  <sPreparingData RU="Подготовка данных..." Translated="Preparing data..." />
+  <sLoadingData RU="Загрузка данных..." Translated="Loading data..." />
+  <sCalculatingStage RU="Вычисление: этап " Translated="Calculating stage: " />
+  <sCreatingViews RU="Создание таблиц..." Translated="Creating views..." />
+  <sFrom RU=" из " Translated=" from " />
+  <sAndroflor RU="Андрофлор" Translated="Androflor" />
+  <sAndroflorR RU="Андрофлор®" Translated="Androflor" />
+  <sAndroflorScr RU="Андрофлор® Скрин" Translated="Androflor Screen" />
+  <sAndroflorScrA RU="Андрофлор® Скрин_A" Translated="Androflor Screen_A" />
+  <sAndroflorA RU="Андрофлор®+А" Translated="Androflor+A" />
+  <sAndroflor_A RU="Андрофлор®_А" Translated="Androflor_A" />
+  <sAndroflorTitle RU="Исследование микрофлоры урогенитального тракта мужчин методом ПЦР в режиме реального времени Андрофлор®" Translated="Urogenital microbiome composition test. Androflor®" />
+  <sFemoflor RU="Фемофлор" Translated="Femoflor" />
+  <sFemoflor16 RU="Фемофлор 16" Translated="Femoflor 16" />
+  <sFemoflorScr RU="ФЕМОФЛОР СКРИН" Translated="Femoflor Screen" />
+  <sFemoflorScr_384 RU="ФЕМОФЛОР СКРИН_384" Translated="Femoflor Screen_384" />
+  <sFemoflor16_384 RU="Фемофлор 16_384" Translated="Femoflor 16_384" />
+  <sHPV4 RU="HPV_квант-4" Translated="HPV_quant-4" />
+  <sHPV15 RU="HPV_квант-15" Translated="HPV_quant-15" />
+  <sHPV21 RU="HPV_квант-21" Translated="HPV_quant-21" />
+  <sFemoflor4 RU="Фемофлор 4" Translated="Femoflor 4" />
+  <sFemoflor8 RU="Фемофлор 8" Translated="Femoflor 8" />
+  <sARI RU="ОРЗ_ВирусКомплекс " Translated="AVRI" />
+  <sEditConclusion RU="Редактирование заключения" Translated="Edit conclusion" />
+  <sBakScreen RU="БакСкрин" Translated="BacScreen" />
+  <sBakScreenTitle RU="БакСкрин УПМ" Translated="BacScreen ОM" />
+  <sTestName RU="Имя теста" Translated="Test name" />
+  <sEffCoef RU="КЭ" Translated="CE" />
+  <sIC RU="ВК" Translated="IC" />
+  <sICDRB1 RU="ВК DRB1" Translated="IC DRB1" />
+  <sICB27 RU="ВК B27" Translated="IC B27" />
+  <sMTC RU="КВМ" Translated="SIC" />
+  <sMarker RU="Маркер" Translated="Marker" />
+  <sTBM RU="ОБМ" Translated="TBM" />
+  <sDQB0302 RU="0302 или 0303" Translated="0302 or 0303" />
+  <sDQB0301 RU="0301 или 0304" Translated="0301 or 0304" />
+  <sDQB0305 RU="0305 или 0401/0402" Translated="0305 or 0401/0402" />
+  <sEditDataInField RU="Редактировать данные в поле &quot;" Translated="Edit data in &quot;" />
+  <sSampleReport RU="Отчет по образцу..." Translated="Show sample report..." />
+  <sSettings RU="Параметры вычисления..." Translated="Settings..." />
+  <sConclusion RU="Заключение" Translated="Conclusion" />
+  <sBacResista RU="Выявление генов резистентности к гликопептидным и бета-лактамным антибиотикам у бактерий методом ПЦР в режиме реального времени (БакРезиста GLA)" Translated="BacResista" />
+  <sBacResistaModule RU="БакРезиста" Translated="BacResista" />
+  <sCoV_like RU="Коронавирусы подобные SARS-CoV" Translated="SARS-CoV-like Coronaviruses" />
+  <sCoVE RU="Коронавирус SARS-CoV-2 ген E" Translated="SARS-CoV-2 coronavirus E-gene" />
+  <sCoVN RU="Коронавирус SARS-CoV-2 ген N" Translated="SARS-CoV-2 coronavirus  N-gene" />
+  <sQual2Res RU="Результаты" Translated="Results" />
+  <sQual2Attention RU="Предупреждение" Translated="Attention" />
+  <sMycosisTitle RU="Выявление и типирование возбудителей грибковых инфекций   рода Candida, Malassezia, Saccharomyces и Debaryomyces   методом ПЦР в режиме реального времени (МикозоСкрин)" Translated="MycosoScreen" />
+  <sMycosis RU="МикозоСкрин" Translated="MycosoScreen" />
+  <sAddTube RU="Добавить пробирку" Translated="Add tube" />
+  <sDeleteTube RU="Удалить пробирку" Translated="Delete tube" />
+  <sAddTest RU="Добавить тест" Translated="Add test" />
+  <sDeleteTest RU="Удалить тест" Translated="Delete test" />
+  <sTube RU="Пробирка" Translated="Tube" />
+  <sEditorProgName RU="Имя для вычислений" Translated="ProgName" />
+  <sDesignation RU="Название" Translated="Name" />
+  <sExecutionParams RU="Параметры выполнения" Translated="Execution params" />
+  <sDTRModule RU="Вычисляющий модуль" Translated="DTR module" />
+  <sTubeVolume RU="Объем реакционной смеси" Translated="Tube volume" />
+  <sMinVer RU="Минимальная версия модуля" Translated="Minimal module version" />
+  <sUserVer RU="Пользовательская версия" Translated="User version" />
+  <sChannel RU="Канал" Translated="Channel" />
+  <sGroup RU="Группа" Translated="Group" />
+  <sColor RU="Цвет" Translated="Color" />
+  <sAnalyseType RU="Тип анализа" Translated="Analysis type" />
+  <sClassification RU="Классификация" Translated="Classification" />
+  <sMark RU="Показатель" Translated="Name" />
+  <sRelAnalyse RU="Отн. анализ" Translated="Rel. analysis" />
+  <sAbsAnalyse RU="Абс. анализ" Translated="Abs. analysis" />
+  <sQualAnalyse RU="Кач. анализ" Translated="Qual. analysis" />
+  <sRepPos RU="Позиция в отчете" Translated="Report position" />
+  <sRepPos RU="Считать в СВМО" Translated="Add to SDM" />
+  <sNormingType RU="Нормировка результатов" Translated="Normalization by" />
+  <sNaming RU="Наименование" Translated="Name" />
+  <sHomo1 RU="Гомозигота 1" Translated="Homozygote 1" />
+  <sHomo2 RU="Гомозигота 2" Translated="Homozygote 2" />
+  <sHetero RU="Гетерозигота" Translated="Heterozygote 1" />
+  <sGroupName RU="Название группы" Translated="Group name" />
+  <sPeaksAnalys RU="Анализ по температурным пикам" Translated="Temperature Peak Analysis" />
+  <sDiffAnalys RU="&quot;Разностный анализ&quot;" Translated="&quot;Difference analysis&quot;" />
+  <sPolymorph RU="Полиморфизм" Translated="Polymorphism" />
+  <sCommon RU="Общие" Translated="Common" />
+  <sReportSettings RU="Свойства отчета" Translated="Report settings" />
+  <sRearrangeType RU="Тип перестройки" Translated="Type of rearrangement" />
+  <sServiceType RU="Тип исследования" Translated="Service type" />
+  <sShowConclusion RU="Показывать заключение" Translated="Show conclusion" />
+  <sCommonIC RU="Общий ВК" Translated="Common IC" />
+  <sControlTubes RU="Количество пробирок в контроле" Translated="Number of tubes in control" />
+  <sMicroTypes RU="Типы микроорганизмов" Translated="Types of microorganisms" />
+  <sCpValidatingCriterion RU="Порог достоверности (Cp)" Translated="Validity criterion (Cp)" />
+  <sAbsColorBorder RU="Цветовые границы: абс." Translated="Color borders: abs." />
+  <sRelColorBorder RU="Цветовые границы: отн." Translated="Color borders: rel." />
+  <sQualColorBorder RU="Цветовые границы: кач." Translated="Color borders: qual." />
+  <sUseIC RU="Учитывать ВК" Translated="Use IC" />
+  <sAmpifyEff RU="Эффективность амплификации" Translated="Amplification efficiency" />
+  <sConclusionDict RU="Словарь заключения" Translated="Conclusion dictionary" />
+  <sTresholdsFam RU="Пороги (Fam - Cy5)" Translated="Thresholds (Fam - Cy5)" />
+  <sTresholdsHex RU="Пороги (Hex - Cy5)" Translated="Thresholds (Hex - Cy5)" />
+  <sRange1min RU="Диапазон 1 (min)" Translated="Range 1 (min)" />
+  <sRange2min RU="Диапазон 2 (min)" Translated="Range 2 (min)" />
+  <sRange3min RU="Диапазон 3 (min)" Translated="Range 3 (min)" />
+  <sRange1max RU="Диапазон 1 (max)" Translated="Range 1 (max)" />
+  <sRange2max RU="Диапазон 2 (max)" Translated="Range 2 (max)" />
+  <sRange3max RU="Диапазон 3 (max)" Translated="Range 3 (max)" />
+  <sLowMTCTreshold RU="Нижняя граница КВМ (Lg)" Translated="Low threshold of SIC (Lg)" />
+  <sMedMTCTreshold RU="Средняя граница КВМ (Lg)" Translated="Medium threshold of SIC (Lg)" />
+  <sHigthMTCTreshold RU="Верхняя граница КВМ (Lg)" Translated="Higth threshold of SIC (Lg)" />
+  <sExtendedRep RU="Расширенный отчет" Translated="Extended report" />
+  <sCpMinThreshold RU="Нижняя граница валидности (Cp)" Translated="Minimal valid threshold (Cp)" />
+  <sCpMaxThreshold RU="Верхняя граница валидности (Cp)" Translated="Maximal valid threshold (Cp)" />
+  <sCpMinThreshold1 RU="Нижняя граница валидности Cp" Translated="Minimal valid threshold Cp" />
+  <sCpMaxThreshold1 RU="Верхняя граница валидности Cp" Translated="Maximal valid threshold Cp" />
+  <sCpValidityThreshold RU="Границы валидности значения Cp" Translated="Cp validity thresholds" />
+  <sdCpValidityThreshold RU="Границы валидности значения dCp" Translated="dCp validity thresholds" />
+  <sHigther RU="Верхняя" Translated="Higher" />
+  <sLower RU="Нижняя" Translated="Lower" />
+  <sBorder RU="Граница" Translated="Border" />
+  <sMarkBorder RU="Границы показателей" Translated="Borders" />
+  <sMarkBorder RU="Параметры расчета результата" Translated="Analysis parameters" />
+  <sCalcLog RU="Рассчитать значение Log" Translated="Calculate Log" />
+  <sAdditional RU="Дополнительно" Translated="Additional" />
+  <sLocusDct RU="Справочник локусов" Translated="Loci Directory" />
+  <sLocus RU="Локус" Translated="Locus" />
+  <sMutationDict RU="Типы мутаций" Translated="Types of mutations" />
+  <sMutation RU="Мутация" Translated="Mutation" />
+  <sMutationDict RU="Типы мутаций" Translated="Types of mutations" />
+  <sNameInView RU="Название в таблице результатов" Translated="Name in the results table" />
+  <sHistogramm RU="Гистограмма" Translated="Histogramm" />
+  <sTBMInReport RU="Выводить ОБМ в отчет" Translated="Show TBM in report" />
+  <sCalcLg RU="Вычислять Lg" Translated="Calculate Lg" />
+  <sPosControlCount RU="Количество K+" Translated="C+ count" />
+  <sNegControlCount RU="Количество K-" Translated="C- count" />
+  <sStandards RU="Стандарты" Translated="Standards" />
+  <sUnits RU="Единица измерений" Translated="Units" />
+  <sRHDTitle RU="Пренатальная диагностика. Резус-фактор" Translated="Prenatal diagnostics. Fetal RHD Genotyping." />
+  <sYChromosome RU="фрагмент Y хромосомы" Translated="Y chromosome fragment" />
+  <sYChromosome1 RU="Фрагмент Y хромосомы" Translated="Y chromosome fragment" />
+  <sGenderTitle RU="Пренатальная диагностика. Пол плода" Translated="Prenatal diagnostics. Fetal gender." />
+  <sPolyAnalyse RU="Анализ полиморфизмов" Translated="Analysis of polymorphisms" />
+  <sDeletion RU="делеция" Translated="deletion" />
+  <sInsertion RU="инсерция" Translated="insertion" />
+  <sSubstitution RU="замена" Translated="substitution" />
+  <sPolymorphism RU="Полиморфизм" Translated="Polymorphism" />
+  <sByDef RU="По умолчанию" Translated="Default" />
+  <sCpPosBorder RU="Граница положительного результата (Cp)" Translated="Cp positive border" />
+  <sUseAllCp RU="Учет всех ВК" Translated="Checking every IC" />
+  <sShortAbs RU="Абс." Translated="Abs." />
+  <sShortRel RU="Отн." Translated="Rel." />
+  <sShortQual RU="Кач." Translated="Qual." />
+  <sDNACopies RU="Копий ДНК ВПЧ на клетку" Translated="Copies of HPV DNA on cell" />
+  <sFormatType RU="Формат результатов" Translated="Type of results" />
+  <sClinicalValue RU="Вычислять уровень клинической значимости" Translated="Take into account level to clinical value" />
+  <sEstmationClinicalValue RU="Оценка уровня клинической значимости по результатам анализа" Translated="Estmation of the level to clinical value on result of the analysis" />
+  <sClinicalValueBorder RU="Уровень клинической значимости (Lg)" Translated="Level of clinical significance (Lg)" />
+  <sTotalHPV RU="Вычислять суммарную нагрузку HPV" Translated="Calculate total HPV load" />
+  <sReportPos RU="Порядок в отчете" Translated="Report position" />
+  <sMutation RU="Тип мутации" Translated="Mutation type" />
+  <sBorderVal RU="Порог значимости" Translated="Significance threshold" />
+  <sAbsBorder RU="Цветовые границы (абсолютные)" Translated="Color borders (absolute)" />
+  <sRelBorder RU="Цветовые границы (относительные)" Translated="Color borders (relative)" />
+  <sQualBorder RU="Цветовые границы (качественные)" Translated="Color borders (qualitative)" />
+  <sNormingBy RU="Нормировка результатов по" Translated="Normalization of results" />
+  <sAddChannel RU="Добавить канал" Translated="Add channel" />
+  <sImmunoQuan RU="ИммуноКвантэкс" Translated="Immunity" />
+  <sConcByMl RU="Концентрация копий/мл" Translated="Concentration copies/ml" />
+  <sConcByME RU="Концентрация копий/МЕ" Translated="Concentration copies/IU" />
+  <sConcByPg RU="Концентрация копий/PG" Translated="Concentration copies/PG" />
+  <sQuant RU="Количественный" Translated="Quantitative" />
+  <sQuantCurve RU="Стандартная кривая" Translated="Standard curve" />
+  <sApply RU="Применить" Translated="OK" />
+  <sDefaultValue RU="Значение по умолчанию" Translated="Set default value" />
+  <sCopyFromFeld RU="Копировать данные из поля " Translated="Copy data from " />
+  <sAutocorrection RU="Автокоррекция" Translated="Auto correction" />
+  <sExportPath RU="Не указана папка экспорта результатов" Translated="Results export folder not specified" />
+  <sMultiplex RU="Мультиплекс Q+" Translated="Multiplex Q+" />
+  <sExportSucces RU="Результаты успешно экспортированы в файл:" Translated="The results have been successfully exported to a file:" />
+  <sExportFailed RU="Экспорт результатов не выполнен" Translated="Export failed" />
+  <sBacResistaGLA RU="БакРезиста GLA Van/Mec" Translated="BacResista GLA Van/Mec" />
+  <sHPVTitle4 RU="Выявление, типирование и количественное определение вируса папилломы человека методом ПЦР. HPV квант-4" Translated="HPV quant-4" />
+  <sHPVTitle15 RU="Выявление, типирование и количественное определение вируса папилломы человека методом ПЦР. HPV квант-15" Translated="HPV quant-15" />
+  <sHPVTitle21 RU="Выявление, типирование и количественное определение вируса папилломы человека методом ПЦР. HPV квант-21" Translated="HPV quant-21" />
+  <sExportConflict RU="Обнаружен конфликт настроек формата выгрузки. Экспорт не выполнен." Translated="A conflict has been detected in the export settings. Export failed." />
+  <sPCRResearch RU="Результат исследования методом ПЦР" Translated="PCR results" />
+  <sExportSettingsTitle RU="Настройки экспорта результатов" Translated="Export settings" />
+  <sDefaultSettngs RU="Настройки по умолчанию" Translated="Default" />
+  <sEmbeddedFonts RU="Встроенные шрифты" Translated="Embedded fonts" />
+  <sCompressed RU="Сжатие" Translated="Compressed" />
+  <sQuality RU="Качество" Translated="Quality" />
+  <sPrintOptimized RU="Оптимизация" Translated="Print optimized" />
+  <sResolution RU="Разрешение (dpi)" Translated="Resolution (dpi)" />
+  <sJPEGQuality RU="Качество JPEG" Translated="JPEG quality" />
+  <sCropImages RU="Обрезать страницу" Translated="Crop images" />
+  <sExportFormat RU="Формат экспорта" Translated="Export format" />
+  <sPrintTitle RU="Шапка отчета" Translated="Report title" />
+  <sPrintSummary RU="Подвал отчета" Translated="Report footer" />
+  <sExportLegend RU="Описание бланка результатов" Translated="Report description" />
+  <sPDFParams RU="Параметры PDF" Translated="PDF parameters" />
+  <sJPEGParams RU="Параметры JPEG" Translated="JPEG parameters" />
+  <BacScreenPlus RU="БакСкрин ПЛЮС" Translated="BacScreen PLUS" />
+  <sHPV_quant-21_A RU="HPV_квант-21_А" Translated="HPV_quant-21_A" />
+  <sTNC_Complex RU="TNC_Комплекс" Translated="TNC_Complex" />
+  <sSARS-CoV-2_Influenza RU="SARS-CoV-2/Грипп Комплекс" Translated="SARS-CoV-2/Influenza" />
+</RSStrings>

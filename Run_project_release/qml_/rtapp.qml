@@ -190,15 +190,15 @@ Rectangle
 
    function getListProtocols(){
 
-       //print( "GET--> "+ addrList );
+       print( "GET--> "+ addrList );
 
        var doc = new XMLHttpRequest();
 
-       //print( "XMLHttpRequest init");
+       print( "XMLHttpRequest init");
 
        doc.onreadystatechange = function() {
 
-            //print( doc.readyState + " state of socket" );
+            print( doc.readyState + " state of socket" );
 
             if (doc.readyState === XMLHttpRequest.DONE) {
 
@@ -223,7 +223,7 @@ Rectangle
                    }
                }
 
-               //print( sjoined.length + " elements in list" );
+               print( sjoined.length + " elements in list" );
 
                Web.get_ListProtocols( sjoined.join(':'), ':' );
             }

@@ -2155,7 +2155,8 @@ void Setup::cellSample_Selected()
                     if(ptest->header.Name_Test == text.toStdString())
                     {
                         if(ptest->header.Type_analysis == 0x0001 ||
-                           ptest->header.Type_analysis == 0x0003) Samples_Delegate->disable_Standarts = false;
+                           ptest->header.Type_analysis == 0x0003 ||
+                           ptest->header.Type_analysis == 155077)     Samples_Delegate->disable_Standarts = false;
                         break;
                     }
                 }
