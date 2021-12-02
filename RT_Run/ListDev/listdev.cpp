@@ -233,7 +233,13 @@ void ListDev::slotConnectDev()
 
         //qDebug() << name << port << ip << Client_Net << application_name;
 
-        foreach(QWidget *widget, QApplication::topLevelWidgets())
+        if(p_main)
+        {
+            text = application_name + " " + name;
+            p_main->setWindowTitle(text);
+        }
+        p_main->setProperty("Device_State", QVariant(name));
+        /*foreach(QWidget *widget, QApplication::topLevelWidgets())
         {
             text = widget->windowTitle();
             //qDebug() << "title = " << text;
@@ -243,7 +249,7 @@ void ListDev::slotConnectDev()
                 widget->setWindowTitle(text);
                 break;
             }
-        }
+        }*/
 
     }
     //close();
@@ -269,7 +275,13 @@ void ListDev::slotConnectDev_a5d411()
         connect_event.port = port.toInt();
         connect_event.ip = ip;
 
-        foreach(QWidget *widget, QApplication::topLevelWidgets())
+        if(p_main)
+        {
+            text = application_name + " " + name;
+            p_main->setWindowTitle(text);
+        }
+        p_main->setProperty("Device_State", QVariant(name));
+        /*foreach(QWidget *widget, QApplication::topLevelWidgets())
         {
             text = widget->windowTitle();
             //qDebug() << "title = " << text;
@@ -279,7 +291,7 @@ void ListDev::slotConnectDev_a5d411()
                 widget->setWindowTitle(text);
                 break;
             }
-        }
+        }*/
 
         slotSendToServer();
 
@@ -304,16 +316,24 @@ void ListDev::slotDisconnectDev()
         Client_Net.append("disconnect");
         Client_Net.append(name);
 
-        foreach(QWidget *widget, QApplication::topLevelWidgets())
+
+        if(p_main)
+        {
+            text = application_name;
+            p_main->setWindowTitle(text);
+        }
+        p_main->setProperty("Device_State", QVariant(""));
+        /*foreach(QWidget *widget, QApplication::topLevelWidgets())
         {
             text = widget->windowTitle();
             //qDebug() << "title = " << text;
-            if(text.indexOf(application_name) == 0)
+            if(text.startsWith(application_name))
             {
                 text = application_name;
                 widget->setWindowTitle(text);
+                break;
             }
-        }
+        }*/
 
         slotSendToServer();
 

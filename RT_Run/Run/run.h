@@ -676,6 +676,7 @@ private slots:
     void update_ProtocolInfoToWeb(QString state = "");
 
     //void slot_TimeOutRequest(QString);
+    //void Change_WinTitle(QString title = "");
 
 public slots:
     void resize_splitter(int,int);

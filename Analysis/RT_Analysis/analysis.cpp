@@ -1474,7 +1474,7 @@ void Analysis::save()
     if(sts) sts = file.copy(FileName);
     if(!sts) QMessageBox::critical(this, tr("Error Write file!"), FileName + text);
 
-    if(sts) FileName_Protocol->setText(FileName);
+    if(sts) {FileName_Protocol->setText(FileName); Change_WinTitle();}
 
     if(sts) flag_SaveChangesProtocol = false;
 
@@ -1807,6 +1807,25 @@ void Analysis::view_listProtocols()
     menu.clear();
 
 }
+//-----------------------------------------------------------------------------
+//--- Change_WinTitle()
+//-----------------------------------------------------------------------------
+void Analysis::Change_WinTitle()
+{
+    QString fn = FileName_Protocol->text().trimmed();
+
+    if(fn.trimmed().isEmpty()) return;
+
+    QFileInfo fi(fn);
+    if(!fi.exists()) return;
+
+    fn = QString("%1.%2").arg(fi.baseName()).arg(fi.suffix());
+    parentWidget()->setProperty("change_WinTitle", QVariant(fn));
+    QEvent *e = new QEvent((QEvent::Type)3009);
+    QApplication::sendEvent(this->parentWidget(), e);
+    //qDebug() << "Analysis -> change_WinTitle: " << fn;
+
+ }
 //-----------------------------------------------------------------------------
 //--- Action load_to_setup()
 //-----------------------------------------------------------------------------
@@ -2991,9 +3010,11 @@ void Analysis::open_Protocol(QString fileName, bool send, bool create_Hash)
         if(original_FileName ||(!original_FileName && FileName_Protocol->text().trimmed().isEmpty()))
         {
             FileName_Protocol->setText(file_Info.absoluteFilePath()+ "   ");
+            Change_WinTitle();
             original_FileName = false;
         }
         DirLabel_Protocol->setVisible(true);
+
 
         //--- 1.3 Check on negative: -dF/dT ---
         foreach(p_test, prot->tests)
@@ -3521,6 +3542,7 @@ void Analysis::open_Protocol(QString fileName, bool send, bool create_Hash)
                     message.setIcon(QMessageBox::Information);
                     message.button(QMessageBox::Ok)->animateClick(15000);
                     FileName_Protocol->setText(str);
+                    Change_WinTitle();
                     DirLabel_Protocol->setVisible(true);
 
                     prot->xml_filename = str.toStdString();

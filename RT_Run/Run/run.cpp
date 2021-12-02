@@ -2755,7 +2755,7 @@ void Run::slotConnected()
 
     //map_Logged.clear();
     //map_Logged.insert(DTMASTERLOG_DATA, "Received the connected() signal");
-    //slotSendToServer(DTMASTERLOG_REQUEST);
+    //slotSendToServer(DTMASTERLOG_REQUEST);    
 }
 //-----------------------------------------------------------------------------
 //---
@@ -2764,6 +2764,10 @@ void Run::slotDisconnected()
 {
     //qDebug() << "Received the Disconnected() signal";
     flag_ContractDev = false;
+
+    // clear window titul
+    //parentWidget()->setProperty("Device_State", QVariant(""));
+    //Change_WinTitle();
 }
 //-----------------------------------------------------------------------------
 //---
@@ -3425,7 +3429,7 @@ void Run::slotRefreshInfoDevice()
     QString B96c = "A5X111,A5X207,A5X409,A5Z008,A5A603,A5AN09,A5B730,A5BN01,A5C510,A5CD15,A5CD16";
     QStringList list_B96b = B96b.split(",");
     QStringList list_B96c = B96c.split(",");
-    QString name_dev = map_InfoDevice.value(INFODEV_serName);;
+    QString name_dev = map_InfoDevice.value(INFODEV_serName);
 
     info_device->clear();
     info_device->setColumnCount(2);
@@ -3549,11 +3553,25 @@ void Run::slotRefreshInfoDevice()
 
     text = qApp->applicationDirPath() + "/device/" + map_InfoDevice.value(INFODEV_serName);
     dir_Device.setPath(text);
-    if(!dir_Device.exists()) ok = dir_Device.mkdir(text);    
+    if(!dir_Device.exists()) ok = dir_Device.mkdir(text);
+
+    //... change widow titul ...
+    //parentWidget()->setProperty("Device_State", QVariant(""));
+    //Change_WinTitle(name_dev);
+    //...
 
     Check_Compatibility();
 }
-
+//-----------------------------------------------------------------------------
+//---
+//-----------------------------------------------------------------------------
+/*void Run::Change_WinTitle(QString titul)
+{
+    qDebug() << "Run->Change_WinTitle: " << titul;
+    parentWidget()->setProperty("change_WinTitle", QVariant(titul));
+    QEvent *e = new QEvent((QEvent::Type)3009);
+    QApplication::sendEvent(parentWidget(), e);
+}*/
 //-----------------------------------------------------------------------------
 //---
 //-----------------------------------------------------------------------------
@@ -6973,7 +6991,13 @@ bool Run::Create_RunProtocol()
         else file.close();
     }
 
-
+    // Change WinTitle...
+    /*if(res)
+    {
+        parentWidget()->setProperty("change_WinTitle", QVariant(QString::fromStdString(prot->SerialName)));
+        QEvent *e = new QEvent((QEvent::Type)3009);
+        QApplication::sendEvent(parentWidget(), e);
+    }*/
 
     return(res);
 }

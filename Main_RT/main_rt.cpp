@@ -1144,6 +1144,7 @@ void Main_RT::create_PagesWidget()
     load_Pages();
 
     pagesWidget = new StackedWidget;
+    pagesWidget->main_Window = this;
 
     if(p_saver) pagesWidget->addWidget(p_saver);
     if(p_setup) pagesWidget->addWidget(p_setup);
@@ -1298,14 +1299,19 @@ void Main_RT::create_ListWidget()
     contentsWidget->setMaximumWidth(74);
     contentsWidget->setSpacing(0);
     contentsWidget->setMinimumHeight(330);
-    contentsWidget->setStyleSheet("QListWidget{background: #606060;}"
-                                  "QListWidget::item:hover {background-color: #808080;}"
-                                  "QListWidget::item:disabled {background-color: #808080;}"
-                                  "QListWidget::item:selected {color: white;}"
-                                  "QListWidget::item:selected {background-color: #404040; border-style: solid; border-color:#404040;}");
-     //                             "QListWidget::item:selected {background-color: black; border-style: solid; border-color:black;}");
-     /*                            "QListWidget::item:!selected {background-color: #606060;}");
-                                   "QListWidget::item:hover {background-color: black;"); //#606060;");*/
+    contentsWidget->setStyleSheet(
+                                      "QListWidget {background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,"
+                                      "stop: 0 #111, stop: 1 #aaa);}"
+                                      "QListWidget::item {background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,"
+                                      "stop: 0 #111, stop: 1 #aaa);}"
+                                      "QListWidget::item:hover {background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,"
+                                      "stop: 0 #333, stop: 1 #ccc);}"
+                                      "QListWidget::item:disabled {background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,"
+                                      "stop: 0 #444, stop: 1 #ddd);}"
+                                      "QListWidget::item:selected {color: white;}"
+                                      "QListWidget::item:selected {background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,"
+                                      "stop: 0 #000, stop: 1 #555);}");
+
 
     contentsWidget->setFocusPolicy(Qt::NoFocus);
     contentsWidget->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
@@ -1344,11 +1350,19 @@ void Main_RT::create_ListWidget()
     helpWidget->setMaximumHeight(74);
     helpWidget->setMinimumHeight(74);
     helpWidget->setFocusPolicy(Qt::NoFocus);
-    helpWidget->setStyleSheet("QListWidget{background: #606060;}"
-                              "QListWidget::item:hover {background-color: #808080;}"
-                              "QListWidget::item:selected {color: white;}"
-                              "QListWidget::item:selected {background-color: #404040; border-style: solid; border-color:#404040;}");
-    //helpWidget->setStyleSheet("QListWidget{background: silver;}");
+    helpWidget->setStyleSheet(
+                                  "QListWidget {background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,"
+                                  "stop: 0 #111, stop: 1 #aaa);}"
+                                  "QListWidget::item {background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,"
+                                  "stop: 0 #111, stop: 1 #aaa);}"
+                                  "QListWidget::item:hover {background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,"
+                                  "stop: 0 #333, stop: 1 #ccc);}"
+                                  "QListWidget::item:disabled {background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,"
+                                  "stop: 0 #111, stop: 1 #aaa);}"
+                                  "QListWidget::item:selected {color: white;}"
+                                  "QListWidget::item:selected {background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,"
+                                  "stop: 0 #000, stop: 1 #888);}");
+
     helpWidget->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     helpWidget->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 
@@ -2628,6 +2642,25 @@ bool StackedWidget::event(QEvent *e)
             //qDebug() << "order_to_web: " << text;
             emit sSend_OrderProtocolToWeb(text);
         }
+        return(true);
+    }
+
+    // 9. Change WinTitle:
+    if(e->type() == 3009)
+    {
+        text = main_Window->property("Device_State").toString().trimmed();
+        //qDebug() << "Device_State: " << text;
+        if(text.isEmpty())
+        {
+            text = property("change_WinTitle").toString();
+            //qDebug() << "MainRT->change_WinTitle: " << text;
+            //if(!text.isEmpty())
+            //{
+                text = QString("%1 %2").arg(APP_NAME).arg(text).trimmed();
+                main_Window->setWindowTitle(text);
+            //}
+        }
+
         return(true);
     }
 

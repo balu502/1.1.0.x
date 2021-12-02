@@ -1,0 +1,292 @@
+02-12-21 09:46:09 Get request on connection from remote host wit IP: ::ffff:127.0.0.1
+02-12-21 09:46:09 <-- ISCONNECTED
+02-12-21 09:46:09 The remote host is closed.
+02-12-21 09:46:14 Get request on connection from remote host wit IP: ::ffff:127.0.0.1
+02-12-21 09:46:14 <-- ISCONNECTED
+02-12-21 09:46:15 --> InfoDevice
+02-12-21 09:46:15 <-- InfoDevice
+02-12-21 09:46:15 --> sector_read
+02-12-21 09:46:15 --> CRYPTO_REQUEST
+02-12-21 09:46:15 <-- sector_read
+02-12-21 09:46:15 <-- CRYPTO_REQUEST
+02-12-21 09:46:16 --> InfoData
+02-12-21 09:46:16 <-- InfoData
+02-12-21 09:46:17 --> InfoData
+02-12-21 09:46:17 <-- InfoData
+02-12-21 09:46:18 --> InfoData
+02-12-21 09:46:18 <-- InfoData
+02-12-21 09:46:19 --> InfoData
+02-12-21 09:46:19 <-- InfoData
+02-12-21 09:46:20 --> InfoData
+02-12-21 09:46:20 <-- InfoData
+02-12-21 09:46:21 --> InfoData
+02-12-21 09:46:21 <-- InfoData
+02-12-21 09:46:22 Get request on connection from remote host wit IP: ::ffff:127.0.0.1
+02-12-21 09:46:22 The remote host can't connected. Server is busy of application with IP: ::ffff:127.0.0.1
+02-12-21 09:46:22 <-- ISCONNECTED
+02-12-21 09:46:22 The remote host is closed.
+02-12-21 09:46:22 --> InfoData
+02-12-21 09:46:22 <-- InfoData
+02-12-21 09:46:23 --> InfoData
+02-12-21 09:46:23 <-- InfoData
+02-12-21 09:46:24 The remote host is closed.
+02-12-21 09:46:27 Get request on connection from remote host wit IP: ::ffff:127.0.0.1
+02-12-21 09:46:27 <-- ISCONNECTED
+02-12-21 09:46:27 The remote host is closed.
+02-12-21 09:46:29 Get request on connection from remote host wit IP: ::ffff:127.0.0.1
+02-12-21 09:46:29 <-- ISCONNECTED
+02-12-21 09:46:30 --> InfoDevice
+02-12-21 09:46:30 <-- InfoDevice
+02-12-21 09:46:30 --> sector_read
+02-12-21 09:46:30 --> CRYPTO_REQUEST
+02-12-21 09:46:30 <-- sector_read
+02-12-21 09:46:30 <-- CRYPTO_REQUEST
+02-12-21 09:46:31 --> InfoData
+02-12-21 09:46:31 <-- InfoData
+02-12-21 09:46:32 --> InfoData
+02-12-21 09:46:32 <-- InfoData
+02-12-21 09:46:33 --> InfoData
+02-12-21 09:46:33 <-- InfoData
+02-12-21 09:46:34 --> InfoData
+02-12-21 09:46:34 <-- InfoData
+02-12-21 09:46:35 --> InfoData
+02-12-21 09:46:35 <-- InfoData
+02-12-21 09:46:36 --> InfoData
+02-12-21 09:46:36 <-- InfoData
+02-12-21 09:46:37 --> InfoData
+02-12-21 09:46:37 <-- InfoData
+02-12-21 09:46:38 --> InfoData
+02-12-21 09:46:38 <-- InfoData
+02-12-21 09:46:39 --> InfoData
+02-12-21 09:46:39 <-- InfoData
+02-12-21 09:46:40 --> InfoData
+02-12-21 09:46:40 <-- InfoData
+02-12-21 09:46:41 --> InfoData
+02-12-21 09:46:41 <-- InfoData
+02-12-21 09:46:41 Get request on connection from remote host wit IP: ::ffff:127.0.0.1
+02-12-21 09:46:41 The remote host can't connected. Server is busy of application with IP: ::ffff:127.0.0.1
+02-12-21 09:46:41 <-- ISCONNECTED
+02-12-21 09:46:41 The remote host is closed.
+02-12-21 09:46:42 --> InfoData
+02-12-21 09:46:42 <-- InfoData
+02-12-21 09:46:43 --> InfoData
+02-12-21 09:46:43 <-- InfoData
+02-12-21 09:46:44 The remote host is closed.
+02-12-21 09:47:13 Get request on connection from remote host wit IP: ::ffff:127.0.0.1
+02-12-21 09:47:13 <-- ISCONNECTED
+02-12-21 09:47:13 The remote host is closed.
+02-12-21 09:47:15 Get request on connection from remote host wit IP: ::ffff:127.0.0.1
+02-12-21 09:47:15 <-- ISCONNECTED
+02-12-21 09:47:16 --> InfoDevice
+02-12-21 09:47:16 <-- InfoDevice
+02-12-21 09:47:16 --> sector_read
+02-12-21 09:47:16 --> CRYPTO_REQUEST
+02-12-21 09:47:16 <-- sector_read
+02-12-21 09:47:16 <-- CRYPTO_REQUEST
+02-12-21 09:47:17 --> InfoData
+02-12-21 09:47:17 <-- InfoData
+02-12-21 09:47:18 --> InfoData
+02-12-21 09:47:18 <-- InfoData
+02-12-21 09:47:19 --> InfoData
+02-12-21 09:47:19 <-- InfoData
+02-12-21 09:47:20 --> InfoData
+02-12-21 09:47:20 <-- InfoData
+02-12-21 09:47:21 --> InfoData
+02-12-21 09:47:21 <-- InfoData
+02-12-21 09:47:21 Get request on connection from remote host wit IP: ::ffff:127.0.0.1
+02-12-21 09:47:21 The remote host can't connected. Server is busy of application with IP: ::ffff:127.0.0.1
+02-12-21 09:47:21 <-- ISCONNECTED
+02-12-21 09:47:21 The remote host is closed.
+02-12-21 09:47:22 --> InfoData
+02-12-21 09:47:22 <-- InfoData
+02-12-21 09:47:23 --> InfoData
+02-12-21 09:47:23 <-- InfoData
+02-12-21 09:47:24 --> InfoData
+02-12-21 09:47:24 <-- InfoData
+02-12-21 09:47:25 Get request on connection from remote host wit IP: ::ffff:127.0.0.1
+02-12-21 09:47:25 The remote host can't connected. Server is busy of application with IP: ::ffff:127.0.0.1
+02-12-21 09:47:25 <-- ISCONNECTED
+02-12-21 09:47:25 The remote host is closed.
+02-12-21 09:47:25 --> InfoData
+02-12-21 09:47:25 <-- InfoData
+02-12-21 09:47:26 --> InfoData
+02-12-21 09:47:26 <-- InfoData
+02-12-21 09:47:27 --> InfoData
+02-12-21 09:47:27 <-- InfoData
+02-12-21 09:47:28 --> InfoData
+02-12-21 09:47:28 <-- InfoData
+02-12-21 09:47:29 The remote host is closed.
+02-12-21 09:48:03 Get request on connection from remote host wit IP: ::ffff:127.0.0.1
+02-12-21 09:48:03 <-- ISCONNECTED
+02-12-21 09:48:03 The remote host is closed.
+02-12-21 09:48:05 Get request on connection from remote host wit IP: ::ffff:127.0.0.1
+02-12-21 09:48:05 <-- ISCONNECTED
+02-12-21 09:48:06 --> InfoDevice
+02-12-21 09:48:06 <-- InfoDevice
+02-12-21 09:48:06 --> sector_read
+02-12-21 09:48:06 --> CRYPTO_REQUEST
+02-12-21 09:48:06 <-- sector_read
+02-12-21 09:48:06 <-- CRYPTO_REQUEST
+02-12-21 09:48:07 --> InfoData
+02-12-21 09:48:07 <-- InfoData
+02-12-21 09:48:08 --> InfoData
+02-12-21 09:48:08 <-- InfoData
+02-12-21 09:48:09 --> InfoData
+02-12-21 09:48:09 <-- InfoData
+02-12-21 09:48:10 --> InfoData
+02-12-21 09:48:10 <-- InfoData
+02-12-21 09:48:11 --> InfoData
+02-12-21 09:48:11 <-- InfoData
+02-12-21 09:48:54 Get request on connection from remote host wit IP: ::ffff:127.0.0.1
+02-12-21 09:48:54 <-- ISCONNECTED
+02-12-21 09:48:54 --> InfoDevice
+02-12-21 09:48:54 <-- InfoDevice
+02-12-21 09:48:55 --> InfoDevice
+02-12-21 09:48:55 <-- InfoDevice
+02-12-21 09:48:57 --> InfoDevice
+02-12-21 09:48:57 <-- InfoDevice
+02-12-21 09:48:57 --> sector_read
+02-12-21 09:48:57 --> CRYPTO_REQUEST
+02-12-21 09:48:57 <-- sector_read
+02-12-21 09:48:58 <-- CRYPTO_REQUEST
+02-12-21 09:48:58 --> InfoData
+02-12-21 09:48:58 <-- InfoData
+02-12-21 09:48:59 --> InfoData
+02-12-21 09:48:59 <-- InfoData
+02-12-21 09:49:00 --> InfoData
+02-12-21 09:49:00 <-- InfoData
+02-12-21 09:49:01 --> InfoData
+02-12-21 09:49:01 <-- InfoData
+02-12-21 09:49:02 --> InfoData
+02-12-21 09:49:02 <-- InfoData
+02-12-21 09:49:03 Get request on connection from remote host wit IP: ::ffff:127.0.0.1
+02-12-21 09:49:03 The remote host can't connected. Server is busy of application with IP: ::ffff:127.0.0.1
+02-12-21 09:49:03 <-- ISCONNECTED
+02-12-21 09:49:03 The remote host is closed.
+02-12-21 09:49:03 --> InfoData
+02-12-21 09:49:03 <-- InfoData
+02-12-21 09:49:04 --> InfoData
+02-12-21 09:49:04 <-- InfoData
+02-12-21 09:49:05 --> InfoData
+02-12-21 09:49:05 <-- InfoData
+02-12-21 09:49:05 The remote host is closed.
+02-12-21 09:51:49 Get request on connection from remote host wit IP: ::ffff:127.0.0.1
+02-12-21 09:51:49 <-- ISCONNECTED
+02-12-21 09:51:49 The remote host is closed.
+02-12-21 09:51:50 Get request on connection from remote host wit IP: ::ffff:127.0.0.1
+02-12-21 09:51:50 <-- ISCONNECTED
+02-12-21 09:51:51 --> InfoDevice
+02-12-21 09:51:51 <-- InfoDevice
+02-12-21 09:51:51 --> sector_read
+02-12-21 09:51:51 --> CRYPTO_REQUEST
+02-12-21 09:51:51 <-- sector_read
+02-12-21 09:51:52 <-- CRYPTO_REQUEST
+02-12-21 09:51:52 --> InfoData
+02-12-21 09:51:52 <-- InfoData
+02-12-21 09:51:53 --> InfoData
+02-12-21 09:51:53 <-- InfoData
+02-12-21 09:51:54 --> InfoData
+02-12-21 09:51:54 <-- InfoData
+02-12-21 09:51:55 --> InfoData
+02-12-21 09:51:55 <-- InfoData
+02-12-21 09:51:56 Get request on connection from remote host wit IP: ::ffff:127.0.0.1
+02-12-21 09:51:56 The remote host can't connected. Server is busy of application with IP: ::ffff:127.0.0.1
+02-12-21 09:51:56 <-- ISCONNECTED
+02-12-21 09:51:56 The remote host is closed.
+02-12-21 09:51:56 --> InfoData
+02-12-21 09:51:56 <-- InfoData
+02-12-21 09:51:57 --> InfoData
+02-12-21 09:51:57 <-- InfoData
+02-12-21 09:51:58 The remote host is closed.
+02-12-21 10:21:51 Get request on connection from remote host wit IP: ::ffff:127.0.0.1
+02-12-21 10:21:51 <-- ISCONNECTED
+02-12-21 10:21:51 The remote host is closed.
+02-12-21 10:21:52 Get request on connection from remote host wit IP: ::ffff:127.0.0.1
+02-12-21 10:21:52 <-- ISCONNECTED
+02-12-21 10:21:53 --> InfoDevice
+02-12-21 10:21:53 <-- InfoDevice
+02-12-21 10:21:53 --> sector_read
+02-12-21 10:21:53 --> CRYPTO_REQUEST
+02-12-21 10:21:53 <-- sector_read
+02-12-21 10:21:53 <-- CRYPTO_REQUEST
+02-12-21 10:21:54 --> InfoData
+02-12-21 10:21:54 <-- InfoData
+02-12-21 10:21:55 --> InfoData
+02-12-21 10:21:55 <-- InfoData
+02-12-21 10:21:56 --> InfoData
+02-12-21 10:21:56 <-- InfoData
+02-12-21 10:21:57 --> InfoData
+02-12-21 10:21:57 <-- InfoData
+02-12-21 10:21:58 --> InfoData
+02-12-21 10:21:58 <-- InfoData
+02-12-21 10:21:59 --> InfoData
+02-12-21 10:21:59 <-- InfoData
+02-12-21 10:22:00 --> InfoData
+02-12-21 10:22:00 <-- InfoData
+02-12-21 10:22:02 --> InfoData
+02-12-21 10:22:02 <-- InfoData
+02-12-21 10:22:02 --> InfoData
+02-12-21 10:22:02 <-- InfoData
+02-12-21 10:22:03 --> InfoData
+02-12-21 10:22:03 <-- InfoData
+02-12-21 10:22:04 --> InfoData
+02-12-21 10:22:04 <-- InfoData
+02-12-21 10:22:05 --> InfoData
+02-12-21 10:22:05 <-- InfoData
+02-12-21 10:22:06 --> InfoData
+02-12-21 10:22:06 <-- InfoData
+02-12-21 10:22:07 Get request on connection from remote host wit IP: ::ffff:127.0.0.1
+02-12-21 10:22:07 The remote host can't connected. Server is busy of application with IP: ::ffff:127.0.0.1
+02-12-21 10:22:07 <-- ISCONNECTED
+02-12-21 10:22:07 The remote host is closed.
+02-12-21 10:22:07 --> InfoData
+02-12-21 10:22:07 <-- InfoData
+02-12-21 10:22:08 --> InfoData
+02-12-21 10:22:08 <-- InfoData
+02-12-21 10:22:08 The remote host is closed.
+02-12-21 10:22:35 Get request on connection from remote host wit IP: ::ffff:127.0.0.1
+02-12-21 10:22:35 <-- ISCONNECTED
+02-12-21 10:22:35 The remote host is closed.
+02-12-21 10:22:37 Get request on connection from remote host wit IP: ::ffff:127.0.0.1
+02-12-21 10:22:37 <-- ISCONNECTED
+02-12-21 10:22:38 --> InfoDevice
+02-12-21 10:22:38 <-- InfoDevice
+02-12-21 10:22:38 --> sector_read
+02-12-21 10:22:38 --> CRYPTO_REQUEST
+02-12-21 10:22:38 <-- sector_read
+02-12-21 10:22:38 <-- CRYPTO_REQUEST
+02-12-21 10:22:39 --> InfoData
+02-12-21 10:22:39 <-- InfoData
+02-12-21 10:22:55 Get request on connection from remote host wit IP: ::ffff:127.0.0.1
+02-12-21 10:22:55 <-- ISCONNECTED
+02-12-21 10:22:56 --> InfoDevice
+02-12-21 10:22:56 <-- InfoDevice
+02-12-21 10:22:57 --> InfoDevice
+02-12-21 10:22:57 <-- InfoDevice
+02-12-21 10:22:59 --> InfoDevice
+02-12-21 10:22:59 <-- InfoDevice
+02-12-21 10:22:59 --> sector_read
+02-12-21 10:22:59 --> CRYPTO_REQUEST
+02-12-21 10:22:59 <-- sector_read
+02-12-21 10:22:59 <-- CRYPTO_REQUEST
+02-12-21 10:23:00 --> InfoData
+02-12-21 10:23:00 <-- InfoData
+02-12-21 10:23:01 --> InfoData
+02-12-21 10:23:01 <-- InfoData
+02-12-21 10:23:02 --> InfoData
+02-12-21 10:23:02 <-- InfoData
+02-12-21 10:23:03 --> InfoData
+02-12-21 10:23:03 <-- InfoData
+02-12-21 10:23:04 --> InfoData
+02-12-21 10:23:04 <-- InfoData
+02-12-21 10:23:05 --> InfoData
+02-12-21 10:23:05 <-- InfoData
+02-12-21 10:23:06 --> InfoData
+02-12-21 10:23:06 <-- InfoData
+02-12-21 10:23:07 --> InfoData
+02-12-21 10:23:07 <-- InfoData
+02-12-21 10:23:09 --> InfoData
+02-12-21 10:23:09 <-- InfoData
+02-12-21 10:23:09 --> InfoData
+02-12-21 10:23:09 <-- InfoData
+02-12-21 10:23:10 The remote host is closed.

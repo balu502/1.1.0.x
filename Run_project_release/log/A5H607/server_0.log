@@ -1,0 +1,76 @@
+02-12-21 09:45:39 Start Dt-server. Version 3.00.00 Sep  3 2021 17:27:25
+02-12-21 09:45:41 Initialisation of device is begin.
+02-12-21 09:45:41 Assign serial number from parameters string A5H607
+02-12-21 09:45:41 Found devices with serial number A5H607
+02-12-21 09:45:41 Connect to devices A5H607
+02-12-21 09:45:41 Device observe as DT96
+02-12-21 09:45:41 Initialisation of device was finished successfully.
+02-12-21 09:45:41 Collection of information about the device is begin.
+02-12-21 09:45:42 Information collection about the device is complete.
+02-12-21 09:45:42 Begin work with device.
+02-12-21 09:46:15 Read sector request.
+02-12-21 09:46:15 Read sector completed.
+02-12-21 09:46:15 Setup reagent contract.
+02-12-21 09:46:15 Reagent contract setup with parameter CRYC
+02-12-21 09:46:30 Read sector request.
+02-12-21 09:46:30 Read sector completed.
+02-12-21 09:46:30 Setup reagent contract.
+02-12-21 09:46:30 Reagent contract setup with parameter CRYC
+02-12-21 09:47:16 Read sector request.
+02-12-21 09:47:16 Read sector completed.
+02-12-21 09:47:16 Setup reagent contract.
+02-12-21 09:47:16 Reagent contract setup with parameter CRYC
+02-12-21 09:48:06 Read sector request.
+02-12-21 09:48:06 Read sector completed.
+02-12-21 09:48:06 Setup reagent contract.
+02-12-21 09:48:06 Reagent contract setup with parameter CRYC
+02-12-21 09:48:54 Start Dt-server. Version 3.00.00 Sep  3 2021 17:27:25
+02-12-21 09:48:56 Initialisation of device is begin.
+02-12-21 09:48:56 Assign serial number from parameters string A5H607
+02-12-21 09:48:56 Found devices with serial number A5H607
+02-12-21 09:48:56 Connect to devices A5H607
+02-12-21 09:48:56 Device observe as DT96
+02-12-21 09:48:56 Initialisation of device was finished successfully.
+02-12-21 09:48:56 Collection of information about the device is begin.
+02-12-21 09:48:57 Information collection about the device is complete.
+02-12-21 09:48:57 Begin work with device.
+02-12-21 09:48:57 Read sector request.
+02-12-21 09:48:57 Read sector completed.
+02-12-21 09:48:57 Setup reagent contract.
+02-12-21 09:48:58 Reagent contract setup with parameter CRYC
+02-12-21 09:51:51 Read sector request.
+02-12-21 09:51:51 Read sector completed.
+02-12-21 09:51:51 Setup reagent contract.
+02-12-21 09:51:52 Reagent contract setup with parameter CRYC
+02-12-21 10:21:53 Read sector request.
+02-12-21 10:21:53 Read sector completed.
+02-12-21 10:21:53 Setup reagent contract.
+02-12-21 10:21:53 Reagent contract setup with parameter CRYC
+02-12-21 10:22:38 Read sector request.
+02-12-21 10:22:38 Read sector completed.
+02-12-21 10:22:38 Setup reagent contract.
+02-12-21 10:22:38 Reagent contract setup with parameter CRYC
+02-12-21 10:22:55 Start Dt-server. Version 3.00.00 Sep  3 2021 17:27:25
+02-12-21 10:22:57 Initialisation of device is begin.
+02-12-21 10:22:57 Assign serial number from parameters string A5H607
+02-12-21 10:22:58 Found devices with serial number A5H607
+02-12-21 10:22:58 Connect to devices A5H607
+02-12-21 10:22:58 Device observe as DT96
+02-12-21 10:22:58 Initialisation of device was finished successfully.
+02-12-21 10:22:58 Collection of information about the device is begin.
+02-12-21 10:22:59 Information collection about the device is complete.
+02-12-21 10:22:59 Begin work with device.
+02-12-21 10:22:59 Read sector request.
+02-12-21 10:22:59 Read sector completed.
+02-12-21 10:22:59 Setup reagent contract.
+02-12-21 10:22:59 Reagent contract setup with parameter CRYC
+02-12-21 11:05:15 Start Dt-server. Version 3.00.00 Sep  3 2021 17:27:25
+02-12-21 11:05:17 Initialisation of device is begin.
+02-12-21 11:05:17 Assign serial number from parameters string A5H607
+02-12-21 11:05:17 Found devices with serial number A5H607
+02-12-21 11:05:17 Connect to devices A5H607
+02-12-21 11:05:17 Device observe as DT96
+02-12-21 11:05:17 Initialisation of device was finished successfully.
+02-12-21 11:05:17 Collection of information about the device is begin.
+02-12-21 11:05:18 Information collection about the device is complete.
+02-12-21 11:05:18 Begin work with device.

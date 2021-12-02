@@ -257,6 +257,8 @@ public slots:
 
     bool Validate_OpenProtocol(rt_Protocol*, QString&);       // Validate Open Protocol
 
+    void Change_WinTitle();
+
     //... network ...................
     void view_listXmlProtocols();       // Open list XML Protocols
     void replyFinished(QNetworkReply*);     //

@@ -137,6 +137,9 @@ class StackedWidget: public QStackedWidget
 {
     Q_OBJECT
 
+public:
+    QWidget *main_Window;
+
 signals:
     void sJump_SetupToRun(QString);
     void sJump_RunToAnalysis(QString);
@@ -148,6 +151,7 @@ signals:
     void sSend_OrderProtocolToWeb(QString);
 
     void sSendRunButton();
+
 
 protected:
 

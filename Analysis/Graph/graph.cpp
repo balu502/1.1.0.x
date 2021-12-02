@@ -412,9 +412,10 @@ void GraphPlot::to_ImageClipBoard()
     int count;
     QPointF P;
     QVector<QPointF> vec;
-    QFont font_plot = qApp->font();
+    /*QFont font_plot = qApp->font();
     font_plot.setBold(false);
-    font_plot.setPointSize(font_plot.pointSize() - 3);
+    font_plot.setPointSize(font_plot.pointSize() - 3);*/
+    QFont font_plot("Arial", 6);
 
     QClipboard *clipboard = QApplication::clipboard();
 
