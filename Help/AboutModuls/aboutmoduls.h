@@ -35,6 +35,7 @@
 #include <QMessageBox>
 #include <QSettings>
 #include <QTranslator>
+#include <QMovie>
 
 #include <QDebug>
 
@@ -57,6 +58,9 @@ public:
 
     void readCommonSettings();
     QTranslator translator;
+
+    QMovie  *obj_gif;
+    QLabel  *label_gif;
 
 private:
     QPushButton *close_button;

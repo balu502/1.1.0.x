@@ -5,6 +5,16 @@
 //-----------------------------------------------------------------------------
 AboutModuls::AboutModuls(QWidget *parent): QDialog(parent)
 {
+    label_gif = new QLabel(parent);
+    label_gif->setFixedSize(48,48);
+    label_gif->move(parent->width()/2, parent->height()/2);
+    label_gif->raise();
+    obj_gif = new QMovie(":/images/wait_1.gif");
+    label_gif->setMovie(obj_gif);
+    label_gif->setVisible(true);
+    obj_gif->start();
+    QApplication::processEvents();
+
     readCommonSettings();
     setFont(qApp->font());
 
@@ -26,6 +36,10 @@ AboutModuls::AboutModuls(QWidget *parent): QDialog(parent)
     close_button->setFocusPolicy(Qt::NoFocus);
 
     Fill_Info();
+
+    label_gif->setVisible(false);
+    obj_gif->stop();
+
 }
 
 //-----------------------------------------------------------------------------
@@ -33,6 +47,8 @@ AboutModuls::AboutModuls(QWidget *parent): QDialog(parent)
 //-----------------------------------------------------------------------------
 AboutModuls::~AboutModuls()
 {
+    delete label_gif;
+    delete obj_gif;
     info->clear();
     delete info;
     delete close_button;
@@ -169,6 +185,8 @@ void AboutModuls::Files_DTR(QString dir_name)
         {
         foreach (QString fileName, modules_Dir.entryList(QDir::Files))
         {
+            QApplication::processEvents();
+
             fi.setFile(modules_Dir, fileName);
             if(fi.suffix() == "dtr")
             {
@@ -244,6 +262,8 @@ void AboutModuls::Files_Version(QString dir_name)
         fi.setFile(modules_Dir, fileName);
         if(fi.suffix() == "exe" || fi.suffix() == "dll")
         {
+            QApplication::processEvents();
+
             fn = fi.fileName();
             fileName = fi.absoluteFilePath();
 

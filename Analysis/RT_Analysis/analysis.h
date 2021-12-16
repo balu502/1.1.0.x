@@ -167,6 +167,7 @@ public:
     bool flag_ActivePoint;
     bool flag_SaveLocationWin;
     bool flag_SaveChangesProtocol;
+    bool flag_Openning;
 
     QStringList FirstPCR_TESTs;
 
@@ -492,6 +493,8 @@ public:
 private slots:
     void change_MarkerAttention(int);
     void restore_Cursor();
+
+    void resize_DockWidget();
 
     // ... Point_Actions ...
     void slot_ReceivedActionPoint(Action_Event*);

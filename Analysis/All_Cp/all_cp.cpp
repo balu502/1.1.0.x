@@ -156,7 +156,7 @@ void All_Cp::Analyser(rt_Protocol *p, int param)
     //... ... Validate PCR Research    
     Validate_PCR();
     Validity_MC();
-    //qDebug() << "Validate_PCR() - ok";    
+    //qDebug() << "Validate_PCR() - ok";
 
     //... Translate Tests and Research
     if(!ru_Lang)
@@ -187,7 +187,7 @@ void All_Cp::Analyser(rt_Protocol *p, int param)
 
     //... 4. Cross Tables    
     Cross_Box->Fill_CrossInfo(p);
-    //qDebug() << "Cross Tables  - ok";    
+    //qDebug() << "Cross Tables  - ok";
 }
 
 //-----------------------------------------------------------------------------
@@ -336,7 +336,8 @@ void Cp_ItemDelegate::paint(QPainter *painter,
         font.setBold(true);
         painter->setFont(font);
         text = text.mid(14).trimmed();
-        if(index.column() == 0) painter->drawText(rect, Qt::AlignCenter, text);        
+        text = QString("  %1").arg(text);
+        if(index.column() == 0) painter->drawText(rect, Qt::AlignLeft | Qt::AlignVCenter, text);
 
         return;
     }
@@ -558,7 +559,8 @@ void MC_ItemDelegate::paint(QPainter *painter,
         font.setItalic(false);
         painter->setFont(font);
         text = text.mid(14).trimmed();
-        if(index.column() == 0) painter->drawText(rect, Qt::AlignCenter, text);
+        text = QString("  %1").arg(text);
+        if(index.column() == 0) painter->drawText(rect, Qt::AlignLeft | Qt::AlignVCenter, text);
 
         return;
     }

@@ -2,5 +2,6 @@
     <qresource prefix="/">
         <file>translations/aboutmoduls_ru.qm</file>
         <file>translations/aboutmoduls_en.qm</file>
+        <file>images/wait_1.gif</file>
     </qresource>
 </RCC>

@@ -176,7 +176,7 @@ void Email::send_message()
     int i;
 
     QString host = "mail.dna-technology.ru"; //"smtp.mail.ru";
-    int port = 465;
+    int port = 465; //587; //25; //465;
     bool ssl = true;
     bool auth = true;
     QString user = "realtimepcr_support@dna-technology.ru";

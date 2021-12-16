@@ -297,6 +297,7 @@ bool Analysis::create_User(QAxObject *user)
     flag_EditTest = false;
     flag_SaveLocationWin = false;
     flag_SaveChangesProtocol = false;
+    flag_Openning = false;
 
     if(ax_user)
     {
@@ -2535,6 +2536,13 @@ void Analysis::createToolBars()
 //-----------------------------------------------------------------------------
 //--- Read Settings
 //-----------------------------------------------------------------------------
+void Analysis::resize_DockWidget()
+{
+    sel->setMinimumHeight(10);
+}
+//-----------------------------------------------------------------------------
+//--- Read Settings
+//-----------------------------------------------------------------------------
 void Analysis::readSettings()
 {
     int i;
@@ -2548,6 +2556,10 @@ void Analysis::readSettings()
     QColor color;
     unsigned int val;
     bool ok;
+    QList<QDockWidget*> list_dock;
+    QList<int> list_heigth;
+
+    list_dock << (QDockWidget*)ChartBox  << (QDockWidget*)sel;
 
     //... MainWindow ..........................................................
     ApplSettings->beginGroup("MainWindow");
@@ -2563,7 +2575,6 @@ void Analysis::readSettings()
         for(i=0; i<list_str.count(); i++) list_spl.append(list_str.at(i).toInt());
         first_pos = list_str.at(0).toInt();
     }
-
     main_spl->setSizes(list_spl);
     main_spl->splitterMoved(first_pos,1);
     ApplSettings->endGroup();
@@ -2605,17 +2616,24 @@ void Analysis::readSettings()
                 p_mw->addDockWidget(sel->dock_area, sel);
 
 
-
                 size = ApplSettings->value("size",QSize(300, 200)).toSize();
                 //setDockSize(sel->mTitleBar, size.width(), size.height());
-                sel->resize(size.width(), size.height());
+                sel->resize(size.width(), size.height());               
                 //sel->setMinimumHeight(size.height());
                 //sel->setMaximumHeight(size.height());
+
+                size = ApplSettings->value("Chart_size",QSize(300, 200)).toSize();
+                ChartBox->resize(size);
+
+                //QTimer::singleShot(1000, this, &Analysis::resize_DockWidget);
+                list_heigth << ChartBox->height() << sel->height();
+                ChartWindow->resizeDocks(list_dock, list_heigth, Qt::Vertical);
             }
          }
 
     }
     ApplSettings->endGroup();
+
 
     //.........................................................................
 
@@ -2672,8 +2690,7 @@ void Analysis::writeSettings()
 
     QList<int> list_spl = main_spl->sizes();
     for(int i=0; i<list_spl.count(); i++) text += QString::number(list_spl.at(i)) + " ";
-    ApplSettings->setValue("splitter", text);
-
+    ApplSettings->setValue("splitter", text);    
     ApplSettings->endGroup();
 
 
@@ -2694,6 +2711,8 @@ void Analysis::writeSettings()
             ApplSettings->setValue("dock_area",sel->dock_area);
             ApplSettings->setValue("size", sel->size());
         }
+
+        ApplSettings->setValue("Chart_size", ChartBox->size());
     }
     ApplSettings->endGroup();
 
@@ -2802,6 +2821,8 @@ void Analysis::open_Protocol(QString fileName, bool send, bool create_Hash)
         reopenXmlAct->setEnabled(false);
         editTestAct->setEnabled(false);
         edit_PreferenceProtocol->setEnabled(false);
+
+
         //EMail_send->setEnabled(false);
         //saveXmlAct->setEnabled(false);
 
@@ -3071,6 +3092,7 @@ void Analysis::open_Protocol(QString fileName, bool send, bool create_Hash)
         sel->load_SelectGrid(prot);        
         Info_Pro->refresh_Info(prot);
 
+        flag_Openning = true;
 
         //... change protocol status ...
         switch (prot->state)
@@ -3082,7 +3104,7 @@ void Analysis::open_Protocol(QString fileName, bool send, bool create_Hash)
         case mReAnalysis:   prot->state = mReAnalysis;
                             break;
         }
-        //...
+        //...        
 
         //obj_gif->stop();
 
@@ -3360,8 +3382,7 @@ void Analysis::open_Protocol(QString fileName, bool send, bool create_Hash)
         {
             ext_dll_handle = ::LoadLibraryW(L"DTReport2.dll");
             if(ext_dll_handle)
-            {
-
+            {                
                 initialize = (Init)(::GetProcAddress(ext_dll_handle,"Initialize"));
                 set_font = (SetFont)(::GetProcAddress(ext_dll_handle,"SetFont"));
                 set_folder = (SetUserFolder)(::GetProcAddress(ext_dll_handle,"SetUserDefaultFolder"));
@@ -3450,7 +3471,7 @@ void Analysis::open_Protocol(QString fileName, bool send, bool create_Hash)
                     }*/
 
                     Display_ProgressBar(0, "");
-                }
+                }                
             }
         }
 
@@ -3580,7 +3601,13 @@ void Analysis::open_Protocol(QString fileName, bool send, bool create_Hash)
         }        
     }
 
-    qDebug() << "The END Analysis...";   
+    qDebug() << "The END Analysis...";
+
+    //...
+    flag_Openning = false;
+    Change_IndexTabGrid(GridTab->currentIndex());    
+    //...
+
 
     if(sts_ExternalLib) sel->restore_Cursor();
     ArchiveFile_path = "";
@@ -4459,6 +4486,9 @@ void Analysis::change_MarkerAttention(int state)
 //-----------------------------------------------------------------------------
 void Analysis::Change_IndexTabGrid(int index)
 {
+
+    if(flag_Openning) return;
+
     if(index == 2 || index == 1) reportAct->setEnabled(true);
     else reportAct->setEnabled(false);
 
@@ -5152,7 +5182,6 @@ void Analysis::showEvent(QShowEvent *e)
     int w = GridWindow->width();
     int h = GridWindow->height();
     label_gif->move(w/2 - label_gif->width()/2, h/2 - label_gif->height()/2);
-
 }
 //-------------------------------------------------------------------------------
 //--- ShowHidden_Select()

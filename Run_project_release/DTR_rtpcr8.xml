@@ -1,120 +1,1744 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><Package xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:DTReportTools"><Source ID="krOim_300321_150520" Path="" Created="30-3-21_15:10:02" Format="RT" /><Results><Inquiry ID="RDUabgHnme" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="RDUabgHnme" Code="Образец_1" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#RDUabgHnme.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="23.419" Name="HCV" ID="#RDUabgHnme.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="A1" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="1" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="0.000" Name="ВК" ProgName="IC" ID="#RDUabgHnme.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="A1" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="1" /></Service></Sample></Inquiry><Inquiry ID="17qk3qyxft" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="17qk3qyxft" Code="Образец_2" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#17qk3qyxft.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="30.250" Name="HCV" ID="#17qk3qyxft.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="B1" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="2" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="31.345" Name="ВК" ProgName="IC" ID="#17qk3qyxft.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="B1" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="2" /></Service></Sample></Inquiry><Inquiry ID="eOKWMprtMU" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="eOKWMprtMU" Code="Образец_3" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#eOKWMprtMU.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="32.403" Name="HCV" ID="#eOKWMprtMU.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="C1" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="3" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="33.192" Name="ВК" ProgName="IC" ID="#eOKWMprtMU.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="C1" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="3" /></Service></Sample></Inquiry><Inquiry ID="HfIIfKFq3a" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="HfIIfKFq3a" Code="Образец_4" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#HfIIfKFq3a.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="36.195" Name="HCV" ID="#HfIIfKFq3a.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="D1" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="4" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="34.784" Name="ВК" ProgName="IC" ID="#HfIIfKFq3a.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="D1" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="4" /></Service></Sample></Inquiry><Inquiry ID="vwG3Uo8Jkf" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="vwG3Uo8Jkf" Code="Образец_5" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#vwG3Uo8Jkf.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="26.048" Name="HCV" ID="#vwG3Uo8Jkf.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="E1" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="5" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="0.000" Name="ВК" ProgName="IC" ID="#vwG3Uo8Jkf.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="E1" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="5" /></Service></Sample></Inquiry><Inquiry ID="YDkpnn1GSk" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="YDkpnn1GSk" Code="Образец_6" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#YDkpnn1GSk.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="26.473" Name="HCV" ID="#YDkpnn1GSk.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="F1" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="6" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="0.000" Name="ВК" ProgName="IC" ID="#YDkpnn1GSk.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="F1" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="6" /></Service></Sample></Inquiry><Inquiry ID="BUi76IvC9L" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="BUi76IvC9L" Code="Образец_7" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#BUi76IvC9L.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="30.221" Name="HCV" ID="#BUi76IvC9L.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="G1" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="7" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="31.393" Name="ВК" ProgName="IC" ID="#BUi76IvC9L.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="G1" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="7" /></Service></Sample></Inquiry><Inquiry ID="oHDtOHo9qQ" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="oHDtOHo9qQ" Code="Образец_8" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#oHDtOHo9qQ.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="27.074" Name="HCV" ID="#oHDtOHo9qQ.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="H1" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="8" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="0.000" Name="ВК" ProgName="IC" ID="#oHDtOHo9qQ.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="H1" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="8" /></Service></Sample></Inquiry><Inquiry ID="RXBehli6XW" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="RXBehli6XW" Code="Образец_9" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#RXBehli6XW.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="33.020" Name="HCV" ID="#RXBehli6XW.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="A2" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="9" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="33.600" Name="ВК" ProgName="IC" ID="#RXBehli6XW.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="A2" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="9" /></Service></Sample></Inquiry><Inquiry ID="4ofQWkb2ib" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="4ofQWkb2ib" Code="Образец_10" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#4ofQWkb2ib.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="36.524" Name="HCV" ID="#4ofQWkb2ib.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="B2" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="10" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="34.087" Name="ВК" ProgName="IC" ID="#4ofQWkb2ib.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="B2" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="10" /></Service></Sample></Inquiry><Inquiry ID="i5dCpFyzPC" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="i5dCpFyzPC" Code="Образец_11" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#i5dCpFyzPC.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="29.436" Name="HCV" ID="#i5dCpFyzPC.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="C2" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="11" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="30.752" Name="ВК" ProgName="IC" ID="#i5dCpFyzPC.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="C2" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="11" /></Service></Sample></Inquiry><Inquiry ID="I0zMlPf9IR" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="I0zMlPf9IR" Code="Образец_12" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#I0zMlPf9IR.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="33.508" Name="HCV" ID="#I0zMlPf9IR.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="D2" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="12" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="33.525" Name="ВК" ProgName="IC" ID="#I0zMlPf9IR.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="D2" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="12" /></Service></Sample></Inquiry><Inquiry ID="sQKXE3MJgg" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="sQKXE3MJgg" Code="Образец_13" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#sQKXE3MJgg.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="37.509" Name="HCV" ID="#sQKXE3MJgg.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="E2" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="13" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="34.843" Name="ВК" ProgName="IC" ID="#sQKXE3MJgg.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="E2" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="13" /></Service></Sample></Inquiry><Inquiry ID="VhpJXYGGNm" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="VhpJXYGGNm" Code="Образец_14" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#VhpJXYGGNm.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="32.188" Name="HCV" ID="#VhpJXYGGNm.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="F2" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="14" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="32.439" Name="ВК" ProgName="IC" ID="#VhpJXYGGNm.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="F2" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="14" /></Service></Sample></Inquiry><Inquiry ID="8ynaqW9C4r" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="8ynaqW9C4r" Code="Образец_15" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#8ynaqW9C4r.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="41.294" Name="HCV" ID="#8ynaqW9C4r.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="G2" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="15" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="33.850" Name="ВК" ProgName="IC" ID="#8ynaqW9C4r.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="G2" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="15" /></Service></Sample></Inquiry><Inquiry ID="lFHMe139lS" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="lFHMe139lS" Code="Образец_16" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#lFHMe139lS.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="30.272" Name="HCV" ID="#lFHMe139lS.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="H2" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="16" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="31.287" Name="ВК" ProgName="IC" ID="#lFHMe139lS.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="H2" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="16" /></Service></Sample></Inquiry><Inquiry ID="L9dXbBkJfh" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="L9dXbBkJfh" Code="Образец_17" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#L9dXbBkJfh.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="38.196" Name="HCV" ID="#L9dXbBkJfh.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="A3" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="17" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="34.510" Name="ВК" ProgName="IC" ID="#L9dXbBkJfh.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="A3" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="17" /></Service></Sample></Inquiry><Inquiry ID="v4yh3pRT2x" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="v4yh3pRT2x" Code="Образец_18" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#v4yh3pRT2x.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="29.372" Name="HCV" ID="#v4yh3pRT2x.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="B3" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="18" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="30.709" Name="ВК" ProgName="IC" ID="#v4yh3pRT2x.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="B3" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="18" /></Service></Sample></Inquiry><Inquiry ID="VUKszz7dwC" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="VUKszz7dwC" Code="Образец_19" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#VUKszz7dwC.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="27.076" Name="HCV" ID="#VUKszz7dwC.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="C3" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="19" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="28.474" Name="ВК" ProgName="IC" ID="#VUKszz7dwC.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="C3" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="19" /></Service></Sample></Inquiry><Inquiry ID="8lIdoU1adH" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="8lIdoU1adH" Code="Образец_20" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#8lIdoU1adH.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="26.592" Name="HCV" ID="#8lIdoU1adH.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="D3" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="20" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="45.171" Name="ВК" ProgName="IC" ID="#8lIdoU1adH.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="D3" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="20" /></Service></Sample></Inquiry><Inquiry ID="l2mP7TuWoM" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="l2mP7TuWoM" Code="Образец_21" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#l2mP7TuWoM.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="35.630" Name="HCV" ID="#l2mP7TuWoM.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="E3" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="21" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="33.313" Name="ВК" ProgName="IC" ID="#l2mP7TuWoM.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="E3" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="21" /></Service></Sample></Inquiry><Inquiry ID="OJkBQyITVx" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="OJkBQyITVx" Code="Образец_22" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#OJkBQyITVx.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="34.652" Name="HCV" ID="#OJkBQyITVx.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="F3" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="22" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="33.248" Name="ВК" ProgName="IC" ID="#OJkBQyITVx.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="F3" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="22" /></Service></Sample></Inquiry><Inquiry ID="yD6LsczdOD" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="yD6LsczdOD" Code="Образец_23" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#yD6LsczdOD.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="29.042" Name="HCV" ID="#yD6LsczdOD.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="G3" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="23" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="30.350" Name="ВК" ProgName="IC" ID="#yD6LsczdOD.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="G3" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="23" /></Service></Sample></Inquiry><Inquiry ID="YeSWpmgnmS" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="YeSWpmgnmS" Code="Образец_24" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#YeSWpmgnmS.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="32.438" Name="HCV" ID="#YeSWpmgnmS.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="H3" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="24" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="32.736" Name="ВК" ProgName="IC" ID="#YeSWpmgnmS.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="H3" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="24" /></Service></Sample></Inquiry><Inquiry ID="8YogHwNxfh" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="8YogHwNxfh" Code="Образец_25" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#8YogHwNxfh.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="40.257" Name="HCV" ID="#8YogHwNxfh.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="A4" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="25" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="33.826" Name="ВК" ProgName="IC" ID="#8YogHwNxfh.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="A4" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="25" /></Service></Sample></Inquiry><Inquiry ID="lpmSauGuNm" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="lpmSauGuNm" Code="Образец_26" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#lpmSauGuNm.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="32.242" Name="HCV" ID="#lpmSauGuNm.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="B4" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="26" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="32.575" Name="ВК" ProgName="IC" ID="#lpmSauGuNm.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="B4" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="26" /></Service></Sample></Inquiry><Inquiry ID="P6GEtP9q4r" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="P6GEtP9q4r" Code="Образец_27" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#P6GEtP9q4r.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="26.513" Name="HCV" ID="#P6GEtP9q4r.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="C4" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="27" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="0.000" Name="ВК" ProgName="IC" ID="#P6GEtP9q4r.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="C4" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="27" /></Service></Sample></Inquiry><Inquiry ID="2NEzCO3nlx" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="2NEzCO3nlx" Code="Образец_28" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#2NEzCO3nlx.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="33.502" Name="HCV" ID="#2NEzCO3nlx.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="D4" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="28" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="33.367" Name="ВК" ProgName="IC" ID="#2NEzCO3nlx.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="D4" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="28" /></Service></Sample></Inquiry><Inquiry ID="feiHVtwGSY" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="feiHVtwGSY" Code="Образец_29" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#feiHVtwGSY.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="39.981" Name="HCV" ID="#feiHVtwGSY.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="E4" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="29" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="34.277" Name="ВК" ProgName="IC" ID="#feiHVtwGSY.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="E4" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="29" /></Service></Sample></Inquiry><Inquiry ID="IRg3JNqD9d" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="IRg3JNqD9d" Code="Образец_30" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#IRg3JNqD9d.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="38.127" Name="HCV" ID="#IRg3JNqD9d.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="F4" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="30" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="34.981" Name="ВК" ProgName="IC" ID="#IRg3JNqD9d.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="F4" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="30" /></Service></Sample></Inquiry><Inquiry ID="viApcMD9qi" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="viApcMD9qi" Code="Образец_31" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#viApcMD9qi.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="31.558" Name="HCV" ID="#viApcMD9qi.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="G4" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="31" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="32.429" Name="ВК" ProgName="IC" ID="#viApcMD9qi.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="G4" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="31" /></Service></Sample></Inquiry><Inquiry ID="VcWzZWuJDx" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="VcWzZWuJDx" Code="Образец_32" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#VcWzZWuJDx.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="33.710" Name="HCV" ID="#VcWzZWuJDx.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="H4" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="32" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="33.121" Name="ВК" ProgName="IC" ID="#VcWzZWuJDx.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="H4" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="32" /></Service></Sample></Inquiry><Inquiry ID="CFdMEq03iP" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="CFdMEq03iP" Code="Образец_33" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#CFdMEq03iP.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="32.732" Name="HCV" ID="#CFdMEq03iP.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="A5" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="33" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="33.250" Name="ВК" ProgName="IC" ID="#CFdMEq03iP.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="A5" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="33" /></Service></Sample></Inquiry><Inquiry ID="pWbe3KtzPU" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="pWbe3KtzPU" Code="Образец_34" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#pWbe3KtzPU.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="29.740" Name="HCV" ID="#pWbe3KtzPU.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="B5" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="34" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="31.076" Name="ВК" ProgName="IC" ID="#pWbe3KtzPU.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="B5" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="34" /></Service></Sample></Inquiry><Inquiry ID="PRxJzya9Jj" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="PRxJzya9Jj" Code="Образец_35" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#PRxJzya9Jj.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="32.149" Name="HCV" ID="#PRxJzya9Jj.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="C5" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="35" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="32.533" Name="ВК" ProgName="IC" ID="#PRxJzya9Jj.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="C5" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="35" /></Service></Sample></Inquiry><Inquiry ID="2hRaITU60o" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="2hRaITU60o" Code="Образец_36" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#2hRaITU60o.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="24.572" Name="HCV" ID="#2hRaITU60o.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="D5" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="36" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="0.000" Name="ВК" ProgName="IC" ID="#2hRaITU60o.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="D5" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="36" /></Service></Sample></Inquiry><Inquiry ID="fyPM7yN3hP" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="fyPM7yN3hP" Code="Образец_37" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#fyPM7yN3hP.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="30.346" Name="HCV" ID="#fyPM7yN3hP.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="E5" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="37" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="31.448" Name="ВК" ProgName="IC" ID="#fyPM7yN3hP.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="E5" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="37" /></Service></Sample></Inquiry><Inquiry ID="IFt8QxHzOV" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="IFt8QxHzOV" Code="Образец_38" SampleKind=""><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#IFt8QxHzOV.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="31.341" Name="HCV" ID="#IFt8QxHzOV.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="F5" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="38" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="32.019" Name="ВК" ProgName="IC" ID="#IFt8QxHzOV.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="F5" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="38" /></Service></Sample></Inquiry><Inquiry ID="sgFIM7x9lk" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="sgFIM7x9lk" Code="Образец_39" SampleKind="Patient"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#sgFIM7x9lk.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="37.509" Name="HCV" ID="#sgFIM7x9lk.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="G5" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="39" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="33.731" Name="ВК" ProgName="IC" ID="#sgFIM7x9lk.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="G5" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="39" /></Service></Sample></Inquiry><Inquiry ID="VxD4B6L6Tp" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="VxD4B6L6Tp" Code="Стандарт_1" SampleKind="Standard"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#VxD4B6L6Tp.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><StandardValues><Fam ChannelID="0">1.000e+6</Fam></StandardValues><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="24.496" Name="HCV" ID="#VxD4B6L6Tp.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="H5" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="40" /><StandardValues><Hex ChannelID="1">0</Hex></StandardValues><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="22.157" Name="ВК" ProgName="IC" ID="#VxD4B6L6Tp.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="H5" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="40" /></Service><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#VxD4B6L6Tp.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><StandardValues><Fam ChannelID="0">1.000e+6</Fam></StandardValues><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="25.243" Name="HCV" ID="#VxD4B6L6Tp.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="A6" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="41" /><StandardValues><Hex ChannelID="1">0</Hex></StandardValues><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="23.023" Name="ВК" ProgName="IC" ID="#VxD4B6L6Tp.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="A6" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="41" /></Service><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#VxD4B6L6Tp.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><StandardValues><Fam ChannelID="0">1.000e+6</Fam></StandardValues><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="25.937" Name="HCV" ID="#VxD4B6L6Tp.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="B6" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="42" /><StandardValues><Hex ChannelID="1">0</Hex></StandardValues><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="23.562" Name="ВК" ProgName="IC" ID="#VxD4B6L6Tp.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="B6" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="42" /></Service></Sample></Inquiry><Inquiry ID="j8X0QkvD39" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="j8X0QkvD39" Code="Стандарт_2" SampleKind="Standard"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#j8X0QkvD39.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><StandardValues><Fam ChannelID="0">1000.00</Fam></StandardValues><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="34.998" Name="HCV" ID="#j8X0QkvD39.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="C6" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="43" /><StandardValues><Hex ChannelID="1">0</Hex></StandardValues><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="32.570" Name="ВК" ProgName="IC" ID="#j8X0QkvD39.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="C6" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="43" /></Service><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#j8X0QkvD39.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><StandardValues><Fam ChannelID="0">1000.00</Fam></StandardValues><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="33.322" Name="HCV" ID="#j8X0QkvD39.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="D6" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="44" /><StandardValues><Hex ChannelID="1">0</Hex></StandardValues><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="31.198" Name="ВК" ProgName="IC" ID="#j8X0QkvD39.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="D6" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="44" /></Service><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#j8X0QkvD39.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><StandardValues><Fam ChannelID="0">1000.00</Fam></StandardValues><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="32.981" Name="HCV" ID="#j8X0QkvD39.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="E6" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="45" /><StandardValues><Hex ChannelID="1">0</Hex></StandardValues><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="30.916" Name="ВК" ProgName="IC" ID="#j8X0QkvD39.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="E6" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="45" /></Service></Sample></Inquiry><Inquiry ID="wpNwCtWJ80" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="wpNwCtWJ80" Code="K+_HCV-100-1000" SampleKind="ControlPositive"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#wpNwCtWJ80.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="29.034" Name="HCV" ID="#wpNwCtWJ80.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="H6" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="46" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="0.000" Name="ВК" ProgName="IC" ID="#wpNwCtWJ80.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="H6" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="46" /></Service></Sample></Inquiry><Inquiry ID="Z6LEVsPGp5" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="Z6LEVsPGp5" Code="K-_HCV-100-1000(1)" SampleKind="ControlNegative"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#Z6LEVsPGp5.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="0.000" Name="HCV" ID="#Z6LEVsPGp5.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="G6" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="47" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="33.476" Name="ВК" ProgName="IC" ID="#Z6LEVsPGp5.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="G6" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="47" /></Service></Sample></Inquiry><Inquiry ID="CNp0JNIDWA" Date="30-3-21_15:10:02" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="CNp0JNIDWA" Code="K-_HCV-100-1000(2)" SampleKind="ControlNegative"><SampleSettings><Coeff>1000</Coeff></SampleSettings><Service ID="#CNp0JNIDWA.3wBfnEMDH6Fa" ServiceID="3wBfnEMDH6Fa" Name="HCV-100-1000" Enabled="1"><DTReport FormID="HCV" /><Result TestID="#Tube1.0.HCV" ValueName="Cp" Value="0.000" Name="HCV" ID="#CNp0JNIDWA.3wBfnEMDH6Fa.Tube1.0.HCV.Cp.0" Position="F6" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="48" /><Result TestID="#Tube1.1.ВК" ValueName="Cp" Value="32.932" Name="ВК" ProgName="IC" ID="#CNp0JNIDWA.3wBfnEMDH6Fa.Tube1.1.ВК.Cp.1" Position="F6" TubeIndex="0" TestColor="0" ChannelID="1" ProtocolTubeIndex="48" /></Service></Sample></Inquiry></Results><Services><Service ID="3wBfnEMDH6Fa" FormID="HCV"><Settings><TAnalisys>
-<DisplayName>HCV-100-1000</DisplayName>
+﻿<?xml version="1.0" encoding="UTF-8"?><Package xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:DTReportTools"><Source ID="XfEn4_240421_202739" Path="" Created="8 Июнь 2018, 14:22:06" Format="RT" /><Results><Inquiry ID="XBxJZIihmU" Date="8 Июнь 2018, 14:22:06" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="XBxJZIihmU" Code="Образец_1" SampleKind="Patient"><Service ID="#XBxJZIihmU.nDMXdVsbwnIu" ServiceID="nDMXdVsbwnIu" Name="Фемофлор 16" Enabled="1"><DTReport FormID="Femoflor" /><Result TestID="#Tube1.0.ОБМ" ValueName="Cp" Value="27.268" Name="ОБМ" ProgName="TBM" ID="#XBxJZIihmU.nDMXdVsbwnIu.Tube1.0.ОБМ.Cp.0" Position="A1" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="1" /><Result TestID="#Tube2.0.Lactobacillus_spp." ValueName="Cp" Value="28.595" Name="Lactobacillus_spp." ProgName="Lact" ID="#XBxJZIihmU.nDMXdVsbwnIu.Tube2.0.Lactobacillus_spp..Cp.0" Position="B1" TubeIndex="1" TestColor="ff80" ChannelID="0" ProtocolTubeIndex="2" /><Result TestID="#Tube2.1.ВК" ValueName="Cp" Value="30.829" Name="ВК" ProgName="IC" ID="#XBxJZIihmU.nDMXdVsbwnIu.Tube2.1.ВК.Cp.1" Position="B1" TubeIndex="1" TestColor="ff80" ChannelID="1" ProtocolTubeIndex="2" /><Result TestID="#Tube3.0.сем.Enterobacteriaceae" ValueName="Cp" Value="40.188" Name="сем.Enterobacteriaceae" ID="#XBxJZIihmU.nDMXdVsbwnIu.Tube3.0.сем.Enterobacteriaceae.Cp.0" Position="C1" TubeIndex="2" TestColor="80ff" ChannelID="0" ProtocolTubeIndex="3" /><Result TestID="#Tube4.0.Streptococcus_spp." ValueName="Cp" Value="28.341" Name="Streptococcus_spp." ID="#XBxJZIihmU.nDMXdVsbwnIu.Tube4.0.Streptococcus_spp..Cp.0" Position="D1" TubeIndex="3" TestColor="80ff" ChannelID="0" ProtocolTubeIndex="4" /><Result TestID="#Tube5.0.Staphylococcus_spp." ValueName="Cp" Value="38.407" Name="Staphylococcus_spp." ID="#XBxJZIihmU.nDMXdVsbwnIu.Tube5.0.Staphylococcus_spp..Cp.0" Position="E1" TubeIndex="4" TestColor="80ff" ChannelID="0" ProtocolTubeIndex="5" /><Result TestID="#Tube5.2.Маркер" ValueName="Cp" Value="0.000" Name="Маркер" ProgName="Marker" ID="#XBxJZIihmU.nDMXdVsbwnIu.Tube5.2.Маркер.Cp.2" Position="E1" TubeIndex="4" TestColor="80ff" ChannelID="2" ProtocolTubeIndex="5" /><Result TestID="#Tube6.0.Gardnerella_vaginalis+Prevotella_bivia+Porphyromonas_spp." ValueName="Cp" Value="0.000" Name="Gardnerella_vaginalis+Prevotella_bivia+Porphyromonas_spp." ID="#XBxJZIihmU.nDMXdVsbwnIu.Tube6.0.Gardnerella_vaginalis+Prevotella_bivia+Porphyromonas_spp..Cp.0" Position="F1" TubeIndex="5" TestColor="ff" ChannelID="0" ProtocolTubeIndex="6" /><Result TestID="#Tube7.0.Eubacterium_spp." ValueName="Cp" Value="0.000" Name="Eubacterium_spp." ID="#XBxJZIihmU.nDMXdVsbwnIu.Tube7.0.Eubacterium_spp..Cp.0" Position="G1" TubeIndex="6" TestColor="ff" ChannelID="0" ProtocolTubeIndex="7" /><Result TestID="#Tube8.0.Sneathia_spp.+Leptotrichia_spp.+Fusobacterium_spp." ValueName="Cp" Value="41.505" Name="Sneathia_spp.+Leptotrichia_spp.+Fusobacterium_spp." ID="#XBxJZIihmU.nDMXdVsbwnIu.Tube8.0.Sneathia_spp.+Leptotrichia_spp.+Fusobacterium_spp..Cp.0" Position="H1" TubeIndex="7" TestColor="ff" ChannelID="0" ProtocolTubeIndex="8" /><Result TestID="#Tube9.0.Megasphaera_spp.+Veillonella_spp.+Dialister_spp." ValueName="Cp" Value="0.000" Name="Megasphaera_spp.+Veillonella_spp.+Dialister_spp." ID="#XBxJZIihmU.nDMXdVsbwnIu.Tube9.0.Megasphaera_spp.+Veillonella_spp.+Dialister_spp..Cp.0" Position="A2" TubeIndex="8" TestColor="ff" ChannelID="0" ProtocolTubeIndex="9" /><Result TestID="#Tube10.0.Lachnobacterium_spp.+Clostridium_spp." ValueName="Cp" Value="0.000" Name="Lachnobacterium_spp.+Clostridium_spp." ID="#XBxJZIihmU.nDMXdVsbwnIu.Tube10.0.Lachnobacterium_spp.+Clostridium_spp..Cp.0" Position="B2" TubeIndex="9" TestColor="ff" ChannelID="0" ProtocolTubeIndex="10" /><Result TestID="#Tube11.0.Mobiluncus_spp.+Corynebacterium_spp." ValueName="Cp" Value="39.340" Name="Mobiluncus_spp.+Corynebacterium_spp." ID="#XBxJZIihmU.nDMXdVsbwnIu.Tube11.0.Mobiluncus_spp.+Corynebacterium_spp..Cp.0" Position="C2" TubeIndex="10" TestColor="ff" ChannelID="0" ProtocolTubeIndex="11" /><Result TestID="#Tube12.0.Peptostreptococcus_spp." ValueName="Cp" Value="0.000" Name="Peptostreptococcus_spp." ID="#XBxJZIihmU.nDMXdVsbwnIu.Tube12.0.Peptostreptococcus_spp..Cp.0" Position="D2" TubeIndex="11" TestColor="ff" ChannelID="0" ProtocolTubeIndex="12" /><Result TestID="#Tube13.0.Atopobium_vaginae" ValueName="Cp" Value="0.000" Name="Atopobium_vaginae" ID="#XBxJZIihmU.nDMXdVsbwnIu.Tube13.0.Atopobium_vaginae.Cp.0" Position="E2" TubeIndex="12" TestColor="ff" ChannelID="0" ProtocolTubeIndex="13" /><Result TestID="#Tube14.0.Mycoplasma_hominis" ValueName="Cp" Value="0.000" Name="Mycoplasma_hominis" ID="#XBxJZIihmU.nDMXdVsbwnIu.Tube14.0.Mycoplasma_hominis.Cp.0" Position="F2" TubeIndex="13" TestColor="ff00ff" ChannelID="0" ProtocolTubeIndex="14" /><Result TestID="#Tube14.1.Mycoplasma_genitalium" ValueName="Cp" Value="0.000" Name="Mycoplasma_genitalium" ID="#XBxJZIihmU.nDMXdVsbwnIu.Tube14.1.Mycoplasma_genitalium.Cp.1" Position="F2" TubeIndex="13" TestColor="ff00ff" ChannelID="1" ProtocolTubeIndex="14" /><Result TestID="#Tube15.0.Ureaplasma_(urealyticum_+_parvum)" ValueName="Cp" Value="0.000" Name="Ureaplasma_(urealyticum_+_parvum)" ID="#XBxJZIihmU.nDMXdVsbwnIu.Tube15.0.Ureaplasma_(urealyticum_+_parvum).Cp.0" Position="G2" TubeIndex="14" TestColor="ff00ff" ChannelID="0" ProtocolTubeIndex="15" /><Result TestID="#Tube16.0.Candida_spp." ValueName="Cp" Value="40.275" Name="Candida_spp." ID="#XBxJZIihmU.nDMXdVsbwnIu.Tube16.0.Candida_spp..Cp.0" Position="H2" TubeIndex="15" TestColor="ff0000" ChannelID="0" ProtocolTubeIndex="16" /><Result TestID="#Tube16.1.КВМ" ValueName="Cp" Value="31.857" Name="КВМ" ProgName="MTC" ID="#XBxJZIihmU.nDMXdVsbwnIu.Tube16.1.КВМ.Cp.1" Position="H2" TubeIndex="15" TestColor="ff0000" ChannelID="1" ProtocolTubeIndex="16" /><Result TestID="#Tube16.2.Маркер" ValueName="Cp" Value="0.000" Name="Маркер" ProgName="Marker" ID="#XBxJZIihmU.nDMXdVsbwnIu.Tube16.2.Маркер.Cp.2" Position="H2" TubeIndex="15" TestColor="ff0000" ChannelID="2" ProtocolTubeIndex="16" /></Service></Sample></Inquiry><Inquiry ID="3jAsf7CYLt" Date="8 Июнь 2018, 14:22:06" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="3jAsf7CYLt" Code="Образец_2" SampleKind="Patient"><Service ID="#3jAsf7CYLt.nDMXdVsbwnIu" ServiceID="nDMXdVsbwnIu" Name="Фемофлор 16" Enabled="1"><DTReport FormID="Femoflor" /><Result TestID="#Tube1.0.ОБМ" ValueName="Cp" Value="24.363" Name="ОБМ" ProgName="TBM" ID="#3jAsf7CYLt.nDMXdVsbwnIu.Tube1.0.ОБМ.Cp.0" Position="A3" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="17" /><Result TestID="#Tube2.0.Lactobacillus_spp." ValueName="Cp" Value="34.431" Name="Lactobacillus_spp." ProgName="Lact" ID="#3jAsf7CYLt.nDMXdVsbwnIu.Tube2.0.Lactobacillus_spp..Cp.0" Position="B3" TubeIndex="1" TestColor="ff80" ChannelID="0" ProtocolTubeIndex="18" /><Result TestID="#Tube2.1.ВК" ValueName="Cp" Value="31.087" Name="ВК" ProgName="IC" ID="#3jAsf7CYLt.nDMXdVsbwnIu.Tube2.1.ВК.Cp.1" Position="B3" TubeIndex="1" TestColor="ff80" ChannelID="1" ProtocolTubeIndex="18" /><Result TestID="#Tube3.0.сем.Enterobacteriaceae" ValueName="Cp" Value="40.171" Name="сем.Enterobacteriaceae" ID="#3jAsf7CYLt.nDMXdVsbwnIu.Tube3.0.сем.Enterobacteriaceae.Cp.0" Position="C3" TubeIndex="2" TestColor="80ff" ChannelID="0" ProtocolTubeIndex="19" /><Result TestID="#Tube4.0.Streptococcus_spp." ValueName="Cp" Value="38.186" Name="Streptococcus_spp." ID="#3jAsf7CYLt.nDMXdVsbwnIu.Tube4.0.Streptococcus_spp..Cp.0" Position="D3" TubeIndex="3" TestColor="80ff" ChannelID="0" ProtocolTubeIndex="20" /><Result TestID="#Tube5.0.Staphylococcus_spp." ValueName="Cp" Value="39.425" Name="Staphylococcus_spp." ID="#3jAsf7CYLt.nDMXdVsbwnIu.Tube5.0.Staphylococcus_spp..Cp.0" Position="E3" TubeIndex="4" TestColor="80ff" ChannelID="0" ProtocolTubeIndex="21" /><Result TestID="#Tube5.2.Маркер" ValueName="Cp" Value="0.000" Name="Маркер" ProgName="Marker" ID="#3jAsf7CYLt.nDMXdVsbwnIu.Tube5.2.Маркер.Cp.2" Position="E3" TubeIndex="4" TestColor="80ff" ChannelID="2" ProtocolTubeIndex="21" /><Result TestID="#Tube6.0.Gardnerella_vaginalis+Prevotella_bivia+Porphyromonas_spp." ValueName="Cp" Value="38.776" Name="Gardnerella_vaginalis+Prevotella_bivia+Porphyromonas_spp." ID="#3jAsf7CYLt.nDMXdVsbwnIu.Tube6.0.Gardnerella_vaginalis+Prevotella_bivia+Porphyromonas_spp..Cp.0" Position="F3" TubeIndex="5" TestColor="ff" ChannelID="0" ProtocolTubeIndex="22" /><Result TestID="#Tube7.0.Eubacterium_spp." ValueName="Cp" Value="29.530" Name="Eubacterium_spp." ID="#3jAsf7CYLt.nDMXdVsbwnIu.Tube7.0.Eubacterium_spp..Cp.0" Position="G3" TubeIndex="6" TestColor="ff" ChannelID="0" ProtocolTubeIndex="23" /><Result TestID="#Tube8.0.Sneathia_spp.+Leptotrichia_spp.+Fusobacterium_spp." ValueName="Cp" Value="0.000" Name="Sneathia_spp.+Leptotrichia_spp.+Fusobacterium_spp." ID="#3jAsf7CYLt.nDMXdVsbwnIu.Tube8.0.Sneathia_spp.+Leptotrichia_spp.+Fusobacterium_spp..Cp.0" Position="H3" TubeIndex="7" TestColor="ff" ChannelID="0" ProtocolTubeIndex="24" /><Result TestID="#Tube9.0.Megasphaera_spp.+Veillonella_spp.+Dialister_spp." ValueName="Cp" Value="41.306" Name="Megasphaera_spp.+Veillonella_spp.+Dialister_spp." ID="#3jAsf7CYLt.nDMXdVsbwnIu.Tube9.0.Megasphaera_spp.+Veillonella_spp.+Dialister_spp..Cp.0" Position="A4" TubeIndex="8" TestColor="ff" ChannelID="0" ProtocolTubeIndex="25" /><Result TestID="#Tube10.0.Lachnobacterium_spp.+Clostridium_spp." ValueName="Cp" Value="31.114" Name="Lachnobacterium_spp.+Clostridium_spp." ID="#3jAsf7CYLt.nDMXdVsbwnIu.Tube10.0.Lachnobacterium_spp.+Clostridium_spp..Cp.0" Position="B4" TubeIndex="9" TestColor="ff" ChannelID="0" ProtocolTubeIndex="26" /><Result TestID="#Tube11.0.Mobiluncus_spp.+Corynebacterium_spp." ValueName="Cp" Value="37.013" Name="Mobiluncus_spp.+Corynebacterium_spp." ID="#3jAsf7CYLt.nDMXdVsbwnIu.Tube11.0.Mobiluncus_spp.+Corynebacterium_spp..Cp.0" Position="C4" TubeIndex="10" TestColor="ff" ChannelID="0" ProtocolTubeIndex="27" /><Result TestID="#Tube12.0.Peptostreptococcus_spp." ValueName="Cp" Value="37.368" Name="Peptostreptococcus_spp." ID="#3jAsf7CYLt.nDMXdVsbwnIu.Tube12.0.Peptostreptococcus_spp..Cp.0" Position="D4" TubeIndex="11" TestColor="ff" ChannelID="0" ProtocolTubeIndex="28" /><Result TestID="#Tube13.0.Atopobium_vaginae" ValueName="Cp" Value="0.000" Name="Atopobium_vaginae" ID="#3jAsf7CYLt.nDMXdVsbwnIu.Tube13.0.Atopobium_vaginae.Cp.0" Position="E4" TubeIndex="12" TestColor="ff" ChannelID="0" ProtocolTubeIndex="29" /><Result TestID="#Tube14.0.Mycoplasma_hominis" ValueName="Cp" Value="0.000" Name="Mycoplasma_hominis" ID="#3jAsf7CYLt.nDMXdVsbwnIu.Tube14.0.Mycoplasma_hominis.Cp.0" Position="F4" TubeIndex="13" TestColor="ff00ff" ChannelID="0" ProtocolTubeIndex="30" /><Result TestID="#Tube14.1.Mycoplasma_genitalium" ValueName="Cp" Value="0.000" Name="Mycoplasma_genitalium" ID="#3jAsf7CYLt.nDMXdVsbwnIu.Tube14.1.Mycoplasma_genitalium.Cp.1" Position="F4" TubeIndex="13" TestColor="ff00ff" ChannelID="1" ProtocolTubeIndex="30" /><Result TestID="#Tube15.0.Ureaplasma_(urealyticum_+_parvum)" ValueName="Cp" Value="0.000" Name="Ureaplasma_(urealyticum_+_parvum)" ID="#3jAsf7CYLt.nDMXdVsbwnIu.Tube15.0.Ureaplasma_(urealyticum_+_parvum).Cp.0" Position="G4" TubeIndex="14" TestColor="ff00ff" ChannelID="0" ProtocolTubeIndex="31" /><Result TestID="#Tube16.0.Candida_spp." ValueName="Cp" Value="0.000" Name="Candida_spp." ID="#3jAsf7CYLt.nDMXdVsbwnIu.Tube16.0.Candida_spp..Cp.0" Position="H4" TubeIndex="15" TestColor="ff0000" ChannelID="0" ProtocolTubeIndex="32" /><Result TestID="#Tube16.1.КВМ" ValueName="Cp" Value="30.427" Name="КВМ" ProgName="MTC" ID="#3jAsf7CYLt.nDMXdVsbwnIu.Tube16.1.КВМ.Cp.1" Position="H4" TubeIndex="15" TestColor="ff0000" ChannelID="1" ProtocolTubeIndex="32" /><Result TestID="#Tube16.2.Маркер" ValueName="Cp" Value="0.000" Name="Маркер" ProgName="Marker" ID="#3jAsf7CYLt.nDMXdVsbwnIu.Tube16.2.Маркер.Cp.2" Position="H4" TubeIndex="15" TestColor="ff0000" ChannelID="2" ProtocolTubeIndex="32" /></Service></Sample></Inquiry><Inquiry ID="g0eexc6V3z" Date="8 Июнь 2018, 14:22:06" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="g0eexc6V3z" Code="Образец_3" SampleKind="Patient"><Service ID="#g0eexc6V3z.nDMXdVsbwnIu" ServiceID="nDMXdVsbwnIu" Name="Фемофлор 16" Enabled="1"><DTReport FormID="Femoflor" /><Result TestID="#Tube1.0.ОБМ" ValueName="Cp" Value="32.153" Name="ОБМ" ProgName="TBM" ID="#g0eexc6V3z.nDMXdVsbwnIu.Tube1.0.ОБМ.Cp.0" Position="A5" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="33" /><Result TestID="#Tube2.0.Lactobacillus_spp." ValueName="Cp" Value="32.373" Name="Lactobacillus_spp." ProgName="Lact" ID="#g0eexc6V3z.nDMXdVsbwnIu.Tube2.0.Lactobacillus_spp..Cp.0" Position="B5" TubeIndex="1" TestColor="ff80" ChannelID="0" ProtocolTubeIndex="34" /><Result TestID="#Tube2.1.ВК" ValueName="Cp" Value="30.989" Name="ВК" ProgName="IC" ID="#g0eexc6V3z.nDMXdVsbwnIu.Tube2.1.ВК.Cp.1" Position="B5" TubeIndex="1" TestColor="ff80" ChannelID="1" ProtocolTubeIndex="34" /><Result TestID="#Tube3.0.сем.Enterobacteriaceae" ValueName="Cp" Value="39.674" Name="сем.Enterobacteriaceae" ID="#g0eexc6V3z.nDMXdVsbwnIu.Tube3.0.сем.Enterobacteriaceae.Cp.0" Position="C5" TubeIndex="2" TestColor="80ff" ChannelID="0" ProtocolTubeIndex="35" /><Result TestID="#Tube4.0.Streptococcus_spp." ValueName="Cp" Value="0.000" Name="Streptococcus_spp." ID="#g0eexc6V3z.nDMXdVsbwnIu.Tube4.0.Streptococcus_spp..Cp.0" Position="D5" TubeIndex="3" TestColor="80ff" ChannelID="0" ProtocolTubeIndex="36" /><Result TestID="#Tube5.0.Staphylococcus_spp." ValueName="Cp" Value="0.000" Name="Staphylococcus_spp." ID="#g0eexc6V3z.nDMXdVsbwnIu.Tube5.0.Staphylococcus_spp..Cp.0" Position="E5" TubeIndex="4" TestColor="80ff" ChannelID="0" ProtocolTubeIndex="37" /><Result TestID="#Tube5.2.Маркер" ValueName="Cp" Value="0.000" Name="Маркер" ProgName="Marker" ID="#g0eexc6V3z.nDMXdVsbwnIu.Tube5.2.Маркер.Cp.2" Position="E5" TubeIndex="4" TestColor="80ff" ChannelID="2" ProtocolTubeIndex="37" /><Result TestID="#Tube6.0.Gardnerella_vaginalis+Prevotella_bivia+Porphyromonas_spp." ValueName="Cp" Value="0.000" Name="Gardnerella_vaginalis+Prevotella_bivia+Porphyromonas_spp." ID="#g0eexc6V3z.nDMXdVsbwnIu.Tube6.0.Gardnerella_vaginalis+Prevotella_bivia+Porphyromonas_spp..Cp.0" Position="F5" TubeIndex="5" TestColor="ff" ChannelID="0" ProtocolTubeIndex="38" /><Result TestID="#Tube7.0.Eubacterium_spp." ValueName="Cp" Value="0.000" Name="Eubacterium_spp." ID="#g0eexc6V3z.nDMXdVsbwnIu.Tube7.0.Eubacterium_spp..Cp.0" Position="G5" TubeIndex="6" TestColor="ff" ChannelID="0" ProtocolTubeIndex="39" /><Result TestID="#Tube8.0.Sneathia_spp.+Leptotrichia_spp.+Fusobacterium_spp." ValueName="Cp" Value="0.000" Name="Sneathia_spp.+Leptotrichia_spp.+Fusobacterium_spp." ID="#g0eexc6V3z.nDMXdVsbwnIu.Tube8.0.Sneathia_spp.+Leptotrichia_spp.+Fusobacterium_spp..Cp.0" Position="H5" TubeIndex="7" TestColor="ff" ChannelID="0" ProtocolTubeIndex="40" /><Result TestID="#Tube9.0.Megasphaera_spp.+Veillonella_spp.+Dialister_spp." ValueName="Cp" Value="0.000" Name="Megasphaera_spp.+Veillonella_spp.+Dialister_spp." ID="#g0eexc6V3z.nDMXdVsbwnIu.Tube9.0.Megasphaera_spp.+Veillonella_spp.+Dialister_spp..Cp.0" Position="A6" TubeIndex="8" TestColor="ff" ChannelID="0" ProtocolTubeIndex="41" /><Result TestID="#Tube10.0.Lachnobacterium_spp.+Clostridium_spp." ValueName="Cp" Value="0.000" Name="Lachnobacterium_spp.+Clostridium_spp." ID="#g0eexc6V3z.nDMXdVsbwnIu.Tube10.0.Lachnobacterium_spp.+Clostridium_spp..Cp.0" Position="B6" TubeIndex="9" TestColor="ff" ChannelID="0" ProtocolTubeIndex="42" /><Result TestID="#Tube11.0.Mobiluncus_spp.+Corynebacterium_spp." ValueName="Cp" Value="41.034" Name="Mobiluncus_spp.+Corynebacterium_spp." ID="#g0eexc6V3z.nDMXdVsbwnIu.Tube11.0.Mobiluncus_spp.+Corynebacterium_spp..Cp.0" Position="C6" TubeIndex="10" TestColor="ff" ChannelID="0" ProtocolTubeIndex="43" /><Result TestID="#Tube12.0.Peptostreptococcus_spp." ValueName="Cp" Value="0.000" Name="Peptostreptococcus_spp." ID="#g0eexc6V3z.nDMXdVsbwnIu.Tube12.0.Peptostreptococcus_spp..Cp.0" Position="D6" TubeIndex="11" TestColor="ff" ChannelID="0" ProtocolTubeIndex="44" /><Result TestID="#Tube13.0.Atopobium_vaginae" ValueName="Cp" Value="0.000" Name="Atopobium_vaginae" ID="#g0eexc6V3z.nDMXdVsbwnIu.Tube13.0.Atopobium_vaginae.Cp.0" Position="E6" TubeIndex="12" TestColor="ff" ChannelID="0" ProtocolTubeIndex="45" /><Result TestID="#Tube14.0.Mycoplasma_hominis" ValueName="Cp" Value="0.000" Name="Mycoplasma_hominis" ID="#g0eexc6V3z.nDMXdVsbwnIu.Tube14.0.Mycoplasma_hominis.Cp.0" Position="F6" TubeIndex="13" TestColor="ff00ff" ChannelID="0" ProtocolTubeIndex="46" /><Result TestID="#Tube14.1.Mycoplasma_genitalium" ValueName="Cp" Value="0.000" Name="Mycoplasma_genitalium" ID="#g0eexc6V3z.nDMXdVsbwnIu.Tube14.1.Mycoplasma_genitalium.Cp.1" Position="F6" TubeIndex="13" TestColor="ff00ff" ChannelID="1" ProtocolTubeIndex="46" /><Result TestID="#Tube15.0.Ureaplasma_(urealyticum_+_parvum)" ValueName="Cp" Value="0.000" Name="Ureaplasma_(urealyticum_+_parvum)" ID="#g0eexc6V3z.nDMXdVsbwnIu.Tube15.0.Ureaplasma_(urealyticum_+_parvum).Cp.0" Position="G6" TubeIndex="14" TestColor="ff00ff" ChannelID="0" ProtocolTubeIndex="47" /><Result TestID="#Tube16.0.Candida_spp." ValueName="Cp" Value="0.000" Name="Candida_spp." ID="#g0eexc6V3z.nDMXdVsbwnIu.Tube16.0.Candida_spp..Cp.0" Position="H6" TubeIndex="15" TestColor="ff0000" ChannelID="0" ProtocolTubeIndex="48" /><Result TestID="#Tube16.1.КВМ" ValueName="Cp" Value="32.651" Name="КВМ" ProgName="MTC" ID="#g0eexc6V3z.nDMXdVsbwnIu.Tube16.1.КВМ.Cp.1" Position="H6" TubeIndex="15" TestColor="ff0000" ChannelID="1" ProtocolTubeIndex="48" /><Result TestID="#Tube16.2.Маркер" ValueName="Cp" Value="0.000" Name="Маркер" ProgName="Marker" ID="#g0eexc6V3z.nDMXdVsbwnIu.Tube16.2.Маркер.Cp.2" Position="H6" TubeIndex="15" TestColor="ff0000" ChannelID="2" ProtocolTubeIndex="48" /></Service></Sample></Inquiry><Inquiry ID="KncPmazyk4" Date="8 Июнь 2018, 14:22:06" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="KncPmazyk4" Code="Образец_4" SampleKind="Patient"><Service ID="#KncPmazyk4.nDMXdVsbwnIu" ServiceID="nDMXdVsbwnIu" Name="Фемофлор 16" Enabled="1"><DTReport FormID="Femoflor" /><Result TestID="#Tube1.0.ОБМ" ValueName="Cp" Value="38.368" Name="ОБМ" ProgName="TBM" ID="#KncPmazyk4.nDMXdVsbwnIu.Tube1.0.ОБМ.Cp.0" Position="A7" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="49" /><Result TestID="#Tube2.0.Lactobacillus_spp." ValueName="Cp" Value="0.000" Name="Lactobacillus_spp." ProgName="Lact" ID="#KncPmazyk4.nDMXdVsbwnIu.Tube2.0.Lactobacillus_spp..Cp.0" Position="B7" TubeIndex="1" TestColor="ff80" ChannelID="0" ProtocolTubeIndex="50" /><Result TestID="#Tube2.1.ВК" ValueName="Cp" Value="29.363" Name="ВК" ProgName="IC" ID="#KncPmazyk4.nDMXdVsbwnIu.Tube2.1.ВК.Cp.1" Position="B7" TubeIndex="1" TestColor="ff80" ChannelID="1" ProtocolTubeIndex="50" /><Result TestID="#Tube3.0.сем.Enterobacteriaceae" ValueName="Cp" Value="0.000" Name="сем.Enterobacteriaceae" ID="#KncPmazyk4.nDMXdVsbwnIu.Tube3.0.сем.Enterobacteriaceae.Cp.0" Position="C7" TubeIndex="2" TestColor="80ff" ChannelID="0" ProtocolTubeIndex="51" /><Result TestID="#Tube4.0.Streptococcus_spp." ValueName="Cp" Value="0.000" Name="Streptococcus_spp." ID="#KncPmazyk4.nDMXdVsbwnIu.Tube4.0.Streptococcus_spp..Cp.0" Position="D7" TubeIndex="3" TestColor="80ff" ChannelID="0" ProtocolTubeIndex="52" /><Result TestID="#Tube5.0.Staphylococcus_spp." ValueName="Cp" Value="40.418" Name="Staphylococcus_spp." ID="#KncPmazyk4.nDMXdVsbwnIu.Tube5.0.Staphylococcus_spp..Cp.0" Position="E7" TubeIndex="4" TestColor="80ff" ChannelID="0" ProtocolTubeIndex="53" /><Result TestID="#Tube5.2.Маркер" ValueName="Cp" Value="0.000" Name="Маркер" ProgName="Marker" ID="#KncPmazyk4.nDMXdVsbwnIu.Tube5.2.Маркер.Cp.2" Position="E7" TubeIndex="4" TestColor="80ff" ChannelID="2" ProtocolTubeIndex="53" /><Result TestID="#Tube6.0.Gardnerella_vaginalis+Prevotella_bivia+Porphyromonas_spp." ValueName="Cp" Value="0.000" Name="Gardnerella_vaginalis+Prevotella_bivia+Porphyromonas_spp." ID="#KncPmazyk4.nDMXdVsbwnIu.Tube6.0.Gardnerella_vaginalis+Prevotella_bivia+Porphyromonas_spp..Cp.0" Position="F7" TubeIndex="5" TestColor="ff" ChannelID="0" ProtocolTubeIndex="54" /><Result TestID="#Tube7.0.Eubacterium_spp." ValueName="Cp" Value="0.000" Name="Eubacterium_spp." ID="#KncPmazyk4.nDMXdVsbwnIu.Tube7.0.Eubacterium_spp..Cp.0" Position="G7" TubeIndex="6" TestColor="ff" ChannelID="0" ProtocolTubeIndex="55" /><Result TestID="#Tube8.0.Sneathia_spp.+Leptotrichia_spp.+Fusobacterium_spp." ValueName="Cp" Value="0.000" Name="Sneathia_spp.+Leptotrichia_spp.+Fusobacterium_spp." ID="#KncPmazyk4.nDMXdVsbwnIu.Tube8.0.Sneathia_spp.+Leptotrichia_spp.+Fusobacterium_spp..Cp.0" Position="H7" TubeIndex="7" TestColor="ff" ChannelID="0" ProtocolTubeIndex="56" /><Result TestID="#Tube9.0.Megasphaera_spp.+Veillonella_spp.+Dialister_spp." ValueName="Cp" Value="0.000" Name="Megasphaera_spp.+Veillonella_spp.+Dialister_spp." ID="#KncPmazyk4.nDMXdVsbwnIu.Tube9.0.Megasphaera_spp.+Veillonella_spp.+Dialister_spp..Cp.0" Position="A8" TubeIndex="8" TestColor="ff" ChannelID="0" ProtocolTubeIndex="57" /><Result TestID="#Tube10.0.Lachnobacterium_spp.+Clostridium_spp." ValueName="Cp" Value="0.000" Name="Lachnobacterium_spp.+Clostridium_spp." ID="#KncPmazyk4.nDMXdVsbwnIu.Tube10.0.Lachnobacterium_spp.+Clostridium_spp..Cp.0" Position="B8" TubeIndex="9" TestColor="ff" ChannelID="0" ProtocolTubeIndex="58" /><Result TestID="#Tube11.0.Mobiluncus_spp.+Corynebacterium_spp." ValueName="Cp" Value="0.000" Name="Mobiluncus_spp.+Corynebacterium_spp." ID="#KncPmazyk4.nDMXdVsbwnIu.Tube11.0.Mobiluncus_spp.+Corynebacterium_spp..Cp.0" Position="C8" TubeIndex="10" TestColor="ff" ChannelID="0" ProtocolTubeIndex="59" /><Result TestID="#Tube12.0.Peptostreptococcus_spp." ValueName="Cp" Value="0.000" Name="Peptostreptococcus_spp." ID="#KncPmazyk4.nDMXdVsbwnIu.Tube12.0.Peptostreptococcus_spp..Cp.0" Position="D8" TubeIndex="11" TestColor="ff" ChannelID="0" ProtocolTubeIndex="60" /><Result TestID="#Tube13.0.Atopobium_vaginae" ValueName="Cp" Value="0.000" Name="Atopobium_vaginae" ID="#KncPmazyk4.nDMXdVsbwnIu.Tube13.0.Atopobium_vaginae.Cp.0" Position="E8" TubeIndex="12" TestColor="ff" ChannelID="0" ProtocolTubeIndex="61" /><Result TestID="#Tube14.0.Mycoplasma_hominis" ValueName="Cp" Value="0.000" Name="Mycoplasma_hominis" ID="#KncPmazyk4.nDMXdVsbwnIu.Tube14.0.Mycoplasma_hominis.Cp.0" Position="F8" TubeIndex="13" TestColor="ff00ff" ChannelID="0" ProtocolTubeIndex="62" /><Result TestID="#Tube14.1.Mycoplasma_genitalium" ValueName="Cp" Value="0.000" Name="Mycoplasma_genitalium" ID="#KncPmazyk4.nDMXdVsbwnIu.Tube14.1.Mycoplasma_genitalium.Cp.1" Position="F8" TubeIndex="13" TestColor="ff00ff" ChannelID="1" ProtocolTubeIndex="62" /><Result TestID="#Tube15.0.Ureaplasma_(urealyticum_+_parvum)" ValueName="Cp" Value="0.000" Name="Ureaplasma_(urealyticum_+_parvum)" ID="#KncPmazyk4.nDMXdVsbwnIu.Tube15.0.Ureaplasma_(urealyticum_+_parvum).Cp.0" Position="G8" TubeIndex="14" TestColor="ff00ff" ChannelID="0" ProtocolTubeIndex="63" /><Result TestID="#Tube16.0.Candida_spp." ValueName="Cp" Value="0.000" Name="Candida_spp." ID="#KncPmazyk4.nDMXdVsbwnIu.Tube16.0.Candida_spp..Cp.0" Position="H8" TubeIndex="15" TestColor="ff0000" ChannelID="0" ProtocolTubeIndex="64" /><Result TestID="#Tube16.1.КВМ" ValueName="Cp" Value="0.000" Name="КВМ" ProgName="MTC" ID="#KncPmazyk4.nDMXdVsbwnIu.Tube16.1.КВМ.Cp.1" Position="H8" TubeIndex="15" TestColor="ff0000" ChannelID="1" ProtocolTubeIndex="64" /><Result TestID="#Tube16.2.Маркер" ValueName="Cp" Value="0.000" Name="Маркер" ProgName="Marker" ID="#KncPmazyk4.nDMXdVsbwnIu.Tube16.2.Маркер.Cp.2" Position="H8" TubeIndex="15" TestColor="ff0000" ChannelID="2" ProtocolTubeIndex="64" /></Service></Sample></Inquiry><Inquiry ID="x47h55tuRf" Date="8 Июнь 2018, 14:22:06" FullName="..." Age="..." organization="..." Comment="..."><Sample ID="x47h55tuRf" Code="Образец_5" SampleKind="Patient"><Service ID="#x47h55tuRf.nDMXdVsbwnIu" ServiceID="nDMXdVsbwnIu" Name="Фемофлор 16" Enabled="1"><DTReport FormID="Femoflor" /><Result TestID="#Tube1.0.ОБМ" ValueName="Cp" Value="26.780" Name="ОБМ" ProgName="TBM" ID="#x47h55tuRf.nDMXdVsbwnIu.Tube1.0.ОБМ.Cp.0" Position="A9" TubeIndex="0" TestColor="0" ChannelID="0" ProtocolTubeIndex="65" /><Result TestID="#Tube2.0.Lactobacillus_spp." ValueName="Cp" Value="28.975" Name="Lactobacillus_spp." ProgName="Lact" ID="#x47h55tuRf.nDMXdVsbwnIu.Tube2.0.Lactobacillus_spp..Cp.0" Position="B9" TubeIndex="1" TestColor="ff80" ChannelID="0" ProtocolTubeIndex="66" /><Result TestID="#Tube2.1.ВК" ValueName="Cp" Value="30.999" Name="ВК" ProgName="IC" ID="#x47h55tuRf.nDMXdVsbwnIu.Tube2.1.ВК.Cp.1" Position="B9" TubeIndex="1" TestColor="ff80" ChannelID="1" ProtocolTubeIndex="66" /><Result TestID="#Tube3.0.сем.Enterobacteriaceae" ValueName="Cp" Value="27.565" Name="сем.Enterobacteriaceae" ID="#x47h55tuRf.nDMXdVsbwnIu.Tube3.0.сем.Enterobacteriaceae.Cp.0" Position="C9" TubeIndex="2" TestColor="80ff" ChannelID="0" ProtocolTubeIndex="67" /><Result TestID="#Tube4.0.Streptococcus_spp." ValueName="Cp" Value="28.000" Name="Streptococcus_spp." ID="#x47h55tuRf.nDMXdVsbwnIu.Tube4.0.Streptococcus_spp..Cp.0" Position="D9" TubeIndex="3" TestColor="80ff" ChannelID="0" ProtocolTubeIndex="68" /><Result TestID="#Tube5.0.Staphylococcus_spp." ValueName="Cp" Value="27.644" Name="Staphylococcus_spp." ID="#x47h55tuRf.nDMXdVsbwnIu.Tube5.0.Staphylococcus_spp..Cp.0" Position="E9" TubeIndex="4" TestColor="80ff" ChannelID="0" ProtocolTubeIndex="69" /><Result TestID="#Tube5.2.Маркер" ValueName="Cp" Value="0.000" Name="Маркер" ProgName="Marker" ID="#x47h55tuRf.nDMXdVsbwnIu.Tube5.2.Маркер.Cp.2" Position="E9" TubeIndex="4" TestColor="80ff" ChannelID="2" ProtocolTubeIndex="69" /><Result TestID="#Tube6.0.Gardnerella_vaginalis+Prevotella_bivia+Porphyromonas_spp." ValueName="Cp" Value="27.617" Name="Gardnerella_vaginalis+Prevotella_bivia+Porphyromonas_spp." ID="#x47h55tuRf.nDMXdVsbwnIu.Tube6.0.Gardnerella_vaginalis+Prevotella_bivia+Porphyromonas_spp..Cp.0" Position="F9" TubeIndex="5" TestColor="ff" ChannelID="0" ProtocolTubeIndex="70" /><Result TestID="#Tube7.0.Eubacterium_spp." ValueName="Cp" Value="24.783" Name="Eubacterium_spp." ID="#x47h55tuRf.nDMXdVsbwnIu.Tube7.0.Eubacterium_spp..Cp.0" Position="G9" TubeIndex="6" TestColor="ff" ChannelID="0" ProtocolTubeIndex="71" /><Result TestID="#Tube8.0.Sneathia_spp.+Leptotrichia_spp.+Fusobacterium_spp." ValueName="Cp" Value="28.950" Name="Sneathia_spp.+Leptotrichia_spp.+Fusobacterium_spp." ID="#x47h55tuRf.nDMXdVsbwnIu.Tube8.0.Sneathia_spp.+Leptotrichia_spp.+Fusobacterium_spp..Cp.0" Position="H9" TubeIndex="7" TestColor="ff" ChannelID="0" ProtocolTubeIndex="72" /><Result TestID="#Tube9.0.Megasphaera_spp.+Veillonella_spp.+Dialister_spp." ValueName="Cp" Value="28.085" Name="Megasphaera_spp.+Veillonella_spp.+Dialister_spp." ID="#x47h55tuRf.nDMXdVsbwnIu.Tube9.0.Megasphaera_spp.+Veillonella_spp.+Dialister_spp..Cp.0" Position="A10" TubeIndex="8" TestColor="ff" ChannelID="0" ProtocolTubeIndex="73" /><Result TestID="#Tube10.0.Lachnobacterium_spp.+Clostridium_spp." ValueName="Cp" Value="28.815" Name="Lachnobacterium_spp.+Clostridium_spp." ID="#x47h55tuRf.nDMXdVsbwnIu.Tube10.0.Lachnobacterium_spp.+Clostridium_spp..Cp.0" Position="B10" TubeIndex="9" TestColor="ff" ChannelID="0" ProtocolTubeIndex="74" /><Result TestID="#Tube11.0.Mobiluncus_spp.+Corynebacterium_spp." ValueName="Cp" Value="27.779" Name="Mobiluncus_spp.+Corynebacterium_spp." ID="#x47h55tuRf.nDMXdVsbwnIu.Tube11.0.Mobiluncus_spp.+Corynebacterium_spp..Cp.0" Position="C10" TubeIndex="10" TestColor="ff" ChannelID="0" ProtocolTubeIndex="75" /><Result TestID="#Tube12.0.Peptostreptococcus_spp." ValueName="Cp" Value="28.990" Name="Peptostreptococcus_spp." ID="#x47h55tuRf.nDMXdVsbwnIu.Tube12.0.Peptostreptococcus_spp..Cp.0" Position="D10" TubeIndex="11" TestColor="ff" ChannelID="0" ProtocolTubeIndex="76" /><Result TestID="#Tube13.0.Atopobium_vaginae" ValueName="Cp" Value="27.591" Name="Atopobium_vaginae" ID="#x47h55tuRf.nDMXdVsbwnIu.Tube13.0.Atopobium_vaginae.Cp.0" Position="E10" TubeIndex="12" TestColor="ff" ChannelID="0" ProtocolTubeIndex="77" /><Result TestID="#Tube14.0.Mycoplasma_hominis" ValueName="Cp" Value="28.971" Name="Mycoplasma_hominis" ID="#x47h55tuRf.nDMXdVsbwnIu.Tube14.0.Mycoplasma_hominis.Cp.0" Position="F10" TubeIndex="13" TestColor="ff00ff" ChannelID="0" ProtocolTubeIndex="78" /><Result TestID="#Tube14.1.Mycoplasma_genitalium" ValueName="Cp" Value="30.119" Name="Mycoplasma_genitalium" ID="#x47h55tuRf.nDMXdVsbwnIu.Tube14.1.Mycoplasma_genitalium.Cp.1" Position="F10" TubeIndex="13" TestColor="ff00ff" ChannelID="1" ProtocolTubeIndex="78" /><Result TestID="#Tube15.0.Ureaplasma_(urealyticum_+_parvum)" ValueName="Cp" Value="26.514" Name="Ureaplasma_(urealyticum_+_parvum)" ID="#x47h55tuRf.nDMXdVsbwnIu.Tube15.0.Ureaplasma_(urealyticum_+_parvum).Cp.0" Position="G10" TubeIndex="14" TestColor="ff00ff" ChannelID="0" ProtocolTubeIndex="79" /><Result TestID="#Tube16.0.Candida_spp." ValueName="Cp" Value="27.569" Name="Candida_spp." ID="#x47h55tuRf.nDMXdVsbwnIu.Tube16.0.Candida_spp..Cp.0" Position="H10" TubeIndex="15" TestColor="ff0000" ChannelID="0" ProtocolTubeIndex="80" /><Result TestID="#Tube16.1.КВМ" ValueName="Cp" Value="29.555" Name="КВМ" ProgName="MTC" ID="#x47h55tuRf.nDMXdVsbwnIu.Tube16.1.КВМ.Cp.1" Position="H10" TubeIndex="15" TestColor="ff0000" ChannelID="1" ProtocolTubeIndex="80" /><Result TestID="#Tube16.2.Маркер" ValueName="Cp" Value="0.000" Name="Маркер" ProgName="Marker" ID="#x47h55tuRf.nDMXdVsbwnIu.Tube16.2.Маркер.Cp.2" Position="H10" TubeIndex="15" TestColor="ff0000" ChannelID="2" ProtocolTubeIndex="80" /></Service></Sample></Inquiry></Results><Services><Service ID="nDMXdVsbwnIu" FormID="Femoflor"><Settings><TAnalisys>
+<DisplayName>Фемофлор 16</DisplayName>
 <DeviceParams>
 XPRG 0 35 0
-XLEV 4700 900 0 0 0 0
+XLEV 8000 30 0 0 0 0
+XLEV 9400 90 0 0 0 0
 XCYC 1
-XLEV 9500 300 0 0 0 0
+XLEV 9400 30 0 0 0 0
+XLEV 6400 15 0 0 0 1
+XCYC 5
+XLEV 9400 10 0 0 0 0
+XLEV 6400 15 0 0 0 1
+XCYC 45
+XLEV 9400 5 0 0 0 0
 XCYC 1
-XLEV 9500 10 0 0 0 0
-XLEV 6200 20 0 0 0 1
-XCYC 50
 XLEV 1000 10 0 0 0 0
 XHLD
-XSAV HBV_HCV
+XSAV DnaTech-64
 </DeviceParams>
-<FormID>HCV</FormID>
-<MinimalFormVersion>0.786</MinimalFormVersion>
-<ControlTubesCount>1</ControlTubesCount>
-<ID>3wBfnEMDH6Fa</ID>
-<VolumeTube>0</VolumeTube>
+<FormID>Femoflor</FormID>
+<MinimalFormVersion>1.61</MinimalFormVersion>
+<ServiceVersion>1.0</ServiceVersion>
+<ControlTubesCount>0</ControlTubesCount>
+<ID>nDMXdVsbwnIu</ID>
+<VolumeTube>35</VolumeTube>
 <NextID>0</NextID>
-<Method>155077</Method>
-<SystemParams>&lt;?xml version="1.0" standalone="yes"?&gt;
+<Settings>
+<TDTRParameter Name="NormingType">
+<Name>NormingType</Name>
+<Value>c_SVMO</Value>
+</TDTRParameter>
+<TDTRParameter Name="ValidatingFactor">
+<Name>ValidatingFactor</Name>
+<Value>2.4</Value>
+</TDTRParameter>
+<TDTRParameter Name="MaxLg">
+<Name>MaxLg</Name>
+<Value>9</Value>
+</TDTRParameter>
+<TDTRParameter Name="MinLg">
+<Name>MinLg</Name>
+<Value>3</Value>
+</TDTRParameter>
+<TDTRParameter Name="Delta">
+<Name>Delta</Name>
+<Value>15</Value>
+</TDTRParameter>
+<TDTRParameter Name="ShowLegend">
+<Name>ShowLegend</Name>
+<Value>0</Value>
+</TDTRParameter>
+<TDTRParameter Name="Conclusion">
+<Name>Conclusion</Name>
+<Value>ConcFemo</Value>
+</TDTRParameter>
+</Settings>
+<Method>131072</Method>
+<SystemParams>&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?&gt;
 &lt;properties&gt;
-	&lt;item&gt;
-		&lt;name&gt;criterion_PosResult&lt;/name&gt;
-		&lt;value&gt;80&lt;/value&gt;
-		&lt;unit/&gt;
-	&lt;/item&gt;
-	&lt;item&gt;
-		&lt;name&gt;criterion_Validity&lt;/name&gt;
-		&lt;value&gt;5&lt;/value&gt;
-		&lt;unit/&gt;
-	&lt;/item&gt;
-	&lt;item&gt;
-		&lt;name&gt;use_AFF&lt;/name&gt;
-		&lt;value&gt;True&lt;/value&gt;
-		&lt;unit/&gt;
-	&lt;/item&gt;
-	&lt;item&gt;
-		&lt;name&gt;criterion_AFF&lt;/name&gt;
-		&lt;value&gt;1000&lt;/value&gt;
-		&lt;unit/&gt;
-	&lt;/item&gt;
-	&lt;item&gt;
-		&lt;name&gt;criterion_AFF_MIN&lt;/name&gt;
-		&lt;value&gt;10&lt;/value&gt;
-		&lt;unit/&gt;
-	&lt;/item&gt;
-	&lt;item&gt;
-		&lt;name&gt;criterion_AFF_MAX&lt;/name&gt;
-		&lt;value&gt;90&lt;/value&gt;
-		&lt;unit/&gt;
-	&lt;/item&gt;
-	&lt;item&gt;
-		&lt;name&gt;sigmoid_ValidityMin&lt;/name&gt;
-		&lt;value&gt;7&lt;/value&gt;
-		&lt;unit/&gt;
-	&lt;/item&gt;
-	&lt;item&gt;
-		&lt;name&gt;sigmoid_ValidityMax&lt;/name&gt;
-		&lt;value&gt;20&lt;/value&gt;
-		&lt;unit/&gt;
-	&lt;/item&gt;
-	&lt;item&gt;
-		&lt;name&gt;use_Threshold&lt;/name&gt;
-		&lt;value&gt;False&lt;/value&gt;
-		&lt;unit/&gt;
-	&lt;/item&gt;
-	&lt;item&gt;
-		&lt;name&gt;value_Threshold&lt;/name&gt;
-		&lt;value&gt;10&lt;/value&gt;
-		&lt;unit/&gt;
-	&lt;/item&gt;
-	&lt;item&gt;
-		&lt;name&gt;exposure_Measurements&lt;/name&gt;
-		&lt;value&gt;1.00 1.00 1.00 1.00 1.00&lt;/value&gt;
-		&lt;unit/&gt;
-	&lt;/item&gt;
-	&lt;item&gt;
-		&lt;name&gt;fluorofors&lt;/name&gt;
-		&lt;value&gt;Fam Hex Rox Cy5 Cy5.5&lt;/value&gt;
-		&lt;unit/&gt;
-	&lt;/item&gt;
-	&lt;item&gt;
-		&lt;name&gt;FWHM_Border&lt;/name&gt;
-		&lt;value&gt;30&lt;/value&gt;
-		&lt;unit/&gt;
-	&lt;/item&gt;
-	&lt;item&gt;
-		&lt;name&gt;peaks_Border&lt;/name&gt;
-		&lt;value&gt;20&lt;/value&gt;
-		&lt;unit/&gt;
-	&lt;/item&gt;
-	&lt;item&gt;
-		&lt;name&gt;Standarts Information&lt;/name&gt;
-		&lt;value&gt;2	1	0	1.000e+6;0	1000.00;0&lt;/value&gt;
-		&lt;unit/&gt;
-	&lt;/item&gt;
+ &lt;item&gt;
+  &lt;name&gt;criterion_PosResult&lt;/name&gt;
+  &lt;value&gt;80&lt;/value&gt;
+  &lt;unit/&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+  &lt;name&gt;criterion_Validity&lt;/name&gt;
+  &lt;value&gt;9&lt;/value&gt;
+  &lt;unit/&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+  &lt;name&gt;use_AFF&lt;/name&gt;
+  &lt;value&gt;True&lt;/value&gt;
+  &lt;unit/&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+  &lt;name&gt;criterion_AFF&lt;/name&gt;
+  &lt;value&gt;1000&lt;/value&gt;
+  &lt;unit/&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+  &lt;name&gt;criterion_AFF_MIN&lt;/name&gt;
+  &lt;value&gt;10&lt;/value&gt;
+  &lt;unit/&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+  &lt;name&gt;criterion_AFF_MAX&lt;/name&gt;
+  &lt;value&gt;90&lt;/value&gt;
+  &lt;unit/&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+  &lt;name&gt;sigmoid_ValidityMin&lt;/name&gt;
+  &lt;value&gt;7&lt;/value&gt;
+  &lt;unit/&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+  &lt;name&gt;sigmoid_ValidityMax&lt;/name&gt;
+  &lt;value&gt;20&lt;/value&gt;
+  &lt;unit/&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+  &lt;name&gt;use_Threshold&lt;/name&gt;
+  &lt;value&gt;False&lt;/value&gt;
+  &lt;unit/&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+  &lt;name&gt;value_Threshold&lt;/name&gt;
+  &lt;value&gt;10&lt;/value&gt;
+  &lt;unit/&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+  &lt;name&gt;exposure_Measurements&lt;/name&gt;
+  &lt;value&gt;1.00 1.00 1.00 1.00 1.00&lt;/value&gt;
+  &lt;unit/&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+  &lt;name&gt;fluorofors&lt;/name&gt;
+  &lt;value&gt;Fam Hex Rox Cy5 Cy5.5&lt;/value&gt;
+  &lt;unit/&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+  &lt;name&gt;FWHM_Border&lt;/name&gt;
+  &lt;value&gt;30&lt;/value&gt;
+  &lt;unit/&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+  &lt;name&gt;peaks_Border&lt;/name&gt;
+  &lt;value&gt;20&lt;/value&gt;
+  &lt;unit/&gt;
+ &lt;/item&gt;
 &lt;/properties&gt;
 </SystemParams>
 <TTube>
 <TubeName>Tube 1</TubeName>
 <ID>0</ID>
 <TubeIndex>1</TubeIndex>
+<GUID>IDAKJKPKJEQCZ2JDPS2CZ3VAFV3GPMK5CWCD1FMALJ4QZYZ1QHV0JF</GUID>
 <TPCRTest>
-<DisplayName>HCV</DisplayName>
+<DisplayName>ОБМ</DisplayName>
+<ProgName>TBM</ProgName>
 <ID>0</ID>
+<Settings>
+<TDTRParameter Name="Ni">
+<Name>Ni</Name>
+<Value>44.8</Value>
+</TDTRParameter>
+<TDTRParameter Name="Ei">
+<Name>Ei</Name>
+<Value>3.4</Value>
+</TDTRParameter>
+<TDTRParameter Name="MinRes">
+<Name>MinRes</Name>
+<Value>3</Value>
+</TDTRParameter>
+<TDTRParameter Name="Rel">
+<Name>Rel</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="Abs">
+<Name>Abs</Name>
+<Value>True</Value>
+</TDTRParameter>
+<TDTRParameter Name="Qual">
+<Name>Qual</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="OrgType">
+<Name>OrgType</Name>
+<Value>Default</Value>
+<DictName>OrgTypes</DictName>
+</TDTRParameter>
+</Settings>
+<ChannelID>0</ChannelID>
+</TPCRTest>
+</TTube>
+<TTube>
+<TubeName>Tube 2</TubeName>
+<ID>1</ID>
+<TubeIndex>2</TubeIndex>
+<TubeColor>$0000FF80</TubeColor>
+<GUID>IDETAETCC21LSWBO1FWIY5GV55JLECYLJHS2K4H3DFHVGBFW5Y0KBF</GUID>
+<TPCRTest>
+<DisplayName>Lactobacillus_spp.</DisplayName>
+<ProgName>Lact</ProgName>
+<ID>0</ID>
+<Settings>
+<TDTRParameter Name="Ni">
+<Name>Ni</Name>
+<Value>45.3</Value>
+</TDTRParameter>
+<TDTRParameter Name="Ei">
+<Name>Ei</Name>
+<Value>3.4</Value>
+</TDTRParameter>
+<TDTRParameter Name="MinRes">
+<Name>MinRes</Name>
+<Value>3</Value>
+</TDTRParameter>
+<TDTRParameter Name="Rel">
+<Name>Rel</Name>
+<Value>True</Value>
+</TDTRParameter>
+<TDTRParameter Name="Abs">
+<Name>Abs</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="Qual">
+<Name>Qual</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="OrgType">
+<Name>OrgType</Name>
+<Value>Norm</Value>
+<DictName>OrgTypes</DictName>
+</TDTRParameter>
+</Settings>
 <ChannelID>0</ChannelID>
 </TPCRTest>
 <TPCRTest>
 <DisplayName>ВК</DisplayName>
 <ProgName>IC</ProgName>
 <ID>1</ID>
+<Settings>
+<TDTRParameter Name="Ni">
+<Name>Ni</Name>
+<Value>45</Value>
+</TDTRParameter>
+<TDTRParameter Name="Ei">
+<Name>Ei</Name>
+<Value>3.4</Value>
+</TDTRParameter>
+<TDTRParameter Name="MinRes">
+<Name>MinRes</Name>
+<Value>0</Value>
+</TDTRParameter>
+<TDTRParameter Name="Rel">
+<Name>Rel</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="Abs">
+<Name>Abs</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="Qual">
+<Name>Qual</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="OrgType">
+<Name>OrgType</Name>
+<DictName>OrgTypes</DictName>
+</TDTRParameter>
+</Settings>
 <ChannelID>1</ChannelID>
 </TPCRTest>
 </TTube>
+<TTube>
+<TubeName>Tube 3</TubeName>
+<ID>2</ID>
+<TubeIndex>3</TubeIndex>
+<TubeColor>$000080FF</TubeColor>
+<GUID>IDX33IKSWPVOCITCFKGNOH0TENLAHSUSP5IZ4UIHTBHBQCGE1AWQI</GUID>
+<TPCRTest>
+<DisplayName>сем.Enterobacteriaceae</DisplayName>
+<ID>0</ID>
+<Settings>
+<TDTRParameter Name="Ni">
+<Name>Ni</Name>
+<Value>45</Value>
+</TDTRParameter>
+<TDTRParameter Name="Ei">
+<Name>Ei</Name>
+<Value>3.4</Value>
+</TDTRParameter>
+<TDTRParameter Name="MinRes">
+<Name>MinRes</Name>
+<Value>3</Value>
+</TDTRParameter>
+<TDTRParameter Name="Rel">
+<Name>Rel</Name>
+<Value>True</Value>
+</TDTRParameter>
+<TDTRParameter Name="Abs">
+<Name>Abs</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="Qual">
+<Name>Qual</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="OrgType">
+<Name>OrgType</Name>
+<Value>FUnaero</Value>
+<DictName>OrgTypes</DictName>
+</TDTRParameter>
+</Settings>
+<ChannelID>0</ChannelID>
+</TPCRTest>
+</TTube>
+<TTube>
+<TubeName>Tube 4</TubeName>
+<ID>3</ID>
+<TubeIndex>4</TubeIndex>
+<TubeColor>$000080FF</TubeColor>
+<GUID>IDGZOJICBUUJZ1EFO3IHUF3XGTIBZ1KVAARNYR1IS2YE4LBLVRKNE</GUID>
+<TPCRTest>
+<DisplayName>Streptococcus_spp.</DisplayName>
+<ID>0</ID>
+<Settings>
+<TDTRParameter Name="Ni">
+<Name>Ni</Name>
+<Value>45</Value>
+</TDTRParameter>
+<TDTRParameter Name="Ei">
+<Name>Ei</Name>
+<Value>3.4</Value>
+</TDTRParameter>
+<TDTRParameter Name="MinRes">
+<Name>MinRes</Name>
+<Value>3</Value>
+</TDTRParameter>
+<TDTRParameter Name="Rel">
+<Name>Rel</Name>
+<Value>True</Value>
+</TDTRParameter>
+<TDTRParameter Name="Abs">
+<Name>Abs</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="Qual">
+<Name>Qual</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="OrgType">
+<Name>OrgType</Name>
+<Value>FUnaero</Value>
+<DictName>OrgTypes</DictName>
+</TDTRParameter>
+</Settings>
+<ChannelID>0</ChannelID>
+</TPCRTest>
+</TTube>
+<TTube>
+<TubeName>Tube 5</TubeName>
+<ID>4</ID>
+<TubeIndex>5</TubeIndex>
+<TubeColor>$000080FF</TubeColor>
+<GUID>IDYHLZIF5FDL0ELBGO2DLWQ1HYEKMILWNYUWT3YSFKHJIFF2LU1RJL</GUID>
+<TPCRTest>
+<DisplayName>Staphylococcus_spp.</DisplayName>
+<ID>0</ID>
+<Settings>
+<TDTRParameter Name="Ni">
+<Name>Ni</Name>
+<Value>45</Value>
+</TDTRParameter>
+<TDTRParameter Name="Ei">
+<Name>Ei</Name>
+<Value>3.4</Value>
+</TDTRParameter>
+<TDTRParameter Name="MinRes">
+<Name>MinRes</Name>
+<Value>3</Value>
+</TDTRParameter>
+<TDTRParameter Name="Rel">
+<Name>Rel</Name>
+<Value>True</Value>
+</TDTRParameter>
+<TDTRParameter Name="Abs">
+<Name>Abs</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="Qual">
+<Name>Qual</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="OrgType">
+<Name>OrgType</Name>
+<Value>FUnaero</Value>
+<DictName>OrgTypes</DictName>
+</TDTRParameter>
+</Settings>
+<ChannelID>0</ChannelID>
+</TPCRTest>
+<TPCRTest>
+<DisplayName>Маркер</DisplayName>
+<ProgName>Marker</ProgName>
+<ID>1</ID>
+<Settings>
+<TDTRParameter Name="Ni">
+<Name>Ni</Name>
+<Value>45</Value>
+</TDTRParameter>
+<TDTRParameter Name="Ei">
+<Name>Ei</Name>
+<Value>3.4</Value>
+</TDTRParameter>
+<TDTRParameter Name="MinRes">
+<Name>MinRes</Name>
+<Value>0</Value>
+</TDTRParameter>
+<TDTRParameter Name="Rel">
+<Name>Rel</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="Abs">
+<Name>Abs</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="Qual">
+<Name>Qual</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="OrgType">
+<Name>OrgType</Name>
+<DictName>OrgTypes</DictName>
+</TDTRParameter>
+</Settings>
+<ChannelID>2</ChannelID>
+</TPCRTest>
+</TTube>
+<TTube>
+<TubeName>Tube 6</TubeName>
+<ID>5</ID>
+<TubeIndex>6</TubeIndex>
+<TubeColor>$000000FF</TubeColor>
+<GUID>IDQTMUDLA55NEUBGPRFTY4YDATWDNLGGRMK3ZPB0OZT2KE2NXVVDMF</GUID>
+<TPCRTest>
+<DisplayName>Gardnerella_vaginalis+Prevotella_bivia+Porphyromonas_spp.</DisplayName>
+<ID>0</ID>
+<Settings>
+<TDTRParameter Name="Ni">
+<Name>Ni</Name>
+<Value>45</Value>
+</TDTRParameter>
+<TDTRParameter Name="Ei">
+<Name>Ei</Name>
+<Value>3.4</Value>
+</TDTRParameter>
+<TDTRParameter Name="MinRes">
+<Name>MinRes</Name>
+<Value>3</Value>
+</TDTRParameter>
+<TDTRParameter Name="Rel">
+<Name>Rel</Name>
+<Value>True</Value>
+</TDTRParameter>
+<TDTRParameter Name="Abs">
+<Name>Abs</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="Qual">
+<Name>Qual</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="OrgType">
+<Name>OrgType</Name>
+<Value>OUnaero</Value>
+<DictName>OrgTypes</DictName>
+</TDTRParameter>
+</Settings>
+<ChannelID>0</ChannelID>
+</TPCRTest>
+</TTube>
+<TTube>
+<TubeName>Tube 7</TubeName>
+<ID>6</ID>
+<TubeIndex>7</TubeIndex>
+<TubeColor>$000000FF</TubeColor>
+<GUID>IDFSGFNZMZ2K1XLGCYUEYVUG1KANA0RXXLZOJFIVE5ACONP5FMV5GH</GUID>
+<TPCRTest>
+<DisplayName>Eubacterium_spp.</DisplayName>
+<ID>0</ID>
+<Settings>
+<TDTRParameter Name="Ni">
+<Name>Ni</Name>
+<Value>45</Value>
+</TDTRParameter>
+<TDTRParameter Name="Ei">
+<Name>Ei</Name>
+<Value>3.4</Value>
+</TDTRParameter>
+<TDTRParameter Name="MinRes">
+<Name>MinRes</Name>
+<Value>3</Value>
+</TDTRParameter>
+<TDTRParameter Name="Rel">
+<Name>Rel</Name>
+<Value>True</Value>
+</TDTRParameter>
+<TDTRParameter Name="Abs">
+<Name>Abs</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="Qual">
+<Name>Qual</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="OrgType">
+<Name>OrgType</Name>
+<Value>OUnaero</Value>
+<DictName>OrgTypes</DictName>
+</TDTRParameter>
+</Settings>
+<ChannelID>0</ChannelID>
+</TPCRTest>
+</TTube>
+<TTube>
+<TubeName>Tube 8</TubeName>
+<ID>7</ID>
+<TubeIndex>8</TubeIndex>
+<TubeColor>$000000FF</TubeColor>
+<GUID>IDHJEYTSEMWQXEPRJLXMXZSH0B0K4FHE4BHC0E1PD4P0UBW3FPWQZN</GUID>
+<TPCRTest>
+<DisplayName>Sneathia_spp.+Leptotrichia_spp.+Fusobacterium_spp.</DisplayName>
+<ID>0</ID>
+<Settings>
+<TDTRParameter Name="Ni">
+<Name>Ni</Name>
+<Value>45</Value>
+</TDTRParameter>
+<TDTRParameter Name="Ei">
+<Name>Ei</Name>
+<Value>3.4</Value>
+</TDTRParameter>
+<TDTRParameter Name="MinRes">
+<Name>MinRes</Name>
+<Value>3</Value>
+</TDTRParameter>
+<TDTRParameter Name="Rel">
+<Name>Rel</Name>
+<Value>True</Value>
+</TDTRParameter>
+<TDTRParameter Name="Abs">
+<Name>Abs</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="Qual">
+<Name>Qual</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="OrgType">
+<Name>OrgType</Name>
+<Value>OUnaero</Value>
+<DictName>OrgTypes</DictName>
+</TDTRParameter>
+</Settings>
+<ChannelID>0</ChannelID>
+</TPCRTest>
+</TTube>
+<TTube>
+<TubeName>Tube 9</TubeName>
+<ID>8</ID>
+<TubeIndex>9</TubeIndex>
+<TubeColor>$000000FF</TubeColor>
+<GUID>ID1J4R2EHRKYYXFM0HOSNOPJOIHKCGFVY300OXODF12MRQEGP4OPWI</GUID>
+<TPCRTest>
+<DisplayName>Megasphaera_spp.+Veillonella_spp.+Dialister_spp.</DisplayName>
+<ID>0</ID>
+<Settings>
+<TDTRParameter Name="Ni">
+<Name>Ni</Name>
+<Value>45</Value>
+</TDTRParameter>
+<TDTRParameter Name="Ei">
+<Name>Ei</Name>
+<Value>3.4</Value>
+</TDTRParameter>
+<TDTRParameter Name="MinRes">
+<Name>MinRes</Name>
+<Value>3</Value>
+</TDTRParameter>
+<TDTRParameter Name="Rel">
+<Name>Rel</Name>
+<Value>True</Value>
+</TDTRParameter>
+<TDTRParameter Name="Abs">
+<Name>Abs</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="Qual">
+<Name>Qual</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="OrgType">
+<Name>OrgType</Name>
+<Value>OUnaero</Value>
+<DictName>OrgTypes</DictName>
+</TDTRParameter>
+</Settings>
+<ChannelID>0</ChannelID>
+</TPCRTest>
+</TTube>
+<TTube>
+<TubeName>Tube 10</TubeName>
+<ID>9</ID>
+<TubeIndex>10</TubeIndex>
+<TubeColor>$000000FF</TubeColor>
+<GUID>IDIJZL3ZA3J5DMEDIXTYCCPPR20N2ZM1R43JKZ5VPT500HL1LMQAGF</GUID>
+<TPCRTest>
+<DisplayName>Lachnobacterium_spp.+Clostridium_spp.</DisplayName>
+<ID>0</ID>
+<Settings>
+<TDTRParameter Name="Ni">
+<Name>Ni</Name>
+<Value>45</Value>
+</TDTRParameter>
+<TDTRParameter Name="Ei">
+<Name>Ei</Name>
+<Value>3.4</Value>
+</TDTRParameter>
+<TDTRParameter Name="MinRes">
+<Name>MinRes</Name>
+<Value>3</Value>
+</TDTRParameter>
+<TDTRParameter Name="Rel">
+<Name>Rel</Name>
+<Value>True</Value>
+</TDTRParameter>
+<TDTRParameter Name="Abs">
+<Name>Abs</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="Qual">
+<Name>Qual</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="OrgType">
+<Name>OrgType</Name>
+<Value>OUnaero</Value>
+<DictName>OrgTypes</DictName>
+</TDTRParameter>
+</Settings>
+<ChannelID>0</ChannelID>
+</TPCRTest>
+</TTube>
+<TTube>
+<TubeName>Tube 11</TubeName>
+<ID>10</ID>
+<TubeIndex>11</TubeIndex>
+<TubeColor>$000000FF</TubeColor>
+<GUID>IDGLCU2JG0NCSFJXXTUMIENOUUIG4PYCKWI4D3PQOQTY0WHD1CPLOE</GUID>
+<TPCRTest>
+<DisplayName>Mobiluncus_spp.+Corynebacterium_spp.</DisplayName>
+<ID>0</ID>
+<Settings>
+<TDTRParameter Name="Ni">
+<Name>Ni</Name>
+<Value>45</Value>
+</TDTRParameter>
+<TDTRParameter Name="Ei">
+<Name>Ei</Name>
+<Value>3.4</Value>
+</TDTRParameter>
+<TDTRParameter Name="MinRes">
+<Name>MinRes</Name>
+<Value>3</Value>
+</TDTRParameter>
+<TDTRParameter Name="Rel">
+<Name>Rel</Name>
+<Value>True</Value>
+</TDTRParameter>
+<TDTRParameter Name="Abs">
+<Name>Abs</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="Qual">
+<Name>Qual</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="OrgType">
+<Name>OrgType</Name>
+<Value>OUnaero</Value>
+<DictName>OrgTypes</DictName>
+</TDTRParameter>
+</Settings>
+<ChannelID>0</ChannelID>
+</TPCRTest>
+</TTube>
+<TTube>
+<TubeName>Tube 12</TubeName>
+<ID>11</ID>
+<TubeIndex>12</TubeIndex>
+<TubeColor>$000000FF</TubeColor>
+<GUID>IDD0DRAQPYXUD5COT3JWF5I5CZNGI3SFWJIFOICLOI1X2GBULGGXED</GUID>
+<TPCRTest>
+<DisplayName>Peptostreptococcus_spp.</DisplayName>
+<ID>0</ID>
+<Settings>
+<TDTRParameter Name="Ni">
+<Name>Ni</Name>
+<Value>45</Value>
+</TDTRParameter>
+<TDTRParameter Name="Ei">
+<Name>Ei</Name>
+<Value>3.4</Value>
+</TDTRParameter>
+<TDTRParameter Name="MinRes">
+<Name>MinRes</Name>
+<Value>3</Value>
+</TDTRParameter>
+<TDTRParameter Name="Rel">
+<Name>Rel</Name>
+<Value>True</Value>
+</TDTRParameter>
+<TDTRParameter Name="Abs">
+<Name>Abs</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="Qual">
+<Name>Qual</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="OrgType">
+<Name>OrgType</Name>
+<Value>OUnaero</Value>
+<DictName>OrgTypes</DictName>
+</TDTRParameter>
+</Settings>
+<ChannelID>0</ChannelID>
+</TPCRTest>
+</TTube>
+<TTube>
+<TubeName>Tube 13</TubeName>
+<ID>12</ID>
+<TubeIndex>13</TubeIndex>
+<TubeColor>$000000FF</TubeColor>
+<GUID>IDXDTPV4SF4ELCJNMRGZJVA4WSMCXBD1DG04LYCTFK4DVCJHJYASDH</GUID>
+<TPCRTest>
+<DisplayName>Atopobium_vaginae</DisplayName>
+<ID>0</ID>
+<Settings>
+<TDTRParameter Name="Ni">
+<Name>Ni</Name>
+<Value>45</Value>
+</TDTRParameter>
+<TDTRParameter Name="Ei">
+<Name>Ei</Name>
+<Value>3.4</Value>
+</TDTRParameter>
+<TDTRParameter Name="MinRes">
+<Name>MinRes</Name>
+<Value>0</Value>
+</TDTRParameter>
+<TDTRParameter Name="Rel">
+<Name>Rel</Name>
+<Value>True</Value>
+</TDTRParameter>
+<TDTRParameter Name="Abs">
+<Name>Abs</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="Qual">
+<Name>Qual</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="OrgType">
+<Name>OrgType</Name>
+<Value>OUnaero</Value>
+<DictName>OrgTypes</DictName>
+</TDTRParameter>
+</Settings>
+<ChannelID>0</ChannelID>
+</TPCRTest>
+</TTube>
+<TTube>
+<TubeName>Tube 14</TubeName>
+<ID>13</ID>
+<TubeIndex>14</TubeIndex>
+<TubeColor>$00FF00FF</TubeColor>
+<GUID>IDIXIGIXWDLSS4MMFFLR11JAAGQNJTYRAVO5CGABN1C1IAQ1KBR3NJ</GUID>
+<TPCRTest>
+<DisplayName>Mycoplasma_hominis</DisplayName>
+<ID>0</ID>
+<Settings>
+<TDTRParameter Name="Ni">
+<Name>Ni</Name>
+<Value>45</Value>
+</TDTRParameter>
+<TDTRParameter Name="Ei">
+<Name>Ei</Name>
+<Value>3.4</Value>
+</TDTRParameter>
+<TDTRParameter Name="MinRes">
+<Name>MinRes</Name>
+<Value>0</Value>
+</TDTRParameter>
+<TDTRParameter Name="Rel">
+<Name>Rel</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="Abs">
+<Name>Abs</Name>
+<Value>True</Value>
+</TDTRParameter>
+<TDTRParameter Name="Qual">
+<Name>Qual</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="OrgType">
+<Name>OrgType</Name>
+<Value>Mico</Value>
+<DictName>OrgTypes</DictName>
+</TDTRParameter>
+</Settings>
+<ChannelID>0</ChannelID>
+</TPCRTest>
+<TPCRTest>
+<DisplayName>Mycoplasma_genitalium</DisplayName>
+<ID>1</ID>
+<Settings>
+<TDTRParameter Name="Ni">
+<Name>Ni</Name>
+<Value>45</Value>
+</TDTRParameter>
+<TDTRParameter Name="Ei">
+<Name>Ei</Name>
+<Value>3.4</Value>
+</TDTRParameter>
+<TDTRParameter Name="MinRes">
+<Name>MinRes</Name>
+<Value>0</Value>
+</TDTRParameter>
+<TDTRParameter Name="Rel">
+<Name>Rel</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="Abs">
+<Name>Abs</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="Qual">
+<Name>Qual</Name>
+<Value>True</Value>
+</TDTRParameter>
+<TDTRParameter Name="OrgType">
+<Name>OrgType</Name>
+<Value>Pat</Value>
+<DictName>OrgTypes</DictName>
+</TDTRParameter>
+</Settings>
+<ChannelID>1</ChannelID>
+</TPCRTest>
+</TTube>
+<TTube>
+<TubeName>Tube 15</TubeName>
+<ID>14</ID>
+<TubeIndex>15</TubeIndex>
+<TubeColor>$00FF00FF</TubeColor>
+<GUID>IDC0IRUTANVDXQL5YGVQUPWLTU5POARDVW4BQNCTNSIO4KUGVU2EQN</GUID>
+<TPCRTest>
+<DisplayName>Ureaplasma_(urealyticum_+_parvum)</DisplayName>
+<ID>0</ID>
+<Settings>
+<TDTRParameter Name="Ni">
+<Name>Ni</Name>
+<Value>45</Value>
+</TDTRParameter>
+<TDTRParameter Name="Ei">
+<Name>Ei</Name>
+<Value>3.4</Value>
+</TDTRParameter>
+<TDTRParameter Name="MinRes">
+<Name>MinRes</Name>
+<Value>0</Value>
+</TDTRParameter>
+<TDTRParameter Name="Rel">
+<Name>Rel</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="Abs">
+<Name>Abs</Name>
+<Value>True</Value>
+</TDTRParameter>
+<TDTRParameter Name="Qual">
+<Name>Qual</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="OrgType">
+<Name>OrgType</Name>
+<Value>Mico</Value>
+<DictName>OrgTypes</DictName>
+</TDTRParameter>
+</Settings>
+<ChannelID>0</ChannelID>
+</TPCRTest>
+</TTube>
+<TTube>
+<TubeName>Tube 16</TubeName>
+<ID>15</ID>
+<TubeIndex>16</TubeIndex>
+<TubeColor>$00FF0000</TubeColor>
+<GUID>IDWJU0LGC0SZUVQIFPPZRMMMHDF1EOBU43U2LUGJ2TJ3LK2PI0MPI</GUID>
+<TPCRTest>
+<DisplayName>Candida_spp.</DisplayName>
+<ID>0</ID>
+<Settings>
+<TDTRParameter Name="Ni">
+<Name>Ni</Name>
+<Value>45</Value>
+</TDTRParameter>
+<TDTRParameter Name="Ei">
+<Name>Ei</Name>
+<Value>3.4</Value>
+</TDTRParameter>
+<TDTRParameter Name="MinRes">
+<Name>MinRes</Name>
+<Value>3</Value>
+</TDTRParameter>
+<TDTRParameter Name="Rel">
+<Name>Rel</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="Abs">
+<Name>Abs</Name>
+<Value>True</Value>
+</TDTRParameter>
+<TDTRParameter Name="Qual">
+<Name>Qual</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="OrgType">
+<Name>OrgType</Name>
+<Value>Fung</Value>
+<DictName>OrgTypes</DictName>
+</TDTRParameter>
+</Settings>
+<ChannelID>0</ChannelID>
+</TPCRTest>
+<TPCRTest>
+<DisplayName>КВМ</DisplayName>
+<ProgName>MTC</ProgName>
+<ID>1</ID>
+<Settings>
+<TDTRParameter Name="Ni">
+<Name>Ni</Name>
+<Value>45</Value>
+</TDTRParameter>
+<TDTRParameter Name="Ei">
+<Name>Ei</Name>
+<Value>3.4</Value>
+</TDTRParameter>
+<TDTRParameter Name="MinRes">
+<Name>MinRes</Name>
+<Value>3</Value>
+</TDTRParameter>
+<TDTRParameter Name="Rel">
+<Name>Rel</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="Abs">
+<Name>Abs</Name>
+<Value>True</Value>
+</TDTRParameter>
+<TDTRParameter Name="Qual">
+<Name>Qual</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="OrgType">
+<Name>OrgType</Name>
+<Value>Default</Value>
+<DictName>OrgTypes</DictName>
+</TDTRParameter>
+</Settings>
+<ChannelID>1</ChannelID>
+</TPCRTest>
+<TPCRTest>
+<DisplayName>Маркер</DisplayName>
+<ProgName>Marker</ProgName>
+<ID>2</ID>
+<Settings>
+<TDTRParameter Name="Ni">
+<Name>Ni</Name>
+<Value>45</Value>
+</TDTRParameter>
+<TDTRParameter Name="Ei">
+<Name>Ei</Name>
+<Value>3.4</Value>
+</TDTRParameter>
+<TDTRParameter Name="MinRes">
+<Name>MinRes</Name>
+<Value>0</Value>
+</TDTRParameter>
+<TDTRParameter Name="Rel">
+<Name>Rel</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="Abs">
+<Name>Abs</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="Qual">
+<Name>Qual</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="OrgType">
+<Name>OrgType</Name>
+<DictName>OrgTypes</DictName>
+</TDTRParameter>
+</Settings>
+<ChannelID>2</ChannelID>
+</TPCRTest>
+</TTube>
+<TSettingDictionary Name="OrgTypes">
+<Name>OrgTypes</Name>
+<Source>OrgTypesDict</Source>
+<GUID>a9b64e97719848b78c364b8a694b2131</GUID>
+<TDictItem Name="По умолчанию">
+<Name>По умолчанию</Name>
+<ID>9C571597B65A409DBD966742DA1CDB25</ID>
+<Position>0</Position>
+<ProgName>Default</ProgName>
+<Settings>
+<TDTRParameter Name="rptPos">
+<Name>rptPos</Name>
+<Value>1</Value>
+</TDTRParameter>
+<TDTRParameter Name="CalcSVMO">
+<Name>CalcSVMO</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="QualColor">
+<Name>QualColor</Name>
+<TDTRParameter Name="Color1">
+<Name>Color1</Name>
+<Value>16777215</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color2">
+<Name>Color2</Name>
+<Value>255</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color3">
+<Name>Color3</Name>
+<Value>15790320</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color4">
+<Name>Color4</Name>
+<Value>15790320</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold1">
+<Name>Treshold1</Name>
+</TDTRParameter>
+<TDTRParameter Name="Treshold2">
+<Name>Treshold2</Name>
+</TDTRParameter>
+<TDTRParameter Name="Treshold3">
+<Name>Treshold3</Name>
+</TDTRParameter>
+</TDTRParameter>
+<TDTRParameter Name="RelColor">
+<Name>RelColor</Name>
+<TDTRParameter Name="Color1">
+<Name>Color1</Name>
+<Value>16777215</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color2">
+<Name>Color2</Name>
+<Value>8388608</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color3">
+<Name>Color3</Name>
+<Value>16711680</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color4">
+<Name>Color4</Name>
+<Value>16711680</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold1">
+<Name>Treshold1</Name>
+<Value>-2</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold2">
+<Name>Treshold2</Name>
+<Value>-1</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold3">
+<Name>Treshold3</Name>
+<Value>-0.22</Value>
+</TDTRParameter>
+</TDTRParameter>
+<TDTRParameter Name="AbsColor">
+<Name>AbsColor</Name>
+<TDTRParameter Name="Color1">
+<Name>Color1</Name>
+<Value>16777215</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color2">
+<Name>Color2</Name>
+<Value>255</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color3">
+<Name>Color3</Name>
+<Value>255</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color4">
+<Name>Color4</Name>
+<Value>15790320</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold1">
+<Name>Treshold1</Name>
+<Value>5</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold2">
+<Name>Treshold2</Name>
+<Value>5</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold3">
+<Name>Treshold3</Name>
+</TDTRParameter>
+</TDTRParameter>
+</Settings>
+</TDictItem>
+<TDictItem Name="Нормофлора">
+<Name>Нормофлора</Name>
+<ID>84E70D6C5FB5431FABCEC3C466BE3002</ID>
+<Position>0</Position>
+<ProgName>Norm</ProgName>
+<Settings>
+<TDTRParameter Name="rptPos">
+<Name>rptPos</Name>
+<Value>2</Value>
+</TDTRParameter>
+<TDTRParameter Name="CalcSVMO">
+<Name>CalcSVMO</Name>
+<Value>True</Value>
+</TDTRParameter>
+<TDTRParameter Name="QualColor">
+<Name>QualColor</Name>
+<TDTRParameter Name="Color1">
+<Name>Color1</Name>
+<Value>16777215</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color2">
+<Name>Color2</Name>
+<Value>255</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color3">
+<Name>Color3</Name>
+<Value>15790320</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color4">
+<Name>Color4</Name>
+<Value>15790320</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold1">
+<Name>Treshold1</Name>
+</TDTRParameter>
+<TDTRParameter Name="Treshold2">
+<Name>Treshold2</Name>
+</TDTRParameter>
+<TDTRParameter Name="Treshold3">
+<Name>Treshold3</Name>
+</TDTRParameter>
+</TDTRParameter>
+<TDTRParameter Name="RelColor">
+<Name>RelColor</Name>
+<TDTRParameter Name="Color1">
+<Name>Color1</Name>
+<Value>255</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color2">
+<Name>Color2</Name>
+<Value>65535</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color3">
+<Name>Color3</Name>
+<Value>4259584</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color4">
+<Name>Color4</Name>
+<Value>4259584</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold1">
+<Name>Treshold1</Name>
+<Value>-0.7</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold2">
+<Name>Treshold2</Name>
+<Value>-0.1</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold3">
+<Name>Treshold3</Name>
+<Value>-0.1</Value>
+</TDTRParameter>
+</TDTRParameter>
+<TDTRParameter Name="AbsColor">
+<Name>AbsColor</Name>
+<TDTRParameter Name="Color1">
+<Name>Color1</Name>
+<Value>16777215</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color2">
+<Name>Color2</Name>
+<Value>255</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color3">
+<Name>Color3</Name>
+<Value>255</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color4">
+<Name>Color4</Name>
+<Value>15790320</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold1">
+<Name>Treshold1</Name>
+<Value>5</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold2">
+<Name>Treshold2</Name>
+<Value>5</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold3">
+<Name>Treshold3</Name>
+</TDTRParameter>
+</TDTRParameter>
+</Settings>
+</TDictItem>
+<TDictItem Name="Факультативно-анаэробные микроорганизмы">
+<Name>Факультативно-анаэробные микроорганизмы</Name>
+<ID>CC5B3EE233564404A472B8154D2D57B6</ID>
+<Position>0</Position>
+<ProgName>FUnaero</ProgName>
+<Settings>
+<TDTRParameter Name="rptPos">
+<Name>rptPos</Name>
+<Value>3</Value>
+</TDTRParameter>
+<TDTRParameter Name="CalcSVMO">
+<Name>CalcSVMO</Name>
+<Value>True</Value>
+</TDTRParameter>
+<TDTRParameter Name="QualColor">
+<Name>QualColor</Name>
+<TDTRParameter Name="Color1">
+<Name>Color1</Name>
+<Value>16777215</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color2">
+<Name>Color2</Name>
+<Value>255</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color3">
+<Name>Color3</Name>
+<Value>15790320</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color4">
+<Name>Color4</Name>
+<Value>15790320</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold1">
+<Name>Treshold1</Name>
+</TDTRParameter>
+<TDTRParameter Name="Treshold2">
+<Name>Treshold2</Name>
+</TDTRParameter>
+<TDTRParameter Name="Treshold3">
+<Name>Treshold3</Name>
+</TDTRParameter>
+</TDTRParameter>
+<TDTRParameter Name="RelColor">
+<Name>RelColor</Name>
+<TDTRParameter Name="Color1">
+<Name>Color1</Name>
+<Value>16777215</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color2">
+<Name>Color2</Name>
+<Value>65535</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color3">
+<Name>Color3</Name>
+<Value>255</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color4">
+<Name>Color4</Name>
+<Value>255</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold1">
+<Name>Treshold1</Name>
+<Value>-2</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold2">
+<Name>Treshold2</Name>
+<Value>-1</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold3">
+<Name>Treshold3</Name>
+<Value>-1</Value>
+</TDTRParameter>
+</TDTRParameter>
+<TDTRParameter Name="AbsColor">
+<Name>AbsColor</Name>
+<TDTRParameter Name="Color1">
+<Name>Color1</Name>
+<Value>16777215</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color2">
+<Name>Color2</Name>
+<Value>255</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color3">
+<Name>Color3</Name>
+<Value>255</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color4">
+<Name>Color4</Name>
+<Value>15790320</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold1">
+<Name>Treshold1</Name>
+<Value>5</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold2">
+<Name>Treshold2</Name>
+<Value>5</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold3">
+<Name>Treshold3</Name>
+</TDTRParameter>
+</TDTRParameter>
+</Settings>
+</TDictItem>
+<TDictItem Name="Облигатно-анаэробные микроорганизмы">
+<Name>Облигатно-анаэробные микроорганизмы</Name>
+<ID>1FA26DAA5BB34E3FADDAA91C2C89EFCC</ID>
+<Position>0</Position>
+<ProgName>OUnaero</ProgName>
+<Settings>
+<TDTRParameter Name="rptPos">
+<Name>rptPos</Name>
+<Value>4</Value>
+</TDTRParameter>
+<TDTRParameter Name="CalcSVMO">
+<Name>CalcSVMO</Name>
+<Value>True</Value>
+</TDTRParameter>
+<TDTRParameter Name="QualColor">
+<Name>QualColor</Name>
+<TDTRParameter Name="Color1">
+<Name>Color1</Name>
+<Value>16777215</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color2">
+<Name>Color2</Name>
+<Value>255</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color3">
+<Name>Color3</Name>
+<Value>15790320</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color4">
+<Name>Color4</Name>
+<Value>15790320</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold1">
+<Name>Treshold1</Name>
+</TDTRParameter>
+<TDTRParameter Name="Treshold2">
+<Name>Treshold2</Name>
+</TDTRParameter>
+<TDTRParameter Name="Treshold3">
+<Name>Treshold3</Name>
+</TDTRParameter>
+</TDTRParameter>
+<TDTRParameter Name="RelColor">
+<Name>RelColor</Name>
+<TDTRParameter Name="Color1">
+<Name>Color1</Name>
+<Value>16777215</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color2">
+<Name>Color2</Name>
+<Value>65535</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color3">
+<Name>Color3</Name>
+<Value>255</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color4">
+<Name>Color4</Name>
+<Value>255</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold1">
+<Name>Treshold1</Name>
+<Value>-2</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold2">
+<Name>Treshold2</Name>
+<Value>-1</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold3">
+<Name>Treshold3</Name>
+<Value>-1</Value>
+</TDTRParameter>
+</TDTRParameter>
+<TDTRParameter Name="AbsColor">
+<Name>AbsColor</Name>
+<TDTRParameter Name="Color1">
+<Name>Color1</Name>
+<Value>16777215</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color2">
+<Name>Color2</Name>
+<Value>255</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color3">
+<Name>Color3</Name>
+<Value>255</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color4">
+<Name>Color4</Name>
+<Value>15790320</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold1">
+<Name>Treshold1</Name>
+<Value>5</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold2">
+<Name>Treshold2</Name>
+<Value>5</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold3">
+<Name>Treshold3</Name>
+</TDTRParameter>
+</TDTRParameter>
+</Settings>
+</TDictItem>
+<TDictItem Name="Дрожжеподобные грибы">
+<Name>Дрожжеподобные грибы</Name>
+<ID>972B0AC874144C288AD4C0D0C0071AED</ID>
+<Position>0</Position>
+<ProgName>Fung</ProgName>
+<Settings>
+<TDTRParameter Name="rptPos">
+<Name>rptPos</Name>
+<Value>5</Value>
+</TDTRParameter>
+<TDTRParameter Name="CalcSVMO">
+<Name>CalcSVMO</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="QualColor">
+<Name>QualColor</Name>
+<TDTRParameter Name="Color1">
+<Name>Color1</Name>
+<Value>16777215</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color2">
+<Name>Color2</Name>
+<Value>255</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color3">
+<Name>Color3</Name>
+<Value>15790320</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color4">
+<Name>Color4</Name>
+<Value>15790320</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold1">
+<Name>Treshold1</Name>
+</TDTRParameter>
+<TDTRParameter Name="Treshold2">
+<Name>Treshold2</Name>
+</TDTRParameter>
+<TDTRParameter Name="Treshold3">
+<Name>Treshold3</Name>
+</TDTRParameter>
+</TDTRParameter>
+<TDTRParameter Name="RelColor">
+<Name>RelColor</Name>
+<TDTRParameter Name="Color1">
+<Name>Color1</Name>
+<Value>16777215</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color2">
+<Name>Color2</Name>
+<Value>16711680</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color3">
+<Name>Color3</Name>
+<Value>16711680</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color4">
+<Name>Color4</Name>
+<Value>16711680</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold1">
+<Name>Treshold1</Name>
+<Value>-2</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold2">
+<Name>Treshold2</Name>
+<Value>-1</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold3">
+<Name>Treshold3</Name>
+<Value>-1</Value>
+</TDTRParameter>
+</TDTRParameter>
+<TDTRParameter Name="AbsColor">
+<Name>AbsColor</Name>
+<TDTRParameter Name="Color1">
+<Name>Color1</Name>
+<Value>16777215</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color2">
+<Name>Color2</Name>
+<Value>65535</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color3">
+<Name>Color3</Name>
+<Value>255</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color4">
+<Name>Color4</Name>
+<Value>15790320</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold1">
+<Name>Treshold1</Name>
+<Value>3</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold2">
+<Name>Treshold2</Name>
+<Value>4</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold3">
+<Name>Treshold3</Name>
+</TDTRParameter>
+</TDTRParameter>
+</Settings>
+</TDictItem>
+<TDictItem Name="Микоплазмы">
+<Name>Микоплазмы</Name>
+<ID>4B6F9ECB2DA342A189080E3E3FDDECE3</ID>
+<Position>0</Position>
+<ProgName>Mico</ProgName>
+<Settings>
+<TDTRParameter Name="rptPos">
+<Name>rptPos</Name>
+<Value>6</Value>
+</TDTRParameter>
+<TDTRParameter Name="CalcSVMO">
+<Name>CalcSVMO</Name>
+<Value>True</Value>
+</TDTRParameter>
+<TDTRParameter Name="QualColor">
+<Name>QualColor</Name>
+<TDTRParameter Name="Color1">
+<Name>Color1</Name>
+<Value>16777215</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color2">
+<Name>Color2</Name>
+<Value>255</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color3">
+<Name>Color3</Name>
+<Value>15790320</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color4">
+<Name>Color4</Name>
+<Value>15790320</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold1">
+<Name>Treshold1</Name>
+</TDTRParameter>
+<TDTRParameter Name="Treshold2">
+<Name>Treshold2</Name>
+</TDTRParameter>
+<TDTRParameter Name="Treshold3">
+<Name>Treshold3</Name>
+</TDTRParameter>
+</TDTRParameter>
+<TDTRParameter Name="RelColor">
+<Name>RelColor</Name>
+<TDTRParameter Name="Color1">
+<Name>Color1</Name>
+<Value>16777215</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color2">
+<Name>Color2</Name>
+<Value>16711680</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color3">
+<Name>Color3</Name>
+<Value>16711680</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color4">
+<Name>Color4</Name>
+<Value>16711680</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold1">
+<Name>Treshold1</Name>
+<Value>-2</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold2">
+<Name>Treshold2</Name>
+<Value>-1</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold3">
+<Name>Treshold3</Name>
+<Value>-1</Value>
+</TDTRParameter>
+</TDTRParameter>
+<TDTRParameter Name="AbsColor">
+<Name>AbsColor</Name>
+<TDTRParameter Name="Color1">
+<Name>Color1</Name>
+<Value>16777215</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color2">
+<Name>Color2</Name>
+<Value>65535</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color3">
+<Name>Color3</Name>
+<Value>255</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color4">
+<Name>Color4</Name>
+<Value>15790320</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold1">
+<Name>Treshold1</Name>
+<Value>0</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold2">
+<Name>Treshold2</Name>
+<Value>4</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold3">
+<Name>Treshold3</Name>
+</TDTRParameter>
+</TDTRParameter>
+</Settings>
+</TDictItem>
+<TDictItem Name="Патогенные микроорганизмы">
+<Name>Патогенные микроорганизмы</Name>
+<ID>E188E618438D42838633021B64E39BC0</ID>
+<Position>0</Position>
+<ProgName>Pat</ProgName>
+<Settings>
+<TDTRParameter Name="rptPos">
+<Name>rptPos</Name>
+<Value>7</Value>
+</TDTRParameter>
+<TDTRParameter Name="CalcSVMO">
+<Name>CalcSVMO</Name>
+<Value>False</Value>
+</TDTRParameter>
+<TDTRParameter Name="QualColor">
+<Name>QualColor</Name>
+<TDTRParameter Name="Color1">
+<Name>Color1</Name>
+<Value>16777215</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color2">
+<Name>Color2</Name>
+<Value>255</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color3">
+<Name>Color3</Name>
+<Value>15790320</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color4">
+<Name>Color4</Name>
+<Value>15790320</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold1">
+<Name>Treshold1</Name>
+</TDTRParameter>
+<TDTRParameter Name="Treshold2">
+<Name>Treshold2</Name>
+</TDTRParameter>
+<TDTRParameter Name="Treshold3">
+<Name>Treshold3</Name>
+</TDTRParameter>
+</TDTRParameter>
+<TDTRParameter Name="RelColor">
+<Name>RelColor</Name>
+<TDTRParameter Name="Color1">
+<Name>Color1</Name>
+<Value>16777215</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color2">
+<Name>Color2</Name>
+<Value>255</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color3">
+<Name>Color3</Name>
+<Value>255</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color4">
+<Name>Color4</Name>
+<Value>255</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold1">
+<Name>Treshold1</Name>
+<Value>-4</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold2">
+<Name>Treshold2</Name>
+<Value>-4</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold3">
+<Name>Treshold3</Name>
+<Value>-4</Value>
+</TDTRParameter>
+</TDTRParameter>
+<TDTRParameter Name="AbsColor">
+<Name>AbsColor</Name>
+<TDTRParameter Name="Color1">
+<Name>Color1</Name>
+<Value>16777215</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color2">
+<Name>Color2</Name>
+<Value>255</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color3">
+<Name>Color3</Name>
+<Value>255</Value>
+</TDTRParameter>
+<TDTRParameter Name="Color4">
+<Name>Color4</Name>
+<Value>15790320</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold1">
+<Name>Treshold1</Name>
+<Value>0</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold2">
+<Name>Treshold2</Name>
+<Value>0</Value>
+</TDTRParameter>
+<TDTRParameter Name="Treshold3">
+<Name>Treshold3</Name>
+</TDTRParameter>
+</TDTRParameter>
+</Settings>
+</TDictItem>
+</TSettingDictionary>
 <TChannel>
 <ChannelID>0</ChannelID>
 <Number>0</Number>
@@ -136,7 +1760,7 @@ XSAV HBV_HCV
 <Number>2</Number>
 <Ffor>3</Ffor>
 <ChannelName>Rox</ChannelName>
-<Active>0</Active>
+<Active>1</Active>
 <Color>65535</Color>
 </TChannel>
 <TChannel>

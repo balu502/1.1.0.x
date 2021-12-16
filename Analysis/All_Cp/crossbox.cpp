@@ -435,11 +435,13 @@ QString CrossBox::CrossTable_ToDigits()
         str += "\t" + item->text();
     }
     str += "\r\n";
-    str += "Samples: \r\n";
+    str += "Samples: \r\n";    
 
     for(i=0; i<CrossTable->rowCount(); i++)
     {
-        sample_name = CrossTable->verticalHeaderItem(i)->text();
+        sample_name = CrossTable->verticalHeaderItem(i)->text().trimmed();
+        sample_name.replace(QRegExp("\\t"),"_");
+
         for(j=0; j<CrossTable->columnCount(); j++)
         {
             item = CrossTable->item(i,j);
