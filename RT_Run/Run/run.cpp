@@ -3147,6 +3147,8 @@ void Run::slotReadyRead()
                     qDebug() << answer;
                     runtime_Program->scheme_RTProgram->draw_Program(prot);
                     //update_ProtocolInfoToWeb("Stop RUN");     // to Web server
+
+                    if(flag_BackupExposure) BackUp_Exposure();
                     break;
 
         case 4:             //PAUSE
@@ -3161,7 +3163,7 @@ void Run::slotReadyRead()
                     //qDebug() << map_Measure;
                     if(slot_GetMeasure(fn))
                     {
-                        if(flag_WebProtocol) slot_SendMeasureToWeb(fn);
+                        if(flag_WebProtocol) slot_SendMeasureToWeb(fn);                        
                     }
                     emit sRefreshFluor();                    
                     break;
@@ -3354,6 +3356,14 @@ void Run::slotReadyRead()
             {                
                 emit finished_WaitProcess();
                 Display_ProgressBar(0,"");
+
+                //... backup exposure ...
+                if(!flag_LastRun && flag_BackupExposure && FN == (prot->count_MC + prot->count_PCR))
+                {
+                    BackUp_Exposure();
+                }
+                //...
+
                 if(flag_LastRun)
                 {
                     ptest = (rt_Test*)prot->tests.at(0);
@@ -3369,7 +3379,7 @@ void Run::slotReadyRead()
                 {
                     //qDebug() << "SaveOnLine: " << FN << OnLine_FileName;
                     Create_MeasureProtocol(OnLine_FileName, true);
-                }
+                }                
             }
         }
         //... reload Info_Device after SavePar ...
@@ -3581,7 +3591,7 @@ void Run::slotSendToServer(QString request)
     QBasicTimer *timer_req;
     int interval;
 
-    //if(request == CRYPTO_REQUEST) qDebug() << "List_Requests: " << List_Requests;
+    //if(request == SAVEPAR_REQUEST) qDebug() << "List_Requests: " << List_Requests;
 
 
     if(List_Requests.contains(RUN_REQUEST)) return; // when RUN_REQUEST is active, ALL other are disabled
@@ -3653,9 +3663,9 @@ void Run::slotSendToServer(QString request)
     out.device()->seek(0);
     out << quint32(arrBlock.size() - sizeof(quint32));
 
-    /*if(request == EXECCMD_REQUEST)
+    /*if(request == SAVEPAR_REQUEST)
     {
-        qDebug() << request << map_CMD;
+        qDebug() << request << map_SavePar;
     }*/
     /*if(request == DTMASTERLOG_REQUEST)
     {
@@ -4038,7 +4048,11 @@ void Run::slot_ProtocolIsEqual()
         }
     }
 
-    if(state) slot_CheckExposition_Run();
+    if(state)
+    {
+        Write_BackupExposure("");
+        slot_CheckExposition_Run();
+    }
 }
 //-----------------------------------------------------------------------------
 //--- Create_SignatureForProtocol(rt_Protocol *P, QVector<QString> *vec)
@@ -4164,8 +4178,6 @@ void Run::slot_CheckExposition_Run()
         }
     }
 
-
-
     if(IsExpositionEqual())
     {
        //qDebug() << "start slot_ClosePrerunRun()";;
@@ -4268,9 +4280,11 @@ bool Run::WriteNewExpositionToDevice()
     quint32 val;
     QString data = "", text;
     QVector<quint16> NewExposition;
+    QVector<quint16> OldExposition;
     int act_ch = prot->active_Channels;
 
     NewExposition = Expozition.mid(0);
+    OldExposition = Expozition.mid(0);
 
     for(i=0; i<COUNT_CH; i++)
     {
@@ -4305,13 +4319,68 @@ bool Run::WriteNewExpositionToDevice()
             data += text;
         }
     }
-    //qDebug() << "exp_device, new_Exp: " << Expozition << NewExposition;
+    //qDebug() << "exp_device, new_Exp: " << Expozition << NewExposition << OldExposition;
     //qDebug() << "write new expo: " << data;
     slot_SavePar(1, data);
 
+    if(flag_BackupExposure)
+    {
+        text = "";
+        foreach(value, OldExposition)
+        {
+            val = qRound((double)(value/Coef_Expo));  // COEF_EXPO
+            text += QString(" %1").arg(val);
+        }
+        //qDebug() << "backup: " << text;
+        Write_BackupExposure(text);
+    }
+
     return(true);
 }
+//-----------------------------------------------------------------------------
+//--- Write_BackupExposure(QString text)
+//-----------------------------------------------------------------------------
+void Run::Write_BackupExposure(QString text)
+{
+    QString name_Dev = map_InfoDevice.value(INFODEV_serName,"").trimmed();
+    QString dir_path = qApp->applicationDirPath();
+    //qDebug() << "Write_BackupExposure: " << name_Dev << dir_path << text;
+    QSettings *DeviceSettings = new QSettings(dir_path + "/device/" + name_Dev + "/preference.ini", QSettings::IniFormat);
+    DeviceSettings->beginGroup("Exposure");
+    DeviceSettings->setValue("backup",text.trimmed());
+    DeviceSettings->endGroup();
+    delete DeviceSettings;
+}
+//-----------------------------------------------------------------------------
+//--- Read_BackupExposure()
+//-----------------------------------------------------------------------------
+QString Run::Read_BackupExposure()
+{
+    QString text = "";
 
+    QString name_Dev = map_InfoDevice.value(INFODEV_serName,"").trimmed();
+    QString dir_path = qApp->applicationDirPath();
+    QSettings *DeviceSettings = new QSettings(dir_path + "/device/" + name_Dev + "/preference.ini", QSettings::IniFormat);
+    DeviceSettings->beginGroup("Exposure");
+    text = DeviceSettings->value("backup","").toString();
+    DeviceSettings->endGroup();
+    delete DeviceSettings;
+
+    return(text);
+}
+//-----------------------------------------------------------------------------
+//--- BackUp_Exposure()
+//-----------------------------------------------------------------------------
+void Run::BackUp_Exposure()
+{
+    QString text = Read_BackupExposure().trimmed();
+    //qDebug() << "Read_BackupExposure: Save " << text;
+    if(!text.isEmpty())
+    {
+        slot_SavePar(1, text);
+        Write_BackupExposure("");
+    }
+}
 //-----------------------------------------------------------------------------
 //--- IsExpositionEqual()
 //-----------------------------------------------------------------------------
@@ -7595,6 +7664,8 @@ bool Run::create_User(QAxObject *user)
     flag_SaveOnLine = false;
     Try_NewExpozition = 0;
     Try_ReadInfoDevice = 0;
+    flag_BackupExposure = false;
+
     if(ax_user)
     {
         flag_DeviceSettings = ax_user->dynamicCall("getPriv(QString)", "CHANGE_DEVICE_PREF").toBool();
@@ -7609,6 +7680,7 @@ bool Run::create_User(QAxObject *user)
 
         flag_SelectCatalogForResult = ax_user->dynamicCall("getPriv(QString)", "ENABLE_SELECT_FN").toBool();
         flag_SaveOnLine = ax_user->dynamicCall("getPriv(QString)", "COPY_ONLINE").toBool();
+        flag_BackupExposure = ax_user->dynamicCall("getPriv(QString)", "BACKUP_EXPOSURE").toBool();
 
         temp = ax_user->dynamicCall("getAttr(QString)","dir:PR_HOME").toString().trimmed();
         if(!temp.isEmpty() && QDir(temp).exists()) user_Dir.setPath(temp);

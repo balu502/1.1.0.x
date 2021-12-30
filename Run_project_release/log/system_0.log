@@ -36,3 +36,41 @@
 02-12-21 11:05:14  WinID=3056e Device name A5H607 Port=9012
 02-12-21 11:05:39  WinID=3056e Get event on finish program from server of USB.
 02-12-21 11:05:39  WinID=3056e Stop Dt-server.
+16-12-21 16:44:43  WinID=403bc Start Dt-server. Ver. 3.00.00 Sep  3 2021 17:27:25
+16-12-21 16:44:43  WinID=403bc Device name A5H607 Port=9012
+16-12-21 17:23:31  WinID=403bc Get event on finish program from server of USB.
+16-12-21 17:23:31  WinID=403bc Stop Dt-server.
+17-12-21 16:33:04  WinID=605b8 Start Dt-server. Ver. 3.00.00 Dec 17 2021 16:08:00
+17-12-21 16:33:04  WinID=605b8 Device name A5H607 Port=9012
+17-12-21 16:38:54  WinID=605b8 Get event on finish program from server of USB.
+17-12-21 16:38:54  WinID=605b8 Stop Dt-server.
+17-12-21 16:40:34  WinID=170350 Start Dt-server. Ver. 3.00.00 Dec 17 2021 16:08:00
+17-12-21 16:40:34  WinID=170350 Device name A5H607 Port=9012
+17-12-21 16:42:51  WinID=170350 Get event on finish program from server of USB.
+17-12-21 16:42:51  WinID=170350 Stop Dt-server.
+17-12-21 16:51:04  WinID=15051a Start Dt-server. Ver. 3.00.00 Dec 17 2021 16:08:00
+17-12-21 16:51:04  WinID=15051a Device name A5H607 Port=9012
+17-12-21 17:06:32  WinID=15051a Get event on finish program from server of USB.
+17-12-21 17:06:32  WinID=15051a Stop Dt-server.
+17-12-21 17:12:28  WinID=19061c Start Dt-server. Ver. 3.00.00 Dec 17 2021 16:08:00
+17-12-21 17:12:28  WinID=19061c Device name A5H607 Port=9012
+17-12-21 17:13:02  WinID=19061c Get event on finish program from user.
+17-12-21 17:13:02  WinID=19061c Stop Dt-server.
+17-12-21 17:14:36  WinID=260516 Start Dt-server. Ver. 3.00.00 Dec 17 2021 16:08:00
+17-12-21 17:14:36  WinID=260516 Device name A5H607 Port=9012
+17-12-21 17:14:48  WinID=260516 Get event on finish program from user.
+17-12-21 17:14:48  WinID=260516 Stop Dt-server.
+20-12-21 10:53:57  WinID=50456 Start Dt-server. Ver. 3.00.00 Dec 17 2021 16:08:00
+20-12-21 10:53:57  WinID=50456 Device name A5H607 Port=9012
+30-12-21 09:14:11  WinID=4052e Start Dt-server. Ver. 3.00.00 Dec 17 2021 16:08:00
+30-12-21 09:14:11  WinID=4052e Device name A5H607 Port=9012
+30-12-21 09:21:06  WinID=4052e Get event on finish program from server of USB.
+30-12-21 09:21:06  WinID=4052e Stop Dt-server.
+30-12-21 09:40:46  WinID=804f0 Start Dt-server. Ver. 3.00.00 Dec 17 2021 16:08:00
+30-12-21 09:40:46  WinID=804f0 Device name A5H607 Port=9012
+30-12-21 09:46:14  WinID=804f0 Get event on finish program from server of USB.
+30-12-21 09:46:14  WinID=804f0 Stop Dt-server.
+30-12-21 09:46:25  WinID=7304ca Start Dt-server. Ver. 3.00.00 Dec 17 2021 16:08:00
+30-12-21 09:46:25  WinID=7304ca Device name A5H607 Port=9012
+30-12-21 10:47:14  WinID=7304ca Get event on finish program from server of USB.
+30-12-21 10:47:14  WinID=7304ca Stop Dt-server.

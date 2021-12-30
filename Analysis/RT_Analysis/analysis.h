@@ -407,6 +407,7 @@ private:
     void RemoveChannels_InSourceset(QDomElement*, QVector<int>*);
 
     void Save_ColorComments(rt_Protocol*, QString, bool, bool);
+    void Width_FileNameLabel(QLabel*, QString, int);
 
     static void Wrapper_To_Display_ProgressBar(void* pt2Object, int percent, QString text);     // for my DLL
     static void __stdcall Wrapper_To_ReportStatus(int, int, void* pt2Object, bool);             // for DTReport
@@ -418,6 +419,7 @@ public:
     QSplitter *main_spl;            // splitter between Chart and Grid widget
     QProgressBar *main_progress;    // ProgressBar -> StatusBar
     QLabel *PrBar_status;           // Label -> ProgressBar
+    QString FileName_Label;
     QLabel *FileName_Protocol;
     QLabel *DirLabel_Protocol;
     bool original_FileName;

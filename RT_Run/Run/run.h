@@ -269,6 +269,7 @@ private:
     bool flag_EnableDev;
     bool flag_ContractDev;
     bool flag_LimitedDev;
+    bool flag_BackupExposure;
 
     QQueue<int> Queue_State;
     QMap<int,QString> Queue_ReadAllSectors;
@@ -426,6 +427,11 @@ private:
     bool IsExpositionEqual();                   // compare exposition in Protocol and Device
     bool WriteNewExpositionToDevice();          // write new exposition to device from protocol
     void Read_AllSectors();
+
+    void Write_BackupExposure(QString);         // write old exposure to ini
+    QString Read_BackupExposure();              // read old exposure from ini
+    void BackUp_Exposure();                     // backup old exposure in device
+
 
     bool Validate_Test(rt_Test*);   // validate test
 

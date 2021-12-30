@@ -56,7 +56,8 @@ ListDev::ListDev(QWidget *parent, QString ip, int port): QDialog(parent)
 
     connect_a5d411 = new QPushButton("...", this);
     connect_a5d411->setVisible(false);
-    connect_a5d411->setDisabled(true);
+    if(!Device_Debug.isEmpty() && !Port_Debug.isEmpty() && !IP_Debug.isEmpty()) connect_a5d411->setVisible(true);
+    //connect_a5d411->setDisabled(true);
     connect_dev = new QPushButton(tr("connect"), this);
     disconnect_dev = new QPushButton(tr("disconnect"), this);
     cancel_dev = new QPushButton(tr("Cancel"), this);
@@ -143,7 +144,16 @@ void ListDev::readCommonSettings()
             qApp->installTranslator(&translator);
         }
 
+        //... Server_Debug ...
+        //qDebug() << "Server_Debug - 0";
+        Device_Debug = CommonSettings->value("Device_Debug","").toString().trimmed();
+        Port_Debug = CommonSettings->value("Port_Debug","").toString().trimmed();
+        IP_Debug = CommonSettings->value("IP_Debug","").toString().trimmed();
+        //qDebug() << "Server_Debug:" <<  Device_Debug << Port_Debug;
+
     CommonSettings->endGroup();
+
+
     delete CommonSettings;
 }
 
@@ -263,9 +273,9 @@ void ListDev::slotConnectDev_a5d411()
     QString text, name, port, ip;
 
 
-        name = "A5D411";
-        port = "9002";
-        ip = "172.18.0.10";
+        name = Device_Debug;    //"A5H607";
+        port = Port_Debug;      //"9012";
+        ip = IP_Debug;          //ip = "127.0.0.1";
 
         Client_Net.clear();
         Client_Net.append("connect");
@@ -274,6 +284,7 @@ void ListDev::slotConnectDev_a5d411()
 
         connect_event.port = port.toInt();
         connect_event.ip = ip;
+        slotSendToServer();
 
         if(p_main)
         {
@@ -291,9 +302,7 @@ void ListDev::slotConnectDev_a5d411()
                 widget->setWindowTitle(text);
                 break;
             }
-        }*/
-
-        slotSendToServer();
+        }*/        
 
         //qDebug() << "connect...(send)" << Client_Net;
 

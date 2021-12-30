@@ -130,226 +130,234 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1374"/>
+        <location filename="../main_rt.cpp" line="1388"/>
         <source>Setup</source>
         <translation>瑁瓦额</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1383"/>
+        <location filename="../main_rt.cpp" line="1397"/>
         <source>Run</source>
         <translation>啊洒</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1392"/>
+        <location filename="../main_rt.cpp" line="1406"/>
         <source>Analysis</source>
         <translation>咱咱咱</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1611"/>
+        <location filename="../main_rt.cpp" line="1625"/>
         <source>DTmaster</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1704"/>
+        <location filename="../main_rt.cpp" line="1718"/>
         <source>&amp;File</source>
         <translation>&amp;拶席</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1705"/>
+        <location filename="../main_rt.cpp" line="1719"/>
         <source>setup_Page</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1706"/>
+        <location filename="../main_rt.cpp" line="1720"/>
         <source>run_Page</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1707"/>
+        <location filename="../main_rt.cpp" line="1721"/>
         <source>analysis_Page</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1708"/>
+        <location filename="../main_rt.cpp" line="1722"/>
         <source>edit Programm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1709"/>
+        <location filename="../main_rt.cpp" line="1723"/>
         <source>view VideoArchive</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1710"/>
+        <location filename="../main_rt.cpp" line="1724"/>
         <source>Exit</source>
         <translation>气蛙</translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1729"/>
+        <location filename="../main_rt.cpp" line="1743"/>
         <source>&amp;Test</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1734"/>
+        <location filename="../main_rt.cpp" line="1748"/>
         <source>&amp;Setup</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1736"/>
+        <location filename="../main_rt.cpp" line="1750"/>
         <source>&amp;Run</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1738"/>
+        <location filename="../main_rt.cpp" line="1752"/>
         <source>&amp;Analysis</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1741"/>
+        <location filename="../main_rt.cpp" line="1755"/>
         <source>&amp;Tools</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1744"/>
+        <location filename="../main_rt.cpp" line="1758"/>
         <source>&amp;Network</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1746"/>
+        <location filename="../main_rt.cpp" line="1760"/>
         <source>&amp;Preference</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1748"/>
+        <location filename="../main_rt.cpp" line="1762"/>
         <source>&amp;Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1751"/>
+        <location filename="../main_rt.cpp" line="1765"/>
         <source>General</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1754"/>
+        <location filename="../main_rt.cpp" line="1768"/>
         <source>User authorization</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1757"/>
+        <location filename="../main_rt.cpp" line="1771"/>
         <source>Replace users authorization</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1759"/>
+        <location filename="../main_rt.cpp" line="1773"/>
         <source>Preference Export</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1767"/>
+        <location filename="../main_rt.cpp" line="1781"/>
         <source>About</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1769"/>
+        <location filename="../main_rt.cpp" line="1783"/>
         <source>About moduls</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1774"/>
+        <location filename="../main_rt.cpp" line="1788"/>
         <source>authorization</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1785"/>
-        <location filename="../main_rt.cpp" line="1847"/>
+        <location filename="../main_rt.cpp" line="1799"/>
+        <location filename="../main_rt.cpp" line="1861"/>
         <source>Connect to server...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1787"/>
+        <location filename="../main_rt.cpp" line="1801"/>
         <source>QTScript...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1790"/>
+        <location filename="../main_rt.cpp" line="1804"/>
         <source>List of orders Web_Protocols</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1793"/>
+        <location filename="../main_rt.cpp" line="1807"/>
         <source>Protocol to Web Server</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1796"/>
+        <location filename="../main_rt.cpp" line="1810"/>
         <source>List of Web_Protocols</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1799"/>
+        <location filename="../main_rt.cpp" line="1813"/>
         <source>Protocol_Order to Web Server</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1802"/>
+        <location filename="../main_rt.cpp" line="1816"/>
         <source>Http Process</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1814"/>
+        <location filename="../main_rt.cpp" line="1828"/>
         <source>Scenario...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="1840"/>
+        <location filename="../main_rt.cpp" line="1854"/>
         <source>Disconnect from server...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="2108"/>
-        <location filename="../main_rt.cpp" line="2188"/>
+        <location filename="../main_rt.cpp" line="2122"/>
+        <location filename="../main_rt.cpp" line="2202"/>
         <source>Open Protocol</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="2110"/>
-        <location filename="../main_rt.cpp" line="2190"/>
+        <location filename="../main_rt.cpp" line="2124"/>
+        <location filename="../main_rt.cpp" line="2204"/>
         <source>Protocols File (*.rt *.xml)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="3045"/>
+        <location filename="../main_rt.cpp" line="3078"/>
         <source>Protocol was successfully saved!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="3050"/>
+        <location filename="../main_rt.cpp" line="3083"/>
         <source>Attention! Problems detected...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="3201"/>
+        <location filename="../main_rt.cpp" line="3234"/>
         <source>Disconnect...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="3212"/>
+        <location filename="../main_rt.cpp" line="3245"/>
         <source>Connect...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="3315"/>
+        <location filename="../main_rt.cpp" line="3348"/>
         <source>Attention! You cannot continue working as an unregistered user!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="3316"/>
+        <location filename="../main_rt.cpp" line="3349"/>
         <source>But You can continue to work as a Guest when You log in again...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="3402"/>
+        <location filename="../main_rt.cpp" line="3435"/>
         <source>Attention! For more stable operation of the application, You need to set the compatibility mode with Windows 7</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <location filename="../main.cpp" line="240"/>
+        <source>Backup Exposure</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -425,12 +433,12 @@
 <context>
     <name>Web_Interface</name>
     <message>
-        <location filename="../main_rt.cpp" line="2831"/>
+        <location filename="../main_rt.cpp" line="2864"/>
         <source>Everything went wrong!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main_rt.cpp" line="2845"/>
+        <location filename="../main_rt.cpp" line="2878"/>
         <source>Operation completed successfully!</source>
         <translation type="unfinished"></translation>
     </message>

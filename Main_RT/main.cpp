@@ -237,6 +237,9 @@ int main(int argc, char *argv[])
             */
             // ...
             //qDebug() << "add new properties:" ;
+            text = QObject::tr("Backup Exposure");
+            axRita.dynamicCall("trPrivilege(QString,QString)", "BACKUP_EXPOSURE", text);
+            axRita.dynamicCall("registerPrivilege(QString,bool,int,QString)", "BACKUP_EXPOSURE", false, 3, "");
 
             if(splash->isVisible()) splash->hide();//splash->close();
             splash->progress->setVisible(false);

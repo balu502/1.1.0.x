@@ -106,6 +106,10 @@ public:
     QTimer dev_reconnected;
     QString name_reconnect;
 
+    QString Device_Debug;
+    QString Port_Debug;
+    QString IP_Debug;
+
 private:
     //... NetWork ...
     QTcpSocket  *m_pTcpSocket;          // socket for connection with Server_USB

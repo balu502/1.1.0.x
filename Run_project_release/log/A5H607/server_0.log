@@ -74,3 +74,198 @@
 02-12-21 11:05:17 Collection of information about the device is begin.
 02-12-21 11:05:18 Information collection about the device is complete.
 02-12-21 11:05:18 Begin work with device.
+16-12-21 16:44:43 Start Dt-server. Version 3.00.00 Sep  3 2021 17:27:25
+16-12-21 16:44:45 Initialisation of device is begin.
+16-12-21 16:44:45 Assign serial number from parameters string A5H607
+16-12-21 16:44:45 Found devices with serial number A5H607
+16-12-21 16:44:45 Connect to devices A5H607
+16-12-21 16:44:45 Device observe as DT96
+16-12-21 16:44:48 Initialisation of device was finished successfully.
+16-12-21 16:44:48 Collection of information about the device is begin.
+16-12-21 16:45:06 Information collection error.
+16-12-21 16:45:06 Found device error!
+16-12-21 16:45:06 Open TFT CAN channel error. Error code 4
+16-12-21 16:45:06 Count of errors: Opt=0 Amp=0 Mot=0 Tft=2 Usb=0 Network=0
+16-12-21 16:45:20 Read sector request.
+16-12-21 16:45:20 Read sector completed.
+16-12-21 16:45:20 Setup reagent contract.
+16-12-21 16:45:20 Reagent contract setup with parameter CRYC
+16-12-21 17:12:09 Save device parameters request.
+16-12-21 17:12:27 Can't save parameters.
+16-12-21 17:12:27 Found device error!
+16-12-21 17:12:27 Open TFT CAN channel error. Error code 4
+16-12-21 17:12:27 Count of errors: Opt=2 Amp=0 Mot=0 Tft=185 Usb=0 Network=0
+17-12-21 16:33:04 Start Dt-server. Version 3.00.00 Dec 17 2021 16:08:00
+17-12-21 16:33:06 Initialisation of device is begin.
+17-12-21 16:33:06 Assign serial number from parameters string A5H607
+17-12-21 16:33:06 Found devices with serial number A5H607
+17-12-21 16:33:06 Connect to devices A5H607
+17-12-21 16:33:06 Device observe as DT96
+17-12-21 16:33:06 Initialisation of device was finished successfully.
+17-12-21 16:33:06 Collection of information about the device is begin.
+17-12-21 16:33:07 Information collection about the device is complete.
+17-12-21 16:33:07 Begin work with device.
+17-12-21 16:33:22 Read sector request.
+17-12-21 16:33:22 Read sector completed.
+17-12-21 16:33:22 Setup reagent contract.
+17-12-21 16:33:22 Reagent contract setup with parameter CRYC
+17-12-21 16:40:35 Start Dt-server. Version 3.00.00 Dec 17 2021 16:08:00
+17-12-21 16:40:37 Initialisation of device is begin.
+17-12-21 16:40:37 Assign serial number from parameters string A5H607
+17-12-21 16:40:37 Found devices with serial number A5H607
+17-12-21 16:40:37 Connect to devices A5H607
+17-12-21 16:40:37 Device observe as DT96
+17-12-21 16:40:37 Initialisation of device was finished successfully.
+17-12-21 16:40:37 Collection of information about the device is begin.
+17-12-21 16:40:38 Information collection about the device is complete.
+17-12-21 16:40:38 Begin work with device.
+17-12-21 16:41:05 Read sector request.
+17-12-21 16:41:05 Read sector completed.
+17-12-21 16:41:05 Setup reagent contract.
+17-12-21 16:41:05 Reagent contract setup with parameter CRYC
+17-12-21 16:51:04 Start Dt-server. Version 3.00.00 Dec 17 2021 16:08:00
+17-12-21 16:51:06 Initialisation of device is begin.
+17-12-21 16:51:06 Assign serial number from parameters string A5H607
+17-12-21 16:51:06 Found devices with serial number A5H607
+17-12-21 16:51:06 Connect to devices A5H607
+17-12-21 16:51:06 Device observe as DT96
+17-12-21 16:51:06 Initialisation of device was finished successfully.
+17-12-21 16:51:06 Collection of information about the device is begin.
+17-12-21 16:51:07 Information collection about the device is complete.
+17-12-21 16:51:07 Begin work with device.
+17-12-21 17:12:28 Start Dt-server. Version 3.00.00 Dec 17 2021 16:08:00
+17-12-21 17:12:30 Initialisation of device is begin.
+17-12-21 17:12:30 Assign serial number from parameters string A5H607
+17-12-21 17:12:30 Found devices with serial number A5H607
+17-12-21 17:12:30 Connect to devices A5H607
+17-12-21 17:12:30 Device observe as DT96
+17-12-21 17:12:30 Initialisation of device was finished successfully.
+17-12-21 17:12:30 Collection of information about the device is begin.
+17-12-21 17:12:32 Information collection about the device is complete.
+17-12-21 17:12:32 Begin work with device.
+17-12-21 17:14:37 Start Dt-server. Version 3.00.00 Dec 17 2021 16:08:00
+17-12-21 17:14:39 Initialisation of device is begin.
+17-12-21 17:14:39 Assign serial number from parameters string A5H607
+17-12-21 17:14:39 Found devices with serial number A5H607
+17-12-21 17:14:39 Connect to devices A5H607
+17-12-21 17:14:39 Device observe as DT96
+17-12-21 17:14:39 Initialisation of device was finished successfully.
+17-12-21 17:14:39 Collection of information about the device is begin.
+17-12-21 17:14:40 Information collection about the device is complete.
+17-12-21 17:14:40 Begin work with device.
+20-12-21 10:53:58 Start Dt-server. Version 3.00.00 Dec 17 2021 16:08:00
+20-12-21 10:54:00 Initialisation of device is begin.
+20-12-21 10:54:00 Assign serial number from parameters string A5H607
+20-12-21 10:54:00 Found devices with serial number A5H607
+20-12-21 10:54:00 Connect to devices A5H607
+20-12-21 10:54:00 Device observe as DT96
+20-12-21 10:54:00 Initialisation of device was finished successfully.
+20-12-21 10:54:00 Collection of information about the device is begin.
+20-12-21 10:54:01 Information collection about the device is complete.
+20-12-21 10:54:01 Begin work with device.
+20-12-21 10:54:41 Read sector request.
+20-12-21 10:54:41 Read sector completed.
+20-12-21 10:54:41 Setup reagent contract.
+20-12-21 10:54:41 Reagent contract setup with parameter CRYC
+30-12-21 09:14:12 Start Dt-server. Version 3.00.00 Dec 17 2021 16:08:00
+30-12-21 09:14:14 Initialisation of device is begin.
+30-12-21 09:14:14 Assign serial number from parameters string A5H607
+30-12-21 09:14:14 Found devices with serial number A5H607
+30-12-21 09:14:14 Connect to devices A5H607
+30-12-21 09:14:14 Device observe as DT96
+30-12-21 09:14:14 Initialisation of device was finished successfully.
+30-12-21 09:14:14 Collection of information about the device is begin.
+30-12-21 09:14:15 Information collection about the device is complete.
+30-12-21 09:14:15 Begin work with device.
+30-12-21 09:15:07 Read sector request.
+30-12-21 09:15:07 Read sector completed.
+30-12-21 09:15:07 Setup reagent contract.
+30-12-21 09:15:07 Reagent contract setup with parameter CRYC
+30-12-21 09:15:49 Save device parameters request.
+30-12-21 09:15:51 Save parameters completed.
+30-12-21 09:15:51 Read sector request.
+30-12-21 09:15:51 Read sector completed.
+30-12-21 09:15:51 Setup reagent contract.
+30-12-21 09:15:51 Reagent contract setup with parameter CRYC
+30-12-21 09:15:52 Close cover request.
+30-12-21 09:16:02 Cover is close.
+30-12-21 09:16:02 Check before RUN request.
+30-12-21 09:16:02 Preparation run operation compleate.
+30-12-21 09:16:02 Start RUN request.
+30-12-21 09:16:06 Run is begin.
+30-12-21 09:17:42 Read sector request.
+30-12-21 09:17:42 Read sector completed.
+30-12-21 09:17:42 Setup reagent contract.
+30-12-21 09:17:42 Reagent contract setup with parameter CRYC
+30-12-21 09:18:08 Stop RUN request.
+30-12-21 09:18:08 RUN was stopped.
+30-12-21 09:18:08 Save device parameters request.
+30-12-21 09:18:10 Save parameters completed.
+30-12-21 09:18:10 Read sector request.
+30-12-21 09:18:10 Read sector completed.
+30-12-21 09:18:10 Setup reagent contract.
+30-12-21 09:18:10 Reagent contract setup with parameter CRYC
+30-12-21 09:40:47 Start Dt-server. Version 3.00.00 Dec 17 2021 16:08:00
+30-12-21 09:40:49 Initialisation of device is begin.
+30-12-21 09:40:49 Assign serial number from parameters string A5H607
+30-12-21 09:40:49 Found devices with serial number A5H607
+30-12-21 09:40:49 Connect to devices A5H607
+30-12-21 09:40:49 Device observe as DT96
+30-12-21 09:40:49 Initialisation of device was finished successfully.
+30-12-21 09:40:49 Collection of information about the device is begin.
+30-12-21 09:40:50 Information collection about the device is complete.
+30-12-21 09:40:50 Begin work with device.
+30-12-21 09:44:50 Read sector request.
+30-12-21 09:44:50 Read sector completed.
+30-12-21 09:44:50 Setup reagent contract.
+30-12-21 09:44:50 Reagent contract setup with parameter CRYC
+30-12-21 09:46:25 Start Dt-server. Version 3.00.00 Dec 17 2021 16:08:00
+30-12-21 09:46:27 Initialisation of device is begin.
+30-12-21 09:46:27 Assign serial number from parameters string A5H607
+30-12-21 09:46:27 Found devices with serial number A5H607
+30-12-21 09:46:27 Connect to devices A5H607
+30-12-21 09:46:27 Device observe as DT96
+30-12-21 09:46:27 Initialisation of device was finished successfully.
+30-12-21 09:46:27 Collection of information about the device is begin.
+30-12-21 09:46:29 Information collection about the device is complete.
+30-12-21 09:46:29 Begin work with device.
+30-12-21 09:47:15 Read sector request.
+30-12-21 09:47:15 Read sector completed.
+30-12-21 09:47:15 Setup reagent contract.
+30-12-21 09:47:15 Reagent contract setup with parameter CRYC
+30-12-21 09:47:43 Close cover request.
+30-12-21 09:47:43 Cover is close.
+30-12-21 09:47:43 Check before RUN request.
+30-12-21 09:47:43 Preparation run operation compleate.
+30-12-21 09:47:43 Start RUN request.
+30-12-21 09:47:46 Run is begin.
+30-12-21 09:47:55 Stop RUN request.
+30-12-21 09:47:55 RUN was stopped.
+30-12-21 10:32:59 Read sector request.
+30-12-21 10:32:59 Read sector completed.
+30-12-21 10:32:59 Setup reagent contract.
+30-12-21 10:32:59 Reagent contract setup with parameter CRYC
+30-12-21 10:33:21 Save device parameters request.
+30-12-21 10:33:23 Save parameters completed.
+30-12-21 10:33:23 Read sector request.
+30-12-21 10:33:23 Read sector completed.
+30-12-21 10:33:23 Setup reagent contract.
+30-12-21 10:33:23 Reagent contract setup with parameter CRYC
+30-12-21 10:33:23 Close cover request.
+30-12-21 10:33:23 Cover is close.
+30-12-21 10:33:23 Check before RUN request.
+30-12-21 10:33:23 Preparation run operation compleate.
+30-12-21 10:33:23 Start RUN request.
+30-12-21 10:33:27 Run is begin.
+30-12-21 10:33:38 Stop RUN request.
+30-12-21 10:33:38 RUN was stopped.
+30-12-21 10:33:38 Save device parameters request.
+30-12-21 10:33:39 Save parameters completed.
+30-12-21 10:33:39 Read sector request.
+30-12-21 10:33:39 Read sector completed.
+30-12-21 10:33:39 Setup reagent contract.
+30-12-21 10:33:40 Reagent contract setup with parameter CRYC
+30-12-21 10:38:45 Read sector request.
+30-12-21 10:38:46 Read sector completed.
+30-12-21 10:38:46 Setup reagent contract.
+30-12-21 10:38:46 Reagent contract setup with parameter CRYC

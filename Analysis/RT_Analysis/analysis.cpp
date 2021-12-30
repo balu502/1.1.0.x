@@ -368,6 +368,8 @@ void Analysis::resize_splitter(int pos, int index)
 {
     main_progress->setFixedWidth(pos);
     Name_Protocol->setFixedWidth(pos - Label_Protocol->width());
+
+    Width_FileNameLabel(FileName_Protocol, FileName_Label, GridWindow->width() - 30);
 }
 
 //-----------------------------------------------------------------------------
@@ -1395,7 +1397,7 @@ void Analysis::save()
     dirName = Original_FileName(dirName);
     */
     // Goncharova ...
-    QString FileName = FileName_Protocol->text().trimmed();
+    QString FileName = FileName_Label.trimmed();  //FileName_Protocol->text().trimmed();
     QFileInfo fi(FileName);
     QString suffix = fi.suffix().trimmed();
     qDebug() << "suffix: " << suffix;
@@ -1475,10 +1477,57 @@ void Analysis::save()
     if(sts) sts = file.copy(FileName);
     if(!sts) QMessageBox::critical(this, tr("Error Write file!"), FileName + text);
 
-    if(sts) {FileName_Protocol->setText(FileName); Change_WinTitle();}
+    if(sts)
+    {
+        FileName_Label = FileName;
+        Width_FileNameLabel(FileName_Protocol, FileName_Label, GridWindow->width() - 30);
+        //FileName_Protocol->setText(FileName);
+        Change_WinTitle();
+    }
 
     if(sts) flag_SaveChangesProtocol = false;
 
+}
+//-----------------------------------------------------------------------------
+//--- Width_FileNameLabel(QLabel*, QString)
+//-----------------------------------------------------------------------------
+void Analysis::Width_FileNameLabel(QLabel *label, QString fn, int Width)
+{
+    if(fn.trimmed().isEmpty()) return;
+
+    QStringList list;
+    int count, id;
+    QString text;
+    QFont f = label->font();
+    QFontMetrics fm(f);
+    text = fn + "   ";
+    int width = fm.horizontalAdvance(text);
+    label->setText(text);
+
+    if(width <= Width) return;
+    if(!fn.contains("/")) return;
+
+    list = fn.split("/");
+    count = list.size();
+    if(count < 3) return;
+
+
+    while(count >= 3)
+    {
+        id = count - 2;
+        list.replace(id, "...");
+        text = list.join("/");
+        text += "   ";
+        width = fm.horizontalAdvance(text);
+        if(width <= Width) break;
+
+        list.removeAt(id);
+        count = list.size();
+    }
+
+    label->setText(text);
+
+    //qDebug() << "Width_FileNameLabel: " << Width << width << label->text();
 }
 //-----------------------------------------------------------------------------
 //--- Save_ColorComments
@@ -1813,7 +1862,7 @@ void Analysis::view_listProtocols()
 //-----------------------------------------------------------------------------
 void Analysis::Change_WinTitle()
 {
-    QString fn = FileName_Protocol->text().trimmed();
+    QString fn = FileName_Label.trimmed();  //FileName_Protocol->text().trimmed();
 
     if(fn.trimmed().isEmpty()) return;
 
@@ -2413,8 +2462,10 @@ void Analysis::createStatusBar()
     }
     main_progress->setFixedWidth(600);
 
+    FileName_Label = "";
     FileName_Protocol = new QLabel(this);
     FileName_Protocol->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
+    FileName_Protocol->setMinimumWidth(10);
     DirLabel_Protocol = new QLabel(this);
     DirLabel_Protocol->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
     DirLabel_Protocol->setPixmap(QPixmap(":/images/flat/open_from.png"));
@@ -3028,9 +3079,11 @@ void Analysis::open_Protocol(QString fileName, bool send, bool create_Hash)
         Name_Protocol->setText(QString::fromStdString(prot->name));
         //prot->xml_filename = file_Info.fileName().toStdString();
         prot->xml_filename = file_Info.absoluteFilePath().toStdString();
-        if(original_FileName ||(!original_FileName && FileName_Protocol->text().trimmed().isEmpty()))
+        if(original_FileName ||(!original_FileName && FileName_Label.trimmed().isEmpty()));  //FileName_Protocol->text().trimmed().isEmpty()))
         {
-            FileName_Protocol->setText(file_Info.absoluteFilePath()+ "   ");
+            FileName_Label = file_Info.absoluteFilePath();
+            Width_FileNameLabel(FileName_Protocol, FileName_Label, GridWindow->width() - 30);
+            //FileName_Protocol->setText(file_Info.absoluteFilePath()+ "   ");
             Change_WinTitle();
             original_FileName = false;
         }
@@ -3562,7 +3615,9 @@ void Analysis::open_Protocol(QString fileName, bool send, bool create_Hash)
                     text = tr("The Analysis File is successfully created!") + "\r\n" + text;
                     message.setIcon(QMessageBox::Information);
                     message.button(QMessageBox::Ok)->animateClick(15000);
-                    FileName_Protocol->setText(str);
+                    FileName_Label = str;
+                    Width_FileNameLabel(FileName_Protocol, FileName_Label, GridWindow->width() - 30);
+                    //FileName_Protocol->setText(str);
                     Change_WinTitle();
                     DirLabel_Protocol->setVisible(true);
 
@@ -5164,6 +5219,8 @@ void Analysis::resizeEvent(QResizeEvent *e)
 {
     main_progress->setFixedWidth(ChartWindow->width());
     Name_Protocol->setFixedWidth(ChartWindow->width() - Label_Protocol->width());
+
+    Width_FileNameLabel(FileName_Protocol, FileName_Label, GridWindow->width() - 30);
 
     int w = GridWindow->width();
     int h = GridWindow->height();
