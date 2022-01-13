@@ -1611,6 +1611,9 @@ void Setup::createActions()
     increment_digits = new QAction(QIcon(":/images/increment_dgitits.png"),tr("copy samples names with digits increment"), this);
     connect(increment_digits, SIGNAL(triggered(bool)), this, SLOT(Increment_Digits()));
 
+    as_first_sample = new QAction(QIcon(":/images/as_FirstSample.png"),tr("rename as first sample"), this);
+    connect(as_first_sample, SIGNAL(triggered(bool)), this, SLOT(As_First_Sample()));
+
     send_protocol_to_web = new QAction(QIcon(":/images/database-24.png"), tr("send current protocol to WebServer"), this);
     connect(send_protocol_to_web, SIGNAL(triggered(bool)), this, SLOT(send_Protocol_To_Web()));
 
@@ -1754,6 +1757,9 @@ void Setup::fill_SampleTable()
     int num_samples = 0;
     int active_ch = prot->active_Channels;
     bool isopen = Samples_Table->open_samples;
+    if(!isopen) Samples_Table->setSelectionMode(QAbstractItemView::ExtendedSelection);
+    else Samples_Table->setSelectionMode(QAbstractItemView::SingleSelection);
+    Samples_Table->setSelectionBehavior(QAbstractItemView::SelectRows);
 
     int kind = 0;  //sample(0),K+(1),K-(2),St(3)
 
@@ -5643,6 +5649,12 @@ void Setup::changED_free()
     {
         //Type_Plate->setCursor(Qt::CrossCursor);
         Type_Plate->setCursor(cursor_FREE);
+        if(!Samples_Table->open_samples)
+        {
+            Samples_Table->setSelectionMode(QAbstractItemView::SingleSelection);
+            Samples_Table->setSelectionBehavior(QAbstractItemView::SelectRows);
+            Samples_Table->corner_btn->click();
+        }
         Samples_Table->setCurrentCell(-1,-1);
         Samples_Table->setSelectionMode(QAbstractItemView::NoSelection);
         Samples_Table->setCursor(Qt::ForbiddenCursor);
@@ -6517,8 +6529,12 @@ void Setup::contextMenu_SamplesTable()
 
     send_protocol_to_web->setEnabled(check_ValidProtocol());
 
+    if(Samples_Table->open_samples) as_first_sample->setEnabled(false);
+    else as_first_sample->setEnabled(true);
+
     menu.addAction(paste_from_clipboard);
     menu.addAction(increment_digits);
+    menu.addAction(as_first_sample);
     menu.addSeparator();
     menu.addAction(send_protocol_to_web);
     menu.exec(QCursor::pos());
@@ -6883,6 +6899,83 @@ void Setup::send_Protocol_To_Web()
         QEvent *e = new QEvent((QEvent::Type)3020);
         QApplication::sendEvent(this->parentWidget(), e);
     }
+}
+//-----------------------------------------------------------------------------
+//--- As_First_Sample()
+//-----------------------------------------------------------------------------
+void Setup::As_First_Sample()
+{
+    int i,j;
+    int num_row;
+    int num = -1;
+    int count;
+
+    rt_Sample       *sample_first;
+    rt_GroupSamples *group_first;
+    rt_Sample       *sample;
+    rt_GroupSamples *group;
+    QList<QTableWidgetItem*> list_sel;
+    QTableWidgetItem *item;
+    QVector<int>    list;
+
+    sample_first = NULL;
+    group_first = NULL;
+
+    //... selected samples ...
+    list_sel = Samples_Table->selectedItems();
+    foreach(item, list_sel)
+    {
+        num_row = item->row();
+        if(!list.contains(num_row)) list.append(num_row);
+    }
+    if(list.isEmpty()) return;
+
+    //qSort(list.begin(),list.end());
+    std::sort(list.begin(),list.end());
+
+    save_undo();                        // as first sample
+
+    //... find first sample and group ...
+    foreach(group, prot->Plate.groups)
+    {
+        foreach(sample, group->samples)
+        {
+            num++;
+            if(num == list.at(0))
+            {
+                sample_first = sample;
+                group_first = group;
+                continue;
+            }
+
+            if(list.contains(num) && sample_first && group_first)
+            {
+                sample->Unique_NameSample = sample_first->Unique_NameSample;
+                group_first->samples.push_back(sample);
+                group->samples.erase(std::find(group->samples.begin(), group->samples.end(), sample));
+            }
+        }
+    }
+
+    //... check all groups on isEMPTY ...
+    count = prot->Plate.groups.size();    
+    for(i=count-1; i>=0; i--)
+    {
+        group = prot->Plate.groups.at(i);
+        if(group->samples.empty())
+        {
+            prot->Plate.groups.erase(std::find(prot->Plate.groups.begin(), prot->Plate.groups.end(), group));
+            delete group;
+        }
+    }
+
+    //...
+    fill_SampleTable();
+    fill_TestSample();
+    //fill_Information();
+    fill_SampleProperties();
+    fill_Plate();
+
 }
 //-----------------------------------------------------------------------------
 //--- Increment_Digits()

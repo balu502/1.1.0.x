@@ -4,8 +4,8 @@
 <context>
     <name>Color_ToolButton</name>
     <message>
-        <location filename="../setup.cpp" line="8821"/>
-        <location filename="../setup.cpp" line="8849"/>
+        <location filename="../setup.cpp" line="8914"/>
+        <location filename="../setup.cpp" line="8942"/>
         <source>Select Color</source>
         <translation type="unfinished"></translation>
     </message>
@@ -13,12 +13,12 @@
 <context>
     <name>PlateItemDelegate</name>
     <message>
-        <location filename="../setup.cpp" line="8261"/>
+        <location filename="../setup.cpp" line="8354"/>
         <source>CONTROL+</source>
         <translation>К+</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="8262"/>
+        <location filename="../setup.cpp" line="8355"/>
         <source>CONTROL-</source>
         <translation>К-</translation>
     </message>
@@ -26,12 +26,12 @@
 <context>
     <name>PropertyDelegate</name>
     <message>
-        <location filename="../setup.cpp" line="8534"/>
+        <location filename="../setup.cpp" line="8627"/>
         <source>Name</source>
         <translation>Название</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="8534"/>
+        <location filename="../setup.cpp" line="8627"/>
         <source>Value</source>
         <translation>Значение</translation>
     </message>
@@ -39,20 +39,20 @@
 <context>
     <name>SamplesItemDelegate</name>
     <message>
-        <location filename="../setup.cpp" line="7591"/>
-        <location filename="../setup.cpp" line="7814"/>
+        <location filename="../setup.cpp" line="7684"/>
+        <location filename="../setup.cpp" line="7907"/>
         <source>C+</source>
         <translation>К+</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="7592"/>
-        <location filename="../setup.cpp" line="7815"/>
+        <location filename="../setup.cpp" line="7685"/>
+        <location filename="../setup.cpp" line="7908"/>
         <source>C-</source>
         <translation>К-</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="7593"/>
-        <location filename="../setup.cpp" line="7816"/>
+        <location filename="../setup.cpp" line="7686"/>
+        <location filename="../setup.cpp" line="7909"/>
         <source>St</source>
         <translation>Ст</translation>
     </message>
@@ -101,7 +101,7 @@
     </message>
     <message>
         <location filename="../setup.cpp" line="1498"/>
-        <location filename="../setup.cpp" line="3118"/>
+        <location filename="../setup.cpp" line="3124"/>
         <source>Open Protocol</source>
         <translation>Открыть протокол</translation>
     </message>
@@ -133,7 +133,7 @@
     </message>
     <message>
         <location filename="../setup.cpp" line="1543"/>
-        <location filename="../setup.cpp" line="3833"/>
+        <location filename="../setup.cpp" line="3839"/>
         <source>Open Program</source>
         <translation>Открыть программу</translation>
     </message>
@@ -148,20 +148,20 @@
         <translation>Редактировать программу</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="2511"/>
+        <location filename="../setup.cpp" line="2517"/>
         <source>Attention! Discovered different programs for multiple tests!</source>
         <translation>Внимание! Обнаружены разные программы амплификации для списка тестов!</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="2385"/>
-        <location filename="../setup.cpp" line="2447"/>
-        <location filename="../setup.cpp" line="2512"/>
-        <location filename="../setup.cpp" line="2586"/>
+        <location filename="../setup.cpp" line="2391"/>
+        <location filename="../setup.cpp" line="2453"/>
+        <location filename="../setup.cpp" line="2518"/>
+        <location filename="../setup.cpp" line="2592"/>
         <source>The current protocol cannot be run!</source>
         <translation>Текущий протокол не может быть запущен!</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="2585"/>
+        <location filename="../setup.cpp" line="2591"/>
         <source>Attention! Discovered different values of exposures for multiple tests!</source>
         <translation>Внимание! Обнаружены разные значения экспозиций для списка тестов!</translation>
     </message>
@@ -264,7 +264,7 @@
     </message>
     <message>
         <location filename="../setup.cpp" line="406"/>
-        <location filename="../setup.cpp" line="1639"/>
+        <location filename="../setup.cpp" line="1642"/>
         <source>Protocol</source>
         <translation>Протокол</translation>
     </message>
@@ -324,130 +324,130 @@
         <translation>Инкремент цифровой информации в имени образцов</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="1614"/>
+        <location filename="../setup.cpp" line="1617"/>
         <source>send current protocol to WebServer</source>
         <translation>Отправить протокол (заявку) на исполнение в ЛИС</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="1617"/>
-        <location filename="../setup.cpp" line="6563"/>
+        <location filename="../setup.cpp" line="1620"/>
+        <location filename="../setup.cpp" line="6579"/>
         <source>TIS tests</source>
         <translation>TIS tests</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="1666"/>
+        <location filename="../setup.cpp" line="1669"/>
         <source>Protocol: </source>
         <translation>Протокол: </translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="1774"/>
+        <location filename="../setup.cpp" line="1780"/>
         <source>Pos</source>
         <translation>Поз.</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="1774"/>
+        <location filename="../setup.cpp" line="1780"/>
         <source>Identificator</source>
         <translation>Наименование</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="1774"/>
+        <location filename="../setup.cpp" line="1780"/>
         <source>Type</source>
         <translation>Тип</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="1774"/>
+        <location filename="../setup.cpp" line="1780"/>
         <source>Copies</source>
         <translation>Дубли</translation>
     </message>
     <message>
         <location filename="../setup.cpp" line="1237"/>
-        <location filename="../setup.cpp" line="2217"/>
+        <location filename="../setup.cpp" line="2223"/>
         <source>Tests</source>
         <translation>Тесты</translation>
     </message>
     <message>
         <location filename="../setup.cpp" line="1240"/>
-        <location filename="../setup.cpp" line="2275"/>
+        <location filename="../setup.cpp" line="2281"/>
         <source>Sample</source>
         <translation>Образец</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="2275"/>
+        <location filename="../setup.cpp" line="2281"/>
         <source>Test</source>
         <translation>Тест</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="2305"/>
+        <location filename="../setup.cpp" line="2311"/>
         <source>patient</source>
         <translation>пациент</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="2306"/>
+        <location filename="../setup.cpp" line="2312"/>
         <source>sex</source>
         <translation>пол</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="2307"/>
+        <location filename="../setup.cpp" line="2313"/>
         <source>age</source>
         <translation>возраст</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="2308"/>
+        <location filename="../setup.cpp" line="2314"/>
         <source>organization</source>
         <translation>организация</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="2309"/>
+        <location filename="../setup.cpp" line="2315"/>
         <source>phisician</source>
         <translation>врач</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="2310"/>
+        <location filename="../setup.cpp" line="2316"/>
         <source>date</source>
         <translation>дата</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="2311"/>
+        <location filename="../setup.cpp" line="2317"/>
         <source>note</source>
         <translation>заметки</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="2313"/>
+        <location filename="../setup.cpp" line="2319"/>
         <source>additional</source>
         <translation>доп. свойства</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="2328"/>
+        <location filename="../setup.cpp" line="2334"/>
         <source>Samples properties</source>
         <translation>Образец/Параметр</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="2328"/>
+        <location filename="../setup.cpp" line="2334"/>
         <source>Value</source>
         <translation>Значение</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="2384"/>
+        <location filename="../setup.cpp" line="2390"/>
         <source>Attention! Discovered different tubes volume for multiple tests!</source>
         <translation>Внимание! Обнаружены разные значения объёмов рабочей смеси для списка тестов!</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="2446"/>
+        <location filename="../setup.cpp" line="2452"/>
         <source>Attention! The Protocol program differs from the Test Program!</source>
         <translation>Внимание! Программа амплификации протокола отличается от соответствующей программы тестов!</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="2717"/>
+        <location filename="../setup.cpp" line="2723"/>
         <source>Protocols File (*.xml)</source>
         <translation>Файл протокола (*.xml)</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="2785"/>
+        <location filename="../setup.cpp" line="2791"/>
         <source>don&apos;t find create_plate</source>
         <translation>не создан &quot;create_plate&quot;</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="2790"/>
+        <location filename="../setup.cpp" line="2796"/>
         <source>size of plate</source>
         <translation>размер плашки</translation>
     </message>
@@ -456,132 +456,132 @@
         <translation type="vanished">неверный формат:</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="2839"/>
+        <location filename="../setup.cpp" line="2845"/>
         <source>invalid current test: </source>
         <translation>неверный текущий тест:</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="2874"/>
-        <location filename="../setup.cpp" line="2918"/>
+        <location filename="../setup.cpp" line="2880"/>
+        <location filename="../setup.cpp" line="2924"/>
         <source>don&apos;t find test: </source>
         <translation>не найден тест:</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="2983"/>
+        <location filename="../setup.cpp" line="2989"/>
         <source>don&apos;t find tube with this tests: </source>
         <translation>не найдена пробирка с таким тестом:</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="3058"/>
+        <location filename="../setup.cpp" line="3064"/>
         <source>Error found while opening XML file: </source>
         <translation>Обнаружена ошибка при открытии XML-файла: </translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="3118"/>
+        <location filename="../setup.cpp" line="3124"/>
         <source>Unable open protocol...</source>
         <translation>Невозможно окрыть протокол...</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="3183"/>
+        <location filename="../setup.cpp" line="3189"/>
         <source>Tests from protocol...</source>
         <translation>Тесты из протокола...</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="3413"/>
+        <location filename="../setup.cpp" line="3419"/>
         <source>Tests from User...</source>
         <translation>Тесты от пользователя...</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="3428"/>
-        <location filename="../setup.cpp" line="3466"/>
+        <location filename="../setup.cpp" line="3434"/>
+        <location filename="../setup.cpp" line="3472"/>
         <source>You must clean Protocol...</source>
         <translation>Необходимо очистить протокол.</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="3308"/>
-        <location filename="../setup.cpp" line="3562"/>
-        <location filename="../setup.cpp" line="3629"/>
-        <location filename="../setup.cpp" line="3686"/>
+        <location filename="../setup.cpp" line="3314"/>
+        <location filename="../setup.cpp" line="3568"/>
+        <location filename="../setup.cpp" line="3635"/>
+        <location filename="../setup.cpp" line="3692"/>
         <source>Protocol is Empty!</source>
         <translation>Протокол пустой!</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="3313"/>
-        <location filename="../setup.cpp" line="3567"/>
-        <location filename="../setup.cpp" line="3633"/>
+        <location filename="../setup.cpp" line="3319"/>
+        <location filename="../setup.cpp" line="3573"/>
+        <location filename="../setup.cpp" line="3639"/>
         <source>Program is Empty!</source>
         <translation>Отсутствует программа амплификации!</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="3322"/>
-        <location filename="../setup.cpp" line="3576"/>
-        <location filename="../setup.cpp" line="3642"/>
+        <location filename="../setup.cpp" line="3328"/>
+        <location filename="../setup.cpp" line="3582"/>
+        <location filename="../setup.cpp" line="3648"/>
         <source>Tubes location is not valid!</source>
         <translation>Неверное расположение пробирок!</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="3734"/>
+        <location filename="../setup.cpp" line="3740"/>
         <source>File successfully written!</source>
         <translation>Файл успешно записан!</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="3739"/>
+        <location filename="../setup.cpp" line="3745"/>
         <source>File is NOT saved!</source>
         <translation>Файл НЕ сохранён!</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="3808"/>
-        <location filename="../setup.cpp" line="3939"/>
+        <location filename="../setup.cpp" line="3814"/>
+        <location filename="../setup.cpp" line="3945"/>
         <source>FILE (</source>
         <translation>Файл (</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="3808"/>
-        <location filename="../setup.cpp" line="3939"/>
+        <location filename="../setup.cpp" line="3814"/>
+        <location filename="../setup.cpp" line="3945"/>
         <source>)  IS ABSENT!</source>
         <translation>) отсутствует!</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="3809"/>
-        <location filename="../setup.cpp" line="3940"/>
+        <location filename="../setup.cpp" line="3815"/>
+        <location filename="../setup.cpp" line="3946"/>
         <source>Attention</source>
         <translation>Внимание</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="3968"/>
+        <location filename="../setup.cpp" line="3974"/>
         <source>Save Program in File</source>
         <translation>Сохранить програму в файл</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="3970"/>
+        <location filename="../setup.cpp" line="3976"/>
         <source>File with Program (*.rta)</source>
         <translation>Файл программы (*.rta)</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="4120"/>
-        <location filename="../setup.cpp" line="4355"/>
+        <location filename="../setup.cpp" line="4126"/>
+        <location filename="../setup.cpp" line="4361"/>
         <source>Check amount of the added tubes!</source>
         <translation>Проверьте количество добавляемых пробирок!</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="4414"/>
-        <location filename="../setup.cpp" line="4441"/>
-        <location filename="../setup.cpp" line="4739"/>
+        <location filename="../setup.cpp" line="4420"/>
+        <location filename="../setup.cpp" line="4447"/>
+        <location filename="../setup.cpp" line="4745"/>
         <source>Sample_</source>
         <translation>Образец_</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="4549"/>
+        <location filename="../setup.cpp" line="4555"/>
         <source>K+</source>
         <translation>K+</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="4569"/>
+        <location filename="../setup.cpp" line="4575"/>
         <source>K-</source>
         <translation>K-</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="4526"/>
+        <location filename="../setup.cpp" line="4532"/>
         <source>Standart</source>
         <translation>Стандарт</translation>
     </message>
@@ -591,109 +591,114 @@
         <translation>Увеличить плашку</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="2715"/>
+        <location filename="../setup.cpp" line="1614"/>
+        <source>rename as first sample</source>
+        <translation>Переименовать как первый выделенный образец</translation>
+    </message>
+    <message>
+        <location filename="../setup.cpp" line="2721"/>
         <source>Open XML-Protocol</source>
         <translation>Открыть XML-протокол</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="3090"/>
-        <location filename="../setup.cpp" line="5537"/>
+        <location filename="../setup.cpp" line="3096"/>
+        <location filename="../setup.cpp" line="5543"/>
         <source>Open Protocol(Template)</source>
         <translation>Открыть протокол (шаблон)</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="3092"/>
-        <location filename="../setup.cpp" line="5539"/>
+        <location filename="../setup.cpp" line="3098"/>
+        <location filename="../setup.cpp" line="5545"/>
         <source>Protocols File (*.rt *.trt)</source>
         <translation>Файлы протокола (*.rt *.trt)</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="3352"/>
+        <location filename="../setup.cpp" line="3358"/>
         <source>Save as Template of Protocol</source>
         <translation>Сохранить как шаблон протокола</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="3354"/>
+        <location filename="../setup.cpp" line="3360"/>
         <source>Protocols File (*.trt)</source>
         <translation>Файл протокола (*.trt)</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="3835"/>
+        <location filename="../setup.cpp" line="3841"/>
         <source>Programs file (*.rta);;Protocols File (*.rt *.trt)</source>
         <translation>Файл программы (*.rta);;Файлы протокола (*.rt *.trt)</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="4434"/>
+        <location filename="../setup.cpp" line="4440"/>
         <source>Control_Group</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="4435"/>
+        <location filename="../setup.cpp" line="4441"/>
         <source>Standart_Group</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="4709"/>
+        <location filename="../setup.cpp" line="4715"/>
         <source>ThermoBlock is already FILLED!</source>
         <translation>Термоблок уже заполнен!</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="5578"/>
+        <location filename="../setup.cpp" line="5584"/>
         <source>Invalid format(384,96,...) of the protocol!</source>
         <translation>Неверный формат(384,96,...) протокола!</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="5654"/>
+        <location filename="../setup.cpp" line="5666"/>
         <source>Attention! Tubes are absent!</source>
         <translation>Внимание! Пробирки отсутствуют!</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="5659"/>
+        <location filename="../setup.cpp" line="5671"/>
         <source>Attention! It is necessary to clear the Plate...</source>
         <translation>Внимание! Необходимо очистить плашку.</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="5661"/>
+        <location filename="../setup.cpp" line="5673"/>
         <source>Attention! Free fill mode is enabled...</source>
         <translation>Внимание! Режим свободного заполнения включён.</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="5675"/>
+        <location filename="../setup.cpp" line="5687"/>
         <source>Attention! Free fill mode is disabled...</source>
         <translation>Внимание! Режим свободного заполнения выключен.</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="5875"/>
+        <location filename="../setup.cpp" line="5887"/>
         <source>Attention! Tubes amount more than places on plate!</source>
         <translation>Внимание! Количество пробирок больше количества мест на термоблоке!</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="6478"/>
+        <location filename="../setup.cpp" line="6490"/>
         <source>invert row - </source>
         <translation>Перевернуть ряд - </translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="6479"/>
+        <location filename="../setup.cpp" line="6491"/>
         <source>invert column - </source>
         <translation>Перевернуть столбец - </translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="6480"/>
+        <location filename="../setup.cpp" line="6492"/>
         <source>invert all Plate</source>
         <translation>Перевернуть всю матрицу</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="6481"/>
+        <location filename="../setup.cpp" line="6493"/>
         <source>tests layout</source>
         <translation>расстановка по тестам</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="6577"/>
+        <location filename="../setup.cpp" line="6593"/>
         <source>N</source>
         <translation>N</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="6577"/>
+        <location filename="../setup.cpp" line="6593"/>
         <source>Name test</source>
         <translation>Имя теста</translation>
     </message>

@@ -71,6 +71,7 @@
 #include <QRegExpValidator>
 #include <QDomNamedNodeMap>
 #include <QMovie>
+#include <QtAlgorithms>
 
 #include <QDebug>
 
@@ -673,6 +674,7 @@ private:
 
     QAction *paste_from_clipboard;
     QAction *increment_digits;
+    QAction *as_first_sample;
     QAction *send_protocol_to_web;
     QAction *look_TIS_Tests;
     bool check_ValidProtocol();
@@ -802,6 +804,7 @@ private slots:
     void contextMenu_Test_Tree();    
     void from_ClipBoard();
     void Increment_Digits();
+    void As_First_Sample();
     void send_Protocol_To_Web();
     void look_TISTests();
 
