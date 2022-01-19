@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>translations/email_ru.qm</file>
+        <file>images/images.png</file>
+        <file>translations/email_en.qm</file>
+    </qresource>
+</RCC>

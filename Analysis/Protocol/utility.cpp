@@ -2358,7 +2358,8 @@ int Read_r96(void *pobj, callback_process *Callback, rt_Protocol *prot, QString 
 
                             p_Test->header.ID_Test = fields.at(0).toStdString();
                             p_Test->header.Name_Test = fields.at(1).toStdString();
-                            p_Test->header.Type_analysis = fields.at(2).toInt(&ok, 16);
+                            //p_Test->header.Type_analysis = fields.at(2).toInt(&ok, 16);
+                            p_Test->header.Type_analysis = -1;
                             p_Test->header.Active_channel = fields.at(5).toInt(&ok, 16);
                         }
                         line = stream.readLine();

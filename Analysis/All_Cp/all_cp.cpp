@@ -823,6 +823,8 @@ QString All_Cp::CpTable_ToDigits()
         pos = Cp_Table->verticalHeaderItem(i)->text();
         for(j=0; j<Cp_Table->columnCount(); j++)
         {
+            if(!flag_AddAnalysis && j >= 3) continue;
+
             item = Cp_Table->item(i,j);
             text = item->text();
             //qDebug() << "i,j,text: " << i << j << text;
@@ -1719,7 +1721,7 @@ void All_Cp::Fill_Cp_Table()
     for(i = Cp_Table->rowCount(); i>0; i--) Cp_Table->removeRow(i-1);
     header << tr("Identificator") << "Cp" << "Ct" << "S(%)" << "aFF" << tr("K+(%)"); // << "Cp_s";
 
-    Cp_Table->clear();
+    Cp_Table->clear();    
     //Cp_Table->setColumnCount(7);
     Cp_Table->setColumnCount(6);
     Cp_Table->setHorizontalHeaderLabels(header);
@@ -1736,6 +1738,7 @@ void All_Cp::Fill_Cp_Table()
     Cp_Table->horizontalHeader()->setSectionResizeMode(5, QHeaderView::Fixed);
     //Cp_Table->horizontalHeader()->setSectionResizeMode(6, QHeaderView::Fixed);
     Cp_Table->horizontalHeader()->setSectionResizeMode(0, QHeaderView::Stretch);
+    Cp_Table->horizontalHeader()->setMinimumSectionSize(0);
 
     if(!flag_AddAnalysis)
     {

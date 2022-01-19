@@ -737,7 +737,7 @@ void Melt_Curve::Calculate_Results(rt_Protocol *prot)
         if(fabs(mean-TPeaks.at(i)) > border_AbsDeviation) sts = false;
         else sts = true;
         if(TemperatureValid_status) TemperatureValid_status = sts;
-        str_0 = QString("%1 (%2)").arg(mean,0,'f',1).arg(TPeaks.at(i),0,'f',1);
+        str_0 = QString("%1 (%2)").arg(mean,0,'f',2).arg(TPeaks.at(i),0,'f',2);
         str_1 = QString("%1").arg(sts);
         Table_Result->item(i,1)->setText(str_0);
         Table_Result->item(i,2)->setText(str_1);
@@ -1687,7 +1687,7 @@ void Melt_Curve::Change_Tube()
     // Labels
     double peak = map_Param.value(index)->at((row*count_col + col)*COUNT_RESULT_PARAM + 2);
     double ampl = map_Param.value(index)->at((row*count_col + col)*COUNT_RESULT_PARAM + 0);
-    mc_chart->peak_Label->setText(tr("peak") +  QString(" = %1").arg(peak,0,'f',1));
+    mc_chart->peak_Label->setText(tr("peak") +  QString(" = %1").arg(peak,0,'f',2));
     mc_chart->ampl_Label->setText(tr("amplitude") + QString(" = %1").arg(ampl,0,'f',0));
 
 
