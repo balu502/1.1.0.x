@@ -1253,12 +1253,14 @@ void Setup::create_SampleBlock()
     Info_Tree->setHeaderLabel(tr(""));
 
     Sample_Properties = new QTreeWidget(MainListWindow);
+    Sample_Properties->setContextMenuPolicy(Qt::CustomContextMenu);
     Sample_Properties->setFont(qApp->font());
     property_Delegate = new PropertyDelegate(this);
     Sample_Properties->setItemDelegate(property_Delegate);
     Sample_Properties->setHeaderLabel(tr(""));
 
     connect(Sample_Properties, SIGNAL(itemChanged(QTreeWidgetItem*,int)), this, SLOT(PropertyItemChange(QTreeWidgetItem*,int)));
+    connect(Sample_Properties, &QTreeWidget::customContextMenuRequested, this, &Setup::contextMenu_SampleProperties);
 
     TabSamples->addTab(Samples_Table,tr("List of Samples"));
     TabSamples->addTab(TestSampleBox,tr("Test&&Sample"));
@@ -1630,6 +1632,9 @@ void Setup::createActions()
     //connect(invert_Plate, SIGNAL(triggered(bool)), this, SLOT(InvertPlate()));
 
     tests_layout = new QAction(QIcon(":/images/layout_test_24.png"),tr(""), this);
+
+    paste_SampleProperties = new QAction(QIcon(":/images/flat/load_SampleProperties.png"),tr("load properties of samples from another protocol"), this);
+    connect(paste_SampleProperties, SIGNAL(triggered(bool)), this, SLOT(SampleProperties_FromAnotherProtocol()));
 }
 //-----------------------------------------------------------------------------
 //--- ToolBar
@@ -2336,6 +2341,8 @@ void Setup::fill_SampleProperties()
 
     foreach(group, prot->Plate.groups)
     {
+        if(group->samples.size() == 0) continue;
+
         sample = group->samples.at(0);
         item = new QTreeWidgetItem(Sample_Properties);
         //text = QString::fromStdString(group->Unique_NameGroup);
@@ -2347,6 +2354,7 @@ void Setup::fill_SampleProperties()
             item_child = new QTreeWidgetItem(item);
             item_child->setFlags(item_child->flags() | Qt::ItemIsEditable);
             text = QString::fromStdString(property->name);
+            if(!map_property.keys().contains(text)) item_child->setText(0, text);
             item_child->setText(0, map_property.value(text,""));
             text = QString::fromStdString(property->value);
             item_child->setText(1, text);
@@ -6540,6 +6548,123 @@ void Setup::contextMenu_SamplesTable()
     menu.exec(QCursor::pos());
     menu.clear();
 
+}
+//-----------------------------------------------------------------------------
+//--- contextMenu_SampleProperties()
+//-----------------------------------------------------------------------------
+void Setup::contextMenu_SampleProperties()
+{
+    QMenu menu;
+    menu.setStyleSheet("QMenu::item:selected {background-color: #d7d7ff; color: black;}");
+    menu.setFont(qApp->font());
+
+    bool sts = prot->Plate.groups.size();
+
+    paste_SampleProperties->setEnabled(sts);
+
+    menu.addAction(paste_SampleProperties);
+    menu.exec(QCursor::pos());
+    menu.clear();
+
+
+}
+//-----------------------------------------------------------------------------
+//--- SampleProperties_FromAnotherProtocol()
+//-----------------------------------------------------------------------------
+void Setup::SampleProperties_FromAnotherProtocol()
+{
+    int id;
+    int state;
+    QString text, Name;
+    QString fileName = "";
+    QString dirName = user_Dir.absolutePath();
+    QString selectedFilter;
+
+    rt_Preference *property, *property_new;
+    rt_GroupSamples *group_source, *group_target;
+    rt_Sample       *sample;
+    QMap<QString, rt_Preference*> map_property;
+
+
+
+    fileName = QFileDialog::getOpenFileName(this, tr("Open Protocol(Template)"),
+                                            dirName,
+                                            tr("Protocols File (*.rt *.trt)"),
+                                            &selectedFilter/*,
+                                            QFileDialog::DontUseNativeDialog*/);
+
+    if(fileName.isEmpty()) return;
+
+    QApplication::setOverrideCursor(QCursor(Qt::WaitCursor));
+    label_gif->setVisible(true);
+    obj_gif->start();
+    QApplication::processEvents();
+
+
+    rt_Protocol *prot_temp = new rt_Protocol();
+    state = Read_XML(this,NULL,prot_temp,fileName,"",true);
+    if(state == -1)
+    {
+        label_gif->setVisible(false);
+        obj_gif->stop();
+        QApplication::restoreOverrideCursor();
+
+        QMessageBox::warning(this,tr("Open Protocol"),tr("Unable open protocol..."));
+        delete prot_temp;
+
+        return;
+    }
+
+    save_undo();    // save undo...
+
+    id = 0;
+    foreach(group_source, prot_temp->Plate.groups)
+    {
+        if(prot->Plate.groups.size() <= id) break;
+
+        group_target = prot->Plate.groups.at(id);
+        map_property.clear();
+        foreach(property, group_target->preference_Group)
+        {
+            map_property.insert(QString::fromStdString(property->name), property);
+        }
+        Name = QString::fromStdString(group_source->samples.at(0)->Unique_NameSample);
+
+        foreach(property, group_source->preference_Group)
+        {
+            group_target->Unique_NameGroup = Name.toStdString();
+            foreach(sample, group_target->samples)
+            {
+                sample->Unique_NameSample = Name.toStdString();
+            }
+
+            text = QString::fromStdString(property->name);
+            if(map_property.contains(text))                     // replace
+            {
+                *map_property.value(text) = *property;
+            }
+            else                                                // new
+            {
+                property_new = new rt_Preference();
+                group_target->preference_Group.push_back(property_new);
+                *property_new = *property;
+            }
+        }
+        id++;
+        QApplication::processEvents();
+    }
+
+    map_property.clear();
+    delete prot_temp;
+
+    fill_SampleTable();
+    fill_TestSample();
+    fill_Information();
+    fill_SampleProperties();
+
+    label_gif->setVisible(false);
+    obj_gif->stop();
+    QApplication::restoreOverrideCursor();
 }
 //-----------------------------------------------------------------------------
 //--- check_ValidProtocol()

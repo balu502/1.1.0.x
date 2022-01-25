@@ -269,3 +269,39 @@
 30-12-21 10:38:46 Read sector completed.
 30-12-21 10:38:46 Setup reagent contract.
 30-12-21 10:38:46 Reagent contract setup with parameter CRYC
+20-01-22 15:04:12 Start Dt-server. Version 3.00.00 Jan 14 2022 16:55:38
+20-01-22 15:04:14 Initialisation of device is begin.
+20-01-22 15:04:14 Assign serial number from parameters string A5H607
+20-01-22 15:04:14 Found devices with serial number A5H607
+20-01-22 15:04:14 Connect to devices A5H607
+20-01-22 15:04:14 Device observe as DT96
+20-01-22 15:04:14 Initialisation of device was finished successfully.
+20-01-22 15:04:14 Collection of information about the device is begin.
+20-01-22 15:04:15 Information collection about the device is complete.
+20-01-22 15:04:15 Begin work with device.
+20-01-22 15:12:53 Read sector request.
+20-01-22 15:12:53 Read sector completed.
+20-01-22 15:12:53 Setup reagent contract.
+20-01-22 15:12:53 Reagent contract setup with parameter CRYC
+20-01-22 15:12:58 Close cover request.
+20-01-22 15:13:08 Cover is close.
+20-01-22 15:13:08 Check before RUN request.
+20-01-22 15:13:08 Preparation run operation compleate.
+20-01-22 15:13:08 Start RUN request.
+20-01-22 15:13:11 Run is begin.
+20-01-22 15:13:31 Stop RUN request.
+20-01-22 15:13:31 RUN was stopped.
+20-01-22 15:18:24 Read sector request.
+20-01-22 15:18:24 Read sector completed.
+20-01-22 15:18:24 Setup reagent contract.
+20-01-22 15:18:25 Reagent contract setup with parameter CRYC
+20-01-22 15:19:10 Get picture request.
+20-01-22 15:19:12 Get picture completed.
+20-01-22 15:21:39 Read sector request.
+20-01-22 15:21:39 Read sector completed.
+20-01-22 15:21:39 Setup reagent contract.
+20-01-22 15:21:39 Reagent contract setup with parameter CRYC
+20-01-22 15:21:54 Get picture request.
+20-01-22 15:21:56 Get picture completed.
+20-01-22 15:21:59 Get picture request.
+20-01-22 15:22:01 Get picture completed.

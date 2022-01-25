@@ -104,5 +104,6 @@
         <file>images/flat/print_32.png</file>
         <file>images/flat/toPNG.png</file>
         <file>images/as_FirstSample.png</file>
+        <file>images/flat/load_SampleProperties.png</file>
     </qresource>
 </RCC>

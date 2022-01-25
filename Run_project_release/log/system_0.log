@@ -74,3 +74,35 @@
 30-12-21 09:46:25  WinID=7304ca Device name A5H607 Port=9012
 30-12-21 10:47:14  WinID=7304ca Get event on finish program from server of USB.
 30-12-21 10:47:14  WinID=7304ca Stop Dt-server.
+20-01-22 09:28:41  WinID=30616 Start Dt-server. Ver. 3.00.00 Dec 17 2021 16:08:00
+20-01-22 09:28:41  WinID=30616 Device name A6N007 Port=9012
+20-01-22 09:28:57  WinID=30616 Get event on finish program from server of USB.
+20-01-22 09:28:57  WinID=30616 Stop Dt-server.
+20-01-22 09:29:59  WinID=5052c Start Dt-server. Ver. 3.00.00 Jan 14 2022 16:55:38
+20-01-22 09:29:59  WinID=5052c Device name A6N007 Port=9012
+20-01-22 09:37:17  WinID=5052c Get event on finish program from server of USB.
+20-01-22 09:37:17  WinID=5052c Stop Dt-server.
+20-01-22 10:48:36  WinID=806d8 Start Dt-server. Ver. 3.00.00 Jan 14 2022 16:55:38
+20-01-22 10:48:36  WinID=806d8 Device name A6N007 Port=9012
+20-01-22 10:58:55  WinID=806d8 Get event on finish program from server of USB.
+20-01-22 10:58:55  WinID=806d8 Stop Dt-server.
+20-01-22 11:01:24  WinID=e0718 Start Dt-server. Ver. 3.00.00 Jan 14 2022 16:55:38
+20-01-22 11:01:24  WinID=e0718 Device name A6N007 Port=9012
+20-01-22 12:03:51  WinID=e0718 Get event on finish program from server of USB.
+20-01-22 12:03:51  WinID=e0718 Stop Dt-server.
+20-01-22 15:04:11  WinID=18033e Start Dt-server. Ver. 3.00.00 Jan 14 2022 16:55:38
+20-01-22 15:04:11  WinID=18033e Device name A5H607 Port=9012
+20-01-22 15:22:30  WinID=18033e Get event on finish program from server of USB.
+20-01-22 15:22:30  WinID=18033e Stop Dt-server.
+20-01-22 15:23:26  WinID=160762 Start Dt-server. Ver. 3.00.00 Jan 14 2022 16:55:38
+20-01-22 15:23:26  WinID=160762 Device name A6N007 Port=9012
+20-01-22 15:27:39  WinID=160762 Get event on finish program from server of USB.
+20-01-22 15:27:40  WinID=160762 Stop Dt-server.
+20-01-22 15:28:24  WinID=27007c Start Dt-server. Ver. 3.00.00 Jan 14 2022 16:55:38
+20-01-22 15:28:24  WinID=27007c Device name A6N007 Port=9012
+20-01-22 15:29:40  WinID=27007c Get event on finish program from server of USB.
+20-01-22 15:29:40  WinID=27007c Stop Dt-server.
+20-01-22 16:17:18  WinID=2206ba Start Dt-server. Ver. 3.00.00 Jan 14 2022 16:55:38
+20-01-22 16:17:18  WinID=2206ba Device name A6N007 Port=9012
+20-01-22 16:17:51  WinID=2206ba Get event on finish program from server of USB.
+20-01-22 16:17:51  WinID=2206ba Stop Dt-server.

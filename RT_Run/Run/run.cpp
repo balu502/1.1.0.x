@@ -5454,7 +5454,7 @@ bool Run::slot_GetMeasure(int fn_meas)
                 for(m=0; m<prot->count_Tubes; m++)
                 {
                     value = 0x0fff & measure->measurements.at(m);
-                    value *= COEF_EXPO_1;
+                    value = fabs(value - measure->blk_exp) * COEF_EXPO_1;
                     id = i*count_tubes*all_measure + m*all_measure + (fn_meas-1);
                     plot_fluor->Y.replace(id,value);                    
                 }                

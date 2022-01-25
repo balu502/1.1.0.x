@@ -86,3 +86,233 @@
 01-11-21 11:46:54 Run is begin.
 01-11-21 11:47:03 Stop RUN request.
 01-11-21 11:47:03 RUN was stopped.
+20-01-22 09:28:42 Start Dt-server. Version 3.00.00 Dec 17 2021 16:08:00
+20-01-22 09:28:44 Initialisation of device is begin.
+20-01-22 09:28:44 Assign serial number from parameters string A6N007
+20-01-22 09:28:44 Found devices with serial number A6N007
+20-01-22 09:28:44 Connect to devices A6N007
+20-01-22 09:28:44 Device observe as DT384
+20-01-22 09:28:44 Initialisation of device was finished successfully.
+20-01-22 09:28:44 Collection of information about the device is begin.
+20-01-22 09:28:46 Information collection about the device is complete.
+20-01-22 09:28:46 Begin work with device.
+20-01-22 09:30:00 Start Dt-server. Version 3.00.00 Jan 14 2022 16:55:38
+20-01-22 09:30:02 Initialisation of device is begin.
+20-01-22 09:30:02 Assign serial number from parameters string A6N007
+20-01-22 09:30:02 Found devices with serial number A6N007
+20-01-22 09:30:02 Connect to devices A6N007
+20-01-22 09:30:02 Device observe as DT384
+20-01-22 09:30:02 Initialisation of device was finished successfully.
+20-01-22 09:30:02 Collection of information about the device is begin.
+20-01-22 09:30:04 Information collection about the device is complete.
+20-01-22 09:30:04 Begin work with device.
+20-01-22 09:30:36 Read sector request.
+20-01-22 09:30:36 Read sector completed.
+20-01-22 09:30:36 Setup reagent contract.
+20-01-22 09:30:36 Reagent contract setup with parameter CRYC
+20-01-22 09:31:27 Get picture request.
+20-01-22 09:31:29 Get picture completed.
+20-01-22 09:32:00 Get picture request.
+20-01-22 09:32:02 Get picture completed.
+20-01-22 09:32:20 Save device parameters request.
+20-01-22 09:32:22 Save parameters completed.
+20-01-22 09:32:22 Save sector request.
+20-01-22 09:32:22 Save sector completed.
+20-01-22 09:32:22 Read sector request.
+20-01-22 09:32:22 Read sector completed.
+20-01-22 09:32:22 Setup reagent contract.
+20-01-22 09:32:22 Reagent contract setup with parameter CRYC
+20-01-22 09:32:27 Get picture request.
+20-01-22 09:32:29 Get picture completed.
+20-01-22 09:32:42 Get picture request.
+20-01-22 09:32:44 Get picture completed.
+20-01-22 09:32:57 Get picture request.
+20-01-22 09:32:59 Get picture completed.
+20-01-22 09:34:04 Get picture request.
+20-01-22 09:34:05 Get picture completed.
+20-01-22 09:34:55 Open cover request.
+20-01-22 09:35:31 Cover is open.
+20-01-22 09:35:35 Close cover request.
+20-01-22 09:35:47 Cover is close.
+20-01-22 09:36:06 Read sector request.
+20-01-22 09:36:06 Read sector completed.
+20-01-22 09:36:06 Setup reagent contract.
+20-01-22 09:36:06 Reagent contract setup with parameter CRYC
+20-01-22 09:36:27 Read sector request.
+20-01-22 09:36:27 Read sector completed.
+20-01-22 09:36:27 Setup reagent contract.
+20-01-22 09:36:27 Reagent contract setup with parameter CRYC
+20-01-22 09:36:42 Get picture request.
+20-01-22 09:36:44 Get picture completed.
+20-01-22 10:48:37 Start Dt-server. Version 3.00.00 Jan 14 2022 16:55:38
+20-01-22 10:48:39 Initialisation of device is begin.
+20-01-22 10:48:39 Assign serial number from parameters string A6N007
+20-01-22 10:48:39 Found devices with serial number A6N007
+20-01-22 10:48:39 Connect to devices A6N007
+20-01-22 10:48:39 Device observe as DT384
+20-01-22 10:48:39 Initialisation of device was finished successfully.
+20-01-22 10:48:39 Collection of information about the device is begin.
+20-01-22 10:48:40 Information collection about the device is complete.
+20-01-22 10:48:40 Begin work with device.
+20-01-22 10:49:23 Read sector request.
+20-01-22 10:49:23 Read sector completed.
+20-01-22 10:49:23 Setup reagent contract.
+20-01-22 10:49:23 Reagent contract setup with parameter CRYC
+20-01-22 10:50:13 Get picture request.
+20-01-22 10:50:15 Get picture completed.
+20-01-22 10:50:20 Get picture request.
+20-01-22 10:50:21 Get picture completed.
+20-01-22 10:50:23 Save device parameters request.
+20-01-22 10:50:25 Save parameters completed.
+20-01-22 10:50:25 Save sector request.
+20-01-22 10:50:25 Save sector completed.
+20-01-22 10:50:25 Read sector request.
+20-01-22 10:50:25 Read sector completed.
+20-01-22 10:50:25 Setup reagent contract.
+20-01-22 10:50:25 Reagent contract setup with parameter CRYC
+20-01-22 10:51:24 Read sector request.
+20-01-22 10:51:24 Read sector completed.
+20-01-22 10:51:24 Setup reagent contract.
+20-01-22 10:51:24 Reagent contract setup with parameter CRYC
+20-01-22 10:52:11 Read sector request.
+20-01-22 10:52:12 Read sector completed.
+20-01-22 10:52:12 Setup reagent contract.
+20-01-22 10:52:12 Reagent contract setup with parameter CRYC
+20-01-22 10:53:46 Read sector request.
+20-01-22 10:53:46 Read sector completed.
+20-01-22 10:53:46 Setup reagent contract.
+20-01-22 10:53:46 Reagent contract setup with parameter CRYC
+20-01-22 10:57:39 Read sector request.
+20-01-22 10:57:39 Read sector completed.
+20-01-22 10:57:39 Setup reagent contract.
+20-01-22 10:57:39 Reagent contract setup with parameter CRYC
+20-01-22 11:01:25 Start Dt-server. Version 3.00.00 Jan 14 2022 16:55:38
+20-01-22 11:01:27 Initialisation of device is begin.
+20-01-22 11:01:27 Assign serial number from parameters string A6N007
+20-01-22 11:01:27 Found devices with serial number A6N007
+20-01-22 11:01:27 Connect to devices A6N007
+20-01-22 11:01:27 Device observe as DT384
+20-01-22 11:01:27 Initialisation of device was finished successfully.
+20-01-22 11:01:27 Collection of information about the device is begin.
+20-01-22 11:01:28 Information collection about the device is complete.
+20-01-22 11:01:28 Begin work with device.
+20-01-22 11:02:04 Read sector request.
+20-01-22 11:02:04 Read sector completed.
+20-01-22 11:02:04 Setup reagent contract.
+20-01-22 11:02:04 Reagent contract setup with parameter CRYC
+20-01-22 11:02:39 Read sector request.
+20-01-22 11:02:39 Read sector completed.
+20-01-22 11:02:39 Setup reagent contract.
+20-01-22 11:02:39 Reagent contract setup with parameter CRYC
+20-01-22 11:10:41 Read sector request.
+20-01-22 11:10:41 Read sector completed.
+20-01-22 11:10:41 Setup reagent contract.
+20-01-22 11:10:41 Reagent contract setup with parameter CRYC
+20-01-22 11:21:34 Read sector request.
+20-01-22 11:21:34 Read sector completed.
+20-01-22 11:21:34 Setup reagent contract.
+20-01-22 11:21:34 Reagent contract setup with parameter CRYC
+20-01-22 11:28:07 Read sector request.
+20-01-22 11:28:07 Read sector completed.
+20-01-22 11:28:07 Setup reagent contract.
+20-01-22 11:28:08 Reagent contract setup with parameter CRYC
+20-01-22 11:39:37 Read sector request.
+20-01-22 11:39:37 Read sector completed.
+20-01-22 11:39:37 Setup reagent contract.
+20-01-22 11:39:37 Reagent contract setup with parameter CRYC
+20-01-22 11:42:20 Read sector request.
+20-01-22 11:42:20 Read sector completed.
+20-01-22 11:42:20 Setup reagent contract.
+20-01-22 11:42:20 Reagent contract setup with parameter CRYC
+20-01-22 11:53:31 Read sector request.
+20-01-22 11:53:31 Read sector completed.
+20-01-22 11:53:31 Setup reagent contract.
+20-01-22 11:53:31 Reagent contract setup with parameter CRYC
+20-01-22 11:54:00 Save device parameters request.
+20-01-22 11:54:01 Save parameters completed.
+20-01-22 11:54:01 Save sector request.
+20-01-22 11:54:01 Save sector completed.
+20-01-22 11:54:02 Read sector request.
+20-01-22 11:54:02 Read sector completed.
+20-01-22 11:54:02 Setup reagent contract.
+20-01-22 11:54:02 Reagent contract setup with parameter CRYC
+20-01-22 11:54:18 Read sector request.
+20-01-22 11:54:18 Read sector completed.
+20-01-22 11:54:18 Setup reagent contract.
+20-01-22 11:54:18 Reagent contract setup with parameter CRYC
+20-01-22 11:54:59 Read sector request.
+20-01-22 11:54:59 Read sector completed.
+20-01-22 11:54:59 Setup reagent contract.
+20-01-22 11:54:59 Reagent contract setup with parameter CRYC
+20-01-22 12:00:32 Read sector request.
+20-01-22 12:00:32 Read sector completed.
+20-01-22 12:00:32 Setup reagent contract.
+20-01-22 12:00:32 Reagent contract setup with parameter CRYC
+20-01-22 12:02:52 Read sector request.
+20-01-22 12:02:52 Read sector completed.
+20-01-22 12:02:52 Setup reagent contract.
+20-01-22 12:02:52 Reagent contract setup with parameter CRYC
+20-01-22 15:23:27 Start Dt-server. Version 3.00.00 Jan 14 2022 16:55:38
+20-01-22 15:23:29 Initialisation of device is begin.
+20-01-22 15:23:29 Assign serial number from parameters string A6N007
+20-01-22 15:23:29 Found devices with serial number A6N007
+20-01-22 15:23:29 Connect to devices A6N007
+20-01-22 15:23:29 Device observe as DT384
+20-01-22 15:23:29 Initialisation of device was finished successfully.
+20-01-22 15:23:29 Collection of information about the device is begin.
+20-01-22 15:23:30 Information collection about the device is complete.
+20-01-22 15:23:30 Begin work with device.
+20-01-22 15:23:50 Read sector request.
+20-01-22 15:23:50 Read sector completed.
+20-01-22 15:23:50 Setup reagent contract.
+20-01-22 15:23:50 Reagent contract setup with parameter CRYC
+20-01-22 15:24:13 Get picture request.
+20-01-22 15:24:15 Get picture completed.
+20-01-22 15:24:21 Get picture request.
+20-01-22 15:24:22 Get picture completed.
+20-01-22 15:24:24 Save device parameters request.
+20-01-22 15:24:26 Save parameters completed.
+20-01-22 15:24:26 Save sector request.
+20-01-22 15:24:26 Save sector completed.
+20-01-22 15:24:26 Read sector request.
+20-01-22 15:24:26 Read sector completed.
+20-01-22 15:24:26 Setup reagent contract.
+20-01-22 15:24:26 Reagent contract setup with parameter CRYC
+20-01-22 15:24:31 Get picture request.
+20-01-22 15:24:32 Get picture completed.
+20-01-22 15:24:36 Get picture request.
+20-01-22 15:24:38 Get picture completed.
+20-01-22 15:26:14 Read sector request.
+20-01-22 15:26:14 Read sector completed.
+20-01-22 15:26:14 Setup reagent contract.
+20-01-22 15:26:14 Reagent contract setup with parameter CRYC
+20-01-22 15:26:25 Get picture request.
+20-01-22 15:26:27 Get picture completed.
+20-01-22 15:26:43 Read sector request.
+20-01-22 15:26:43 Read sector completed.
+20-01-22 15:26:43 Setup reagent contract.
+20-01-22 15:26:43 Reagent contract setup with parameter CRYC
+20-01-22 15:28:24 Start Dt-server. Version 3.00.00 Jan 14 2022 16:55:38
+20-01-22 15:28:26 Initialisation of device is begin.
+20-01-22 15:28:26 Assign serial number from parameters string A6N007
+20-01-22 15:28:26 Found devices with serial number A6N007
+20-01-22 15:28:26 Connect to devices A6N007
+20-01-22 15:28:26 Device observe as DT384
+20-01-22 15:28:26 Initialisation of device was finished successfully.
+20-01-22 15:28:26 Collection of information about the device is begin.
+20-01-22 15:28:27 Information collection about the device is complete.
+20-01-22 15:28:27 Begin work with device.
+20-01-22 15:28:46 Read sector request.
+20-01-22 15:28:46 Read sector completed.
+20-01-22 15:28:46 Setup reagent contract.
+20-01-22 15:28:46 Reagent contract setup with parameter CRYC
+20-01-22 16:17:18 Start Dt-server. Version 3.00.00 Jan 14 2022 16:55:38
+20-01-22 16:17:20 Initialisation of device is begin.
+20-01-22 16:17:20 Assign serial number from parameters string A6N007
+20-01-22 16:17:20 Found devices with serial number A6N007
+20-01-22 16:17:20 Connect to devices A6N007
+20-01-22 16:17:20 Device observe as DT384
+20-01-22 16:17:20 Initialisation of device was finished successfully.
+20-01-22 16:17:21 Collection of information about the device is begin.
+20-01-22 16:17:22 Information collection about the device is complete.
+20-01-22 16:17:22 Begin work with device.

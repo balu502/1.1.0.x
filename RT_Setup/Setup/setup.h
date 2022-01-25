@@ -684,6 +684,8 @@ private:
     QAction *invert_Plate;
     QAction *tests_layout;
 
+    QAction *paste_SampleProperties;
+
     //... methods ...
     void createActions();               // Actions
     void createToolBars();              // ToolBar
@@ -801,12 +803,14 @@ private slots:
     void change_NameProtocol(QString);
     void contextMenu_SamplesTable();
     void contextMenu_Plate(QPoint);
-    void contextMenu_Test_Tree();    
+    void contextMenu_Test_Tree();
+    void contextMenu_SampleProperties();
     void from_ClipBoard();
     void Increment_Digits();
     void As_First_Sample();
     void send_Protocol_To_Web();
     void look_TISTests();
+    void SampleProperties_FromAnotherProtocol();
 
     void ChangeColor(QMap<int,int>);
     void ChangeTypeSample();

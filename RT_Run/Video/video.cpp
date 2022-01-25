@@ -1192,11 +1192,11 @@ void Video::Get_InfoDevice(QMap<QString, QString> *map, bool save_map)
         p_corner->x_corner->blockSignals(true);
         p_corner->y_corner->blockSignals(true);
 
-        p_corner->x_corner->setValue(center.x());
-        p_corner->y_corner->setValue(H_IMAGE - center.y());
-
         p_corner->x_corner->setRange(0+Rx, W_IMAGE-Rx);
         p_corner->y_corner->setRange(0+Ry, H_IMAGE-Ry);
+
+        p_corner->x_corner->setValue(center.x());
+        p_corner->y_corner->setValue(H_IMAGE - center.y());        
 
         p_corner->x_corner->blockSignals(false);
         p_corner->y_corner->blockSignals(false);

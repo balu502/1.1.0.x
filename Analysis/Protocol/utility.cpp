@@ -1482,6 +1482,7 @@ int Read_XML(void *pobj, callback_process *Callback, rt_Protocol *prot, QString 
                      preference = new rt_Preference;
                      prot->preference_Pro.push_back(preference);
                      LoadXML_Preference(node, preference);
+                     qApp->processEvents();
                 }
                 continue;
             }
@@ -1535,6 +1536,7 @@ int Read_XML(void *pobj, callback_process *Callback, rt_Protocol *prot, QString 
                     test = new rt_Test();
                     prot->tests.push_back(test);
                     LoadXML_Test(node, test);
+                    qApp->processEvents();
                }
                doc_tests.clear();
 
@@ -1551,7 +1553,7 @@ int Read_XML(void *pobj, callback_process *Callback, rt_Protocol *prot, QString 
                      group = new rt_GroupSamples();
                      prot->Plate.groups.push_back(group);
                      LoadXML_Group(node, group, prot);
-
+                     qApp->processEvents();
 
                      //QApplication::processEvents();
                 }
@@ -1627,6 +1629,7 @@ int Read_XML(void *pobj, callback_process *Callback, rt_Protocol *prot, QString 
                     measure = new rt_Measurement();
                     prot->meas.push_back(measure);
                     LoadXML_Measure(node,measure);
+                    qApp->processEvents();
                 }                            
                 continue;
             }

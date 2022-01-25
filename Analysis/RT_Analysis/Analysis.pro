@@ -126,9 +126,9 @@ CONFIG(debug, debug|release) {VIDEO_ARCHIVE = $${VIDEO_ARCHIVE}$${SUFFIX}}
 LIBS += -L../../$${CURRENT_BUILD} -l$${VIDEO_ARCHIVE}
 
 #--- Email ---
-INCLUDEPATH += ../Email_POST
-#INCLUDEPATH += ../../../SMTP_Client/simple/src
-EMAIL = Email_POST
+INCLUDEPATH += ../Email
+INCLUDEPATH += ../../../SMTP_Client/simple/src
+EMAIL = Email
 CONFIG(debug, debug|release) {EMAIL = $${EMAIL}$${SUFFIX}}
 LIBS += -L../../$${CURRENT_BUILD} -l$${EMAIL}
 
