@@ -250,6 +250,7 @@ public:
     QVector<double> TPeaks;
     double Par[4];
     double Qu[3];
+    QVector<double> Mean_Amplitude;
     //double kCoef,lCoef,sCoef;
     //double chi,terr,aerr;
     double kA,kK,kL,kS;

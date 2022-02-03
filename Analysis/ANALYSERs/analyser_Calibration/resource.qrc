@@ -30,5 +30,6 @@
         <file>images/RT.ico</file>
         <file>images/note_32.png</file>
         <file>images/note_tech_32.png</file>
+        <file>images/base_expo.png</file>
     </qresource>
 </RCC>

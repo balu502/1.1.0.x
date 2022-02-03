@@ -53,11 +53,35 @@ void* Analyser_Calibration::Create_Win(void *pobj, void *main)
     layout_add->addWidget(Tech_Report, 0, Qt::AlignRight);
     //QWidget *UnEqual = new QWidget();
 
+    BaseExpo_Box = new QGroupBox(MainTab);
+    BaseExpo_Box->setObjectName("Transparent");
+    QVBoxLayout *layout_base = new QVBoxLayout;
+    BaseExpo_Box->setLayout(layout_base);
+    BaseExpo_Table = new QTableWidget(0,4, MainTab);
+    BaseExpo_Table->setSizeAdjustPolicy(QAbstractScrollArea::AdjustToContents);
+    BaseExpo_Table->setSizePolicy(QSizePolicy::Ignored, QSizePolicy::Minimum);
+    BaseExpo_Table->setSelectionMode(QAbstractItemView::NoSelection);
+    BaseExpo_Table->setEditTriggers(QAbstractItemView::NoEditTriggers);
+    Info_BaseExpo = new QLabel(MainTab);
+    Info_BaseExpo->setText(tr("Possible adjustment of the base exposure value."));
+    layout_base->addSpacing(10);
+    layout_base->addWidget(Info_BaseExpo, 0, Qt::AlignTop | Qt::AlignLeft);
+    layout_base->addSpacing(5);
+    layout_base->addWidget(BaseExpo_Table, 0, Qt::AlignTop); // | Qt::AlignCenter);
+    layout_base->addStretch(1);
+    delegate_BaseExpo = new BaseExpo_ItemDelegate();
+    BaseExpo_Table->setItemDelegate(delegate_BaseExpo);
+    BaseExpo_Table->setFont(f);
+    f.setBold(true);
+    Info_BaseExpo->setFont(f);
+
+
     MainTab->addTab(Total, tr("Total"));
     MainTab->addTab(mask_Optical, QIcon(":/images/mask_w.png"), tr("Optical mask"));
     MainTab->addTab(melt_curve, QIcon(":/images/temperature_spectrum.png"), tr("Temperature/Amplitude calibration"));    
     //MainTab->addTab(UnEqual, QIcon(":/images/Unequal_w.png"), tr("Spectrum crosstalk"));
     MainTab->addTab(Additional_Doc, QIcon(":/images/note_tech_32.png"), tr("Technical document"));
+    MainTab->addTab(BaseExpo_Box, QIcon(":/images/base_expo.png"), tr("Base Exposition"));
 
 
     //message.setWindowIcon(QIcon(":/images/DTm.ico"));
@@ -88,6 +112,10 @@ void Analyser_Calibration::Destroy_Win()
         delete Tech_Table;
         delete Tech_Report;
         delete Additional_Doc;
+
+        delete BaseExpo_Table;
+        delete Info_BaseExpo;
+        delete BaseExpo_Box;
 
         delete MainTab;
         MainTab = NULL;
@@ -141,6 +169,10 @@ void Analyser_Calibration::readCommonSettings()
     text = CommonSettings->value("control","").toString();
     if(text.trimmed() == "yes") flag_ControlDepartment = true;
     else flag_ControlDepartment = false;
+
+    text = CommonSettings->value("base_exposition","").toString();
+    if(text.trimmed() == "yes") flag_BaseExposition = true;
+    else flag_BaseExposition = false;
 
     CommonSettings->endGroup();
 
@@ -400,6 +432,7 @@ void Analyser_Calibration::Analyser(rt_Protocol *prot)
 
     for(i=1; i<MainTab->count(); i++) MainTab->setTabEnabled(i,true);
     if(!flag_ControlDepartment) MainTab->setTabVisible(3, false);
+    if(!flag_BaseExposition) MainTab->setTabVisible(4, false);
 
 
     // 1. Optic mask        
@@ -453,11 +486,10 @@ void Analyser_Calibration::Analyser(rt_Protocol *prot)
     {
         MainTab->setCurrentWidget(melt_curve);
         melt_curve->map_RawData = &mask_Optical->map_VALUE;
-
         res = melt_curve->Analyser(prot);                                   // res = -4  or -3 (AFF)
     }
 
-    //qDebug() << "Results: " << res;
+    qDebug() << "Results: " << res;
 
 
     // 5. fill Total Results
@@ -477,7 +509,8 @@ void Analyser_Calibration::Analyser(rt_Protocol *prot)
 
     Total->fill_TotalResults(prot, &error_Buf);
 
-    Fill_TechDoc(); // additional documentation
+    Fill_TechDoc();             // additional documentation
+    Fill_BaseExposition();      // base exposition
 
     MainTab->setCurrentWidget(Total);
 }
@@ -984,6 +1017,151 @@ int Analyser_Calibration::Check_MinMaxAmplitude()
     return(res);
 }
 //-----------------------------------------------------------------------------
+//--- Fill_BaseExposition()
+//-----------------------------------------------------------------------------
+void Analyser_Calibration::Fill_BaseExposition()
+{
+    int i,j,k,id;
+    int value;
+    double coef, dvalue;
+    bool ok;
+    QString text, str;
+    QStringList list_coef;
+    QVector<short> list_expo;
+    QTableWidgetItem *item;
+    QStringList header;
+    int count_ch = 0;
+    QString fluor_name[count_CH] = fluor_NAME;
+    rt_Test *ptest;
+    rt_Preference   *property;
+    rt_Measurement  *measure;
+
+
+    for(i=0; i<count_CH; i++)
+    {
+        if(!(Prot->active_Channels & (0x0f<<4*i))) continue;
+        count_ch++;
+    }
+    QVector<int> BaseExpo(count_ch);
+    BaseExpo.fill(0);
+    QVector<double> RelativeError(count_ch);
+    RelativeError.fill(0);
+    QVector<double> RecomendedExpo(count_ch);
+    RecomendedExpo.fill(0);
+    bool sts;
+
+    //... Base Exposition ...
+    foreach(ptest, Prot->tests)
+    {
+        if(ptest->header.Type_analysis == 0x0020)
+        {
+            foreach(property, ptest->preference_Test)
+            {
+                if(property->name == "exposure_Measurements")
+                {
+                    text = QString::fromStdString(property->value);
+                    text = text.replace(",",".");
+                    list_coef = text.split(QRegExp("\\s+"));
+                    break;
+                }
+            }
+            break;
+        }
+    }
+    id = 0;
+    foreach(measure, Prot->meas)
+    {
+        if(measure->num_exp > 0) continue;
+        if(measure->optical_channel != id) continue;
+
+        list_expo.append(measure->exp_value);
+        id++;
+        if(list_expo.size() == count_ch) break;
+    }
+
+    if(list_expo.size() == count_ch && list_coef.size() >= count_ch)
+    {
+        for(i=0; i<count_ch; i++)
+        {
+            coef = list_coef.at(i).toDouble(&ok);
+            if(!ok || coef == 0.) coef = 1.;
+            value = list_expo.at(i)/coef;
+            BaseExpo.replace(i, value);
+        }
+    }
+    //qDebug() << "BaseExpo: " << BaseExpo;
+
+    //... Relative Error ...
+    for(i=0; i<count_ch; i++)
+    {
+       dvalue = fabs(melt_curve->Amplitude.at(i) - melt_curve->Mean_Amplitude.at(i))/melt_curve->Amplitude.at(i)*100.;
+       RelativeError.replace(i, roundTo(dvalue,0));
+    }
+    //... Recomended Exposition ...
+    for(i=0; i<count_ch; i++)
+    {
+        dvalue = (melt_curve->Amplitude.at(i)/melt_curve->Mean_Amplitude.at(i)) * BaseExpo.at(i);
+        k = -1;
+        if(dvalue > 100) k = -2;
+        RecomendedExpo.replace(i, roundTo(dvalue, k));
+    }
+
+
+    //...
+
+    header << tr("Channel") << tr("Current exposition") << tr("Recommended exposition") << tr("Relative error, %");
+
+    BaseExpo_Table->clear();
+    BaseExpo_Table->setColumnCount(4);
+    BaseExpo_Table->setHorizontalHeaderLabels(header);
+    BaseExpo_Table->setColumnWidth(0, 100);
+    BaseExpo_Table->setColumnWidth(1, 200);
+    BaseExpo_Table->setColumnWidth(2, 200);
+    //BaseExpo_Table->setColumnWidth(3, 150);
+    BaseExpo_Table->horizontalHeader()->setSectionResizeMode(QHeaderView::Fixed);
+    BaseExpo_Table->horizontalHeader()->setSectionResizeMode(3, QHeaderView::Stretch);
+    BaseExpo_Table->setRowCount(count_ch);
+
+    for(i=0; i<BaseExpo_Table->rowCount(); i++)
+    {
+        for(j=0; j<BaseExpo_Table->columnCount(); j++)
+        {
+            item = new QTableWidgetItem();
+
+            switch(j)
+            {
+            default:    text = "";  break;
+
+            case 0:     text = fluor_name[i];
+                        break;
+
+            case 1:     text = QString::number(BaseExpo.at(i));
+                        break;
+
+            case 2:     sts = false;
+                        if(RelativeError.at(i) >= melt_curve->border_AbsDeviationOptic) sts = true;
+                        text = QString("%1;%2").arg(RecomendedExpo.at(i), 0, 'f',0).arg(sts);
+                        break;
+
+            case 3:     text = QString("%1;%2;%3;%4").arg(RelativeError.at(i),0,'f',0).
+                                                   arg(melt_curve->border_AbsDeviationOptic,0,'f',0).
+                                                   arg(melt_curve->Mean_Amplitude.at(i), 0, 'f',0).
+                                                   arg(melt_curve->Amplitude.at(i), 0, 'f', 0);
+                        break;
+
+
+
+            }
+
+            item->setText(text);
+            BaseExpo_Table->setItem(i, j, item);
+
+        }
+    }
+
+    BaseExpo_Table->viewport()->update();    
+}
+//-----------------------------------------------------------------------------
 //--- OpenTechReport()
 //-----------------------------------------------------------------------------
 void Analyser_Calibration::OpenTechReport()
@@ -1303,7 +1481,7 @@ void Tech_Delegate_2::paint(QPainter *painter,
 
 }
 //-----------------------------------------------------------------------------
-//--- Check_MinMaxAmplitude()
+//--- Tech_Delegate_1::paint
 //-----------------------------------------------------------------------------
 void Tech_Delegate_1::paint(QPainter *painter,
                           const QStyleOptionViewItem &option,
@@ -1353,6 +1531,80 @@ void Tech_Delegate_1::paint(QPainter *painter,
 
     painter->setPen(QPen(Qt::black,1,Qt::SolidLine));
     painter->drawText(rect, Qt::AlignHCenter | Qt::AlignVCenter, text);
+
+}
+//-----------------------------------------------------------------------------
+//--- BaseExpo_ItemDelegate::paint
+//-----------------------------------------------------------------------------
+void BaseExpo_ItemDelegate::paint(QPainter *painter,
+                          const QStyleOptionViewItem &option,
+                          const QModelIndex &index) const
+{
+
+    QRect rect = option.rect;
+    QString text = index.data().toString();
+    QStringList list;
+
+    int col = index.column();
+    int row = index.row();
+
+    QPalette pal = option.palette;
+    QStyleOptionViewItem  viewOption(option);
+    viewOption.state &= ~QStyle::State_HasFocus;    // disable state HasFocus
+    QStyledItemDelegate::paint(painter, viewOption, index);
+
+    QPixmap pixmap_ch(":/images/fam_flat.png");
+    QColor bg_color = Qt::white;
+
+    // Background
+    painter->fillRect(rect, bg_color);
+
+
+    // Data
+    switch(col)
+    {
+    default:    break;
+    case 0:
+
+            switch(row)
+            {
+            default:
+            case 0: pixmap_ch.load(":/images/fam_flat.png");    break;
+            case 1: pixmap_ch.load(":/images/hex_flat.png");    break;
+            case 2: pixmap_ch.load(":/images/rox_flat.png");    break;
+            case 3: pixmap_ch.load(":/images/cy5_flat.png");    break;
+            case 4: pixmap_ch.load(":/images/cy55_flat.png");    break;
+            }
+            painter->drawPixmap(rect.left() + 10, rect.top() + (rect.height()-8)/2 - 2, pixmap_ch);
+            rect.setLeft(rect.left() + 20 + 10);
+            painter->drawText(rect, Qt::AlignLeft | Qt::AlignVCenter, text);
+            break;
+
+    case 1: painter->drawText(rect, Qt::AlignCenter, text);
+            break;
+
+    case 2: list = text.split(";");
+            if(list.size() >= 2)
+            {
+                if(list.at(1).trimmed() == "0")
+                {
+                    painter->setPen(QPen(Qt::gray,1,Qt::SolidLine));
+                }
+                else painter->setPen(QPen(Qt::red,2,Qt::SolidLine));
+                painter->drawText(rect, Qt::AlignCenter, list.at(0));
+            }
+            break;
+
+    case 3: list = text.split(";");
+            if(list.size() >= 4)
+            {
+                text = QString("~ %1% (%2(%3))").arg(list.at(0)).arg(list.at(2)).arg(list.at(3));
+                painter->drawText(rect, Qt::AlignCenter, text);
+            }
+            break;
+    }
+
+    painter->setPen(QPen(Qt::black,1,Qt::SolidLine));
 
 }
 

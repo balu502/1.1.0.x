@@ -203,7 +203,7 @@ void* Analyser_HRM::Create_Win(void *pobj, void *main)
     plot_V_layout->addLayout(plot_H2_layout);
 
     Label_AxisY = new QLabel("D", parent);
-    Label_AxisX = new QLabel("M", parent);
+    Label_AxisX = new QLabel("P", parent);
     Label_CountClusters = new QLabel("K = ...", parent);
     Label_ResultClustering = new QLabel("(100%)", parent);
     Label_AxisY->setFont(f_Labels);
@@ -640,10 +640,12 @@ void Analyser_HRM::Destroy_Win()
         DY_Norm.clear();
         qDeleteAll(Diff_Norm);
         Diff_Norm.clear();
-        qDeleteAll(DY_Cluster);
-        DY_Cluster.clear();
-        qDeleteAll(DYmass_Cluster);
-        DYmass_Cluster.clear();
+        //qDeleteAll(DY_Cluster);
+        //DY_Cluster.clear();
+        //qDeleteAll(DYmass_Cluster);
+        //DYmass_Cluster.clear();
+        qDeleteAll(XY_Points);
+        XY_Points.clear();
 
         delete MainBox;
         MainBox = NULL;
@@ -969,6 +971,8 @@ void Analyser_HRM::Analysis_Group(QVector<int> *hrm_group)
     max_Border.clear();
     min_Border.clear();
 
+    Tpeaks.clear();
+
     min_Temp = max_Temp = 0.;
     foreach(i, HRM_Group)
     {
@@ -993,6 +997,7 @@ void Analyser_HRM::Analysis_Group(QVector<int> *hrm_group)
 
         curve_results = Curve_Results.value(i);
         curve_results->Tpeaks = Tpeak;
+        Tpeaks.append(Tpeak);
 
         if(Tpeak <= 0. || Fpeak <= 0.) continue;
         max_Border.append(Tpeak + 2.);
@@ -1335,39 +1340,56 @@ void Analyser_HRM::Analysis_Group(QVector<int> *hrm_group)
 
     // 8. ... Cluster Plot ...
     vec.clear();
-    qDeleteAll(DY_Cluster);
+    /*qDeleteAll(DY_Cluster);
     DY_Cluster.clear();
     qDeleteAll(DYmass_Cluster);
-    DYmass_Cluster.clear();
+    DYmass_Cluster.clear();*/
+    qDeleteAll(XY_Points);
+    XY_Points.clear();
 
     Cluster_Plot->Delete_Curves();
 
-    id = 0;
-    //qDebug() << "size points: " << Hrm_DY_Norm->list_Curves.size();
+    //... find Min&Max ...
+    min_Temp = *std::min_element(Tpeaks.begin(),Tpeaks.end());
+    max_Temp = *std::max_element(Tpeaks.begin(), Tpeaks.end());
+    max_Temp = fabs(max_Temp - min_Temp);
+    if(max_Temp == 0.) max_Temp = 1.;
+
+    QVector<double> distance;
+    double max_dist, min_dist;
     foreach(curve, Hrm_DY_Norm->list_Curves)
-    //foreach(curve, Hrm_Diff->list_Curves)
     {
         vec.clear();
         for(i=0; i<count_meas_border; i++)
         {
             vec.append(curve->sample(i).y());
         }
-        mean_value = Find_MeanValue(vec);   //gsl_stats_mean(vec.data(), 1, vec.size());
-        stdev = Find_StDeviation(vec);      //gsl_stats_sd(vec.data(), 1, vec.size());
-        mean_value = Distance(&vec, &Curve_NULL);
-        //mean_value = Accumulate(&vec);
+        dvalue = Distance(&vec, &Curve_NULL);
+        distance.append(dvalue);
+    }
+    min_dist = *std::min_element(distance.begin(),distance.end());
+    max_dist = *std::max_element(distance.begin(),distance.end());
+    max_dist = fabs(max_dist - min_dist);
+    if(max_dist == 0.) max_dist = 1.;
+    //...
 
-        //stdev *= stdev;
-        //mean_value *= mean_value;
-
-        //stdev = gsl_stats_sd_m(vec.data(), 1, vec.size(), 0.);
+    id = 0;
+    //qDebug() << "size points: " << Hrm_DY_Norm->list_Curves.size();
+    foreach(curve, Hrm_DY_Norm->list_Curves)    
+    {
+        stdev = (distance.at(id) - min_dist)/max_dist;
+        mean_value = (Tpeaks.at(id) - min_Temp)/max_Temp;        
 
         vec_P = new QVector<QPointF>;
         P.setX(mean_value);
         P.setY(stdev);
         vec_P->append(P);
-        DY_Cluster.append(vec_P);
-        //qDebug() << "DY_Cluster: " << P << vec;
+
+        QPointF *p_P = new QPointF();
+        *p_P = P;
+        XY_Points.append(p_P);
+        //DY_Cluster.append(vec_P);
+        //qDebug() << "DY_Cluster: " << P << *p_P;
 
         //if(id < Color_Cluster.size()) color = Color_Cluster.at(id);
         //else color = Qt::black;
@@ -1389,12 +1411,15 @@ void Analyser_HRM::Analysis_Group(QVector<int> *hrm_group)
     Cluster_Plot->setAxisAutoScale(QwtPlot::xBottom, true);
     Cluster_Plot->replot();
 
+    distance.clear();
+    vec.clear();
+
+
     // 9. ... Create Cluster ...
     Clear_Clusters();
     Create_Cluster();
 
     // 10. ... Analysis ...
-
     if(Reference_clustering->isChecked())
     {
         Cluster_ReferenceAnalysis(List_CLUSTERs);
@@ -2132,25 +2157,8 @@ void Analyser_HRM::Draw_ClusterMass(QVector<CLUSTER *> &list)
 
     Clear_ClusterMass();
 
-    qDeleteAll(DYmass_Cluster);
-    DYmass_Cluster.clear();
-
-    //...
-    /*
-    foreach(curve_cluster, Cluster_Plot->list_Curves)
-    {
-        P = curve_cluster->sample(0);
-        P.setX(P.x()*1.02);
-        P.setY(P.y()*1.02);
-        vec_curve.append(P);
-        curve_cluster->setSamples(vec_curve);
-
-        break;
-    }
-    Cluster_Plot->replot();
-    */
-
-    //...
+    //qDeleteAll(DYmass_Cluster);
+    //DYmass_Cluster.clear();
 
 
     Dy = Cluster_Plot->axisInterval(QwtPlot::yLeft).maxValue() - Cluster_Plot->axisInterval(QwtPlot::yLeft).minValue();
@@ -2158,26 +2166,28 @@ void Analyser_HRM::Draw_ClusterMass(QVector<CLUSTER *> &list)
 
     foreach(CLUSTER* cluster, list)
     {
-        mean_value = Find_MeanValue(cluster->XY_mass);
-        stdev = Find_StDeviation(cluster->XY_mass);
-        mean_value = Distance(&cluster->XY_mass, &Curve_NULL);
-        //mean_value = Accumulate(&cluster->XY_mass);
-        //stdev *= stdev;
-        //mean_value *= mean_value;
-        //stdev = gsl_stats_sd_m(cluster->XY_mass.data(), 1, cluster->XY_mass.size(), 0.);
-        //qDebug() << "XY_mass: " << mean_value << stdev << cluster->XY_mass;
+        //mean_value = Find_MeanValue(cluster->XY_mass);
+        //stdev = Find_StDeviation(cluster->XY_mass);
+        //mean_value = Distance(&cluster->XY_mass, &Curve_NULL);
 
-        P.setX(mean_value);
-        P.setY(stdev);
-        vec_P = new QVector<QPointF>;
-        vec_P->append(P);
-        DYmass_Cluster.append(vec_P);
+        //P.setX(cluster->XY_cluster.x());
+        //P.setY(stdev);
+        P = cluster->XY_cluster;
+        //vec_P = new QVector<QPointF>;
+        //vec_P->append(P);
+        //DYmass_Cluster.append(vec_P);
 
-        //qDebug() << "DY_ClusterMASS: " << P << cluster->curves;
+        //qDebug() << "ClusterMASS: " << P << cluster->curves.size();
 
         X.clear();
         Y.clear();
-        foreach(vec, cluster->XY)
+        foreach(QPointF *p, cluster->XY_points)
+        {
+            X.append(fabs(p->x() - P.x()));
+            Y.append(fabs(p->y() - P.y()));
+            //qDebug() << "     Point_MASS: " << *p;
+        }
+        /*foreach(vec, cluster->XY)
         {
             mean_value = Find_MeanValue(*vec);
             stdev = Find_StDeviation(*vec);
@@ -2190,7 +2200,7 @@ void Analyser_HRM::Draw_ClusterMass(QVector<CLUSTER *> &list)
 
             X.append(fabs(P.x() - mean_value));
             Y.append(fabs(P.y() - stdev));
-        }
+        }*/
         Rx = *std::max_element(X.begin(), X.end());
         Ry = *std::max_element(Y.begin(), Y.end());
         //qDebug() << "Rx,Ry: " << Rx << Ry << Dx << Dy;
@@ -2281,6 +2291,7 @@ void Analyser_HRM::Clear_Clusters()
         cluster->curves.clear();
         cluster->XY.clear();
         cluster->XY_mass.clear();
+        cluster->XY_points.clear();
         delete cluster;
     }
     List_CLUSTERs.clear();
@@ -2300,8 +2311,12 @@ void Analyser_HRM::Create_Cluster()
         cluster->XY.append(Y_vec);
         cluster->XY_mass = *Y_vec;
         cluster->curves.append(HRM_Group.at(id));
+        cluster->XY_points.append(XY_Points.at(id));
+        cluster->XY_cluster = *XY_Points.at(id);
         List_CLUSTERs.append(cluster);
         id++;
+
+        //qDebug() << "cluster->XY_cluster:  " << id << cluster->XY_cluster;
     }
 }
 
@@ -2329,7 +2344,7 @@ void Analyser_HRM::FinishAuto_Analysis()
     //qDebug() << "Silhouette_Quality: " << num << value << Silhouette_Quality << vec;
 
     vec.clear();
-    for(i=1; i<InnerDistance_Quality.keys().size()-1; i++)
+    /*for(i=1; i<InnerDistance_Quality.keys().size()-1; i++)
     {
         key = InnerDistance_Quality.keys().at(i);
         key_before = InnerDistance_Quality.keys().at(i-1);
@@ -2337,7 +2352,7 @@ void Analyser_HRM::FinishAuto_Analysis()
         value = fabs(InnerDistance_Quality.value(key) - InnerDistance_Quality.value(key_after))/
                 fabs(InnerDistance_Quality.value(key) - InnerDistance_Quality.value(key_before));
         vec.append(value);
-    }
+    }*/
 
     //qDebug() << "InnerDistance_Quality: " << vec << InnerDistance_Quality;
 
@@ -2370,8 +2385,9 @@ void Analyser_HRM::Cluster_Analysis(QVector<CLUSTER*> &list, int num)
     int val;
     bool stop;
     QVector<double> *vec;
+    QVector<double> X_vec, Y_vec;
 
-    //qDebug() << "LIST_Clasters: " << list.size() << list;
+    //qDebug() << "LIST_Clasters: " << list.size(); // << list;
     Silhouette_Quality.clear();
     InnerDistance_Quality.clear();
 
@@ -2442,6 +2458,10 @@ void Analyser_HRM::Cluster_Analysis(QVector<CLUSTER*> &list, int num)
         {
             cluster->XY.append(vec);
         }
+        foreach(QPointF *p, child_cluster->XY_points)
+        {
+            cluster->XY_points.append(p);
+        }
         count = vec->size();
 
         // b. calculate new centre of mass cluster::XY_mass
@@ -2459,6 +2479,17 @@ void Analyser_HRM::Cluster_Analysis(QVector<CLUSTER*> &list, int num)
             value /= id;
             cluster->XY_mass.append(value);
         }
+        // new centre of mass for cluster
+        X_vec.clear();
+        Y_vec.clear();
+        foreach(QPointF *p, cluster->XY_points)
+        {
+            X_vec.append(p->x());
+            Y_vec.append(p->y());
+        }
+        cluster->XY_cluster.setX(Find_MeanValue(X_vec));
+        cluster->XY_cluster.setY(Find_MeanValue(Y_vec));
+        //
 
         // c. delete child_cluster
         list.remove(P_min.y() + P_min.x() + 1);
@@ -2473,7 +2504,7 @@ void Analyser_HRM::Cluster_Analysis(QVector<CLUSTER*> &list, int num)
 
         val = Quality_Clustering(list, Curve_Results);
         Silhouette_Quality.insert(list.size(), val);        
-        InnerDistance_Clustering(list, InnerDistance_Quality);
+        //InnerDistance_Clustering(list, InnerDistance_Quality);
         //qDebug() << "Quality_Clustering: " << val << list.size();
     }
 
@@ -2497,6 +2528,7 @@ void Analyser_HRM::Cluster_ReferenceAnalysis(QVector<CLUSTER*> &list)
     QVector<double> vec_dist;
     QVector<double> *vec_temp;
     double value;
+    QVector<double> X_vec, Y_vec;
 
     Silhouette_Quality.clear();
     InnerDistance_Quality.clear();
@@ -2544,30 +2576,15 @@ void Analyser_HRM::Cluster_ReferenceAnalysis(QVector<CLUSTER*> &list)
         vec_dist.clear();
         foreach(cluster_ref, list_ref)
         {
-            vec_dist.append(Distance(&cluster_ref->XY_mass, &cluster->XY_mass));
+            //vec_dist.append(Distance(&cluster_ref->XY_mass, &cluster->XY_mass));
+            vec_dist.append(Distance_Points(cluster_ref->XY_cluster, cluster->XY_cluster));
         }
         id = std::min_element(vec_dist.begin(),vec_dist.end()) - vec_dist.begin();
         cluster_ref = list_ref.at(id);
 
         cluster_ref->curves.append(key);
         cluster_ref->XY.append(cluster->XY.at(0));
-
-        // b. calculate new centre of mass cluster_ref::XY_mass
-        /*count = cluster_ref->XY_mass.size();
-        cluster_ref->XY_mass.clear();
-
-        for(i=0; i<count; i++)
-        {
-            value = 0;
-            id = 0;
-            foreach(vec_temp, cluster_ref->XY)
-            {
-                value += vec_temp->at(i);
-                id++;
-            }
-            value /= id;
-            cluster_ref->XY_mass.append(value);
-        }*/
+        cluster_ref->XY_points.append(cluster->XY_points.at(0));
 
         //... remove ...
         id = list.indexOf(cluster);
@@ -2578,6 +2595,7 @@ void Analyser_HRM::Cluster_ReferenceAnalysis(QVector<CLUSTER*> &list)
     // calculate new centre of mass cluster_ref::XY_mass
     foreach(cluster, list)
     {
+        // old mass_centre
         count = cluster->XY_mass.size();
         for(i=0; i<count; i++)
         {
@@ -2591,12 +2609,23 @@ void Analyser_HRM::Cluster_ReferenceAnalysis(QVector<CLUSTER*> &list)
             value /= id;
             cluster->XY_mass.replace(i, value);
         }
+
+        // new mass_centre
+        X_vec.clear();
+        Y_vec.clear();
+        foreach(QPointF *p, cluster->XY_points)
+        {
+            X_vec.append(p->x());
+            Y_vec.append(p->y());
+        }
+        cluster->XY_cluster.setX(Find_MeanValue(X_vec));
+        cluster->XY_cluster.setY(Find_MeanValue(Y_vec));
     }
 
 
     i = Quality_Clustering(list, Curve_Results);
     Silhouette_Quality.insert(list.size(), i);
-    InnerDistance_Clustering(list, InnerDistance_Quality);
+    //InnerDistance_Clustering(list, InnerDistance_Quality);
 
 
     list_ref.clear();
@@ -2648,10 +2677,11 @@ int Analyser_HRM::Quality_Clustering(QVector<CLUSTER *> &list, QMap<int, CURVE_R
     CURVE_RESULTS   *curve_results;
     double a,b, value;
     QVector<double> vec, VEC;
-    QVector<double> *vec1, *vec2;
-    QVector<double> Silhouette_clusters;
+    //QVector<double> *vec1, *vec2;
+    //QVector<double> Silhouette_clusters;
     QVector<double> temp_vec;
     QColor color;
+    double S = 0;
 
     j = 0;
     foreach(cluster, list)
@@ -2660,11 +2690,12 @@ int Analyser_HRM::Quality_Clustering(QVector<CLUSTER *> &list, QMap<int, CURVE_R
         else color = Qt::darkGray;
 
 
-        vec.clear();
+        vec.clear();        
         foreach(cluster_temp, list)
-        {
+        {            
             if(cluster_temp == cluster) continue;
-            vec.append(Distance(&cluster->XY_mass, &cluster_temp->XY_mass));
+            //vec.append(Distance(&cluster->XY_mass, &cluster_temp->XY_mass));
+            vec.append(Distance_Points(cluster->XY_cluster, cluster_temp->XY_cluster));
         }
         if(vec.size()) b = *std::min_element(vec.begin(), vec.end());
         else b = 1;
@@ -2673,54 +2704,55 @@ int Analyser_HRM::Quality_Clustering(QVector<CLUSTER *> &list, QMap<int, CURVE_R
         for(i=0; i<cluster->curves.size(); i++)
         {
             id = cluster->curves.at(i);
-            a = Distance(cluster->XY.at(i), &cluster->XY_mass);
+            a = Distance_Points(*cluster->XY_points.at(i), cluster->XY_cluster);
             if(vec.size()) value = (b - a)/qMax(b,a);
             else value = 1;
             curve_results = map.value(id);
             curve_results->Percent_Clustering = value;
             curve_results->Group = j;
-            curve_results->color = color; //cluster->color;
-
-            //temp_vec.append(value);
+            curve_results->color = color; //cluster->color;            
         }
 
-        //value = Find_MeanValue(temp_vec);
-        //Silhouette_clusters.append(value);
-        //qDebug() << "color: " << j << cluster->color;
         j++;
     }
     vec.clear();
     VEC.clear();
-    //... Summ Validity of Clustering ...
-    /*for(i=0; i<list.size(); i++)
-    {
-        cluster = list.at(i);
-        for(j=0; j<cluster->curves.size(); j++)
-        {
-            for(k=j+1; k<cluster->curves.size(); k++)
-            {
-                vec1 = cluster->XY.at(j);
-                vec2 = cluster->XY.at(k);
-                vec.append(Distance(vec1, vec2));
-                //vec.append(Distance_DM(vec1, vec2));
-            }
-        }
 
-        for(j=i+1; j<list.size(); j++)
-        {
-            cluster_temp = list.at(j);
-            VEC.append(Distance(&cluster->XY_mass, &cluster_temp->XY_mass));
-            //VEC.append(Distance_DM(&cluster->XY_mass, &cluster_temp->XY_mass));
-        }
-     }*/
+    //... Summ Validity of Clustering ...
+    i = 0;
+    //double A,B;
+    //QVector<double> vec_AB, vec_S;
     foreach(cluster, list)
     {
+        // another algorithm
+        /*if(cluster->XY_points.size() > 1)
+        {
+            vec_AB.clear();
+            foreach(QPointF *p, cluster->XY_points)
+            {
+               vec_AB.append(Distance_Points(*p, cluster->XY_cluster));
+            }
+            A = Find_MeanValue(vec_AB);
+
+            vec_AB.clear();
+            foreach(cluster_temp, list)
+            {
+                if(cluster == cluster_temp) continue;
+                vec_AB.append(Distance_Points(cluster->XY_cluster, cluster_temp->XY_cluster));
+            }
+            B = *std::min_element(vec_AB.begin(), vec_AB.end());
+            vec_S.append((B - A)/qMax(B,A));
+        }*/
+
+        //
+
         for(id=0; id<cluster->curves.size(); id++)
         {
             for(k=0; k<cluster->curves.size(); k++)
             {
-                if(id == k) continue;
-                vec.append(Distance(cluster->XY.at(k), cluster->XY.at(id)));
+                if(id >= k) continue;
+                //vec.append(Distance(cluster->XY.at(k), cluster->XY.at(id)));
+                vec.append(Distance_Points(*cluster->XY_points.at(k), *cluster->XY_points.at(id)));
             }
         }
         if(cluster->curves.size() == 1) // for "simple" cluster - with single curve
@@ -2729,38 +2761,36 @@ int Analyser_HRM::Quality_Clustering(QVector<CLUSTER *> &list, QMap<int, CURVE_R
             foreach(cluster_temp, list)
             {
                 if(cluster == cluster_temp) continue;
-                temp_vec.append(Distance(cluster->XY.at(0), &cluster_temp->XY_mass));
+                //temp_vec.append(Distance(cluster->XY.at(0), &cluster_temp->XY_mass));
+                temp_vec.append(Distance_Points(*cluster->XY_points.at(0), cluster_temp->XY_cluster));
             }
             value = *std::min_element(temp_vec.begin(), temp_vec.end());
             vec.append(value);
-        }
+        }        
 
-
-        /*if(cluster->curves.size() > 1)
-        {
-            for(i=0; i<cluster->curves.size(); i++)
-            {
-                vec.append(Distance(cluster->XY.at(i), &cluster->XY_mass));
-            }
-        }*/
-
-
+        j = -1;
         foreach(cluster_temp, list)
         {
-            if(cluster == cluster_temp) continue;
-            VEC.append(Distance(&cluster_temp->XY_mass, &cluster->XY_mass));
+            j++;
+            if(i >= j) continue;
+            //if(cluster == cluster_temp) continue;
+            //VEC.append(Distance(&cluster_temp->XY_mass, &cluster->XY_mass));
+            VEC.append(Distance_Points(cluster_temp->XY_cluster, cluster->XY_cluster));
         }
+
+        i++;
     }
 
-    //qDebug() << "Quality_Clustering: " << list.size() << vec << VEC;
+
 
     //a = Find_MeanValue(vec);
     //b = Find_MeanValue(VEC);
-    if(vec.size()) a = Find_MeanValue(vec); //a = *std::max_element(vec.begin(), vec.end());
+    if(vec.size()) a = Find_MeanValue(vec);  //a = *std::max_element(vec.begin(), vec.end());
     else a = 0;
     if(VEC.size()) b = *std::min_element(VEC.begin(), VEC.end());
     else b = 0;
 
+    if(a == 0 && b == 0) {a = 1; b = 1;}
 
     value = (b - a)/qMax(b,a);
 
@@ -2773,19 +2803,32 @@ int Analyser_HRM::Quality_Clustering(QVector<CLUSTER *> &list, QMap<int, CURVE_R
     //k = value * 100;
 
     //if(k >= 100) k = 0;
-    //qDebug() << "Validity: " << k; // << vec << VEC;
+    //qDebug() << "Validity: " << k << a << b << vec.size() << VEC.size();
+
     if(k > 0 && k < 100) Label_ResultClustering->setText(QString(" (%1%)").arg(k));
     else Label_ResultClustering->setText("");
     Label_CountClusters->setText(QString("K = %1").arg(list.size()));
 
 
-    //qDebug() << "Map_size: " << map.size();
+    //S = Find_MeanValue(vec_S);
+    //qDebug() << "S: " << list.size() << k << S << vec_S;
 
     vec.clear();
     VEC.clear();
 
     return(k);
 
+}
+//-----------------------------------------------------------------------------
+//---
+//-----------------------------------------------------------------------------
+double Analyser_HRM::Distance_Points(QPointF P1,QPointF P2)
+{
+    double value;
+
+    value = sqrt(pow(P1.x() - P2.x(), 2.) + pow(P1.y() - P2.y(), 2.));
+
+    return(value);
 }
 //-----------------------------------------------------------------------------
 //---
@@ -2866,24 +2909,10 @@ void Analyser_HRM::Distance_Matrix(QVector<CLUSTER *> &list, QVector<QVector<dou
 
         for(j=i+1; j<list.size(); j++)
         {
-            cluster = list.at(j);
-
-            /*
-            count = cluster_main->XY_mass.size();
-            sum = 0;
-            for(k=0; k<count; k++)
-            {
-                value = pow(cluster_main->XY_mass.at(k) - cluster->XY_mass.at(k), 2);                
-                sum += value;
-            }
-            value = sum;
-            value = sqrt(value);
-            */
-            value = Distance(&cluster->XY_mass, &cluster_main->XY_mass);
-
-
+            cluster = list.at(j);           
+            //value = Distance(&cluster->XY_mass, &cluster_main->XY_mass);
+            value = Distance_Points(cluster->XY_cluster, cluster_main->XY_cluster);
             vec->append(value);
-
         }
 
         //qDebug() << "Dist: " << i << *vec << cluster_main->curves;
@@ -3652,6 +3681,7 @@ CLUSTER::~CLUSTER()
     XY.clear();
     curves.clear();    
     XY_mass.clear();
+    XY_points.clear();
 }
 //-----------------------------------------------------------------------------
 //---

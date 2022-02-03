@@ -71,7 +71,18 @@
 
 #define NAME_METHOD "Diagnostic_CARD"
 
+//-----------------------------------------------------------------------------
+class BaseExpo_ItemDelegate: public QStyledItemDelegate
+{
+    Q_OBJECT
 
+public:
+
+    void paint (QPainter *painter,
+                const QStyleOptionViewItem &option,
+                const QModelIndex &index) const Q_DECL_OVERRIDE;
+
+};
 //-----------------------------------------------------------------------------
 class Tech_Delegate_1: public QStyledItemDelegate
 {
@@ -124,6 +135,7 @@ public:
     QString Lang;
     QMessageBox message;
     bool flag_ControlDepartment;
+    bool flag_BaseExposition;
 
     void Create_OpticResults(QDomDocument&, QDomElement&);
     void Create_TemperatureResults(QDomDocument&, QDomElement&);
@@ -133,6 +145,7 @@ public:
     int Check_MinMaxAmplitude();
 
     void Fill_TechDoc();
+    void Fill_BaseExposition();
 
     Open_TechReport event_TechReport;
     QWidget *main_widget;
@@ -151,6 +164,11 @@ private:
     Tech_Delegate_1 *delegate_col1;
     Tech_Delegate_2 *delegate_col2;
     QPushButton     *Tech_Report;
+
+    QGroupBox       *BaseExpo_Box;
+    QTableWidget    *BaseExpo_Table;
+    BaseExpo_ItemDelegate *delegate_BaseExpo;
+    QLabel          *Info_BaseExpo;
 
     QVector<short>  TechReport_Item;
     QVector<double> TechReport_Borders;

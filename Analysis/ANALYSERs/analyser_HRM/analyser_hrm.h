@@ -189,6 +189,10 @@ public:
     QVector<int> curves;
     QVector<QVector<double>*> XY;   // arrays for each curve
     QVector<double> XY_mass;        // array for mass_centre_cluster
+
+    QVector<QPointF*> XY_points;    // array for each curve as f(x,y) (look on Cluster_Plot)
+    QPointF XY_cluster;             // mass_centre for cluster
+
     QColor color;
 
 };
@@ -444,11 +448,13 @@ private:
     QMap<int, CURVE_RESULTS*> Curve_Results;
     QVector<double> X_Temp, X_Norm;
     QVector<QVector<double>*> Y_Norm, DY_Norm, Diff_Norm;
-    QVector<QVector<QPointF>*> DY_Cluster, DYmass_Cluster;
+    //QVector<QVector<QPointF>*> DY_Cluster, DYmass_Cluster;
+    QVector<QPointF*> XY_Points;
     QVector<QwtPlotShapeItem*> Shape_Cluster;
     QMap<int, double> Silhouette_Quality;
     QMap<int, double> InnerDistance_Quality;
     QVector<double> temperature_Correction;
+    QVector<double> Tpeaks;
 
     QVector<QColor> Color_Cluster;
     QVector<double> Curve_NULL;
@@ -478,6 +484,7 @@ private:
     void ChangeColor_Curve(HrmPlot*, QVector<int>, QColor);
     double Distance(QVector<double>*,QVector<double>*);
     double Distance_DM(QVector<double>*,QVector<double>*);
+    double Distance_Points(QPointF,QPointF);
     double Accumulate(QVector<double>*);
 
     void Fill_SampleResults();

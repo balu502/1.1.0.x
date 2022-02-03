@@ -9,87 +9,117 @@
         <translation>Отчёт</translation>
     </message>
     <message>
-        <location filename="../analyser_calibration.cpp" line="56"/>
+        <location filename="../analyser_calibration.cpp" line="66"/>
+        <source>Possible adjustment of the base exposure value.</source>
+        <translation>Возможная корректировка величины базовой экспозиции.</translation>
+    </message>
+    <message>
+        <location filename="../analyser_calibration.cpp" line="79"/>
         <source>Total</source>
         <translation>Общий результат</translation>
     </message>
     <message>
-        <location filename="../analyser_calibration.cpp" line="57"/>
+        <location filename="../analyser_calibration.cpp" line="80"/>
         <source>Optical mask</source>
         <translation>Оптическая маска</translation>
     </message>
     <message>
-        <location filename="../analyser_calibration.cpp" line="58"/>
+        <location filename="../analyser_calibration.cpp" line="81"/>
         <source>Temperature/Amplitude calibration</source>
         <translation>Температурная/Амплитудная верификация</translation>
     </message>
     <message>
-        <location filename="../analyser_calibration.cpp" line="60"/>
+        <location filename="../analyser_calibration.cpp" line="83"/>
         <source>Technical document</source>
         <translation>Техническая документация</translation>
     </message>
     <message>
-        <location filename="../analyser_calibration.cpp" line="110"/>
+        <location filename="../analyser_calibration.cpp" line="84"/>
+        <source>Base Exposition</source>
+        <translation>Базовая экспозиция</translation>
+    </message>
+    <message>
+        <location filename="../analyser_calibration.cpp" line="138"/>
         <source>Calibration</source>
         <translation>Верификация</translation>
     </message>
     <message>
-        <location filename="../analyser_calibration.cpp" line="1064"/>
+        <location filename="../analyser_calibration.cpp" line="1112"/>
+        <source>Channel</source>
+        <translation>Канал</translation>
+    </message>
+    <message>
+        <location filename="../analyser_calibration.cpp" line="1112"/>
+        <source>Current exposition</source>
+        <translation>Текущая экспозиция</translation>
+    </message>
+    <message>
+        <location filename="../analyser_calibration.cpp" line="1112"/>
+        <source>Recommended exposition</source>
+        <translation>Рекомендованная экспозиция</translation>
+    </message>
+    <message>
+        <location filename="../analyser_calibration.cpp" line="1112"/>
+        <source>Relative error, %</source>
+        <translation>Относительное отклонение, %</translation>
+    </message>
+    <message>
+        <location filename="../analyser_calibration.cpp" line="1269"/>
         <source>Title</source>
         <translation>Название</translation>
     </message>
     <message>
-        <location filename="../analyser_calibration.cpp" line="1064"/>
+        <location filename="../analyser_calibration.cpp" line="1269"/>
         <source>Value</source>
         <translation>Значение</translation>
     </message>
     <message>
-        <location filename="../analyser_calibration.cpp" line="1064"/>
+        <location filename="../analyser_calibration.cpp" line="1269"/>
         <source>Limit</source>
         <translation>Границы</translation>
     </message>
     <message>
-        <location filename="../analyser_calibration.cpp" line="1099"/>
+        <location filename="../analyser_calibration.cpp" line="1305"/>
         <source>Число дефектных лунок</source>
         <translation>Число дефектных лунок</translation>
     </message>
     <message>
-        <location filename="../analyser_calibration.cpp" line="1100"/>
+        <location filename="../analyser_calibration.cpp" line="1306"/>
         <source>Коэффициент качества распознавания оптической маски</source>
         <translation>Коэффициент качества распознавания оптической маски</translation>
     </message>
     <message>
-        <location filename="../analyser_calibration.cpp" line="1101"/>
+        <location filename="../analyser_calibration.cpp" line="1307"/>
         <source>Стандартный разброс температур по блоку</source>
         <translation>Стандартный разброс температур по блоку</translation>
     </message>
     <message>
-        <location filename="../analyser_calibration.cpp" line="1102"/>
+        <location filename="../analyser_calibration.cpp" line="1308"/>
         <source>Разброс температур по ТЭМ</source>
         <translation>Разброс температур по ТЭМ</translation>
     </message>
     <message>
-        <location filename="../analyser_calibration.cpp" line="1103"/>
+        <location filename="../analyser_calibration.cpp" line="1309"/>
         <source>Стандартный разброс измерений флуоресценции</source>
         <translation>Стандартный разброс измерений флуоресценции</translation>
     </message>
     <message>
-        <location filename="../analyser_calibration.cpp" line="1104"/>
+        <location filename="../analyser_calibration.cpp" line="1310"/>
         <source>Отклонение средней температуры плавления</source>
         <translation>Отклонение средней температуры плавления</translation>
     </message>
     <message>
-        <location filename="../analyser_calibration.cpp" line="1105"/>
+        <location filename="../analyser_calibration.cpp" line="1311"/>
         <source>Отклонение измеренного сигнала флуоресценции</source>
         <translation>Отклонение измеренного сигнала флуоресценции</translation>
     </message>
     <message>
-        <location filename="../analyser_calibration.cpp" line="1172"/>
+        <location filename="../analyser_calibration.cpp" line="1378"/>
         <source>Соответствует</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../analyser_calibration.cpp" line="1173"/>
+        <location filename="../analyser_calibration.cpp" line="1379"/>
         <source>Не соответствует</source>
         <translation type="unfinished"></translation>
     </message>
@@ -102,57 +132,57 @@
         <translation>показать маску</translation>
     </message>
     <message>
-        <location filename="../mask.cpp" line="525"/>
+        <location filename="../mask.cpp" line="527"/>
         <source>Bad quality in channel: </source>
         <translation>Плохое качество распознования в канале:</translation>
     </message>
     <message>
-        <location filename="../mask.cpp" line="560"/>
+        <location filename="../mask.cpp" line="562"/>
         <source>Bad Distance...</source>
         <translation>Плохое качество распознования между каналами...</translation>
     </message>
     <message>
-        <location filename="../mask.cpp" line="580"/>
+        <location filename="../mask.cpp" line="582"/>
         <source>It is recommended to load the mask into the device!</source>
         <translation>Настоятельно рекомендуем загрузить маску в прибор!</translation>
     </message>
     <message>
-        <location filename="../mask.cpp" line="664"/>
+        <location filename="../mask.cpp" line="697"/>
         <source>Save as ...</source>
         <translation>Сохранить как ...</translation>
     </message>
     <message>
-        <location filename="../mask.cpp" line="666"/>
+        <location filename="../mask.cpp" line="699"/>
         <source>Mask File (*.mrt)</source>
         <translation>Mask файл (*.mrt)</translation>
     </message>
     <message>
-        <location filename="../mask.cpp" line="908"/>
+        <location filename="../mask.cpp" line="941"/>
         <source>Name</source>
         <translation>Наименование</translation>
     </message>
     <message>
-        <location filename="../mask.cpp" line="908"/>
+        <location filename="../mask.cpp" line="941"/>
         <source>Value</source>
         <translation>Значение</translation>
     </message>
     <message>
-        <location filename="../mask.cpp" line="908"/>
+        <location filename="../mask.cpp" line="941"/>
         <source>Result</source>
         <translation>Результат</translation>
     </message>
     <message>
-        <location filename="../mask.cpp" line="942"/>
+        <location filename="../mask.cpp" line="975"/>
         <source>Recognition Quality</source>
         <translation>Качество распознования</translation>
     </message>
     <message>
-        <location filename="../mask.cpp" line="968"/>
+        <location filename="../mask.cpp" line="1001"/>
         <source>Distance</source>
         <translation>Отклонение между каналами</translation>
     </message>
     <message>
-        <location filename="../mask.cpp" line="989"/>
+        <location filename="../mask.cpp" line="1022"/>
         <source>Difference with Device</source>
         <translation>Отклонение от прибора</translation>
     </message>
@@ -160,22 +190,22 @@
 <context>
     <name>MeltCurvePlot</name>
     <message>
-        <location filename="../melt_curve.cpp" line="1804"/>
+        <location filename="../melt_curve.cpp" line="1817"/>
         <source>Raw data</source>
         <translation>Исходные данные</translation>
     </message>
     <message>
-        <location filename="../melt_curve.cpp" line="1814"/>
+        <location filename="../melt_curve.cpp" line="1827"/>
         <source>Fit_curve</source>
         <translation>Кривая фитирования</translation>
     </message>
     <message>
-        <location filename="../melt_curve.cpp" line="1839"/>
+        <location filename="../melt_curve.cpp" line="1852"/>
         <source>Temperature, C</source>
         <translation>Температура, С</translation>
     </message>
     <message>
-        <location filename="../melt_curve.cpp" line="1842"/>
+        <location filename="../melt_curve.cpp" line="1855"/>
         <source>Fluor...</source>
         <translation>Флуоресценция...</translation>
     </message>
@@ -183,35 +213,35 @@
 <context>
     <name>Melt_Curve</name>
     <message>
-        <location filename="../melt_curve.cpp" line="747"/>
-        <location filename="../melt_curve.cpp" line="885"/>
+        <location filename="../melt_curve.cpp" line="748"/>
+        <location filename="../melt_curve.cpp" line="887"/>
         <source>Absolute deviation in channel: </source>
         <translation>Абсолютное отклонение температуры в канале:</translation>
     </message>
     <message>
-        <location filename="../melt_curve.cpp" line="768"/>
+        <location filename="../melt_curve.cpp" line="769"/>
         <source>Temperature irregularity in channel: </source>
         <translation>Температурная неравномерность в канале:</translation>
     </message>
     <message>
-        <location filename="../melt_curve.cpp" line="867"/>
+        <location filename="../melt_curve.cpp" line="868"/>
         <source>Plate deviation in channel: </source>
         <translation>Температурная неравномерность между блоками:</translation>
     </message>
     <message>
-        <location filename="../melt_curve.cpp" line="911"/>
+        <location filename="../melt_curve.cpp" line="914"/>
         <source>Maximum deviation in channel: </source>
         <translation>Максимальное отклонение в канале:</translation>
     </message>
     <message>
-        <location filename="../melt_curve.cpp" line="1172"/>
+        <location filename="../melt_curve.cpp" line="1183"/>
         <source>Maximum deviation between channels</source>
         <translation>Максимальное отклоненние
 между каналами</translation>
     </message>
     <message>
-        <location filename="../melt_curve.cpp" line="972"/>
-        <location filename="../melt_curve.cpp" line="1084"/>
+        <location filename="../melt_curve.cpp" line="980"/>
+        <location filename="../melt_curve.cpp" line="1092"/>
         <source>Name</source>
         <translation>Наименование</translation>
     </message>
@@ -266,56 +296,55 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../melt_curve.cpp" line="943"/>
         <source>Maximum deviation (between channels)</source>
-        <translation>Максимальное отклонение (между каналами)</translation>
+        <translation type="vanished">Максимальное отклонение (между каналами)</translation>
     </message>
     <message>
-        <location filename="../melt_curve.cpp" line="972"/>
-        <location filename="../melt_curve.cpp" line="1084"/>
+        <location filename="../melt_curve.cpp" line="980"/>
+        <location filename="../melt_curve.cpp" line="1092"/>
         <source>Value</source>
         <translation>Значение</translation>
     </message>
     <message>
-        <location filename="../melt_curve.cpp" line="972"/>
-        <location filename="../melt_curve.cpp" line="1084"/>
+        <location filename="../melt_curve.cpp" line="980"/>
+        <location filename="../melt_curve.cpp" line="1092"/>
         <source>Result</source>
         <translation>Результат</translation>
     </message>
     <message>
-        <location filename="../melt_curve.cpp" line="1002"/>
+        <location filename="../melt_curve.cpp" line="1010"/>
         <source>Melting Temperature Peak</source>
         <translation>Температурный пик</translation>
     </message>
     <message>
-        <location filename="../melt_curve.cpp" line="1032"/>
+        <location filename="../melt_curve.cpp" line="1040"/>
         <source>Standart deviation,(peak-to-peak)</source>
         <translation>Стандартное отклонение
 (пик до пика)</translation>
     </message>
     <message>
-        <location filename="../melt_curve.cpp" line="1062"/>
+        <location filename="../melt_curve.cpp" line="1070"/>
         <source>Temperature irregularity on Plate</source>
         <translation>Температурная неравномерность
 термоблока</translation>
     </message>
     <message>
-        <location filename="../melt_curve.cpp" line="1680"/>
+        <location filename="../melt_curve.cpp" line="1693"/>
         <source>peak</source>
         <translation>пик</translation>
     </message>
     <message>
-        <location filename="../melt_curve.cpp" line="1681"/>
+        <location filename="../melt_curve.cpp" line="1694"/>
         <source>amplitude</source>
         <translation>амплитуда</translation>
     </message>
     <message>
-        <location filename="../melt_curve.cpp" line="1114"/>
+        <location filename="../melt_curve.cpp" line="1122"/>
         <source>Signal amplitude</source>
         <translation>Амплитуда сигнала</translation>
     </message>
     <message>
-        <location filename="../melt_curve.cpp" line="1144"/>
+        <location filename="../melt_curve.cpp" line="1152"/>
         <source>Maximum deviation (%)</source>
         <translation>Сандартное отклонение
  (отн. среднего, %)</translation>

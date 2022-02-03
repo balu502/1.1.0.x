@@ -715,6 +715,7 @@ void Melt_Curve::Calculate_Results(rt_Protocol *prot)
     //qDebug() << "temp_borders: " << border_AbsDeviation << border_IrregularityPlate << border_PlateDeviation;
 
     int count_ch = results_Delegate->count_ActiveCh;
+    Mean_Amplitude.clear();
 
     // 1. Temperature validity
     Result_Tab->setCurrentIndex(0);
@@ -870,8 +871,9 @@ void Melt_Curve::Calculate_Results(rt_Protocol *prot)
         }
 
 
-        // 4. Spectrum mean value
+        // 4. Spectrum mean value        
         mean = gsl_stats_mean(&vec_ampl.at(0), 1, vec_ampl.size());
+        Mean_Amplitude.append(mean);
         if(fabs(mean-Amplitude.at(i))/Amplitude.at(i) > border_AbsDeviationOptic/100.) sts = false;      // 30%
         else sts = true;
         if(OpticValid_status) OpticValid_status = sts;
@@ -887,6 +889,7 @@ void Melt_Curve::Calculate_Results(rt_Protocol *prot)
             id_attention_optic++;
         }
         Deviation_amplitude.append(qAbs(mean-Amplitude.at(i))/Amplitude.at(i)*100.);
+
 
 
         // 5. Maximum deviation
