@@ -75,6 +75,11 @@ GraphPlot::GraphPlot(QWidget *parent):
     Fluor_Box->setContextMenuPolicy(Qt::CustomContextMenu);
     connect(Fluor_Box, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(contextMenu_Fluor()));
 
+    Coordinates_XY = new QLabel();
+    QFont f_coor = qApp->font();
+    Coordinates_XY->setFont(f_coor);
+    Coordinates_XY->setStyleSheet("QLabel {color : gray;}");
+
     //... 1.1 Group_FluorButton
     Group_FluorButton = new QGroupBox();
     Group_FluorButton->setObjectName("Transparent");
@@ -213,6 +218,7 @@ GraphPlot::GraphPlot(QWidget *parent):
     QHBoxLayout *graph_H_layout = new QHBoxLayout();
     QHBoxLayout *graph_H_layout_1 = new QHBoxLayout();
     QVBoxLayout *graph_V_layout = new QVBoxLayout();
+    QHBoxLayout *graph_H_layout_2 = new QHBoxLayout();
 
     graph_H_layout->setMargin(0);
     graph_H_layout_1->setMargin(0);
@@ -229,11 +235,13 @@ GraphPlot::GraphPlot(QWidget *parent):
     RejimeData_Box->setVisible(false);
 
     graph_H_layout_1->addWidget(Type_Box,0,Qt::AlignLeft);
+    graph_H_layout_2->addWidget(Coordinates_XY,0,Qt::AlignRight);
 
     canvas()->setLayout(graph_V_layout);
     graph_V_layout->addLayout(graph_H_layout,0);
     graph_V_layout->addLayout(graph_H_layout_1,0);
     graph_V_layout->addStretch();
+    graph_V_layout->addLayout(graph_H_layout_2,0);
 
 
     bg_color = canvasBackground();
@@ -1298,6 +1306,7 @@ GraphPlot::~GraphPlot()
     delete Fluor_Box;
     delete RejimeData_Box;
     delete Type_Box;
+    delete Coordinates_XY;
 
     PCR_1000->clear();
     delete PCR_1000;
@@ -1450,6 +1459,8 @@ bool GraphPlot::eventFilter(QObject *object, QEvent *e)
     int ch = -1;
     int i;
     int channel;
+    QString text;
+    double x,y;
 
     if(object != (QObject *)canvas()) return(false);
 
@@ -1565,6 +1576,10 @@ bool GraphPlot::eventFilter(QObject *object, QEvent *e)
         {
 
             //qDebug() << "mouse pos: xy -  " << invTransform(QwtPlot::xBottom, pos.x()) << invTransform(QwtPlot::yLeft, pos.y());
+            x = invTransform(QwtPlot::xBottom, pos.x());
+            y = invTransform(QwtPlot::yLeft, pos.y());
+            text = QString("(%1, %2)").arg(x,0,'f',1).arg(y,0,'f',1);
+            Coordinates_XY->setText(text);
 
             /*if(Threshold_value >= 0)
             {

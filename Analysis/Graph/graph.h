@@ -165,6 +165,7 @@ public:
     Fluor_ComboBox *Fluor_Box;
     QComboBox *RejimeData_Box;
     QComboBox *Type_Box;
+    QLabel    *Coordinates_XY;
 
     QGroupBox *Group_FluorButton;
     QToolButton *fam_button;
