@@ -187,8 +187,8 @@ public:
     virtual ~CLUSTER();
 
     QVector<int> curves;
-    QVector<QVector<double>*> XY;   // arrays for each curve
-    QVector<double> XY_mass;        // array for mass_centre_cluster
+    //QVector<QVector<double>*> XY;   // arrays for each curve
+    //QVector<double> XY_mass;        // array for mass_centre_cluster
 
     QVector<QPointF*> XY_points;    // array for each curve as f(x,y) (look on Cluster_Plot)
     QPointF XY_cluster;             // mass_centre for cluster
@@ -446,11 +446,12 @@ private:
     QVector<int> HRM_Group;
     QVector<int> *hrm;
     QMap<int, CURVE_RESULTS*> Curve_Results;
-    QVector<double> X_Temp, X_Norm;
-    QVector<QVector<double>*> Y_Norm, DY_Norm, Diff_Norm;
+    QVector<double> X_Temp, X_Norm, X_Centered;
+    QVector<QVector<double>*> Y_Norm, DY_Norm, DY_Centered, Diff_Norm;
     //QVector<QVector<QPointF>*> DY_Cluster, DYmass_Cluster;
     QVector<QPointF*> XY_Points;
     QVector<QwtPlotShapeItem*> Shape_Cluster;
+    QVector<QwtPlotCurve*> Center_Cluster;
     QMap<int, double> Silhouette_Quality;
     QMap<int, double> InnerDistance_Quality;
     QVector<double> temperature_Correction;
@@ -468,6 +469,7 @@ private:
     HrmPlot *Hrm_RawData_Border;
     HrmPlot *Hrm_Norm;
     HrmPlot *Hrm_DY_Norm;
+    HrmPlot *Hrm_DY_Centered;
     HrmPlot *Hrm_Diff;
     HrmPlot *Cluster_Plot;
 
@@ -486,16 +488,24 @@ private:
     double Distance_DM(QVector<double>*,QVector<double>*);
     double Distance_Points(QPointF,QPointF);
     double Accumulate(QVector<double>*);
+    double Calculate_ChangeDirection(QVector<double>*);
+    void Normalization_Vector(QVector<double>*);
+    void Calculate_Angle(QVector<QVector<double>*>*, QVector<double>*);
+    void Calculate_Diff(QVector<QVector<double>*>*, QVector<double>*);
+    void Calc_Atan2(QVector<double>*, QVector<double>*);
+    int Find_MinArea(QVector<QVector<double>*>*);
 
     void Fill_SampleResults();
     void Fill_GroupResults();
     int Quality_Clustering(QVector<CLUSTER*>&, QMap<int, CURVE_RESULTS*>&);
-    void InnerDistance_Clustering(QVector<CLUSTER*>&, QMap<int, double>&);
+    //void InnerDistance_Clustering(QVector<CLUSTER*>&, QMap<int, double>&);
+    int ScoreFunction_Quality(QVector<CLUSTER*>&);
 
     void Load_SelectGrid(QVector<int>*);
 
     void Temperature_Correction(QVector<int>*, QVector<double>*, QVector<QVector<double>*>*, QVector<double>*, double);
     void Interpolation_steffen(QVector<double>*, QVector<double>*, double);
+    void Temperature_Centered(QVector<double>*, QVector<QVector<double>*>*, QVector<double>*);
 
     void AddResult(vector<string>&, QString, QString);
 

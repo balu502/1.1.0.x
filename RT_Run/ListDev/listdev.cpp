@@ -489,14 +489,16 @@ void ListDev::slotConnection_status(int num)
     text = text.split(":").at(1);
     port = text.toInt();
 
-    if(s_pTcpSocket->state() == QAbstractSocket::UnconnectedState || s_pTcpSocket->waitForDisconnected(100))
-    {
-        s_pTcpSocket->connectToHost(address, port);
-    }
-    else
-    {
-        //qDebug() << "Unable connect with " << address << port;
-    }
+    s_pTcpSocket->disconnectFromHost();
+
+        if(s_pTcpSocket->state() == QAbstractSocket::UnconnectedState || s_pTcpSocket->waitForDisconnected(400))
+        {
+            s_pTcpSocket->connectToHost(address, port);
+        }
+        else
+        {
+            qDebug() << "Unable connect with " << address << port;
+        }
 }
 
 //-----------------------------------------------------------------------------

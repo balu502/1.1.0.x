@@ -5804,7 +5804,7 @@ void Setup::change_plate(int index, bool without_saveUndo)
         prot->enable_tube.push_back(0);
     }
 
-    for(i=0; i<prot->Plate.groups.size(); i++)
+    /*for(i=0; i<prot->Plate.groups.size(); i++)
     {
         rt_GroupSamples *group = prot->Plate.groups.at(i);
         for(j=0; j<group->samples.size(); j++)
@@ -5816,7 +5816,14 @@ void Setup::change_plate(int index, bool without_saveUndo)
                 tube->pos = -1;
             }
         }
-    }
+    }*/
+    // 2. Clear Samples
+        Tubes_key.clear();
+        Tubes_kind.clear();
+        for(i=0; i<prot->Plate.groups.size(); i++) delete prot->Plate.groups[i];
+        prot->Plate.groups.clear();
+    //
+
     auto_Filling->setChecked(false);
     free_Filling->setChecked(false);
 

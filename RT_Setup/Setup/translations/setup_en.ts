@@ -4,8 +4,8 @@
 <context>
     <name>Color_ToolButton</name>
     <message>
-        <location filename="../setup.cpp" line="9039"/>
-        <location filename="../setup.cpp" line="9067"/>
+        <location filename="../setup.cpp" line="9046"/>
+        <location filename="../setup.cpp" line="9074"/>
         <source>Select Color</source>
         <translation type="unfinished">Pick a color</translation>
     </message>
@@ -13,12 +13,12 @@
 <context>
     <name>PlateItemDelegate</name>
     <message>
-        <location filename="../setup.cpp" line="8479"/>
+        <location filename="../setup.cpp" line="8486"/>
         <source>CONTROL+</source>
         <translation>C+</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="8480"/>
+        <location filename="../setup.cpp" line="8487"/>
         <source>CONTROL-</source>
         <translation>C-</translation>
     </message>
@@ -26,12 +26,12 @@
 <context>
     <name>PropertyDelegate</name>
     <message>
-        <location filename="../setup.cpp" line="8752"/>
+        <location filename="../setup.cpp" line="8759"/>
         <source>Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="8752"/>
+        <location filename="../setup.cpp" line="8759"/>
         <source>Value</source>
         <translation type="unfinished"></translation>
     </message>
@@ -39,20 +39,20 @@
 <context>
     <name>SamplesItemDelegate</name>
     <message>
-        <location filename="../setup.cpp" line="7809"/>
-        <location filename="../setup.cpp" line="8032"/>
+        <location filename="../setup.cpp" line="7816"/>
+        <location filename="../setup.cpp" line="8039"/>
         <source>C+</source>
         <translation>C+</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="7810"/>
-        <location filename="../setup.cpp" line="8033"/>
+        <location filename="../setup.cpp" line="7817"/>
+        <location filename="../setup.cpp" line="8040"/>
         <source>C-</source>
         <translation>C-</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="7811"/>
-        <location filename="../setup.cpp" line="8034"/>
+        <location filename="../setup.cpp" line="7818"/>
+        <location filename="../setup.cpp" line="8041"/>
         <source>St</source>
         <translation>St</translation>
     </message>
@@ -102,7 +102,7 @@
     <message>
         <location filename="../setup.cpp" line="1500"/>
         <location filename="../setup.cpp" line="3132"/>
-        <location filename="../setup.cpp" line="6612"/>
+        <location filename="../setup.cpp" line="6619"/>
         <source>Open Protocol</source>
         <translation>Open protocol</translation>
     </message>
@@ -192,7 +192,7 @@
     <message>
         <location filename="../setup.cpp" line="144"/>
         <source>You are trying to change the analysis of current protocol! Continue?</source>
-        <translation>You are trying to change the analysis of the cuttent protocol! Continue?</translation>
+        <translation>You are trying to change the analysis of the current protocol! Continue?</translation>
     </message>
     <message>
         <location filename="../setup.cpp" line="150"/>
@@ -331,7 +331,7 @@
     </message>
     <message>
         <location filename="../setup.cpp" line="1622"/>
-        <location filename="../setup.cpp" line="6704"/>
+        <location filename="../setup.cpp" line="6711"/>
         <source>TIS tests</source>
         <translation>TIS tests</translation>
     </message>
@@ -479,7 +479,7 @@
     </message>
     <message>
         <location filename="../setup.cpp" line="3132"/>
-        <location filename="../setup.cpp" line="6612"/>
+        <location filename="../setup.cpp" line="6619"/>
         <source>Unable open protocol...</source>
         <translation>It is impossible to open the run file.</translation>
     </message>
@@ -610,14 +610,14 @@
     <message>
         <location filename="../setup.cpp" line="3104"/>
         <location filename="../setup.cpp" line="5551"/>
-        <location filename="../setup.cpp" line="6590"/>
+        <location filename="../setup.cpp" line="6597"/>
         <source>Open Protocol(Template)</source>
         <translation>Open protocol (template)</translation>
     </message>
     <message>
         <location filename="../setup.cpp" line="3106"/>
         <location filename="../setup.cpp" line="5553"/>
-        <location filename="../setup.cpp" line="6592"/>
+        <location filename="../setup.cpp" line="6599"/>
         <source>Protocols File (*.rt *.trt)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -677,37 +677,37 @@
         <translation>Attention! The free filler is switched off.</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="5895"/>
+        <location filename="../setup.cpp" line="5902"/>
         <source>Attention! Tubes amount more than places on plate!</source>
         <translation>Attention! The number of tubes exceeds the number of free places in template!</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="6498"/>
+        <location filename="../setup.cpp" line="6505"/>
         <source>invert row - </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="6499"/>
+        <location filename="../setup.cpp" line="6506"/>
         <source>invert column - </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="6500"/>
+        <location filename="../setup.cpp" line="6507"/>
         <source>invert all Plate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="6501"/>
+        <location filename="../setup.cpp" line="6508"/>
         <source>tests layout</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="6718"/>
+        <location filename="../setup.cpp" line="6725"/>
         <source>N</source>
         <translation>N</translation>
     </message>
     <message>
-        <location filename="../setup.cpp" line="6718"/>
+        <location filename="../setup.cpp" line="6725"/>
         <source>Name test</source>
         <translation>Name test</translation>
     </message>
